@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Benson 的食譜</title>
+<meta name="theme-color" content="#b4532a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="食譜">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a href="#/" class="brand">🍳 食譜</a>
+  <nav>
+    <a href="#/shop" id="nav-shop" title="購物清單">🛒<span class="badge" id="shop-count"></span></a>
+    <a href="#/timers" id="nav-timers" title="計時器">⏱<span class="badge" id="timer-count"></span></a>
+    <a href="#/add" title="新增食譜">＋</a>
+    <a href="#/settings" title="設定">⚙︎</a>
+  </nav>
+</header>
+<main id="view"></main>
+<div id="alarm" class="alarm" hidden>
+  <div class="alarm-box">
+    <div class="alarm-title">⏰ 時間到！</div>
+    <div id="alarm-list"></div>
+    <button id="alarm-stop" class="btn primary">知道了，停止鈴聲</button>
+  </div>
+</div>
+<script src="recipes-data.js"></script>
+<script src="ingredients-data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
