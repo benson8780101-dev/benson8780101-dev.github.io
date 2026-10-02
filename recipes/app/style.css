@@ -101,3 +101,8 @@ details ul{padding-left:20px;margin:8px 0}
 .inline-edit input{width:110px}
 .star{font-size:20px;border:0;background:transparent;cursor:pointer;padding:0 4px}
 .source{font-size:13px;color:var(--muted);margin-top:20px;border-top:1px solid var(--line);padding-top:10px}
+
+/* 英文模式：中文菜名當副標；右上角語言切換 */
+.zh-sub { font-size: .8em; font-weight: normal; color: var(--muted, #8a7f73); margin-left: 4px; }
+.zh-sub.big { display: block; margin: -6px 0 6px; font-size: 1rem; margin-left: 0; }
+.top nav a.lang { min-width: auto; height: auto; align-self: center; margin-left: 6px; font-size: .8rem; font-weight: 700; border: 1.5px solid currentColor; border-radius: 6px; padding: 1px 5px; line-height: 1.3; }

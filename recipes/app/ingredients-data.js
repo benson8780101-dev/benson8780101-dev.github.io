@@ -72,3 +72,30 @@ window.SUBS = {
   "豆瓣醬":"亞洲超市；急用時辣椒醬＋少量味噌或醬油",
   "Buttermilk":"約旦超市的 Buttermilk 其實是發酵乳飲，可用牛奶＋少量檸檬汁代替"
 };
+
+// 英文版的約旦替代建議（鍵跟 SUBS 一樣，用中文比對材料名稱）
+window.SUBS_EN = {
+  "油蔥酥": "Middle Eastern fried onions (sold in supermarkets as بصل مقلي), or fry small red onions yourself",
+  "紅蔥頭": "Small red onions",
+  "油麵": "Spaghetti boiled with a pinch of baking soda for an alkaline-noodle bite",
+  "蛤蜊": "Dried scallop powder, a little fish sauce, or frozen seafood",
+  "味醂": "Sugar + a little white vinegar + water (or honey)",
+  "味琳": "Sugar + a little white vinegar + water (or honey)",
+  "昆布": "Chicken stock + a few drops of fish sauce",
+  "米酒": "Hard to find in Jordan and not suitable for Muslim friends: use ginger slices to remove gaminess, or a little white vinegar + water",
+  "豬": "Beef or chicken (pork is only sold in a few Christian-run shops)",
+  "臘肉": "Smoked beef (available at Yaser Mall)",
+  "地瓜粉": "Potato starch or cornstarch, plus a little breadcrumb for extra crunch",
+  "黑胡椒醬": "Homemade: coarse black pepper + ketchup + soy sauce + a small knob of butter",
+  "糯米粉": "Rice flour or fine semolina",
+  "白蘿蔔": "For soups, an apple adds similar sweetness",
+  "柴魚": "Dried scallop powder or fish sauce (use less if allergic or on antibiotics)",
+  "香蘭": "Skip it, or use a tiny drop of vanilla extract",
+  "鴨": "Use roast chicken for a roast-duck flavor",
+  "鹹蛋": "Frozen salted egg yolks from Asian grocers, or cure your own",
+  "黑芝麻": "Note: the small black seeds common in Jordan are حبة البركة (nigella seeds), not black sesame",
+  "甜酒麴": "Online or at Asian grocers; if unavailable, try fruit-wine yeast",
+  "沙茶": "Asian grocers (a few in Amman)",
+  "豆瓣醬": "Asian grocers; in a pinch, chili sauce + a little miso or soy sauce",
+  "Buttermilk": "Jordanian supermarket \"buttermilk\" is a fermented milk drink; use milk + a little lemon juice instead"
+};
