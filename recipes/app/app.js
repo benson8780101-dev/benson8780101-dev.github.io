@@ -246,7 +246,7 @@ let listState = ls.get("listState", { q: "", mode: "name", cat: "全部", tag: "
 // 搜尋同時比對中文和英文（不分大小寫）
 const ingNames = r => r.groups.flatMap(g => g.items.map(i => i.name + (i.zh && i.zh !== i.name ? " " + i.zh : "")));
 function recipeText(r) { return [r.title, r.zhTitle || "", r.cat, catName(r.cat), ...(r.tags || []).map(t => t + " " + tagName(t)), ...ingNames(r)].join(" ").toLowerCase(); }
-function renderList() {
+function listResults() {
   const s = listState, fv = favs();
   // 有逗號時用逗號分開（英文材料常是兩個字，例如 green onion），否則用空格
   const terms = s.q.toLowerCase().split(/[,，、]/.test(s.q) ? /\s*[,，、]+\s*/ : /\s+/).filter(Boolean);
@@ -262,14 +262,7 @@ function renderList() {
       rs = rs.filter(x => x.hit.length).sort((a, b) => b.hit.length - a.hit.length);
     } else rs = rs.filter(x => { const t = recipeText(x.r); return terms.every(q => t.includes(q)); });
   }
-  const catChips = CATS.map(c => `<button class="chip ${s.cat === c ? "on" : ""}" data-cat="${c}">${esc(catName(c))}</button>`).join("");
-  const tagChips = TAGS.map(c => `<button class="chip ${s.tag === c ? "on" : ""}" data-tag="${c}">${c === "收藏" ? "★ " : ""}${esc(tagName(c))}</button>`).join("");
-  $("#view").innerHTML = `
-    <div class="seg"><button data-mode="name" class="${s.mode === "name" ? "on" : ""}">${L("找菜名", "By name")}</button><button data-mode="have" class="${s.mode === "have" ? "on" : ""}">${L("用手邊食材找", "By what I have")}</button></div>
-    <div class="search"><input id="q" type="search" value="${esc(s.q)}" placeholder="${s.mode === "have" ? L("例如：雞肉 高麗菜 洋蔥", "e.g. chicken, cabbage, onion") : L("搜尋菜名或材料，例如：鹹酥雞", "Search dishes or ingredients, e.g. popcorn chicken")}" autocomplete="off"></div>
-    <div class="chips">${catChips}</div>
-    <div class="chips">${tagChips}</div>
-    <p class="muted">${L(`${rs.length} 道食譜`, `${rs.length} recipe${rs.length === 1 ? "" : "s"}`)}</p>
+  return `<p class="muted">${L(`${rs.length} 道食譜`, `${rs.length} recipe${rs.length === 1 ? "" : "s"}`)}</p>
     <div class="list">${rs.map(({ r, hit }) => `
       <a class="card" href="#/r/${r.id}">
         <div class="t">${fv.has(r.id) ? "★ " : ""}${esc(r.title)}${r.zhTitle && r.zhTitle !== r.title ? ` <span class="zh-sub">${esc(r.zhTitle)}</span>` : ""}</div>
@@ -277,8 +270,24 @@ function renderList() {
           ${(r.tags || []).map(t => `<span class="tag">${esc(tagName(t))}</span>`).join("")}${(r.mine || []).length || r.user ? `<span class="tag ok">${L("我的版本", "My version")}</span>` : ""}</div>
         ${hit.length ? `<div class="match">${L("✓ 有：", "✓ Have: ")}${hit.map(esc).join(L("、", ", "))}</div>` : ""}
       </a>`).join("") || `<div class="empty">${L("找不到符合的食譜", "No matching recipes")}</div>`}</div>`;
+}
+function renderList() {
+  const s = listState;
+  const catChips = CATS.map(c => `<button class="chip ${s.cat === c ? "on" : ""}" data-cat="${c}">${esc(catName(c))}</button>`).join("");
+  const tagChips = TAGS.map(c => `<button class="chip ${s.tag === c ? "on" : ""}" data-tag="${c}">${c === "收藏" ? "★ " : ""}${esc(tagName(c))}</button>`).join("");
+  $("#view").innerHTML = `
+    <div class="seg"><button data-mode="name" class="${s.mode === "name" ? "on" : ""}">${L("找菜名", "By name")}</button><button data-mode="have" class="${s.mode === "have" ? "on" : ""}">${L("用手邊食材找", "By what I have")}</button></div>
+    <div class="search"><input id="q" type="search" value="${esc(s.q)}" placeholder="${s.mode === "have" ? L("例如：雞肉 高麗菜 洋蔥", "e.g. chicken, cabbage, onion") : L("搜尋菜名或材料，例如：鹹酥雞", "Search dishes or ingredients, e.g. popcorn chicken")}" autocomplete="off"></div>
+    <div class="chips">${catChips}</div>
+    <div class="chips">${tagChips}</div>
+    <div id="results">${listResults()}</div>`;
+  // 打字時只更新下面的結果，搜尋框本身不重畫；注音／拼音還在選字（composing）時先不搜尋，不然輸入法會被打斷
   const q = $("#q");
-  q.oninput = () => { s.q = q.value; ls.set("listState", s); clearTimeout(q._t); q._t = setTimeout(() => { const pos = q.selectionStart; renderList(); const n = $("#q"); n.focus(); n.setSelectionRange(pos, pos); }, 250); };
+  let composing = false;
+  const update = () => { clearTimeout(q._t); q._t = setTimeout(() => { if (!composing) $("#results").innerHTML = listResults(); }, 200); };
+  q.addEventListener("compositionstart", () => { composing = true; });
+  q.addEventListener("compositionend", () => { composing = false; s.q = q.value; ls.set("listState", s); update(); });
+  q.oninput = e => { if (composing || e.isComposing) return; s.q = q.value; ls.set("listState", s); update(); };
   $("#view").onclick = e => {
     const b = e.target.closest("button"); if (!b) return;
     if (b.dataset.mode) { s.mode = b.dataset.mode; } else if (b.dataset.cat) { s.cat = b.dataset.cat; } else if (b.dataset.tag) { s.tag = s.tag === b.dataset.tag ? "" : b.dataset.tag; } else return;
