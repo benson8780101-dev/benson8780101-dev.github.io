@@ -49,6 +49,9 @@ textarea{min-height:120px;resize:vertical}
 .tag{display:inline-block;font-size:12px;padding:1px 7px;border-radius:6px;background:var(--accent-soft);color:var(--accent);margin-right:4px}
 .tag.ok{background:transparent;border:1px solid var(--ok);color:var(--ok)}
 .match{font-size:13px;color:var(--ok);margin-top:3px}
+.found{font-size:13px;color:var(--muted);margin-top:3px;line-height:1.5}
+.found b{color:var(--ink);font-weight:600}
+.found mark{background:var(--accent-soft);color:var(--accent);border-radius:3px;padding:0 1px}
 .scale{display:flex;flex-wrap:wrap;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin:12px 0}
 .scale .f{font-weight:700;min-width:54px;text-align:center}
 .toggles{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}

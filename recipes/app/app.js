@@ -139,7 +139,7 @@ async function photoBlob(pid) {
   const ph = await idbGet("photos", pid).catch(() => null); if (ph) return ph.blob;
   try { const j = await api({ action: "getPhoto", id: pid }); const blob = await (await fetch("data:image/jpeg;base64," + j.data)).blob(); await idbPut("photos", { id: pid, blob, up: true }); return blob; } catch { return null; }
 }
-let logCount = {};
+let logCount = {}, logText = {};
 
 // ---------- 食材字典與替代 ----------
 const DICT = (window.ING_DICT || []).slice().sort((a, b) => b[0].length - a[0].length);
@@ -245,12 +245,36 @@ function toast(msg) { let el = $("#toast"); if (!el) { el = document.createEleme
 let listState = ls.get("listState", { q: "", mode: "name", cat: "全部", tag: "" });
 // 搜尋同時比對中文和英文（不分大小寫）
 const ingNames = r => r.groups.flatMap(g => g.items.map(i => i.name + (i.zh && i.zh !== i.name ? " " + i.zh : "")));
-function recipeText(r) { return [r.title, r.zhTitle || "", r.cat, catName(r.cat), ...(r.tags || []).map(t => t + " " + tagName(t)), ...ingNames(r)].join(" ").toLowerCase(); }
+// 全文搜尋：標題、材料（含備註、分組名）、分類標籤、簡介、做法、小技巧、我的版本、我的實作紀錄，中英文都比對
+const strs = o => o == null ? [] : typeof o === "string" ? [o] : typeof o === "object" ? Object.values(o).flatMap(strs) : [];
+let searchCache = new Map();
+function searchFields(r0) {
+  const key = lang + ":" + r0.id + ":" + (r0.t || 0); if (searchCache.has(key)) return searchCache.get(key);
+  const r = loc(r0), e = r0.en || (window.RECIPES_EN || {})[r0.id] || {};
+  const j = a => a.filter(Boolean).join("\n");
+  const fields = [
+    ["title", "", j([r0.title, e.title])],
+    ["ing", L("材料", "Ingredients"), j([...r0.groups.flatMap(g => [g.name, ...g.items.flatMap(i => [i.name, i.note])]), ...strs(e.groups)])],
+    ["tag", "", j([r0.cat, catName(r0.cat), ...(r0.tags || []).flatMap(t => [t, tagName(t)])])],
+    ["intro", L("簡介", "Intro"), j([r.intro, r0.intro, e.intro])],
+    ["steps", L("做法", "Steps"), j([...r.steps, ...r0.steps, ...strs(e.steps)])],
+    ["tips", L("小技巧", "Tips"), j([...r.tips, ...r0.tips, ...strs(e.tips)])],
+    ["mine", L("我的版本", "My version"), j([...(r0.mine || []).map(m => m.text), ...strs(e.mine)])],
+    ["log", L("我的紀錄", "My notes"), logText[r0.id] || ""],
+  ].map(([k, label, text]) => ({ k, label, text, low: text.toLowerCase() }));
+  searchCache.set(key, fields); return fields;
+}
+// 在內文找到時，顯示關鍵字前後一小段，讓人知道是在哪裡找到的
+function snippet(fd, t) {
+  const i = fd.low.indexOf(t); const a = Math.max(0, i - 14), b = Math.min(fd.text.length, i + t.length + 18);
+  const line = fd.text.slice(a, b).replace(/\s+/g, " ");
+  const k = i - a; return `${a > 0 ? "…" : ""}${esc(line.slice(0, k))}<mark>${esc(line.slice(k, k + t.length))}</mark>${esc(line.slice(k + t.length))}${b < fd.text.length ? "…" : ""}`;
+}
 function listResults() {
   const s = listState, fv = favs();
   // 有逗號時用逗號分開（英文材料常是兩個字，例如 green onion），否則用空格
   const terms = s.q.toLowerCase().split(/[,，、]/.test(s.q) ? /\s*[,，、]+\s*/ : /\s+/).filter(Boolean);
-  let rs = allRecipes().map(r => ({ r: loc(r), hit: [] }));
+  let rs = allRecipes().map(r => ({ r: loc(r), r0: r, hit: [], where: "" }));
   if (s.cat !== "全部") rs = rs.filter(x => x.r.cat === s.cat || (x.r.tags || []).includes(s.cat));
   if (s.tag === "收藏") rs = rs.filter(x => fv.has(x.r.id));
   else if (s.tag === "我的版本") rs = rs.filter(x => (x.r.mine || []).length || x.r.user);
@@ -260,14 +284,26 @@ function listResults() {
     if (s.mode === "have") {
       rs.forEach(x => { const names = (ingNames(x.r).join(" ") + " " + x.r.title + " " + (x.r.zhTitle || "")).toLowerCase(); x.hit = terms.filter(t => names.includes(t)); });
       rs = rs.filter(x => x.hit.length).sort((a, b) => b.hit.length - a.hit.length);
-    } else rs = rs.filter(x => { const t = recipeText(x.r); return terms.every(q => t.includes(q)); });
+    } else {
+      const W = { title: 100, ing: 10, tag: 10 };
+      rs = rs.filter(x => {
+        const fs = searchFields(x.r0); let score = 0, where = [];
+        for (const t of terms) {
+          const hits = fs.filter(fd => fd.low.includes(t)); if (!hits.length) return false;
+          score += Math.max(...hits.map(fd => W[fd.k] || 1));
+          if (!hits.some(fd => W[fd.k])) where.push(`<b>${esc(hits[0].label)}</b>：${snippet(hits[0], t)}`);
+        }
+        x.score = score; x.where = where.join("<br>"); return true;
+      }).sort((a, b) => b.score - a.score);
+    }
   }
   return `<p class="muted">${L(`${rs.length} 道食譜`, `${rs.length} recipe${rs.length === 1 ? "" : "s"}`)}</p>
-    <div class="list">${rs.map(({ r, hit }) => `
+    <div class="list">${rs.map(({ r, hit, where }) => `
       <a class="card" href="#/r/${r.id}">
         <div class="t">${fv.has(r.id) ? "★ " : ""}${esc(r.title)}${r.zhTitle && r.zhTitle !== r.title ? ` <span class="zh-sub">${esc(r.zhTitle)}</span>` : ""}</div>
         <div class="m">${esc(catName(r.cat))}${r.servings ? L(` · ${r.servings} 人份`, ` · serves ${r.servings}`) : ""}${logCount[r.id] ? L(` · 做過 ${logCount[r.id]} 次`, ` · made ${logCount[r.id]}×`) : ""}
           ${(r.tags || []).map(t => `<span class="tag">${esc(tagName(t))}</span>`).join("")}${(r.mine || []).length || r.user ? `<span class="tag ok">${L("我的版本", "My version")}</span>` : ""}</div>
+        ${where ? `<div class="found">🔎 ${where}</div>` : ""}
         ${hit.length ? `<div class="match">${L("✓ 有：", "✓ Have: ")}${hit.map(esc).join(L("、", ", "))}</div>` : ""}
       </a>`).join("") || `<div class="empty">${L("找不到符合的食譜", "No matching recipes")}</div>`}</div>`;
 }
@@ -277,7 +313,7 @@ function renderList() {
   const tagChips = TAGS.map(c => `<button class="chip ${s.tag === c ? "on" : ""}" data-tag="${c}">${c === "收藏" ? "★ " : ""}${esc(tagName(c))}</button>`).join("");
   $("#view").innerHTML = `
     <div class="seg"><button data-mode="name" class="${s.mode === "name" ? "on" : ""}">${L("找菜名", "By name")}</button><button data-mode="have" class="${s.mode === "have" ? "on" : ""}">${L("用手邊食材找", "By what I have")}</button></div>
-    <div class="search"><input id="q" type="search" value="${esc(s.q)}" placeholder="${s.mode === "have" ? L("例如：雞肉 高麗菜 洋蔥", "e.g. chicken, cabbage, onion") : L("搜尋菜名或材料，例如：鹹酥雞", "Search dishes or ingredients, e.g. popcorn chicken")}" autocomplete="off"></div>
+    <div class="search"><input id="q" type="search" value="${esc(s.q)}" placeholder="${s.mode === "have" ? L("例如：雞肉 高麗菜 洋蔥", "e.g. chicken, cabbage, onion") : L("搜尋菜名、材料、做法或小技巧", "Search names, ingredients, steps or tips")}" autocomplete="off"></div>
     <div class="chips">${catChips}</div>
     <div class="chips">${tagChips}</div>
     <div id="results">${listResults()}</div>`;
@@ -407,9 +443,9 @@ async function renderRecipe(id) {
     else if (d.savelog !== undefined) {
       const text = $("#log-text").value.trim(); if (!text && !pendingPhotos.length) { toast(L("先寫一點紀錄或加照片", "Write a note or add a photo first")); return; }
       const photos = []; for (const blob of pendingPhotos) { const pid = uid(); await idbPut("photos", { id: pid, blob, up: false }); photos.push(pid); }
-      const lid = uid(); await idbPut("logs", { id: lid, rid: id, date: today(), text, rate: $("#log-rate").value, f: view.f, photos, t: Date.now() }); markDirty("logs", lid); logCount[id] = (logCount[id] || 0) + 1; toast(L("📒 紀錄已儲存", "📒 Note saved"));
+      const lid = uid(); await idbPut("logs", { id: lid, rid: id, date: today(), text, rate: $("#log-rate").value, f: view.f, photos, t: Date.now() }); markDirty("logs", lid); logCount[id] = (logCount[id] || 0) + 1; load(); toast(L("📒 紀錄已儲存", "📒 Note saved"));
     }
-    else if (d.dellog) { if (!confirmInline(b, L("確定刪除？", "Delete?"))) return; const l = await idbGet("logs", d.dellog); await idbPut("logs", { id: l.id, rid: l.rid, del: true, t: Date.now() }); markDirty("logs", l.id); logCount[id] = Math.max(0, (logCount[id] || 1) - 1); }
+    else if (d.dellog) { if (!confirmInline(b, L("確定刪除？", "Delete?"))) return; const l = await idbGet("logs", d.dellog); await idbPut("logs", { id: l.id, rid: l.rid, del: true, t: Date.now() }); markDirty("logs", l.id); logCount[id] = Math.max(0, (logCount[id] || 1) - 1); load(); }
     else if (d.deluser !== undefined) { if (!confirmInline(b, L("再按一次確定刪除", "Tap again to delete"))) return; await idbPut("recipes", { id, del: true, t: Date.now() }); markDirty("recipes", id); userRecipes = userRecipes.filter(x => x.id !== id); location.hash = "#/"; return; }
     renderRecipe(id);
   };
@@ -570,7 +606,8 @@ function render() {
 }
 async function load() {
   userRecipes = (await idbAll("recipes").catch(() => [])).filter(r => !r.del).sort((a, b) => (b.t || 0) - (a.t || 0));
-  logCount = {}; (await idbAll("logs").catch(() => [])).filter(l => !l.del).forEach(l => logCount[l.rid] = (logCount[l.rid] || 0) + 1);
+  logCount = {}; logText = {}; searchCache = new Map();
+  (await idbAll("logs").catch(() => [])).filter(l => !l.del).forEach(l => { logCount[l.rid] = (logCount[l.rid] || 0) + 1; if (l.text) logText[l.rid] = (logText[l.rid] ? logText[l.rid] + "\n" : "") + l.text; });
 }
 window.addEventListener("hashchange", () => { window.scrollTo(0, 0); render(); });
 $("#alarm-stop").onclick = () => { $("#alarm").hidden = true; clearInterval(ringing); ringing = null; };
