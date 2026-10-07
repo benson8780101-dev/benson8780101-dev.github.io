@@ -41,6 +41,9 @@ textarea{min-height:120px;resize:vertical}
 .chips{display:flex;gap:6px;overflow-x:auto;padding-bottom:6px;margin:0 -16px 6px;padding-left:16px;padding-right:16px;scrollbar-width:none}
 .chips::-webkit-scrollbar{display:none}
 .chip{flex:none;border:0;background:var(--chip);color:var(--ink);font:inherit;font-size:14px;padding:6px 12px;border-radius:999px}
+.filterbar{display:flex;align-items:center;justify-content:space-between;gap:10px;background:var(--accent-soft);border:1px solid var(--accent);border-radius:12px;padding:8px 12px;margin:0 0 8px;font-size:14px}
+.filterbar small{color:var(--muted)}
+.filterbar button{flex:none;border:0;background:var(--accent);color:#fff;font:inherit;font-size:14px;padding:6px 12px;border-radius:999px}
 .chip.on{background:var(--accent);color:#fff}
 .list{display:grid;gap:8px}
 .card{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;color:var(--ink);box-shadow:var(--shadow)}

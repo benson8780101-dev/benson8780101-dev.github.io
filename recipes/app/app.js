@@ -297,7 +297,13 @@ function listResults() {
       }).sort((a, b) => b.score - a.score);
     }
   }
-  return `<p class="muted">${L(`${rs.length} 道食譜`, `${rs.length} recipe${rs.length === 1 ? "" : "s"}`)}</p>
+  // 有搜尋字或篩選時，最上面顯示提示列，避免以為食譜不見了
+  const f = [];
+  if (s.q.trim()) f.push(L(`搜尋「${esc(s.q.trim())}」`, `search “${esc(s.q.trim())}”`));
+  if (s.cat !== "全部") f.push(L("分類：", "category: ") + esc(catName(s.cat)));
+  if (s.tag) f.push(esc(tagName(s.tag)));
+  const bar = f.length ? `<div class="filterbar"><span>🔍 ${L("正在篩選：", "Filtering: ")}${f.join(" · ")}<br><small>${L(`顯示 ${rs.length} 道，全部共 ${allRecipes().length} 道`, `showing ${rs.length} of ${allRecipes().length}`)}</small></span><button data-clear>✕ ${L("清除", "Clear")}</button></div>` : "";
+  return `${bar}<p class="muted">${L(`${rs.length} 道食譜`, `${rs.length} recipe${rs.length === 1 ? "" : "s"}`)}</p>
     <div class="list">${rs.map(({ r, hit, where }) => `
       <a class="card" href="#/r/${r.id}">
         <div class="t">${fv.has(r.id) ? "★ " : ""}${esc(r.title)}${r.zhTitle && r.zhTitle !== r.title ? ` <span class="zh-sub">${esc(r.zhTitle)}</span>` : ""}</div>
@@ -326,7 +332,8 @@ function renderList() {
   q.oninput = e => { if (composing || e.isComposing) return; s.q = q.value; ls.set("listState", s); update(); };
   $("#view").onclick = e => {
     const b = e.target.closest("button"); if (!b) return;
-    if (b.dataset.mode) { s.mode = b.dataset.mode; } else if (b.dataset.cat) { s.cat = b.dataset.cat; } else if (b.dataset.tag) { s.tag = s.tag === b.dataset.tag ? "" : b.dataset.tag; } else return;
+    if (b.dataset.clear !== undefined) { s.q = ""; s.cat = "全部"; s.tag = ""; }
+    else if (b.dataset.mode) { s.mode = b.dataset.mode; } else if (b.dataset.cat) { s.cat = b.dataset.cat; } else if (b.dataset.tag) { s.tag = s.tag === b.dataset.tag ? "" : b.dataset.tag; } else return;
     ls.set("listState", s); renderList();
   };
 }
