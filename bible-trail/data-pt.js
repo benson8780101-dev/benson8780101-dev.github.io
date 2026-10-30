@@ -28,6 +28,10 @@ window.PT = {
     ch6: {
       title: "João Batista e o Rei de Moabe",
       intro: "Ao sul do monte Nebo fica a antiga Moabe. Aqui João Batista foi decapitado numa fortaleza no alto de um monte, e Messa, rei de Moabe, gravou uma pedra que, desenterrada três mil anos depois, ecoa o relato de Reis."
+    },
+    ch7: {
+      title: "A Terra de Rute",
+      intro: "Depois do vale do Arnom fica o coração de Moabe: o planalto ao redor de Kerak. Daqui Rute seguiu a sogra até Belém e se tornou bisavó do rei Davi. Descendo para o oeste, no extremo sul do mar Morto, é o lugar para onde Ló fugiu de Sodoma — e onde começou a história dos moabitas."
     }
   },
 
@@ -389,6 +393,66 @@ window.PT = {
       reflect: "Israel primeiro pediu com educação; o conflito só veio depois da recusa. Antes de um atrito com alguém, você costuma conversar com clareza e pedir com gentileza?",
       mission: "🔒 Missão secreta: Leia Números 21.21–35 e depois volte para o quiz.",
       quiz: { q: "Qual rei Israel derrotou em Jaza?", options: ["Ogue, rei de Basã", "Seom, rei dos amorreus", "Balaque, rei de Moabe"] },
+      howto: "Esta é uma fase secreta: a localização exata é desconhecida, então não é preciso ir até lá. Responda o quiz corretamente para ganhar o carimbo."
+    },
+
+    kerak: {
+      name: "Quir-Haresete (Castelo de Kerak)",
+      place: "O castelo dos cruzados no alto da cidade de Kerak",
+      story: "Kerak é Quir-Haresete, a fortaleza de Moabe. Os reis de Israel, de Judá e de Edom se uniram contra Moabe e devastaram a terra, até que só esta cidade ficou de pé. Messa, rei de Moabe, levou setecentos homens armados de espada para tentar romper o cerco, e não conseguiu. Sem saída, ofereceu seu filho primogênito, o herdeiro do trono, em holocausto sobre o muro da cidade, e Israel se retirou e voltou para casa. Muito antes, quando Saul o perseguia, Davi foi a \"Mispá de Moabe\" e pediu ao rei de Moabe que cuidasse de seu pai e de sua mãe; alguns estudiosos acham que essa Mispá era este lugar. Davi talvez tenha pensado em Moabe porque sua bisavó Rute era moabita. O enorme castelo no alto do monte foi construído pelos cruzados em 1142 e depois tomado e ampliado por Saladino e pelos mamelucos.",
+      reflect: "O profeta Isaías anunciou o juízo sobre Moabe, mas disse que o seu interior gemia por Moabe como uma harpa — Deus sofre até pelos inimigos. Existe alguém difícil de amar que você poderia tentar ver com os olhos de Deus?",
+      mission: "🏰 Missão: Vá até a muralha e olhe para o oeste; em dia claro dá para ver o mar Morto. Imagine Messa em pé sobre o muro, cercado pelos exércitos de três reinos, e o desespero que ele sentiu.",
+      quiz: { q: "A quem Davi pediu que cuidasse de seus pais?", options: ["Ao rei de Edom", "Ao rei de Moabe", "Ao rei de Amom"] },
+      howto: "Cerca de 2 horas de carro ao sul de Amã (a Rodovia do Deserto é mais rápida; a Estrada dos Reis passa pelos lugares do Capítulo 6 no caminho). Há centro de visitantes e cobra-se entrada (o Jordan Pass é aceito). O castelo tem muitos túneis longos e escuros — leve uma lanterna ou use o celular, e cuidado com o chão irregular. Há restaurantes nas ruas do lado de fora para almoçar."
+    },
+
+    ruthmoab: {
+      name: "Os Campos de Moabe (a terra de Rute)",
+      place: "O planalto de Moabe, entre o vale do Arnom e Kerak",
+      story: "No tempo dos juízes houve fome em Belém, e Elimeleque levou sua mulher Noemi e seus dois filhos para morar nos \"campos de Moabe\". Os filhos se casaram com moabitas, Orfa e Rute, e depois os três homens morreram. Noemi decidiu voltar para Belém e insistiu que as noras voltassem para suas famílias. Orfa se despediu chorando, mas Rute se apegou à sogra e fez uma das promessas mais comoventes da Bíblia: \"de onde quer que tu fores, irei eu… Teu povo será meu povo, e teu Deus meu Deus.\" Rute depois se casou com Boaz e se tornou bisavó do rei Davi, e Mateus chega a escrever o nome dela na genealogia de Jesus. A Bíblia não diz em que cidade de Moabe eles moravam, então todo o planalto de Moabe vale.",
+      reflect: "Rute era estrangeira e viúva, com um futuro incerto, e mesmo assim escolheu ficar com Noemi. Existe alguém perto de você, num momento difícil, que precisa ouvir: \"eu vou com você\"?",
+      mission: "🌾 Missão: Pare ao lado de um campo no planalto de Moabe, leia Rute 1.16–17 e tire uma foto dos campos. Quando Rute e Noemi chegaram a Belém, era \"o princípio da colheita das cevadas\".",
+      quiz: { q: "Rute foi bisavó de qual rei de Israel?", options: ["Rei Saul", "Rei Salomão", "Rei Davi"] },
+      howto: "Não é preciso ir a um ponto exato: pela Estrada dos Reis (Rodovia 35), da borda sul do vale do Arnom até Kerak, você está o tempo todo no planalto de Moabe, e qualquer lugar nessa área vale. Os campos de trigo ficam mais verdes na primavera (março–abril). Se parar à beira da estrada para fotos, escolha um lugar seguro e cuidado com o trânsito."
+    },
+
+    ar: {
+      name: "Ar (dada aos filhos de Ló)",
+      place: "As ruínas de Khirbet al-Balu'a, a leste da Estrada dos Reis",
+      story: "Quando Israel subia do deserto passando por Moabe, Deus deu a Moisés uma ordem clara: \"Não perturbeis a Moabe, nem te empenhes com eles em guerra\", porque ele tinha dado Ar por herança aos filhos de Ló. Os moabitas descendiam de Ló; Deus não tinha se esquecido de Ló e cuidava também dos seus descendentes. Muitos estudiosos acham que Ar é a grande ruína aqui em Balu'a. Aqui foi encontrada uma estela antiga que mostra um rei em pé entre dois deuses, uma peça importante da época moabita, hoje guardada num museu em Amã.",
+      reflect: "Deus mandou Israel não tomar a terra de Moabe, mesmo podendo. Quando você tem força para brigar por algo mas escolhe ceder, o que se passa no seu coração?",
+      mission: "🔭 Missão: Das ruínas, olhe para o norte, na direção do vale do Arnom. Por aqui Israel passou pelas cidades moabitas sem atacá-las.",
+      quiz: { q: "Por que Deus mandou Israel não lutar contra Moabe?", options: ["Moabe era forte demais", "Deus tinha dado Ar aos filhos de Ló", "Israel tinha se perdido"] },
+      howto: "⚠️ Sítio arqueológico sem estrutura para visitantes; ainda não confirmamos se dá para entrar. Fica um pouco a leste da Estrada dos Reis, não muito ao sul do vale do Arnom — fácil de combinar com o planalto de Moabe e Kerak no mesmo dia."
+    },
+
+    lotcave: {
+      name: "A Caverna de Ló (Mosteiro de São Ló)",
+      place: "Ruínas de um mosteiro bizantino numa encosta perto de Ghor es-Safi",
+      story: "Depois que Sodoma foi destruída, Ló fugiu primeiro para Zoar, mas teve medo de ficar na cidade; então subiu ao monte com suas duas filhas e se abrigou numa caverna. Achando que não havia mais homens no mundo, as filhas fizeram algo gravemente errado, e cada uma teve um filho: Moabe, pai dos moabitas, e Ben-Ami, pai dos amonitas. Os cristãos bizantinos acreditavam que esta era a caverna e construíram um mosteiro e uma igreja ao lado da entrada, com inscrições em mosaico que dizem \"São Ló\". O mapa em mosaico de Madaba também mostra este santuário. O Museu do Ponto Mais Baixo da Terra, ao pé do monte, expõe os achados do lugar.",
+      reflect: "A família de Ló escapou de Sodoma, mas a influência de Sodoma ficou com eles. Existe algum lugar ou hábito que você deixou para trás e que ainda molda você?",
+      mission: "⛰️ Missão: Suba até o mosteiro, encontre a entrada da caverna e olhe de volta para a planície no extremo sul do mar Morto.",
+      quiz: { q: "Moabe, filho da filha mais velha de Ló, foi o pai de qual povo?", options: ["Os moabitas", "Os edomitas", "Os filisteus"] },
+      howto: "No trecho sul da rodovia do mar Morto, logo ao norte da cidade de Ghor es-Safi. Navegue primeiro até o Museu do Ponto Mais Baixo da Terra (Museum at the Lowest Place on Earth); o mosteiro fica na encosta atrás dele, subindo uma escadaria íngreme (cerca de 10–15 minutos). É um dos lugares mais baixos da Terra e extremamente quente — evite o meio-dia no verão e leve bastante água. As coordenadas são aproximadas; fique atento às placas ao chegar perto."
+    },
+
+    zoar: {
+      name: "Zoar (a cidade pequena para onde Ló fugiu)",
+      place: "A cidade de Ghor es-Safi, no extremo sul do mar Morto",
+      story: "Os anjos insistiram que Ló fugisse para o monte, mas Ló suplicou: \"esta cidade está próxima para fugir ali, a qual é pequena… (não é ela pequena?)\" Os anjos concordaram, e por isso a cidade foi chamada Zoar, que quer dizer \"pequena\". O sol já tinha nascido quando Ló chegou a Zoar, e então Sodoma foi destruída. Antes disso, quando Ló escolheu sua terra, viu que a planície do Jordão era toda bem regada, \"como a terra do Egito entrando em Zoar\". Na época bizantina a cidade se chamava Zoora, e o mapa em mosaico de Madaba a mostra entre palmeiras. Hoje Ghor es-Safi ainda é um mar de plantações de tomate e banana.",
+      reflect: "Ló foi atrás da terra que parecia mais rica e acabou recuando para uma cidade pequena e depois para uma caverna. Quando você faz escolhas, olha mais para a vantagem imediata ou para a direção a longo prazo?",
+      mission: "🍅 Missão: Olhe as plantações ao redor e compare com os montes secos à beira do mar Morto. Imagine que a terra \"bem regada\" que Ló viu era algo assim.",
+      quiz: { q: "O que significa o nome \"Zoar\"?", options: ["Sal", "Pequena", "Fonte"] },
+      howto: "No trecho sul da rodovia do mar Morto, cerca de 1 hora e 15 minutos de carro ao sul da área de hotéis do norte do mar Morto. A cidade tem postos de gasolina e pequenas lojas. Combine com a Caverna de Ló e o Museu do Ponto Mais Baixo da Terra, e depois suba para o leste, para as montanhas, até Kerak (cerca de 1 hora)."
+    },
+
+    sodom: {
+      name: "Sodoma e Gomorra",
+      place: "Localização incerta, talvez no extremo sul ou no norte do mar Morto",
+      story: "O pecado de Sodoma era muito grave, e Deus decidiu destruí-la. Abraão intercedeu pela cidade, e Deus aceitou não destruí-la se houvesse ali pelo menos dez justos. Não havia nem dez. Os anjos pegaram a família de Ló pela mão e a levaram para fora, dizendo que não olhassem para trás. Mas a mulher de Ló olhou para trás e se tornou uma estátua de sal. Jesus depois advertiu os discípulos: \"Lembrai-vos da mulher de Ló.\" Onde ficavam Sodoma e Gomorra ainda é discutido: a tradição as coloca no extremo sul do mar Morto, e outros defendem o extremo norte, por exemplo Tall el-Hammam (Sitim, no Capítulo 4). Por isso esta é uma fase secreta. A foto mostra uma coluna de rocha de sal na margem oeste do mar Morto que os moradores chamam de \"a mulher de Ló\".",
+      reflect: "A mulher de Ló tinha saído da cidade com os pés, mas o coração ainda estava em Sodoma. Existe algo que Deus está pedindo que você largue e para o qual você continua olhando para trás?",
+      mission: "🔒 Missão secreta: Leia Gênesis 18.16–19.29 e depois volte para o quiz.",
+      quiz: { q: "Em que a mulher de Ló se tornou quando olhou para trás?", options: ["Numa pedra", "Numa estátua de sal", "Numa árvore"] },
       howto: "Esta é uma fase secreta: a localização exata é desconhecida, então não é preciso ir até lá. Responda o quiz corretamente para ganhar o carimbo."
     }
   },

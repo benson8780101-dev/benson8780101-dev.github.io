@@ -33,6 +33,14 @@ window.VERSES = {
   "en": "The king cast them in the plain of the Jordan, in the clay ground between Succoth and Zarethan.",
   "pt": "Todo o fez fundir o rei na planície do Jordão, em terra argilosa, entre Sucote e Zaretã."
  },
+ "1 Sam 22:3": {
+  "zhRef": "撒母耳記上 22:3",
+  "enRef": "1 Samuel 22:3",
+  "ptRef": "1 Samuel 22:3",
+  "zh": "大衛從那裡往摩押的米斯巴去，對摩押王說：「求你容我父母搬來，住在你們這裡，等我知道　神要為我怎樣行。」",
+  "en": "David went there to Mizpeh of Moab, and he said to the king of Moab, “Please let my father and my mother come out with you, until I know what God will do for me.”",
+  "pt": "E foi-se Davi dali a Mispá de Moabe, e disse ao rei de Moabe: Eu te rogo que meu pai e minha mãe estejam convosco, até que saiba o que Deus fará de mim."
+ },
  "1 Sam 31:11-13": {
   "zhRef": "撒母耳記上 31:11-13",
   "enRef": "1 Samuel 31:11-13",
@@ -56,6 +64,14 @@ window.VERSES = {
   "zh": "以利亞將自己的外衣捲起來，用以打水，水就左右分開，二人走乾地而過。",
   "en": "Elijah took his mantle, and wrapped it together, and struck the waters, and they were divided here and there, so that they two went over on dry ground.",
   "pt": "Tomando então Elias seu manto, dobrou-o, e feriu as águas, as quais se apartaram a um e a outro lado, e passaram ambos em seco."
+ },
+ "2 Kgs 3:26-27": {
+  "zhRef": "列王紀下 3:26-27",
+  "enRef": "2 Kings 3:26-27",
+  "ptRef": "2 Reis 3:26-27",
+  "zh": "摩押王見陣勢甚大，難以對敵，就率領七百拿刀的兵，要衝過陣去到以東王那裡，卻是不能；便將那應當接續他作王的長子，在城上獻為燔祭。以色列人遭遇耶和華的大怒（或譯：招人痛恨），於是三王離開摩押王，各回本國去了。",
+  "en": "When the king of Moab saw that the battle was too severe for him, he took with him seven hundred men who drew sword, to break through to the king of Edom; but they could not. Then he took his eldest son who would have reigned in his place, and offered him for a burnt offering on the wall. There was great wrath against Israel: and they departed from him, and returned to their own land.",
+  "pt": "E quando o rei de Moabe viu que a batalha o vencia, tomou consigo setecentos homens que tiravam espada, para romper contra o rei de Edom, mas não conseguiram. Então arrebatou a seu primogênito que havia de reinar em seu lugar, e sacrificou-lhe em holocausto sobre o muro. E havia grande ira em Israel; e retiraram-se dele, e voltaram a sua terra."
  },
  "2 Kgs 3:4-5": {
   "zhRef": "列王紀下 3:4-5",
@@ -145,6 +161,14 @@ window.VERSES = {
   "en": "From Aroer, which is on the edge of the valley of the Arnon, and the city that is in the valley, even to Gilead, there was not a city too high for us. Yahweh our God delivered up all before us.",
   "pt": "Desde Aroer, que está junto à beira do ribeiro de Arnom, e a cidade que está no ribeiro, até Gileade, não houve cidade que escapasse de nós: todas as entregou o SENHOR nosso Deus em nosso poder."
  },
+ "Deut 2:9": {
+  "zhRef": "申命記 2:9",
+  "enRef": "Deuteronomy 2:9",
+  "ptRef": "Deuteronômio 2:9",
+  "zh": "耶和華吩咐我說：『不可擾害摩押人，也不可與他們爭戰。他們的地，我不賜給你為業，因我已將亞珥賜給羅得的子孫為業。』",
+  "en": "Yahweh said to me, “Don’t bother Moab, neither contend with them in battle; for I will not give you any of his land for a possession; because I have given Ar to the children of Lot for a possession.”",
+  "pt": "E o SENHOR me disse: Não perturbeis a Moabe, nem te empenhes com eles em guerra, que não te darei possessão de sua terra; porque eu dei a Ar por herança aos filhos de Ló."
+ },
  "Deut 34:1": {
   "zhRef": "申命記 34:1",
   "enRef": "Deuteronomy 34:1",
@@ -184,6 +208,38 @@ window.VERSES = {
   "zh": "為流便人分定曠野平原的比悉；為迦得人分定基列的拉末；為瑪拿西人分定巴珊的哥蘭。",
   "en": "Bezer in the wilderness, in the plain country, for the Reubenites; and Ramoth in Gilead, for the Gadites; and Golan in Bashan, for the Manassites.",
   "pt": "A Bezer no deserto, em terra da planície, dos rubenitas; e a Ramote em Gileade, dos gaditas; e a Golã em Basã, dos de Manassés."
+ },
+ "Gen 19:22-23": {
+  "zhRef": "創世記 19:22-23",
+  "enRef": "Genesis 19:22-23",
+  "ptRef": "Gênesis 19:22-23",
+  "zh": "「……你要速速地逃到那城；因為你還沒有到那裡，我不能做甚麼。」因此那城名叫瑣珥（就是小的意思）。羅得到了瑣珥，日頭已經出來了。",
+  "en": "Hurry, escape there, for I can’t do anything until you get there.” Therefore the name of the city was called Zoar. The sun had risen on the earth when Lot came to Zoar.",
+  "pt": "Apressa-te, escapa-te ali; porque nada poderei fazer até que ali tenhas chegado. Por isto foi chamado o nome da cidade, Zoar. O sol saía sobre a terra, quando Ló chegou a Zoar."
+ },
+ "Gen 19:26": {
+  "zhRef": "創世記 19:26",
+  "enRef": "Genesis 19:26",
+  "ptRef": "Gênesis 19:26",
+  "zh": "羅得的妻子在後邊回頭一看，就變成了一根鹽柱。",
+  "en": "But his wife looked back from behind him, and she became a pillar of salt.",
+  "pt": "Então a mulher de Ló olhou atrás, às costas dele, e se tornou estátua de sai."
+ },
+ "Gen 19:30": {
+  "zhRef": "創世記 19:30",
+  "enRef": "Genesis 19:30",
+  "ptRef": "Gênesis 19:30",
+  "zh": "羅得因為怕住在瑣珥，就同他兩個女兒從瑣珥上去，住在山裡；他和兩個女兒住在一個洞裡。",
+  "en": "Lot went up out of Zoar, and lived in the mountain, and his two daughters with him; for he was afraid to live in Zoar. He lived in a cave with his two daughters.",
+  "pt": "Porém Ló subiu de Zoar, e assentou no monte, e suas duas filhas com ele; porque teve medo de ficar em Zoar, e se abrigou em uma caverna ele e suas duas filhas."
+ },
+ "Gen 19:37-38": {
+  "zhRef": "創世記 19:37-38",
+  "enRef": "Genesis 19:37-38",
+  "ptRef": "Gênesis 19:37-38",
+  "zh": "大女兒生了兒子，給他起名叫摩押，就是現今摩押人的始祖。小女兒也生了兒子，給他起名叫便‧亞米，就是現今亞捫人的始祖。",
+  "en": "The firstborn bore a son, and named him Moab. He is the father of the Moabites to this day. The younger also bore a son, and called his name Ben Ammi. He is the father of the children of Ammon to this day.",
+  "pt": "E deu à luz a maior um filho, e chamou seu nome Moabe, o qual é pai dos moabitas até hoje. A menor também deu à luz um filho, e chamou seu nome Ben-Ami, o qual é pai dos amonitas até hoje."
  },
  "Gen 19:38": {
   "zhRef": "創世記 19:38",
@@ -353,6 +409,14 @@ window.VERSES = {
   "en": "He broke down the tower of Penuel, and killed the men of the city.",
   "pt": "Também derrubou a torre de Peniel, e matou aos da cidade."
  },
+ "Luke 17:32": {
+  "zhRef": "路加福音 17:32",
+  "enRef": "Luke 17:32",
+  "ptRef": "Lucas 17:32",
+  "zh": "你們要回想羅得的妻子。",
+  "en": "Remember Lot’s wife!",
+  "pt": "Lembrai-vos da mulher de Ló."
+ },
  "Mark 5:1": {
   "zhRef": "馬可福音 5:1",
   "enRef": "Mark 5:1",
@@ -505,6 +569,22 @@ window.VERSES = {
   "en": "The children of Reuben built Heshbon, Elealeh, Kiriathaim, Nebo, and Baal Meon, (their names being changed), and Sibmah. They gave other names to the cities which they built.",
   "pt": "E os filhos de Rúben edificaram a Hesbom, e a Eleale, e a Quiriataim, E a Nebo, e a Baal-Meom, (mudados os nomes), e a Sibma: e puseram nomes às cidades que edificaram."
  },
+ "Ruth 1:1": {
+  "zhRef": "路得記 1:1",
+  "enRef": "Ruth 1:1",
+  "ptRef": "Rute 1:1",
+  "zh": "當士師秉政的時候，國中遭遇饑荒。在猶大的伯利恆，有一個人帶著妻子和兩個兒子往摩押地去寄居。",
+  "en": "In the days when the judges judged, there was a famine in the land. A certain man of Bethlehem Judah went to live in the country of Moab, he, and his wife, and his two sons.",
+  "pt": "E aconteceu nos dias que governavam os juízes, que houve fome na terra. E um homem de Belém de Judá, foi a peregrinar nos campos de Moabe, ele e sua mulher, e dois filhos seus."
+ },
+ "Ruth 1:16": {
+  "zhRef": "路得記 1:16",
+  "enRef": "Ruth 1:16",
+  "ptRef": "Rute 1:16",
+  "zh": "路得說：「不要催我回去不跟隨你。你往哪裡去，我也往那裡去；你在哪裡住宿，我也在那裡住宿；你的國就是我的國，你的　神就是我的　神。……」",
+  "en": "Ruth said, “Don’t entreat me to leave you, and to return from following after you, for where you go, I will go; and where you lodge, I will lodge; your people shall be my people, and your God my God;",
+  "pt": "E Rute respondeu: Não me rogues que te deixe, e que me aparte de ti: porque de onde quer que tu fores, irei eu; e de onde quer que viveres, viverei. Teu povo será meu povo, e teu Deus meu Deus."
+ },
  "Song 7:4": {
   "zhRef": "雅歌 7:4",
   "enRef": "Song of Songs 7:4",
@@ -622,5 +702,17 @@ window.PHOTOS = {
   "artist": "YousefTOmar",
   "license": "CC BY-SA 3.0",
   "page": "https://commons.wikimedia.org/wiki/File:WadiMujib-Canyon.jpg"
+ },
+ "kerak": {
+  "src": "img/kerak.jpg",
+  "artist": "Berthold Werner",
+  "license": "CC BY 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kerak_BW_1.JPG"
+ },
+ "sodom": {
+  "src": "img/sodom.jpg",
+  "artist": "Disdero",
+  "license": "CC BY-SA 2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:SaltPillarDeadSea.jpg"
  }
 };

@@ -1,4 +1,4 @@
-// 約旦聖經足跡：試玩版內容（第 1～6 章）
+// 約旦聖經足跡：試玩版內容（第 1～7 章）
 // 每一段文字都有 zh（繁體中文）和 en（英文），兩種語言一定要一起改。
 // 座標來源：OpenBible.info 聖經地理資料庫（CC BY 4.0）；標「approx: true」的是大約位置，待實地確認。
 // certainty：yes＝學者大多同意｜likely＝可能｜tradition＝傳統說法｜area＝一整個區域｜unknown＝位置不確定
@@ -77,6 +77,18 @@ window.CHAPTERS = [
     badge: "🪨",
     required: ["machaerus", "dibon"],
     bonus: ["mephaath", "aroer", "arnon", "callirrhoe", "ataroth", "jahaz"]
+  },
+  {
+    id: "ch7",
+    no: 7,
+    title: { zh: "路得的故鄉", en: "Ruth's Homeland" },
+    intro: {
+      zh: "過了亞嫩河谷，就是摩押人的老家：卡拉克一帶的高原。路得從這裡跟著婆婆回到伯利恆，成了大衛王的曾祖母；往西下到死海南端，則是羅得逃離所多瑪的地方，摩押人的故事就是從那裡開始的。",
+      en: "Beyond the Arnon canyon lies the heartland of Moab: the high plateau around Kerak. From here Ruth followed her mother-in-law to Bethlehem and became King David's great-grandmother. Down to the west, at the south end of the Dead Sea, is where Lot fled from Sodom, and where the story of the Moabites began."
+    },
+    badge: "🌾",
+    required: ["kerak"],
+    bonus: ["ruthmoab", "ar", "lotcave", "zoar", "sodom"]
   }
 ];
 
@@ -1186,6 +1198,188 @@ window.STATIONS = {
       en: "This is a hidden level: the exact location is unknown, so you don't need to visit. Answer the quiz correctly to unlock the stamp."
     },
     photo: null
+  },
+
+  kerak: {
+    name: { zh: "吉珥哈列設（卡拉克城堡）", en: "Kir-hareseth (Kerak Castle)" },
+    place: { zh: "卡拉克市山頂的十字軍城堡", en: "The Crusader castle on the hilltop of Kerak city" },
+    lat: 31.1808, lng: 35.7013, radius: 800,
+    certainty: "yes",
+    verses: ["2 Kgs 3:26-27", "1 Sam 22:3"],
+    story: {
+      zh: "卡拉克就是摩押的堅固城吉珥哈列設。以色列、猶大、以東三個王聯合攻打摩押，把整片土地毀了，只剩下這座城還在。摩押王米沙帶七百個拿刀的兵想衝出去，沒有成功；走投無路之下，他把要接續作王的長子，在城牆上獻為燔祭。以色列人看到這一幕，就撤兵回去了。更早以前，大衛被掃羅追殺的時候，曾經到「摩押的米斯巴」，請摩押王照顧他的父母；有學者認為米斯巴就是這裡。大衛會想到摩押，可能是因為他的曾祖母路得就是摩押人。今天山頂上的巨大城堡，是十字軍在 1142 年蓋的，後來被薩拉丁和馬木路克王朝接手擴建。",
+      en: "Kerak is Kir-hareseth, the stronghold of Moab. The kings of Israel, Judah and Edom joined forces against Moab and laid the land waste until only this city was left standing. King Mesha of Moab led seven hundred swordsmen in an attempt to break out, and failed. Out of options, he offered his eldest son, the heir to his throne, as a burnt offering on the city wall, and Israel withdrew and went home. Long before that, while Saul was hunting him, David went to 'Mizpeh of Moab' and asked the king of Moab to look after his father and mother; some scholars think that Mizpeh was this place. David may have turned to Moab because his great-grandmother Ruth was a Moabite. The massive castle on the hilltop today was built by the Crusaders in 1142 and later taken over and enlarged by Saladin and the Mamluks."
+    },
+    reflect: {
+      zh: "以賽亞先知宣告摩押要受審判，卻說「我心腸為摩押哀鳴如琴」：神連對敵人都心疼。你有沒有一個很難去愛的人，可以試著用神的眼光看他？",
+      en: "The prophet Isaiah announced judgment on Moab, yet said, 'My heart sounds like a harp for Moab': God grieves even over enemies. Is there someone hard for you to love whom you could try to see through God's eyes?"
+    },
+    mission: {
+      zh: "🏰 任務：走到城牆邊往西看，天氣好時可以看到死海。想像當年米沙站在城牆上，被三國大軍團團圍住，心裡有多絕望。",
+      en: "🏰 Mission: Walk to the wall and look west; on a clear day you can see the Dead Sea. Imagine Mesha standing on the city wall, surrounded by the armies of three kingdoms, and how desperate he must have felt."
+    },
+    quiz: {
+      q: { zh: "大衛把父母託給誰照顧？", en: "Whom did David ask to look after his parents?" },
+      options: [{ zh: "以東王", en: "The king of Edom" }, { zh: "摩押王", en: "The king of Moab" }, { zh: "亞捫王", en: "The king of Ammon" }],
+      answer: 1
+    },
+    howto: {
+      zh: "從安曼往南開車約 2 小時（走沙漠公路較快，走君王大道可以沿路經過第 6 章的地點）。有遊客中心，要買票（約旦通行證可用）。城堡裡有很多又暗又長的地道，帶手電筒或用手機照明，地面不平要小心。城堡外的街上有餐廳可以吃午餐。",
+      en: "About 2 hours' drive south of Amman (the Desert Highway is faster; the King's Highway passes the Chapter 6 sites on the way). There's a visitor center and an entrance fee (the Jordan Pass is accepted). The castle has many long, dark tunnels—bring a flashlight or use your phone, and watch your step on the uneven floors. There are restaurants on the streets outside for lunch."
+    },
+    photo: "kerak"
+  },
+
+  ruthmoab: {
+    name: { zh: "摩押地（路得的故鄉）", en: "The Fields of Moab (Ruth's Homeland)" },
+    place: { zh: "亞嫩河谷南邊到卡拉克之間的摩押高原", en: "The Moab plateau between the Arnon canyon and Kerak" },
+    lat: 31.3, lng: 35.72, radius: 15000,
+    certainty: "area",
+    verses: ["Ruth 1:1", "Ruth 1:16"],
+    story: {
+      zh: "士師時代，伯利恆鬧饑荒，以利米勒帶著妻子拿俄米和兩個兒子，搬到「摩押地」寄居。兩個兒子娶了摩押女子俄珥巴和路得，後來三個男人都死了。拿俄米決定回伯利恆，勸兩個媳婦回娘家。俄珥巴哭著離開，路得卻緊緊跟著婆婆，說出聖經裡最動人的承諾之一：「你往哪裡去，我也往那裡去……你的國就是我的國，你的神就是我的神。」路得後來嫁給波阿斯，成了大衛王的曾祖母，馬太福音還把她的名字寫進耶穌的家譜。聖經沒說他們住在摩押哪一座城，所以整片摩押高原都算。",
+      en: "In the days of the judges, a famine struck Bethlehem, and Elimelech took his wife Naomi and their two sons to live in 'the country of Moab.' The sons married Moabite women, Orpah and Ruth, and then all three men died. Naomi decided to return to Bethlehem and urged her daughters-in-law to go home to their families. Orpah left in tears, but Ruth clung to her mother-in-law and made one of the most moving promises in the Bible: 'Where you go, I will go… your people will be my people, and your God my God.' Ruth later married Boaz and became King David's great-grandmother, and Matthew even writes her name into Jesus' family tree. The Bible doesn't say which town in Moab they lived in, so the whole Moab plateau counts."
+    },
+    reflect: {
+      zh: "路得是外國人、寡婦，前途一片模糊，卻選擇留下來陪伴拿俄米。你身邊有沒有一個正在低谷裡的人，需要你說「我陪你」？",
+      en: "Ruth was a foreigner and a widow with an uncertain future, yet she chose to stay with Naomi. Is there someone near you, in a low place, who needs to hear you say, 'I'll go with you'?"
+    },
+    mission: {
+      zh: "🌾 任務：在摩押高原的田野邊停下來，讀一遍路得記 1 章 16～17 節，拍一張田野的照片。路得和拿俄米回到伯利恆時，正是「動手割大麥的時候」。",
+      en: "🌾 Mission: Stop beside a field on the Moab plateau, read Ruth 1:16–17, and take a photo of the fields. When Ruth and Naomi reached Bethlehem, it was 'the beginning of the barley harvest.'"
+    },
+    quiz: {
+      q: { zh: "路得是哪一位以色列王的曾祖母？", en: "Ruth was the great-grandmother of which king of Israel?" },
+      options: [{ zh: "掃羅王", en: "King Saul" }, { zh: "所羅門王", en: "King Solomon" }, { zh: "大衛王", en: "King David" }],
+      answer: 2
+    },
+    howto: {
+      zh: "不用到特定地點：沿著君王大道（35 號公路）從亞嫩河谷南岸往卡拉克開，一路上就是摩押高原，在這範圍內都能蓋章。春天（3～4 月）麥田最綠。路邊停車拍照請找安全的地方，注意來車。",
+      en: "No specific spot needed: driving the King's Highway (Route 35) from the south rim of the Arnon canyon toward Kerak, you're on the Moab plateau the whole way, and anywhere in this area counts. The wheat fields are greenest in spring (March–April). If you stop by the road for photos, find a safe place and watch for traffic."
+    },
+    photo: null
+  },
+
+  ar: {
+    name: { zh: "亞珥（賜給羅得子孫的地）", en: "Ar (Given to the Descendants of Lot)" },
+    place: { zh: "Khirbet al-Balu'a 遺址，君王大道東邊", en: "The ruins of Khirbet al-Balu'a, east of the King's Highway" },
+    lat: 31.359913, lng: 35.782764, radius: 1000,
+    certainty: "likely",
+    noFacilities: true,
+    verses: ["Deut 2:9"],
+    story: {
+      zh: "以色列人從曠野北上，經過摩押的時候，神特別吩咐摩西：「不可擾害摩押人，也不可與他們爭戰」，因為神已經把亞珥賜給羅得的子孫。摩押人是羅得的後代，神沒有忘記羅得，也照顧他的子孫。許多學者認為亞珥就是這裡的 Balu'a 大遺址；這裡曾經出土一塊古老的石碑，刻著一位王站在兩位神明之間，是摩押時期的重要文物，現在收藏在安曼的博物館。",
+      en: "As Israel came north from the wilderness past Moab, God gave Moses a specific command: 'Don't bother Moab, neither contend with them in battle,' because he had given Ar to the descendants of Lot. The Moabites descended from Lot; God had not forgotten Lot, and cared for his descendants too. Many scholars think Ar is the large ruin here at Balu'a. An ancient stele was found here showing a king standing between two gods, an important Moabite-era artifact now kept in a museum in Amman."
+    },
+    reflect: {
+      zh: "神叫以色列人不要搶摩押人的地，即使他們有能力搶。你有能力爭、卻選擇讓步的時候，心裡在想什麼？",
+      en: "God told Israel not to take Moab's land, even though they could have. When you have the power to fight for something but choose to give way, what goes on in your heart?"
+    },
+    mission: {
+      zh: "🔭 任務：從遺址往北看，找找看亞嫩河谷的方向。以色列人當年就是在這一帶繞過摩押人的城，沒有攻打。",
+      en: "🔭 Mission: From the ruins, look north toward the Arnon canyon. Somewhere around here, Israel passed by the Moabite towns without attacking them."
+    },
+    quiz: {
+      q: { zh: "神為什麼不讓以色列人攻打摩押？", en: "Why did God tell Israel not to fight Moab?" },
+      options: [{ zh: "摩押人太強大", en: "Moab was too strong" }, { zh: "神已經把亞珥賜給羅得的子孫", en: "God had given Ar to the descendants of Lot" }, { zh: "以色列人迷路了", en: "Israel had lost its way" }],
+      answer: 1
+    },
+    howto: {
+      zh: "⚠️ 考古遺址，沒有遊客設施，能不能進去還沒確認。在君王大道上、亞嫩河谷南邊不遠處往東，可以和摩押高原、卡拉克排在同一天。",
+      en: "⚠️ An archaeological site with no visitor facilities; access hasn't been confirmed. It lies a short way east of the King's Highway, not far south of the Arnon canyon—easy to combine with the Moab plateau and Kerak on the same day."
+    },
+    photo: null
+  },
+
+  lotcave: {
+    name: { zh: "羅得洞（聖羅得修道院）", en: "Lot's Cave (Monastery of St. Lot)" },
+    place: { zh: "Ghor es-Safi 附近山坡上的拜占庭修道院遺址", en: "Byzantine monastery ruins on a hillside near Ghor es-Safi" },
+    lat: 31.0468, lng: 35.5027, radius: 1500,
+    certainty: "tradition",
+    approx: true,
+    verses: ["Gen 19:30", "Gen 19:37-38"],
+    story: {
+      zh: "所多瑪被毀滅後，羅得先逃到瑣珥，後來不敢住在城裡，就帶著兩個女兒上山，住在一個山洞裡。兩個女兒以為世上再也沒有男人，做了違背倫常的事，各生了一個兒子：摩押，就是摩押人的祖先；便亞米，就是亞捫人的祖先。拜占庭時代的基督徒相信就是這個山洞，在洞口旁蓋了修道院和教堂，地上的馬賽克銘文還寫著「聖羅得」。馬達巴馬賽克地圖上也畫著這座聖所。山下的「地球最低點博物館」收藏了這裡挖出來的文物。",
+      en: "After Sodom was destroyed, Lot first fled to Zoar, but was afraid to stay in the town, so he went up into the hills with his two daughters and lived in a cave. Thinking there were no men left in the world, the daughters did something deeply wrong, and each bore a son: Moab, ancestor of the Moabites, and Ben-ammi, ancestor of the Ammonites. Byzantine Christians believed this was the cave and built a monastery and church beside its entrance, with mosaic inscriptions naming 'Saint Lot.' The Madaba mosaic map shows this sanctuary too. The Museum at the Lowest Place on Earth, below the hill, displays finds from the site."
+    },
+    reflect: {
+      zh: "羅得一家逃出了所多瑪，所多瑪的影響卻還留在心裡。你有沒有一個已經離開、卻還在影響你的環境或習慣？",
+      en: "Lot's family escaped Sodom, but Sodom's influence stayed with them. Is there a place or habit you've left behind that still shapes you?"
+    },
+    mission: {
+      zh: "⛰️ 任務：爬到修道院，找到通往山洞的入口，回頭往下看死海南端的平原。",
+      en: "⛰️ Mission: Climb up to the monastery, find the entrance to the cave, and look back down over the plain at the south end of the Dead Sea."
+    },
+    quiz: {
+      q: { zh: "羅得的大女兒生的兒子摩押，是哪一個民族的祖先？", en: "Lot's elder daughter's son Moab was the ancestor of which people?" },
+      options: [{ zh: "摩押人", en: "The Moabites" }, { zh: "以東人", en: "The Edomites" }, { zh: "非利士人", en: "The Philistines" }],
+      answer: 0
+    },
+    howto: {
+      zh: "在死海公路南段，Ghor es-Safi 鎮北邊。先導航到「地球最低點博物館」（Museum at the Lowest Place on Earth），修道院在博物館後方的山坡上，要爬一段很陡的階梯（大約 10～15 分鐘）。這裡是全世界最低的地方之一，非常熱，避開夏天中午，帶足水。座標是大約位置，快到時看路標。",
+      en: "On the southern stretch of the Dead Sea highway, just north of the town of Ghor es-Safi. Navigate first to the Museum at the Lowest Place on Earth; the monastery is on the hillside behind it, up a steep flight of steps (about 10–15 minutes). This is one of the lowest places on Earth and extremely hot—avoid summer middays and bring plenty of water. The coordinates are approximate, so watch for signs as you get close."
+    },
+    photo: null
+  },
+
+  zoar: {
+    name: { zh: "瑣珥（羅得逃去的小城）", en: "Zoar (The Little Town Lot Fled To)" },
+    place: { zh: "死海南端的 Ghor es-Safi 鎮", en: "The town of Ghor es-Safi at the south end of the Dead Sea" },
+    lat: 31.036904, lng: 35.487657, radius: 2500,
+    certainty: "likely",
+    verses: ["Gen 19:22-23"],
+    story: {
+      zh: "天使催羅得趕快逃到山上，羅得卻求說：「這城又小又近，讓我逃到那裡吧，這不是一個小的嗎？」天使答應了，所以那城叫「瑣珥」，意思就是「小」。羅得到瑣珥的時候，太陽已經出來了，接著所多瑪就被毀滅。更早以前，羅得選地的時候，看見約旦河平原「都是滋潤的……直到瑣珥」。拜占庭時代這裡叫 Zoora，馬達巴馬賽克地圖上畫著這座城和一片棕櫚樹。今天 Ghor es-Safi 還是一大片農田，種番茄、香蕉。",
+      en: "The angels urged Lot to flee to the hills, but Lot pleaded, 'This city is near and small—let me escape there. Isn't it a little one?' The angels agreed, so the town was called Zoar, meaning 'little.' The sun had risen by the time Lot reached Zoar, and then Sodom was destroyed. Earlier, when Lot chose his land, he saw that the Jordan plain was 'well-watered everywhere… as you go to Zoar.' In Byzantine times the town was called Zoora, and the Madaba mosaic map shows it among palm trees. Today Ghor es-Safi is still a sea of farms growing tomatoes and bananas."
+    },
+    reflect: {
+      zh: "羅得當年看哪裡肥沃就往哪裡去，結果一路退到一座小城、再退到山洞。你做選擇的時候，最常看的是眼前的好處，還是長遠的方向？",
+      en: "Lot moved toward whatever land looked richest, and ended up retreating to a little town, then to a cave. When you make choices, do you look more at the immediate benefit or at the long-term direction?"
+    },
+    mission: {
+      zh: "🍅 任務：看看四周的農田，跟死海邊光禿禿的山比一比。想像羅得當年看到的「滋潤之地」大概就是這個樣子。",
+      en: "🍅 Mission: Look at the farms around you and compare them with the bare hills by the Dead Sea. Imagine this is something like the 'well-watered' land Lot saw."
+    },
+    quiz: {
+      q: { zh: "「瑣珥」這個名字是什麼意思？", en: "What does the name 'Zoar' mean?" },
+      options: [{ zh: "鹽", en: "Salt" }, { zh: "小", en: "Little" }, { zh: "泉水", en: "Spring" }],
+      answer: 1
+    },
+    howto: {
+      zh: "在死海公路南段，從死海北邊的度假飯店區往南開約 1 小時 15 分。鎮上有加油站和小商店，可以和羅得洞、地球最低點博物館排在一起，再往東上山去卡拉克（約 1 小時）。",
+      en: "On the southern stretch of the Dead Sea highway, about 1 hour 15 minutes' drive south of the northern Dead Sea resort area. The town has gas stations and small shops. Combine it with Lot's Cave and the Museum at the Lowest Place on Earth, then head east up into the hills to Kerak (about 1 hour)."
+    },
+    photo: null
+  },
+
+  sodom: {
+    name: { zh: "所多瑪與蛾摩拉", en: "Sodom and Gomorrah" },
+    place: { zh: "位置不確定，可能在死海南端或北端", en: "Location uncertain, possibly at the south or north end of the Dead Sea" },
+    hidden: true,
+    certainty: "unknown",
+    verses: ["Gen 19:26", "Luke 17:32"],
+    story: {
+      zh: "所多瑪城的罪惡極重，神決定毀滅它。亞伯拉罕為這城向神求情，神答應：只要城裡有十個義人，就不毀滅。結果連十個都沒有。天使拉著羅得一家的手把他們帶出城，吩咐他們不可回頭看。羅得的妻子卻在後邊回頭一看，就變成了一根鹽柱。耶穌後來提醒門徒：「你們要回想羅得的妻子。」所多瑪和蛾摩拉到底在哪裡，學者到現在還沒有定論：傳統說法在死海南端，也有人認為在北端，例如第 4 章的什亭 Tall el-Hammam。所以這是隱藏關卡。照片是死海西岸的一根鹽岩柱，當地人叫它「羅得的妻子」。",
+      en: "Sodom's sin was grievous, and God decided to destroy it. Abraham pleaded with God for the city, and God agreed not to destroy it if even ten righteous people were found there. There weren't even ten. The angels took Lot's family by the hand and led them out, telling them not to look back. But Lot's wife looked back and became a pillar of salt. Jesus later warned his disciples, 'Remember Lot's wife.' Where Sodom and Gomorrah actually stood is still debated: tradition places them at the south end of the Dead Sea, while others argue for the north end, for example Tall el-Hammam (Shittim in Chapter 4). So this is a hidden level. The photo shows a salt-rock pillar on the Dead Sea's western shore that locals call 'Lot's Wife.'"
+    },
+    reflect: {
+      zh: "羅得的妻子人已經走出來了，心卻還留在所多瑪。有沒有什麼是神要你放下、你卻一直回頭看的？",
+      en: "Lot's wife had left the city with her feet, but her heart was still in Sodom. Is there something God is asking you to let go of that you keep looking back at?"
+    },
+    mission: {
+      zh: "🔒 隱藏任務：讀完創世記 18 章 16 節到 19 章 29 節，再回來答題。",
+      en: "🔒 Hidden mission: Read Genesis 18:16–19:29, then come back for the quiz."
+    },
+    quiz: {
+      q: { zh: "羅得的妻子回頭一看，變成了什麼？", en: "What did Lot's wife become when she looked back?" },
+      options: [{ zh: "一塊石頭", en: "A stone" }, { zh: "一根鹽柱", en: "A pillar of salt" }, { zh: "一棵樹", en: "A tree" }],
+      answer: 1
+    },
+    howto: {
+      zh: "這是隱藏關卡：確切位置不知道，不需要到現場。答對上面的問答就能解鎖印章。",
+      en: "This is a hidden level: the exact location is unknown, so you don't need to visit. Answer the quiz correctly to unlock the stamp."
+    },
+    photo: "sodom"
   }
 };
 
@@ -1218,5 +1412,6 @@ window.NAV = {
   heshbon: "Tell Hesban, Jordan",
   machaerus: "Mukawir Castle",
   mephaath: "Umm ar-Rasas",
-  arnon: "Wadi Mujib Viewpoint"
+  arnon: "Wadi Mujib Viewpoint",
+  kerak: "Kerak Castle"
 };
