@@ -61,8 +61,8 @@ const T = {
   certUnknown: { zh: "❓ 位置不確定", en: "❓ Location uncertain" },
   hiddenTag: { zh: "隱藏", en: "Hidden" },
   hiddenHelp: { zh: "🔒 這是隱藏關卡：位置不確定，不用到現場。讀完經文和故事，答對下面的小問答，就會解鎖印章。", en: "🔒 This is a hidden level: the location is uncertain, so no visit is needed. Read the scripture and story, then answer the quiz below to unlock the stamp." },
-  chapterPassed: { zh: "🎉 第 {n} 章過關！獲得徽章 {b}", en: "🎉 Chapter {n} complete! Badge earned {b}" },
-  chapterGold: { zh: "🏆 第 {n} 章全部完成！徽章變成金色了", en: "🏆 Chapter {n} fully complete! Your badge turned gold" },
+  chapterPassed: { zh: "🎉 {c}過關！獲得徽章 {b}", en: "🎉 {c} complete! Badge earned {b}" },
+  chapterGold: { zh: "🏆 {c}全部完成！徽章變成金色了", en: "🏆 {c} fully complete! Your badge turned gold" },
   newRank: { zh: "🎖️ 新稱號：{r}", en: "🎖️ New rank: {r}" },
   stampToast: { zh: "🛂 蓋章成功：{s}", en: "🛂 Stamped: {s}" },
   myStamps: { zh: "我的印章", en: "My Stamps" },
@@ -76,14 +76,16 @@ const T = {
   storageOff: { zh: "⚠️ 這個瀏覽器不能存資料（可能是無痕模式），關掉後進度會不見。", en: "⚠️ This browser can't save data (maybe private mode); progress will be lost when you close it." },
   introTitle: { zh: "歡迎來到約旦聖經足跡！", en: "Welcome to the Jordan Bible Trail!" },
   introBody: {
-    zh: "主線共 {c} 章、{n} 個地點，從北部的基列山地一路走到紅海邊。\n・經文和故事隨時都能讀，適合出發前預習。\n・人到了現場，按「我到了，蓋章」，手機用 GPS 確認位置後幫你蓋章。\n・標「隱藏」的關卡位置不確定，不用到現場，答對問答就解鎖。\n・去完一章的「必去」站就過關；全部去完，徽章會變金色。\n・九章的「必去」站都蓋完，可以在「護照」分頁領取破關紀念證書。\n・地圖要有網路；其他內容沒網路也能用。",
-    en: "The main trail has {c} chapters and {n} sites, from the hills of Gilead in the north to the Red Sea.\n• Read the scripture and stories anytime—great for preparing before you go.\n• On site, tap \"I'm here — stamp it!\" and your phone's GPS confirms your location.\n• 'Hidden' levels have uncertain locations—no visit needed; answer the quiz to unlock them.\n• Visit a chapter's must-see stops to complete it; visit them all to earn a gold badge.\n• Complete the must-see stops of all nine chapters to claim your certificate in the Passport tab.\n• The map needs internet; everything else works offline."
+    zh: "主線共 {c} 章、{n} 個地點，從北部的基列山地一路走到紅海邊。\n・經文和故事隨時都能讀，適合出發前預習。\n・人到了現場，按「我到了，蓋章」，手機用 GPS 確認位置後幫你蓋章。\n・標「隱藏」的關卡位置不確定，不用到現場，答對問答就解鎖。\n・去完一章的「必去」站就過關；全部去完，徽章會變金色。\n・「支線」是額外的路線，想走再走，不影響破關證書。\n・九章的「必去」站都蓋完，可以在「護照」分頁領取破關紀念證書。\n・地圖要有網路；其他內容沒網路也能用。",
+    en: "The main trail has {c} chapters and {n} sites, from the hills of Gilead in the north to the Red Sea.\n• Read the scripture and stories anytime—great for preparing before you go.\n• On site, tap \"I'm here — stamp it!\" and your phone's GPS confirms your location.\n• 'Hidden' levels have uncertain locations—no visit needed; answer the quiz to unlock them.\n• Visit a chapter's must-see stops to complete it; visit them all to earn a gold badge.\n• Side trails are optional extra routes and don't affect your certificate.\n• Complete the must-see stops of all nine chapters to claim your certificate in the Passport tab.\n• The map needs internet; everything else works offline."
   },
   gotIt: { zh: "知道了，開始！", en: "Got it, let's go!" },
   locating: { zh: "正在找你的位置…", en: "Finding you…" },
   youAreHere: { zh: "你在這裡", en: "You are here" },
   navBtn: { zh: "🧭 Google 地圖導航", en: "🧭 Navigate with Google Maps" },
   navApprox: { zh: "這是大約位置，快到的時候請看當地路標或問路。", en: "This is an approximate location—watch for local signs or ask for directions as you get close." },
+  sideChapter: { zh: "支線", en: "Side Trail" },
+  sideNote: { zh: "支線是額外的路線，想走再走，不影響破關證書。", en: "Side trails are optional extra routes; they don't affect your certificate." },
   certTitle: { zh: "🏅 破關紀念證書", en: "🏅 Certificate of Completion" },
   certHow: { zh: "九章的「必去」站全部蓋完，就能領取證書；全部 {n} 個地點都蓋完，證書會變成金色版。", en: "Stamp every must-see stop in all nine chapters to earn your certificate; stamp all {n} sites and it becomes the gold edition." },
   certLeft: { zh: "還差 {a} 個必去站（已完成 {b} / {c} 章）", en: "{a} must-see stops to go ({b} / {c} chapters complete)" },
@@ -142,8 +144,8 @@ const T_PT = {
   certUnknown: "❓ Localização incerta",
   hiddenTag: "Secreta",
   hiddenHelp: "🔒 Esta é uma fase secreta: a localização é incerta, então não é preciso ir até lá. Leia a passagem e a história e responda o quiz abaixo para ganhar o carimbo.",
-  chapterPassed: "🎉 Capítulo {n} concluído! Medalha conquistada {b}",
-  chapterGold: "🏆 Capítulo {n} completo! Sua medalha ficou dourada",
+  chapterPassed: "🎉 {c} concluído! Medalha conquistada {b}",
+  chapterGold: "🏆 {c} completo! Sua medalha ficou dourada",
   newRank: "🎖️ Novo título: {r}",
   stampToast: "🛂 Carimbado: {s}",
   myStamps: "Meus Carimbos", myBadges: "Medalhas dos Capítulos",
@@ -154,12 +156,14 @@ const T_PT = {
   importBad: "Este arquivo não parece ser um backup da Trilha Bíblica, então nada foi importado.",
   storageOff: "⚠️ Este navegador não consegue salvar dados (talvez esteja em modo anônimo); o progresso se perde ao fechar.",
   introTitle: "Bem-vindo à Trilha Bíblica da Jordânia!",
-  introBody: "A trilha principal tem {c} capítulos e {n} lugares, das colinas de Gileade, no norte, até o mar Vermelho.\n• Leia as passagens e as histórias quando quiser — ótimo para se preparar antes da viagem.\n• No local, toque em \"Cheguei — carimbar!\" e o GPS do celular confirma onde você está.\n• As fases \"secretas\" têm localização incerta — não precisa ir até lá; responda o quiz para desbloqueá-las.\n• Visite as paradas obrigatórias de um capítulo para concluí-lo; visite todas para ganhar a medalha de ouro.\n• Conclua as paradas obrigatórias dos nove capítulos para pegar seu certificado na aba Passaporte.\n• O mapa precisa de internet; todo o resto funciona offline.",
+  introBody: "A trilha principal tem {c} capítulos e {n} lugares, das colinas de Gileade, no norte, até o mar Vermelho.\n• Leia as passagens e as histórias quando quiser — ótimo para se preparar antes da viagem.\n• No local, toque em \"Cheguei — carimbar!\" e o GPS do celular confirma onde você está.\n• As fases \"secretas\" têm localização incerta — não precisa ir até lá; responda o quiz para desbloqueá-las.\n• Visite as paradas obrigatórias de um capítulo para concluí-lo; visite todas para ganhar a medalha de ouro.\n• As trilhas extras são rotas opcionais e não afetam o certificado.\n• Conclua as paradas obrigatórias dos nove capítulos para pegar seu certificado na aba Passaporte.\n• O mapa precisa de internet; todo o resto funciona offline.",
   gotIt: "Entendi, vamos lá!",
   locating: "Procurando você…",
   youAreHere: "Você está aqui",
   navBtn: "🧭 Ir com o Google Maps",
   navApprox: "Esta é uma localização aproximada — fique atento às placas ou peça informações quando estiver chegando.",
+  sideChapter: "Trilha Extra",
+  sideNote: "As trilhas extras são rotas opcionais; não afetam o certificado.",
   certTitle: "🏅 Certificado de Conclusão",
   certHow: "Carimbe todas as paradas obrigatórias dos nove capítulos para ganhar o certificado; carimbe todos os {n} lugares e ele vira a edição dourada.",
   certLeft: "Faltam {a} paradas obrigatórias ({b} / {c} capítulos concluídos)",
@@ -275,16 +279,20 @@ const stampCount = () => Object.keys(state.stamps).length;
 const starCount = () => Object.keys(state.stars).length;
 function rankFor(n) {
   let r = TITLES[0];
-  for (const x of TITLES) if (x.all ? n >= stationIds().length : n >= x.min) r = x;
+  for (const x of TITLES) if (x.all ? mainStationIds().every((id) => state.stamps[id]) : n >= x.min) r = x;
   return r;
 }
-const introVars = () => ({ c: CHAPTERS.length, n: stationIds().length });
+const introVars = () => ({ c: mainChapters().length, n: mainStationIds().length });
 function chapterStatus(ch) {
   const passed = ch.required.every((id) => state.stamps[id]);
   const gold = passed && ch.bonus.every((id) => state.stamps[id]);
   const all = ch.required.concat(ch.bonus);
   return { passed, gold, done: all.filter((id) => state.stamps[id]).length, total: all.length };
 }
+// 主線＝不是支線的章節；破關證書、最高稱號只算主線
+const mainChapters = () => CHAPTERS.filter((c) => !c.side);
+const mainStationIds = () => mainChapters().flatMap((c) => c.required.concat(c.bonus));
+const chapterLabel = (ch) => (ch.side ? t("sideChapter") : t("chapter", { n: ch.no }));
 function chapterOf(id) { return CHAPTERS.find((c) => c.required.includes(id) || c.bonus.includes(id)); }
 function isRequired(id) { return CHAPTERS.some((c) => c.required.includes(id)); }
 
@@ -310,8 +318,8 @@ function stamp(id, manual) {
   const msgs = [t("stampToast", { s: pick(STATIONS[id].name) })];
   if (ch) {
     const after = chapterStatus(ch);
-    if (after.passed && !before.passed) msgs.push(t("chapterPassed", { n: ch.no, b: ch.badge }));
-    if (after.gold && !before.gold) msgs.push(t("chapterGold", { n: ch.no }));
+    if (after.passed && !before.passed) msgs.push(t("chapterPassed", { c: chapterLabel(ch), b: ch.badge }));
+    if (after.gold && !before.gold) msgs.push(t("chapterGold", { c: chapterLabel(ch) }));
   }
   const rankAfter = rankFor(stampCount());
   if (rankAfter !== rankBefore) msgs.push(t("newRank", { r: rankAfter[lang] }));
@@ -344,16 +352,17 @@ function renderChapters() {
   if (!storageOk) v.append(el("div", { class: "notice" }, t("storageOff")));
   for (const ch of CHAPTERS) {
     const st = chapterStatus(ch);
-    v.append(el("article", { class: "card" },
+    v.append(el("article", { class: "card" + (ch.side ? " side" : "") },
       el("div", { class: "chapter-head" },
         el("div", { class: "badge" + (st.gold ? " gold" : st.passed ? " earned" : ""), "aria-hidden": "true" }, ch.badge),
         el("div", null,
-          el("div", { class: "no" }, t("chapter", { n: ch.no })),
+          el("div", { class: "no" }, chapterLabel(ch)),
           el("h2", null, pick(ch.title)),
           el("div", { class: "muted" }, st.gold ? t("goldDone") : st.passed ? t("passed") : t("notPassed"))
         )
       ),
       el("p", null, pick(ch.intro)),
+      ch.side ? el("p", { class: "muted" }, t("sideNote")) : null,
       el("div", { class: "progress", role: "progressbar", "aria-valuenow": st.done, "aria-valuemax": st.total },
         el("i", { style: `width:${Math.round((st.done / st.total) * 100)}%` })),
       el("ul", { class: "stop-list" }, ch.required.map(stopRow), ch.bonus.map(stopRow))
@@ -378,7 +387,7 @@ function renderPassport() {
         const st = chapterStatus(ch);
         return el("div", { class: "row" },
           el("div", { class: "badge" + (st.gold ? " gold" : st.passed ? " earned" : "") }, ch.badge),
-          el("div", null, el("b", null, t("chapter", { n: ch.no })), el("div", { class: "muted" }, pick(ch.title))));
+          el("div", null, el("b", null, chapterLabel(ch)), el("div", { class: "muted" }, pick(ch.title))));
       }))
     ),
     el("div", { class: "card" },
@@ -482,7 +491,7 @@ function openStation(id) {
   sheet.replaceChildren(
     el("div", { class: "sheet-top" },
       el("button", { class: "close", type: "button", onclick: closeStation }, t("close")),
-      el("span", { class: "muted" }, ch ? t("chapter", { n: ch.no }) + " · " + pick(ch.title) : "")),
+      el("span", { class: "muted" }, ch ? chapterLabel(ch) + " · " + pick(ch.title) : "")),
     el("div", { class: "sheet-body" },
       photo
         ? el("figure", { class: "hero" },
@@ -620,7 +629,7 @@ function initMap() {
 function pinIcon(id) {
   const ch = chapterOf(id);
   const cls = "pin" + (state.stamps[id] ? " done" : isRequired(id) ? " req" : "");
-  const label = state.stamps[id] ? "✓" : ch ? String(ch.no) : "";
+  const label = state.stamps[id] ? "✓" : ch ? (ch.side ? "+" : String(ch.no)) : "";
   return L.divIcon({ className: "", html: `<div class="${cls}"><span>${label}</span></div>`, iconSize: [30, 30], iconAnchor: [15, 30], popupAnchor: [0, -28] });
 }
 // Google 地圖導航網址（手機上會直接打開 Google 地圖 App 並開始規劃開車路線）

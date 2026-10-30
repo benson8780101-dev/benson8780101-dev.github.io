@@ -40,6 +40,10 @@ window.PT = {
     ch9: {
       title: "A Porta do Mar Vermelho",
       intro: "A última etapa da viagem vai de Petra, a cidade de arenito vermelho, até Ácaba, à beira do mar Vermelho. Aqui reinou Aretas, rei dos nabateus, e Paulo foi para a Arábia depois de se converter; Arão morreu num monte daqui, e os navios de Salomão partiram desta costa. Ao chegar ao mar, você terá percorrido toda a terra além do Jordão."
+    },
+    side1: {
+      title: "Graça e Chamado (norte do vale do Jordão)",
+      intro: "Entre as colinas de Gileade (Capítulo 1) e o Jaboque (Capítulo 2) fica um trecho pouco visitado do vale do Jordão. Aqui Eliseu deixou o arado para seguir Elias; Barzilai e Maquir socorreram Davi quando ele fugia; e a igreja primitiva encontrou refúgio. Dá para encaixar na mesma viagem dos Capítulos 1 e 2."
     }
   },
 
@@ -581,6 +585,56 @@ window.PT = {
       reflect: "Os navios de Josafá se quebraram antes de sair do porto. Você já teve um plano que fracassou antes de começar? Olhando para trás, será que Deus estava protegendo você nisso?",
       mission: "🔒 Missão secreta: Leia 1 Reis 22.48–49 e 2 Crônicas 20.35–37 e depois volte para o quiz.",
       quiz: { q: "O que aconteceu com os navios de Josafá em Eziom-Geber?", options: ["Trouxeram muito ouro", "Despedaçaram-se e nunca partiram", "Foram capturados por piratas"] },
+      howto: "Esta é uma fase secreta: a localização exata é desconhecida, então não é preciso ir até lá. Responda o quiz corretamente para ganhar o carimbo."
+    },
+
+    pella: {
+      name: "Pela (o refúgio da igreja primitiva)",
+      place: "As ruínas de Tabaqat Fahl, no norte do vale do Jordão",
+      story: "Jesus tinha avisado os discípulos: \"quando virdes a Jerusalém cercada de exércitos… os que estiverem na Judeia, fujam para os montes\". O historiador da igreja Eusébio registra que, antes de o exército romano destruir Jerusalém no ano 70, os cristãos de Jerusalém, avisados por uma revelação, fugiram para Pela, a leste do Jordão. Pela era uma das cidades de Decápolis; os Evangelhos contam que o homem que Jesus libertou dos demônios foi \"anunciar em Decápolis quão grandes coisas Jesus havia feito com ele\". O sítio tem um teatro romano e igrejas bizantinas; aqui vivem pessoas desde a Idade do Bronze, graças a uma fonte ao pé do monte que nunca seca.",
+      reflect: "Os primeiros cristãos ouviram as palavras de Jesus, deixaram a tempo a cidade que conheciam e recomeçaram a leste do Jordão. Será que Deus está mostrando a você que é hora de deixar um lugar conhecido que já não é seguro?",
+      mission: "⛲ Missão: Encontre a fonte ao pé do monte e depois suba a pequena colina a leste para ver todo o vale do Jordão. Imagine famílias fugindo de Jerusalém há dois mil anos vendo este lugar pela primeira vez.",
+      quiz: { q: "Segundo a história da igreja, para onde fugiram os cristãos de Jerusalém antes do ano 70?", options: ["Pela", "Petra", "Damasco"] },
+      howto: "Ao lado da rodovia do vale do Jordão (Rodovia 65), cerca de 40 minutos de carro de Irbid ou 1 hora e meia de Amã. O sítio é aberto à visitação, e há um restaurante na encosta com vista para o vale. Fácil de combinar com Gadara e Irbid, do Capítulo 1. O vale é quente no verão; o melhor é ir de manhã."
+    },
+
+    abelmeholah: {
+      name: "Abel-Meolá (onde Eliseu foi chamado)",
+      place: "O monte de Tell Abu Sus, no vale do Jordão",
+      story: "Depois que Elias ouviu a voz mansa de Deus no monte Horebe, Deus o mandou ungir \"Eliseu filho de Safate, de Abel-Meolá\" como profeta em seu lugar. Quando Elias encontrou Eliseu, ele estava arando com doze juntas de bois. Elias passou e lançou sobre ele a sua capa. Eliseu voltou, pegou a junta de bois e a matou, cozinhou a carne usando os arreios do arado, deu ao povo para comer e então se levantou, seguiu Elias e o serviu. Queimar o arado e comer os bois queria dizer: eu não vou voltar atrás. Mais tarde, à beira do Jordão (Capítulo 4), Eliseu pegou a capa que caiu de Elias quando ele foi levado ao céu e começou o seu próprio ministério.",
+      reflect: "Eliseu queimou o arado e cortou o caminho de volta. Quando Deus chama você, existe algum \"arado\" que você ainda não tem coragem de queimar?",
+      mission: "🐂 Missão: Olhe as plantações ao redor do monte e tente imaginar doze juntas de bois arando juntas. Leia 1 Reis 19.19–21.",
+      quiz: { q: "O que Eliseu estava fazendo quando Elias o encontrou?", options: ["Pescando no rio", "Arando com bois", "Oferecendo sacrifícios no templo"] },
+      howto: "⚠️ Monte arqueológico sem estrutura para visitantes; ainda não confirmamos se dá para entrar. Fica a oeste da rodovia do vale do Jordão, perto do rio, cerca de 15 minutos ao sul de Pela. A região é perto da fronteira e pode ser área militar — não passe de placas ou postos de controle; a rodovia ali perto já fica dentro da área do carimbo."
+    },
+
+    zaphon: {
+      name: "Zafom e Zaretã (Tell es-Sa'idiyeh)",
+      place: "Um grande monte no meio do vale do Jordão",
+      story: "Os homens de Efraim, irritados por não terem sido chamados para lutar contra os amonitas, se juntaram e atravessaram o rio para tirar satisfação com o juiz Jefté (a palavra hebraica traduzida como \"para o norte\" também pode ser lida como o nome do lugar, Zafom), e começou uma luta. Os gileaditas tomaram os vaus do Jordão; quando um efraimita queria atravessar, mandavam que ele dissesse \"Chibolete\". Os efraimitas não conseguiam pronunciar e diziam \"Sibolete\", e assim eram reconhecidos e mortos. Um simples sotaque virou a linha entre a vida e a morte. Muitos estudiosos identificam Zafom com este grande monte; outros acham que é Zaretã, onde o rei Salomão fundiu o bronze do templo \"em terra argilosa, entre Sucote e Zaretã\" (Sucote fica perto, Capítulo 2). Os arqueólogos encontraram aqui muralhas antigas, um cemitério e uma escadaria de pedra que desce até uma fonte.",
+      reflect: "Um único sotaque dividiu um mesmo povo em dois lados. Você já colocou alguém, na sua cabeça, do \"outro lado\" por causa do sotaque, da origem ou do jeito de falar?",
+      mission: "🗣️ Missão: Com quem estiver com você, tentem dizer \"Chibolete\" e \"Sibolete\" de jeitos diferentes. Depois pense: o que virou o nosso \"chibolete\" na igreja de hoje?",
+      quiz: { q: "Que palavra os gileaditas usavam para reconhecer os efraimitas?", options: ["Aleluia", "Chibolete", "Emanuel"] },
+      howto: "⚠️ Monte arqueológico sem estrutura para visitantes; ainda não confirmamos se dá para subir. Fica ao lado da rodovia do vale do Jordão, cerca de 20 minutos ao norte de Sucote (Tell Deir Alla), do Capítulo 2, então dá para visitar os dois juntos. É muito quente no verão — leve bastante água."
+    },
+
+    rogelim: {
+      name: "Rogelim (a terra de Barzilai)",
+      place: "Perto de Zaharet, ao sul de Irbid",
+      story: "Fugindo do filho Absalão, Davi chegou a Maanaim, a leste do Jordão, cansado e com fome. Então três homens trouxeram camas, bacias, trigo, feijão, mel e queijo para socorrê-lo, e um deles era Barzilai, o gileadita de Rogelim. Quando a guerra acabou e Davi voltava para Jerusalém, convidou Barzilai, de oitenta anos, para ir junto e ser sustentado no palácio. Barzilai recusou: \"Eu te rogo que deixes voltar a teu servo, e que morra em minha cidade\". Ele indicou o jovem Quimã para ir no seu lugar. Barzilai ajudou Davi no pior momento e não pediu nada em troca quando Davi voltou ao poder.",
+      reflect: "Barzilai apareceu quando alguém estava em apuros e se retirou quando essa pessoa se reergueu. Há alguém perto de você \"fugindo\" agora, precisando de uma cama ou de um prato de comida?",
+      mission: "🍯 Missão: Compre um pouco de mel ou queijo numa lojinha local (parte do que Barzilai levou a Davi) e divida com quem estiver com você ou com alguém do lugar.",
+      quiz: { q: "Quantos anos Barzilai tinha quando Davi o convidou para ir a Jerusalém?", options: ["Quarenta", "Sessenta", "Oitenta"] },
+      howto: "Nas vilas ao sul de Irbid, cerca de 20 minutos de carro de Irbid — fácil de combinar com Irbid e Gadara, do Capítulo 1. É uma área comum de vilas, sem ruínas nem estrutura para visitantes; estar perto da vila já coloca você dentro da área do carimbo. A localização é uma estimativa dos estudiosos."
+    },
+
+    lodebar: {
+      name: "Lo-Debar (onde morava Mefibosete)",
+      place: "Localização incerta, talvez perto do rio Jarmuque",
+      story: "Depois de se tornar rei, Davi perguntou se ainda restava alguém da casa de Saul a quem pudesse fazer bem por causa de Jônatas. Jônatas tinha um filho, Mefibosete, coxo dos dois pés, escondido a leste do Jordão, na casa de Maquir, em Lo-Debar — um nome que provavelmente quer dizer \"sem pasto\", um lugar de \"nada\". Naquela época o novo rei costumava eliminar a família do rei anterior, por isso Mefibosete se prostrou diante de Davi: \"Quem é teu servo, para que olhes a um cão morto como eu?\" Mas Davi lhe devolveu todas as terras de Saul e fez com que ele comesse sempre à mesa do rei, como um dos filhos do rei. Mais tarde, quando Davi fugiu para Maanaim, um dos que lhe levaram provisões foi Maquir de Lo-Debar. A localização exata de Lo-Debar ainda é incerta, por isso esta é uma fase secreta.",
+      reflect: "Mefibosete foi tirado de um lugar de \"nada\" e levado à mesa do rei. Diante de Deus, você se vê como um \"cão morto\" ou como filho do Rei?",
+      mission: "🔒 Missão secreta: Leia 2 Samuel 9 e depois volte para o quiz.",
+      quiz: { q: "Por causa de quem Davi foi bondoso com Mefibosete?", options: ["Saul", "Jônatas", "Samuel"] },
       howto: "Esta é uma fase secreta: a localização exata é desconhecida, então não é preciso ir até lá. Responda o quiz corretamente para ganhar o carimbo."
     }
   },

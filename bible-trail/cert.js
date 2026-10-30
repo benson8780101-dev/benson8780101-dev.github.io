@@ -11,10 +11,14 @@ const SERIF = '"Songti TC", "Noto Serif TC", "PMingLiU", Georgia, "Times New Rom
 const SANS = '-apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", "Segoe UI", sans-serif';
 
 function certStatus() {
-  const missing = CHAPTERS.flatMap((ch) => ch.required).filter((id) => !state.stamps[id]);
-  const passedChapters = CHAPTERS.filter((ch) => chapterStatus(ch).passed).length;
+  // 只算主線，支線是額外的
+  const missing = mainChapters().flatMap((ch) => ch.required).filter((id) => !state.stamps[id]);
+  const passedChapters = mainChapters().filter((ch) => chapterStatus(ch).passed).length;
   const ready = missing.length === 0;
-  return { ready, gold: ready && stampCount() === stationIds().length, missing: missing.length, passedChapters };
+  const ids = mainStationIds();
+  const stamped = ids.filter((id) => state.stamps[id]).length;
+  const stars = ids.filter((id) => state.stars[id]).length;
+  return { ready, gold: ready && stamped === ids.length, missing: missing.length, passedChapters, stamped, stars, total: ids.length };
 }
 
 function loadCertName() {
@@ -33,11 +37,11 @@ function certCard() {
   const cs = certStatus();
   const card = el("div", { class: "card cert-card" + (cs.gold ? " gold" : "") },
     el("h2", null, t("certTitle")),
-    el("p", { class: "muted" }, t("certHow", { n: stationIds().length })));
+    el("p", { class: "muted" }, t("certHow", { n: mainStationIds().length })));
   if (!cs.ready) {
     card.append(
-      el("p", null, el("b", null, t("certLeft", { a: cs.missing, b: cs.passedChapters, c: CHAPTERS.length }))),
-      el("div", { class: "progress" }, el("i", { style: `width:${Math.round((cs.passedChapters / CHAPTERS.length) * 100)}%` })));
+      el("p", null, el("b", null, t("certLeft", { a: cs.missing, b: cs.passedChapters, c: mainChapters().length }))),
+      el("div", { class: "progress" }, el("i", { style: `width:${Math.round((cs.passedChapters / mainChapters().length) * 100)}%` })));
     return card;
   }
   const input = el("input", { class: "text-input", type: "text", maxlength: "40", value: loadCertName(), placeholder: t("certNameHint"), "aria-label": t("certName") });
@@ -120,8 +124,9 @@ function drawCertificate(name) {
   y += 100;
 
   // 九章徽章：金色版的章節加金圈
-  const gap = 112, startX = cx - ((CHAPTERS.length - 1) * gap) / 2;
-  CHAPTERS.forEach((ch, i) => {
+  const chs = mainChapters();
+  const gap = 112, startX = cx - ((chs.length - 1) * gap) / 2;
+  chs.forEach((ch, i) => {
     const x = startX + i * gap, st = chapterStatus(ch);
     g.beginPath(); g.arc(x, y, 44, 0, Math.PI * 2);
     g.fillStyle = st.gold ? "rgba(200,150,46,.25)" : "rgba(138,75,42,.12)"; g.fill();
@@ -131,10 +136,10 @@ function drawCertificate(name) {
   });
   y += 160;
 
-  text(g, t("certStats", { a: stampCount(), b: stationIds().length, c: starCount() }), cx, y, `600 32px ${SANS}`, C.ink);
+  text(g, t("certStats", { a: cs.stamped, b: cs.total, c: cs.stars }), cx, y, `600 32px ${SANS}`, C.ink);
   y += 54;
   const times = Object.values(state.stamps).map((s) => s.t).sort((a, b) => a - b);
-  const reqTimes = CHAPTERS.flatMap((ch) => ch.required).map((id) => state.stamps[id].t);
+  const reqTimes = chs.flatMap((ch) => ch.required).map((id) => state.stamps[id].t);
   text(g, t("certDates", { d1: fmtDate(times[0]), d2: fmtDate(Math.max(...reqTimes)) }), cx, y, `400 28px ${SANS}`, C.muted);
   y += 90;
 
@@ -186,7 +191,7 @@ function seal(g, x, y, color) {
   g.lineWidth = 5; g.beginPath(); g.arc(0, 0, 78, 0, Math.PI * 2); g.stroke();
   g.lineWidth = 2; g.beginPath(); g.arc(0, 0, 66, 0, Math.PI * 2); g.stroke();
   g.textAlign = "center";
-  g.font = `700 26px ${SANS}`; g.fillText("✦ " + CHAPTERS.length + " ✦", 0, -14);
+  g.font = `700 26px ${SANS}`; g.fillText("✦ " + mainChapters().length + " ✦", 0, -14);
   g.font = `600 17px ${SANS}`; g.fillText("JORDAN", 0, 14);
   g.fillText("BIBLE TRAIL", 0, 36);
   g.restore();

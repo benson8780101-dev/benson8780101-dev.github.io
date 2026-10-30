@@ -17,6 +17,22 @@ window.VERSES = {
   "en": "So he went and did according to Yahweh’s word; for he went and lived by the brook Cherith, that is before the Jordan. The ravens brought him bread and flesh in the morning, and bread and flesh in the evening; and he drank of the brook.",
   "pt": "E ele foi, e fez conforme à palavra do SENHOR; pois se foi e assentou junto ao ribeiro de Querite, que está antes do Jordão. E os corvos lhe traziam pão e carne pela manhã, e pão e carne à tarde; e bebia do ribeiro."
  },
+ "1 Kgs 19:19": {
+  "zhRef": "列王紀上 19:19",
+  "enRef": "1 Kings 19:19",
+  "ptRef": "1 Reis 19:19",
+  "zh": "於是，以利亞離開那裡走了，遇見沙法的兒子以利沙耕地；在他前頭有十二對牛，自己趕著第十二對。以利亞到他那裡去，將自己的外衣搭在他身上。",
+  "en": "So he departed there, and found Elisha the son of Shaphat, who was plowing, with twelve yoke of oxen before him, and he with the twelfth: and Elijah passed over to him, and cast his mantle on him.",
+  "pt": "E partindo-se ele dali, achou a Eliseu filho de Safate, que arava com doze juntas diante de si; e ele era um dos doze trabalhadores. E passando Elias por diante dele, lançou sobre ele seu manto."
+ },
+ "1 Kgs 19:21": {
+  "zhRef": "列王紀上 19:21",
+  "enRef": "1 Kings 19:21",
+  "ptRef": "1 Reis 19:21",
+  "zh": "以利沙就離開他回去，宰了一對牛，用套牛的器具煮肉給民吃，隨後就起身跟隨以利亞，服事他。",
+  "en": "He returned from following him, and took the yoke of oxen, and killed them, and boiled their flesh with the instruments of the oxen, and gave to the people, and they ate. Then he arose, and went after Elijah, and served him.",
+  "pt": "E interrompeu de segui-lo, tomou um par de bois, e os matou, e com o arado dos bois cozeu a carne deles, e deu-a ao povo que comessem. Depois se levantou, e foi atrás de Elias, e o servia."
+ },
  "1 Kgs 22:34": {
   "zhRef": "列王紀上 22:34",
   "enRef": "1 Kings 22:34",
@@ -160,6 +176,38 @@ window.VERSES = {
   "zh": "押沙龍偶然遇見大衛的僕人。押沙龍騎著騾子，從大橡樹密枝底下經過，他的頭髮被樹枝繞住，就懸掛起來，所騎的騾子便離他去了。",
   "en": "Absalom happened to meet the servants of David. Absalom was riding on his mule, and the mule went under the thick boughs of a great oak, and his head caught hold of the oak, and he was taken up between the sky and earth; and the mule that was under him went on.",
   "pt": "E encontrou-se Absalão com os servos de Davi: e ia Absalão sobre um mulo, e o mulo se entrou debaixo de um espesso e grande carvalho, e prendeu-lhe a cabeça ao carvalho, e ficou entre o céu e a terra; pois o mulo em que ia passou adiante."
+ },
+ "2 Sam 19:32": {
+  "zhRef": "撒母耳記下 19:32",
+  "enRef": "2 Samuel 19:32",
+  "ptRef": "2 Samuel 19:32",
+  "zh": "巴西萊年紀老邁，已經八十歲了。王住在瑪哈念的時候，他就拿食物來供給王；他原是大富戶。",
+  "en": "Now Barzillai was a very aged man, even eighty years old: and he had provided the king with sustenance while he lay at Mahanaim; for he was a very great man.",
+  "pt": "E era Barzilai muito velho, de oitenta anos, o qual havia dado provisão ao rei quando estava em Maanaim, porque era homem muito rico."
+ },
+ "2 Sam 19:37": {
+  "zhRef": "撒母耳記下 19:37",
+  "enRef": "2 Samuel 19:37",
+  "ptRef": "2 Samuel 19:37",
+  "zh": "求你准我回去，好死在我本城，葬在我父母的墓旁。這裡有王的僕人金罕，讓他同我主我王過去，可以隨意待他。",
+  "en": "Please let your servant turn back again, that I may die in my own city, by the grave of my father and my mother. But behold, your servant Chimham; let him go over with my lord the king; and do to him what shall seem good to you.”",
+  "pt": "Eu te rogo que deixes voltar a teu servo, e que morra em minha cidade, junto ao sepulcro de meu pai e de minha mãe. Eis aqui teu servo Quimã; que passe ele com meu senhor o rei, e faze-lhe o que bem te parecer."
+ },
+ "2 Sam 9:13": {
+  "zhRef": "撒母耳記下 9:13",
+  "enRef": "2 Samuel 9:13",
+  "ptRef": "2 Samuel 9:13",
+  "zh": "於是米非波設住在耶路撒冷，常與王同席吃飯。他兩腿都是瘸的。",
+  "en": "So Mephibosheth lived in Jerusalem; for he ate continually at the king’s table. He was lame in both his feet.",
+  "pt": "E morava Mefibosete em Jerusalém, porque comia sempre à mesa do rei; e era coxo de ambos os pés."
+ },
+ "2 Sam 9:7": {
+  "zhRef": "撒母耳記下 9:7",
+  "enRef": "2 Samuel 9:7",
+  "ptRef": "2 Samuel 9:7",
+  "zh": "大衛說：「你不要懼怕，我必因你父親約拿單的緣故施恩與你，將你祖父掃羅的一切田地都歸還你；你也可以常與我同席吃飯。」",
+  "en": "David said to him, “Don’t be afraid of him; for I will surely show you kindness for Jonathan your father’s sake, and will restore to you all the land of Saul your father. You shall eat bread at my table continually.”",
+  "pt": "E disse-lhe Davi: Não tenhas temor, porque eu à verdade farei contigo misericórdia por causa de Jônatas teu pai, e te devolverei todas as terras de Saul teu pai; e tu comerás sempre pão à minha mesa."
  },
  "Acts 2:11": {
   "zhRef": "使徒行傳 2:11",
@@ -429,7 +477,7 @@ window.VERSES = {
   "zhRef": "耶利米書 48:21",
   "enRef": "Jeremiah 48:21",
   "ptRef": "Jeremias 48:21",
-  "zh": "「刑罰臨到平原之地的何倫、雅雜、米法押…………」",
+  "zh": "「刑罰臨到平原之地的何倫、雅雜、米法押……」",
   "en": "Judgment has come on the plain country, on Holon, and on Jahzah, and on Mephaath,",
   "pt": "O julgamento também veio juízo sobre a terra da planície: sobre Holom, sobre Jazá, e sobre Mefate;"
  },
@@ -513,6 +561,14 @@ window.VERSES = {
   "en": "So Jephthah passed over to the children of Ammon to fight against them; and Yahweh delivered them into his hand. He struck them from Aroer until you come to Minnith, even twenty cities, and to Abelcheramim, with a very great slaughter. So the children of Ammon were subdued before the children of Israel.",
   "pt": "Passou, pois, Jefté aos filhos de Amom para lutar contra eles; e o SENHOR os entregou em sua mão. E os feriu de grandíssimo dano desde Aroer até chegar a Minite, vinte cidades; e até a Abel-Queramim. Assim foram dominados os amonitas diante dos filhos de Israel."
  },
+ "Judg 12:6": {
+  "zhRef": "士師記 12:6",
+  "enRef": "Judges 12:6",
+  "ptRef": "Juízes 12:6",
+  "zh": "就對他說：「你說『示播列』。」以法蓮人因為咬不真字音，便說「西播列」。基列人就將他拿住，殺在約旦河的渡口。那時以法蓮人被殺的有四萬二千人。",
+  "en": "then they said to him, “Now say ‘Shibboleth;’” and he said “Sibboleth”; for he couldn’t manage to pronounce it right: then they seized him, and killed him at the fords of the Jordan. At that time, forty-two thousand of Ephraim fell.",
+  "pt": "Então lhe diziam: Agora, pois, dize, Chibolete. E ele dizia, Sibolete; porque não podia pronunciar daquela sorte. Então lhe lançavam mão, e lhe degolavam junto aos vaus do Jordão. E morreram então dos de Efraim quarenta e dois mil."
+ },
  "Judg 8:11": {
   "zhRef": "士師記 8:11",
   "enRef": "Judges 8:11",
@@ -537,6 +593,14 @@ window.VERSES = {
   "en": "Remember Lot’s wife!",
   "pt": "Lembrai-vos da mulher de Ló."
  },
+ "Luke 21:20-21": {
+  "zhRef": "路加福音 21:20-21",
+  "enRef": "Luke 21:20-21",
+  "ptRef": "Lucas 21:20-21",
+  "zh": "「你們看見耶路撒冷被兵圍困，就可知道它成荒場的日子近了。那時，在猶太的應當逃到山上；在城裡的應當出來；在鄉下的不要進城……」",
+  "en": "“But when you see Jerusalem surrounded by armies, then know that its desolation is at hand. Then let those who are in Judea flee to the mountains. Let those who are in the midst of her depart. Let those who are in the country not enter therein.",
+  "pt": "Porém quando virdes a Jerusalém cercada de exércitos, sabei então, que próxima está sua desolação. Então, os que estiverem na Judeia, fujam para os montes; e os que estiverem no meio dela, saiam, e os que estiverem nos campos, não entrem nela."
+ },
  "Mark 5:1": {
   "zhRef": "馬可福音 5:1",
   "enRef": "Mark 5:1",
@@ -552,6 +616,14 @@ window.VERSES = {
   "zh": "耶穌不許，卻對他說：「你回家去，到你的親屬那裡，將主為你所做的是何等大的事，是怎樣憐憫你，都告訴他們。」那人就走了，在低加坡里傳揚耶穌為他做了何等大的事，眾人就都希奇。",
   "en": "He didn’t allow him, but said to him, “Go to your house, to your friends, and tell them what great things the Lord has done for you, and how he had mercy on you.” He went his way, and began to proclaim in Decapolis how Jesus had done great things for him, and everyone marveled.",
   "pt": "Jesus se recusou, porém lhe disse: Vai para a tua casa, aos teus, e anuncia-lhes quão grandes coisas o Senhor fez contigo, e como teve misericórdia de ti. Então ele foi embora, e começou a anunciar em Decápolis quão grandes coisas Jesus havia feito com ele; e todos se admiravam."
+ },
+ "Mark 5:20": {
+  "zhRef": "馬可福音 5:20",
+  "enRef": "Mark 5:20",
+  "ptRef": "Marcos 5:20",
+  "zh": "那人就走了，在低加坡里傳揚耶穌為他做了何等大的事，眾人就都希奇。",
+  "en": "He went his way, and began to proclaim in Decapolis how Jesus had done great things for him, and everyone marveled.",
+  "pt": "Então ele foi embora, e começou a anunciar em Decápolis quão grandes coisas Jesus havia feito com ele; e todos se admiravam."
  },
  "Mark 6:17-18": {
   "zhRef": "馬可福音 6:17-18",
@@ -908,5 +980,11 @@ window.PHOTOS = {
   "artist": "Utilisateur:Bel Adone",
   "license": "Public domain",
   "page": "https://commons.wikimedia.org/wiki/File:Early_church_of_Aqaba02.jpg"
+ },
+ "pella": {
+  "src": "img/pella.jpg",
+  "artist": "Ben Churcher, Pella Project, University of Sydney, Australia",
+  "license": "CC BY 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Byzantine_Basilica.jpg"
  }
 };

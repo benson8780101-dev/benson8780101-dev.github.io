@@ -113,6 +113,20 @@ window.CHAPTERS = [
     badge: "⛵",
     required: ["petra", "elath"],
     bonus: ["aaron", "ainmusa", "aylachurch", "eziongeber"]
+  },
+  // 支線（side: true）：額外的路線，不算進破關證書和最高稱號；no 只用來排順序
+  {
+    id: "side1",
+    no: 10,
+    side: true,
+    title: { zh: "恩典與呼召（約旦河谷北段）", en: "Grace and Calling (Northern Jordan Valley)" },
+    intro: {
+      zh: "在第 1 章的基列山地和第 2 章的雅博河之間，是一段很少人走的約旦河谷。以利沙在這裡放下犁跟隨以利亞；巴西萊和瑪吉在大衛落難時接濟他；初代教會也在這裡找到避難的地方。可以和第 1、2 章排在同一趟。",
+      en: "Between the hills of Gilead (Chapter 1) and the Jabbok (Chapter 2) lies a little-traveled stretch of the Jordan Valley. Here Elisha left his plow to follow Elijah; Barzillai and Machir supplied David when he was a fugitive; and the early church found refuge. It fits easily into the same trip as Chapters 1 and 2."
+    },
+    badge: "🧥",
+    required: ["pella"],
+    bonus: ["abelmeholah", "zaphon", "rogelim", "lodebar"]
   }
 ];
 
@@ -1762,6 +1776,159 @@ window.STATIONS = {
     quiz: {
       q: { zh: "約沙法的船在以旬迦別發生了什麼事？", en: "What happened to Jehoshaphat's ships at Ezion-geber?" },
       options: [{ zh: "運回很多金子", en: "They brought back much gold" }, { zh: "船破壞了，沒有出航", en: "They were wrecked and never sailed" }, { zh: "被海盜搶走", en: "Pirates captured them" }],
+      answer: 1
+    },
+    howto: {
+      zh: "這是隱藏關卡：確切位置不知道，不需要到現場。答對上面的問答就能解鎖印章。",
+      en: "This is a hidden level: the exact location is unknown, so you don't need to visit. Answer the quiz correctly to unlock the stamp."
+    },
+    photo: null
+  },
+
+  pella: {
+    name: { zh: "佩拉（初代教會的避難城）", en: "Pella (Refuge of the Early Church)" },
+    place: { zh: "約旦河谷北段的 Tabaqat Fahl 遺址", en: "The ruins of Tabaqat Fahl in the northern Jordan Valley" },
+    lat: 32.4488, lng: 35.6165, radius: 1200,
+    certainty: "yes",
+    verses: ["Luke 21:20-21", "Mark 5:20"],
+    story: {
+      zh: "耶穌曾經警告門徒：「你們看見耶路撒冷被兵圍困……那時，在猶太的應當逃到山上。」教會史學家優西比烏記載，羅馬軍隊在主後 70 年攻破耶路撒冷之前，耶路撒冷的信徒因為得到啟示，就逃到約旦河東的佩拉避難。佩拉是低加坡里（十城）之一，福音書說耶穌醫好的那個被鬼附的人，就是「在低加坡里傳揚耶穌為他做了何等大的事」。遺址裡有羅馬劇場、拜占庭時代的教堂，從青銅時代起這裡就一直有人住，因為山腳下有終年不斷的泉水。",
+      en: "Jesus had warned his disciples: 'When you see Jerusalem surrounded by armies… then let those who are in Judea flee to the mountains.' The church historian Eusebius records that before the Roman army destroyed Jerusalem in AD 70, the believers in Jerusalem, warned by a revelation, fled east of the Jordan to Pella. Pella was one of the Decapolis cities; the Gospels say the man Jesus freed from demons went 'to proclaim in Decapolis how Jesus had done great things for him.' The site has a Roman theater and Byzantine churches; people have lived here since the Bronze Age thanks to a spring at the foot of the hill that never runs dry."
+    },
+    reflect: {
+      zh: "初代信徒聽了耶穌的話，及時離開熟悉的城，在河東重新開始。神有沒有在提醒你，該離開某個熟悉、卻不再安全的地方？",
+      en: "The early believers heeded Jesus' words, left the city they knew in time, and started over east of the Jordan. Is God nudging you to leave somewhere familiar that is no longer safe?"
+    },
+    mission: {
+      zh: "⛲ 任務：找到山腳下的泉水，再爬到東邊的小山丘上，看看整片約旦河谷。想像兩千年前，一群從耶路撒冷逃來的家庭第一次看到這裡。",
+      en: "⛲ Mission: Find the spring at the foot of the hill, then climb the small hill to the east and take in the whole Jordan Valley. Imagine families fleeing from Jerusalem two thousand years ago seeing this place for the first time."
+    },
+    quiz: {
+      q: { zh: "根據教會史，耶路撒冷的信徒在主後 70 年前逃到哪裡？", en: "According to church history, where did the Jerusalem believers flee before AD 70?" },
+      options: [{ zh: "佩拉", en: "Pella" }, { zh: "佩特拉", en: "Petra" }, { zh: "大馬士革", en: "Damascus" }],
+      answer: 0
+    },
+    howto: {
+      zh: "在約旦河谷公路（65 號公路）旁，從伊爾比德開車約 40 分鐘，從安曼約 1 個半小時。遺址開放參觀，山坡上有可以俯瞰河谷的餐廳。可以和第 1 章的加大拉、伊爾比德排在同一天。河谷夏天很熱，早上去比較好。",
+      en: "Beside the Jordan Valley Highway (Route 65), about 40 minutes' drive from Irbid or 1.5 hours from Amman. The site is open to visitors, and there's a restaurant on the hillside overlooking the valley. Easy to combine with Gadara and Irbid from Chapter 1. The valley is hot in summer, so mornings are best."
+    },
+    photo: "pella"
+  },
+
+  abelmeholah: {
+    name: { zh: "亞伯米何拉（以利沙被呼召的地方）", en: "Abel-meholah (Where Elisha Was Called)" },
+    place: { zh: "約旦河谷的 Tell Abu Sus 土丘", en: "The mound of Tell Abu Sus in the Jordan Valley" },
+    lat: 32.3743, lng: 35.56089, radius: 1500,
+    certainty: "yes",
+    noFacilities: true,
+    verses: ["1 Kgs 19:19", "1 Kgs 19:21"],
+    story: {
+      zh: "以利亞在何烈山聽見神微小的聲音後，神吩咐他去膏「亞伯米何拉人沙法的兒子以利沙」接續他作先知。以利亞找到以利沙的時候，他正在田裡趕著十二對牛耕地。以利亞經過，把自己的外衣搭在他身上。以利沙就回去宰了那對牛，用套牛的器具煮肉分給百姓吃，然後起身跟隨以利亞，服事他。燒掉犁、吃掉牛，意思是：我不回頭了。後來在約旦河邊（第 4 章），以利沙接過以利亞升天時掉下的外衣，開始自己的服事。",
+      en: "After Elijah heard God's gentle whisper at Mount Horeb, God told him to anoint 'Elisha the son of Shaphat of Abel Meholah' as prophet in his place. When Elijah found Elisha, he was plowing a field with twelve yoke of oxen. Elijah passed by and threw his mantle over him. Elisha went back, took the yoke of oxen and slaughtered them, boiled their meat using the plowing equipment, gave it to the people to eat, and then rose and followed Elijah and served him. Burning the plow and eating the oxen meant: I'm not going back. Later, by the Jordan (Chapter 4), Elisha picked up the mantle that fell from Elijah as he was taken up, and began his own ministry."
+    },
+    reflect: {
+      zh: "以利沙把犁燒了，斷了自己的退路。神呼召你的時候，有沒有一個「犁」是你還捨不得燒掉的？",
+      en: "Elisha burned his plow and cut off his way back. When God calls you, is there a 'plow' you still can't bring yourself to burn?"
+    },
+    mission: {
+      zh: "🐂 任務：看看土丘周圍的農田，數數看能不能想像十二對牛一起耕田的畫面。讀一遍列王紀上 19 章 19～21 節。",
+      en: "🐂 Mission: Look at the farmland around the mound and try to picture twelve yoke of oxen plowing together. Read 1 Kings 19:19–21."
+    },
+    quiz: {
+      q: { zh: "以利亞找到以利沙時，以利沙在做什麼？", en: "What was Elisha doing when Elijah found him?" },
+      options: [{ zh: "在河邊打魚", en: "Fishing by the river" }, { zh: "趕著牛耕田", en: "Plowing with oxen" }, { zh: "在聖殿獻祭", en: "Offering sacrifices at the temple" }],
+      answer: 1
+    },
+    howto: {
+      zh: "⚠️ 考古土丘，沒有遊客設施，能不能進去還沒確認。在約旦河谷公路西邊、靠近約旦河，從佩拉往南約 15 分鐘。這一帶靠近邊界，可能有軍事管制，看到告示或崗哨不要硬闖；在附近公路邊就在蓋章範圍內。",
+      en: "⚠️ An archaeological mound with no visitor facilities; access hasn't been confirmed. It lies west of the Jordan Valley Highway near the river, about 15 minutes south of Pella. This area is near the border and may be a military zone—don't enter past signs or checkpoints; the nearby highway is within stamping range."
+    },
+    photo: null
+  },
+
+  zaphon: {
+    name: { zh: "撒分與撒拉但（Tell es-Sa'idiyeh）", en: "Zaphon and Zarethan (Tell es-Sa'idiyeh)" },
+    place: { zh: "約旦河谷中段的大土丘", en: "A large mound in the central Jordan Valley" },
+    lat: 32.26769, lng: 35.577241, radius: 1200,
+    certainty: "likely",
+    noFacilities: true,
+    verses: ["Judg 12:6", "1 Kgs 7:46"],
+    story: {
+      zh: "以法蓮人沒被找去打亞捫人，心裡不服，聚集起來過河去找士師耶弗他算帳（和合本譯作「到了北方」，這個字在希伯來文也可以讀成地名「撒分」），結果兩邊打起來。基列人把守約旦河的渡口，以法蓮人想過河時，就叫他說「示播列」；以法蓮人發不出那個音，說成「西播列」，就被認出來殺了。一個口音，竟成了生死的分界。許多學者認為撒分就是這座大土丘，也有人認為它是撒拉但：所羅門王在「疏割和撒拉但中間」的黏土地，鑄造聖殿用的銅器（疏割就在附近，第 2 章）。考古隊在這裡挖到古代的城牆、墓地，和一道通往泉水的石階。",
+      en: "The men of Ephraim, angry that they hadn't been called to fight the Ammonites, gathered and crossed over to confront the judge Jephthah (the Hebrew word for 'northward' can also be read as the place name Zaphon), and fighting broke out. The Gileadites held the fords of the Jordan; when an Ephraimite tried to cross, they told him to say 'Shibboleth.' Ephraimites couldn't pronounce it and said 'Sibboleth,' and so were recognized and killed. A single accent became the line between life and death. Many scholars identify Zaphon with this great mound; others think it is Zarethan, where King Solomon cast the bronze for the temple 'in the clay ground between Succoth and Zarethan' (Succoth is nearby, Chapter 2). Archaeologists here found ancient walls, a cemetery, and a stone stairway leading down to a spring."
+    },
+    reflect: {
+      zh: "一個口音就能把同一個民族分成兩邊。你有沒有因為別人的口音、背景、說話方式，就在心裡把他歸到「另一邊」？",
+      en: "A single accent split one people into two sides. Have you ever mentally put someone on 'the other side' because of their accent, background, or way of speaking?"
+    },
+    mission: {
+      zh: "🗣️ 任務：跟同行的人試著用不同的方式說「示播列」和「西播列」，再想想：今天的教會裡，什麼東西變成了我們的「示播列」？",
+      en: "🗣️ Mission: With your companions, try saying 'Shibboleth' and 'Sibboleth' in different ways. Then think: what has become our 'shibboleth' in today's church?"
+    },
+    quiz: {
+      q: { zh: "基列人用哪一個詞認出以法蓮人？", en: "What word did the Gileadites use to identify the Ephraimites?" },
+      options: [{ zh: "哈利路亞", en: "Hallelujah" }, { zh: "示播列", en: "Shibboleth" }, { zh: "以馬內利", en: "Immanuel" }],
+      answer: 1
+    },
+    howto: {
+      zh: "⚠️ 考古土丘，沒有遊客設施，能不能上去還沒確認。在約旦河谷公路旁，第 2 章的疏割（Tell Deir Alla）往北約 20 分鐘，可以排在一起。夏天非常熱，帶足水。",
+      en: "⚠️ An archaeological mound with no visitor facilities; access hasn't been confirmed. It's beside the Jordan Valley Highway, about 20 minutes north of Succoth (Tell Deir Alla) from Chapter 2, so you can visit both together. It's very hot in summer—bring plenty of water."
+    },
+    photo: null
+  },
+
+  rogelim: {
+    name: { zh: "羅基琳（巴西萊的家鄉）", en: "Rogelim (Home of Barzillai)" },
+    place: { zh: "伊爾比德南邊的 Zaharet 一帶", en: "Around Zaharet, south of Irbid" },
+    lat: 32.527889, lng: 35.780628, radius: 2000,
+    certainty: "likely",
+    approx: true,
+    verses: ["2 Sam 19:32", "2 Sam 19:37"],
+    story: {
+      zh: "大衛被兒子押沙龍追殺，逃到河東的瑪哈念，又累又餓。這時有三個人帶著床、碗、麥子、豆子、蜂蜜、乳酪來接濟他，其中一位就是羅基琳的基列人巴西萊。等到戰爭結束，大衛要回耶路撒冷，邀請八十歲的巴西萊一起去，在王宮裡奉養他。巴西萊卻婉拒了：「僕人現在八十歲了……求你准我回去，好死在我本城。」他推薦年輕的金罕代替他去。巴西萊在大衛最落魄的時候出手幫忙，在大衛得勢的時候卻不求回報。",
+      en: "Fleeing from his son Absalom, David reached Mahanaim east of the Jordan, exhausted and hungry. Three men came with beds, bowls, wheat, beans, honey and cheese to supply him, and one of them was Barzillai the Gileadite of Rogelim. When the war was over and David was returning to Jerusalem, he invited the eighty-year-old Barzillai to come and be provided for in the palace. Barzillai declined: 'I am eighty years old today… Please let your servant turn back again, that I may die in my own city.' He recommended young Chimham go in his place. Barzillai helped David at his lowest point, and asked nothing in return when David was back on top."
+    },
+    reflect: {
+      zh: "巴西萊在別人落難時出現，在別人風光時退下。你身邊有沒有一個正在「逃難」的人，需要你送上一張床、一碗飯？",
+      en: "Barzillai showed up when someone was in trouble and stepped back when that person rose again. Is someone around you 'on the run' right now, needing a bed or a meal from you?"
+    },
+    mission: {
+      zh: "🍯 任務：在附近的小店買一點蜂蜜或乳酪（巴西萊送給大衛的東西），請同行的人或當地人一起吃。",
+      en: "🍯 Mission: Buy a little honey or cheese at a local shop (some of what Barzillai brought David) and share it with your companions or someone local."
+    },
+    quiz: {
+      q: { zh: "大衛邀請巴西萊去耶路撒冷時，巴西萊幾歲？", en: "How old was Barzillai when David invited him to Jerusalem?" },
+      options: [{ zh: "四十歲", en: "Forty" }, { zh: "六十歲", en: "Sixty" }, { zh: "八十歲", en: "Eighty" }],
+      answer: 2
+    },
+    howto: {
+      zh: "在伊爾比德南邊的村莊一帶，從伊爾比德開車約 20 分鐘，可以和第 1 章的伊爾比德、加大拉排在一起。這裡是一般村莊，沒有遺址或遊客設施，到了村子附近就在蓋章範圍內。位置是學者推測的大約位置。",
+      en: "In the villages south of Irbid, about 20 minutes' drive from Irbid—easy to combine with Irbid and Gadara from Chapter 1. It's an ordinary village area with no ruins or visitor facilities; being near the village puts you within stamping range. The location is a scholarly estimate."
+    },
+    photo: null
+  },
+
+  lodebar: {
+    name: { zh: "羅底巴（米非波設住的地方）", en: "Lo-debar (Where Mephibosheth Lived)" },
+    place: { zh: "位置不確定，可能在雅木克河附近", en: "Location uncertain, possibly near the Yarmouk River" },
+    hidden: true,
+    certainty: "unknown",
+    verses: ["2 Sam 9:7", "2 Sam 9:13"],
+    story: {
+      zh: "大衛作王以後問：「掃羅家還有剩下的人沒有？我要因約拿單的緣故向他施恩。」原來約拿單有一個兩腿都瘸的兒子米非波設，躲在河東羅底巴瑪吉的家裡。羅底巴這個名字的意思，大概是「沒有草場」、「什麼都沒有」的地方。按當時的習慣，新王會除掉前朝王室的後代，米非波設一見到大衛就叩拜說：「僕人算甚麼，不過如死狗一般……」大衛卻把掃羅的田地全部還給他，還讓他「常與王同席吃飯，如王的兒子一樣」。後來大衛逃難到瑪哈念時，帶東西來接濟他的人裡面，就有羅底巴的瑪吉。羅底巴確切在哪裡還不確定，所以這是隱藏關卡。",
+      en: "After David became king he asked, 'Is there yet any left of the house of Saul, that I may show him kindness for Jonathan's sake?' Jonathan had a son, Mephibosheth, lame in both feet, hiding east of the Jordan in the house of Machir in Lo-debar—a name that likely means 'no pasture,' a place of 'nothing.' In those days a new king would wipe out the old royal line, so Mephibosheth fell on his face before David: 'What is your servant, that you should look at such a dead dog as I am?' But David restored all of Saul's land to him and had him 'eat continually at the king's table, like one of the king's sons.' Later, when David fled to Mahanaim, one of those who brought him supplies was Machir of Lo-debar. Lo-debar's exact location is still uncertain, so this is a hidden level."
+    },
+    reflect: {
+      zh: "米非波設從「什麼都沒有」的地方，被請到王的桌子前。你覺得自己在神面前是「死狗」，還是「王的兒女」？",
+      en: "Mephibosheth was brought from a place of 'nothing' to the king's table. Before God, do you see yourself as a 'dead dog' or as a child of the King?"
+    },
+    mission: {
+      zh: "🔒 隱藏任務：讀完撒母耳記下第 9 章，再回來答題。",
+      en: "🔒 Hidden mission: Read 2 Samuel 9, then come back for the quiz."
+    },
+    quiz: {
+      q: { zh: "大衛為了誰的緣故恩待米非波設？", en: "For whose sake did David show kindness to Mephibosheth?" },
+      options: [{ zh: "掃羅", en: "Saul" }, { zh: "約拿單", en: "Jonathan" }, { zh: "撒母耳", en: "Samuel" }],
       answer: 1
     },
     howto: {
