@@ -1,0 +1,15 @@
+{
+  "name": "約旦聖經足跡 Jordan Bible Trail",
+  "short_name": "聖經足跡",
+  "description": "走訪約旦的聖經地點，蓋章、解鎖經文與故事。Visit the biblical sites of Jordan.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6efe4",
+  "theme_color": "#8a4b2a",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icon-180.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}

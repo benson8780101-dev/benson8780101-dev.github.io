@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>約旦聖經足跡 Jordan Bible Trail</title>
+<meta name="description" content="走訪約旦的聖經地點，蓋章、解鎖經文與故事。Visit the biblical sites of Jordan, collect stamps, and unlock scripture and stories.">
+<meta name="theme-color" content="#8a4b2a">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-180.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="聖經足跡">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark" aria-hidden="true">✦</span>
+    <div>
+      <h1 data-t="appName"></h1>
+      <p class="rank" id="rank"></p>
+    </div>
+  </div>
+  <button class="lang" id="langBtn" type="button" aria-label="切換語言 Switch language">中 / EN</button>
+</header>
+
+<main>
+  <section id="view-map" class="view">
+    <div id="map" role="region" aria-label="Map"></div>
+    <p class="map-offline" id="mapOffline" hidden data-t="mapOffline"></p>
+    <button class="locate" id="locateBtn" type="button" data-t="showMe"></button>
+  </section>
+  <section id="view-chapters" class="view" hidden></section>
+  <section id="view-passport" class="view" hidden></section>
+  <section id="view-about" class="view" hidden></section>
+</main>
+
+<nav class="tabs" aria-label="Main">
+  <button type="button" data-view="map" class="on"><span aria-hidden="true">🗺️</span><b data-t="tabMap"></b></button>
+  <button type="button" data-view="chapters"><span aria-hidden="true">📜</span><b data-t="tabChapters"></b></button>
+  <button type="button" data-view="passport"><span aria-hidden="true">🛂</span><b data-t="tabPassport"></b></button>
+  <button type="button" data-view="about"><span aria-hidden="true">ℹ️</span><b data-t="tabAbout"></b></button>
+</nav>
+
+<div class="sheet" id="sheet" hidden role="dialog" aria-modal="true"></div>
+<div class="toast" id="toast" hidden role="status"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script src="verses.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
