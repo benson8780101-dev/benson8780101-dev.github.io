@@ -1,7 +1,7 @@
 // 離線功能：App 本身和照片先存在手機裡，沒網路也能看。
 // 改了任何 App 檔案，都要把版本號 +1，手機才會拿到新版。
-const VERSION = "bible-trail-v3";
-const SHELL = ["./", "index.html", "style.css", "app.js", "data.js", "verses.js", "manifest.webmanifest", "icon.svg", "icon-180.png", "icon-512.png",
+const VERSION = "bible-trail-v4";
+const SHELL = ["./", "index.html", "style.css", "app.js", "data.js", "data-pt.js", "verses.js", "manifest.webmanifest", "icon.svg", "icon-180.png", "icon-512.png",
   "img/bethany.jpg", "img/elijah.jpg", "img/shittim.jpg", "img/moab.jpg", "img/nebo.jpg", "img/madaba.jpg", "img/heshbon.jpg", "img/citadel.jpg", "img/theatre.jpg", "img/jabbok.jpg", "img/penuel.jpg"];
 const LIBS = ["https://unpkg.com/leaflet@1.9.4/dist/leaflet.css", "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"];
 

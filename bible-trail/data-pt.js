@@ -1,0 +1,229 @@
+// 約旦聖經足跡：巴西葡萄牙文（pt-BR）內容
+// 對應 data.js 的每一章、每一站；app.js 啟動時會把這裡的文字合併成 pt 語言。
+// 地名、人名跟著 Bíblia Livre（巴西自由聖經）的寫法，讓讀者對照經文時一致。
+// data.js 改了中英文，這裡也要一起改。
+
+window.PT = {
+  chapters: {
+    ch2: {
+      title: "O Caminho de Volta de Jacó",
+      intro: "Depois de vinte anos longe, Jacó voltava para casa com toda a família, com medo de reencontrar Esaú, o irmão que ele havia enganado. Neste trecho a leste do Jordão ele encontrou anjos, lutou com Deus a noite inteira e, por fim, chorou abraçado ao irmão."
+    },
+    ch3: {
+      title: "A Capital dos Amonitas",
+      intro: "A Amã de hoje é Rabá, a capital dos amonitas na Bíblia. O exército de Davi a cercou; mais tarde ela recebeu o nome de Filadélfia e se tornou uma das cidades de Decápolis."
+    },
+    ch4: {
+      title: "À Beira do Jordão",
+      intro: "Aqui Israel atravessou para a Terra Prometida; daqui Elias foi levado ao céu; mais de mil anos depois, Jesus foi batizado aqui."
+    },
+    ch5: {
+      title: "O Último Olhar de Moisés",
+      intro: "Quarenta anos de deserto chegam ao fim. Do monte Nebo, Moisés contempla a terra que tanto desejou, mas na qual não entraria."
+    }
+  },
+
+  stations: {
+    jabbok: {
+      name: "O Jaboque (hoje o rio Zarqa)",
+      place: "Vale do Jaboque: região da Represa Rei Talal e de Tulul adh-Dhahab",
+      story: "Jacó morou vinte anos com seu tio Labão. Agora voltava para casa com suas mulheres, filhos e rebanhos — até saber que seu irmão Esaú vinha ao seu encontro com quatrocentos homens, e ficou apavorado. Naquela noite, fez a família atravessar o vau do Jaboque e ficou sozinho. Um homem lutou com ele até o amanhecer; a coxa de Jacó se deslocou com um simples toque, mas ele disse: \"Não te deixarei ir, se não me abençoares.\" O homem lhe deu um novo nome: \"Israel\". Curiosamente, em hebraico \"Jaboque\" soa parecido com a palavra \"lutou\". No dia seguinte, Esaú correu para abraçá-lo, e os dois irmãos choraram. Hoje o rio se chama Zarqa (\"azul\") e é o segundo maior afluente do Jordão.",
+      reflect: "Antes de se reconciliar com o irmão, Jacó lutou com Deus a noite inteira. Existe algum relacionamento que você precisa restaurar? Antes de encontrar essa pessoa, o que você precisa conversar primeiro com Deus?",
+      mission: "🌄 Missão: Encontre um lugar com vista para o vale e fique sozinho, em silêncio, por cinco minutos — Jacó também estava sozinho naquela noite. Se for de manhã cedo, observe atrás de quais montes o sol nasce.",
+      quiz: { q: "Depois de lutar junto ao Jaboque, qual foi o novo nome de Jacó?", options: ["Abraão", "Israel", "Edom"] },
+      howto: "O vale do Jaboque é longo, por isso esta parada tem duas áreas de check-in — qualquer uma vale: ① a Represa Rei Talal (King Talal Dam), um pequeno desvio na estrada de Amã para Jerash; ② a região de Tulul adh-Dhahab, onde o vale se abre a leste de Deir Alla, no Vale do Jordão. (Localizações aproximadas, por isso o raio de check-in é amplo.)"
+    },
+
+    succoth: {
+      name: "Sucote (onde Jacó fez abrigos)",
+      place: "Tell Deir Alla, sítio arqueológico no Vale do Jordão",
+      story: "Depois de fazer as pazes com Esaú, Jacó foi para Sucote, construiu uma casa para si e fez abrigos para o seu gado — por isso o lugar se chamou \"Sucote\", que significa \"abrigos\" ou \"tendas\". A Festa dos Tabernáculos dos judeus usa a mesma palavra. Séculos depois, o rei Salomão fundiu os objetos de bronze do Templo na planície argilosa \"entre Sucote e Zaretã\". Em 1967, arqueólogos holandeses que escavavam este monte encontraram um texto antigo escrito em reboco que menciona \"Balaão, filho de Beor\" — o mesmo profeta de Números. Foi a primeira vez que o nome de Balaão apareceu fora da Bíblia.",
+      reflect: "Depois daquela noite de luta e daquela reconciliação, Jacó finalmente se estabeleceu em Sucote. Onde está o \"abrigo\" da sua vida, o lugar em que você pode parar e descansar de verdade?",
+      mission: "🏺 Missão: Suba no monte e observe as plantações ao redor. Foi nesta planície de argila que Salomão fundiu os bronzes do Templo. Abaixe-se e toque o solo.",
+      quiz: { q: "O que significa \"Sucote\"?", options: ["Fontes", "Abrigos / tendas", "Monte alto"] },
+      howto: "Ao lado da cidade de Deir Alla, no Vale do Jordão, cerca de uma hora de carro de Amã passando por Salt. O monte fica à beira da estrada; é pequeno e tem pouca infraestrutura. O vale é muito quente no verão — prefira ir de manhã."
+    },
+
+    penuel: {
+      name: "Peniel (a Face de Deus)",
+      place: "A colina leste de Tulul adh-Dhahab (\"Colinas de Ouro\")",
+      story: "Depois da luta, Jacó deu a este lugar o nome de Peniel, \"a face de Deus\", dizendo: \"Vi a Deus face a face, e a minha vida foi preservada.\" O sol nasceu quando ele passou por ali, mancando. Séculos depois, quando o juiz Gideão perseguia o inimigo, seus soldados exaustos e famintos pediram pão ao povo de Peniel — e foram recusados; mais tarde Gideão derrubou a torre da cidade. Aqui o Jaboque faz uma grande curva entre duas colinas chamadas Tulul adh-Dhahab, \"Colinas de Ouro\" em árabe. Muitos estudiosos identificam a colina leste como Peniel.",
+      reflect: "Jacó entrou no nascer do sol mancando. Existe alguma ferida na sua vida que, depois, se tornou um sinal do seu encontro com Deus?",
+      mission: "🌅 Missão: De longe, observe a curva do rio entre as duas colinas e imagine a família de Jacó atravessando a água no meio da noite.",
+      quiz: { q: "O que significa \"Peniel\"?", options: ["A face de Deus", "A casa de Deus", "O monte de Deus"] },
+      howto: "⚠️ Colina arqueológica dentro do vale, sem estrutura para visitantes; o acesso ainda não foi confirmado e as encostas são íngremes. Fica no vale do Jaboque, a leste de Deir Alla. Vá com alguém que conheça a região e fique longe em dias de chuva forte ou cheia do rio."
+    },
+
+    mahanaim: {
+      name: "Maanaim (Dois Acampamentos)",
+      place: "A colina oeste de Tulul adh-Dhahab",
+      story: "No caminho de volta, Jacó encontrou os anjos de Deus e disse: \"Este é o acampamento de Deus\", e chamou o lugar de Maanaim, \"dois acampamentos\". Mais tarde Maanaim se tornou uma cidade importante: Is-Bosete, filho de Saul, reinou ali; e quando Davi fugiu de seu filho Absalão — no ponto mais baixo da sua vida — também veio para cá. Barzilai, o gileadita, e alguns amigos trouxeram camas, bacias, trigo, feijão, mel e manteiga, dizendo: \"O povo está faminto, cansado e com sede no deserto.\" Muitos estudiosos identificam a colina oeste de Tulul adh-Dhahab como Maanaim, embora existam outras propostas.",
+      reflect: "No pior momento de Davi, amigos chegaram com cobertas e comida. Há alguém perto de você que está no \"deserto\" agora? O que você poderia levar para essa pessoa?",
+      mission: "🍯 Missão: Como Barzilai, leve algo para comer e compartilhe com seus companheiros de viagem ou com alguém que você encontrar aqui.",
+      quiz: { q: "O que significa \"Maanaim\"?", options: ["Cabeceira da fonte", "Dois acampamentos", "Vinhedos"] },
+      howto: "⚠️ É a colina gêmea de Peniel, do lado oeste da curva do rio; também não tem estrutura para visitantes e o acesso não foi confirmado. Vá com alguém que conheça a região."
+    },
+
+    mizpahgilead: {
+      name: "Mispá de Gileade (a aliança de Jacó e Labão)",
+      place: "Localização incerta; alguns sugerem o monte Jal'ad, ao norte de Salt",
+      story: "Jacó saiu às escondidas da casa de seu tio Labão com toda a família; Labão o perseguiu por sete dias e o alcançou nos montes de Gileade. Depois de uma discussão, fizeram uma aliança e empilharam pedras como testemunho. Labão chamou o monte de Jegar-Saaduta, em aramaico, e Jacó o chamou de Galeede, em hebraico — os dois nomes significam \"monte do testemunho\". Também foi chamado Mispá, \"torre de vigia\", porque Labão disse: \"Vigie o SENHOR entre mim e ti, quando nos separarmos um do outro.\" Hoje essa frase costuma ser gravada em colares de casais como uma bênção, mas originalmente era uma fronteira entre dois homens que não confiavam um no outro: nenhum dos dois atravessaria o monte de pedras para fazer mal ao outro. A localização exata é desconhecida, por isso esta é uma fase secreta.",
+      reflect: "Mispá era, na origem, uma fronteira que permitiu que duas pessoas vivessem em paz. Nos seus relacionamentos, existe algum ponto em que você precisa conversar com clareza e estabelecer um limite saudável?",
+      mission: "🔒 Missão secreta: Leia Gênesis 31 para descobrir por que Jacó e Labão estavam discutindo e depois volte para o quiz.",
+      quiz: { q: "Que nome hebraico Jacó deu ao monte de pedras?", options: ["Galeede", "Betel", "Gilgal"] },
+      howto: "Esta é uma fase secreta: a localização exata é desconhecida, então não é preciso ir até lá. Responda o quiz corretamente para ganhar o carimbo."
+    },
+
+    citadel: {
+      name: "Rabá: a Cidadela de Amã",
+      place: "Jabal al-Qal'a (Monte da Cidadela), centro de Amã",
+      story: "Os amonitas eram descendentes de Ló, e sua capital, Rabá, ficava neste monte. Deuteronômio diz que a enorme cama de ferro de Ogue, rei de Basã — com nove côvados de comprimento — estava guardada em Rabá. Mais tarde Davi enviou Joabe para cercar Rabá, enquanto ele mesmo ficou em Jerusalém, onde pecou com Bate-Seba. Para encobrir o pecado, escreveu a Joabe que pusesse Urias, o marido dela, \"diante da força da batalha\", e Urias morreu ao pé destes muros. Séculos depois, o profeta Amós anunciou que o fogo consumiria os palácios de Rabá. Hoje o monte guarda um templo romano de Hércules, uma igreja bizantina e um palácio omíada — mais de três mil anos de história em camadas.",
+      reflect: "A queda de Davi começou quando, \"no tempo em que os reis saem à guerra\", ele ficou em casa. Existe alguma área da sua vida em que você deveria estar vigilante, mas baixou a guarda?",
+      mission: "✋ Missão: Encontre a enorme mão de pedra ao lado do Templo de Hércules e tire uma foto com a sua mão ao lado (só a foto — não suba nela). Depois vá até a muralha e procure o Teatro Romano lá embaixo.",
+      quiz: { q: "Quem Davi enviou para cercar Rabá?", options: ["Abner", "Joabe", "Natã"] },
+      howto: "No alto de um monte no centro de Amã; peça ao táxi, Careem ou Uber \"Al-Qal'a\" (a Cidadela). A entrada é paga. Há um pequeno museu arqueológico no monte, com achados de vários períodos, inclusive da época amonita. O pôr do sol sobre a cidade é lindo, mas há pouca sombra — leve água durante o dia."
+    },
+
+    theatre: {
+      name: "Filadélfia: o Teatro Romano",
+      place: "Centro de Amã, ao pé do Monte da Cidadela",
+      story: "No século 3 a.C., Ptolomeu II, do Egito, deu a Rabá o nome de \"Filadélfia\" (\"amor fraternal\"). Na época romana ela era uma das cidades de Decápolis, as \"Dez Cidades\". Este teatro foi construído no século 2 d.C., tem cerca de seis mil lugares e ainda é usado hoje. Os Evangelhos dizem que grandes multidões \"de Decápolis\" seguiam Jesus, e o próprio Jesus passou pela região de Decápolis. A Bíblia não diz que Jesus esteve em Filadélfia, mas pessoas desta cidade que foram ouvi-lo podem muito bem ter se sentado nestes mesmos degraus.",
+      reflect: "O nome desta cidade significa \"amor fraternal\". Como você poderia viver esse nome na cidade onde mora?",
+      mission: "🗣️ Missão: Fique no ponto central do palco e fale baixinho enquanto alguém escuta lá dos degraus mais altos. Os romanos não tinham microfone, mas a acústica é impressionante!",
+      quiz: { q: "Que nome Rabá recebeu na época grega e romana?", options: ["Filadélfia", "Cesareia", "Antioquia"] },
+      howto: "Ao pé do Monte da Cidadela — uns 15 a 20 minutos a pé descendo da Cidadela, ou de carro até \"Roman Theatre / Al-Mudarraj al-Roumani\". A entrada é paga, e há dois pequenos museus de folclore nas laterais do teatro. A Praça Hachemita, ao lado, é um bom lugar para descansar."
+    },
+
+    raselain: {
+      name: "A \"Cidade das Águas\" de Rabá: Ras al-Ain",
+      place: "Ras al-Ain (\"cabeceira da fonte\"), a sudoeste do centro de Amã",
+      story: "Durante o cerco de Rabá, Joabe primeiro tomou a \"cidade das águas\" e mandou avisar Davi: venha depressa, a cidade está para cair. As cidades antigas temiam acima de tudo ficar sem água; quem controlava a fonte já tinha meia batalha ganha. Um riacho corria pelo vale de Amã, saindo das fontes de Ras al-Ain (\"cabeceira da fonte\") e atravessando o centro. Muitos estudiosos acham que a \"cidade das águas\" tomada por Joabe era a parte baixa da cidade que protegia esse abastecimento. O riacho correu até o século 20; hoje a cidade o cobriu e só o nome permaneceu.",
+      reflect: "A força da cidade estava na fonte de água escondida. De onde vem a sua força?",
+      mission: "💧 Missão: Procure a palavra \"Ain\" ou \"عين\" (fonte) em placas de rua ou nomes de lojas por perto. Muitos nomes de lugares em Amã têm a ver com água!",
+      quiz: { q: "O que significa \"Ras al-Ain\"?", options: ["Monte do rei", "Cabeceira da fonte", "Grande portão"] },
+      howto: "A sudoeste do centro, perto da Prefeitura da Grande Amã; peça ao motorista \"Ras al-Ain\". É uma área urbana comum, sem ruínas — vale mais como uma caminhada pensando na história. (Localização aproximada, por isso o raio de check-in é amplo.)"
+    },
+
+    jubeiha: {
+      name: "Jogbeá",
+      place: "Jubeiha, zona norte de Amã (perto da Universidade da Jordânia)",
+      story: "Antes de Israel entrar em Canaã, a tribo de Gade construiu várias cidades a leste do Jordão, e Jogbeá era uma delas. Mais tarde, o juiz Gideão perseguiu o exército midianita \"à parte oriental de Noba e de Jogbeá\", atacando quando o inimigo se sentia seguro. Três mil anos depois, o nome quase não mudou: a Jubeiha de hoje é um bairro residencial movimentado no norte de Amã, onde fica a Universidade da Jordânia.",
+      reflect: "Talvez você passe todo dia por um lugar citado na Bíblia há três mil anos. Que outros lugares \"comuns\" ao seu redor escondem uma história?",
+      mission: "🗺️ Missão: Encontre \"Jubeiha / الجبيهة\" numa placa de rua e tire uma foto. As pessoas de três mil anos atrás usavam quase o mesmo nome!",
+      quiz: { q: "Qual juiz passou por Jogbeá perseguindo o inimigo?", options: ["Sansão", "Débora", "Gideão"] },
+      howto: "⚠️ Bairro residencial comum, sem ruínas nem estrutura para visitantes. Fica no norte de Amã — vá de carro até a Universidade da Jordânia ou Jubeiha. O check-in vale em qualquer ponto da região."
+    },
+
+    abelkeramim: {
+      name: "Abel-Queramim (Campina das Vinhas)",
+      place: "Localização incerta; alguns sugerem a região de Sahab",
+      story: "O juiz Jefté tinha sido expulso pela própria família, mas depois os anciãos de Gileade voltaram implorando que ele os liderasse contra os amonitas. Jefté os derrotou completamente, desde Aroer até Minite e até \"Abel-Queramim\" — \"campina das vinhas\". Infelizmente, antes da batalha ele fez um voto precipitado e depois pagou um preço de partir o coração (Juízes 11). Os estudiosos não sabem exatamente onde ficava esse lugar; alguns sugerem a região de Sahab, a sudeste de Amã — por isso esta é uma fase secreta.",
+      reflect: "A vitória de Jefté foi ofuscada por uma promessa impulsiva. Recentemente você concordou com algo no calor do momento que precisa repensar?",
+      mission: "🔒 Missão secreta: Leia a história completa em Juízes 11 e depois volte para o quiz.",
+      quiz: { q: "Qual juiz derrotou os amonitas até Abel-Queramim?", options: ["Jefté", "Eúde", "Otniel"] },
+      howto: "Esta é uma fase secreta: a localização exata é desconhecida, então não é preciso ir até lá. Responda o quiz corretamente para ganhar o carimbo."
+    },
+
+    bethany: {
+      name: "Betânia além do Jordão (Local do Batismo)",
+      place: "Al-Maghtas, Patrimônio Mundial da UNESCO",
+      story: "João Batista chamava o povo ao arrependimento no deserto a leste do Jordão, e multidões desciam de Jerusalém para serem batizadas. Jesus também veio aqui e foi batizado por João; os céus se abriram e o Espírito desceu como uma pomba. (Algumas traduções, como a Bíblia Livre, chamam o lugar de \"Betábara\", seguindo outros manuscritos antigos.) Mais tarde, quando quiseram apedrejá-lo, Jesus se retirou novamente para \"o lugar onde João primeiro batizava\". Cristãos bizantinos construíram várias igrejas aqui, e arqueólogos encontraram seus restos e tanques batismais. O local se tornou Patrimônio Mundial em 2015.",
+      reflect: "Antes de começar o seu ministério, Jesus foi batizado aqui. Já houve um momento de \"recomeço\" na sua vida?",
+      mission: "📸 Missão: Encontre a passarela de madeira à beira do rio Jordão e fotografe a água. A outra margem já é outro país — e o rio pode ser bem mais estreito do que você imagina!",
+      quiz: { q: "Segundo o Evangelho de João, onde João batizava?", options: ["À beira do mar da Galileia", "Betânia além do Jordão", "No tanque de Betesda, em Jerusalém"] },
+      howto: "Cerca de 50 minutos de carro de Amã em direção ao Mar Morto; siga as placas \"Baptism Site\". Compre o ingresso no centro de visitantes e entre no ônibus do local com visita guiada — carros particulares não podem entrar. Use roupas discretas (ombros e joelhos cobertos). O verão é muito quente; leve água e chapéu. Ingressos e horários: site oficial baptismsite.com."
+    },
+
+    elijah: {
+      name: "Colina de Elias (Tell Mar Elias)",
+      place: "Dentro do Local do Batismo, junto ao Wadi Kharrar",
+      story: "Elias e Eliseu caminharam até o Jordão. Elias bateu nas águas com o seu manto, o rio se abriu e os dois atravessaram a pé enxuto para a margem leste. Enquanto andavam e conversavam, um carro de fogo com cavalos de fogo os separou, e Elias subiu ao céu num redemoinho. A Bíblia não diz qual foi a colina exata, mas desde a época bizantina os cristãos lembram o acontecimento nesta pequena colina ao lado do Local do Batismo, onde há ruínas de um mosteiro e de igrejas. Curiosamente, João Batista veio \"no espírito e poder de Elias\" — e batizou bem ao lado do lugar de onde Elias partiu.",
+      reflect: "Eliseu pediu \"porção dobrada\" do espírito de Elias. Se você pudesse pedir uma coisa a um mentor espiritual, o que pediria?",
+      mission: "🔍 Missão: Procure tanques ou canais de água antigos perto da colina. Como os monges daqui conseguiam água?",
+      quiz: { q: "Com o que Elias bateu nas águas para abrir o Jordão?", options: ["Com o seu cajado", "Com o seu manto", "Com uma pedra"] },
+      howto: "Fica dentro do Local do Batismo; a visita guiada passa por ela ou perto dela. Não precisa de ingresso separado. (O app usa uma localização aproximada, por isso o raio de check-in é amplo.)"
+    },
+
+    shittim: {
+      name: "Sitim (o último acampamento de Israel)",
+      place: "Sítio arqueológico de Tall el-Hammam",
+      story: "Sitim foi o último acampamento de Israel antes de atravessar o Jordão. Daqui Josué enviou secretamente dois espias a Jericó, onde Raabe os escondeu. Infelizmente, foi também em Sitim que o povo caiu em imoralidade com mulheres moabitas e adorou Baal-Peor. Tall el-Hammam é um grande monte antigo no Vale do Jordão que muitos estudiosos identificam como Sitim; alguns afirmam que seria Sodoma, mas essa ideia é muito contestada.",
+      reflect: "O mesmo lugar viu a coragem dos espias e a queda na idolatria. Por que o momento mais próximo de uma promessa também pode ser o mais perigoso?",
+      mission: "👀 Missão: Suba no monte e olhe para o oeste. Consegue ver os montes do outro lado do Vale do Jordão? Era para lá que os espias estavam indo.",
+      quiz: { q: "Quantos espias Josué enviou de Sitim?", options: ["Dois", "Doze", "Sete"] },
+      howto: "⚠️ Sítio arqueológico sem centro de visitantes nem estrutura; o acesso não foi confirmado. Fica perto de South Shuneh, no caminho de Amã para o Mar Morto. Vá com alguém que conheça a região e não entre em áreas de escavação cercadas."
+    },
+
+    moab: {
+      name: "As Campinas de Moabe",
+      place: "Vale do Jordão, ao norte do Mar Morto",
+      story: "Depois do Êxodo e de quarenta anos no deserto, Israel acampou nas campinas de Moabe, em frente a Jericó. Todo o livro de Deuteronômio é o discurso final de Moisés ao povo nestas campinas: recontando a lei e insistindo para que nunca se esquecessem de Deus. Foi também nessa época que Balaque, rei de Moabe, contratou Balaão para amaldiçoar Israel — mas toda vez que Balaão abria a boca, os abençoava. Hoje as campinas estão cheias de tamareiras e lavouras.",
+      reflect: "Antes de entrar na terra, Moisés usou um livro inteiro para pedir ao povo que \"se lembrasse\". Qual é uma coisa que você nunca quer esquecer?",
+      mission: "🌴 Missão: Enquanto atravessa a região de carro, conte quantos tamarais você vê.",
+      quiz: { q: "Qual livro registra os discursos de Moisés nas campinas de Moabe?", options: ["Gênesis", "Levítico", "Deuteronômio"] },
+      howto: "É uma região inteira, pela qual você passa no caminho de Amã para o Mar Morto ou para o Local do Batismo. O check-in vale em qualquer ponto da área."
+    },
+
+    nebo: {
+      name: "Monte Nebo / Pisga",
+      place: "Igreja Memorial de Moisés, em Siyagha",
+      story: "Depois de liderar o povo por quarenta anos, Moisés recebeu de Deus a ordem de subir o monte Nebo. Deus lhe mostrou toda a Terra Prometida e disse: \"Mas tu não passarás para lá.\" Moisés morreu na terra de Moabe, e o próprio Deus o sepultou; até hoje ninguém sabe onde está a sua sepultura. No século 4, cristãos construíram no topo uma igreja em memória de Moisés, com belos pisos de mosaico. Em dia claro, dá para ver o Mar Morto, Jericó e até Jerusalém ao longe.",
+      reflect: "Moisés viu a promessa, mas não entrou nela. Existe algo que você deseja, mas que talvez precise passar para a próxima geração?",
+      mission: "🐍 Missão: Encontre a escultura da serpente de bronze no topo e tire uma foto. Qual acontecimento de Números 21 ela lembra?",
+      quiz: { q: "Segundo Deuteronômio, onde está a sepultura de Moisés?", options: ["Debaixo da igreja do monte Nebo", "Ninguém sabe até hoje", "Em Jerusalém"] },
+      howto: "Cerca de 10 km a oeste de Madaba, uns 45 minutos de carro de Amã. No topo há a igreja, um mirante, uma loja e banheiros. Dá para combinar com Madaba no mesmo dia. Venta muito — leve um casaco."
+    },
+
+    madaba: {
+      name: "Medeba (Madaba)",
+      place: "O Mapa de Mosaico na Igreja de São Jorge",
+      story: "Medeba é um nome bíblico que quase não mudou em três mil anos. O maior tesouro da cidade é um mapa de mosaico do século 6 no chão da Igreja Ortodoxa Grega de São Jorge: mais de um milhão de pedrinhas mostrando a Terra Santa, com o rio Jordão, o Mar Morto e Jerusalém cercada de muralhas. É um dos mapas da Terra Santa mais antigos que existem, e arqueólogos já o usaram para localizar vários lugares antigos. Por isso Madaba é chamada de \"Cidade dos Mosaicos\".",
+      reflect: "Os cristãos antigos montaram, pedra por pedra, a Terra Santa que conheciam. Se você desenhasse o \"mapa da sua fé\", quais lugares estariam nele?",
+      mission: "🗺️ Missão: Encontre Jerusalém no mapa de mosaico (a cidade com muralhas). Depois procure os peixes no rio Jordão — para que lado eles estão nadando?",
+      quiz: { q: "Qual é o tesouro antigo mais famoso de Madaba?", options: ["Um mapa de mosaico da Terra Santa", "O cajado de Moisés", "Uma pirâmide"] },
+      howto: "Cerca de 30 km ao sul de Amã, uns 40 minutos de carro; táxi, Careem e Uber também funcionam. Há micro-ônibus saindo de Amã — confira o ponto de partida atualizado antes de ir. A Igreja de São Jorge fica no centro; a entrada é paga e ela fecha para visitas durante as missas."
+    },
+
+    heshbon: {
+      name: "Hesbom",
+      place: "Sítio arqueológico de Tell Hisban",
+      story: "Hesbom era a capital de Seom, rei dos amorreus. Quando Israel pediu para passar, Seom recusou e atacou, mas foi derrotado, e a terra ficou com as tribos de Rúben e Gade. Cânticos compara os olhos límpidos da amada aos \"tanques de Hesbom\". Arqueólogos escavam aqui desde 1968 — e de fato encontraram um grande reservatório antigo.",
+      reflect: "Cânticos elogia a pessoa amada usando os tanques de uma cidade. Quando foi a última vez que você elogiou, de forma concreta, a pessoa mais próxima de você?",
+      mission: "💧 Missão: Encontre o reservatório antigo no sítio. Imagine como eram os tanques que o poeta de Cânticos viu.",
+      quiz: { q: "Hesbom era a capital de qual rei?", options: ["Balaque, de Moabe", "Seom, dos amorreus", "Ogue, de Basã"] },
+      howto: "Entre Amã e Madaba, ao lado da vila de Hisban, um pequeno desvio da estrada principal. Sítio pequeno, com pouca estrutura."
+    },
+
+    peor: {
+      name: "Bete-Peor (Fontes de Moisés)",
+      place: "Ayun Musa, ao pé do monte Nebo",
+      story: "Deuteronômio diz que Deus sepultou Moisés \"no vale, na terra de Moabe, em frente de Bete-Peor\". As fontes no vale ao norte do monte Nebo se chamam Ayun Musa — em árabe, \"as Fontes de Moisés\" — e ali há ruínas de igrejas bizantinas. Os estudiosos ainda não definiram onde ficava exatamente Bete-Peor, mas este vale está ao pé do monte onde Moisés esteve pela última vez.",
+      reflect: "Ninguém sabe onde está a sepultura de Moisés. Por que Deus talvez não quisesse que ela fosse encontrada?",
+      mission: "💦 Missão: Encontre a fonte e escute o som da água.",
+      quiz: { q: "O que significa \"Ayun Musa\"?", options: ["Monte de Moisés", "Fontes de Moisés", "Casa de Moisés"] },
+      howto: "No vale abaixo do monte Nebo; a estrada é estreita, então vá de carro ou peça a um motorista local. Pouca estrutura."
+    },
+
+    elealeh: {
+      name: "Eleale",
+      place: "A vila de El-Al",
+      story: "Eleale foi uma das cidades reconstruídas pela tribo de Rúben, vizinha de Hesbom. Séculos depois, Isaías lamentou por Moabe: \"Tanto Hesbom como Eleale vão gritando, até Jaaz se ouve sua voz.\" Hoje o nome da vila, El-Al, ainda preserva o nome antigo.",
+      reflect: "Isaías chorou por Moabe, inimiga de Israel. Você conseguiria sentir tristeza por alguém que não gosta de você?",
+      mission: "🏘️ Missão: De um ponto alto da vila, descubra em que direção fica Hesbom (para o sul).",
+      quiz: { q: "Eleale costuma ser mencionada junto com qual cidade?", options: ["Hesbom", "Jericó", "Damasco"] },
+      howto: "⚠️ Vila comum, sem estrutura para visitantes, cerca de 3 km ao norte de Hesbom. Respeite os moradores e não entre em terrenos particulares."
+    },
+
+    maein: {
+      name: "Baal-Meom",
+      place: "A vila de Ma'in (não são as Termas de Ma'in)",
+      story: "Baal-Meom foi outra cidade construída e rebatizada pela tribo de Rúben. Mais tarde, Mesa, rei de Moabe, se gabou em sua estela de pedra de ter construído Baal-Meom — ou seja, a cidade mudou de mãos entre Israel e Moabe mais de uma vez. Mosaicos de igrejas bizantinas também foram encontrados na atual vila de Ma'in. Atenção: não é o mesmo lugar das famosas Termas de Ma'in.",
+      reflect: "Os rubenitas deram novos nomes a cidades que carregavam nomes de deuses pagãos. Existe algo na sua vida que precisa ser \"rebatizado\" — receber um novo significado?",
+      mission: "🧩 Missão: A região de Madaba está cheia de mosaicos. Compare os que você viu hoje — qual é o seu favorito?",
+      quiz: { q: "Qual rei afirmou numa inscrição de pedra que construiu Baal-Meom?", options: ["O rei Davi", "Mesa, rei de Moabe", "O rei Herodes"] },
+      howto: "Cerca de 7 km a sudoeste de Madaba, bem perto de carro. Vila comum, com pouca estrutura."
+    }
+  },
+
+  titles: ["Viajante", "Explorador", "Peregrino", "Sentinela", "Testemunha Além do Jordão"]
+};

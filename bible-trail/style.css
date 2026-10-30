@@ -50,8 +50,9 @@ a { color: var(--water); }
 .rank { margin: 0; font-size: 13px; opacity: .9; }
 .lang {
   border: 1.5px solid currentColor; background: transparent; color: inherit;
-  border-radius: 999px; padding: 4px 12px; font-size: 14px; white-space: nowrap;
+  border-radius: 999px; padding: 4px 10px; font: inherit; font-size: 14px; white-space: nowrap; cursor: pointer;
 }
+.lang option { color: #2b211a; background: #fffaf2; }
 
 main { flex: 1; position: relative; overflow: hidden; }
 .view { position: absolute; inset: 0; overflow-y: auto; padding: 16px 16px 24px; }

@@ -84,10 +84,90 @@ const T = {
   youAreHere: { zh: "你在這裡", en: "You are here" }
 };
 
+// 巴西葡萄牙文介面文字（跟上面 T 的 key 一一對應；T 新增文字時這裡也要加）
+const T_PT = {
+  appName: "Trilha Bíblica da Jordânia",
+  tabMap: "Mapa", tabChapters: "Capítulos", tabPassport: "Passaporte", tabAbout: "Sobre",
+  showMe: "📍 Onde estou",
+  mapOffline: "O mapa precisa de internet. Sem conexão, use a aba Capítulos — os carimbos e as passagens bíblicas continuam funcionando.",
+  rankPrefix: "Título: ",
+  chapter: "Capítulo {n}",
+  required: "Obrigatório", bonus: "Bônus", open: "Abrir", close: "← Voltar",
+  passed: "Concluído", goldDone: "Medalha de ouro!", notPassed: "Visite as paradas obrigatórias para concluir",
+  stampsOf: "Carimbos {a} / {b}", starsOf: "Estrelas {a} / {b}",
+  scripture: "📖 Bíblia", story: "📜 A História", reflect: "💭 Para Refletir", mission: "🎯 Missão no Local", quiz: "❓ Quiz", howto: "🚗 Como Chegar",
+  checkinTitle: "🛂 Pegue Seu Carimbo",
+  checkinHelp: "Quando estiver no local, toque no botão. O celular confere a sua localização e carimba o passaporte se você estiver dentro da área. A localização só é comparada no seu celular e nunca é enviada a lugar nenhum.",
+  checkinBtn: "📍 Cheguei — carimbar!",
+  checking: "Verificando sua localização… (até 20 segundos)",
+  stamped: "Carimbado", stampedOn: "Carimbado em {d}", manualMark: " (manual)",
+  tooFar: "Você está a cerca de {km} km daqui. Tente de novo quando chegar!",
+  geoDenied: "A permissão de localização foi negada. Permita a localização para o navegador nas configurações do celular e tente de novo.",
+  geoFail: "Não foi possível obter sua localização (talvez você esteja em local fechado ou com sinal fraco).",
+  noGeo: "Este navegador não tem suporte a localização.",
+  manualHint: "O GPS não está preciso, mas você tem certeza de que está no local? Dá para carimbar manualmente (fica marcado como \"manual\" no passaporte).",
+  manualBtn: "Estou no local — carimbar manualmente",
+  manualConfirm: "Tem certeza? Toque em \"Confirmar\" para carimbar.",
+  confirm: "Confirmar", cancel: "Cancelar",
+  rightAns: "Acertou! ⭐ Você ganhou uma estrela",
+  wrongAns: "Ainda não — a resposta está na passagem bíblica!",
+  quizDone: "⭐ Respondido",
+  photoBy: "Foto: ",
+  noFacilities: "⚠️ Sem estrutura para visitantes",
+  approx: "📍 Localização aproximada (a confirmar)",
+  certYes: "✅ Localização amplamente aceita",
+  certLikely: "🤔 Localização provável",
+  certTradition: "🕯️ Local tradicional (lembrado pelos cristãos há séculos)",
+  certArea: "🗺️ Uma região inteira",
+  certUnknown: "❓ Localização incerta",
+  hiddenTag: "Secreta",
+  hiddenHelp: "🔒 Esta é uma fase secreta: a localização é incerta, então não é preciso ir até lá. Leia a passagem e a história e responda o quiz abaixo para ganhar o carimbo.",
+  chapterPassed: "🎉 Capítulo {n} concluído! Medalha conquistada {b}",
+  chapterGold: "🏆 Capítulo {n} completo! Sua medalha ficou dourada",
+  newRank: "🎖️ Novo título: {r}",
+  stampToast: "🛂 Carimbado: {s}",
+  myStamps: "Meus Carimbos", myBadges: "Medalhas dos Capítulos",
+  backup: "Backup do Progresso",
+  backupHelp: "O progresso fica salvo só no navegador deste celular. Antes de trocar de celular ou apagar os dados do navegador, exporte um arquivo de backup; depois é só importá-lo para continuar.",
+  exportBtn: "Exportar backup", importBtn: "Importar backup",
+  importOk: "Progresso importado: {n} carimbos",
+  importBad: "Este arquivo não parece ser um backup da Trilha Bíblica, então nada foi importado.",
+  storageOff: "⚠️ Este navegador não consegue salvar dados (talvez esteja em modo anônimo); o progresso se perde ao fechar.",
+  introTitle: "Bem-vindo à Trilha Bíblica da Jordânia!",
+  introBody: "Esta é uma versão de teste com os capítulos {chs} — {n} lugares ao todo.\n• Leia as passagens e as histórias quando quiser — ótimo para se preparar antes da viagem.\n• No local, toque em \"Cheguei — carimbar!\" e o GPS do celular confirma onde você está.\n• As fases \"secretas\" têm localização incerta — não precisa ir até lá; responda o quiz para desbloqueá-las.\n• Visite as paradas obrigatórias de um capítulo para concluí-lo; visite todas para ganhar a medalha de ouro.\n• O mapa precisa de internet; todo o resto funciona offline.",
+  gotIt: "Entendi, vamos lá!",
+  locating: "Procurando você…",
+  youAreHere: "Você está aqui"
+};
+for (const [k, v] of Object.entries(T_PT)) if (T[k]) T[k].pt = v;
+
+// 把 data-pt.js 的葡萄牙文合併進 data.js 的內容（每段文字多一個 pt）
+function mergePortuguese() {
+  if (!window.PT) return;
+  for (const ch of CHAPTERS) {
+    const p = PT.chapters[ch.id];
+    if (p) { ch.title.pt = p.title; ch.intro.pt = p.intro; }
+  }
+  for (const [id, s] of Object.entries(STATIONS)) {
+    const p = PT.stations[id];
+    if (!p) { console.warn("[BibleTrail] 缺少葡萄牙文：" + id); continue; }
+    for (const k of ["name", "place", "story", "reflect", "mission", "howto"]) s[k].pt = p[k];
+    s.quiz.q.pt = p.quiz.q;
+    s.quiz.options.forEach((o, i) => { o.pt = p.quiz.options[i]; });
+  }
+  TITLES.forEach((x, i) => { x.pt = PT.titles[i]; });
+}
+mergePortuguese();
+
 // ---------- 小工具 ----------
+const LANGS = ["zh", "en", "pt"];
+const LOCALE = { zh: "zh-TW", en: "en-GB", pt: "pt-BR" };
 let lang = loadLang();
-const t = (key, vars) => fill((T[key] || {})[lang] || key, vars);
-const pick = (obj) => (obj ? obj[lang] || obj.zh : "");
+// 缺哪個語言就先用英文，再用中文，畫面不會空白
+const t = (key, vars) => { const e = T[key] || {}; return fill(e[lang] || e.en || key, vars); };
+const pick = (obj) => (obj ? obj[lang] || obj.en || obj.zh : "");
+// 一段只出現在程式裡的三語文字（說明頁用）
+const L = (o) => o[lang] || o.en;
 function fill(s, vars) {
   if (!vars) return s;
   return s.replace(/\{(\w+)\}/g, (_, k) => (k in vars ? vars[k] : ""));
@@ -109,14 +189,15 @@ function el(tag, attrs, ...kids) {
 }
 function textBlock(s) { return s.split("\n").map((line) => el("p", null, line)); }
 function fmtDate(ts) {
-  try { return new Date(ts).toLocaleDateString(lang === "zh" ? "zh-TW" : "en-GB"); } catch { return ""; }
+  try { return new Date(ts).toLocaleDateString(LOCALE[lang]); } catch { return ""; }
 }
 
 // ---------- 存資料（瀏覽器可能不讓存，所以每次都包 try） ----------
 let storageOk = true;
 function loadLang() {
-  try { const v = localStorage.getItem(LANG_KEY); if (v === "zh" || v === "en") return v; } catch {}
-  return (navigator.language || "").toLowerCase().startsWith("zh") ? "zh" : "en";
+  try { const v = localStorage.getItem(LANG_KEY); if (["zh", "en", "pt"].includes(v)) return v; } catch {}
+  const nav = (navigator.language || "").toLowerCase();
+  return nav.startsWith("zh") ? "zh" : nav.startsWith("pt") ? "pt" : "en";
 }
 function emptyState() { return { stamps: {}, stars: {} }; }
 function loadState() {
@@ -161,7 +242,8 @@ function rankFor(n) {
 function chapterNumbers() {
   const nos = CHAPTERS.map((c) => c.no);
   if (lang === "zh") return nos.join("、");
-  return nos.length > 1 ? nos.slice(0, -1).join(", ") + " and " + nos[nos.length - 1] : String(nos[0]);
+  const and = lang === "pt" ? " e " : " and ";
+  return nos.length > 1 ? nos.slice(0, -1).join(", ") + and + nos[nos.length - 1] : String(nos[0]);
 }
 const introVars = () => ({ chs: chapterNumbers(), n: stationIds().length });
 function chapterStatus(ch) {
@@ -206,7 +288,8 @@ function stamp(id, manual) {
 
 // ---------- 畫面：上方稱號 ----------
 function renderTop() {
-  document.documentElement.lang = lang === "zh" ? "zh-Hant" : "en";
+  document.documentElement.lang = { zh: "zh-Hant", en: "en", pt: "pt-BR" }[lang];
+  document.getElementById("langSel").value = lang;
   document.querySelectorAll("[data-t]").forEach((n) => { n.textContent = t(n.dataset.t); });
   document.getElementById("rank").textContent = t("rankPrefix") + rankFor(stampCount())[lang] + " · " + t("stampsOf", { a: stampCount(), b: stationIds().length });
 }
@@ -314,36 +397,41 @@ function importProgress(ev) {
 // ---------- 畫面：說明 ----------
 function renderAbout() {
   const v = document.getElementById("view-about");
-  const zh = lang === "zh";
+  const link = (href, text) => el("a", { href, target: "_blank", rel: "noopener" }, text);
   v.replaceChildren(
     el("div", { class: "card" }, el("h2", null, t("introTitle")), textBlock(t("introBody", introVars()))),
     el("div", { class: "card" },
-      el("h2", null, zh ? "可信度標記" : "Certainty Labels"),
-      el("ul", { class: "legend" }, ["certYes", "certLikely", "certTradition", "certArea"].map((k) => el("li", null, t(k)))),
-      el("p", { class: "muted" }, zh
-        ? "聖經地點有的經過考古證實，有的是一千多年來信徒世代紀念的「傳統說法」。我們老實標出來，讓你自己判斷。"
-        : "Some biblical sites are confirmed by archaeology; others are 'traditional sites' that believers have honored for over a thousand years. We label them honestly so you can judge for yourself.")
+      el("h2", null, L({ zh: "可信度標記", en: "Certainty Labels", pt: "Grau de Certeza" })),
+      el("ul", { class: "legend" }, ["certYes", "certLikely", "certTradition", "certArea", "certUnknown"].map((k) => el("li", null, t(k)))),
+      el("p", { class: "muted" }, L({
+        zh: "聖經地點有的經過考古證實，有的是一千多年來信徒世代紀念的「傳統說法」。我們老實標出來，讓你自己判斷。",
+        en: "Some biblical sites are confirmed by archaeology; others are 'traditional sites' that believers have honored for over a thousand years. We label them honestly so you can judge for yourself.",
+        pt: "Alguns lugares bíblicos foram confirmados pela arqueologia; outros são \"locais tradicionais\", lembrados pelos cristãos há mais de mil anos. Indicamos isso com honestidade para que você mesmo possa avaliar."
+      }))
     ),
     el("div", { class: "card" },
-      el("h2", null, zh ? "加到手機主畫面" : "Add to Your Home Screen"),
-      el("p", null, zh ? "不用安裝也能用。想要像 App 一樣有圖示：" : "No install needed. For an app-like icon:"),
+      el("h2", null, L({ zh: "加到手機主畫面", en: "Add to Your Home Screen", pt: "Adicionar à Tela Inicial" })),
+      el("p", null, L({ zh: "不用安裝也能用。想要像 App 一樣有圖示：", en: "No install needed. For an app-like icon:", pt: "Não precisa instalar. Para ter um ícone como de aplicativo:" })),
       el("ul", null,
-        el("li", null, zh ? "iPhone（Safari）：點分享按鈕 → 加入主畫面" : "iPhone (Safari): tap Share → Add to Home Screen"),
-        el("li", null, zh ? "Android（Chrome）：點右上角 ⋮ → 加到主畫面" : "Android (Chrome): tap ⋮ → Add to Home screen"))
+        el("li", null, L({ zh: "iPhone（Safari）：點分享按鈕 → 加入主畫面", en: "iPhone (Safari): tap Share → Add to Home Screen", pt: "iPhone (Safari): toque em Compartilhar → Adicionar à Tela de Início" })),
+        el("li", null, L({ zh: "Android（Chrome）：點右上角 ⋮ → 加到主畫面", en: "Android (Chrome): tap ⋮ → Add to Home screen", pt: "Android (Chrome): toque em ⋮ → Adicionar à tela inicial" })))
     ),
     el("div", { class: "card" },
-      el("h2", null, zh ? "隱私" : "Privacy"),
-      el("p", null, zh
-        ? "這個 App 不需要帳號、不收集個人資料。蓋章時的位置只在你的手機上比對，進度只存在你的手機裡。"
-        : "No account, no personal data collected. Your location is only compared on your phone during check-in, and progress stays on your phone.")
+      el("h2", null, L({ zh: "隱私", en: "Privacy", pt: "Privacidade" })),
+      el("p", null, L({
+        zh: "這個 App 不需要帳號、不收集個人資料。蓋章時的位置只在你的手機上比對，進度只存在你的手機裡。",
+        en: "No account, no personal data collected. Your location is only compared on your phone during check-in, and progress stays on your phone.",
+        pt: "Sem conta e sem coleta de dados pessoais. Sua localização só é comparada no seu celular durante o check-in, e o progresso fica no seu celular."
+      }))
     ),
     el("div", { class: "card" },
-      el("h2", null, zh ? "資料來源與授權" : "Sources & Credits"),
+      el("h2", null, L({ zh: "資料來源與授權", en: "Sources & Credits", pt: "Fontes e Créditos" })),
       el("ul", { class: "muted" },
-        el("li", null, zh ? "經文：《和合本》、World English Bible（皆為公共領域）" : "Scripture: Chinese Union Version and World English Bible (both public domain)"),
-        el("li", null, zh ? "地點與座標：" : "Places & coordinates: ", el("a", { href: "https://www.openbible.info/geo/", target: "_blank", rel: "noopener" }, "OpenBible.info"), " (CC BY 4.0)"),
-        el("li", null, zh ? "地圖：" : "Map: ", "© ", el("a", { href: "https://www.openstreetmap.org/copyright", target: "_blank", rel: "noopener" }, "OpenStreetMap"), zh ? " 貢獻者" : " contributors"),
-        el("li", null, zh ? "照片：Wikimedia Commons，作者與授權標在每張照片下方" : "Photos: Wikimedia Commons; author and license under each photo")
+        el("li", null, L({ zh: "經文：《和合本》、World English Bible（皆為公共領域）", en: "Scripture: Chinese Union Version and World English Bible (both public domain)", pt: "Bíblia em chinês e inglês: Chinese Union Version e World English Bible (domínio público)" })),
+        el("li", null, L({ zh: "葡萄牙文經文：", en: "Portuguese scripture: ", pt: "Bíblia em português: " }), link("https://www.biblialivre.com.br/", "Bíblia Livre"), " (CC BY 3.0 BR)"),
+        el("li", null, L({ zh: "地點與座標：", en: "Places & coordinates: ", pt: "Lugares e coordenadas: " }), link("https://www.openbible.info/geo/", "OpenBible.info"), " (CC BY 4.0)"),
+        el("li", null, L({ zh: "地圖：", en: "Map: ", pt: "Mapa: " }), "© ", link("https://www.openstreetmap.org/copyright", "OpenStreetMap"), L({ zh: " 貢獻者", en: " contributors", pt: " colaboradores" })),
+        el("li", null, L({ zh: "照片：Wikimedia Commons，作者與授權標在每張照片下方", en: "Photos: Wikimedia Commons; author and license under each photo", pt: "Fotos: Wikimedia Commons; autor e licença abaixo de cada foto" }))
       ),
       el("p", { class: "muted" }, "Benson and Esther · 2026")
     )
@@ -377,7 +465,7 @@ function openStation(id) {
       checkinCard(id),
       el("div", { class: "card" }, el("h3", null, t("scripture")), s.verses.map((ref) => {
         const v = VERSES[ref];
-        return v ? el("blockquote", { class: "verse" }, v[lang], el("cite", null, lang === "zh" ? v.zhRef : v.enRef)) : null;
+        return v ? el("blockquote", { class: "verse" }, v[lang] || v.en, el("cite", null, v[lang + "Ref"] || v.enRef)) : null;
       })),
       el("div", { class: "card" }, el("h3", null, t("story")), el("p", null, pick(s.story))),
       el("div", { class: "card" }, el("h3", null, t("reflect")), el("p", null, pick(s.reflect))),
@@ -571,8 +659,9 @@ function refresh() {
     sheet.scrollTop = y;
   }
 }
-document.getElementById("langBtn").addEventListener("click", () => {
-  lang = lang === "zh" ? "en" : "zh";
+document.getElementById("langSel").addEventListener("change", (e) => {
+  if (!LANGS.includes(e.target.value)) return;
+  lang = e.target.value;
   try { localStorage.setItem(LANG_KEY, lang); } catch {}
   refresh();
 });
