@@ -127,6 +127,19 @@ window.CHAPTERS = [
     badge: "🧥",
     required: ["pella"],
     bonus: ["abelmeholah", "zaphon", "rogelim", "lodebar"]
+  },
+  {
+    id: "side2",
+    no: 11,
+    side: true,
+    title: { zh: "河東的抉擇（散落各地）", en: "Choices East of the Jordan (Across the Country)" },
+    intro: {
+      zh: "這條支線的地點散在約旦各地，可以順著主線的路走到。它們有一個共同點：都有人在這裡做了選擇：以色列人選擇繞路而不硬闖，流便、迦得選擇跟弟兄一起打仗，神為犯錯的人選擇留一條生路，約伯在失去一切時選擇敬拜。",
+      en: "The sites on this side trail are scattered across Jordan and easy to reach along the main route. They share one thing: someone made a choice here. Israel chose to go around rather than force its way; Reuben and Gad chose to fight alongside their brothers; God chose to provide a way of escape for those who had failed; and Job, having lost everything, chose to worship."
+    },
+    badge: "🛣️",
+    required: ["kingshighway"],
+    bonus: ["jazer", "bezer", "bethjeshimoth", "anjara", "uz"]
   }
 ];
 
@@ -1929,6 +1942,191 @@ window.STATIONS = {
     quiz: {
       q: { zh: "大衛為了誰的緣故恩待米非波設？", en: "For whose sake did David show kindness to Mephibosheth?" },
       options: [{ zh: "掃羅", en: "Saul" }, { zh: "約拿單", en: "Jonathan" }, { zh: "撒母耳", en: "Samuel" }],
+      answer: 1
+    },
+    howto: {
+      zh: "這是隱藏關卡：確切位置不知道，不需要到現場。答對上面的問答就能解鎖印章。",
+      en: "This is a hidden level: the exact location is unknown, so you don't need to visit. Answer the quiz correctly to unlock the stamp."
+    },
+    photo: null
+  },
+
+  kingshighway: {
+    name: { zh: "君王大道", en: "The King's Highway" },
+    place: { zh: "從馬達巴往南到以東的 35 號公路，走任何一段都算", en: "Route 35 from Madaba south into Edom; any stretch counts" },
+    lat: 31.716107, lng: 35.79548, radius: 3000,
+    points: [{ lat: 31.502236, lng: 35.776574 }, { lat: 31.1808, lng: 35.7013 }, { lat: 30.8375, lng: 35.604167 }, { lat: 30.7384, lng: 35.6064 }],
+    certainty: "area",
+    verses: ["Num 20:17", "Num 21:22"],
+    story: {
+      zh: "以色列人快到應許之地時，摩西兩次派人去請求借道：先問以東王，再問亞摩利王西宏，說的都是同一句話：「我們只走大道，不偏左右，直到過了你的境界。」結果兩次都被拒絕。這條「大道」就是今天的君王大道，是世界上使用最久的道路之一：古代的商隊、拿巴天人運香料的駱駝隊、羅馬皇帝圖拉真修的「新圖拉真大道」、拜占庭的朝聖者，都走過這條路。這趟旅程的第 5 到第 8 章，幾乎都在這條路的兩旁。",
+      en: "As Israel neared the Promised Land, Moses twice sent messengers asking for passage—first to the king of Edom, then to Sihon king of the Amorites—with the same words: 'We will go along the king's highway. We will not turn aside to the right hand nor to the left, until we have passed your border.' Both times they were refused. That 'highway' is today's King's Highway, one of the oldest continuously used roads in the world: ancient caravans, Nabataean camel trains carrying incense, the Roman emperor Trajan's 'Via Nova Traiana,' and Byzantine pilgrims all traveled it. Chapters 5 through 8 of this journey lie almost entirely along it."
+    },
+    reflect: {
+      zh: "以色列人客客氣氣地請求，還是被拒絕。你被拒絕的時候，通常怎麼回應？硬闖、記恨，還是像以色列人一樣繞路？",
+      en: "Israel asked politely and was still refused. When you're turned down, how do you usually respond—force your way, hold a grudge, or, like Israel, take the long way around?"
+    },
+    mission: {
+      zh: "🛣️ 任務：開在君王大道上的時候，找一段沒有車的直路，關掉音樂安靜五分鐘。想想三千多年來，有多少人在這條路上找方向。",
+      en: "🛣️ Mission: While driving the King's Highway, find a quiet straight stretch, turn off the music, and be still for five minutes. Think of how many people over three thousand years have searched for their way on this road."
+    },
+    quiz: {
+      q: { zh: "摩西請求借道時，承諾要怎麼走？", en: "When Moses asked for passage, how did he promise to travel?" },
+      options: [{ zh: "只走大道，不偏左右", en: "Only on the highway, turning neither right nor left" }, { zh: "晚上偷偷經過", en: "Sneak through at night" }, { zh: "分成十二隊各走各的", en: "Split into twelve groups" }],
+      answer: 0
+    },
+    howto: {
+      zh: "不用找特定地點：馬達巴、底本、卡拉克、塔菲拉、波斯拉這幾個鎮都在君王大道上，經過任何一個就在蓋章範圍內。這條路山多彎多，比沙漠公路慢很多，但風景最好；從馬達巴開到佩特拉一整天剛好。",
+      en: "No specific spot needed: Madaba, Dhiban, Kerak, Tafila and Busayra all lie on the King's Highway, and passing through any of them puts you in stamping range. The road is hilly and winding—much slower than the Desert Highway, but far more scenic; Madaba to Petra makes a good full day."
+    },
+    photo: null
+  },
+
+  jazer: {
+    name: { zh: "雅謝（流便、迦得選的牧場）", en: "Jazer (The Pastureland Reuben and Gad Chose)" },
+    place: { zh: "安曼西邊的 Khirbet Sara 遺址", en: "The ruins of Khirbet Sara, west of Amman" },
+    lat: 31.944471, lng: 35.830077, radius: 1200,
+    certainty: "likely",
+    noFacilities: true,
+    verses: ["Num 32:1", "Num 32:6"],
+    story: {
+      zh: "以色列人打敗西宏以後，流便和迦得兩個支派看見雅謝地和基列地是放牧的好地方，他們的牛羊又特別多，就來求摩西：「不要領我們過約旦河。」摩西很生氣：「難道你們的弟兄去打仗，你們竟坐在這裡嗎？」他想起四十年前，探子的壞消息讓全會眾灰心，不肯進迦南。後來兩個支派答應：先讓家人和牛羊留在河東，男人帶著兵器過河，和弟兄一起打仗，等全以色列都得了地業才回家。他們也真的做到了（約書亞記 22 章）。",
+      en: "After Israel defeated Sihon, the tribes of Reuben and Gad saw that the land of Jazer and Gilead was ideal for livestock—and they had a great many cattle—so they came to Moses: 'Don't bring us over the Jordan.' Moses was angry: 'Shall your brothers go to war while you sit here?' He remembered how, forty years before, the spies' bad report had discouraged the whole people from entering Canaan. In the end the two tribes agreed: they would leave their families and flocks east of the Jordan, while the men crossed armed to fight alongside their brothers, returning home only when all Israel had received its inheritance. And they kept their word (Joshua 22)."
+    },
+    reflect: {
+      zh: "流便、迦得先看到的是對自己最好的地，摩西提醒他們看見弟兄的需要。你最近的一個決定，有沒有顧到身邊的人？",
+      en: "Reuben and Gad first saw the land that was best for themselves; Moses reminded them to see their brothers' needs. Did a recent decision of yours take the people around you into account?"
+    },
+    mission: {
+      zh: "🐑 任務：看看四周的山坡，找找看有沒有羊群。想像流便、迦得的牧人站在這裡，覺得「就是這裡了」的那一刻。",
+      en: "🐑 Mission: Scan the hillsides around you for flocks of sheep. Imagine the herdsmen of Reuben and Gad standing here, thinking, 'This is the place.'"
+    },
+    quiz: {
+      q: { zh: "流便、迦得想留在河東，是因為什麼？", en: "Why did Reuben and Gad want to stay east of the Jordan?" },
+      options: [{ zh: "怕打仗", en: "They feared battle" }, { zh: "牛羊很多，這裡是好牧場", en: "They had many cattle and this was good pastureland" }, { zh: "摩西叫他們留下", en: "Moses told them to stay" }],
+      answer: 1
+    },
+    howto: {
+      zh: "⚠️ 考古遺址，沒有遊客設施，能不能進去還沒確認。在安曼西邊、往 Wadi es-Sir 的方向，從安曼市區開車約 30 分鐘。這是學者推測的位置之一，雅謝確切在哪還有討論。",
+      en: "⚠️ An archaeological site with no visitor facilities; access hasn't been confirmed. It's west of Amman toward Wadi es-Sir, about 30 minutes' drive from central Amman. This is one of several scholarly proposals; Jazer's exact location is still debated."
+    },
+    photo: null
+  },
+
+  bezer: {
+    name: { zh: "比悉（河東的逃城）", en: "Bezer (A City of Refuge)" },
+    place: { zh: "馬達巴東北方的 Umm el-Amad 遺址", en: "The ruins of Umm el-Amad, northeast of Madaba" },
+    lat: 31.78603, lng: 35.90168, radius: 1200,
+    certainty: "likely",
+    noFacilities: true,
+    verses: ["Deut 4:43", "Josh 20:3"],
+    story: {
+      zh: "摩西在約旦河東分出三座「逃城」：曠野平原的比悉、基列的拉末（第 1 章）、巴珊的哥蘭。如果有人不是出於仇恨、不小心殺了人，可以逃到這些城裡，不會被死者的家人私下報仇，等到會眾公正審判。三座城分散在河東的南、中、北，讓各地的人都找得到離自己最近的一座。米沙石碑（第 6 章）也提到比悉，米沙說他重建了這座城。",
+      en: "East of the Jordan Moses set apart three 'cities of refuge': Bezer on the wilderness plateau, Ramoth in Gilead (Chapter 1), and Golan in Bashan. Anyone who killed someone accidentally, without hatred, could flee to one of these cities and be safe from the victim's family taking revenge, until the community could judge fairly. The three cities were spread across the south, middle and north of the land so that people everywhere had one within reach. The Mesha Stele (Chapter 6) mentions Bezer too: Mesha says he rebuilt it."
+    },
+    reflect: {
+      zh: "神在律法裡為「犯了錯的人」預備了逃生的路。你身邊有沒有一個犯了錯、需要一個安全地方的人？你能成為他的「逃城」嗎？",
+      en: "Within the law, God provided an escape for people who had made a terrible mistake. Is there someone near you who has failed and needs a safe place? Could you be their 'city of refuge'?"
+    },
+    mission: {
+      zh: "🛡️ 任務：在遺址找一個高處，往四周看。想像一個慌張的人一路跑來，看到城門那一刻鬆了一口氣。",
+      en: "🛡️ Mission: Find a high point in the ruins and look around. Imagine a frightened man running all the way here, and his relief when he sees the city gate."
+    },
+    quiz: {
+      q: { zh: "逃城是給什麼樣的人逃去的？", en: "Who were the cities of refuge for?" },
+      options: [{ zh: "逃兵", en: "Army deserters" }, { zh: "不是出於仇恨、誤殺人的人", en: "Those who killed someone accidentally, without hatred" }, { zh: "欠債的人", en: "People in debt" }],
+      answer: 1
+    },
+    howto: {
+      zh: "⚠️ 考古遺址，沒有遊客設施，能不能進去還沒確認。在馬達巴東北方、安曼南邊的平原上，從馬達巴開車約 25 分鐘。這是學者推測的位置之一。",
+      en: "⚠️ An archaeological site with no visitor facilities; access hasn't been confirmed. It's on the plain northeast of Madaba and south of Amman, about 25 minutes' drive from Madaba. This is one of several scholarly proposals."
+    },
+    photo: null
+  },
+
+  bethjeshimoth: {
+    name: { zh: "伯耶施末（過河前最後的營地）", en: "Beth-jeshimoth (The Last Camp Before the Crossing)" },
+    place: { zh: "死海北邊的 Tell Azeimeh 土丘", en: "The mound of Tell Azeimeh, north of the Dead Sea" },
+    lat: 31.782551, lng: 35.62125, radius: 1200,
+    certainty: "yes",
+    noFacilities: true,
+    verses: ["Num 33:49"],
+    story: {
+      zh: "民數記 33 章把以色列人出埃及以後的每一站都記下來，最後一站是：「在摩押平原沿約旦河邊安營，從伯‧耶施末直到亞伯‧什亭。」四十年、四十多個營地，到這裡畫下句點。下一步，就是過約旦河（第 4 章）。伯耶施末是這片營地的南端，什亭是北端。",
+      en: "Numbers 33 records every stop on Israel's journey from Egypt, and the last one reads: 'They encamped by the Jordan, from Beth Jeshimoth even to Abel Shittim in the plains of Moab.' Forty years and more than forty camps came to an end here. The next step was crossing the Jordan (Chapter 4). Beth-jeshimoth was the southern end of this great camp, and Shittim the northern end."
+    },
+    reflect: {
+      zh: "民數記把每一個營地都記下來，連看起來沒什麼的那幾站也是。回頭看你的人生，有哪一段「看起來沒什麼」的日子，其實是神在帶領？",
+      en: "Numbers records every single camp, even the ones that seem unremarkable. Looking back on your life, which 'unremarkable' season was actually God leading you?"
+    },
+    mission: {
+      zh: "📜 任務：讀民數記 33 章，數數看以色列人總共停了幾站。再往西看，約旦河就在不遠處。",
+      en: "📜 Mission: Read Numbers 33 and count how many stops Israel made. Then look west—the Jordan River is not far away."
+    },
+    quiz: {
+      q: { zh: "伯耶施末是以色列人過約旦河前的哪一個營地？", en: "Which camp was Beth-jeshimoth before Israel crossed the Jordan?" },
+      options: [{ zh: "第一個營地", en: "The first camp" }, { zh: "最後的營地", en: "The last camp" }, { zh: "在西奈山下的營地", en: "The camp at Mount Sinai" }],
+      answer: 1
+    },
+    howto: {
+      zh: "⚠️ 考古土丘，沒有遊客設施，能不能進去還沒確認。在死海北邊、往度假飯店區的公路附近，可以和第 4 章的受洗處、什亭、摩押平原排在一起。夏天非常熱，避開中午。",
+      en: "⚠️ An archaeological mound with no visitor facilities; access hasn't been confirmed. It's north of the Dead Sea near the road to the resort area—easy to combine with the Baptism Site, Shittim and the Plains of Moab from Chapter 4. Very hot in summer; avoid midday."
+    },
+    photo: null
+  },
+
+  anjara: {
+    name: { zh: "安佳拉「山中聖母」朝聖地", en: "Our Lady of the Mountain, Anjara" },
+    place: { zh: "阿傑隆山區的安佳拉鎮，教堂旁的山洞", en: "The town of Anjara in the Ajloun hills, a cave beside the church" },
+    lat: 32.3066, lng: 35.7557, radius: 1500,
+    certainty: "tradition",
+    approx: true,
+    verses: ["Mark 6:31"],
+    story: {
+      zh: "當地天主教的傳統說，耶穌和母親馬利亞、門徒，從加利利經過低加坡里往耶路撒冷的路上，曾經在安佳拉的一個山洞裡歇腳。聖經沒有記載這件事，所以是傳統說法；不過福音書確實記載耶穌走過低加坡里一帶，也常帶門徒離開人群去休息：「你們來，同我暗暗地到曠野地方去歇一歇。」今天山洞旁蓋了「山中聖母」教堂，2000 年被梵蒂岡列為約旦五個朝聖地之一，每年六月都有上千人來朝聖。",
+      en: "Local Catholic tradition holds that Jesus, his mother Mary and the disciples rested in a cave at Anjara on their way from Galilee through the Decapolis to Jerusalem. The Bible doesn't record this, so it is a tradition; but the Gospels do record Jesus traveling through the Decapolis, and often taking his disciples away from the crowds to rest: 'Come away into a deserted place, and rest awhile.' Today the Church of Our Lady of the Mountain stands beside the cave; in 2000 the Vatican named it one of five pilgrimage sites in Jordan, and every June more than a thousand pilgrims come."
+    },
+    reflect: {
+      zh: "耶穌會主動帶門徒去休息。在這趟旅程裡，你有沒有留時間「歇一歇」，還是一直趕下一站？",
+      en: "Jesus deliberately took his disciples away to rest. On this journey, have you left time to 'rest awhile,' or are you always rushing to the next stop?"
+    },
+    mission: {
+      zh: "🕯️ 任務：在山洞裡安靜坐五分鐘，什麼都不做，只是休息。如果是星期天，可以留意教會聚會時間，尊重在這裡禱告的人。",
+      en: "🕯️ Mission: Sit quietly in the cave for five minutes and do nothing but rest. On Sundays, note the service times and respect those praying here."
+    },
+    quiz: {
+      q: { zh: "耶穌對門徒說：「你們來，同我暗暗地到曠野地方去……」做什麼？", en: "Jesus told his disciples, 'Come away into a deserted place, and…' what?" },
+      options: [{ zh: "禁食", en: "Fast" }, { zh: "歇一歇", en: "Rest awhile" }, { zh: "傳道", en: "Preach" }],
+      answer: 1
+    },
+    howto: {
+      zh: "在阿傑隆附近的安佳拉鎮，從傑拉什開車約 25 分鐘，可以和第 1 章的格拉森、以利亞的家鄉提斯比排在一起。教堂開放參觀，進去請穿著端莊。座標是鎮中心的大約位置，到了鎮上問「Sayidat al-Jabal」就找得到。",
+      en: "In the town of Anjara near Ajloun, about 25 minutes' drive from Jerash—easy to combine with Gerasa and Elijah's hometown Tishbe from Chapter 1. The church is open to visitors; please dress modestly. The coordinates are the approximate town center—in town, ask for 'Sayidat al-Jabal.'"
+    },
+    photo: null
+  },
+
+  uz: {
+    name: { zh: "烏斯地（約伯的家鄉）", en: "The Land of Uz (Job's Homeland)" },
+    place: { zh: "位置不確定，可能在以東一帶", en: "Location uncertain, possibly in Edom" },
+    hidden: true,
+    certainty: "unknown",
+    verses: ["Job 1:1", "Job 1:21"],
+    story: {
+      zh: "約伯記一開頭說：「烏斯地有一個人名叫約伯。」他完全正直、敬畏神，卻在一天之內失去了所有的牛羊、僕人，連十個兒女也都死了。約伯撕裂外袍、伏在地上下拜，說：「賞賜的是耶和華，收取的也是耶和華；耶和華的名是應當稱頌的。」烏斯地確切在哪裡不知道，耶利米哀歌把它跟以東連在一起（「住烏斯地的以東民」），來安慰約伯的朋友以利法也是以東的提幔人（第 8 章）。所以這是隱藏關卡。",
+      en: "The book of Job opens: 'There was a man in the land of Uz, whose name was Job.' He was blameless and upright and feared God, yet in a single day he lost all his flocks and herds and servants, and even his ten children died. Job tore his robe, fell to the ground and worshiped: 'Yahweh gave, and Yahweh has taken away. Blessed be Yahweh's name.' No one knows exactly where Uz was; Lamentations links it to Edom ('daughter of Edom, who dwells in the land of Uz'), and Job's friend Eliphaz was a Temanite from Edom too (Chapter 8). So this is a hidden level."
+    },
+    reflect: {
+      zh: "約伯在最大的失去裡，還是選擇敬拜。你在失去的時候，第一個反應是什麼？",
+      en: "In his greatest loss, Job still chose to worship. When you lose something, what is your first response?"
+    },
+    mission: {
+      zh: "🔒 隱藏任務：讀完約伯記第 1、2 章和第 42 章，再回來答題。",
+      en: "🔒 Hidden mission: Read Job chapters 1, 2 and 42, then come back for the quiz."
+    },
+    quiz: {
+      q: { zh: "約伯失去一切以後，說了什麼？", en: "What did Job say after losing everything?" },
+      options: [{ zh: "「神為什麼離棄我？」", en: "'Why has God abandoned me?'" }, { zh: "「賞賜的是耶和華，收取的也是耶和華」", en: "'Yahweh gave, and Yahweh has taken away'" }, { zh: "「我要離開烏斯地」", en: "'I will leave the land of Uz'" }],
       answer: 1
     },
     howto: {

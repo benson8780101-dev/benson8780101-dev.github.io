@@ -44,6 +44,10 @@ window.PT = {
     side1: {
       title: "Graça e Chamado (norte do vale do Jordão)",
       intro: "Entre as colinas de Gileade (Capítulo 1) e o Jaboque (Capítulo 2) fica um trecho pouco visitado do vale do Jordão. Aqui Eliseu deixou o arado para seguir Elias; Barzilai e Maquir socorreram Davi quando ele fugia; e a igreja primitiva encontrou refúgio. Dá para encaixar na mesma viagem dos Capítulos 1 e 2."
+    },
+    side2: {
+      title: "Escolhas a Leste do Jordão (pelo país)",
+      intro: "Os lugares desta trilha extra estão espalhados pela Jordânia e são fáceis de alcançar pelo caminho da trilha principal. Eles têm uma coisa em comum: alguém fez uma escolha aqui. Israel escolheu dar a volta em vez de forçar a passagem; Rúben e Gade escolheram lutar ao lado dos irmãos; Deus escolheu abrir um caminho de escape para quem errou; e Jó, depois de perder tudo, escolheu adorar."
     }
   },
 
@@ -635,6 +639,66 @@ window.PT = {
       reflect: "Mefibosete foi tirado de um lugar de \"nada\" e levado à mesa do rei. Diante de Deus, você se vê como um \"cão morto\" ou como filho do Rei?",
       mission: "🔒 Missão secreta: Leia 2 Samuel 9 e depois volte para o quiz.",
       quiz: { q: "Por causa de quem Davi foi bondoso com Mefibosete?", options: ["Saul", "Jônatas", "Samuel"] },
+      howto: "Esta é uma fase secreta: a localização exata é desconhecida, então não é preciso ir até lá. Responda o quiz corretamente para ganhar o carimbo."
+    },
+
+    kingshighway: {
+      name: "A Estrada dos Reis",
+      place: "A Rodovia 35, de Madaba para o sul até Edom; qualquer trecho vale",
+      story: "Quando Israel se aproximava da Terra Prometida, Moisés mandou duas vezes pedir passagem — primeiro ao rei de Edom, depois a Seom, rei dos amorreus — com as mesmas palavras: \"pelo caminho real iremos, sem apartar-nos à direita nem à esquerda, até que havemos passado teu termo\". As duas vezes o pedido foi recusado. Esse \"caminho real\" é a atual Estrada dos Reis, uma das estradas usadas há mais tempo no mundo: caravanas antigas, os camelos dos nabateus carregando incenso, a \"Via Nova Traiana\" do imperador romano Trajano e os peregrinos bizantinos passaram por ela. Os Capítulos 5 a 8 desta viagem ficam quase todos ao longo dela.",
+      reflect: "Israel pediu com educação e mesmo assim foi recusado. Quando você recebe um \"não\", como costuma reagir — força a passagem, guarda mágoa ou, como Israel, dá a volta?",
+      mission: "🛣️ Missão: Dirigindo pela Estrada dos Reis, encontre um trecho reto e tranquilo, desligue a música e fique em silêncio por cinco minutos. Pense em quantas pessoas, em mais de três mil anos, procuraram o seu caminho nesta estrada.",
+      quiz: { q: "Ao pedir passagem, como Moisés prometeu viajar?", options: ["Só pela estrada, sem se desviar à direita nem à esquerda", "Passar escondido à noite", "Dividir-se em doze grupos"] },
+      howto: "Não é preciso ir a um ponto exato: Madaba, Dhiban, Kerak, Tafila e Busayra ficam todas na Estrada dos Reis, e passar por qualquer uma delas já coloca você na área do carimbo. A estrada é cheia de subidas e curvas — bem mais lenta que a Rodovia do Deserto, mas muito mais bonita; de Madaba a Petra dá um bom dia inteiro."
+    },
+
+    jazer: {
+      name: "Jazer (o pasto que Rúben e Gade escolheram)",
+      place: "As ruínas de Khirbet Sara, a oeste de Amã",
+      story: "Depois que Israel derrotou Seom, as tribos de Rúben e Gade viram que a terra de Jazer e de Gileade era ótima para o gado — e eles tinham muito gado —, então foram a Moisés: \"não nos faças passar o Jordão\". Moisés ficou irritado: \"Virão vossos irmãos à guerra, e vós ficareis aqui?\" Ele se lembrou de como, quarenta anos antes, o mau relatório dos espias tinha desanimado o povo inteiro de entrar em Canaã. No fim, as duas tribos concordaram: deixariam as famílias e os rebanhos a leste do Jordão, e os homens atravessariam armados para lutar ao lado dos irmãos, voltando para casa só quando todo Israel tivesse recebido a sua herança. E cumpriram a palavra (Josué 22).",
+      reflect: "Rúben e Gade viram primeiro a terra que era melhor para eles mesmos; Moisés os lembrou de ver a necessidade dos irmãos. Uma decisão recente sua levou em conta as pessoas ao seu redor?",
+      mission: "🐑 Missão: Procure rebanhos de ovelhas nas encostas ao redor. Imagine os pastores de Rúben e Gade parados aqui, pensando: \"É aqui\".",
+      quiz: { q: "Por que Rúben e Gade queriam ficar a leste do Jordão?", options: ["Tinham medo da guerra", "Tinham muito gado e aqui havia bons pastos", "Moisés mandou que ficassem"] },
+      howto: "⚠️ Sítio arqueológico sem estrutura para visitantes; ainda não confirmamos se dá para entrar. Fica a oeste de Amã, na direção de Wadi es-Sir, cerca de 30 minutos de carro do centro de Amã. Esta é uma das propostas dos estudiosos; a localização exata de Jazer ainda é discutida."
+    },
+
+    bezer: {
+      name: "Bezer (uma cidade de refúgio)",
+      place: "As ruínas de Umm el-Amad, a nordeste de Madaba",
+      story: "A leste do Jordão, Moisés separou três \"cidades de refúgio\": Bezer, no planalto do deserto; Ramote, em Gileade (Capítulo 1); e Golã, em Basã. Quem matasse alguém sem querer, sem ódio, podia fugir para uma dessas cidades e ficar protegido da vingança da família da vítima, até que a comunidade julgasse com justiça. As três cidades ficavam espalhadas pelo sul, centro e norte da terra, para que as pessoas de todos os lugares tivessem uma ao alcance. A Estela de Messa (Capítulo 6) também cita Bezer: Messa diz que a reconstruiu.",
+      reflect: "Dentro da lei, Deus abriu uma saída para quem tinha cometido um erro terrível. Há alguém perto de você que falhou e precisa de um lugar seguro? Você poderia ser a \"cidade de refúgio\" dessa pessoa?",
+      mission: "🛡️ Missão: Encontre um ponto alto nas ruínas e olhe ao redor. Imagine um homem assustado correndo até aqui e o alívio dele ao ver o portão da cidade.",
+      quiz: { q: "Para quem eram as cidades de refúgio?", options: ["Desertores do exército", "Quem matou alguém sem querer, sem ódio", "Pessoas endividadas"] },
+      howto: "⚠️ Sítio arqueológico sem estrutura para visitantes; ainda não confirmamos se dá para entrar. Fica na planície a nordeste de Madaba e ao sul de Amã, cerca de 25 minutos de carro de Madaba. Esta é uma das propostas dos estudiosos."
+    },
+
+    bethjeshimoth: {
+      name: "Bete-Jesimote (o último acampamento antes da travessia)",
+      place: "O monte de Tell Azeimeh, ao norte do mar Morto",
+      story: "Números 33 registra cada parada da viagem de Israel desde o Egito, e a última diz: \"assentaram junto ao Jordão, desde Bete-Jesimote até Abel-Sitim, nos campos de Moabe\". Quarenta anos e mais de quarenta acampamentos terminaram aqui. O passo seguinte foi atravessar o Jordão (Capítulo 4). Bete-Jesimote era a ponta sul desse grande acampamento, e Sitim a ponta norte.",
+      reflect: "Números registra cada acampamento, até os que parecem sem importância. Olhando para a sua vida, qual temporada \"sem importância\" era, na verdade, Deus conduzindo você?",
+      mission: "📜 Missão: Leia Números 33 e conte quantas paradas Israel fez. Depois olhe para o oeste — o rio Jordão não está longe.",
+      quiz: { q: "Que acampamento era Bete-Jesimote antes de Israel atravessar o Jordão?", options: ["O primeiro acampamento", "O último acampamento", "O acampamento no monte Sinai"] },
+      howto: "⚠️ Monte arqueológico sem estrutura para visitantes; ainda não confirmamos se dá para entrar. Fica ao norte do mar Morto, perto da estrada para a área dos hotéis — fácil de combinar com o Local do Batismo, Sitim e os Campos de Moabe, do Capítulo 4. Muito quente no verão; evite o meio-dia."
+    },
+
+    anjara: {
+      name: "Nossa Senhora da Montanha, Anjara",
+      place: "A cidade de Anjara, nas montanhas de Ajloun, uma gruta ao lado da igreja",
+      story: "A tradição católica local diz que Jesus, sua mãe Maria e os discípulos descansaram numa gruta em Anjara, no caminho da Galileia, passando por Decápolis, até Jerusalém. A Bíblia não registra isso, então é uma tradição; mas os Evangelhos de fato contam que Jesus passou pela região de Decápolis e que muitas vezes levava os discípulos para longe da multidão para descansar: \"Vinde vós à parte a um lugar deserto, e descansai um pouco\". Hoje a Igreja de Nossa Senhora da Montanha fica ao lado da gruta; em 2000 o Vaticano a reconheceu como um dos cinco lugares de peregrinação da Jordânia, e todo mês de junho mais de mil peregrinos vêm até aqui.",
+      reflect: "Jesus fazia questão de levar os discípulos para descansar. Nesta viagem, você reservou um tempo para \"descansar um pouco\" ou está sempre correndo para a próxima parada?",
+      mission: "🕯️ Missão: Fique sentado em silêncio na gruta por cinco minutos, sem fazer nada, só descansando. Aos domingos, veja o horário das missas e respeite quem está orando.",
+      quiz: { q: "Jesus disse aos discípulos: \"Vinde vós à parte a um lugar deserto, e…\" o quê?", options: ["Jejuai", "Descansai um pouco", "Pregai"] },
+      howto: "Na cidade de Anjara, perto de Ajloun, cerca de 25 minutos de carro de Jerash — fácil de combinar com Gerasa e Tisbe, a terra de Elias, do Capítulo 1. A igreja é aberta à visitação; vista-se com recato. As coordenadas são o centro aproximado da cidade — lá, pergunte por \"Sayidat al-Jabal\"."
+    },
+
+    uz: {
+      name: "A Terra de Uz (a terra de Jó)",
+      place: "Localização incerta, talvez em Edom",
+      story: "O livro de Jó começa assim: \"Havia um homem na terra de Uz, cujo nome era Jó\". Ele era íntegro e correto e temia a Deus, mas num só dia perdeu todos os rebanhos e servos, e até os seus dez filhos morreram. Jó rasgou a capa, caiu no chão e adorou: \"O SENHOR deu, e o SENHOR tomou; bendito seja o nome do SENHOR\". Ninguém sabe exatamente onde ficava Uz; Lamentações a liga a Edom (\"filha de Edom, que habitas na terra de Uz\"), e Elifaz, o amigo de Jó, também era temanita, de Edom (Capítulo 8). Por isso esta é uma fase secreta.",
+      reflect: "Na sua maior perda, Jó ainda escolheu adorar. Quando você perde algo, qual é a sua primeira reação?",
+      mission: "🔒 Missão secreta: Leia Jó 1, 2 e 42 e depois volte para o quiz.",
+      quiz: { q: "O que Jó disse depois de perder tudo?", options: ["\"Por que Deus me abandonou?\"", "\"O SENHOR deu, e o SENHOR tomou\"", "\"Vou sair da terra de Uz\""] },
       howto: "Esta é uma fase secreta: a localização exata é desconhecida, então não é preciso ir até lá. Responda o quiz corretamente para ganhar o carimbo."
     }
   },

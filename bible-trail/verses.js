@@ -497,6 +497,22 @@ window.VERSES = {
   "en": "Is there no balm in Gilead? is there no physician there? why then isn’t the health of the daughter of my people recovered?",
   "pt": "Por acaso não há bálsamo em Gileade, ou não há ali médico? Então por que não houve cura para a filha de meu povo?"
  },
+ "Job 1:1": {
+  "zhRef": "約伯記 1:1",
+  "enRef": "Job 1:1",
+  "ptRef": "Jó 1:1",
+  "zh": "烏斯地有一個人名叫約伯；那人完全正直，敬畏　神，遠離惡事。",
+  "en": "There was a man in the land of Uz, whose name was Job. That man was blameless and upright, and one who feared God, and turned away from evil.",
+  "pt": "Havia um homem na terra de Uz, cujo nome era Jó; e este homem era íntegro e correto, temente a Deus, e que se afastava do mal."
+ },
+ "Job 1:21": {
+  "zhRef": "約伯記 1:21",
+  "enRef": "Job 1:21",
+  "ptRef": "Jó 1:21",
+  "zh": "說：「我赤身出於母胎，也必赤身歸回；賞賜的是耶和華，收取的也是耶和華。耶和華的名是應當稱頌的。」",
+  "en": "He said, “Naked I came out of my mother’s womb, and naked shall I return there. Yahweh gave, and Yahweh has taken away. Blessed be Yahweh’s name.”",
+  "pt": "E disse: Nu saí do ventre de minha mãe, e nu para lá voltarei. O SENHOR deu, e o SENHOR tomou; bendito seja o nome do SENHOR."
+ },
  "Job 2:11": {
   "zhRef": "約伯記 2:11",
   "enRef": "Job 2:11",
@@ -544,6 +560,14 @@ window.VERSES = {
   "zh": "基列亭、西比瑪、谷中山的細列‧哈沙轄……",
   "en": "Kiriathaim, Sibmah, Zereth Shahar in the mount of the valley,",
   "pt": "E Quiriataim, e Sibma, e Zerete-Saar no monte do vale;"
+ },
+ "Josh 20:3": {
+  "zhRef": "約書亞記 20:3",
+  "enRef": "Joshua 20:3",
+  "ptRef": "Josué 20:3",
+  "zh": "使那無心而誤殺人的，可以逃到那裡。這些城可以作你們逃避報血仇人的地方。",
+  "en": "that the man slayer who kills any person accidentally or unintentionally may flee there. They shall be to you for a refuge from the avenger of blood.",
+  "pt": "Para que se acolha ali o homicida que matar a alguém por acidente e não de propósito; que vos sejam por refúgio do vingador do morto."
  },
  "Josh 2:1": {
   "zhRef": "約書亞記 2:1",
@@ -641,6 +665,14 @@ window.VERSES = {
   "en": "Immediately the king sent out a soldier of his guard, and commanded to bring John’s head, and he went and beheaded him in the prison, and brought his head on a platter, and gave it to the young lady; and the young lady gave it to her mother.",
   "pt": "Então logo o rei enviou o executor com a ordem de trazer ali sua cabeça. Ele, foi, e o decapitou na prisão. Em seguida, trouxe a sua cabeça num prato, e o deu à garota; e a garota a deu à sua mãe."
  },
+ "Mark 6:31": {
+  "zhRef": "馬可福音 6:31",
+  "enRef": "Mark 6:31",
+  "ptRef": "Marcos 6:31",
+  "zh": "他就說：「你們來，同我暗暗地到曠野地方去歇一歇。」這是因為來往的人多，他們連吃飯也沒有工夫。",
+  "en": "He said to them, “You come apart into a deserted place, and rest awhile.” For there were many coming and going, and they had no leisure so much as to eat.",
+  "pt": "E ele lhes disse: Vinde vós à parte a um lugar deserto, e descansai um pouco; pois havia muitos que iam e vinham, e não tinham tempo para comer."
+ },
  "Mark 7:31": {
   "zhRef": "馬可福音 7:31",
   "enRef": "Mark 7:31",
@@ -689,6 +721,14 @@ window.VERSES = {
   "en": "Moses lifted up his hand, and struck the rock with his rod twice, and water came out abundantly. The congregation and their livestock drank.",
   "pt": "Então levantou Moisés sua mão, e feriu a rocha com sua vara duas vezes: e saíram muitas águas, e bebeu a congregação, e seus animais."
  },
+ "Num 20:17": {
+  "zhRef": "民數記 20:17",
+  "enRef": "Numbers 20:17",
+  "ptRef": "Números 20:17",
+  "zh": "求你容我們從你的地經過。我們不走田間和葡萄園，也不喝井裡的水，只走大道（原文是王道），不偏左右，直到過了你的境界。",
+  "en": "“Please let us pass through your land. We will not pass through field or through vineyard, neither will we drink from the water of the wells. We will go along the king’s highway. We will not turn aside to the right hand nor to the left, until we have passed your border.”",
+  "pt": "Rogamo-te que passemos por tua terra; não passaremos por lavoura, nem por vinha, nem beberemos água de poços: pelo caminho real iremos, sem apartar-nos à direita nem à esquerda, até que havemos passado teu termo."
+ },
  "Num 20:27-28": {
   "zhRef": "民數記 20:27-28",
   "enRef": "Numbers 20:27-28",
@@ -704,6 +744,14 @@ window.VERSES = {
   "zh": "從那裡起行，安營在亞嫩河那邊。這亞嫩河是在曠野，從亞摩利的境界流出來的；原來亞嫩河是摩押的邊界，在摩押和亞摩利人搭界的地方。",
   "en": "From there they traveled, and encamped on the other side of the Arnon, which is in the wilderness, that comes out of the border of the Amorites: for the Arnon is the border of Moab, between Moab and the Amorites.",
   "pt": "De ali moveram, e assentaram da outra parte de Arnom, que está no deserto, e que sai do termo dos amorreus; porque Arnom é termo de Moabe, entre Moabe e os amorreus."
+ },
+ "Num 21:22": {
+  "zhRef": "民數記 21:22",
+  "enRef": "Numbers 21:22",
+  "ptRef": "Números 21:22",
+  "zh": "「求你容我們從你的地經過；我們不偏入田間和葡萄園，也不喝井裡的水，只走大道（原文是王道），直到過了你的境界。」",
+  "en": "“Let me pass through your land. We will not turn aside into field, or into vineyard. We will not drink of the water of the wells. We will go by the king’s highway, until we have passed your border.”",
+  "pt": "Deixa-me passar por tua terra: não nos desviaremos pelos campos, nem pelas vinhas; não beberemos as águas dos poços; pelo caminho real iremos, até que passemos os teus termos."
  },
  "Num 21:23-24": {
   "zhRef": "民數記 21:23-24",
@@ -761,6 +809,14 @@ window.VERSES = {
   "en": "Israel stayed in Shittim; and the people began to play the prostitute with the daughters of Moab;",
   "pt": "E repousou Israel em Sitim, e o povo começou a se prostituir com as filhas de Moabe:"
  },
+ "Num 32:1": {
+  "zhRef": "民數記 32:1",
+  "enRef": "Numbers 32:1",
+  "ptRef": "Números 32:1",
+  "zh": "流便子孫和迦得子孫的牲畜極其眾多；他們看見雅謝地和基列地是可牧放牲畜之地……",
+  "en": "Now the children of Reuben and the children of Gad had a very great multitude of livestock. When they saw the land of Jazer, and the land of Gilead, that behold, the place was a place for livestock;",
+  "pt": "E os filhos de Rúben e os filhos de Gade tinham uma muito grande abundância de gado; os quais vendo a terra de Jazer e de Gileade, pareceu-lhes o país lugar de gado."
+ },
  "Num 32:34": {
   "zhRef": "民數記 32:34",
   "enRef": "Numbers 32:34",
@@ -785,6 +841,14 @@ window.VERSES = {
   "en": "The children of Reuben built Heshbon, Elealeh, Kiriathaim, Nebo, and Baal Meon, (their names being changed), and Sibmah. They gave other names to the cities which they built.",
   "pt": "E os filhos de Rúben edificaram a Hesbom, e a Eleale, e a Quiriataim, E a Nebo, e a Baal-Meom, (mudados os nomes), e a Sibma: e puseram nomes às cidades que edificaram."
  },
+ "Num 32:6": {
+  "zhRef": "民數記 32:6",
+  "enRef": "Numbers 32:6",
+  "ptRef": "Números 32:6",
+  "zh": "摩西對迦得子孫和流便子孫說：「難道你們的弟兄去打仗，你們竟坐在這裡嗎？……」",
+  "en": "Moses said to the children of Gad, and to the children of Reuben, “Shall your brothers go to the war, and shall you sit here?",
+  "pt": "E respondeu Moisés aos filhos de Gade e aos filhos de Rúben: Virão vossos irmãos à guerra, e vós ficareis aqui?"
+ },
  "Num 33:42": {
   "zhRef": "民數記 33:42",
   "enRef": "Numbers 33:42",
@@ -792,6 +856,14 @@ window.VERSES = {
   "zh": "從撒摩拿起行，安營在普嫩。",
   "en": "They traveled from Zalmonah, and encamped in Punon.",
   "pt": "E partidos de Zalmona, assentaram em Punom."
+ },
+ "Num 33:49": {
+  "zhRef": "民數記 33:49",
+  "enRef": "Numbers 33:49",
+  "ptRef": "Números 33:49",
+  "zh": "他們在摩押平原沿約旦河邊安營，從伯‧耶施末直到亞伯‧什亭。",
+  "en": "They encamped by the Jordan, from Beth Jeshimoth even to Abel Shittim in the plains of Moab.",
+  "pt": "Finalmente assentaram junto ao Jordão, desde Bete-Jesimote até Abel-Sitim, nos campos de Moabe."
  },
  "Ruth 1:1": {
   "zhRef": "路得記 1:1",

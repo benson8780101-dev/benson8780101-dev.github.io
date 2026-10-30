@@ -1,7 +1,7 @@
 // 離線功能：有網路時先拿網站上的最新版，沒網路（或網路太慢）才用手機裡存的版本。
 // 這樣每次更新，使用者打開一次就是新版；在山上沒訊號時也照樣能看。
 // 改了任何 App 檔案，還是要把版本號 +1，舊的存檔才會被清掉、新的照片才會預先存好。
-const VERSION = "bible-trail-v12";
+const VERSION = "bible-trail-v13";
 const SHELL = ["./", "index.html", "style.css", "app.js", "data.js", "data-pt.js", "verses.js", "cert.js", "manifest.webmanifest", "icon.svg", "icon-180.png", "icon-512.png",
   "img/bethany.jpg", "img/elijah.jpg", "img/shittim.jpg", "img/moab.jpg", "img/nebo.jpg", "img/madaba.jpg", "img/heshbon.jpg", "img/citadel.jpg", "img/theatre.jpg", "img/jabbok.jpg", "img/penuel.jpg", "img/gadara.jpg", "img/gerasa.jpg", "img/irbid.jpg",
   "img/machaerus.jpg", "img/dibon.jpg", "img/mephaath.jpg", "img/arnon.jpg", "img/kerak.jpg", "img/sodom.jpg", "img/bozrah.jpg", "img/sela.jpg", "img/tophel.jpg", "img/punon.jpg", "img/petra.jpg", "img/aaron.jpg", "img/aylachurch.jpg", "img/pella.jpg"];
