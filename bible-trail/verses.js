@@ -57,6 +57,14 @@ window.VERSES = {
   "en": "Elijah took his mantle, and wrapped it together, and struck the waters, and they were divided here and there, so that they two went over on dry ground.",
   "pt": "Tomando então Elias seu manto, dobrou-o, e feriu as águas, as quais se apartaram a um e a outro lado, e passaram ambos em seco."
  },
+ "2 Kgs 3:4-5": {
+  "zhRef": "列王紀下 3:4-5",
+  "enRef": "2 Kings 3:4-5",
+  "ptRef": "2 Reis 3:4-5",
+  "zh": "摩押王米沙牧養許多羊，每年將十萬羊羔的毛和十萬公綿羊的毛給以色列王進貢。亞哈死後，摩押王背叛以色列王。",
+  "en": "Now Mesha king of Moab was a sheep breeder; and he rendered to the king of Israel the wool of one hundred thousand lambs, and of one hundred thousand rams. But when Ahab was dead, the king of Moab rebelled against the king of Israel.",
+  "pt": "Então Messa rei de Moabe era proprietário de gados, e pagava ao rei de Israel cem mil cordeiros e cem mil carneiros com suas lãs. Mas morto Acabe, o rei de Moabe se rebelou contra o rei de Israel."
+ },
  "2 Sam 11:1": {
   "zhRef": "撒母耳記下 11:1",
   "enRef": "2 Samuel 11:1",
@@ -120,6 +128,22 @@ window.VERSES = {
   "zh": "摩西在約旦河東的摩押地講律法說：",
   "en": "Beyond the Jordan, in the land of Moab, Moses began to declare this law, saying,",
   "pt": "Desta parte do Jordão, em terra de Moabe, resolveu Moisés declarar esta lei, dizendo:"
+ },
+ "Deut 2:24": {
+  "zhRef": "申命記 2:24",
+  "enRef": "Deuteronomy 2:24",
+  "ptRef": "Deuteronômio 2:24",
+  "zh": "你們起來前往，過亞嫩谷；我已將亞摩利人希實本王西宏和他的地交在你手中，你要與他爭戰，得他的地為業。",
+  "en": "“Rise up, take your journey, and pass over the valley of the Arnon: behold, I have given into your hand Sihon the Amorite, king of Heshbon, and his land; begin to possess it, and contend with him in battle.",
+  "pt": "Levantai-vos, parti, e passai o ribeiro de Arnom: eis que dei em tua mão a Seom rei de Hesbom, amorreu, e a sua terra: começa a tomar possessão, e empenha-te com ele em guerra."
+ },
+ "Deut 2:36": {
+  "zhRef": "申命記 2:36",
+  "enRef": "Deuteronomy 2:36",
+  "ptRef": "Deuteronômio 2:36",
+  "zh": "從亞嫩谷邊的亞羅珥和谷中的城，直到基列，耶和華─我們的　神都交給我們了，沒有一座城高得使我們不能攻取的。",
+  "en": "From Aroer, which is on the edge of the valley of the Arnon, and the city that is in the valley, even to Gilead, there was not a city too high for us. Yahweh our God delivered up all before us.",
+  "pt": "Desde Aroer, que está junto à beira do ribeiro de Arnom, e a cidade que está no ribeiro, até Gileade, não houve cidade que escapasse de nós: todas as entregou o SENHOR nosso Deus em nosso poder."
  },
  "Deut 34:1": {
   "zhRef": "申命記 34:1",
@@ -249,6 +273,14 @@ window.VERSES = {
   "en": "Elijah was a man with a nature like ours, and he prayed earnestly that it might not rain, and it didn’t rain on the earth for three years and six months.",
   "pt": "Elias era tão humano quanto nós, e orou insistentemente para não chover; e não choveu sobre a terra por três anos e seis meses."
  },
+ "Jer 48:21": {
+  "zhRef": "耶利米書 48:21",
+  "enRef": "Jeremiah 48:21",
+  "ptRef": "Jeremias 48:21",
+  "zh": "「刑罰臨到平原之地的何倫、雅雜、米法押…………」",
+  "en": "Judgment has come on the plain country, on Holon, and on Jahzah, and on Mephaath,",
+  "pt": "O julgamento também veio juízo sobre a terra da planície: sobre Holom, sobre Jazá, e sobre Mefate;"
+ },
  "Jer 8:22": {
   "zhRef": "耶利米書 8:22",
   "enRef": "Jeremiah 8:22",
@@ -272,6 +304,22 @@ window.VERSES = {
   "zh": "這是在約旦河外伯大尼，約翰施洗的地方作的見證。",
   "en": "These things were done in Bethany beyond the Jordan, where John was baptizing.",
   "pt": "Estas coisas aconteceram em Betábara, do outro lado do Jordão, onde João estava batizando."
+ },
+ "Josh 13:18": {
+  "zhRef": "約書亞記 13:18",
+  "enRef": "Joshua 13:18",
+  "ptRef": "Josué 13:18",
+  "zh": "雅雜、基底莫、米法押……",
+  "en": "Jahaz, Kedemoth, Mephaath,",
+  "pt": "E Jaza, e Quedemote, e Mefaate,"
+ },
+ "Josh 13:19": {
+  "zhRef": "約書亞記 13:19",
+  "enRef": "Joshua 13:19",
+  "ptRef": "Josué 13:19",
+  "zh": "基列亭、西比瑪、谷中山的細列‧哈沙轄……",
+  "en": "Kiriathaim, Sibmah, Zereth Shahar in the mount of the valley,",
+  "pt": "E Quiriataim, e Sibma, e Zerete-Saar no monte do vale;"
  },
  "Josh 2:1": {
   "zhRef": "約書亞記 2:1",
@@ -321,6 +369,22 @@ window.VERSES = {
   "en": "He didn’t allow him, but said to him, “Go to your house, to your friends, and tell them what great things the Lord has done for you, and how he had mercy on you.” He went his way, and began to proclaim in Decapolis how Jesus had done great things for him, and everyone marveled.",
   "pt": "Jesus se recusou, porém lhe disse: Vai para a tua casa, aos teus, e anuncia-lhes quão grandes coisas o Senhor fez contigo, e como teve misericórdia de ti. Então ele foi embora, e começou a anunciar em Decápolis quão grandes coisas Jesus havia feito com ele; e todos se admiravam."
  },
+ "Mark 6:17-18": {
+  "zhRef": "馬可福音 6:17-18",
+  "enRef": "Mark 6:17-18",
+  "ptRef": "Marcos 6:17-18",
+  "zh": "先是希律為他兄弟腓力的妻子希羅底的緣故，差人去拿住約翰，鎖在監裡，因為希律已經娶了那婦人。約翰曾對希律說：「你娶你兄弟的妻子是不合理的。」",
+  "en": "For Herod himself had sent out and arrested John, and bound him in prison for the sake of Herodias, his brother Philip’s wife, for he had married her. For John said to Herod, “It is not lawful for you to have your brother’s wife.”",
+  "pt": "Pois o próprio Herodes havia mandado prender João, e acorrentá-lo na prisão, por causa de Herodias, mulher do seu irmão Filipe, porque havia se casado com ela. Pois João dizia a Herodes: Não te é lícito possuir a mulher do teu irmão."
+ },
+ "Mark 6:27-28": {
+  "zhRef": "馬可福音 6:27-28",
+  "enRef": "Mark 6:27-28",
+  "ptRef": "Marcos 6:27-28",
+  "zh": "隨即差一個護衛兵，吩咐拿約翰的頭來。護衛兵就去，在監裡斬了約翰，把頭放在盤子裡，拿來給女子，女子就給她母親。",
+  "en": "Immediately the king sent out a soldier of his guard, and commanded to bring John’s head, and he went and beheaded him in the prison, and brought his head on a platter, and gave it to the young lady; and the young lady gave it to her mother.",
+  "pt": "Então logo o rei enviou o executor com a ordem de trazer ali sua cabeça. Ele, foi, e o decapitou na prisão. Em seguida, trouxe a sua cabeça num prato, e o deu à garota; e a garota a deu à sua mãe."
+ },
  "Mark 7:31": {
   "zhRef": "馬可福音 7:31",
   "enRef": "Mark 7:31",
@@ -361,6 +425,22 @@ window.VERSES = {
   "en": "He said to them, “Go!” They came out, and went into the herd of pigs: and behold, the whole herd of pigs rushed down the cliff into the sea, and died in the water.",
   "pt": "E ele lhes disse: Ide. Então eles saíram, e entraram nos porcos; e eis que toda aquela manada se lançou de um precipício ao mar, e morreram nas águas."
  },
+ "Num 21:13": {
+  "zhRef": "民數記 21:13",
+  "enRef": "Numbers 21:13",
+  "ptRef": "Números 21:13",
+  "zh": "從那裡起行，安營在亞嫩河那邊。這亞嫩河是在曠野，從亞摩利的境界流出來的；原來亞嫩河是摩押的邊界，在摩押和亞摩利人搭界的地方。",
+  "en": "From there they traveled, and encamped on the other side of the Arnon, which is in the wilderness, that comes out of the border of the Amorites: for the Arnon is the border of Moab, between Moab and the Amorites.",
+  "pt": "De ali moveram, e assentaram da outra parte de Arnom, que está no deserto, e que sai do termo dos amorreus; porque Arnom é termo de Moabe, entre Moabe e os amorreus."
+ },
+ "Num 21:23-24": {
+  "zhRef": "民數記 21:23-24",
+  "enRef": "Numbers 21:23-24",
+  "ptRef": "Números 21:23-24",
+  "zh": "西宏不容以色列人從他的境界經過，就招聚他的眾民出到曠野，要攻擊以色列人，到了雅雜與以色列人爭戰。以色列人用刀殺了他，得了他的地，從亞嫩河到雅博河，直到亞捫人的境界，因為亞捫人的境界多有堅壘。",
+  "en": "Sihon would not allow Israel to pass through his border, but Sihon gathered all his people together, and went out against Israel into the wilderness, and came to Jahaz. He fought against Israel. Israel struck him with the edge of the sword, and possessed his land from the Arnon to the Jabbok, even to the children of Ammon; for the border of the children of Ammon was strong.",
+  "pt": "Mas Seom não deixou passar a Israel por seus termos: antes juntou Seom todo seu povo, e saiu contra Israel no deserto: e veio a Jaza, e lutou contra Israel. Mas Israel o feriu a fio de espada, e tomou sua terra desde Arnom até Jaboque, até os filhos de Amom: porque o termo dos filhos de Amom era forte."
+ },
  "Num 21:26": {
   "zhRef": "民數記 21:26",
   "enRef": "Numbers 21:26",
@@ -400,6 +480,14 @@ window.VERSES = {
   "zh": "以色列人住在什亭，百姓與摩押女子行起淫亂。",
   "en": "Israel stayed in Shittim; and the people began to play the prostitute with the daughters of Moab;",
   "pt": "E repousou Israel em Sitim, e o povo começou a se prostituir com as filhas de Moabe:"
+ },
+ "Num 32:34": {
+  "zhRef": "民數記 32:34",
+  "enRef": "Numbers 32:34",
+  "ptRef": "Números 32:34",
+  "zh": "迦得子孫建造底本、亞他錄、亞羅珥……",
+  "en": "The children of Gad built Dibon, Ataroth, Aroer,",
+  "pt": "E os filhos de Gade edificaram a Dibom, e a Atarote, e a Aroer,"
  },
  "Num 32:35": {
   "zhRef": "民數記 32:35",
@@ -510,5 +598,29 @@ window.PHOTOS = {
   "artist": "mohammed alborum",
   "license": "CC BY-SA 2.0",
   "page": "https://commons.wikimedia.org/wiki/File:Irbid_City_(17304009505).jpg"
+ },
+ "machaerus": {
+  "src": "img/machaerus.jpg",
+  "artist": "Wikimedia Commons",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Machaerus_Panorama.jpg"
+ },
+ "dibon": {
+  "src": "img/dibon.jpg",
+  "artist": "Wikimedia Commons",
+  "license": "CC BY 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:P1120870_Louvre_st%C3%A8le_de_M%C3%A9sha_AO5066_rwk.JPG"
+ },
+ "mephaath": {
+  "src": "img/mephaath.jpg",
+  "artist": "Bashar Tabbah",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Umm_ar-Rasas_Arcs.jpg"
+ },
+ "arnon": {
+  "src": "img/arnon.jpg",
+  "artist": "YousefTOmar",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:WadiMujib-Canyon.jpg"
  }
 };

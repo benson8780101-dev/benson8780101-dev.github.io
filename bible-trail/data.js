@@ -1,4 +1,4 @@
-// 約旦聖經足跡：試玩版內容（第 1～5 章）
+// 約旦聖經足跡：試玩版內容（第 1～6 章）
 // 每一段文字都有 zh（繁體中文）和 en（英文），兩種語言一定要一起改。
 // 座標來源：OpenBible.info 聖經地理資料庫（CC BY 4.0）；標「approx: true」的是大約位置，待實地確認。
 // certainty：yes＝學者大多同意｜likely＝可能｜tradition＝傳統說法｜area＝一整個區域｜unknown＝位置不確定
@@ -65,6 +65,18 @@ window.CHAPTERS = [
     badge: "⛰️",
     required: ["nebo", "madaba"],
     bonus: ["heshbon", "peor", "elealeh", "maein"]
+  },
+  {
+    id: "ch6",
+    no: 6,
+    title: { zh: "施洗約翰與摩押王", en: "John the Baptist and the King of Moab" },
+    intro: {
+      zh: "過了尼波山往南，就進入古時候的摩押。施洗約翰在這裡的山頂堡壘被斬首；摩押王米沙在這裡刻下一塊石碑，三千年後被挖出來，跟列王紀的記載互相印證。",
+      en: "South of Mount Nebo lies ancient Moab. Here John the Baptist was beheaded in a hilltop fortress, and King Mesha of Moab carved a stone that, unearthed three thousand years later, echoes the account in Kings."
+    },
+    badge: "🪨",
+    required: ["machaerus", "dibon"],
+    bonus: ["mephaath", "aroer", "arnon", "callirrhoe", "ataroth", "jahaz"]
   }
 ];
 
@@ -931,6 +943,249 @@ window.STATIONS = {
       en: "About 7 km southwest of Madaba, a short drive. An ordinary village with few facilities."
     },
     photo: null
+  },
+
+  machaerus: {
+    name: { zh: "馬蓋耳斯堡（施洗約翰殉道處）", en: "Machaerus (Where John the Baptist Died)" },
+    place: { zh: "Mukawir 村旁的山頂堡壘遺址", en: "Hilltop fortress ruins beside the village of Mukawir" },
+    lat: 31.5683, lng: 35.6261, radius: 800,
+    certainty: "yes",
+    verses: ["Mark 6:17-18", "Mark 6:27-28"],
+    story: {
+      zh: "施洗約翰當面指責希律安提帕：「你娶你兄弟的妻子是不合理的。」希律就把他鎖在監裡。後來在希律的生日宴上，希羅底的女兒跳舞討他歡心，希律隨口發誓要賞她任何東西，她照母親的意思求要約翰的頭。希律雖然憂愁，還是派人去監裡斬了約翰。福音書沒有寫出監獄在哪裡，但第一世紀的猶太史學家約瑟夫明確記載：約翰是在馬蓋耳斯堡被殺的。這座堡壘是大希律王建的，蓋在俯瞰死海的山頂上，今天還看得到重新立起來的石柱。",
+      en: "John the Baptist confronted Herod Antipas to his face: 'It is not lawful for you to have your brother's wife.' So Herod had him chained in prison. Later, at Herod's birthday banquet, Herodias' daughter danced and pleased him; Herod rashly swore to give her anything, and at her mother's urging she asked for John's head. Though grieved, Herod sent an executioner to the prison. The Gospels don't name the prison, but the first-century Jewish historian Josephus states plainly that John was killed at Machaerus. Herod the Great built this fortress on a hilltop overlooking the Dead Sea, and you can still see columns that have been set upright again."
+    },
+    reflect: {
+      zh: "約翰對有權勢的人說真話，付上了生命的代價；希律為了顧全面子，做了自己也不想做的事。你比較常像約翰，還是像希律？",
+      en: "John spoke the truth to a powerful man and paid with his life; Herod, to save face, did what he himself did not want to do. Are you more often like John, or like Herod?"
+    },
+    mission: {
+      zh: "🌅 任務：爬到山頂（大約 15 分鐘），往西看死海。天氣好的時候，可以看到對岸的山。想像約翰在這裡的監牢裡，最後幾天在想什麼。",
+      en: "🌅 Mission: Climb to the summit (about 15 minutes) and look west over the Dead Sea; on a clear day you can see the hills across it. Imagine what John was thinking during his last days in a cell here."
+    },
+    quiz: {
+      q: { zh: "哪一位歷史學家記載約翰是在馬蓋耳斯堡被殺的？", en: "Which historian recorded that John was killed at Machaerus?" },
+      options: [{ zh: "約瑟夫", en: "Josephus" }, { zh: "希羅多德", en: "Herodotus" }, { zh: "路加", en: "Luke" }],
+      answer: 0
+    },
+    howto: {
+      zh: "從馬達巴往西南開車約 40 分鐘，到 Mukawir 村，再往前到山腳下的停車場。從停車場爬上山頂大約 15 分鐘，坡有點陡，穿好走的鞋。山頂沒有遮蔭，帶水和帽子。村裡有婦女編織合作社，可以順道支持當地。",
+      en: "About 40 minutes' drive southwest of Madaba to the village of Mukawir, then on to the parking area at the foot of the hill. The climb to the summit takes about 15 minutes and is a bit steep—wear good shoes. There's no shade on top, so bring water and a hat. The village has a women's weaving cooperative you can support on the way."
+    },
+    photo: "machaerus"
+  },
+
+  dibon: {
+    name: { zh: "底本（米沙石碑出土地）", en: "Dibon (Where the Mesha Stele Was Found)" },
+    place: { zh: "Dhiban 鎮旁的古土丘", en: "The ancient mound beside the town of Dhiban" },
+    lat: 31.502236, lng: 35.776574, radius: 800,
+    certainty: "yes",
+    verses: ["2 Kgs 3:4-5", "Num 32:34"],
+    story: {
+      zh: "列王紀下說，摩押王米沙是牧羊的，每年要向以色列王進貢大量的羊和羊毛；亞哈死後，米沙就背叛了以色列。1868 年，一位傳教士在底本發現一塊黑色玄武岩石碑，上面就是米沙自己刻的戰功：他說以色列王暗利曾經欺壓摩押，後來他奪回了好幾座城。石碑上還提到以色列的神的名字，也可能提到了「大衛家」。可惜當地人後來把石碑打碎了，碎片陸續找回來拼好，現在收藏在巴黎羅浮宮。這是聖經以外，和列王紀記載最直接互相印證的古代文物之一。",
+      en: "2 Kings says Mesha king of Moab was a sheep breeder who paid Israel's king a huge annual tribute of lambs and wool; after Ahab died, Mesha rebelled. In 1868 a missionary found a black basalt stone at Dibon on which Mesha himself had carved his achievements: he says Omri king of Israel had oppressed Moab, and that he later took back several towns. The stone also names the God of Israel and may mention the 'House of David.' Sadly, locals later broke it apart; the fragments were gathered and pieced together, and it is now in the Louvre in Paris. It is one of the ancient artifacts outside the Bible that most directly echoes the account in Kings."
+    },
+    reflect: {
+      zh: "同一場戰爭，列王紀和米沙石碑從兩個不同角度記錄。你最近遇到的一場衝突，換成對方的角度來寫，會是什麼樣子？",
+      en: "Kings and the Mesha Stele record the same conflict from two different sides. If the other person wrote the story of a recent conflict of yours, how would it read?"
+    },
+    mission: {
+      zh: "🪨 任務：站在土丘上，想像 1868 年那塊石碑就躺在這附近。之後有機會去安曼的約旦博物館，找找看米沙石碑的複製品。",
+      en: "🪨 Mission: Stand on the mound and imagine the stone lying somewhere nearby in 1868. Later, if you visit the Jordan Museum in Amman, look for its replica of the Mesha Stele."
+    },
+    quiz: {
+      q: { zh: "米沙石碑的原件現在收藏在哪裡？", en: "Where is the original Mesha Stele kept today?" },
+      options: [{ zh: "安曼城堡", en: "The Amman Citadel" }, { zh: "巴黎羅浮宮", en: "The Louvre in Paris" }, { zh: "大英博物館", en: "The British Museum" }],
+      answer: 1
+    },
+    howto: {
+      zh: "在馬達巴南邊約 30 分鐘車程的 Dhiban 鎮，沿著君王大道（35 號公路）就會經過。土丘在鎮旁邊，有部分挖掘的遺跡，設施很少。可以和亞羅珥、亞嫩河谷排在一起。",
+      en: "In the town of Dhiban, about 30 minutes' drive south of Madaba along the King's Highway (Route 35). The mound is beside the town, with some excavated remains and few facilities. Easy to combine with Aroer and the Arnon canyon."
+    },
+    photo: "dibon"
+  },
+
+  mephaath: {
+    name: { zh: "米法押（Umm ar-Rasas）", en: "Mephaath (Umm ar-Rasas)" },
+    place: { zh: "Umm ar-Rasas，聯合國世界遺產", en: "Umm ar-Rasas, UNESCO World Heritage Site" },
+    lat: 31.499722, lng: 35.919722, radius: 1000,
+    certainty: "yes",
+    verses: ["Josh 13:18", "Jer 48:21"],
+    story: {
+      zh: "米法押是約書亞分給流便支派的城，後來成了利未人的城；耶利米也預言審判要臨到它。考古學家在這裡的聖司提反教堂，挖到一大片八世紀的馬賽克地板，上面畫著聖地和約旦河東的城市，其中一座就標著「Kastron Mefaa」，證明這裡就是聖經裡的米法押。遺址旁還有一座十幾公尺高的石塔，是古代修士獨自住在塔頂禱告的地方。2004 年這裡被列為世界遺產。",
+      en: "Mephaath was a town Joshua allotted to the tribe of Reuben, later a Levitical city; Jeremiah also prophesied judgment on it. In the Church of St. Stephen here, archaeologists uncovered a vast 8th-century mosaic floor depicting cities of the Holy Land and east of the Jordan—one of them labeled 'Kastron Mefaa,' proving this is biblical Mephaath. Beside the ruins stands a stone tower over a dozen meters tall, where an ancient monk lived alone at the top in prayer. It became a World Heritage Site in 2004."
+    },
+    reflect: {
+      zh: "古代的修士爬上高塔，離開熱鬧，專心禱告。你的生活裡，有沒有一個可以讓你安靜下來的「高塔」？",
+      en: "Ancient monks climbed a tower to leave the noise behind and pray. Is there a 'tower' in your life where you can be still?"
+    },
+    mission: {
+      zh: "🗺️ 任務：在聖司提反教堂的馬賽克地板上，找找看有城牆的城市圖案，看看你能不能認出幾座城的名字。",
+      en: "🗺️ Mission: On the mosaic floor of the Church of St. Stephen, look for the walled city pictures and see how many city names you can recognize."
+    },
+    quiz: {
+      q: { zh: "考古學家怎麼確定這裡就是米法押？", en: "How did archaeologists confirm this is Mephaath?" },
+      options: [{ zh: "挖到一把刻著名字的劍", en: "They found a sword engraved with its name" }, { zh: "馬賽克地板上寫著城名", en: "A mosaic floor labels the city by name" }, { zh: "當地人一直這樣叫", en: "Locals always called it that" }],
+      answer: 1
+    },
+    howto: {
+      zh: "在馬達巴東南方約 30 公里，開車約 40 分鐘。有遊客中心，要買票（約旦通行證可用）。馬賽克在有屋頂的保護棚裡。遺址很大、幾乎沒有遮蔭，帶水和帽子。",
+      en: "About 30 km southeast of Madaba, roughly 40 minutes' drive. There's a visitor center and an entrance fee (the Jordan Pass is accepted). The mosaics are under a protective roof. The site is large with almost no shade—bring water and a hat."
+    },
+    photo: "mephaath"
+  },
+
+  aroer: {
+    name: { zh: "亞羅珥（亞嫩谷邊的城）", en: "Aroer (On the Rim of the Arnon)" },
+    place: { zh: "Ara'ir 村旁，亞嫩河谷北邊的崖頂", en: "Beside the village of Ara'ir, on the north rim of the Arnon canyon" },
+    lat: 31.4708, lng: 35.819389, radius: 800,
+    certainty: "yes",
+    noFacilities: true,
+    verses: ["Deut 2:36"],
+    story: {
+      zh: "亞羅珥站在亞嫩河谷北邊的崖頂，是以色列在約旦河東的南方邊界。摩西說：「從亞嫩谷邊的亞羅珥……沒有一座城高得使我們不能攻取的。」有趣的是，米沙石碑也提到這座城：米沙說他「建造了亞羅珥，又在亞嫩谷開了一條大路」。一座城，同時出現在聖經和摩押王的石碑上。",
+      en: "Aroer stood on the north rim of the Arnon canyon, Israel's southern border east of the Jordan. Moses said: 'From Aroer, which is on the edge of the valley of the Arnon… there was not a city too high for us.' Interestingly, the Mesha Stele mentions this town too: Mesha says he 'built Aroer and made the highway in the Arnon.' One town, named both in the Bible and on the Moabite king's stone."
+    },
+    reflect: {
+      zh: "站在崖邊往下看很嚇人，但摩西說「沒有一座城高得使我們不能攻取」。你眼前有什麼看起來太高、太難的事？",
+      en: "Looking down from the rim is frightening, yet Moses said 'there was not a city too high for us.' What in front of you looks too high or too hard right now?"
+    },
+    mission: {
+      zh: "🏞️ 任務：走到崖邊安全的地方，往下看亞嫩河谷有多深。（不要靠近沒有護欄的崖邊。）",
+      en: "🏞️ Mission: Walk to a safe spot near the rim and look down into the Arnon canyon. (Stay away from unfenced edges.)"
+    },
+    quiz: {
+      q: { zh: "除了聖經，還有什麼古物提到亞羅珥？", en: "Besides the Bible, what ancient artifact mentions Aroer?" },
+      options: [{ zh: "米沙石碑", en: "The Mesha Stele" }, { zh: "死海古卷", en: "The Dead Sea Scrolls" }, { zh: "馬達巴地圖", en: "The Madaba Map" }],
+      answer: 0
+    },
+    howto: {
+      zh: "⚠️ 在 Dhiban 南邊，君王大道往亞嫩河谷下坡之前、Ara'ir 村旁的小遺址，沒有遊客設施。路邊停車要注意安全，不要靠近崖邊。",
+      en: "⚠️ A small ruin beside the village of Ara'ir, south of Dhiban, just before the King's Highway descends into the Arnon canyon; no visitor facilities. Park safely off the road and stay away from the cliff edge."
+    },
+    photo: null
+  },
+
+  arnon: {
+    name: { zh: "亞嫩河谷（Wadi Mujib）", en: "The Arnon Canyon (Wadi Mujib)" },
+    place: { zh: "君王大道穿過的大峽谷，下游是穆吉布自然保護區", en: "The great canyon crossed by the King's Highway; downstream is the Mujib Nature Reserve" },
+    lat: 31.465833, lng: 35.573333, radius: 3000, approx: true,
+    points: [{ lat: 31.4515, lng: 35.8095 }],
+    certainty: "yes",
+    verses: ["Num 21:13", "Deut 2:24"],
+    story: {
+      zh: "亞嫩河是摩押和亞摩利人之間的邊界。以色列人走曠野路到這裡，神說：「你們起來前往，過亞嫩谷。」從此開始取得約旦河東的土地。這條峽谷又深又寬，被稱為「約旦的大峽谷」；君王大道（35 號公路）要先繞下谷底、過水壩，再爬上對岸。峽谷流進死海的出口，就是穆吉布自然保護區，是地球上海拔最低的自然保護區之一，可以涉水走峽谷步道。",
+      en: "The Arnon was the border between Moab and the Amorites. When Israel reached it on their wilderness journey, God said: 'Rise up, take your journey, and pass over the valley of the Arnon'—the start of their conquest east of the Jordan. The canyon is so deep and wide it's called 'Jordan's Grand Canyon'; the King's Highway (Route 35) winds down to the bottom, crosses a dam, and climbs the far side. Where the canyon meets the Dead Sea lies the Mujib Nature Reserve, one of the lowest nature reserves on earth, with trails that wade up the gorge."
+    },
+    reflect: {
+      zh: "「你們起來前往，過亞嫩谷」：邊界過了，就不能回頭了。你人生中有沒有一條需要勇敢跨過去的「亞嫩河」？",
+      en: "'Rise up, take your journey, and pass over the Arnon'—once the border was crossed, there was no turning back. Is there an 'Arnon' in your life you need to cross with courage?"
+    },
+    mission: {
+      zh: "🚗 任務：沿著君王大道開下峽谷時，在安全的觀景點停下來，數數看山壁上有幾種顏色的岩層。",
+      en: "🚗 Mission: As you drive the King's Highway into the canyon, stop at a safe viewpoint and count how many colors of rock layers you can see in the cliffs."
+    },
+    quiz: {
+      q: { zh: "亞嫩河是哪兩個民族之間的邊界？", en: "The Arnon was the border between which two peoples?" },
+      options: [{ zh: "摩押和亞摩利人", en: "Moab and the Amorites" }, { zh: "以東和以色列", en: "Edom and Israel" }, { zh: "亞捫和非利士", en: "Ammon and the Philistines" }],
+      answer: 0
+    },
+    howto: {
+      zh: "這一站有兩個蓋章地點，到任一個都算：① 君王大道（35 號公路）在 Dhiban 南邊下到峽谷的觀景點和水壩一帶；② 死海公路旁的穆吉布自然保護區遊客中心（峽谷步道要事先預約，夏天比較適合，冬天可能因為水量大而關閉）。開下峽谷的路很彎，慢慢開。（App 用的是大約位置，蓋章範圍設得比較大。）",
+      en: "This stop has two check-in areas—either counts: ① the viewpoints and dam where the King's Highway (Route 35) descends into the canyon south of Dhiban; ② the Mujib Nature Reserve visitor center on the Dead Sea highway (gorge trails need advance booking, are best in summer, and may close in winter when water is high). The canyon road is winding—drive slowly. (Approximate locations, so the check-in range is wide.)"
+    },
+    photo: "arnon"
+  },
+
+  callirrhoe: {
+    name: { zh: "卡利羅溫泉（細列哈沙轄）", en: "Callirrhoe (Zereth-shahar)" },
+    place: { zh: "死海東岸的 Ez-Zara 溫泉一帶", en: "The Ez-Zara hot springs on the Dead Sea's eastern shore" },
+    lat: 31.597, lng: 35.559306, radius: 1500,
+    certainty: "likely",
+    verses: ["Josh 13:19"],
+    story: {
+      zh: "約書亞把「谷中山的細列‧哈沙轄」分給流便支派，許多學者認為就是死海東岸這片有溫泉的地方。到了新約時代，這裡叫卡利羅（意思是「美麗的流水」）。史學家約瑟夫記載，大希律王臨死前病重，特地來這裡泡溫泉治病，卻沒有好轉。馬達巴馬賽克地圖上也畫著這裡：溫泉、棕櫚樹，就在死海岸邊。山上不遠處就是他兒子後來關押施洗約翰的馬蓋耳斯堡。",
+      en: "Joshua allotted 'Zereth Shahar on the mountain of the valley' to the tribe of Reuben, and many scholars place it at these hot springs on the Dead Sea's eastern shore. In New Testament times the place was called Callirrhoe ('beautiful flow'). Josephus records that Herod the Great, gravely ill near death, came here to bathe in the hot springs for healing—without improvement. The Madaba mosaic map shows it too: springs and palm trees on the Dead Sea shore. Up in the hills nearby is Machaerus, where his son later imprisoned John the Baptist."
+    },
+    reflect: {
+      zh: "希律王有權有錢，連最好的溫泉都買得到，卻買不到健康和平安。你現在最想用錢解決、其實錢解決不了的是什麼？",
+      en: "King Herod had power and money enough to buy the finest hot springs, yet couldn't buy health or peace. What are you hoping money will solve that money can't really fix?"
+    },
+    mission: {
+      zh: "♨️ 任務：找到溫泉水流進死海的地方，摸摸看水有多溫暖（小心燙）。",
+      en: "♨️ Mission: Find where the hot spring water flows toward the Dead Sea and feel how warm it is (careful—it can be hot)."
+    },
+    quiz: {
+      q: { zh: "哪一位王臨死前來卡利羅泡溫泉治病？", en: "Which king came to bathe at Callirrhoe before his death?" },
+      options: [{ zh: "大希律王", en: "Herod the Great" }, { zh: "所羅門王", en: "King Solomon" }, { zh: "米沙王", en: "King Mesha" }],
+      answer: 0
+    },
+    howto: {
+      zh: "在死海公路上，從死海北邊的度假飯店區往南開約 30 分鐘。溫泉旁有私人度假村，部分區域要付費進入。死海公路很熱，夏天中午避免停留太久。",
+      en: "On the Dead Sea highway, about 30 minutes' drive south of the northern Dead Sea resort area. There's a private resort by the springs, and some areas require a fee. The Dead Sea road is very hot—avoid lingering at midday in summer."
+    },
+    photo: null
+  },
+
+  ataroth: {
+    name: { zh: "亞他錄（Khirbet Ataruz）", en: "Ataroth (Khirbet Ataruz)" },
+    place: { zh: "馬蓋耳斯堡附近的山頂遺址", en: "Hilltop ruins near Machaerus" },
+    lat: 31.5753, lng: 35.665938, radius: 800,
+    certainty: "yes",
+    noFacilities: true,
+    verses: ["Num 32:34"],
+    story: {
+      zh: "迦得支派在約旦河東建造了亞他錄。米沙石碑說：「迦得人自古住在亞他錄的地」，後來米沙攻下這座城。考古隊在這裡挖到一座摩押時期的神廟，還有刻著古文字的祭壇，讓聖經、米沙石碑和考古三方面的資料互相對照。",
+      en: "The tribe of Gad built Ataroth east of the Jordan. The Mesha Stele says, 'The men of Gad had lived in the land of Ataroth from of old,' and that Mesha later captured the town. Archaeologists here uncovered a Moabite-era temple and an altar inscribed with ancient writing—letting the Bible, the Mesha Stele, and archaeology be compared side by side."
+    },
+    reflect: {
+      zh: "同一片土地，換過好幾次主人。你現在「擁有」的東西裡，有哪些其實只是暫時託付給你的？",
+      en: "The same land changed hands several times. Of the things you 'own' now, which are really only entrusted to you for a while?"
+    },
+    mission: {
+      zh: "🔭 任務：從這裡找找看馬蓋耳斯堡的山頭在哪個方向。",
+      en: "🔭 Mission: From here, see if you can spot the hilltop of Machaerus."
+    },
+    quiz: {
+      q: { zh: "哪一個支派建造了亞他錄？", en: "Which tribe built Ataroth?" },
+      options: [{ zh: "猶大", en: "Judah" }, { zh: "迦得", en: "Gad" }, { zh: "便雅憫", en: "Benjamin" }],
+      answer: 1
+    },
+    howto: {
+      zh: "⚠️ 考古遺址，沒有遊客設施，能不能進去還沒確認。在 Mukawir 村東邊不遠，可以和馬蓋耳斯堡排在一起。",
+      en: "⚠️ An archaeological site with no visitor facilities; access hasn't been confirmed. It's a short distance east of Mukawir village—easy to combine with Machaerus."
+    },
+    photo: null
+  },
+
+  jahaz: {
+    name: { zh: "雅雜（西宏王最後一戰）", en: "Jahaz (King Sihon's Last Battle)" },
+    place: { zh: "位置不確定，可能在 Dhiban 東北方", en: "Location uncertain, possibly northeast of Dhiban" },
+    hidden: true,
+    certainty: "unknown",
+    verses: ["Num 21:23-24"],
+    story: {
+      zh: "以色列人客客氣氣地請亞摩利王西宏讓他們借道經過，保證不進田地、不喝井水，只走大道。西宏不但不肯，還招聚全軍出到曠野，在雅雜跟以色列打仗，結果大敗，以色列就得了從亞嫩河到雅博河的地。後來米沙石碑也提到雅雜，說米沙把這城奪回來。雅雜確切在哪裡還不確定，所以這是隱藏關卡。",
+      en: "Israel politely asked Sihon king of the Amorites for passage, promising not to enter fields or drink from wells, but only to walk the highway. Sihon not only refused, but gathered his whole army into the wilderness and fought Israel at Jahaz—and was badly defeated, and Israel took the land from the Arnon to the Jabbok. The Mesha Stele later mentions Jahaz too, saying Mesha took it back. Its exact location is still uncertain, so this is a hidden level."
+    },
+    reflect: {
+      zh: "以色列人先客氣地請求，被拒絕後才有衝突。你在跟人有摩擦之前，有沒有先好好地說清楚、請求過？",
+      en: "Israel asked politely first; conflict came only after refusal. Before friction with someone, do you first speak clearly and ask kindly?"
+    },
+    mission: {
+      zh: "🔒 隱藏任務：讀完民數記 21 章 21～35 節，再回來答題。",
+      en: "🔒 Hidden mission: Read Numbers 21:21–35, then come back for the quiz."
+    },
+    quiz: {
+      q: { zh: "以色列人在雅雜打敗了哪一位王？", en: "Which king did Israel defeat at Jahaz?" },
+      options: [{ zh: "巴珊王噩", en: "Og king of Bashan" }, { zh: "亞摩利王西宏", en: "Sihon king of the Amorites" }, { zh: "摩押王巴勒", en: "Balak king of Moab" }],
+      answer: 1
+    },
+    howto: {
+      zh: "這是隱藏關卡：確切位置不知道，不需要到現場。答對上面的問答就能解鎖印章。",
+      en: "This is a hidden level: the exact location is unknown, so you don't need to visit. Answer the quiz correctly to unlock the stamp."
+    },
+    photo: null
   }
 };
 
@@ -960,5 +1215,8 @@ window.NAV = {
   elijah: "Baptism Site of Jesus Christ",
   nebo: "Memorial of Moses, Mount Nebo, Jordan",
   madaba: "St. George's Church, Madaba, Jordan",
-  heshbon: "Tell Hesban, Jordan"
+  heshbon: "Tell Hesban, Jordan",
+  machaerus: "Mukawir Castle",
+  mephaath: "Umm ar-Rasas",
+  arnon: "Wadi Mujib Viewpoint"
 };

@@ -24,6 +24,10 @@ window.PT = {
     ch5: {
       title: "O Último Olhar de Moisés",
       intro: "Quarenta anos de deserto chegam ao fim. Do monte Nebo, Moisés contempla a terra que tanto desejou, mas na qual não entraria."
+    },
+    ch6: {
+      title: "João Batista e o Rei de Moabe",
+      intro: "Ao sul do monte Nebo fica a antiga Moabe. Aqui João Batista foi decapitado numa fortaleza no alto de um monte, e Messa, rei de Moabe, gravou uma pedra que, desenterrada três mil anos depois, ecoa o relato de Reis."
     }
   },
 
@@ -306,6 +310,86 @@ window.PT = {
       mission: "🧩 Missão: A região de Madaba está cheia de mosaicos. Compare os que você viu hoje — qual é o seu favorito?",
       quiz: { q: "Qual rei afirmou numa inscrição de pedra que construiu Baal-Meom?", options: ["O rei Davi", "Mesa, rei de Moabe", "O rei Herodes"] },
       howto: "Cerca de 7 km a sudoeste de Madaba, bem perto de carro. Vila comum, com pouca estrutura."
+    },
+
+    machaerus: {
+      name: "Maqueronte (onde João Batista morreu)",
+      place: "Ruínas de uma fortaleza no alto de um monte, ao lado da vila de Mukawir",
+      story: "João Batista repreendeu Herodes Antipas face a face: \"Não te é lícito ter a mulher de teu irmão.\" Por isso Herodes o mandou acorrentar na prisão. Mais tarde, no banquete de aniversário de Herodes, a filha de Herodias dançou e o agradou; Herodes jurou, sem pensar, dar-lhe o que ela pedisse, e, a conselho da mãe, ela pediu a cabeça de João. Mesmo entristecido, Herodes mandou um carrasco à prisão. Os Evangelhos não dizem onde ficava a prisão, mas o historiador judeu Flávio Josefo, do primeiro século, afirma claramente que João foi morto em Maqueronte. Herodes, o Grande, construiu esta fortaleza no alto de um monte com vista para o Mar Morto, e ainda hoje se veem colunas que foram reerguidas.",
+      reflect: "João disse a verdade a um homem poderoso e pagou com a vida; Herodes, para não perder a pose, fez o que ele mesmo não queria fazer. Você se parece mais com João ou com Herodes?",
+      mission: "🌅 Missão: Suba até o topo (uns 15 minutos) e olhe para o oeste, sobre o Mar Morto; em dia claro dá para ver os montes do outro lado. Imagine o que João pensava nos seus últimos dias numa cela aqui.",
+      quiz: { q: "Qual historiador registrou que João foi morto em Maqueronte?", options: ["Flávio Josefo", "Heródoto", "Lucas"] },
+      howto: "Cerca de 40 minutos de carro a sudoeste de Madaba até a vila de Mukawir e depois até o estacionamento ao pé do monte. A subida até o topo leva uns 15 minutos e é um pouco íngreme — use calçados bons. Não há sombra lá em cima; leve água e chapéu. A vila tem uma cooperativa de tecelagem de mulheres que você pode apoiar no caminho."
+    },
+
+    dibon: {
+      name: "Dibom (onde foi achada a Estela de Messa)",
+      place: "O monte antigo ao lado da cidade de Dhiban",
+      story: "2 Reis diz que Messa, rei de Moabe, era criador de ovelhas e pagava ao rei de Israel um enorme tributo anual de cordeiros e lã; depois que Acabe morreu, Messa se rebelou. Em 1868 um missionário encontrou em Dibom uma pedra de basalto negro na qual o próprio Messa gravou os seus feitos: ele diz que Onri, rei de Israel, havia oprimido Moabe e que mais tarde ele retomou várias cidades. A pedra também cita o nome do Deus de Israel e talvez mencione a \"Casa de Davi\". Infelizmente, moradores locais a quebraram depois; os pedaços foram recolhidos e montados de novo, e hoje ela está no Museu do Louvre, em Paris. É um dos objetos antigos fora da Bíblia que confirmam de forma mais direta o relato de Reis.",
+      reflect: "Reis e a Estela de Messa registram o mesmo conflito por dois lados diferentes. Se a outra pessoa escrevesse a história de um conflito recente seu, como ela ficaria?",
+      mission: "🪨 Missão: Suba no monte e imagine a pedra caída em algum lugar por aqui em 1868. Depois, se visitar o Museu da Jordânia, em Amã, procure a réplica da Estela de Messa.",
+      quiz: { q: "Onde está hoje a Estela de Messa original?", options: ["Na Cidadela de Amã", "No Museu do Louvre, em Paris", "No Museu Britânico"] },
+      howto: "Na cidade de Dhiban, cerca de 30 minutos de carro ao sul de Madaba pela Estrada dos Reis (Rodovia 35). O monte fica ao lado da cidade, com algumas ruínas escavadas e pouca estrutura. Dá para combinar com Aroer e o cânion do Arnom."
+    },
+
+    mephaath: {
+      name: "Mefaate (Umm ar-Rasas)",
+      place: "Umm ar-Rasas, Patrimônio Mundial da UNESCO",
+      story: "Mefaate foi uma cidade que Josué deu à tribo de Rúben e que depois se tornou cidade dos levitas; Jeremias também profetizou juízo sobre ela. Na Igreja de Santo Estêvão, arqueólogos descobriram um enorme piso de mosaico do século 8 que mostra cidades da Terra Santa e do outro lado do Jordão — uma delas com o nome \"Kastron Mefaa\", provando que este lugar é a Mefaate da Bíblia. Ao lado das ruínas há uma torre de pedra com mais de dez metros de altura, onde um monge antigo vivia sozinho no topo, em oração. O local se tornou Patrimônio Mundial em 2004.",
+      reflect: "Monges antigos subiam numa torre para deixar o barulho para trás e orar. Existe uma \"torre\" na sua vida onde você consegue ficar em silêncio?",
+      mission: "🗺️ Missão: No piso de mosaico da Igreja de Santo Estêvão, procure os desenhos de cidades com muralhas e veja quantos nomes de cidades você consegue reconhecer.",
+      quiz: { q: "Como os arqueólogos confirmaram que este lugar é Mefaate?", options: ["Encontraram uma espada com o nome gravado", "Um piso de mosaico traz o nome da cidade", "Os moradores sempre o chamaram assim"] },
+      howto: "Cerca de 30 km a sudeste de Madaba, uns 40 minutos de carro. Há centro de visitantes e a entrada é paga (o Jordan Pass é aceito). Os mosaicos ficam debaixo de uma cobertura de proteção. O sítio é grande e quase não tem sombra — leve água e chapéu."
+    },
+
+    aroer: {
+      name: "Aroer (à beira do Arnom)",
+      place: "Ao lado da vila de Ara'ir, na borda norte do cânion do Arnom",
+      story: "Aroer ficava na borda norte do cânion do Arnom, na fronteira sul de Israel a leste do Jordão. Moisés disse: \"Desde Aroer, que está junto à beira do ribeiro de Arnom… não houve cidade que escapasse de nós.\" Curiosamente, a Estela de Messa também menciona esta cidade: Messa diz que \"construiu Aroer e fez a estrada no Arnom\". Uma mesma cidade citada na Bíblia e na pedra do rei moabita.",
+      reflect: "Olhar lá de cima da borda dá medo, mas Moisés disse que nenhuma cidade escapou deles. O que está diante de você agora que parece alto ou difícil demais?",
+      mission: "🏞️ Missão: Vá até um ponto seguro perto da borda e olhe o fundo do cânion do Arnom. (Fique longe de beiradas sem proteção.)",
+      quiz: { q: "Além da Bíblia, que objeto antigo menciona Aroer?", options: ["A Estela de Messa", "Os Manuscritos do Mar Morto", "O Mapa de Madaba"] },
+      howto: "⚠️ Pequena ruína ao lado da vila de Ara'ir, ao sul de Dhiban, pouco antes de a Estrada dos Reis descer para o cânion do Arnom; sem estrutura para visitantes. Estacione com segurança fora da pista e fique longe da beira do penhasco."
+    },
+
+    arnon: {
+      name: "O cânion do Arnom (Wadi Mujib)",
+      place: "O grande cânion cruzado pela Estrada dos Reis; rio abaixo fica a Reserva Natural de Mujib",
+      story: "O Arnom era a fronteira entre Moabe e os amorreus. Quando Israel chegou ali na sua jornada pelo deserto, Deus disse: \"Levantai-vos, parti, e passai o ribeiro de Arnom\" — o começo da conquista a leste do Jordão. O cânion é tão fundo e largo que é chamado de \"Grand Canyon da Jordânia\"; a Estrada dos Reis (Rodovia 35) desce até o fundo, atravessa uma represa e sobe do outro lado. Onde o cânion encontra o Mar Morto fica a Reserva Natural de Mujib, uma das reservas naturais mais baixas do planeta, com trilhas que sobem o desfiladeiro dentro da água.",
+      reflect: "\"Levantai-vos, parti, e passai o ribeiro de Arnom\" — atravessada a fronteira, não havia volta. Existe um \"Arnom\" na sua vida que você precisa atravessar com coragem?",
+      mission: "🚗 Missão: Ao descer o cânion pela Estrada dos Reis, pare num mirante seguro e conte quantas cores de camadas de rocha você vê nos paredões.",
+      quiz: { q: "O Arnom era a fronteira entre quais povos?", options: ["Moabe e os amorreus", "Edom e Israel", "Amom e os filisteus"] },
+      howto: "Esta parada tem duas áreas de check-in — qualquer uma vale: ① os mirantes e a represa onde a Estrada dos Reis (Rodovia 35) desce para o cânion, ao sul de Dhiban; ② o centro de visitantes da Reserva Natural de Mujib, na rodovia do Mar Morto (as trilhas do desfiladeiro precisam de reserva, são melhores no verão e podem fechar no inverno quando a água sobe). A estrada do cânion tem muitas curvas — dirija devagar. (Localizações aproximadas, por isso o raio de check-in é amplo.)"
+    },
+
+    callirrhoe: {
+      name: "Calírroe (Zerete-Saar)",
+      place: "As fontes termais de Ez-Zara, na margem leste do Mar Morto",
+      story: "Josué deu \"Zerete-Saar no monte do vale\" à tribo de Rúben, e muitos estudiosos a localizam nestas fontes termais na margem leste do Mar Morto. Na época do Novo Testamento o lugar se chamava Calírroe (\"bela corrente\"). Josefo conta que Herodes, o Grande, gravemente doente perto da morte, veio se banhar nestas águas quentes em busca de cura — sem melhora. O mapa de mosaico de Madaba também mostra o lugar: fontes e palmeiras na beira do Mar Morto. Nos montes ali perto fica Maqueronte, onde o filho dele depois prendeu João Batista.",
+      reflect: "O rei Herodes tinha poder e dinheiro para comprar as melhores fontes termais, mas não conseguiu comprar saúde nem paz. O que você espera que o dinheiro resolva, mas que o dinheiro não resolve de verdade?",
+      mission: "♨️ Missão: Encontre o lugar onde a água da fonte termal corre em direção ao Mar Morto e sinta como ela é quente (cuidado — pode queimar).",
+      quiz: { q: "Qual rei veio se banhar em Calírroe antes de morrer?", options: ["Herodes, o Grande", "O rei Salomão", "O rei Messa"] },
+      howto: "Na rodovia do Mar Morto, cerca de 30 minutos de carro ao sul da área de resorts do norte do Mar Morto. Há um resort particular junto às fontes, e algumas áreas são pagas. A estrada do Mar Morto é muito quente — evite ficar muito tempo ao meio-dia no verão."
+    },
+
+    ataroth: {
+      name: "Atarote (Khirbet Ataruz)",
+      place: "Ruínas no alto de um monte perto de Maqueronte",
+      story: "A tribo de Gade construiu Atarote a leste do Jordão. A Estela de Messa diz: \"Os homens de Gade habitavam na terra de Atarote desde antigamente\", e conta que Messa depois tomou a cidade. Aqui os arqueólogos descobriram um templo da época moabita e um altar com uma inscrição antiga — permitindo comparar lado a lado a Bíblia, a Estela de Messa e a arqueologia.",
+      reflect: "A mesma terra mudou de dono várias vezes. Das coisas que você \"possui\" hoje, quais na verdade só foram confiadas a você por um tempo?",
+      mission: "🔭 Missão: Daqui, veja se você consegue encontrar o topo do monte de Maqueronte.",
+      quiz: { q: "Qual tribo construiu Atarote?", options: ["Judá", "Gade", "Benjamim"] },
+      howto: "⚠️ Sítio arqueológico sem estrutura para visitantes; o acesso não foi confirmado. Fica pouco a leste da vila de Mukawir — fácil de combinar com Maqueronte."
+    },
+
+    jahaz: {
+      name: "Jaza (a última batalha do rei Seom)",
+      place: "Localização incerta, talvez a nordeste de Dhiban",
+      story: "Israel pediu educadamente a Seom, rei dos amorreus, permissão para passar, prometendo não entrar nos campos nem beber dos poços, mas só andar pela estrada. Seom não só recusou, como reuniu todo o seu exército no deserto e lutou contra Israel em Jaza — e foi derrotado, e Israel tomou a terra desde o Arnom até o Jaboque. A Estela de Messa também cita Jaza, dizendo que Messa a retomou. A localização exata ainda é incerta, por isso esta é uma fase secreta.",
+      reflect: "Israel primeiro pediu com educação; o conflito só veio depois da recusa. Antes de um atrito com alguém, você costuma conversar com clareza e pedir com gentileza?",
+      mission: "🔒 Missão secreta: Leia Números 21.21–35 e depois volte para o quiz.",
+      quiz: { q: "Qual rei Israel derrotou em Jaza?", options: ["Ogue, rei de Basã", "Seom, rei dos amorreus", "Balaque, rei de Moabe"] },
+      howto: "Esta é uma fase secreta: a localização exata é desconhecida, então não é preciso ir até lá. Responda o quiz corretamente para ganhar o carimbo."
     }
   },
 
