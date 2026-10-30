@@ -1772,6 +1772,9 @@ window.STATIONS = {
   }
 };
 
+// 破關紀念證書：九章的「必去」站都蓋完就能領；全部地點都蓋完是金色版。經文放在證書下方。
+window.CERTIFICATE = { verses: ["Heb 12:1"] };
+
 // 稱號：依蓋章數升級；all: true＝全部地點都蓋完才拿得到（以後加新章節也不用改）
 window.TITLES = [
   { min: 0, zh: "旅人", en: "Traveler" },

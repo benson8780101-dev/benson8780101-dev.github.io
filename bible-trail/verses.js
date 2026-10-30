@@ -385,6 +385,14 @@ window.VERSES = {
   "en": "Esau lived in the hill country of Seir. Esau is Edom.",
   "pt": "E Esaú habitou no monte de Seir: Esaú é Edom."
  },
+ "Heb 12:1": {
+  "zhRef": "希伯來書 12:1",
+  "enRef": "Hebrews 12:1",
+  "ptRef": "Hebreus 12:1",
+  "zh": "我們既有這許多的見證人，如同雲彩圍著我們，就當放下各樣的重擔，脫去容易纏累我們的罪，存心忍耐，奔那擺在我們前頭的路程……",
+  "en": "Therefore let us also, seeing we are surrounded by so great a cloud of witnesses, lay aside every weight and the sin which so easily entangles us, and let us run with patience the race that is set before us,",
+  "pt": "Portanto nós também, posto que estamos rodeados por uma tão grande nuvem de testemunhas, deixemos toda sobrecarga, e o pecado envolvente, e corramos com paciência a corrida que nos está proposta,"
+ },
  "Hos 10:14": {
   "zhRef": "何西阿書 10:14",
   "enRef": "Hosea 10:14",

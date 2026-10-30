@@ -144,3 +144,11 @@ main { flex: 1; position: relative; overflow: hidden; }
 .legend li { margin: 4px 0; }
 a.btn { text-decoration: none; }
 .popup-btn { margin-top: 6px; gap: 6px; }
+
+/* 破關紀念證書 */
+.cert-card.gold { border: 2px solid var(--gold); }
+.field { display: block; margin: 10px 0; font-size: 14px; color: var(--muted); }
+.field span { display: block; margin-bottom: 4px; }
+.text-input { width: 100%; font: inherit; color: var(--ink); background: var(--bg); border: 1.5px solid var(--line); border-radius: 10px; padding: 10px 12px; }
+.cert-out { margin-top: 12px; }
+.cert-img { display: block; width: 100%; max-width: 480px; margin: 0 auto 10px; border-radius: 6px; box-shadow: var(--shadow); }

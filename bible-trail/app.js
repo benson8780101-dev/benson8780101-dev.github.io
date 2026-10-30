@@ -76,14 +76,32 @@ const T = {
   storageOff: { zh: "⚠️ 這個瀏覽器不能存資料（可能是無痕模式），關掉後進度會不見。", en: "⚠️ This browser can't save data (maybe private mode); progress will be lost when you close it." },
   introTitle: { zh: "歡迎來到約旦聖經足跡！", en: "Welcome to the Jordan Bible Trail!" },
   introBody: {
-    zh: "這是試玩版，目前有第 {chs} 章、共 {n} 個地點。\n・經文和故事隨時都能讀，適合出發前預習。\n・人到了現場，按「我到了，蓋章」，手機用 GPS 確認位置後幫你蓋章。\n・標「隱藏」的關卡位置不確定，不用到現場，答對問答就解鎖。\n・去完一章的「必去」站就過關；全部去完，徽章會變金色。\n・地圖要有網路；其他內容沒網路也能用。",
-    en: "This is a preview with Chapters {chs}—{n} sites in all.\n• Read the scripture and stories anytime—great for preparing before you go.\n• On site, tap \"I'm here — stamp it!\" and your phone's GPS confirms your location.\n• 'Hidden' levels have uncertain locations—no visit needed; answer the quiz to unlock them.\n• Visit a chapter's must-see stops to complete it; visit them all to earn a gold badge.\n• The map needs internet; everything else works offline."
+    zh: "主線共 {c} 章、{n} 個地點，從北部的基列山地一路走到紅海邊。\n・經文和故事隨時都能讀，適合出發前預習。\n・人到了現場，按「我到了，蓋章」，手機用 GPS 確認位置後幫你蓋章。\n・標「隱藏」的關卡位置不確定，不用到現場，答對問答就解鎖。\n・去完一章的「必去」站就過關；全部去完，徽章會變金色。\n・九章的「必去」站都蓋完，可以在「護照」分頁領取破關紀念證書。\n・地圖要有網路；其他內容沒網路也能用。",
+    en: "The main trail has {c} chapters and {n} sites, from the hills of Gilead in the north to the Red Sea.\n• Read the scripture and stories anytime—great for preparing before you go.\n• On site, tap \"I'm here — stamp it!\" and your phone's GPS confirms your location.\n• 'Hidden' levels have uncertain locations—no visit needed; answer the quiz to unlock them.\n• Visit a chapter's must-see stops to complete it; visit them all to earn a gold badge.\n• Complete the must-see stops of all nine chapters to claim your certificate in the Passport tab.\n• The map needs internet; everything else works offline."
   },
   gotIt: { zh: "知道了，開始！", en: "Got it, let's go!" },
   locating: { zh: "正在找你的位置…", en: "Finding you…" },
   youAreHere: { zh: "你在這裡", en: "You are here" },
   navBtn: { zh: "🧭 Google 地圖導航", en: "🧭 Navigate with Google Maps" },
-  navApprox: { zh: "這是大約位置，快到的時候請看當地路標或問路。", en: "This is an approximate location—watch for local signs or ask for directions as you get close." }
+  navApprox: { zh: "這是大約位置，快到的時候請看當地路標或問路。", en: "This is an approximate location—watch for local signs or ask for directions as you get close." },
+  certTitle: { zh: "🏅 破關紀念證書", en: "🏅 Certificate of Completion" },
+  certHow: { zh: "九章的「必去」站全部蓋完，就能領取證書；全部 {n} 個地點都蓋完，證書會變成金色版。", en: "Stamp every must-see stop in all nine chapters to earn your certificate; stamp all {n} sites and it becomes the gold edition." },
+  certLeft: { zh: "還差 {a} 個必去站（已完成 {b} / {c} 章）", en: "{a} must-see stops to go ({b} / {c} chapters complete)" },
+  certReady: { zh: "🎉 恭喜！你走完了主線九章，可以領取證書了。", en: "🎉 Congratulations! You've completed all nine chapters—your certificate is ready." },
+  certGoldReady: { zh: "🏆 你蓋完了全部地點！這是金色版證書。", en: "🏆 You've stamped every site! This is the gold edition." },
+  certName: { zh: "證書上的名字", en: "Name on the certificate" },
+  certNameHint: { zh: "例如：Benson and Esther", en: "e.g. Benson and Esther" },
+  certMake: { zh: "產生證書", en: "Create certificate" },
+  certSave: { zh: "⬇️ 下載圖片", en: "⬇️ Download image" },
+  certShare: { zh: "📤 分享", en: "📤 Share" },
+  certPrivacy: { zh: "證書只在你的手機上產生，名字不會傳到任何地方。想換語言，切換右上角的語言再按一次「產生證書」。", en: "The certificate is made on your phone; your name is never sent anywhere. For another language, switch the language at the top right and tap \"Create certificate\" again." },
+  certHeading: { zh: "破關紀念證書", en: "Certificate of Completion" },
+  certGoldHeading: { zh: "金色版", en: "Gold Edition" },
+  certThis: { zh: "茲證明", en: "This certifies that" },
+  certAnon: { zh: "一位旅人", en: "A Traveler" },
+  certBody: { zh: "走完了約旦聖經足跡主線九章，從北部的基列山地一路走到紅海邊，獲得稱號", en: "has walked all nine chapters of the Jordan Bible Trail, from the hills of Gilead in the north to the shore of the Red Sea, and earned the title" },
+  certStats: { zh: "印章 {a} / {b} ・ 問答 ⭐ {c} / {b}", en: "Stamps {a} / {b} · Quiz ⭐ {c} / {b}" },
+  certDates: { zh: "{d1} 啟程 ・ {d2} 完成", en: "Began {d1} · Completed {d2}" }
 };
 
 // 巴西葡萄牙文介面文字（跟上面 T 的 key 一一對應；T 新增文字時這裡也要加）
@@ -136,12 +154,30 @@ const T_PT = {
   importBad: "Este arquivo não parece ser um backup da Trilha Bíblica, então nada foi importado.",
   storageOff: "⚠️ Este navegador não consegue salvar dados (talvez esteja em modo anônimo); o progresso se perde ao fechar.",
   introTitle: "Bem-vindo à Trilha Bíblica da Jordânia!",
-  introBody: "Esta é uma versão de teste com os capítulos {chs} — {n} lugares ao todo.\n• Leia as passagens e as histórias quando quiser — ótimo para se preparar antes da viagem.\n• No local, toque em \"Cheguei — carimbar!\" e o GPS do celular confirma onde você está.\n• As fases \"secretas\" têm localização incerta — não precisa ir até lá; responda o quiz para desbloqueá-las.\n• Visite as paradas obrigatórias de um capítulo para concluí-lo; visite todas para ganhar a medalha de ouro.\n• O mapa precisa de internet; todo o resto funciona offline.",
+  introBody: "A trilha principal tem {c} capítulos e {n} lugares, das colinas de Gileade, no norte, até o mar Vermelho.\n• Leia as passagens e as histórias quando quiser — ótimo para se preparar antes da viagem.\n• No local, toque em \"Cheguei — carimbar!\" e o GPS do celular confirma onde você está.\n• As fases \"secretas\" têm localização incerta — não precisa ir até lá; responda o quiz para desbloqueá-las.\n• Visite as paradas obrigatórias de um capítulo para concluí-lo; visite todas para ganhar a medalha de ouro.\n• Conclua as paradas obrigatórias dos nove capítulos para pegar seu certificado na aba Passaporte.\n• O mapa precisa de internet; todo o resto funciona offline.",
   gotIt: "Entendi, vamos lá!",
   locating: "Procurando você…",
   youAreHere: "Você está aqui",
   navBtn: "🧭 Ir com o Google Maps",
-  navApprox: "Esta é uma localização aproximada — fique atento às placas ou peça informações quando estiver chegando."
+  navApprox: "Esta é uma localização aproximada — fique atento às placas ou peça informações quando estiver chegando.",
+  certTitle: "🏅 Certificado de Conclusão",
+  certHow: "Carimbe todas as paradas obrigatórias dos nove capítulos para ganhar o certificado; carimbe todos os {n} lugares e ele vira a edição dourada.",
+  certLeft: "Faltam {a} paradas obrigatórias ({b} / {c} capítulos concluídos)",
+  certReady: "🎉 Parabéns! Você concluiu os nove capítulos — seu certificado está pronto.",
+  certGoldReady: "🏆 Você carimbou todos os lugares! Esta é a edição dourada.",
+  certName: "Nome no certificado",
+  certNameHint: "ex.: Benson and Esther",
+  certMake: "Gerar certificado",
+  certSave: "⬇️ Baixar imagem",
+  certShare: "📤 Compartilhar",
+  certPrivacy: "O certificado é gerado no seu celular; seu nome nunca é enviado a lugar nenhum. Para outro idioma, troque o idioma no canto superior direito e toque em \"Gerar certificado\" de novo.",
+  certHeading: "Certificado de Conclusão",
+  certGoldHeading: "Edição Dourada",
+  certThis: "Certificamos que",
+  certAnon: "Um Viajante",
+  certBody: "percorreu os nove capítulos da Trilha Bíblica da Jordânia, das colinas de Gileade, no norte, até a beira do mar Vermelho, e conquistou o título",
+  certStats: "Carimbos {a} / {b} · Quiz ⭐ {c} / {b}",
+  certDates: "Início {d1} · Conclusão {d2}"
 };
 for (const [k, v] of Object.entries(T_PT)) if (T[k]) T[k].pt = v;
 
@@ -242,14 +278,7 @@ function rankFor(n) {
   for (const x of TITLES) if (x.all ? n >= stationIds().length : n >= x.min) r = x;
   return r;
 }
-// 給說明文字用：「3、4、5」或「3, 4 and 5」
-function chapterNumbers() {
-  const nos = CHAPTERS.map((c) => c.no);
-  if (lang === "zh") return nos.join("、");
-  const and = lang === "pt" ? " e " : " and ";
-  return nos.length > 1 ? nos.slice(0, -1).join(", ") + and + nos[nos.length - 1] : String(nos[0]);
-}
-const introVars = () => ({ chs: chapterNumbers(), n: stationIds().length });
+const introVars = () => ({ c: CHAPTERS.length, n: stationIds().length });
 function chapterStatus(ch) {
   const passed = ch.required.every((id) => state.stamps[id]);
   const gold = passed && ch.bonus.every((id) => state.stamps[id]);
@@ -342,6 +371,7 @@ function renderPassport() {
       el("p", { class: "muted" }, t("stampsOf", { a: stampCount(), b: stationIds().length }), " · ", t("starsOf", { a: starCount(), b: stationIds().length })),
       el("div", { class: "progress" }, el("i", { style: `width:${Math.round((stampCount() / stationIds().length) * 100)}%` }))
     ),
+    certCard(),
     el("div", { class: "card" },
       el("h3", null, t("myBadges")),
       el("div", { class: "row" }, CHAPTERS.map((ch) => {
