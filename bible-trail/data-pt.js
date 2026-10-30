@@ -36,6 +36,10 @@ window.PT = {
     ch8: {
       title: "A Terra de Edom",
       intro: "Depois do ribeiro de Zerede fica a terra dos descendentes de Esaú, os edomitas. Edom quer dizer \"vermelho\", e as montanhas daqui são mesmo vermelhas. Aqui terminaram os trinta e oito anos de peregrinação de Israel, e foi nesse caminho que o povo olhou para a serpente de bronze que Moisés levantou."
+    },
+    ch9: {
+      title: "A Porta do Mar Vermelho",
+      intro: "A última etapa da viagem vai de Petra, a cidade de arenito vermelho, até Ácaba, à beira do mar Vermelho. Aqui reinou Aretas, rei dos nabateus, e Paulo foi para a Arábia depois de se converter; Arão morreu num monte daqui, e os navios de Salomão partiram desta costa. Ao chegar ao mar, você terá percorrido toda a terra além do Jordão."
     }
   },
 
@@ -517,6 +521,66 @@ window.PT = {
       reflect: "O melhor consolo de Elifaz foram os primeiros sete dias em que ficou sentado em silêncio com Jó. Quando um amigo está sofrendo, você tem mais pressa de dar respostas ou está disposto a simplesmente ficar ao lado dele primeiro?",
       mission: "🔒 Missão secreta: Leia Jó 2.11–13 e 42.7–9 e depois volte para o quiz.",
       quiz: { q: "Qual dos amigos de Jó era de Temã?", options: ["Elifaz", "Bildade", "Zofar"] },
+      howto: "Esta é uma fase secreta: a localização exata é desconhecida, então não é preciso ir até lá. Responda o quiz corretamente para ganhar o carimbo."
+    },
+
+    petra: {
+      name: "Petra (a capital do reino nabateu)",
+      place: "Parque Arqueológico de Petra, Patrimônio Mundial da UNESCO",
+      story: "Petra é uma cidade que os nabateus esculpiram no arenito vermelho, e a capital do seu reino. Um rei nabateu aparece no Novo Testamento: Aretas IV, que governava a partir de Petra. A filha dele tinha sido casada com Herodes Antipas, até que Herodes se divorciou dela para casar com Herodias — o casamento que João Batista condenou e pelo qual foi decapitado (Capítulo 6, Maqueronte). Mais tarde Aretas entrou em guerra e derrotou Herodes. Depois que Paulo se converteu, ele diz que \"partiu para a Arábia\", muito provavelmente o reino nabateu; mais tarde o governador subordinado ao rei Aretas pôs guardas em Damasco para prender Paulo. Petra foi apresentada ao mundo ocidental por um viajante suíço em 1812 e se tornou Patrimônio Mundial em 1985.",
+      reflect: "Depois de se converter, Paulo não correu para Jerusalém para ver os apóstolos; foi primeiro para a Arábia. Depois de uma virada na sua vida, houve um período quieto e invisível, uma \"temporada na Arábia\"? O que Deus estava fazendo nesse tempo?",
+      mission: "🏛️ Missão: Percorra o Siq, de mais de um quilômetro, e pare no momento em que o Tesouro aparece pela primeira vez depois da curva. Se tiver fôlego, suba os cerca de 800 degraus até o Mosteiro, no alto do monte (na foto).",
+      quiz: { q: "Qual rei que governava a partir de Petra é citado no Novo Testamento?", options: ["O rei Aretas", "O rei Messa", "O rei Salomão"] },
+      howto: "Cerca de 3 horas ao sul de Amã pela Rodovia do Deserto até o Centro de Visitantes de Petra, em Wadi Musa, onde se compram os ingressos (o Jordan Pass inclui 1 a 3 dias de entrada). Há pontos de carimbo no centro de visitantes, no Tesouro dentro do Siq e no centro da cidade antiga. O sítio é enorme — ir e voltar do Mosteiro leva quase o dia todo. Use calçado confortável, leve água e chapéu, e evite o meio-dia no verão."
+    },
+
+    elath: {
+      name: "Elate (Ácaba, o porto do mar Vermelho)",
+      place: "A orla de Ácaba, perto das ruínas da antiga Aila",
+      story: "Elate ficava na região da atual Ácaba, a única saída da Jordânia para o mar. Quando Israel rodeou Edom no deserto, passou por Elate e Eziom-Geber. Mais tarde o rei Salomão fez navios \"em Eziom-Geber, que é junto a Elate na beira do mar Vermelho, na terra de Edom\", e navegou com os marinheiros de Hirão, rei de Tiro, até Ofir para trazer ouro. Na época romana o lugar se chamava Aila, um porto onde ficava uma legião romana; no início do período islâmico construíram uma cidade nova ao lado, e ainda hoje se veem suas muralhas e portões à beira-mar.",
+      reflect: "De Gileade, no norte, até o mar Vermelho, você percorreu a Jordânia inteira. Olhando para trás, a história de qual parada mais tocou você, e por quê?",
+      mission: "🌊 Missão: Desça até a praia e coloque a mão no mar Vermelho. Em dia claro dá para ver ao mesmo tempo as costas do Egito, de Israel e da Arábia Saudita.",
+      quiz: { q: "O que o rei Salomão fez perto de Elate?", options: ["Construiu um templo", "Construiu navios e foi ao mar", "Cavou um poço"] },
+      howto: "Cerca de 4 horas ao sul de Amã pela Rodovia do Deserto, ou cerca de 2 horas ao sul de Petra. As ruínas de Aila ficam ao lado da avenida da orla, no centro da cidade, com entrada gratuita. Há muitos restaurantes e praias por perto, e a Igreja de Ácaba fica pertinho."
+    },
+
+    aaron: {
+      name: "Monte Hor (o túmulo de Arão, Jabal Harun)",
+      place: "Um monte alto a sudoeste de Petra, com um pequeno santuário de cúpula branca no topo",
+      story: "Quando Israel se aproximava da Terra Prometida, Deus disse a Moisés que Arão seria recolhido ao seu povo, porque ele e Moisés tinham desobedecido à ordem de Deus nas \"águas da briga\" (Meribá). Então Moisés levou Arão e seu filho Eleazar ao monte de Hor, à vista de toda a congregação, tirou de Arão as vestes sacerdotais e as vestiu em Eleazar, e Arão morreu ali no cume do monte. Todo Israel chorou por ele trinta dias. O historiador judeu Josefo registra que Arão morreu num monte perto de Petra, por isso a tradição local sempre identificou este Jabal Harun (\"monte de Arão\"); o pequeno santuário no topo é do século 14, e mais abaixo ficam as ruínas de um \"Mosteiro de Santo Arão\" bizantino. Muitos estudiosos, porém, acham que o monte Hor bíblico ficava no Neguebe, no sul de Israel.",
+      reflect: "As vestes sacerdotais de Arão passaram para seu filho Eleazar; o serviço não parou quando um homem partiu. Para quem você vai passar suas \"vestes\" um dia? Você está preparando essa pessoa?",
+      mission: "⛰️ Missão: Da cidade antiga de Petra, encontre o monte mais alto a sudoeste, com uma pequena cúpula branca no topo. Se conseguir subir, olhe do cume para Petra a leste e para o vale da Arabá a oeste.",
+      quiz: { q: "Depois que Arão morreu, quem recebeu suas vestes sacerdotais?", options: ["Josué", "Eleazar", "Calebe"] },
+      howto: "Fica dentro do parque de Petra (é preciso ingresso de Petra). Da cidade antiga até o cume são cerca de 3 horas só de ida, com um trecho íngreme de degraus, e o caminho é difícil de seguir — recomenda-se contratar um guia beduíno local. Não há sombra, então saia de manhã e leve bastante água e comida. Se preferir não subir, ver o monte a partir da cidade antiga também vale a pena."
+    },
+
+    ainmusa: {
+      name: "A Fonte de Moisés (Ain Musa)",
+      place: "Uma fonte na entrada da cidade de Wadi Musa, coberta por uma pequena construção de três cúpulas",
+      story: "O povo estava sem água no deserto e brigou com Moisés. Deus mandou Moisés falar à rocha para que ela desse água, mas Moisés levantou a vara e feriu a rocha duas vezes. Saiu muita água, mas Deus disse que Moisés e Arão não o tinham santificado, e por isso não levariam o povo a Canaã. A tradição local diz que Moisés feriu a rocha aqui, e a cidade inteira se chama Wadi Musa (\"vale de Moisés\") por causa disso. A Bíblia situa o episódio em Cades, que a maioria dos estudiosos localiza no Sinai ou no Neguebe, então isto é só uma tradição — mas esta fonte de fato abasteceu Petra de água por milhares de anos, e os nabateus cavaram canais para levá-la até a cidade.",
+      reflect: "Deus mandou Moisés \"falar\", mas, com raiva, Moisés \"feriu\" a rocha. Recentemente você respondeu a alguém de um jeito mais duro do que Deus queria, por causa da raiva?",
+      mission: "💧 Missão: Entre na construção de cúpulas e veja de onde a água sai da rocha. Quando for a Petra, repare nos canais de água que os nabateus cavaram nas paredes de rocha.",
+      quiz: { q: "Como Deus mandou originalmente Moisés tirar água da rocha?", options: ["Ferindo-a com a vara", "Falando à rocha", "Orando diante dela por sete dias"] },
+      howto: "Na entrada norte da cidade de Wadi Musa, por onde você passa ao chegar pela Estrada dos Reis, perto do Mussa Spring Hotel. A pequena construção tem visita gratuita — uma parada fácil a caminho de Petra. As coordenadas são aproximadas; ao chegar perto, pergunte aos moradores por \"Ain Musa\"."
+    },
+
+    aylachurch: {
+      name: "A Igreja de Ácaba",
+      place: "Ruínas de uma igreja de tijolos de barro no centro de Ácaba",
+      story: "No Pentecostes, entre os que ouviram os discípulos falar das grandezas de Deus nas suas próprias línguas havia \"árabes\". O evangelho chegou cedo a esta região. Em 1998, arqueólogos encontraram em Ácaba uma construção de tijolos de barro datada de cerca de 293 a 303 d.C., com uma plataforma elevada e sepulturas, considerada uma das igrejas construídas para esse fim mais antigas do mundo. Naquela época o Império Romano ainda perseguia os cristãos, mas esses crentes já tinham construído a sua igreja à beira do mar Vermelho. Ela desabou no grande terremoto de 363 d.C. e ficou enterrada na areia por mais de 1.600 anos.",
+      reflect: "Numa época de perseguição, esses crentes construíram um lugar de reunião tijolo por tijolo. Onde você vive, existe um grupo de pessoas com quem você pode \"construir\" a fé junto?",
+      mission: "🧱 Missão: Observe de perto as paredes da igreja e veja como os tijolos de barro foram empilhados um a um. Imagine esses crentes cantando e orando aqui há 1.700 anos.",
+      quiz: { q: "Mais ou menos quando a Igreja de Ácaba foi construída?", options: ["1000 a.C.", "Por volta de 300 d.C.", "1500 d.C."] },
+      howto: "No centro de Ácaba, a poucos minutos a pé das ruínas de Aila, na orla. O sítio é cercado, mas dá para ver de fora, e é gratuito. Fácil de combinar com Elate (as ruínas de Aila)."
+    },
+
+    eziongeber: {
+      name: "Eziom-Geber (o porto de Salomão)",
+      place: "Localização incerta: o extremo do golfo de Ácaba, ou a Ilha do Faraó, no Egito",
+      story: "Eziom-Geber foi um dos acampamentos de Israel no deserto e o porto onde o rei Salomão construiu seus navios. Mais tarde Josafá, rei de Judá, quis seguir o exemplo de Salomão e construiu grandes navios para buscar ouro em Ofir, mas eles se despedaçaram em Eziom-Geber e nunca partiram. Os estudiosos ainda discutem onde ficava Eziom-Geber: alguns dizem Tell el-Kheleifeh, um pequeno monte na divisa entre Ácaba e Israel; outros dizem a Ilha do Faraó, na costa do Sinai, no Egito. Por isso esta é uma fase secreta.",
+      reflect: "Os navios de Josafá se quebraram antes de sair do porto. Você já teve um plano que fracassou antes de começar? Olhando para trás, será que Deus estava protegendo você nisso?",
+      mission: "🔒 Missão secreta: Leia 1 Reis 22.48–49 e 2 Crônicas 20.35–37 e depois volte para o quiz.",
+      quiz: { q: "O que aconteceu com os navios de Josafá em Eziom-Geber?", options: ["Trouxeram muito ouro", "Despedaçaram-se e nunca partiram", "Foram capturados por piratas"] },
       howto: "Esta é uma fase secreta: a localização exata é desconhecida, então não é preciso ir até lá. Responda o quiz corretamente para ganhar o carimbo."
     }
   },

@@ -1,4 +1,4 @@
-// 約旦聖經足跡：試玩版內容（第 1～8 章）
+// 約旦聖經足跡：主線完整版內容（第 1～9 章）
 // 每一段文字都有 zh（繁體中文）和 en（英文），兩種語言一定要一起改。
 // 座標來源：OpenBible.info 聖經地理資料庫（CC BY 4.0）；標「approx: true」的是大約位置，待實地確認。
 // certainty：yes＝學者大多同意｜likely＝可能｜tradition＝傳統說法｜area＝一整個區域｜unknown＝位置不確定
@@ -101,6 +101,18 @@ window.CHAPTERS = [
     badge: "🐍",
     required: ["zered", "bozrah"],
     bonus: ["tophel", "sela", "punon", "teman"]
+  },
+  {
+    id: "ch9",
+    no: 9,
+    title: { zh: "紅海之門", en: "Gateway to the Red Sea" },
+    intro: {
+      zh: "旅程的最後一站，從紅色砂岩城佩特拉一路往南到紅海邊的亞喀巴。拿巴天王亞哩達在這裡治理國家，保羅信主後往阿拉伯去；亞倫在山上離世，所羅門的船從這裡出海。走到海邊，你就走完了整條約旦河東。",
+      en: "The last leg of the journey runs from Petra, the red sandstone city, south to Aqaba on the Red Sea. King Aretas of the Nabataeans ruled here, and Paul went to Arabia after coming to faith; Aaron died on a mountain here, and Solomon's ships set sail from this coast. When you reach the sea, you've walked the whole land beyond the Jordan."
+    },
+    badge: "⛵",
+    required: ["petra", "elath"],
+    bonus: ["aaron", "ainmusa", "aylachurch", "eziongeber"]
   }
 ];
 
@@ -1575,6 +1587,188 @@ window.STATIONS = {
       en: "This is a hidden level: the exact location is unknown, so you don't need to visit. Answer the quiz correctly to unlock the stamp."
     },
     photo: null
+  },
+
+  petra: {
+    name: { zh: "佩特拉（拿巴天王國的京城）", en: "Petra (Capital of the Nabataean Kingdom)" },
+    place: { zh: "佩特拉考古公園，聯合國世界遺產", en: "Petra Archaeological Park, UNESCO World Heritage Site" },
+    lat: 30.3295, lng: 35.4401, radius: 1500,
+    points: [{ lat: 30.3221, lng: 35.4515 }, { lat: 30.3243, lng: 35.4678 }],
+    certainty: "yes",
+    verses: ["Gal 1:17", "2 Cor 11:32"],
+    story: {
+      zh: "佩特拉是拿巴天人在紅色砂岩裡鑿出來的城，也是他們王國的京城。新約裡有一位拿巴天王：亞哩達四世，就是從佩特拉統治國家的。他的女兒原本嫁給希律安提帕，後來希律為了娶希羅底把她休了，施洗約翰就是因為指責這樁婚事被斬首（第 6 章馬蓋耳斯堡）；亞哩達後來出兵打敗了希律。保羅信主以後，說他「往阿拉伯去」，指的很可能就是拿巴天王國；後來亞哩達王手下的提督還把守大馬士革城，要捉拿保羅。佩特拉在 1812 年被一位瑞士旅行家介紹給西方世界，1985 年列入世界遺產。",
+      en: "Petra is a city the Nabataeans carved into red sandstone, and the capital of their kingdom. One Nabataean king appears in the New Testament: Aretas IV, who ruled from Petra. His daughter had been married to Herod Antipas, until Herod divorced her to marry Herodias—the marriage John the Baptist condemned, and was beheaded for (Chapter 6, Machaerus). Aretas later went to war and defeated Herod. After Paul came to faith, he says he 'went away into Arabia,' very likely meaning the Nabataean kingdom; later the governor under King Aretas guarded Damascus to arrest Paul. Petra was introduced to the Western world by a Swiss traveler in 1812 and became a World Heritage Site in 1985."
+    },
+    reflect: {
+      zh: "保羅信主後沒有馬上去耶路撒冷見使徒，而是先往阿拉伯去。你生命轉彎之後，有沒有一段安靜、沒人看見的「阿拉伯時期」？那段時間神在做什麼？",
+      en: "After coming to faith, Paul didn't rush to Jerusalem to meet the apostles; he went first to Arabia. After a turning point in your life, was there a quiet, unseen 'Arabia season'? What was God doing in that time?"
+    },
+    mission: {
+      zh: "🏛️ 任務：走過一公里多的蛇道（Siq），在峽谷轉角第一眼看見「寶庫」的那一刻停下來。有體力的話，爬八百多級階梯到山上的「修道院」（照片）。",
+      en: "🏛️ Mission: Walk the kilometer-plus Siq and pause at the moment the Treasury first appears around the bend. If you have the energy, climb the 800-odd steps to the Monastery up on the mountain (in the photo)."
+    },
+    quiz: {
+      q: { zh: "哪一位從佩特拉統治的國王，在新約裡被提到？", en: "Which king who ruled from Petra is mentioned in the New Testament?" },
+      options: [{ zh: "亞哩達王", en: "King Aretas" }, { zh: "米沙王", en: "King Mesha" }, { zh: "所羅門王", en: "King Solomon" }],
+      answer: 0
+    },
+    howto: {
+      zh: "從安曼走沙漠公路往南約 3 小時，到 Wadi Musa 鎮的佩特拉遊客中心買票（約旦通行證可用，含 1～3 天門票）。遊客中心、蛇道裡的寶庫、市中心的古城區都有蓋章點。園區很大，走到修道院來回要大半天；穿好走的鞋，帶水和帽子，夏天避開中午。",
+      en: "About 3 hours south of Amman on the Desert Highway to the Petra Visitor Center in Wadi Musa, where you buy tickets (the Jordan Pass includes 1–3 days' entry). There are stamp points at the visitor center, the Treasury in the Siq, and the old city center. The site is huge—the round trip to the Monastery takes most of a day. Wear good shoes, bring water and a hat, and avoid midday in summer."
+    },
+    photo: "petra"
+  },
+
+  elath: {
+    name: { zh: "以拉他（亞喀巴，紅海邊的港口）", en: "Elath (Aqaba, the Red Sea Port)" },
+    place: { zh: "亞喀巴海邊，艾拉古城遺址一帶", en: "Aqaba's seafront, around the ruins of ancient Ayla" },
+    lat: 29.5306, lng: 35.0, radius: 1500,
+    certainty: "yes",
+    verses: ["1 Kgs 9:26", "Deut 2:8"],
+    story: {
+      zh: "以拉他就在今天的亞喀巴一帶，是約旦唯一的出海口。以色列人在曠野繞行以東地的時候，就經過以拉他和以旬迦別。後來所羅門王在「以東地紅海邊，靠近以祿的以旬迦別」造船，跟推羅王希蘭的水手一起航海到俄斐運回金子。到了羅馬時代，這裡叫艾拉（Aila），是羅馬軍團駐紮的港口；伊斯蘭初期在旁邊蓋了新城，今天海邊還看得到那座城的城牆和城門遺跡。",
+      en: "Elath lay around today's Aqaba, Jordan's only outlet to the sea. As Israel circled around Edom in the wilderness, they passed by Elath and Ezion-geber. Later King Solomon built ships 'in Ezion Geber, which is beside Eloth, on the shore of the Red Sea, in the land of Edom,' and sailed with King Hiram of Tyre's sailors to Ophir to bring back gold. In Roman times it was called Aila, a port where a Roman legion was stationed; in the early Islamic period a new town was built beside it, and its walls and gates can still be seen by the sea today."
+    },
+    reflect: {
+      zh: "從北部的基列一路走到紅海邊，你走完了整條約旦。回頭看這趟旅程，哪一站的故事最打動你？為什麼？",
+      en: "From Gilead in the north all the way to the Red Sea, you've traveled the whole length of Jordan. Looking back, which station's story moved you most, and why?"
+    },
+    mission: {
+      zh: "🌊 任務：走到海邊，把手放進紅海裡。天氣好的時候，可以同時看到埃及、以色列和沙烏地阿拉伯的海岸。",
+      en: "🌊 Mission: Walk down to the shore and put your hand in the Red Sea. On a clear day you can see the coasts of Egypt, Israel and Saudi Arabia all at once."
+    },
+    quiz: {
+      q: { zh: "所羅門王在以拉他附近做了什麼？", en: "What did King Solomon do near Elath?" },
+      options: [{ zh: "蓋了一座聖殿", en: "Built a temple" }, { zh: "造船出海", en: "Built ships and went to sea" }, { zh: "挖了一口井", en: "Dug a well" }],
+      answer: 1
+    },
+    howto: {
+      zh: "從安曼走沙漠公路往南約 4 小時，或從佩特拉往南約 2 小時。艾拉古城遺址在市中心的海濱大道旁，免費參觀。附近有很多餐廳和海灘，也可以順道去亞喀巴古教堂。",
+      en: "About 4 hours south of Amman on the Desert Highway, or about 2 hours south of Petra. The Ayla ruins are beside the seafront boulevard in the city center and free to visit. There are plenty of restaurants and beaches nearby, and the Aqaba Church is close by."
+    },
+    photo: null
+  },
+
+  aaron: {
+    name: { zh: "何珥山（亞倫的墓，Jabal Harun）", en: "Mount Hor (Aaron's Tomb, Jabal Harun)" },
+    place: { zh: "佩特拉西南邊的高山，山頂有白色圓頂小廟", en: "A high mountain southwest of Petra, with a small white-domed shrine on top" },
+    lat: 30.3168, lng: 35.4067, radius: 1500,
+    certainty: "tradition",
+    verses: ["Num 20:27-28"],
+    story: {
+      zh: "以色列人快到應許之地時，神對摩西說，亞倫要歸到他列祖那裡，因為他和摩西在米利巴的水那裡違背了神的命令。摩西就帶亞倫和他的兒子以利亞撒，當著全會眾上了何珥山，把亞倫的聖衣脫下來給以利亞撒穿上，亞倫就死在山頂。全會眾為他哀哭了三十天。猶太史學家約瑟夫記載亞倫死在佩特拉附近的山上，所以當地傳統一直認為就是這座 Jabal Harun（亞倫山）；山頂的小廟是 14 世紀蓋的，下面還有一座拜占庭時代的「聖亞倫修道院」遺址。不過許多學者認為，聖經的何珥山應該在以色列南部的內蓋夫一帶。",
+      en: "As Israel neared the Promised Land, God told Moses that Aaron would be gathered to his people, because he and Moses had disobeyed God's command at the waters of Meribah. So Moses took Aaron and his son Eleazar up Mount Hor in sight of the whole congregation, stripped Aaron of his priestly garments and put them on Eleazar, and Aaron died there on the top of the mountain. All Israel mourned him for thirty days. The Jewish historian Josephus records that Aaron died on a mountain near Petra, so local tradition has always identified it as this Jabal Harun ('Aaron's Mountain'); the small shrine on top dates to the 14th century, and below it are the ruins of a Byzantine 'Monastery of St. Aaron.' Many scholars, however, think the biblical Mount Hor was in the Negev of southern Israel."
+    },
+    reflect: {
+      zh: "亞倫的聖衣傳給了兒子以利亞撒，服事沒有因為一個人離開而停止。你現在手上的「聖衣」，將來會傳給誰？你有在預備他嗎？",
+      en: "Aaron's priestly garments passed to his son Eleazar; the service didn't stop when one man departed. Who will you pass your 'garments' on to someday? Are you preparing them?"
+    },
+    mission: {
+      zh: "⛰️ 任務：在佩特拉古城區找到往西南方向最高、山頂有白色小圓頂的那座山。爬得上去的話，在山頂往東看佩特拉、往西看亞拉巴谷。",
+      en: "⛰️ Mission: From Petra's old city, find the highest mountain to the southwest with a small white dome on top. If you can climb it, look east over Petra and west over the Arabah valley from the summit."
+    },
+    quiz: {
+      q: { zh: "亞倫死後，他的聖衣給了誰？", en: "After Aaron died, who received his priestly garments?" },
+      options: [{ zh: "約書亞", en: "Joshua" }, { zh: "以利亞撒", en: "Eleazar" }, { zh: "迦勒", en: "Caleb" }],
+      answer: 1
+    },
+    howto: {
+      zh: "在佩特拉園區裡面（要買佩特拉門票）。從古城區走到山頂，單程大約 3 小時，有一段很陡的階梯，路線不好找，建議請當地貝都因嚮導。沒有遮蔭，早上出發，帶足水和食物。不想爬的話，在古城區看得到山也很好。",
+      en: "Inside Petra park (a Petra ticket is required). From the old city to the summit takes about 3 hours one way, including a steep stretch of steps, and the route is hard to follow—hiring a local Bedouin guide is recommended. There's no shade, so start in the morning and bring plenty of water and food. If you'd rather not climb, seeing the mountain from the old city is good too."
+    },
+    photo: "aaron"
+  },
+
+  ainmusa: {
+    name: { zh: "摩西泉（Ain Musa）", en: "Moses' Spring (Ain Musa)" },
+    place: { zh: "Wadi Musa 鎮入口的泉水，上面蓋了三個圓頂的小屋", en: "A spring at the entrance to the town of Wadi Musa, covered by a small three-domed building" },
+    lat: 30.3245, lng: 35.4975, radius: 800,
+    certainty: "tradition",
+    approx: true,
+    verses: ["Num 20:11"],
+    story: {
+      zh: "百姓在曠野沒有水喝，又跟摩西爭鬧。神吩咐摩西「吩咐磐石發出水來」，摩西卻舉杖擊打磐石兩下，雖然有許多水流出來，神卻說他和亞倫不尊神為聖，所以不能帶百姓進迦南。當地傳統說，摩西擊打磐石就是在這裡，整個小鎮也因此叫 Wadi Musa（摩西谷）。聖經記載這件事發生在加低斯，多數學者認為在西奈半島或內蓋夫一帶，所以這只是傳統說法；不過這道泉水幾千年來真的供應了佩特拉的用水，拿巴天人還鑿了水道把水引進城裡。",
+      en: "The people had no water in the wilderness and quarreled with Moses. God told Moses to 'speak to the rock' to bring out water, but Moses raised his staff and struck the rock twice. Water gushed out, but God said Moses and Aaron had not honored him as holy, so they would not lead the people into Canaan. Local tradition says Moses struck the rock here, and the whole town is called Wadi Musa ('Valley of Moses') because of it. The Bible places the event at Kadesh, which most scholars locate in Sinai or the Negev, so this is only a tradition—but this spring really did supply Petra's water for thousands of years, and the Nabataeans cut channels to carry it into the city."
+    },
+    reflect: {
+      zh: "神叫摩西「說話」，摩西卻在氣頭上「打」了磐石。你最近有沒有在生氣的時候，用了比神要的更重的方式回應別人？",
+      en: "God told Moses to 'speak,' but in his anger Moses 'struck' the rock. Have you recently responded to someone more harshly than God wanted, out of anger?"
+    },
+    mission: {
+      zh: "💧 任務：走進圓頂小屋，看看泉水從岩石流出來的地方。去佩特拉的時候，留意沿路岩壁上拿巴天人鑿的水道。",
+      en: "💧 Mission: Step into the domed building and see where the water flows from the rock. When you visit Petra, watch for the water channels the Nabataeans cut along the rock walls."
+    },
+    quiz: {
+      q: { zh: "神原本吩咐摩西怎樣讓磐石出水？", en: "How did God originally tell Moses to bring water from the rock?" },
+      options: [{ zh: "用杖擊打", en: "Strike it with his staff" }, { zh: "對磐石說話", en: "Speak to the rock" }, { zh: "向磐石禱告七天", en: "Pray before it for seven days" }],
+      answer: 1
+    },
+    howto: {
+      zh: "在 Wadi Musa 鎮北邊的入口，從君王大道進鎮時就會經過，Mussa Spring 旅館附近。小屋免費參觀，可以順路在去佩特拉之前停一下。座標是大約位置，快到時問一下當地人「Ain Musa」。",
+      en: "At the northern entrance to the town of Wadi Musa, which you pass when coming in on the King's Highway, near the Mussa Spring Hotel. The little building is free to visit—an easy stop on the way to Petra. The coordinates are approximate; as you get close, ask locals for 'Ain Musa.'"
+    },
+    photo: null
+  },
+
+  aylachurch: {
+    name: { zh: "亞喀巴古教堂", en: "The Aqaba Church" },
+    place: { zh: "亞喀巴市區的泥磚教堂遺址", en: "Mud-brick church ruins in central Aqaba" },
+    lat: 29.5336, lng: 34.9991, radius: 400,
+    certainty: "yes",
+    verses: ["Acts 2:11"],
+    story: {
+      zh: "五旬節聖靈降臨的時候，聽見門徒用自己家鄉話講說神大作為的人裡面，就有「阿拉伯人」。福音很早就傳到了這一帶。1998 年，考古學家在亞喀巴挖到一座用泥磚蓋的建築，年代大約是主後 293 到 303 年，裡面有講台、墓地，被認為是世界上最古老、專門為聚會蓋的教堂之一。那時候羅馬帝國還在逼迫基督徒，這群信徒卻已經在紅海邊蓋了自己的教堂。它在主後 363 年的大地震中倒塌，之後就被沙土埋了一千六百多年。",
+      en: "At Pentecost, among those who heard the disciples speaking of God's mighty works in their own languages were 'Arabians.' The gospel reached this region early. In 1998 archaeologists in Aqaba uncovered a mud-brick building dated to about AD 293–303, with a raised platform and graves, considered one of the oldest purpose-built churches in the world. At that time the Roman Empire was still persecuting Christians, yet these believers had already built their own church by the Red Sea. It collapsed in the great earthquake of AD 363 and lay buried under the sand for more than 1,600 years."
+    },
+    reflect: {
+      zh: "在逼迫的年代，這群人還是一磚一瓦蓋了聚會的地方。你所在的地方，有沒有一群你可以一起「蓋」信仰的人？",
+      en: "In an age of persecution, these believers still built a meeting place brick by brick. Where you live, is there a group of people you can 'build' your faith together with?"
+    },
+    mission: {
+      zh: "🧱 任務：仔細看教堂的牆，找出泥磚一塊一塊疊起來的樣子。想像一千七百年前，這群信徒在這裡唱詩、禱告。",
+      en: "🧱 Mission: Look closely at the church walls and find how the mud bricks were stacked one by one. Imagine these believers singing and praying here 1,700 years ago."
+    },
+    quiz: {
+      q: { zh: "亞喀巴古教堂大約是什麼時候蓋的？", en: "About when was the Aqaba Church built?" },
+      options: [{ zh: "主前 1000 年", en: "1000 BC" }, { zh: "主後 300 年左右", en: "Around AD 300" }, { zh: "主後 1500 年", en: "AD 1500" }],
+      answer: 1
+    },
+    howto: {
+      zh: "在亞喀巴市區，離海邊的艾拉古城走路幾分鐘。遺址有圍籬，從外面就看得到，免費。可以和以拉他（艾拉古城）排在一起走。",
+      en: "In central Aqaba, a few minutes' walk from the Ayla ruins on the seafront. The site is fenced but visible from outside, and free. Easy to combine with Elath (the Ayla ruins)."
+    },
+    photo: "aylachurch"
+  },
+
+  eziongeber: {
+    name: { zh: "以旬迦別（所羅門的港口）", en: "Ezion-geber (Solomon's Port)" },
+    place: { zh: "位置不確定：亞喀巴灣頂端，或埃及的法老島", en: "Location uncertain: the head of the Gulf of Aqaba, or Pharaoh's Island in Egypt" },
+    hidden: true,
+    certainty: "unknown",
+    verses: ["1 Kgs 22:48"],
+    story: {
+      zh: "以旬迦別是以色列人在曠野安營的一站，也是所羅門王造船的港口。後來猶大王約沙法也想學所羅門，造了大船要到俄斐運金子，船卻在以旬迦別破壞了，根本沒有出航。以旬迦別確切在哪裡，學者還在爭論：有人認為是亞喀巴和以色列邊界上的 Tell el-Kheleifeh 小土丘，也有人認為是埃及西奈半島海邊的法老島。所以這是隱藏關卡。",
+      en: "Ezion-geber was one of Israel's wilderness camps, and the port where King Solomon built his ships. Later King Jehoshaphat of Judah tried to follow Solomon's example and built great ships to fetch gold from Ophir, but they were wrecked at Ezion-geber and never sailed. Scholars still debate where Ezion-geber was: some say Tell el-Kheleifeh, a small mound on the border between Aqaba and Israel; others say Pharaoh's Island off the coast of Egypt's Sinai. So this is a hidden level."
+    },
+    reflect: {
+      zh: "約沙法的船還沒出港就破了。你有沒有一個計畫，還沒開始就失敗了？回頭看，神是不是在那件事上保護了你？",
+      en: "Jehoshaphat's ships broke before they ever left port. Have you had a plan that failed before it began? Looking back, might God have been protecting you through it?"
+    },
+    mission: {
+      zh: "🔒 隱藏任務：讀完列王紀上 22 章 48～49 節和歷代志下 20 章 35～37 節，再回來答題。",
+      en: "🔒 Hidden mission: Read 1 Kings 22:48–49 and 2 Chronicles 20:35–37, then come back for the quiz."
+    },
+    quiz: {
+      q: { zh: "約沙法的船在以旬迦別發生了什麼事？", en: "What happened to Jehoshaphat's ships at Ezion-geber?" },
+      options: [{ zh: "運回很多金子", en: "They brought back much gold" }, { zh: "船破壞了，沒有出航", en: "They were wrecked and never sailed" }, { zh: "被海盜搶走", en: "Pirates captured them" }],
+      answer: 1
+    },
+    howto: {
+      zh: "這是隱藏關卡：確切位置不知道，不需要到現場。答對上面的問答就能解鎖印章。",
+      en: "This is a hidden level: the exact location is unknown, so you don't need to visit. Answer the quiz correctly to unlock the stamp."
+    },
+    photo: null
   }
 };
 
@@ -1608,5 +1802,6 @@ window.NAV = {
   machaerus: "Mukawir Castle",
   mephaath: "Umm ar-Rasas",
   arnon: "Wadi Mujib Viewpoint",
-  kerak: "Kerak Castle"
+  kerak: "Kerak Castle",
+  petra: "Petra Visitor Center"
 };

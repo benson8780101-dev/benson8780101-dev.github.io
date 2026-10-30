@@ -25,6 +25,14 @@ window.VERSES = {
   "en": "A certain man drew his bow at random, and struck the king of Israel between the joints of the armor. Therefore he said to the driver of his chariot, “Turn your hand, and carry me out of the battle; for I am severely wounded.”",
   "pt": "E um homem disparando seu arco ao acaso, feriu ao rei de Israel por entre as junturas da armadura; pelo que disse ele a seu condutor do carro: Toma a volta, e tira-me do campo, que estou ferido."
  },
+ "1 Kgs 22:48": {
+  "zhRef": "列王紀上 22:48",
+  "enRef": "1 Kings 22:48",
+  "ptRef": "1 Reis 22:48",
+  "zh": "約沙法製造他施船隻，要往俄斐去，將金子運來；只是沒有去，因為船在以旬‧迦別破壞了。",
+  "en": "Jehoshaphat made ships of Tarshish to go to Ophir for gold: but they didn’t go; for the ships were broken at Ezion Geber.",
+  "pt": "Havia Josafá feito navios em Társis, os quais haviam de ir a Ofir por ouro; mas não foram, porque se romperam em Eziom-Geber."
+ },
  "1 Kgs 7:46": {
   "zhRef": "列王紀上 7:46",
   "enRef": "1 Kings 7:46",
@@ -32,6 +40,14 @@ window.VERSES = {
   "zh": "是遵王命在約旦平原、疏割和撒拉但中間藉膠泥鑄成的。",
   "en": "The king cast them in the plain of the Jordan, in the clay ground between Succoth and Zarethan.",
   "pt": "Todo o fez fundir o rei na planície do Jordão, em terra argilosa, entre Sucote e Zaretã."
+ },
+ "1 Kgs 9:26": {
+  "zhRef": "列王紀上 9:26",
+  "enRef": "1 Kings 9:26",
+  "ptRef": "1 Reis 9:26",
+  "zh": "所羅門王在以東地紅海邊，靠近以祿的以旬‧迦別製造船隻。",
+  "en": "King Solomon made a navy of ships in Ezion Geber, which is beside Eloth, on the shore of the Red Sea, in the land of Edom.",
+  "pt": "Fez também o rei Salomão navios em Eziom-Geber, que é junto a Elate na beira do mar Vermelho, na terra de Edom."
  },
  "1 Sam 22:3": {
   "zhRef": "撒母耳記上 22:3",
@@ -48,6 +64,14 @@ window.VERSES = {
   "zh": "基列‧雅比的居民聽見非利士人向掃羅所行的事，他們中間所有的勇士就起身，走了一夜，將掃羅和他兒子的屍身從伯‧珊城牆上取下來，送到雅比那裡，用火燒了；將他們骸骨葬在雅比的垂絲柳樹下，就禁食七日。",
   "en": "When the inhabitants of Jabesh Gilead heard concerning him that which the Philistines had done to Saul, all the valiant men arose, and went all night, and took the body of Saul and the bodies of his sons from the wall of Beth Shan; and they came to Jabesh, and burnt them there. They took their bones, and buried them under the tamarisk tree in Jabesh, and fasted seven days.",
   "pt": "Mas ouvindo os de Jabes de Gileade isto que os filisteus fizeram a Saul, Todos os homens valentes se levantaram, e andaram toda aquela noite, e tiraram o corpo de Saul e os corpos de seus filhos do muro de Bete-Seã; e vindo a Jabes, queimaram-nos ali. E tomando seus ossos, sepultaram-nos debaixo de uma árvore em Jabes, e jejuaram durante sete dias."
+ },
+ "2 Cor 11:32": {
+  "zhRef": "哥林多後書 11:32",
+  "enRef": "2 Corinthians 11:32",
+  "ptRef": "2 Coríntios 11:32",
+  "zh": "在大馬士革的亞哩達王手下的提督把守大馬士革城，要捉拿我……",
+  "en": "In Damascus the governor under King Aretas guarded the city of the Damascenes desiring to arrest me.",
+  "pt": "Em Damasco, o governador subordinado ao Rei Aretas pôs guardas na cidade dos damascenos, querendo me prender."
  },
  "2 Kgs 14:7": {
   "zhRef": "列王紀下 14:7",
@@ -137,6 +161,14 @@ window.VERSES = {
   "en": "Absalom happened to meet the servants of David. Absalom was riding on his mule, and the mule went under the thick boughs of a great oak, and his head caught hold of the oak, and he was taken up between the sky and earth; and the mule that was under him went on.",
   "pt": "E encontrou-se Absalão com os servos de Davi: e ia Absalão sobre um mulo, e o mulo se entrou debaixo de um espesso e grande carvalho, e prendeu-lhe a cabeça ao carvalho, e ficou entre o céu e a terra; pois o mulo em que ia passou adiante."
  },
+ "Acts 2:11": {
+  "zhRef": "使徒行傳 2:11",
+  "enRef": "Acts 2:11",
+  "ptRef": "Atos 2:11",
+  "zh": "克里特和阿拉伯人，都聽見他們用我們的鄉談，講說　神的大作為。",
+  "en": "Cretans and Arabians: we hear them speaking in our languages the mighty works of God!”",
+  "pt": "Cretenses e Árabes, os ouvimos em nossas próprias línguas eles falarem das grandezas de Deus."
+ },
  "Amos 1:14": {
   "zhRef": "阿摩司書 1:14",
   "enRef": "Amos 1:14",
@@ -185,6 +217,14 @@ window.VERSES = {
   "en": "From Aroer, which is on the edge of the valley of the Arnon, and the city that is in the valley, even to Gilead, there was not a city too high for us. Yahweh our God delivered up all before us.",
   "pt": "Desde Aroer, que está junto à beira do ribeiro de Arnom, e a cidade que está no ribeiro, até Gileade, não houve cidade que escapasse de nós: todas as entregou o SENHOR nosso Deus em nosso poder."
  },
+ "Deut 2:8": {
+  "zhRef": "申命記 2:8",
+  "enRef": "Deuteronomy 2:8",
+  "ptRef": "Deuteronômio 2:8",
+  "zh": "「於是，我們離了我們弟兄以掃子孫所住的西珥，從亞拉巴的路，經過以拉他、以旬‧迦別，轉向摩押曠野的路去。……」",
+  "en": "So we passed by from our brothers the children of Esau, who dwell in Seir, from the way of the Arabah from Elath and from Ezion Geber. We turned and passed by the way of the wilderness of Moab.",
+  "pt": "E passamos por nossos irmãos os filhos de Esaú, que habitavam em Seir, pelo caminho da planície de Elate e de Eziom-Geber. E voltamos, e passamos caminho do deserto de Moabe."
+ },
  "Deut 2:9": {
   "zhRef": "申命記 2:9",
   "enRef": "Deuteronomy 2:9",
@@ -232,6 +272,14 @@ window.VERSES = {
   "zh": "為流便人分定曠野平原的比悉；為迦得人分定基列的拉末；為瑪拿西人分定巴珊的哥蘭。",
   "en": "Bezer in the wilderness, in the plain country, for the Reubenites; and Ramoth in Gilead, for the Gadites; and Golan in Bashan, for the Manassites.",
   "pt": "A Bezer no deserto, em terra da planície, dos rubenitas; e a Ramote em Gileade, dos gaditas; e a Golã em Basã, dos de Manassés."
+ },
+ "Gal 1:17": {
+  "zhRef": "加拉太書 1:17",
+  "enRef": "Galatians 1:17",
+  "ptRef": "Gálatas 1:17",
+  "zh": "也沒有上耶路撒冷去見那些比我先作使徒的，惟獨往阿拉伯去，後又回到大馬士革。",
+  "en": "nor did I go up to Jerusalem to those who were apostles before me, but I went away into Arabia. Then I returned to Damascus.",
+  "pt": "nem subi a Jerusalém para os que já eram apóstolos antes de mim; em vez disso, parti para a Arábia, e voltei outra vez a Damasco."
  },
  "Gen 19:22-23": {
   "zhRef": "創世記 19:22-23",
@@ -553,6 +601,22 @@ window.VERSES = {
   "en": "He said to them, “Go!” They came out, and went into the herd of pigs: and behold, the whole herd of pigs rushed down the cliff into the sea, and died in the water.",
   "pt": "E ele lhes disse: Ide. Então eles saíram, e entraram nos porcos; e eis que toda aquela manada se lançou de um precipício ao mar, e morreram nas águas."
  },
+ "Num 20:11": {
+  "zhRef": "民數記 20:11",
+  "enRef": "Numbers 20:11",
+  "ptRef": "Números 20:11",
+  "zh": "摩西舉手，用杖擊打磐石兩下，就有許多水流出來，會眾和他們的牲畜都喝了。",
+  "en": "Moses lifted up his hand, and struck the rock with his rod twice, and water came out abundantly. The congregation and their livestock drank.",
+  "pt": "Então levantou Moisés sua mão, e feriu a rocha com sua vara duas vezes: e saíram muitas águas, e bebeu a congregação, e seus animais."
+ },
+ "Num 20:27-28": {
+  "zhRef": "民數記 20:27-28",
+  "enRef": "Numbers 20:27-28",
+  "ptRef": "Números 20:27-28",
+  "zh": "摩西就照耶和華所吩咐的行。三人當著會眾的眼前上了何珥山。摩西把亞倫的聖衣脫下來，給他的兒子以利亞撒穿上，亞倫就死在山頂那裡。於是摩西和以利亞撒下了山。",
+  "en": "Moses did as Yahweh commanded. They went up into Mount Hor in the sight of all the congregation. Moses stripped Aaron of his garments, and put them on Eleazar his son. Aaron died there on the top of the mountain, and Moses and Eleazar came down from the mountain.",
+  "pt": "E Moisés fez como o SENHOR lhe mandou: e subiram ao monte de Hor à vista de toda a congregação. E Moisés fez desnudar a Arão de suas roupas e vestiu-as a Eleazar seu filho: e Arão morreu ali no cume do monte: e Moisés e Eleazar desceram do monte."
+ },
  "Num 21:13": {
   "zhRef": "民數記 21:13",
   "enRef": "Numbers 21:13",
@@ -818,5 +882,23 @@ window.PHOTOS = {
   "artist": "Joe Roe",
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Wadi_Feynan,_May_2014.jpg"
+ },
+ "petra": {
+  "src": "img/petra.jpg",
+  "artist": "Azurfrog",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Al_Deir_Petra.JPG"
+ },
+ "aaron": {
+  "src": "img/aaron.jpg",
+  "artist": "Mlynn927",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mthor.jpeg"
+ },
+ "aylachurch": {
+  "src": "img/aylachurch.jpg",
+  "artist": "Utilisateur:Bel Adone",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Early_church_of_Aqaba02.jpg"
  }
 };
