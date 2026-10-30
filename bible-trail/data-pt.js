@@ -7,47 +7,66 @@ window.PT = {
   chapters: {
     ch1: {
       title: "As Colinas de Gileade",
-      intro: "As colinas de carvalhos e oliveiras do norte da Jordânia são a \"Gileade\" da Bíblia, famosa pelo seu bálsamo. Daqui saiu o profeta Elias; aqui Davi chorou pelo filho; e Jesus fez milagres ao redor das cidades de Decápolis desta região."
+      intro: "As colinas de carvalhos e oliveiras do norte da Jordânia são a \"Gileade\" da Bíblia, famosa pelo seu bálsamo. Daqui saiu o profeta Elias; aqui Davi chorou pelo filho; e Jesus fez milagres ao redor das cidades de Decápolis desta região.",
+      food: {"dish": "Azeite recém-prensado, za'atar e pão de taboon", "text": "Deuteronômio cita as \"oliveiras\" entre as dádivas da Terra Prometida. As colinas de Gileade, perto de Ajloun, ainda são a principal região de oliveiras da Jordânia. Pegue um pedaço de pão de taboon, mergulhe no azeite fresco e depois no za'atar — o café da manhã mais comum da Jordânia. De outubro a dezembro é a colheita das azeitonas; dá para visitar um lagar (maʿṣara) e ver o azeite sendo feito."}
     },
     ch2: {
       title: "O Caminho de Volta de Jacó",
-      intro: "Depois de vinte anos longe, Jacó voltava para casa com toda a família, com medo de reencontrar Esaú, o irmão que ele havia enganado. Neste trecho a leste do Jordão ele encontrou anjos, lutou com Deus a noite inteira e, por fim, chorou abraçado ao irmão."
+      intro: "Depois de vinte anos longe, Jacó voltava para casa com toda a família, com medo de reencontrar Esaú, o irmão que ele havia enganado. Neste trecho a leste do Jordão ele encontrou anjos, lutou com Deus a noite inteira e, por fim, chorou abraçado ao irmão.",
+      food: {"dish": "Tâmaras do vale do Jordão e melaço de tâmara (dibs)", "text": "Do monte Nebo, Moisés viu \"o vale de Jericó, cidade das palmeiras\". O vale do Jordão continua cheio de tamareiras, e suas tâmaras Medjool são famosas. Muitos estudiosos acham que o \"mel\" da \"terra que mana leite e mel\" era principalmente o melaço feito de tâmaras; os jordanianos misturam dibs com tahine e comem com pão. A colheita vai de agosto a outubro, e as bancas à beira da estrada têm as mais frescas."}
     },
     ch3: {
       title: "A Capital dos Amonitas",
-      intro: "A Amã de hoje é Rabá, a capital dos amonitas na Bíblia. O exército de Davi a cercou; mais tarde ela recebeu o nome de Filadélfia e se tornou uma das cidades de Decápolis."
+      intro: "A Amã de hoje é Rabá, a capital dos amonitas na Bíblia. O exército de Davi a cercou; mais tarde ela recebeu o nome de Filadélfia e se tornou uma das cidades de Decápolis.",
+      food: {"dish": "Fūl de fava", "text": "Quando Davi fugiu para Maanaim, um dos homens que o socorreram foi Sobi, \"de Rabá dos filhos de Amom\" — alguém da atual Amã. Os \"feijões\" que levaram eram favas: o hebraico pol e o árabe fūl são a mesma palavra. Purê de fava com azeite, limão e cominho é o café da manhã preferido de Amã; o restaurante antigo Hashem, no centro, fica a uma curta caminhada do Teatro Romano."}
     },
     ch4: {
       title: "À Beira do Jordão",
-      intro: "Aqui Israel atravessou para a Terra Prometida; daqui Elias foi levado ao céu; mais de mil anos depois, Jesus foi batizado aqui."
+      intro: "Aqui Israel atravessou para a Terra Prometida; daqui Elias foi levado ao céu; mais de mil anos depois, Jesus foi batizado aqui.",
+      food: {"dish": "Mel silvestre", "text": "João Batista, à beira do Jordão, comia \"gafanhotos e mel do campo\". Mel é fácil de achar até hoje; apicultores de Ajloun e do vale do Jordão vendem mel de flores silvestres. Os gafanhotos são permitidos na Lei (Levítico 11.22) e são halal no islã, mas hoje quase ninguém na Jordânia os come."}
     },
     ch5: {
       title: "O Último Olhar de Moisés",
-      intro: "Quarenta anos de deserto chegam ao fim. Do monte Nebo, Moisés contempla a terra que tanto desejou, mas na qual não entraria."
+      intro: "Quarenta anos de deserto chegam ao fim. Do monte Nebo, Moisés contempla a terra que tanto desejou, mas na qual não entraria.",
+      food: {"dish": "Pão com za'atar (manaqish)", "text": "Na noite em que Moisés tirou Israel do Egito, usaram \"hissopo\" para passar o sangue do cordeiro nos batentes das portas. Muitos estudiosos acham que essa planta (em hebraico, ezov) é o za'atar silvestre do Oriente Médio. Hoje as padarias de Madaba vendem pão quente coberto de za'atar e azeite — o sabor da erva da Páscoa no lugar onde Moisés contemplou a Terra Prometida."}
     },
     ch6: {
       title: "João Batista e o Rei de Moabe",
-      intro: "Ao sul do monte Nebo fica a antiga Moabe. Aqui João Batista foi decapitado numa fortaleza no alto de um monte, e Messa, rei de Moabe, gravou uma pedra que, desenterrada três mil anos depois, ecoa o relato de Reis."
+      intro: "Ao sul do monte Nebo fica a antiga Moabe. Aqui João Batista foi decapitado numa fortaleza no alto de um monte, e Messa, rei de Moabe, gravou uma pedra que, desenterrada três mil anos depois, ecoa o relato de Reis.",
+      food: {"dish": "Uvas e melaço de uva (dibs ʿinab)", "text": "Isaías, chorando por Moabe, cita as vinhas e os lagares de Hesbom, Eleale e Sibma. Ainda se cultivam uvas nesta região. Nos tempos bíblicos a maior parte das uvas virava vinho (alcoólico, não halal); para provar \"as uvas de Moabe\", coma uvas frescas ou charutinhos de folha de uva em agosto e setembro, ou compre o melaço de uva que os jordanianos fazem em casa."}
     },
     ch7: {
       title: "A Terra de Rute",
-      intro: "Depois do vale do Arnom fica o coração de Moabe: o planalto ao redor de Kerak. Daqui Rute seguiu a sogra até Belém e se tornou bisavó do rei Davi. Descendo para o oeste, no extremo sul do mar Morto, é o lugar para onde Ló fugiu de Sodoma — e onde começou a história dos moabitas."
+      intro: "Depois do vale do Arnom fica o coração de Moabe: o planalto ao redor de Kerak. Daqui Rute seguiu a sogra até Belém e se tornou bisavó do rei Davi. Descendo para o oeste, no extremo sul do mar Morto, é o lugar para onde Ló fugiu de Sodoma — e onde começou a história dos moabitas.",
+      food: {"dish": "O mansaf de Kerak e o freekeh", "text": "Messa, rei de Moabe, \"era proprietário de gados\" (de ovelhas). Kerak ainda é conhecida pelos rebanhos, e o prato nacional, o mansaf, é carneiro num molho feito de jameed (bolinhas de iogurte seco) — o jameed de Kerak é o mais famoso. Rute comeu \"grãos tostados\", muito parecidos com o freekeh de hoje: trigo verde tostado no fogo na primavera e depois debulhado. (Se você não come carneiro, peça a versão de frango, mansaf djāj.)"}
     },
     ch8: {
       title: "A Terra de Edom",
-      intro: "Depois do ribeiro de Zerede fica a terra dos descendentes de Esaú, os edomitas. Edom quer dizer \"vermelho\", e as montanhas daqui são mesmo vermelhas. Aqui terminaram os trinta e oito anos de peregrinação de Israel, e foi nesse caminho que o povo olhou para a serpente de bronze que Moisés levantou."
+      intro: "Depois do ribeiro de Zerede fica a terra dos descendentes de Esaú, os edomitas. Edom quer dizer \"vermelho\", e as montanhas daqui são mesmo vermelhas. Aqui terminaram os trinta e oito anos de peregrinação de Israel, e foi nesse caminho que o povo olhou para a serpente de bronze que Moisés levantou.",
+      food: {"dish": "Sopa de lentilha (shōrbit ʿadas)", "text": "Esaú vendeu o direito de primogenitura por um prato de guisado vermelho, e por isso foi chamado Edom. O guisado era de lentilhas: o hebraico ʿadashim e o árabe ʿadas são a mesma palavra. A sopa de lentilha está em quase todo cardápio jordaniano no inverno, com um pouco de limão e de cominho. Tomar um prato na terra de Esaú é a melhor parte."}
     },
     ch9: {
       title: "A Porta do Mar Vermelho",
-      intro: "A última etapa da viagem vai de Petra, a cidade de arenito vermelho, até Ácaba, à beira do mar Vermelho. Aqui reinou Aretas, rei dos nabateus, e Paulo foi para a Arábia depois de se converter; Arão morreu num monte daqui, e os navios de Salomão partiram desta costa. Ao chegar ao mar, você terá percorrido toda a terra além do Jordão."
+      intro: "A última etapa da viagem vai de Petra, a cidade de arenito vermelho, até Ácaba, à beira do mar Vermelho. Aqui reinou Aretas, rei dos nabateus, e Paulo foi para a Arábia depois de se converter; Arão morreu num monte daqui, e os navios de Salomão partiram desta costa. Ao chegar ao mar, você terá percorrido toda a terra além do Jordão.",
+      food: {"dish": "Pão beduíno assado na brasa (arbood) e chá beduíno", "text": "Quando Elias estava exausto a ponto de querer morrer, um anjo deixou junto à sua cabeça \"uma torta cozida sobre as ascuas\" e uma vasilha de água. Os beduínos da região de Petra ainda enterram a massa nas cinzas quentes para assar o arbood, ou fazem o pão fino shrak sobre uma chapa de ferro curva, servido com chá doce de ervas. O jeito deles de receber todo visitante é provavelmente o mais próximo, hoje, da hospitalidade dos tempos bíblicos."}
     },
     side1: {
       title: "Graça e Chamado (norte do vale do Jordão)",
-      intro: "Entre as colinas de Gileade (Capítulo 1) e o Jaboque (Capítulo 2) fica um trecho pouco visitado do vale do Jordão. Aqui Eliseu deixou o arado para seguir Elias; Barzilai e Maquir socorreram Davi quando ele fugia; e a igreja primitiva encontrou refúgio. Dá para encaixar na mesma viagem dos Capítulos 1 e 2."
+      intro: "Entre as colinas de Gileade (Capítulo 1) e o Jaboque (Capítulo 2) fica um trecho pouco visitado do vale do Jordão. Aqui Eliseu deixou o arado para seguir Elias; Barzilai e Maquir socorreram Davi quando ele fugia; e a igreja primitiva encontrou refúgio. Dá para encaixar na mesma viagem dos Capítulos 1 e 2.",
+      food: {"dish": "Peça uma mesa com a \"lista de provisões\" de Barzilai", "text": "Barzilai, Maquir e Sobi levaram a Davi trigo, cevada, grãos tostados, favas, lentilhas, legumes tostados, mel, manteiga e queijo. Hoje dá para pedir tudo isso na Jordânia: fūl, sopa de lentilha, grão-de-bico torrado, mel, samneh (manteiga clarificada) e queijo branco. Procure um restaurante caseiro e peça uma mesa com essa lista para dividir."}
     },
     side2: {
       title: "Escolhas a Leste do Jordão (pelo país)",
-      intro: "Os lugares desta trilha extra estão espalhados pela Jordânia e são fáceis de alcançar pelo caminho da trilha principal. Eles têm uma coisa em comum: alguém fez uma escolha aqui. Israel escolheu dar a volta em vez de forçar a passagem; Rúben e Gade escolheram lutar ao lado dos irmãos; Deus escolheu abrir um caminho de escape para quem errou; e Jó, depois de perder tudo, escolheu adorar."
+      intro: "Os lugares desta trilha extra estão espalhados pela Jordânia e são fáceis de alcançar pelo caminho da trilha principal. Eles têm uma coisa em comum: alguém fez uma escolha aqui. Israel escolheu dar a volta em vez de forçar a passagem; Rúben e Gade escolheram lutar ao lado dos irmãos; Deus escolheu abrir um caminho de escape para quem errou; e Jó, depois de perder tudo, escolheu adorar.",
+      food: {"dish": "Iogurte fresco (laban) e labneh", "text": "Rúben e Gade escolheram Jazer e Gileade porque era \"lugar de gado\". Os pastores jordanianos ainda levam os rebanhos por estas encostas, e o iogurte (laban) e o iogurte coado (labneh) estão na mesa todos os dias. No café da manhã, peça um prato de labneh com azeite, pão e pepino."}
+    },
+    side3: {
+      "title": "Água e Bênção",
+      "intro": "Muitas histórias desta terra envolvem água: o Jordão parou para Israel atravessar, um poço brotou no deserto, o mar Morto ganhou vida na visão de um profeta, e um general estrangeiro foi purificado no Jordão. E há Balaão, contratado para amaldiçoar, que só conseguia abençoar.",
+      "food": {
+            "dish": "Tilápia do vale do Jordão (musht)",
+            "text": "Ezequiel viu que, quando a água viva chegasse ao mar Salgado, haveria pescadores à sua beira e peixes de toda espécie. O mar Morto continua sem peixes, mas no vale do Jordão se cria tilápia, chamada ali de musht ou \"peixe de São Pedro\". Coma um peixe grelhado num restaurante do vale ou de Irbid e pense na visão de Ezequiel."
+      }
     }
   },
 
@@ -700,6 +719,108 @@ window.PT = {
       mission: "🔒 Missão secreta: Leia Jó 1, 2 e 42 e depois volte para o quiz.",
       quiz: { q: "O que Jó disse depois de perder tudo?", options: ["\"Por que Deus me abandonou?\"", "\"O SENHOR deu, e o SENHOR tomou\"", "\"Vou sair da terra de Uz\""] },
       howto: "Esta é uma fase secreta: a localização exata é desconhecida, então não é preciso ir até lá. Responda o quiz corretamente para ganhar o carimbo."
+    },
+
+    seir: {
+      "name": "Monte Seir (a região montanhosa de Esaú)",
+      "place": "As montanhas de Edom ao redor de Petra (hoje, a serra de Sharah)",
+      "story": "No caminho de volta para casa (Capítulo 2), o que Jacó mais temia era o irmão Esaú, em Seir. Em vez disso, Esaú correu ao seu encontro, abraçou-o, beijou-o, e os dois choraram. Depois da reconciliação, \"se voltou Esaú aquele dia por seu caminho a Seir\". Séculos depois, quando Israel passou por aqui, Deus deu uma ordem clara: não lutem contra os descendentes de Esaú, \"porque eu dei por herança a Esaú o monte de Seir\". O monte Seir é a cadeia de montanhas vermelhas ao redor de Petra, hoje chamada serra de Sharah.",
+      "reflect": "Depois que Jacó e Esaú se reconciliaram, cada um seguiu o seu caminho, mas já não como inimigos. Reconciliação nem sempre significa ficar junto todos os dias. Qual relacionamento seu precisa desse tipo de paz — \"reconciliados, mas cada um com a sua vida\"?",
+      "mission": "⛰️ Missão: Encontre um ponto alto em Petra ou em Wadi Musa e olhe as montanhas vermelhas ao redor. Pense em alguém de quem você se afastou e ore por essa pessoa.",
+      "quiz": {
+            "q": "Depois de se reconciliar com Jacó, para onde Esaú voltou?",
+            "options": [
+                  "Seir",
+                  "Egito",
+                  "Betel"
+            ]
+      },
+      "howto": "É uma região inteira: estando em Petra e Wadi Musa você já está na área do carimbo — não precisa ir a outro lugar."
+    },
+
+    deadsea: {
+      "name": "O mar Morto (o mar Salgado)",
+      "place": "Praias públicas e resorts na margem leste do mar Morto",
+      "story": "A Bíblia o chama de \"mar Salgado\"; Gênesis diz que o vale de Sidim, onde reis lutaram nos dias de Abraão, \"é o mar salgado\". É o lugar mais baixo da superfície terrestre, e tão salgado que nenhum peixe vive nele. Mesmo assim, o profeta Ezequiel teve uma visão: água viva saindo do templo e correndo para o leste até o mar Salgado, \"e as águas se tornam saudáveis\" — \"tudo viverá por onde quer que este ribeiro passar\", e haverá até pescadores estendendo as redes na margem. O lugar com menos chance de ter vida se torna, na promessa de Deus, o lugar mais cheio de vida.",
+      "reflect": "Ezequiel viu até o mar mais morto ganhar vida. Existe um \"mar morto\" na sua vida, onde você acha que nada mais vai viver?",
+      "mission": "🌊 Missão: Flutue no mar Morto e olhe para o céu. De volta à margem, leia Ezequiel 47.1–12. (Cuidado: a água arde muito nos olhos — não espirre água nem mergulhe a cabeça.)",
+      "quiz": {
+            "q": "Na visão de Ezequiel, o que aconteceu quando a água viva chegou ao mar Salgado?",
+            "options": [
+                  "A água ficou mais salgada",
+                  "As águas ficaram saudáveis e tudo viveu",
+                  "O mar secou"
+            ]
+      },
+      "howto": "Cerca de 1 hora de carro de Amã. Na margem norte há uma praia pública paga (Amman Tourist Beach) com chuveiros, e os resorts vendem passes de um dia. Não se barbeie um ou dois dias antes (a água salgada arde muito em pequenos cortes); beba bastante água, e o meio-dia no verão é extremamente quente. Fácil de combinar com o Local do Batismo, do Capítulo 4."
+    },
+
+    adam: {
+      "name": "Adã (onde o Jordão parou)",
+      "place": "O monte de Tell ed-Damiyeh, perto da ponte Damia",
+      "story": "Quando Israel estava para atravessar o Jordão, era época de colheita e o rio transbordava. Assim que os sacerdotes que levavam a arca pisaram na água, as águas de cima \"pararam, e amontoaram-se bem longe, na cidade de Adã, que está ao lado de Zaretã\", e o povo passou a seco em frente de Jericó. A maioria dos estudiosos identifica Adã com este monte, Tell ed-Damiyeh, cerca de 30 km rio acima do Local do Batismo. A história registra que, nos terremotos de 1267 e 1927, barrancos perto daqui desabaram e represaram o Jordão por horas. Se Deus usou algo parecido, a Bíblia não diz; mas o momento foi exatamente quando os sacerdotes pisaram na água.",
+      "reflect": "As águas pararam depois que os sacerdotes pisaram nelas, não antes. Será que Deus está esperando você dar o primeiro passo?",
+      "mission": "🦶 Missão: Leia Josué 3 e imagine o que os sacerdotes sentiram no momento em que seus pés tocaram a correnteza.",
+      "quiz": {
+            "q": "Quando as águas do Jordão pararam?",
+            "options": [
+                  "Depois de Israel orar sete dias",
+                  "Quando os pés dos sacerdotes tocaram a água",
+                  "Quando Moisés levantou a vara"
+            ]
+      },
+      "howto": "⚠️ Monte arqueológico sem estrutura para visitantes; ainda não confirmamos se dá para entrar. Fica ao lado da rodovia do vale do Jordão, perto de onde o Jaboque encontra o Jordão, a uns 15 minutos de Sucote (Capítulo 2). Está perto de uma passagem de fronteira e pode ser área restrita — não force a entrada; a rodovia ali perto já fica dentro da área do carimbo."
+    },
+
+    balaam: {
+      "name": "As bênçãos de Balaão (campo de Zofim, cume de Pisga)",
+      "place": "A encosta perto do monte Nebo",
+      "story": "Balaque, rei de Moabe, viu Israel acampado nas planícies e ficou apavorado; então pagou o profeta Balaão para amaldiçoá-los. Balaque levou Balaão primeiro \"aos lugares altos de Baal\", depois \"ao campo de Zofim, ao cume de Pisga\", e por fim ao cume de Peor (Capítulo 5), edificando sete altares cada vez. Mas sempre que Balaão abria a boca, só saíam bênçãos. Na última, ele viu o futuro distante: \"Sairá estrela de Jacó, e se levantará cetro de Israel\". Muitos cristãos leem essa estrela como uma profecia do Messias. Em 1967, arqueólogos em Sucote (Deir Alla, Capítulo 2) encontraram um texto antigo que cita \"Balaão, filho de Beor\" — um registro de Balaão fora da Bíblia.",
+      "reflect": "Balaque mudou de lugar três vezes, esperando que um novo ângulo fizesse a maldição funcionar, e todas as vezes ela virou bênção. Alguém está usando o seu passado para \"amaldiçoar\" você? O que Deus diz sobre você?",
+      "mission": "🔭 Missão: Da encosta, olhe para as planícies de Moabe, onde Israel acampou. Leia Números 24.5 e pronuncie uma bênção sobre o lugar onde você está.",
+      "quiz": {
+            "q": "Balaque contratou Balaão para amaldiçoar Israel. O que Balaão fez?",
+            "options": [
+                  "Amaldiçoou Israel",
+                  "Abençoou Israel sem parar",
+                  "Recusou-se a falar"
+            ]
+      },
+      "howto": "Na encosta perto do monte Nebo — fácil de combinar com o monte Nebo e Peor, do Capítulo 5. O outro ponto de carimbo fica na estrada do Nebo para Madaba. A localização é uma estimativa dos estudiosos; qualquer ponto perto do monte Nebo está próximo."
+    },
+
+    beer: {
+      "name": "Beer (o cântico do poço)",
+      "place": "Localização incerta, no caminho do Arnom para o norte, rumo a Pisga",
+      "story": "Depois de atravessar o Arnom, Israel chegou a Beer, que quer dizer \"poço\". Deus disse a Moisés: \"Junta ao povo, e lhes darei água\". Dessa vez ninguém reclamou; todos cavaram juntos, até os príncipes e os nobres, com seus cetros e bordões. Quando a água brotou, Israel cantou: \"Sobe, ó poço; a ele cantai\". Em quarenta anos de deserto, essa é quase a única vez em que o povo inteiro cantou por causa da água, em vez de murmurar. A localização exata de Beer é desconhecida, por isso esta é uma fase secreta.",
+      "reflect": "A mesma falta de água que antes trazia queixas, desta vez trouxe trabalho em conjunto e canto. Será que você poderia encarar aquilo que lhe falta agora com outra atitude?",
+      "mission": "🔒 Missão secreta: Leia Números 21.10–20 e depois volte para o quiz.",
+      "quiz": {
+            "q": "O que Israel fez em Beer?",
+            "options": [
+                  "Murmurou",
+                  "Cantou ao poço enquanto a água brotava",
+                  "Lutou numa batalha"
+            ]
+      },
+      "howto": "Esta é uma fase secreta: a localização exata é desconhecida, então não é preciso ir até lá. Responda o quiz corretamente para ganhar o carimbo."
+    },
+
+    naaman: {
+      "name": "Naamã se lava no Jordão",
+      "place": "Algum ponto do rio Jordão; a Bíblia não diz onde",
+      "story": "Naamã, comandante do exército da Síria, era um guerreiro valente, mas tinha lepra. Uma menina israelita levada cativa para a casa dele disse que um profeta em Israel poderia curá-lo. O profeta Eliseu nem saiu de casa; apenas mandou dizer: \"Vai, e lava-te sete vezes no Jordão\". Naamã ficou furioso: \"Abana e Farpar, rios de Damasco, não são melhores que todas as águas de Israel?\" Os servos argumentaram: se o profeta tivesse pedido algo grandioso, ele não faria? Quanto mais só se lavar. Naamã finalmente desceu, lavou-se sete vezes, e sua carne se restaurou como a de uma criança. Mais tarde, em Nazaré, Jesus citou Naamã como exemplo da graça de Deus alcançando os de fora. A Bíblia não diz em que ponto do Jordão ele se lavou, por isso esta é uma fase secreta.",
+      "reflect": "Naamã quase perdeu a cura porque ela parecia simples demais e pouco digna. Existe algo pequeno que Deus está pedindo a você e que você despreza por ser simples demais?",
+      "mission": "🔒 Missão secreta: Leia 2 Reis 5 e depois volte para o quiz. (Se você estiver no Local do Batismo, do Capítulo 4, é um ótimo lugar para ler.)",
+      "quiz": {
+            "q": "Quantas vezes Eliseu mandou Naamã se lavar no Jordão?",
+            "options": [
+                  "Três",
+                  "Sete",
+                  "Doze"
+            ]
+      },
+      "howto": "Esta é uma fase secreta: a localização exata é desconhecida, então não é preciso ir até lá. Responda o quiz corretamente para ganhar o carimbo."
     }
   },
 

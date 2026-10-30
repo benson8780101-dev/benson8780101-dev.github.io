@@ -153,3 +153,15 @@ a.btn { text-decoration: none; }
 .cert-out { margin-top: 12px; }
 .cert-img { display: block; width: 100%; max-width: 480px; margin: 0 auto 10px; border-radius: 6px; box-shadow: var(--shadow); }
 .card.side { border-style: dashed; border-width: 2px; }
+
+/* 聖經餐桌、現成行程 */
+.food { margin-top: 12px; padding: 12px 14px; border-radius: 10px; background: color-mix(in srgb, var(--gold) 12%, transparent); }
+.food h3 { margin: 0 0 4px; color: var(--accent); }
+.food p { margin: 4px 0; }
+.trip { border-top: 1px solid var(--line); padding: 8px 0; }
+.trip summary { font-weight: 700; cursor: pointer; padding: 4px 0; }
+.trip-days { padding-left: 20px; }
+.trip-days li { margin: 10px 0; }
+.trip-days p { margin: 4px 0; }
+.trip-stop { border: 1px solid var(--line); background: var(--bg); border-radius: 999px; padding: 3px 10px; font-size: 13px; margin: 4px 0; }
+.trip-stop.done { border-color: var(--gold); color: var(--accent); font-weight: 600; }

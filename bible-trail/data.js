@@ -15,6 +15,11 @@ window.CHAPTERS = [
       en: "The oak- and olive-covered hills of northern Jordan are the biblical 'Gilead,' famous for its balm. The prophet Elijah came from here; David wept for his son here; and Jesus worked miracles around the Decapolis cities of this region."
     },
     badge: "🌳",
+    food: {
+      dish: { zh: "剛榨好的橄欖油、za'atar 和 taboon 窯烤餅", en: "Fresh-pressed olive oil, za'atar and taboon bread" },
+      text: { zh: "申命記說應許之地有「橄欖樹」。基列山地（阿傑隆一帶）到今天還是約旦最重要的橄欖產區。撕一塊 taboon 窯烤餅，蘸剛榨好的橄欖油，再蘸 za'atar，就是約旦人最日常的早餐。10～12 月是採橄欖季，可以去油坊（معصرة）看榨油。", en: "Deuteronomy names 'olive trees' among the gifts of the Promised Land. The hills of Gilead around Ajloun are still Jordan's most important olive country. Tear off some taboon bread, dip it in fresh olive oil and then in za'atar—the most everyday Jordanian breakfast. October to December is olive harvest; you can visit an olive press (maʿṣara) to watch the oil being made." },
+      verses: ["Deut 8:8"]
+    },
     required: ["gadara", "gerasa", "tishbe"],
     bonus: ["irbid", "ramoth", "jabesh", "cherith", "ephraimforest"]
   },
@@ -27,6 +32,11 @@ window.CHAPTERS = [
       en: "After twenty years away, Jacob headed home with his whole family, dreading a meeting with Esau, the brother he had cheated. On this stretch east of the Jordan he met angels, wrestled with God all night, and finally wept in his brother's arms."
     },
     badge: "🤼",
+    food: {
+      dish: { zh: "約旦河谷的椰棗和椰棗糖漿 dibs", en: "Jordan Valley dates and date syrup (dibs)" },
+      text: { zh: "摩西在尼波山上看見「棕樹城耶利哥的平原」。約旦河谷今天還是種滿椰棗樹，Medjool 椰棗很有名。許多學者認為「流奶與蜜之地」的「蜜」，主要是椰棗熬成的糖漿；約旦人把 dibs 拌芝麻醬 tahini，用餅蘸著吃。8～10 月是採收季，路邊水果攤最新鮮。", en: "From Mount Nebo Moses saw 'the plain of the valley of Jericho, the city of palm trees.' The Jordan Valley is still full of date palms, and its Medjool dates are famous. Many scholars think the 'honey' of the 'land flowing with milk and honey' was mostly syrup boiled down from dates; Jordanians mix dibs with tahini and scoop it up with bread. Harvest is August to October, and roadside fruit stands have the freshest." },
+      verses: ["Deut 34:3"]
+    },
     required: ["jabbok", "succoth"],
     bonus: ["penuel", "mahanaim", "mizpahgilead"]
   },
@@ -39,6 +49,11 @@ window.CHAPTERS = [
       en: "Today's Amman is Rabbah, the capital of the Ammonites in the Bible. David's army besieged it; later it was renamed Philadelphia and became one of the cities of the Decapolis."
     },
     badge: "🏰",
+    food: {
+      dish: { zh: "蠶豆泥 ful（فول）", en: "Fava bean ful (fūl)" },
+      text: { zh: "大衛逃到瑪哈念時，來接濟他的人裡面，有一位是「亞捫族的拉巴人」朔比，也就是從今天的安曼來的人。他們帶來的「豆子」，原文就是蠶豆，希伯來文 pol 跟阿拉伯文 فول（fūl）是同一個字。蠶豆泥配橄欖油、檸檬、孜然，是安曼人最常吃的早餐；市中心的老店 Hashem 走路就到羅馬劇場。", en: "When David fled to Mahanaim, one of the men who supplied him was Shobi 'of Rabbah of the children of Ammon'—someone from today's Amman. The 'beans' they brought were fava beans; the Hebrew pol and the Arabic fūl are the same word. Mashed fava beans with olive oil, lemon and cumin is Amman's favorite breakfast; the old downtown restaurant Hashem is a short walk from the Roman Theater." },
+      verses: ["2 Sam 17:28"]
+    },
     required: ["citadel"],
     bonus: ["theatre", "raselain", "jubeiha", "abelkeramim"]
   },
@@ -51,6 +66,11 @@ window.CHAPTERS = [
       en: "Israel crossed into the Promised Land here; Elijah was taken up to heaven here; over a thousand years later, Jesus was baptized here."
     },
     badge: "🌊",
+    food: {
+      dish: { zh: "野蜂蜜", en: "Wild honey" },
+      text: { zh: "施洗約翰在約旦河邊「吃的是蝗蟲、野蜜」。蜂蜜到今天還買得到，阿傑隆和約旦河谷都有養蜂人家賣山區野花蜜。蝗蟲雖然律法准許吃（利 11:22），伊斯蘭也算清真，但現在約旦很少人吃。", en: "John the Baptist by the Jordan ate 'locusts and wild honey.' Honey is still easy to find; beekeepers in Ajloun and the Jordan Valley sell wildflower honey. Locusts are permitted in the Law (Lev 11:22) and halal in Islam, but few people in Jordan eat them today." },
+      verses: ["Mark 1:6"]
+    },
     required: ["bethany", "elijah"],
     bonus: ["shittim", "moab"]
   },
@@ -63,6 +83,11 @@ window.CHAPTERS = [
       en: "Forty years in the wilderness come to an end. From Mount Nebo, Moses looks out over the land he longed for but would not enter."
     },
     badge: "⛰️",
+    food: {
+      dish: { zh: "za'atar 烤餅 manaqish", en: "Za'atar flatbread (manaqish)" },
+      text: { zh: "摩西帶以色列人出埃及那一夜，用「牛膝草」蘸羊羔的血塗在門框上。許多學者認為這種草（希伯來文 ezov）就是中東野生的 za'atar。今天在馬達巴的麵包店，就能吃到撒滿 za'atar 和橄欖油的熱烤餅。在摩西眺望應許之地的地方，吃一口跟逾越節有關的香草。", en: "On the night Moses led Israel out of Egypt, they used 'hyssop' to put the lamb's blood on their doorposts. Many scholars think this plant (Hebrew ezov) is the wild za'atar of the Middle East. Today Madaba's bakeries sell hot flatbread covered in za'atar and olive oil—a taste of the Passover herb where Moses looked out over the Promised Land." },
+      verses: ["Exod 12:22"]
+    },
     required: ["nebo", "madaba"],
     bonus: ["heshbon", "peor", "elealeh", "maein"]
   },
@@ -75,6 +100,11 @@ window.CHAPTERS = [
       en: "South of Mount Nebo lies ancient Moab. Here John the Baptist was beheaded in a hilltop fortress, and King Mesha of Moab carved a stone that, unearthed three thousand years later, echoes the account in Kings."
     },
     badge: "🪨",
+    food: {
+      dish: { zh: "葡萄和葡萄糖漿 dibs ʿinab", en: "Grapes and grape molasses (dibs ʿinab)" },
+      text: { zh: "以賽亞為摩押哀哭，提到希實本、以利亞利、西比瑪的葡萄園和酒醡。這一帶到今天還種葡萄。聖經時代的葡萄多半釀成酒（含酒精，不是清真）；想體驗「摩押的葡萄」，可以在 8～9 月吃新鮮葡萄、葡萄葉捲，或買約旦人自己熬的葡萄糖漿。", en: "Isaiah, lamenting over Moab, mentions the vineyards and winepresses of Heshbon, Elealeh and Sibmah. Grapes are still grown in this area. In Bible times most grapes became wine (alcoholic, not halal); to taste 'the grapes of Moab,' eat fresh grapes or stuffed vine leaves in August–September, or buy grape molasses that Jordanians boil down at home." },
+      verses: ["Isa 16:10"]
+    },
     required: ["machaerus", "dibon"],
     bonus: ["mephaath", "aroer", "arnon", "callirrhoe", "ataroth", "jahaz"]
   },
@@ -87,6 +117,11 @@ window.CHAPTERS = [
       en: "Beyond the Arnon canyon lies the heartland of Moab: the high plateau around Kerak. From here Ruth followed her mother-in-law to Bethlehem and became King David's great-grandmother. Down to the west, at the south end of the Dead Sea, is where Lot fled from Sodom, and where the story of the Moabites began."
     },
     badge: "🌾",
+    food: {
+      dish: { zh: "卡拉克的 mansaf（منسف）和 freekeh 青麥", en: "Kerak's mansaf and freekeh" },
+      text: { zh: "摩押王米沙「牧養許多羊」。卡拉克到今天還以牧羊出名，國菜 mansaf 就是羊肉配 jameed（曬乾的優格球）熬的醬汁，卡拉克的 jameed 最有名。路得吃的「烘了的穗子」，很像今天的 freekeh：春天把還綠的麥穗用火烤過再打下來。（不吃羊肉的話，可以點雞肉版 mansaf djāj。）", en: "Mesha king of Moab 'was a sheep breeder.' Kerak is still known for its flocks, and the national dish mansaf is lamb in a sauce made from jameed (dried yogurt balls)—Kerak's jameed is the most famous. Ruth ate 'parched grain,' much like today's freekeh: green wheat roasted over a fire in spring, then threshed. (If you don't eat lamb, ask for the chicken version, mansaf djāj.)" },
+      verses: ["2 Kgs 3:4"]
+    },
     required: ["kerak"],
     bonus: ["ruthmoab", "ar", "lotcave", "zoar", "sodom"]
   },
@@ -99,6 +134,11 @@ window.CHAPTERS = [
       en: "Beyond the Brook Zered lies the land of Esau's descendants, the Edomites. Edom means 'red,' and the mountains here really are red. Here Israel's thirty-eight years of wandering came to an end, and along this road they looked up at the bronze serpent Moses lifted high."
     },
     badge: "🐍",
+    food: {
+      dish: { zh: "扁豆湯（شوربة عدس）", en: "Lentil soup (shōrbit ʿadas)" },
+      text: { zh: "以掃為了一碗「紅豆湯」賣了長子的名分，所以又叫以東。和合本譯成「紅豆」，原文其實是扁豆：希伯來文 ʿadashim 跟阿拉伯文 عدس（ʿadas）是同一個字。扁豆湯是約旦冬天幾乎每家餐廳都有的湯，擠點檸檬、撒點孜然。在以掃的家鄉喝一碗，最有意思。", en: "Esau sold his birthright for a bowl of red stew, which is why he was called Edom. The stew was lentils—the Hebrew ʿadashim and the Arabic ʿadas are the same word. Lentil soup is on almost every Jordanian menu in winter, with a squeeze of lemon and a pinch of cumin. Having a bowl in Esau's homeland is the best part." },
+      verses: ["Gen 25:34"]
+    },
     required: ["zered", "bozrah"],
     bonus: ["tophel", "sela", "punon", "teman"]
   },
@@ -111,8 +151,13 @@ window.CHAPTERS = [
       en: "The last leg of the journey runs from Petra, the red sandstone city, south to Aqaba on the Red Sea. King Aretas of the Nabataeans ruled here, and Paul went to Arabia after coming to faith; Aaron died on a mountain here, and Solomon's ships set sail from this coast. When you reach the sea, you've walked the whole land beyond the Jordan."
     },
     badge: "⛵",
+    food: {
+      dish: { zh: "貝都因炭火灰烤餅 arbood 和貝都因茶", en: "Bedouin ash-baked bread (arbood) and Bedouin tea" },
+      text: { zh: "以利亞累到不想活的時候，天使在他頭旁放了「炭火燒的餅」和一瓶水。佩特拉一帶的貝都因人到今天還把麵團埋進炭火灰裡烤成 arbood，或在鐵鍋背上烤薄餅 shrak，配一杯加了香草的甜茶。他們「來者是客」的待客方式，大概是今天最接近聖經時代的了。", en: "When Elijah was too exhausted to go on, an angel set beside his head 'a cake baked on the coals' and a jar of water. Bedouin around Petra still bury dough in hot ashes to bake arbood, or cook thin shrak bread on an upturned iron dome, served with sweet herb tea. Their way of welcoming every guest is probably the closest thing today to Bible-era hospitality." },
+      verses: ["1 Kgs 19:6"]
+    },
     required: ["petra", "elath"],
-    bonus: ["aaron", "ainmusa", "aylachurch", "eziongeber"]
+    bonus: ["seir", "aaron", "ainmusa", "aylachurch", "eziongeber"]
   },
   // 支線（side: true）：額外的路線，不算進破關證書和最高稱號；no 只用來排順序
   {
@@ -125,6 +170,11 @@ window.CHAPTERS = [
       en: "Between the hills of Gilead (Chapter 1) and the Jabbok (Chapter 2) lies a little-traveled stretch of the Jordan Valley. Here Elisha left his plow to follow Elijah; Barzillai and Machir supplied David when he was a fugitive; and the early church found refuge. It fits easily into the same trip as Chapters 1 and 2."
     },
     badge: "🧥",
+    food: {
+      dish: { zh: "照巴西萊的「補給清單」點一桌", en: "Order from Barzillai's supply list" },
+      text: { zh: "巴西萊、瑪吉和朔比帶給大衛的有：小麥、大麥、炒穀、豆子、紅豆（扁豆）、炒豆、蜂蜜、奶油、奶餅。今天在約旦一樣點得到：ful 蠶豆泥、扁豆湯、炒鷹嘴豆、蜂蜜、samneh 澄清奶油、白起司。找一間家常小館，照這張清單點一桌跟同伴分享。", en: "Barzillai, Machir and Shobi brought David wheat, barley, parched grain, beans, lentils, roasted pulse, honey, butter and cheese. You can order all of it in Jordan today: ful, lentil soup, roasted chickpeas, honey, samneh (clarified butter) and white cheese. Find a home-style eatery and order a table's worth from this list to share." },
+      verses: ["2 Sam 17:29"]
+    },
     required: ["pella"],
     bonus: ["abelmeholah", "zaphon", "rogelim", "lodebar"]
   },
@@ -138,8 +188,31 @@ window.CHAPTERS = [
       en: "The sites on this side trail are scattered across Jordan and easy to reach along the main route. They share one thing: someone made a choice here. Israel chose to go around rather than force its way; Reuben and Gad chose to fight alongside their brothers; God chose to provide a way of escape for those who had failed; and Job, having lost everything, chose to worship."
     },
     badge: "🛣️",
+    food: {
+      dish: { zh: "新鮮優格 laban 和 labneh", en: "Fresh yogurt (laban) and labneh" },
+      text: { zh: "流便、迦得看上雅謝和基列，因為這裡是「可牧放牲畜之地」。約旦的牧人到今天還在山坡上放羊，優格 laban、濃縮優格 labneh 是每天的餐桌必備。早餐點一盤 labneh，淋橄欖油，配餅和黃瓜。", en: "Reuben and Gad chose Jazer and Gilead because it was 'a place for livestock.' Jordan's shepherds still graze flocks on these hillsides, and yogurt (laban) and strained yogurt (labneh) are daily staples. For breakfast, order a plate of labneh drizzled with olive oil, with bread and cucumbers." },
+      verses: ["Num 32:1"]
+    },
     required: ["kingshighway"],
     bonus: ["jazer", "bezer", "bethjeshimoth", "anjara", "uz"]
+  },
+  {
+    id: "side3",
+    no: 12,
+    side: true,
+    title: { zh: "水與祝福", en: "Water and Blessing" },
+    intro: {
+      zh: "約旦這片土地上，很多故事都跟水有關：約旦河的水停住讓以色列人過去，曠野裡湧出一口井，死海在先知的異象裡活過來，外邦將軍在約旦河裡得了潔淨。還有巴蘭，被請來咒詛，卻只說得出祝福。",
+      en: "So many stories in this land involve water: the Jordan stopped so Israel could cross, a well sprang up in the wilderness, the Dead Sea came alive in a prophet's vision, and a foreign general was made clean in the Jordan. And there is Balaam, hired to curse, who could speak only blessing."
+    },
+    badge: "💧",
+    food: {
+      dish: { zh: "約旦河谷的吳郭魚 musht", en: "Jordan Valley tilapia (musht)" },
+      text: { zh: "以西結看見活水流進鹽海以後，「必有漁夫站在河邊……那魚各從其類」。死海今天還是沒有魚，但約旦河谷有養殖的吳郭魚，當地叫 musht，也叫「聖彼得魚」。在河谷或伊爾比德的餐廳吃一條烤魚，想想以西結的異象。", en: "Ezekiel saw that once the living water reached the Salt Sea, 'fishermen will stand by it… their fish will be after their kinds.' The Dead Sea still has no fish, but the Jordan Valley farms tilapia, known locally as musht or 'St. Peter's fish.' Have a grilled fish in a valley or Irbid restaurant and think of Ezekiel's vision." },
+      verses: ["Ezek 47:10"]
+    },
+    required: ["deadsea"],
+    bonus: ["adam", "balaam", "beer", "naaman"]
   }
 ];
 
@@ -2127,6 +2200,191 @@ window.STATIONS = {
     quiz: {
       q: { zh: "約伯失去一切以後，說了什麼？", en: "What did Job say after losing everything?" },
       options: [{ zh: "「神為什麼離棄我？」", en: "'Why has God abandoned me?'" }, { zh: "「賞賜的是耶和華，收取的也是耶和華」", en: "'Yahweh gave, and Yahweh has taken away'" }, { zh: "「我要離開烏斯地」", en: "'I will leave the land of Uz'" }],
+      answer: 1
+    },
+    howto: {
+      zh: "這是隱藏關卡：確切位置不知道，不需要到現場。答對上面的問答就能解鎖印章。",
+      en: "This is a hidden level: the exact location is unknown, so you don't need to visit. Answer the quiz correctly to unlock the stamp."
+    },
+    photo: null
+  },
+
+  seir: {
+    name: { zh: "西珥山（以掃的山地）", en: "Mount Seir (The Hill Country of Esau)" },
+    place: { zh: "佩特拉一帶的以東山地（今天的 Sharah 山脈）", en: "The Edomite mountains around Petra (today's Sharah range)" },
+    lat: 30.25, lng: 35.45, radius: 25000,
+    certainty: "area",
+    verses: ["Gen 33:16", "Deut 2:5"],
+    story: {
+      zh: "雅各回家的路上（第 2 章），最怕的就是在西珥的哥哥以掃。沒想到以掃跑來迎接他，抱著他的頸項親他，兩人都哭了。和好以後，「以掃當日起行，回往西珥去了」。幾百年後，以色列人經過這裡，神特別吩咐：不可跟以掃的後代爭戰，「因我已將西珥山賜給以掃為業」。西珥山就是佩特拉四周這片紅色的山，今天叫 Sharah 山脈。",
+      en: "On his way home (Chapter 2), what Jacob feared most was his brother Esau in Seir. Instead, Esau ran to meet him, embraced him, kissed him, and they both wept. After their reconciliation, 'Esau returned that day on his way to Seir.' Centuries later, as Israel passed this way, God gave a specific command: do not fight Esau's descendants, 'because I have given Mount Seir to Esau for a possession.' Mount Seir is the range of red mountains around Petra, known today as the Sharah mountains."
+    },
+    reflect: {
+      zh: "雅各和以掃和好以後，各走各的路，卻不再是仇人。和好不一定要天天在一起。你跟誰的關係，需要的是這種「和好但各自生活」？",
+      en: "After Jacob and Esau reconciled, they went their separate ways, but no longer as enemies. Reconciliation doesn't always mean being together every day. Which relationship of yours needs this kind of 'reconciled, yet living separate lives' peace?"
+    },
+    mission: {
+      zh: "⛰️ 任務：在佩特拉或 Wadi Musa 找一個高處，看看四周紅色的山。想起一個你曾經疏遠的人，為他禱告。",
+      en: "⛰️ Mission: Find a high point in Petra or Wadi Musa and look at the red mountains all around. Think of someone you've grown distant from, and pray for them."
+    },
+    quiz: {
+      q: { zh: "雅各和以掃和好以後，以掃回到哪裡去？", en: "After reconciling with Jacob, where did Esau return to?" },
+      options: [{ zh: "西珥", en: "Seir" }, { zh: "埃及", en: "Egypt" }, { zh: "伯特利", en: "Bethel" }],
+      answer: 0
+    },
+    howto: {
+      zh: "這是一整個區域：到了佩特拉、Wadi Musa 一帶就在蓋章範圍內，不用另外找地方。",
+      en: "This is a whole region: being around Petra and Wadi Musa puts you within stamping range—no separate trip needed."
+    },
+    photo: null
+  },
+
+  deadsea: {
+    name: { zh: "死海（鹽海）", en: "The Dead Sea (The Salt Sea)" },
+    place: { zh: "死海東岸的公眾海灘和度假區", en: "Public beaches and resorts on the Dead Sea's eastern shore" },
+    lat: 31.7001, lng: 35.5826, radius: 3000,
+    points: [{ lat: 31.745, lng: 35.59 }],
+    certainty: "yes",
+    verses: ["Ezek 47:8", "Ezek 47:9"],
+    story: {
+      zh: "聖經叫它「鹽海」，創世記說亞伯拉罕時代五王打仗的西訂谷，「就是鹽海」。這是地球陸地上最低的地方，海水鹹到沒有魚能活。先知以西結卻看見一個異象：一道活水從聖殿流出來，往東流進鹽海，「使水變甜」，「這河水所到之處，百物都必生活」，甚至有漁夫在岸邊曬網。最不可能有生命的地方，在神的應許裡變成最有生命的地方。",
+      en: "The Bible calls it the 'Salt Sea'; Genesis says the Valley of Siddim, where kings fought in Abraham's day, 'is the Salt Sea.' It is the lowest place on Earth's land surface, and so salty that no fish can live in it. Yet the prophet Ezekiel saw a vision: living water flowing out from the temple, eastward into the Salt Sea, 'and the waters will be healed'—'everything will live where the river goes,' and fishermen will even spread their nets along the shore. The place least likely to hold life becomes, in God's promise, the place most full of life."
+    },
+    reflect: {
+      zh: "以西結看見最死寂的海也能活過來。你生命裡有沒有一塊「死海」，是你覺得再也不會有生命的？",
+      en: "Ezekiel saw even the deadest sea come alive. Is there a 'dead sea' in your life where you think nothing will ever live again?"
+    },
+    mission: {
+      zh: "🌊 任務：躺在死海上漂浮，抬頭看天。上岸後讀以西結書 47 章 1～12 節。（小心：海水碰到眼睛會很痛，不要潑水、不要把頭埋進水裡。）",
+      en: "🌊 Mission: Float on the Dead Sea and look up at the sky. Back on shore, read Ezekiel 47:1–12. (Careful: the water stings badly if it gets in your eyes—don't splash or put your head under.)"
+    },
+    quiz: {
+      q: { zh: "以西結看見活水流進鹽海以後，發生了什麼事？", en: "In Ezekiel's vision, what happened when the living water reached the Salt Sea?" },
+      options: [{ zh: "海水變得更鹹", en: "The water became saltier" }, { zh: "海水變甜，百物都必生活", en: "The water was healed and everything lived" }, { zh: "海水乾了", en: "The sea dried up" }],
+      answer: 1
+    },
+    howto: {
+      zh: "從安曼開車約 1 小時。死海北邊有收費的公眾海灘（Amman Tourist Beach），有沖澡設施；度假飯店也有一日券。下水前一兩天不要刮鬍子、除毛（傷口碰到鹽水很痛）；多喝水，夏天中午非常熱。可以和第 4 章的受洗處排在同一天。",
+      en: "About 1 hour's drive from Amman. On the northern shore there's a paid public beach (Amman Tourist Beach) with showers, and resort hotels sell day passes. Don't shave for a day or two beforehand (salt water stings small cuts badly); drink plenty of water, and midday in summer is extremely hot. Easy to combine with the Baptism Site from Chapter 4."
+    },
+    photo: null
+  },
+
+  adam: {
+    name: { zh: "亞當城（約旦河水停住的地方）", en: "Adam (Where the Jordan Stopped)" },
+    place: { zh: "Damia 橋附近的 Tell ed-Damiyeh 土丘", en: "The mound of Tell ed-Damiyeh near the Damia Bridge" },
+    lat: 32.1, lng: 35.55, radius: 2000,
+    certainty: "likely",
+    approx: true,
+    noFacilities: true,
+    verses: ["Josh 3:16"],
+    story: {
+      zh: "以色列人要過約旦河的時候，正是收割的季節，河水漲過兩岸。抬約櫃的祭司腳一踏進水裡，上游的水就「在極遠之地、撒拉但旁的亞當城那裡停住，立起成壘」，百姓就在耶利哥對面走乾地過去。學者多半認為亞當城就是這裡的 Tell ed-Damiyeh，在受洗處上游大約 30 公里。歷史上有記載，1267 年和 1927 年地震時，這附近的河岸崩塌，把約旦河擋住了好幾個小時。神是不是用了類似的方式，聖經沒有說；但時機剛好就在祭司踏進水裡的那一刻。",
+      en: "When Israel was about to cross the Jordan, it was harvest season and the river was overflowing its banks. As soon as the priests carrying the ark stepped into the water, the water upstream 'stood, and rose up in one heap, a great way off, at Adam, the city that is beside Zarethan,' and the people crossed on dry ground opposite Jericho. Most scholars identify Adam with this mound, Tell ed-Damiyeh, about 30 km upstream from the Baptism Site. History records that in earthquakes in 1267 and 1927, riverbanks near here collapsed and dammed the Jordan for hours. Whether God used something similar, the Bible doesn't say; but the timing came exactly as the priests stepped into the water."
+    },
+    reflect: {
+      zh: "河水是在祭司「踏進水裡」之後才停住的，不是之前。神有沒有在等你先踏出一步？",
+      en: "The water stopped after the priests stepped in, not before. Is God waiting for you to take the first step?"
+    },
+    mission: {
+      zh: "🦶 任務：讀約書亞記第 3 章，想想當時祭司腳踏進湍急河水那一刻的心情。",
+      en: "🦶 Mission: Read Joshua 3 and imagine how the priests felt the moment their feet touched the rushing water."
+    },
+    quiz: {
+      q: { zh: "約旦河的水是在什麼時候停住的？", en: "When did the waters of the Jordan stop?" },
+      options: [{ zh: "以色列人禱告了七天之後", en: "After Israel prayed for seven days" }, { zh: "祭司的腳踏進水裡的時候", en: "When the priests' feet touched the water" }, { zh: "摩西舉杖的時候", en: "When Moses raised his staff" }],
+      answer: 1
+    },
+    howto: {
+      zh: "⚠️ 考古土丘，沒有遊客設施，能不能進去還沒確認。在約旦河谷公路旁、雅博河流進約旦河的附近，離第 2 章的疏割約 15 分鐘。這裡靠近過境橋和邊界，可能是管制區，不要硬闖；在附近公路邊就在蓋章範圍內。",
+      en: "⚠️ An archaeological mound with no visitor facilities; access hasn't been confirmed. It's beside the Jordan Valley Highway near where the Jabbok meets the Jordan, about 15 minutes from Succoth (Chapter 2). It's near a border crossing and may be a restricted area—don't force your way in; the nearby highway is within stamping range."
+    },
+    photo: null
+  },
+
+  balaam: {
+    name: { zh: "巴蘭的祝福（瑣腓田、毘斯迦山頂）", en: "Balaam's Blessings (Field of Zophim, Top of Pisgah)" },
+    place: { zh: "尼波山附近的山脊", en: "The ridge near Mount Nebo" },
+    lat: 31.77107, lng: 35.73394, radius: 1000,
+    points: [{ lat: 31.731791, lng: 35.740891 }],
+    certainty: "likely",
+    approx: true,
+    verses: ["Num 23:14", "Num 24:17"],
+    story: {
+      zh: "摩押王巴勒看見以色列人在平原上安營，非常害怕，就花錢請先知巴蘭來咒詛他們。巴勒先帶巴蘭到「巴力的高處」，又帶他「到了瑣腓田，上了毘斯迦山頂」，最後到毘珥山頂（第 5 章），每次都築七座壇獻祭。可是巴蘭一開口，說出來的全是祝福。最後一次他看見遙遠的未來：「有星要出於雅各，有杖要興於以色列。」許多基督徒把這顆星讀成彌賽亞的預言。1967 年，考古學家在第 2 章的疏割（Deir Alla）挖到一段古代文字，寫著「比珥的兒子巴蘭」，是聖經以外提到巴蘭的記錄。",
+      en: "Balak king of Moab saw Israel camped on the plains and was terrified, so he paid the prophet Balaam to curse them. Balak first took Balaam to 'the high places of Baal,' then 'into the field of Zophim, to the top of Pisgah,' and finally to the top of Peor (Chapter 5), building seven altars each time. But whenever Balaam opened his mouth, only blessings came out. In the last one he saw into the distant future: 'A star will come out of Jacob. A scepter will rise out of Israel.' Many Christians read this star as a prophecy of the Messiah. In 1967 archaeologists at Succoth (Deir Alla, Chapter 2) found an ancient text naming 'Balaam son of Beor'—a record of Balaam outside the Bible."
+    },
+    reflect: {
+      zh: "巴勒換了三個地方，想換個角度讓咒詛成功，結果都是祝福。有沒有人想拿你的過去來「咒詛」你？神怎麼說你？",
+      en: "Balak changed locations three times, hoping a new angle would make the curse work, and each time it became a blessing. Is someone using your past to 'curse' you? What does God say about you?"
+    },
+    mission: {
+      zh: "🔭 任務：從山脊往下看摩押平原，那就是以色列人安營的地方。讀民數記 24 章 5 節，替你所在的地方說一句祝福。",
+      en: "🔭 Mission: Look down from the ridge over the plains of Moab, where Israel camped. Read Numbers 24:5 and speak a blessing over the place you're in."
+    },
+    quiz: {
+      q: { zh: "巴勒請巴蘭來咒詛以色列，結果巴蘭說了什麼？", en: "Balak hired Balaam to curse Israel. What did Balaam do?" },
+      options: [{ zh: "咒詛了以色列", en: "He cursed Israel" }, { zh: "一直祝福以色列", en: "He kept blessing Israel" }, { zh: "拒絕開口", en: "He refused to speak" }],
+      answer: 1
+    },
+    howto: {
+      zh: "在尼波山附近的山脊上，可以和第 5 章的尼波山、毘珥排在一起。另一個蓋章點在尼波山往馬達巴的路上。位置是學者推測的大約位置，在尼波山一帶就很接近了。",
+      en: "On the ridge near Mount Nebo—easy to combine with Mount Nebo and Peor from Chapter 5. The other stamp point is on the road from Nebo toward Madaba. The location is a scholarly estimate; anywhere around Mount Nebo is close."
+    },
+    photo: null
+  },
+
+  beer: {
+    name: { zh: "比珥（井之歌）", en: "Beer (The Song of the Well)" },
+    place: { zh: "位置不確定，在亞嫩河以北、往毘斯迦的路上", en: "Location uncertain, on the way north from the Arnon toward Pisgah" },
+    hidden: true,
+    certainty: "unknown",
+    verses: ["Num 21:16", "Num 21:17"],
+    story: {
+      zh: "以色列人過了亞嫩河以後，來到比珥，意思就是「井」。神對摩西說：「招聚百姓，我好給他們水喝。」這一次沒有人抱怨，大家一起挖井，連首領和尊貴人都拿著圭、拿著杖下去挖。水湧上來的時候，以色列人唱歌：「井啊，湧上水來！你們要向這井歌唱。」在曠野四十年，這幾乎是唯一一次，全會眾為了水歌唱而不是發怨言。比珥確切在哪裡不知道，所以這是隱藏關卡。",
+      en: "After crossing the Arnon, Israel came to Beer, which means 'well.' God told Moses, 'Gather the people together, and I will give them water.' This time no one complained; everyone dug together, even the princes and nobles with their scepters and staffs. When the water sprang up, Israel sang: 'Spring up, well! Sing to it.' In forty years of wilderness, this is almost the only time the whole people sang over water instead of grumbling. Beer's exact location is unknown, so this is a hidden level."
+    },
+    reflect: {
+      zh: "同樣是缺水，以前百姓抱怨，這次卻一起挖井唱歌。你現在缺的東西，有沒有可能換一個態度面對？",
+      en: "The same lack of water once brought complaints; this time it brought digging and singing together. Could you face what you lack right now with a different attitude?"
+    },
+    mission: {
+      zh: "🔒 隱藏任務：讀完民數記 21 章 10～20 節，再回來答題。",
+      en: "🔒 Hidden mission: Read Numbers 21:10–20, then come back for the quiz."
+    },
+    quiz: {
+      q: { zh: "以色列人在比珥做了什麼？", en: "What did Israel do at Beer?" },
+      options: [{ zh: "發怨言", en: "Complained" }, { zh: "向湧出水的井唱歌", en: "Sang to the well as it sprang up" }, { zh: "打了一場仗", en: "Fought a battle" }],
+      answer: 1
+    },
+    howto: {
+      zh: "這是隱藏關卡：確切位置不知道，不需要到現場。答對上面的問答就能解鎖印章。",
+      en: "This is a hidden level: the exact location is unknown, so you don't need to visit. Answer the quiz correctly to unlock the stamp."
+    },
+    photo: null
+  },
+
+  naaman: {
+    name: { zh: "乃縵在約旦河沐浴", en: "Naaman Washes in the Jordan" },
+    place: { zh: "約旦河的某一段，聖經沒有說是哪裡", en: "Somewhere on the Jordan River; the Bible doesn't say where" },
+    hidden: true,
+    certainty: "unknown",
+    verses: ["2 Kgs 5:14", "Luke 4:27"],
+    story: {
+      zh: "亞蘭（敘利亞）的將軍乃縵是大能的勇士，卻長了大痲瘋。家裡一個被擄來的以色列小女孩說，以色列有先知可以醫治他。先知以利沙連門都沒出，只派人說：「你去在約旦河中沐浴七回。」乃縵氣壞了：「大馬士革的河豈不比以色列的一切水更好嗎？」僕人勸他：如果先知叫你做一件大事，你不會做嗎？何況只是洗一洗。乃縵終於下去，沐浴七回，「他的肉復原，好像小孩子的肉」。後來耶穌在拿撒勒提到乃縵，說神的恩典臨到了外邦人。聖經沒說他在約旦河的哪一段沐浴，所以這是隱藏關卡。",
+      en: "Naaman, commander of the army of Aram (Syria), was a mighty warrior, but he had leprosy. A young Israelite girl taken captive into his household said a prophet in Israel could heal him. The prophet Elisha didn't even come out; he simply sent word: 'Go and wash in the Jordan seven times.' Naaman was furious: 'Aren't the rivers of Damascus better than all the waters of Israel?' His servants reasoned with him: if the prophet had asked you to do some great thing, wouldn't you have done it? How much more when he only says wash. Naaman finally went down and washed seven times, 'and his flesh was restored like the flesh of a little child.' Later, in Nazareth, Jesus mentioned Naaman as an example of God's grace reaching outsiders. The Bible doesn't say where on the Jordan he washed, so this is a hidden level."
+    },
+    reflect: {
+      zh: "乃縵差一點因為「太簡單、不夠體面」錯過了醫治。神要你做的那件小事，你是不是嫌它太簡單？",
+      en: "Naaman almost missed his healing because it seemed too simple and not dignified enough. Is there a small thing God is asking of you that you dismiss as too simple?"
+    },
+    mission: {
+      zh: "🔒 隱藏任務：讀完列王紀下第 5 章，再回來答題。（如果你人在第 4 章的受洗處，可以在那裡讀。）",
+      en: "🔒 Hidden mission: Read 2 Kings 5, then come back for the quiz. (If you're at the Baptism Site in Chapter 4, it's a great place to read it.)"
+    },
+    quiz: {
+      q: { zh: "以利沙叫乃縵在約旦河沐浴幾次？", en: "How many times did Elisha tell Naaman to wash in the Jordan?" },
+      options: [{ zh: "三次", en: "Three" }, { zh: "七次", en: "Seven" }, { zh: "十二次", en: "Twelve" }],
       answer: 1
     },
     howto: {

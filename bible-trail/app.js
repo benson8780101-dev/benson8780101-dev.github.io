@@ -85,6 +85,11 @@ const T = {
   navBtn: { zh: "🧭 Google 地圖導航", en: "🧭 Navigate with Google Maps" },
   navApprox: { zh: "這是大約位置，快到的時候請看當地路標或問路。", en: "This is an approximate location—watch for local signs or ask for directions as you get close." },
   sideChapter: { zh: "支線", en: "Side Trail" },
+  foodTitle: { zh: "🍽️ 聖經餐桌", en: "🍽️ Bible Table" },
+  tripsTitle: { zh: "🗓️ 現成行程", en: "🗓️ Ready-Made Itineraries" },
+  tripsHelp: { zh: "給自己開車的人：照著走就好，點地點可以看故事和導航。打勾的是已經蓋過章的。", en: "For self-drive travelers: just follow along; tap a site for its story and directions. Ticks mark stamps you already have." },
+  tripDay: { zh: "第 {n} 天", en: "Day {n}" },
+  tripSleep: { zh: "🛏️ 住：", en: "🛏️ Stay: " },
   sideNote: { zh: "支線是額外的路線，想走再走，不影響破關證書。", en: "Side trails are optional extra routes; they don't affect your certificate." },
   certTitle: { zh: "🏅 破關紀念證書", en: "🏅 Certificate of Completion" },
   certHow: { zh: "九章的「必去」站全部蓋完，就能領取證書；全部 {n} 個地點都蓋完，證書會變成金色版。", en: "Stamp every must-see stop in all nine chapters to earn your certificate; stamp all {n} sites and it becomes the gold edition." },
@@ -163,6 +168,11 @@ const T_PT = {
   navBtn: "🧭 Ir com o Google Maps",
   navApprox: "Esta é uma localização aproximada — fique atento às placas ou peça informações quando estiver chegando.",
   sideChapter: "Trilha Extra",
+  foodTitle: "🍽️ Mesa Bíblica",
+  tripsTitle: "🗓️ Roteiros Prontos",
+  tripsHelp: "Para quem dirige por conta própria: é só seguir; toque num lugar para ver a história e o caminho. Os marcados já foram carimbados.",
+  tripDay: "Dia {n}",
+  tripSleep: "🛏️ Pernoite: ",
   sideNote: "As trilhas extras são rotas opcionais; não afetam o certificado.",
   certTitle: "🏅 Certificado de Conclusão",
   certHow: "Carimbe todas as paradas obrigatórias dos nove capítulos para ganhar o certificado; carimbe todos os {n} lugares e ele vira a edição dourada.",
@@ -191,6 +201,7 @@ function mergePortuguese() {
   for (const ch of CHAPTERS) {
     const p = PT.chapters[ch.id];
     if (p) { ch.title.pt = p.title; ch.intro.pt = p.intro; }
+    if (p && p.food && ch.food) { ch.food.dish.pt = p.food.dish; ch.food.text.pt = p.food.text; }
   }
   for (const [id, s] of Object.entries(STATIONS)) {
     const p = PT.stations[id];
@@ -349,6 +360,7 @@ function renderChapters() {
   const v = document.getElementById("view-chapters");
   v.replaceChildren();
   if (!introSeen) v.append(introBox());
+  if (window.ITINERARIES) v.append(tripsCard());
   if (!storageOk) v.append(el("div", { class: "notice" }, t("storageOff")));
   for (const ch of CHAPTERS) {
     const st = chapterStatus(ch);
@@ -365,9 +377,40 @@ function renderChapters() {
       ch.side ? el("p", { class: "muted" }, t("sideNote")) : null,
       el("div", { class: "progress", role: "progressbar", "aria-valuenow": st.done, "aria-valuemax": st.total },
         el("i", { style: `width:${Math.round((st.done / st.total) * 100)}%` })),
-      el("ul", { class: "stop-list" }, ch.required.map(stopRow), ch.bonus.map(stopRow))
+      el("ul", { class: "stop-list" }, ch.required.map(stopRow), ch.bonus.map(stopRow)),
+      ch.food ? foodBox(ch.food) : null
     ));
   }
+}
+
+// 每章的「聖經餐桌」：這一章可以吃到的聖經食物
+function verseQuote(ref) {
+  const v = VERSES[ref];
+  return v ? el("blockquote", { class: "verse" }, v[lang] || v.en, el("cite", null, v[lang + "Ref"] || v.enRef)) : null;
+}
+function foodBox(food) {
+  return el("div", { class: "food" },
+    el("h3", null, t("foodTitle")),
+    el("p", null, el("b", null, pick(food.dish))),
+    el("p", null, pick(food.text)),
+    food.verses.map(verseQuote));
+}
+
+// 現成行程（trips.js）：每個行程收合起來，點開才看每天的安排
+function tripsCard() {
+  const stopLink = (id) => el("button", { class: "trip-stop" + (state.stamps[id] ? " done" : ""), type: "button", onclick: () => openStation(id) },
+    (state.stamps[id] ? "✓ " : "") + pick(STATIONS[id].name).split("（")[0].split(" (")[0]);
+  return el("div", { class: "card trips" },
+    el("h2", null, t("tripsTitle")),
+    el("p", { class: "muted" }, t("tripsHelp")),
+    ITINERARIES.map((it) => el("details", { class: "trip" },
+      el("summary", null, pick(it.title)),
+      el("p", null, pick(it.intro)),
+      el("ol", { class: "trip-days" }, it.days.map((d, i) => el("li", null,
+        el("b", null, t("tripDay", { n: i + 1 })),
+        el("div", { class: "row" }, d.stops.map(stopLink)),
+        el("p", null, pick(d.note)),
+        el("p", { class: "muted" }, t("tripSleep") + pick(d.sleep))))))));
 }
 
 // ---------- 畫面：護照 ----------
@@ -507,10 +550,7 @@ function openStation(id) {
         s.noFacilities ? el("span", { class: "cert warn" }, t("noFacilities")) : null),
       s.hidden ? null : el("div", { class: "row", style: "margin-top:10px" }, navButton(id, "btn small ghost")),
       checkinCard(id),
-      el("div", { class: "card" }, el("h3", null, t("scripture")), s.verses.map((ref) => {
-        const v = VERSES[ref];
-        return v ? el("blockquote", { class: "verse" }, v[lang] || v.en, el("cite", null, v[lang + "Ref"] || v.enRef)) : null;
-      })),
+      el("div", { class: "card" }, el("h3", null, t("scripture")), s.verses.map(verseQuote)),
       el("div", { class: "card" }, el("h3", null, t("story")), el("p", null, pick(s.story))),
       el("div", { class: "card" }, el("h3", null, t("reflect")), el("p", null, pick(s.reflect))),
       el("div", { class: "card" }, el("h3", null, t("mission")), el("p", null, pick(s.mission))),

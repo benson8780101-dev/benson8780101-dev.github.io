@@ -33,6 +33,14 @@ window.VERSES = {
   "en": "He returned from following him, and took the yoke of oxen, and killed them, and boiled their flesh with the instruments of the oxen, and gave to the people, and they ate. Then he arose, and went after Elijah, and served him.",
   "pt": "E interrompeu de segui-lo, tomou um par de bois, e os matou, e com o arado dos bois cozeu a carne deles, e deu-a ao povo que comessem. Depois se levantou, e foi atrás de Elias, e o servia."
  },
+ "1 Kgs 19:6": {
+  "zhRef": "列王紀上 19:6",
+  "enRef": "1 Kings 19:6",
+  "ptRef": "1 Reis 19:6",
+  "zh": "他觀看，見頭旁有一瓶水與炭火燒的餅，他就吃了喝了，仍然躺下。",
+  "en": "He looked, and behold, there was at his head a cake baked on the coals, and a jar of water. He ate and drank, and lay down again.",
+  "pt": "Então ele olhou, e eis que a sua cabeceira uma torta cozida sobre as ascuas, e um vaso de água: e comeu e bebeu e voltou-se a dormir."
+ },
  "1 Kgs 22:34": {
   "zhRef": "列王紀上 22:34",
   "enRef": "1 Kings 22:34",
@@ -121,6 +129,14 @@ window.VERSES = {
   "en": "When the king of Moab saw that the battle was too severe for him, he took with him seven hundred men who drew sword, to break through to the king of Edom; but they could not. Then he took his eldest son who would have reigned in his place, and offered him for a burnt offering on the wall. There was great wrath against Israel: and they departed from him, and returned to their own land.",
   "pt": "E quando o rei de Moabe viu que a batalha o vencia, tomou consigo setecentos homens que tiravam espada, para romper contra o rei de Edom, mas não conseguiram. Então arrebatou a seu primogênito que havia de reinar em seu lugar, e sacrificou-lhe em holocausto sobre o muro. E havia grande ira em Israel; e retiraram-se dele, e voltaram a sua terra."
  },
+ "2 Kgs 3:4": {
+  "zhRef": "列王紀下 3:4",
+  "enRef": "2 Kings 3:4",
+  "ptRef": "2 Reis 3:4",
+  "zh": "摩押王米沙牧養許多羊，每年將十萬羊羔的毛和十萬公綿羊的毛給以色列王進貢。",
+  "en": "Now Mesha king of Moab was a sheep breeder; and he rendered to the king of Israel the wool of one hundred thousand lambs, and of one hundred thousand rams.",
+  "pt": "Então Messa rei de Moabe era proprietário de gados, e pagava ao rei de Israel cem mil cordeiros e cem mil carneiros com suas lãs."
+ },
  "2 Kgs 3:4-5": {
   "zhRef": "列王紀下 3:4-5",
   "enRef": "2 Kings 3:4-5",
@@ -128,6 +144,14 @@ window.VERSES = {
   "zh": "摩押王米沙牧養許多羊，每年將十萬羊羔的毛和十萬公綿羊的毛給以色列王進貢。亞哈死後，摩押王背叛以色列王。",
   "en": "Now Mesha king of Moab was a sheep breeder; and he rendered to the king of Israel the wool of one hundred thousand lambs, and of one hundred thousand rams. But when Ahab was dead, the king of Moab rebelled against the king of Israel.",
   "pt": "Então Messa rei de Moabe era proprietário de gados, e pagava ao rei de Israel cem mil cordeiros e cem mil carneiros com suas lãs. Mas morto Acabe, o rei de Moabe se rebelou contra o rei de Israel."
+ },
+ "2 Kgs 5:14": {
+  "zhRef": "列王紀下 5:14",
+  "enRef": "2 Kings 5:14",
+  "ptRef": "2 Reis 5:14",
+  "zh": "於是乃縵下去，照著神人的話，在約旦河裡沐浴七回；他的肉復原，好像小孩子的肉，他就潔淨了。",
+  "en": "Then went he down, and dipped himself seven times in the Jordan, according to the saying of the man of God; and his flesh was restored like the flesh of a little child, and he was clean.",
+  "pt": "Ele então desceu, e mergulhou sete vezes no Jordão, conforme a palavra do homem de Deus; e sua carne se restaurou como a carne de um menino, e foi limpo."
  },
  "2 Sam 11:1": {
   "zhRef": "撒母耳記下 11:1",
@@ -160,6 +184,22 @@ window.VERSES = {
   "zh": "大衛到了瑪哈念，亞捫族的拉巴人拿轄的兒子朔比，羅‧底巴人亞‧米利的兒子瑪吉，基列的羅基琳人巴西萊，帶著被、褥、盆、碗、瓦器、小麥、大麥、麥麵、炒穀、豆子、紅豆、炒豆、蜂蜜、奶油、綿羊、奶餅，供給大衛和跟隨他的人吃；他們說：「民在曠野，必飢渴困乏了。」",
   "en": "When David had come to Mahanaim, Shobi the son of Nahash of Rabbah of the children of Ammon, and Machir the son of Ammiel of Lodebar, and Barzillai the Gileadite of Rogelim, brought beds, basins, earthen vessels, wheat, barley, meal, parched grain, beans, lentils, roasted grain, honey, butter, sheep, and cheese of the herd, for David, and for the people who were with him, to eat: for they said, “The people are hungry, and weary, and thirsty, in the wilderness.”",
   "pt": "E logo que Davi chegou a Maanaim, Sobi filho de Naás de Rabá dos filhos de Amom, e Maquir filho de Amiel de Lo-Debar, e Barzilai gileadita de Rogelim, Trouxeram a Davi e ao povo que estava com ele, camas, e bacias, e vasilhas de barro, e trigo, e cevada, e farinha, e grão tostado, favas, lentilhas, e grãos tostados, Mel, manteiga, ovelhas, e queijos de vacas, para que comessem; porque disseram: Aquele povo está faminto, e cansado, e terá sede no deserto."
+ },
+ "2 Sam 17:28": {
+  "zhRef": "撒母耳記下 17:28",
+  "enRef": "2 Samuel 17:28",
+  "ptRef": "2 Samuel 17:28",
+  "zh": "帶著被、褥、盆、碗、瓦器、小麥、大麥、麥麵、炒穀、豆子、紅豆、炒豆……",
+  "en": "brought beds, basins, earthen vessels, wheat, barley, meal, parched grain, beans, lentils, roasted grain,",
+  "pt": "Trouxeram a Davi e ao povo que estava com ele, camas, e bacias, e vasilhas de barro, e trigo, e cevada, e farinha, e grão tostado, favas, lentilhas, e grãos tostados,"
+ },
+ "2 Sam 17:29": {
+  "zhRef": "撒母耳記下 17:29",
+  "enRef": "2 Samuel 17:29",
+  "ptRef": "2 Samuel 17:29",
+  "zh": "蜂蜜、奶油、綿羊、奶餅，供給大衛和跟隨他的人吃；他們說：「民在曠野，必飢渴困乏了。」",
+  "en": "honey, butter, sheep, and cheese of the herd, for David, and for the people who were with him, to eat: for they said, “The people are hungry, and weary, and thirsty, in the wilderness.”",
+  "pt": "Mel, manteiga, ovelhas, e queijos de vacas, para que comessem; porque disseram: Aquele povo está faminto, e cansado, e terá sede no deserto."
  },
  "2 Sam 18:33": {
   "zhRef": "撒母耳記下 18:33",
@@ -265,6 +305,14 @@ window.VERSES = {
   "en": "From Aroer, which is on the edge of the valley of the Arnon, and the city that is in the valley, even to Gilead, there was not a city too high for us. Yahweh our God delivered up all before us.",
   "pt": "Desde Aroer, que está junto à beira do ribeiro de Arnom, e a cidade que está no ribeiro, até Gileade, não houve cidade que escapasse de nós: todas as entregou o SENHOR nosso Deus em nosso poder."
  },
+ "Deut 2:5": {
+  "zhRef": "申命記 2:5",
+  "enRef": "Deuteronomy 2:5",
+  "ptRef": "Deuteronômio 2:5",
+  "zh": "不可與他們爭戰；他們的地，連腳掌可踏之處，我都不給你們，因我已將西珥山賜給以掃為業。",
+  "en": "Don’t contend with them; for I will not give you any of their land, no, not so much as for the sole of the foot to tread on; because I have given Mount Seir to Esau for a possession.",
+  "pt": "Não vos metais com eles; que não vos darei de sua terra nem ainda a pisadura da planta de um pé; porque eu dei por herança a Esaú o monte de Seir."
+ },
  "Deut 2:8": {
   "zhRef": "申命記 2:8",
   "enRef": "Deuteronomy 2:8",
@@ -288,6 +336,14 @@ window.VERSES = {
   "zh": "摩西從摩押平原登尼波山，上了那與耶利哥相對的毘斯迦山頂。耶和華把基列全地直到但……",
   "en": "Moses went up from the plains of Moab to Mount Nebo, to the top of Pisgah, that is over against Jericho. Yahweh showed him all the land of Gilead, to Dan,",
   "pt": "E subiu Moisés dos campos de Moabe ao monte de Nebo, ao cume de Pisga, que está em frente de Jericó: e mostrou-lhe o SENHOR toda a terra de Gileade até Dã,"
+ },
+ "Deut 34:3": {
+  "zhRef": "申命記 34:3",
+  "enRef": "Deuteronomy 34:3",
+  "ptRef": "Deuteronômio 34:3",
+  "zh": "南地和棕樹城耶利哥的平原，直到瑣珥，都指給他看。",
+  "en": "and the south, and the Plain of the valley of Jericho the city of palm trees, to Zoar.",
+  "pt": "E a parte sul, e a campina, o vale de Jericó, cidade das palmeiras, até Zoar."
  },
  "Deut 34:4": {
   "zhRef": "申命記 34:4",
@@ -320,6 +376,46 @@ window.VERSES = {
   "zh": "為流便人分定曠野平原的比悉；為迦得人分定基列的拉末；為瑪拿西人分定巴珊的哥蘭。",
   "en": "Bezer in the wilderness, in the plain country, for the Reubenites; and Ramoth in Gilead, for the Gadites; and Golan in Bashan, for the Manassites.",
   "pt": "A Bezer no deserto, em terra da planície, dos rubenitas; e a Ramote em Gileade, dos gaditas; e a Golã em Basã, dos de Manassés."
+ },
+ "Deut 8:8": {
+  "zhRef": "申命記 8:8",
+  "enRef": "Deuteronomy 8:8",
+  "ptRef": "Deuteronômio 8:8",
+  "zh": "那地有小麥、大麥、葡萄樹、無花果樹、石榴樹、橄欖樹，和蜜。",
+  "en": "a land of wheat and barley, and vines and fig trees and pomegranates; a land of olive trees and honey;",
+  "pt": "Terra de trigo e cevada, e de videiras, e figueiras, e romeiras; terra de olivas, de azeite, e de mel;"
+ },
+ "Exod 12:22": {
+  "zhRef": "出埃及記 12:22",
+  "enRef": "Exodus 12:22",
+  "ptRef": "Êxodo 12:22",
+  "zh": "拿一把牛膝草，蘸盆裡的血，打在門楣上和左右的門框上。你們誰也不可出自己的房門，直到早晨。",
+  "en": "You shall take a bunch of hyssop, and dip it in the blood that is in the basin, and strike the lintel and the two door posts with the blood that is in the basin; and none of you shall go out of the door of his house until the morning.",
+  "pt": "E tomai um molho de hissopo, e molhai-lhe no sangue que estará em uma bacia, e untai a verga e os dois postes com o sangue que estará na bacia; e nenhum de vós saia das portas de sua casa até a manhã."
+ },
+ "Ezek 47:10": {
+  "zhRef": "以西結書 47:10",
+  "enRef": "Ezekiel 47:10",
+  "ptRef": "Ezequiel 47:10",
+  "zh": "必有漁夫站在河邊，從隱‧基底直到隱‧以革蓮，都作曬（或譯：張）網之處。那魚各從其類，好像大海的魚甚多。",
+  "en": "It shall happen, that fishermen shall stand by it: from En Gedi even to En Eglaim shall be a place for the spreading of nets; their fish shall be after their kinds, as the fish of the great sea, exceeding many.",
+  "pt": "Será também que pescadores estarão junto a ele; desde En-Gedi até En-Eglaim haverá lugares para se estender redes; seus peixes serão segundo suas espécies, como os peixes do grande mar, muitos em grande quantidade."
+ },
+ "Ezek 47:8": {
+  "zhRef": "以西結書 47:8",
+  "enRef": "Ezekiel 47:8",
+  "ptRef": "Ezequiel 47:8",
+  "zh": "他對我說：「這水往東方流去，必下到亞拉巴，直到海。所發出來的水必流入鹽海，使水變甜（原文是得醫治；下同）。……」",
+  "en": "Then he said to me, These waters flow out toward the eastern region, and will go down into the Arabah; and they will go toward the sea; and flow into the sea which will be made to flow out; and the waters will be healed.",
+  "pt": "Então me disse: Estas águas saem para a região do oriente, descem à planície, e entram no mar: e quando saem para o mar, as águas se tornam saudáveis."
+ },
+ "Ezek 47:9": {
+  "zhRef": "以西結書 47:9",
+  "enRef": "Ezekiel 47:9",
+  "ptRef": "Ezequiel 47:9",
+  "zh": "這河水所到之處，凡滋生的動物都必生活，並且因這流來的水必有極多的魚，海水也變甜了。這河水所到之處，百物都必生活。",
+  "en": "It shall happen, that every living creature which swarms, in every place where the rivers come, shall live; and there shall be a very great multitude of fish; for these waters have come there, and the waters of the sea shall be healed, and everything shall live wherever the river comes.",
+  "pt": "E será que toda alma vivente que se move por onde quer que estes dois ribeiros passarem, viverá; e haverá muitíssimos peixes por ali terem passado estas águas, e ficarão saudáveis; e tudo viverá por onde quer que este este ribeiro passar."
  },
  "Gal 1:17": {
   "zhRef": "加拉太書 1:17",
@@ -369,6 +465,14 @@ window.VERSES = {
   "en": "The younger also bore a son, and called his name Ben Ammi. He is the father of the children of Ammon to this day.",
   "pt": "A menor também deu à luz um filho, e chamou seu nome Ben-Ami, o qual é pai dos amonitas até hoje."
  },
+ "Gen 25:34": {
+  "zhRef": "創世記 25:34",
+  "enRef": "Genesis 25:34",
+  "ptRef": "Gênesis 25:34",
+  "zh": "於是雅各將餅和紅豆湯給了以掃，以掃吃了喝了，便起來走了。這就是以掃輕看了他長子的名分。",
+  "en": "Jacob gave Esau bread and stew of lentils. He ate and drank, rose up, and went his way. So Esau despised his birthright.",
+  "pt": "Então Jacó deu a Esaú pão e do guisado das lentilhas; e ele comeu e bebeu, e levantou-se, e foi-se. Assim menosprezou Esaú a primogenitura."
+ },
  "Gen 31:49": {
   "zhRef": "創世記 31:49",
   "enRef": "Genesis 31:49",
@@ -408,6 +512,14 @@ window.VERSES = {
   "zh": "雅各便給那地方起名叫毘努伊勒（就是　神之面的意思），意思說：「我面對面見了　神，我的性命仍得保全。」日頭剛出來的時候，雅各經過毘努伊勒，他的大腿就瘸了。",
   "en": "Jacob called the name of the place Peniel: for, he said, “I have seen God face to face, and my life is preserved.” The sun rose on him as he passed over Peniel, and he limped because of his thigh.",
   "pt": "E chamou Jacó o nome daquele lugar Peniel: porque vi a Deus face a face, e foi livrada minha alma. E saiu-lhe o sol quando passou a Peniel; e andava mancando de sua coxa."
+ },
+ "Gen 33:16": {
+  "zhRef": "創世記 33:16",
+  "enRef": "Genesis 33:16",
+  "ptRef": "Gênesis 33:16",
+  "zh": "於是，以掃當日起行，回往西珥去了。",
+  "en": "So Esau returned that day on his way to Seir.",
+  "pt": "Assim se voltou Esaú aquele dia por seu caminho a Seir."
  },
  "Gen 33:17": {
   "zhRef": "創世記 33:17",
@@ -456,6 +568,14 @@ window.VERSES = {
   "zh": "希實本和以利亞利悲哀的聲音達到雅雜，所以摩押帶兵器的高聲喊嚷，人心戰兢。",
   "en": "Heshbon cries out with Elealeh. Their voice is heard even to Jahaz. Therefore the armed men of Moab cry aloud. Their souls tremble within them.",
   "pt": "Tanto Hesbom como Eleale vão gritando, até Jaaz se ouve sua voz; por causa disso os soldados armados de Moabe gritam, a alma de cada um está abalada dentro de si."
+ },
+ "Isa 16:10": {
+  "zhRef": "以賽亞書 16:10",
+  "enRef": "Isaiah 16:10",
+  "ptRef": "Isaías 16:10",
+  "zh": "從肥美的田中奪去了歡喜快樂；在葡萄園裡必無歌唱，也無歡呼的聲音。踹酒的在酒醡中不得踹出酒來；我使他歡呼的聲音止息。",
+  "en": "Gladness is taken away, and joy out of the fruitful field; and in the vineyards there will be no singing, neither joyful noise. Nobody will tread out wine in the presses. I have made the shouting stop.",
+  "pt": "E foram tirados a alegria e o prazer do campo frutífero; e nas vinhas não se canta, nem grito de alegria se faz; o pisador não pisará as uvas nos lagares; eu pus fim aos clamores de alegria."
  },
  "Isa 63:1": {
   "zhRef": "以賽亞書 63:1",
@@ -577,6 +697,14 @@ window.VERSES = {
   "en": "Joshua the son of Nun secretly sent two men out of Shittim as spies, saying, “Go, view the land, including Jericho.” They went and came into the house of a prostitute whose name was Rahab, and slept there.",
   "pt": "E Josué, filho de Num, enviou desde Sitim dois espias secretamente, dizendo-lhes: Andai, reconhecei a terra, e a Jericó. Os quais foram, e entraram em casa de uma mulher prostituta que se chamava Raabe, e passaram a noite ali."
  },
+ "Josh 3:16": {
+  "zhRef": "約書亞記 3:16",
+  "enRef": "Joshua 3:16",
+  "ptRef": "Josué 3:16",
+  "zh": "那從上往下流的水便在極遠之地、撒拉但旁的亞當城那裡停住，立起成壘；那往亞拉巴的海，就是鹽海，下流的水全然斷絕。於是百姓在耶利哥的對面過去了。",
+  "en": "the waters which came down from above stood, and rose up in one heap, a great way off, at Adam, the city that is beside Zarethan; and those that went down toward the sea of the Arabah, even the Salt Sea, were wholly cut off. Then the people passed over right against Jericho.",
+  "pt": "As águas que vinham de cima pararam, e amontoaram-se bem longe, na cidade de Adã, que está ao lado de Zaretã; e as que desciam ao mar das planícies, ao mar Salgado, esgotaram-se e foram totalmente interrompidas; e o povo passou em frente de Jericó."
+ },
  "Judg 11:32-33": {
   "zhRef": "士師記 11:32-33",
   "enRef": "Judges 11:32-33",
@@ -624,6 +752,22 @@ window.VERSES = {
   "zh": "「你們看見耶路撒冷被兵圍困，就可知道它成荒場的日子近了。那時，在猶太的應當逃到山上；在城裡的應當出來；在鄉下的不要進城……」",
   "en": "“But when you see Jerusalem surrounded by armies, then know that its desolation is at hand. Then let those who are in Judea flee to the mountains. Let those who are in the midst of her depart. Let those who are in the country not enter therein.",
   "pt": "Porém quando virdes a Jerusalém cercada de exércitos, sabei então, que próxima está sua desolação. Então, os que estiverem na Judeia, fujam para os montes; e os que estiverem no meio dela, saiam, e os que estiverem nos campos, não entrem nela."
+ },
+ "Luke 4:27": {
+  "zhRef": "路加福音 4:27",
+  "enRef": "Luke 4:27",
+  "ptRef": "Lucas 4:27",
+  "zh": "先知以利沙的時候，以色列中有許多長大痲瘋的，但內中除了敘利亞國的乃縵，沒有一個得潔淨的。",
+  "en": "There were many lepers in Israel in the time of Elisha the prophet, yet not one of them was cleansed, except Naaman, the Syrian.”",
+  "pt": "E havia muitos leprosos em Israel no tempo do profeta Eliseu; mas nenhum deles foi limpo, a não ser Naamã, o sírio."
+ },
+ "Mark 1:6": {
+  "zhRef": "馬可福音 1:6",
+  "enRef": "Mark 1:6",
+  "ptRef": "Marcos 1:6",
+  "zh": "約翰穿駱駝毛的衣服，腰束皮帶，吃的是蝗蟲、野蜜。",
+  "en": "John was clothed with camel’s hair and a leather belt around his waist. He ate locusts and wild honey.",
+  "pt": "João se vestia de pelos de camelo, e um cinto de couro em sua cintura; e comia gafanhotos e mel do campo."
  },
  "Mark 5:1": {
   "zhRef": "馬可福音 5:1",
@@ -745,6 +889,22 @@ window.VERSES = {
   "en": "From there they traveled, and encamped on the other side of the Arnon, which is in the wilderness, that comes out of the border of the Amorites: for the Arnon is the border of Moab, between Moab and the Amorites.",
   "pt": "De ali moveram, e assentaram da outra parte de Arnom, que está no deserto, e que sai do termo dos amorreus; porque Arnom é termo de Moabe, entre Moabe e os amorreus."
  },
+ "Num 21:16": {
+  "zhRef": "民數記 21:16",
+  "enRef": "Numbers 21:16",
+  "ptRef": "Números 21:16",
+  "zh": "以色列人從那裡起行，到了比珥（就是井的意思）。從前耶和華吩咐摩西說：「招聚百姓，我好給他們水喝」，說的就是這井。",
+  "en": "From there they traveled to Beer; that is the well of which Yahweh said to Moses, “Gather the people together, and I will give them water.”",
+  "pt": "E dali vieram a Beer: este é o poço do qual o SENHOR disse a Moisés: Junta ao povo, e lhes darei água."
+ },
+ "Num 21:17": {
+  "zhRef": "民數記 21:17",
+  "enRef": "Numbers 21:17",
+  "ptRef": "Números 21:17",
+  "zh": "當時，以色列人唱歌說：井啊，湧上水來！你們要向這井歌唱。",
+  "en": "Then Israel sang this song: “Spring up, well! Sing to it,",
+  "pt": "Então cantou Israel esta canção: Sobe, ó poço; a ele cantai:"
+ },
  "Num 21:22": {
   "zhRef": "民數記 21:22",
   "enRef": "Numbers 21:22",
@@ -800,6 +960,22 @@ window.VERSES = {
   "zh": "他差遣使者往大河邊的毘奪去，到比珥的兒子巴蘭本鄉那裡，召巴蘭來，說：「有一宗民從埃及出來，遮滿地面，與我對居。……」",
   "en": "He sent messengers to Balaam the son of Beor, to Pethor, which is by the River, to the land of the children of his people, to call him, saying, “Behold, there is a people who came out of Egypt. Behold, they cover the surface of the earth, and they are staying opposite me.",
   "pt": "Portanto enviou mensageiros a Balaão filho de Beor, a Petor, que está junto ao rio na terra dos filhos de seu povo, para que o chamassem, dizendo: Um povo saiu do Egito, e eis que cobre a face da terra, e habita diante de mim:"
+ },
+ "Num 23:14": {
+  "zhRef": "民數記 23:14",
+  "enRef": "Numbers 23:14",
+  "ptRef": "Números 23:14",
+  "zh": "於是領巴蘭到了瑣腓田，上了毘斯迦山頂，築了七座壇；每座壇上獻一隻公牛，一隻公羊。",
+  "en": "He took him into the field of Zophim, to the top of Pisgah, and built seven altars, and offered up a bull and a ram on every altar.",
+  "pt": "E levou-o ao campo de Zofim, ao cume de Pisga, e edificou sete altares, e ofereceu um bezerro e um carneiro em cada altar."
+ },
+ "Num 24:17": {
+  "zhRef": "民數記 24:17",
+  "enRef": "Numbers 24:17",
+  "ptRef": "Números 24:17",
+  "zh": "我看他卻不在現時；我望他卻不在近日。有星要出於雅各，有杖要興於以色列，必打破摩押的四角，毀壞擾亂之子。",
+  "en": "I see him, but not now. I see him, but not near. A star will come out of Jacob. A scepter will rise out of Israel, and shall strike through the corners of Moab, and break down all the sons of Sheth.",
+  "pt": "Verei, mas não agora: O olharei, mas não de perto: Sairá estrela de Jacó, E se levantará cetro de Israel, E ferirá os cantos de Moabe, E destruirá a todos os filhos de Sete."
  },
  "Num 25:1": {
   "zhRef": "民數記 25:1",
