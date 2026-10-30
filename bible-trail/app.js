@@ -58,6 +58,9 @@ const T = {
   certLikely: { zh: "🤔 很可能在這裡", en: "🤔 Probable location" },
   certTradition: { zh: "🕯️ 傳統說法（信徒世代紀念的地方）", en: "🕯️ Traditional site (remembered by believers for centuries)" },
   certArea: { zh: "🗺️ 一整個區域", en: "🗺️ A whole region" },
+  certUnknown: { zh: "❓ 位置不確定", en: "❓ Location uncertain" },
+  hiddenTag: { zh: "隱藏", en: "Hidden" },
+  hiddenHelp: { zh: "🔒 這是隱藏關卡：位置不確定，不用到現場。讀完經文和故事，答對下面的小問答，就會解鎖印章。", en: "🔒 This is a hidden level: the location is uncertain, so no visit is needed. Read the scripture and story, then answer the quiz below to unlock the stamp." },
   chapterPassed: { zh: "🎉 第 {n} 章過關！獲得徽章 {b}", en: "🎉 Chapter {n} complete! Badge earned {b}" },
   chapterGold: { zh: "🏆 第 {n} 章全部完成！徽章變成金色了", en: "🏆 Chapter {n} fully complete! Your badge turned gold" },
   newRank: { zh: "🎖️ 新稱號：{r}", en: "🎖️ New rank: {r}" },
@@ -73,8 +76,8 @@ const T = {
   storageOff: { zh: "⚠️ 這個瀏覽器不能存資料（可能是無痕模式），關掉後進度會不見。", en: "⚠️ This browser can't save data (maybe private mode); progress will be lost when you close it." },
   introTitle: { zh: "歡迎來到約旦聖經足跡！", en: "Welcome to the Jordan Bible Trail!" },
   introBody: {
-    zh: "這是試玩版，目前有第 4、5 章、共 10 個地點。\n・經文和故事隨時都能讀，適合出發前預習。\n・人到了現場，按「我到了，蓋章」，手機用 GPS 確認位置後幫你蓋章。\n・去完一章的「必去」站就過關；全部去完，徽章會變金色。\n・地圖要有網路；其他內容沒網路也能用。",
-    en: "This is a preview with Chapters 4 and 5—10 sites in all.\n• Read the scripture and stories anytime—great for preparing before you go.\n• On site, tap \"I'm here — stamp it!\" and your phone's GPS confirms your location.\n• Visit a chapter's must-see stops to complete it; visit them all to earn a gold badge.\n• The map needs internet; everything else works offline."
+    zh: "這是試玩版，目前有第 {chs} 章、共 {n} 個地點。\n・經文和故事隨時都能讀，適合出發前預習。\n・人到了現場，按「我到了，蓋章」，手機用 GPS 確認位置後幫你蓋章。\n・標「隱藏」的關卡位置不確定，不用到現場，答對問答就解鎖。\n・去完一章的「必去」站就過關；全部去完，徽章會變金色。\n・地圖要有網路；其他內容沒網路也能用。",
+    en: "This is a preview with Chapters {chs}—{n} sites in all.\n• Read the scripture and stories anytime—great for preparing before you go.\n• On site, tap \"I'm here — stamp it!\" and your phone's GPS confirms your location.\n• 'Hidden' levels have uncertain locations—no visit needed; answer the quiz to unlock them.\n• Visit a chapter's must-see stops to complete it; visit them all to earn a gold badge.\n• The map needs internet; everything else works offline."
   },
   gotIt: { zh: "知道了，開始！", en: "Got it, let's go!" },
   locating: { zh: "正在找你的位置…", en: "Finding you…" },
@@ -151,9 +154,16 @@ const stampCount = () => Object.keys(state.stamps).length;
 const starCount = () => Object.keys(state.stars).length;
 function rankFor(n) {
   let r = TITLES[0];
-  for (const x of TITLES) if (n >= x.min) r = x;
+  for (const x of TITLES) if (x.all ? n >= stationIds().length : n >= x.min) r = x;
   return r;
 }
+// 給說明文字用：「3、4、5」或「3, 4 and 5」
+function chapterNumbers() {
+  const nos = CHAPTERS.map((c) => c.no);
+  if (lang === "zh") return nos.join("、");
+  return nos.length > 1 ? nos.slice(0, -1).join(", ") + " and " + nos[nos.length - 1] : String(nos[0]);
+}
+const introVars = () => ({ chs: chapterNumbers(), n: stationIds().length });
 function chapterStatus(ch) {
   const passed = ch.required.every((id) => state.stamps[id]);
   const gold = passed && ch.bonus.every((id) => state.stamps[id]);
@@ -208,7 +218,7 @@ function stopRow(id) {
     el("span", { class: "dot" + (done ? " done" : ""), "aria-label": done ? t("stamped") : "" }, done ? "✓" : ""),
     el("button", { class: "link", type: "button", onclick: () => openStation(id) }, pick(s.name)),
     state.stars[id] ? el("span", { "aria-label": "star" }, "⭐") : null,
-    el("span", { class: "tag" + (isRequired(id) ? " req" : "") }, isRequired(id) ? t("required") : t("bonus"))
+    el("span", { class: "tag" + (isRequired(id) ? " req" : "") }, isRequired(id) ? t("required") : s.hidden ? "🔒 " + t("hiddenTag") : t("bonus"))
   );
 }
 function renderChapters() {
@@ -306,7 +316,7 @@ function renderAbout() {
   const v = document.getElementById("view-about");
   const zh = lang === "zh";
   v.replaceChildren(
-    el("div", { class: "card" }, el("h2", null, t("introTitle")), textBlock(t("introBody"))),
+    el("div", { class: "card" }, el("h2", null, t("introTitle")), textBlock(t("introBody", introVars()))),
     el("div", { class: "card" },
       el("h2", null, zh ? "可信度標記" : "Certainty Labels"),
       el("ul", { class: "legend" }, ["certYes", "certLikely", "certTradition", "certArea"].map((k) => el("li", null, t(k)))),
@@ -341,7 +351,7 @@ function renderAbout() {
 }
 
 // ---------- 地點詳細頁 ----------
-const CERT = { yes: "certYes", likely: "certLikely", tradition: "certTradition", area: "certArea" };
+const CERT = { yes: "certYes", likely: "certLikely", tradition: "certTradition", area: "certArea", unknown: "certUnknown" };
 function openStation(id) {
   const s = STATIONS[id];
   const sheet = document.getElementById("sheet");
@@ -392,6 +402,11 @@ function checkinCard(id) {
     box.append(el("div", { class: "big" }, "🛂"), el("p", null, el("b", null, t("stamped")), " · ", t("stampedOn", { d: fmtDate(s.t) }), s.manual ? t("manualMark") : ""));
     return box;
   }
+  // 隱藏關卡沒有座標，靠答對問答解鎖（見 quizCard）
+  if (STATIONS[id].hidden) {
+    box.append(el("p", null, t("hiddenHelp")));
+    return box;
+  }
   const msg = el("p", { class: "muted" }, t("checkinHelp"));
   const manualArea = el("div");
   const btn = el("button", { class: "btn", type: "button" }, t("checkinBtn"));
@@ -440,7 +455,10 @@ function quizCard(id) {
         b.classList.add("right");
         box.querySelectorAll(".quiz-opt").forEach((x) => { x.disabled = true; });
         feedback.textContent = t("rightAns");
-        if (!state.stars[id]) { state.stars[id] = true; saveState(); refreshLists(); }
+        if (!state.stars[id]) { state.stars[id] = true; saveState(); }
+        // 隱藏關卡：答對就蓋章（stamp 會重畫整頁）；一般關卡只更新列表
+        if (STATIONS[id].hidden && !state.stamps[id]) stamp(id, false);
+        else refreshLists();
       } else {
         b.classList.add("wrong");
         feedback.textContent = t("wrongAns");
@@ -465,6 +483,7 @@ function initMap() {
   const bounds = [];
   for (const id of stationIds()) {
     const s = STATIONS[id];
+    if (s.hidden) continue;
     bounds.push([s.lat, s.lng]);
     markers[id] = L.marker([s.lat, s.lng], { icon: pinIcon(id), title: pick(s.name) }).addTo(map);
     markers[id].bindPopup(() => popupFor(id));
@@ -486,7 +505,7 @@ function popupFor(id) {
 }
 function refreshMap() {
   if (!map) return;
-  for (const id of stationIds()) {
+  for (const id of Object.keys(markers)) {
     markers[id].setIcon(pinIcon(id));
     markers[id].options.title = pick(STATIONS[id].name);
   }
@@ -520,7 +539,7 @@ function toast(msg) {
 let introSeen = false;
 try { introSeen = localStorage.getItem(INTRO_KEY) === "1"; } catch {}
 function introBox() {
-  return el("div", { class: "notice" }, el("p", null, el("b", null, t("introTitle"))), textBlock(t("introBody")),
+  return el("div", { class: "notice" }, el("p", null, el("b", null, t("introTitle"))), textBlock(t("introBody", introVars())),
     el("button", { class: "btn small", type: "button", onclick: (e) => {
       introSeen = true;
       try { localStorage.setItem(INTRO_KEY, "1"); } catch {}

@@ -1,9 +1,22 @@
-// 約旦聖經足跡：試玩版內容（第 4、5 章）
+// 約旦聖經足跡：試玩版內容（第 3、4、5 章）
 // 每一段文字都有 zh（繁體中文）和 en（英文），兩種語言一定要一起改。
 // 座標來源：OpenBible.info 聖經地理資料庫（CC BY 4.0）；標「approx: true」的是大約位置，待實地確認。
-// certainty：yes＝學者大多同意｜likely＝可能｜tradition＝傳統說法｜area＝一整個區域
+// certainty：yes＝學者大多同意｜likely＝可能｜tradition＝傳統說法｜area＝一整個區域｜unknown＝位置不確定
+// hidden: true＝隱藏關卡：位置不確定，不用到現場，答對問答就解鎖印章（沒有座標、地圖上不顯示）
 
 window.CHAPTERS = [
+  {
+    id: "ch3",
+    no: 3,
+    title: { zh: "亞捫人的京城", en: "The Ammonite Capital" },
+    intro: {
+      zh: "今天的安曼，就是聖經裡亞捫人的京城拉巴。大衛的軍隊圍攻過這裡；後來它改名非拉鐵非，成為低加坡里的城市之一。",
+      en: "Today's Amman is Rabbah, the capital of the Ammonites in the Bible. David's army besieged it; later it was renamed Philadelphia and became one of the cities of the Decapolis."
+    },
+    badge: "🏰",
+    required: ["citadel"],
+    bonus: ["theatre", "raselain", "jubeiha", "abelkeramim"]
+  },
   {
     id: "ch4",
     no: 4,
@@ -31,6 +44,157 @@ window.CHAPTERS = [
 ];
 
 window.STATIONS = {
+  citadel: {
+    name: { zh: "拉巴：安曼城堡", en: "Rabbah: The Amman Citadel" },
+    place: { zh: "Jabal al-Qal'a（城堡山），安曼市中心", en: "Jabal al-Qal'a (Citadel Hill), downtown Amman" },
+    lat: 31.9547, lng: 35.9343, radius: 500,
+    certainty: "yes",
+    verses: ["Gen 19:38", "Deut 3:11", "2 Sam 11:1", "2 Sam 11:15", "Amos 1:14"],
+    story: {
+      zh: "亞捫人是羅得的後代，他們的京城拉巴就建在這座山上。申命記說，巴珊王噩那張九肘長的大鐵床，當時就放在拉巴。後來大衛派約押率軍圍攻拉巴，自己卻留在耶路撒冷，因此犯下拔示巴的罪；為了掩蓋，他寫信要約押把拔示巴的丈夫烏利亞派到「陣勢極險之處」，烏利亞就戰死在這座城下。幾百年後，先知阿摩司預言火要燒滅拉巴的宮殿。今天山上看得到羅馬時期的海克力士神廟、拜占庭教堂和伍麥亞王朝的宮殿，一層一層疊著三千多年的歷史。",
+      en: "The Ammonites were descendants of Lot, and their capital, Rabbah, stood on this hill. Deuteronomy says the giant iron bed of Og, king of Bashan—nine cubits long—was kept in Rabbah. Later David sent Joab to besiege Rabbah while he himself stayed in Jerusalem, where he sinned with Bathsheba. To cover it up, he wrote to Joab to put her husband Uriah 'in the forefront of the hottest battle,' and Uriah died beneath these walls. Centuries later, the prophet Amos foretold fire consuming Rabbah's palaces. Today the hill holds a Roman Temple of Hercules, a Byzantine church, and an Umayyad palace—over three thousand years of history in layers."
+    },
+    reflect: {
+      zh: "大衛的跌倒，是從「列王出戰的時候」他卻留在家裡開始的。你的生活裡，有沒有哪個地方是該警醒、卻放鬆了的？",
+      en: "David's fall began when, 'at the time when kings go out to battle,' he stayed home. Is there an area of your life where you should be watchful but have let your guard down?"
+    },
+    mission: {
+      zh: "✋ 任務：找到海克力士神廟旁邊那隻巨大的石頭手掌，把你的手放在旁邊拍一張照（只拍，不要爬上去）。再走到城牆邊，往下找找看羅馬劇場。",
+      en: "✋ Mission: Find the giant stone hand beside the Temple of Hercules and take a photo with your hand next to it (photo only—don't climb). Then walk to the wall and look down for the Roman Theatre."
+    },
+    quiz: {
+      q: { zh: "大衛派誰率軍圍攻拉巴？", en: "Whom did David send to besiege Rabbah?" },
+      options: [{ zh: "押尼珥", en: "Abner" }, { zh: "約押", en: "Joab" }, { zh: "拿單", en: "Nathan" }],
+      answer: 1
+    },
+    howto: {
+      zh: "在安曼市中心的山頂，搭計程車、Careem 或 Uber 說「Al-Qal'a」（城堡）就到了。要買票。山上有一間小型考古博物館，展出包括亞捫時期在內的出土文物。傍晚的夕陽和城市景色很美，但山上沒什麼遮蔭，白天記得帶水。",
+      en: "On a hilltop in downtown Amman; tell your taxi, Careem, or Uber 'Al-Qal'a' (the Citadel). There's an entrance fee. A small archaeological museum on the hill displays finds from many periods, including the Ammonite era. Sunset views over the city are beautiful, but there's little shade—bring water during the day."
+    },
+    photo: "citadel"
+  },
+
+  theatre: {
+    name: { zh: "非拉鐵非：羅馬劇場", en: "Philadelphia: The Roman Theatre" },
+    place: { zh: "安曼市中心，城堡山腳下", en: "Downtown Amman, below Citadel Hill" },
+    lat: 31.9517, lng: 35.9394, radius: 400,
+    certainty: "yes",
+    verses: ["Matt 4:25", "Mark 7:31"],
+    story: {
+      zh: "西元前三世紀，埃及的托勒密二世把拉巴改名為「非拉鐵非」（意思是「兄弟之愛」）。到了羅馬時代，它是「低加坡里」（十座城）之一。這座劇場是西元二世紀蓋的，可以坐大約六千人，到今天還在使用。福音書說，有許多人「從低加坡里」來跟隨耶穌；耶穌也曾經走過低加坡里地區。聖經沒有說耶穌到過非拉鐵非，但當年從這座城出發去聽耶穌講道的人，很可能就坐過這些石階。",
+      en: "In the 3rd century BC, Ptolemy II of Egypt renamed Rabbah 'Philadelphia' (meaning 'brotherly love'). In Roman times it was one of the Decapolis, the 'Ten Cities.' This theatre was built in the 2nd century AD, seats about six thousand, and is still used today. The Gospels say great crowds 'from the Decapolis' followed Jesus, and Jesus himself passed through the Decapolis region. The Bible doesn't say Jesus came to Philadelphia, but people from this city who went to hear him may well have sat on these very steps."
+    },
+    reflect: {
+      zh: "這座城的名字叫「兄弟之愛」。在你住的城市裡，你可以怎樣活出這個名字？",
+      en: "This city's name means 'brotherly love.' How could you live out that name in the city where you live?"
+    },
+    mission: {
+      zh: "🗣️ 任務：站在舞台正中央的圓點上，小聲說一句話，請同伴坐到高處的座位聽聽看。古羅馬人沒有麥克風，音效卻這麼好！",
+      en: "🗣️ Mission: Stand on the center spot of the stage and speak softly while a companion listens from the upper seats. The Romans had no microphones, yet the acoustics are amazing!"
+    },
+    quiz: {
+      q: { zh: "拉巴在希臘羅馬時代改叫什麼名字？", en: "What was Rabbah renamed in Greek and Roman times?" },
+      options: [{ zh: "非拉鐵非", en: "Philadelphia" }, { zh: "該撒利亞", en: "Caesarea" }, { zh: "安提阿", en: "Antioch" }],
+      answer: 0
+    },
+    howto: {
+      zh: "在城堡山腳下，從城堡走下來大約 15～20 分鐘，或搭車到「Roman Theatre／Al-Mudarraj al-Roumani」。要買票，劇場兩側有兩間小型民俗博物館。旁邊的哈希姆廣場可以休息。",
+      en: "At the foot of Citadel Hill—about a 15–20 minute walk down from the Citadel, or take a car to 'Roman Theatre / Al-Mudarraj al-Roumani.' There's an entrance fee, and two small folklore museums flank the theatre. The Hashemite Plaza next door is a nice place to rest."
+    },
+    photo: "theatre"
+  },
+
+  raselain: {
+    name: { zh: "拉巴的「水城」：泉源", en: "Rabbah's 'City of Waters': Ras al-Ain" },
+    place: { zh: "Ras al-Ain（泉水的源頭），安曼市中心西南", en: "Ras al-Ain ('head of the spring'), southwest of downtown Amman" },
+    lat: 31.9440, lng: 35.9230, radius: 800, approx: true,
+    certainty: "likely",
+    verses: ["2 Sam 12:26-27"],
+    story: {
+      zh: "約押圍攻拉巴，先攻下了「水城」，就派人告訴大衛：快來，城就要拿下了。古代的城最怕斷水，誰控制了水源，誰就贏了一半。安曼的山谷裡曾有一條溪，從 Ras al-Ain（意思是「泉水的源頭」）的泉水流出，穿過市中心。許多學者認為，約押攻下的「水城」，就是守著這條水源的下城。這條溪一直流到二十世紀，今天已經被城市蓋住，只留下地名。",
+      en: "Besieging Rabbah, Joab first captured the 'city of waters' and sent word to David: come quickly, the city is about to fall. Ancient cities feared losing their water most; whoever held the water source had half the battle won. A stream once flowed through Amman's valley from the springs at Ras al-Ain ('head of the spring') through downtown. Many scholars think the 'city of waters' Joab took was the lower city guarding this water supply. The stream flowed into the 20th century; today the city has covered it, and only the name remains."
+    },
+    reflect: {
+      zh: "城的力量，其實在看不見的水源。你的力量，是從哪裡來的？",
+      en: "A city's strength lay in its hidden water source. Where does your strength come from?"
+    },
+    mission: {
+      zh: "💧 任務：在附近的路牌或店名裡找找看「Ain」或「عين」（泉水）這個字。安曼有很多地名都跟水有關！",
+      en: "💧 Mission: Look for 'Ain' or 'عين' (spring) on nearby street signs or shop names. Many place names in Amman are related to water!"
+    },
+    quiz: {
+      q: { zh: "「Ras al-Ain」是什麼意思？", en: "What does 'Ras al-Ain' mean?" },
+      options: [{ zh: "國王的山", en: "The king's hill" }, { zh: "泉水的源頭", en: "Head of the spring" }, { zh: "大城門", en: "The great gate" }],
+      answer: 1
+    },
+    howto: {
+      zh: "在安曼市中心西南邊，大安曼市政府一帶，搭車說「Ras al-Ain」就到。這裡是一般市區，沒有遺址可看，比較適合帶著故事走一走。（App 用的是大約位置，蓋章範圍設得比較大。）",
+      en: "Southwest of downtown, around the Greater Amman Municipality; ask a driver for 'Ras al-Ain.' It's an ordinary city area with no ruins to see—best enjoyed as a walk with the story in mind. (The app uses an approximate location, so the check-in range is wide.)"
+    },
+    photo: null
+  },
+
+  jubeiha: {
+    name: { zh: "約比哈", en: "Jogbehah" },
+    place: { zh: "安曼北區 Jubeiha（約旦大學一帶）", en: "Jubeiha, north Amman (near the University of Jordan)" },
+    lat: 32.013531, lng: 35.855751, radius: 1200,
+    certainty: "yes",
+    noFacilities: true,
+    verses: ["Num 32:35", "Judg 8:11"],
+    story: {
+      zh: "以色列人進迦南之前，迦得支派在約旦河東建造了幾座城，約比哈就是其中一座。後來士師基甸追趕米甸人的軍隊，就是「由挪巴和約比哈東邊」上去，趁敵人以為安全的時候突襲得勝。三千年過去，這個地名幾乎沒變：今天的 Jubeiha 是安曼北邊熱鬧的住宅區，約旦大學就在這裡。",
+      en: "Before Israel entered Canaan, the tribe of Gad built several towns east of the Jordan, and Jogbehah was one of them. Later, the judge Gideon pursued the Midianite army 'on the east of Nobah and Jogbehah,' striking while the enemy felt secure. Three thousand years later the name has hardly changed: today's Jubeiha is a busy residential district in north Amman, home to the University of Jordan."
+    },
+    reflect: {
+      zh: "你可能每天經過一個三千年前就出現在聖經裡的地方。你身邊還有哪些「平凡」的地方，其實藏著故事？",
+      en: "You might pass a place named in the Bible three thousand years ago every day. What other 'ordinary' places around you hide a story?"
+    },
+    mission: {
+      zh: "🗺️ 任務：在路牌上找到「Jubeiha／الجبيهة」，拍下來。三千年前的人，也用差不多的名字叫這裡！",
+      en: "🗺️ Mission: Find 'Jubeiha / الجبيهة' on a street sign and photograph it. People three thousand years ago used nearly the same name!"
+    },
+    quiz: {
+      q: { zh: "哪一位士師追趕敵人時經過約比哈？", en: "Which judge passed by Jogbehah while pursuing the enemy?" },
+      options: [{ zh: "參孫", en: "Samson" }, { zh: "底波拉", en: "Deborah" }, { zh: "基甸", en: "Gideon" }],
+      answer: 2
+    },
+    howto: {
+      zh: "⚠️ 這是一般住宅區，沒有遺址或遊客設施。在安曼北邊，搭車到約旦大學或 Jubeiha 都可以。只要人在這一區就能蓋章。",
+      en: "⚠️ An ordinary residential area with no ruins or visitor facilities. In north Amman—take a car to the University of Jordan or Jubeiha. You can check in anywhere in the area."
+    },
+    photo: null
+  },
+
+  abelkeramim: {
+    name: { zh: "亞備勒基拉明（葡萄園之原）", en: "Abel-keramim (Meadow of the Vineyards)" },
+    place: { zh: "位置不確定，有人推測在 Sahab 一帶", en: "Location uncertain; some suggest the Sahab area" },
+    hidden: true,
+    certainty: "unknown",
+    verses: ["Judg 11:32-33"],
+    story: {
+      zh: "士師耶弗他原本被家人趕走，後來基列的長老卻回頭求他帶兵對抗亞捫人。耶弗他大大打敗亞捫人，從亞羅珥一直打到米匿，又到「亞備勒基拉明」，意思是「葡萄園之原」。可惜他在出戰前許了一個輕率的誓，後來為此付上了令人心碎的代價（士師記 11 章）。這個地方確切在哪裡，學者還不知道，有人推測在安曼東南的 Sahab 一帶，所以這是一個隱藏關卡。",
+      en: "The judge Jephthah had been driven out by his family, yet later the elders of Gilead came back begging him to lead them against the Ammonites. Jephthah defeated them thoroughly, from Aroer to Minnith and on to 'Abel-keramim'—'meadow of the vineyards.' Sadly, before the battle he made a rash vow and later paid a heartbreaking price for it (Judges 11). Scholars don't know exactly where this place was; some suggest the Sahab area southeast of Amman—so this is a hidden level."
+    },
+    reflect: {
+      zh: "耶弗他的勝利，被一個衝動的承諾蒙上陰影。你最近有沒有在情緒裡答應了什麼，需要好好想清楚？",
+      en: "Jephthah's victory was overshadowed by an impulsive promise. Have you recently agreed to something in the heat of the moment that you should think through?"
+    },
+    mission: {
+      zh: "🔒 隱藏任務：讀完士師記 11 章的整個故事，再回來答題。",
+      en: "🔒 Hidden mission: Read the whole story in Judges 11, then come back for the quiz."
+    },
+    quiz: {
+      q: { zh: "哪一位士師一路打敗亞捫人，直到亞備勒基拉明？", en: "Which judge defeated the Ammonites all the way to Abel-keramim?" },
+      options: [{ zh: "耶弗他", en: "Jephthah" }, { zh: "以笏", en: "Ehud" }, { zh: "俄陀聶", en: "Othniel" }],
+      answer: 0
+    },
+    howto: {
+      zh: "這是隱藏關卡：確切位置不知道，不需要到現場。答對上面的問答就能解鎖印章。",
+      en: "This is a hidden level: the exact location is unknown, so you don't need to visit. Answer the quiz correctly to unlock the stamp."
+    },
+    photo: null
+  },
+
   bethany: {
     name: { zh: "約旦河外的伯大尼（耶穌受洗處）", en: "Bethany Beyond the Jordan (Baptism Site)" },
     place: { zh: "Al-Maghtas，聯合國世界遺產", en: "Al-Maghtas, UNESCO World Heritage Site" },
@@ -350,11 +514,11 @@ window.STATIONS = {
   }
 };
 
-// 稱號：依蓋章數升級
+// 稱號：依蓋章數升級；all: true＝全部地點都蓋完才拿得到（以後加新章節也不用改）
 window.TITLES = [
   { min: 0, zh: "旅人", en: "Traveler" },
   { min: 2, zh: "尋路人", en: "Seeker" },
-  { min: 4, zh: "朝聖者", en: "Pilgrim" },
-  { min: 7, zh: "守望者", en: "Watchman" },
-  { min: 10, zh: "約旦河東見證人", en: "Witness Beyond the Jordan" }
+  { min: 5, zh: "朝聖者", en: "Pilgrim" },
+  { min: 9, zh: "守望者", en: "Watchman" },
+  { all: true, zh: "約旦河東見證人", en: "Witness Beyond the Jordan" }
 ];

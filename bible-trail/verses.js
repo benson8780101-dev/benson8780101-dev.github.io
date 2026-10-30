@@ -1,4 +1,5 @@
-// 經文：和合本（cut）與 World English Bible（web），皆為公共領域；2026-10-30 由 api.getbible.net 取得
+// 經文：和合本（cut）與 World English Bible（web），皆為公共領域；由 api.getbible.net 取得。
+// 這個檔案由 工具/build_verses.py 產生，不要直接改。
 window.VERSES = {
  "John 1:28": {
   "zhRef": "約翰福音 1:28",
@@ -119,6 +120,72 @@ window.VERSES = {
   "enRef": "Joshua 3:16",
   "zh": "那從上往下流的水便在極遠之地、撒拉但旁的亞當城那裡停住，立起成壘；那往亞拉巴的海，就是鹽海，下流的水全然斷絕。於是百姓在耶利哥的對面過去了。",
   "en": "the waters which came down from above stood, and rose up in one heap, a great way off, at Adam, the city that is beside Zarethan; and those that went down toward the sea of the Arabah, even the Salt Sea, were wholly cut off. Then the people passed over right against Jericho."
+ },
+ "Gen 19:38": {
+  "zhRef": "創世記 19:38",
+  "enRef": "Genesis 19:38",
+  "zh": "小女兒也生了兒子，給他起名叫便‧亞米，就是現今亞捫人的始祖。",
+  "en": "The younger also bore a son, and called his name Ben Ammi. He is the father of the children of Ammon to this day."
+ },
+ "Deut 3:11": {
+  "zhRef": "申命記 3:11",
+  "enRef": "Deuteronomy 3:11",
+  "zh": "（利乏音人所剩下的只有巴珊王噩。他的床是鐵的，長九肘，寬四肘，都是以人肘為度。現今豈不是在亞捫人的拉巴嗎？）",
+  "en": "(For only Og king of Bashan remained of the remnant of the Rephaim. Behold, his bedstead was a bedstead of iron. Isn’t it in Rabbah of the children of Ammon? Nine cubits was its length, and four cubits its breadth, after the cubit of a man.)"
+ },
+ "2 Sam 11:1": {
+  "zhRef": "撒母耳記下 11:1",
+  "enRef": "2 Samuel 11:1",
+  "zh": "過了一年，到列王出戰的時候，大衛又差派約押，率領臣僕和以色列眾人出戰。他們就打敗亞捫人，圍攻拉巴。大衛仍住在耶路撒冷。",
+  "en": "At the return of the year, at the time when kings go out, David sent Joab, and his servants with him, and all Israel; and they destroyed the children of Ammon, and besieged Rabbah. But David stayed at Jerusalem."
+ },
+ "2 Sam 11:15": {
+  "zhRef": "撒母耳記下 11:15",
+  "enRef": "2 Samuel 11:15",
+  "zh": "信內寫著說：「要派烏利亞前進，到陣勢極險之處，你們便退後，使他被殺。」",
+  "en": "He wrote in the letter, saying, “Send Uriah to the forefront of the hottest battle, and retreat from him, that he may be struck, and die.”"
+ },
+ "2 Sam 12:26-27": {
+  "zhRef": "撒母耳記下 12:26-27",
+  "enRef": "2 Samuel 12:26-27",
+  "zh": "約押攻取亞捫人的京城拉巴。約押打發使者去見大衛，說：「我攻打拉巴，取其水城。",
+  "en": "Now Joab fought against Rabbah of the children of Ammon, and took the royal city. Joab sent messengers to David, and said, “I have fought against Rabbah. Yes, I have taken the city of waters."
+ },
+ "Amos 1:14": {
+  "zhRef": "阿摩司書 1:14",
+  "enRef": "Amos 1:14",
+  "zh": "我卻要在爭戰吶喊的日子，旋風狂暴的時候，點火在拉巴的城內，燒滅其中的宮殿。",
+  "en": "But I will kindle a fire in the wall of Rabbah, and it will devour its palaces, with shouting in the day of battle, with a storm in the day of the whirlwind;"
+ },
+ "Num 32:35": {
+  "zhRef": "民數記 32:35",
+  "enRef": "Numbers 32:35",
+  "zh": "亞他錄‧朔反、雅謝、約比哈、",
+  "en": "Atrothshophan, Jazer, Jogbehah,"
+ },
+ "Judg 8:11": {
+  "zhRef": "士師記 8:11",
+  "enRef": "Judges 8:11",
+  "zh": "基甸就由挪巴和約比哈東邊，從住帳棚人的路上去，殺敗了米甸人的軍兵，因為他們坦然無懼。",
+  "en": "Gideon went up by the way of those who lived in tents on the east of Nobah and Jogbehah, and struck the army; for the army was secure."
+ },
+ "Judg 11:32-33": {
+  "zhRef": "士師記 11:32-33",
+  "enRef": "Judges 11:32-33",
+  "zh": "於是耶弗他往亞捫人那裡去，與他們爭戰；耶和華將他們交在他手中，他就大大殺敗他們，從亞羅珥到米匿，直到亞備勒‧基拉明，攻取了二十座城。這樣亞捫人就被以色列人制伏了。",
+  "en": "So Jephthah passed over to the children of Ammon to fight against them; and Yahweh delivered them into his hand. He struck them from Aroer until you come to Minnith, even twenty cities, and to Abelcheramim, with a very great slaughter. So the children of Ammon were subdued before the children of Israel."
+ },
+ "Mark 7:31": {
+  "zhRef": "馬可福音 7:31",
+  "enRef": "Mark 7:31",
+  "zh": "耶穌又離了泰爾的境界，經過西頓，就從低加坡里境內來到加利利海。",
+  "en": "Again he departed from the borders of Tyre and Sidon, and came to the sea of Galilee, through the midst of the region of Decapolis."
+ },
+ "Matt 4:25": {
+  "zhRef": "馬太福音 4:25",
+  "enRef": "Matthew 4:25",
+  "zh": "當下，有許多人從加利利、低加坡里、耶路撒冷、猶太、約旦河外來跟著他。",
+  "en": "Great multitudes from Galilee, Decapolis, Jerusalem, Judea and from beyond the Jordan followed him."
  }
 };
 window.PHOTOS = {
@@ -163,5 +230,17 @@ window.PHOTOS = {
   "artist": "Bashar Tabbah",
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Tell_Hesban_(Column).jpg"
+ },
+ "citadel": {
+  "src": "img/citadel.jpg",
+  "artist": "David Bjorgen",
+  "license": "CC BY 2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Amman_Citadel.jpg"
+ },
+ "theatre": {
+  "src": "img/theatre.jpg",
+  "artist": "Bernard Gagnon",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Roman_theater_of_Amman_01.jpg"
  }
 };
