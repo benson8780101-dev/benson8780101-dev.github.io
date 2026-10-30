@@ -32,6 +32,10 @@ window.PT = {
     ch7: {
       title: "A Terra de Rute",
       intro: "Depois do vale do Arnom fica o coração de Moabe: o planalto ao redor de Kerak. Daqui Rute seguiu a sogra até Belém e se tornou bisavó do rei Davi. Descendo para o oeste, no extremo sul do mar Morto, é o lugar para onde Ló fugiu de Sodoma — e onde começou a história dos moabitas."
+    },
+    ch8: {
+      title: "A Terra de Edom",
+      intro: "Depois do ribeiro de Zerede fica a terra dos descendentes de Esaú, os edomitas. Edom quer dizer \"vermelho\", e as montanhas daqui são mesmo vermelhas. Aqui terminaram os trinta e oito anos de peregrinação de Israel, e foi nesse caminho que o povo olhou para a serpente de bronze que Moisés levantou."
     }
   },
 
@@ -453,6 +457,66 @@ window.PT = {
       reflect: "A mulher de Ló tinha saído da cidade com os pés, mas o coração ainda estava em Sodoma. Existe algo que Deus está pedindo que você largue e para o qual você continua olhando para trás?",
       mission: "🔒 Missão secreta: Leia Gênesis 18.16–19.29 e depois volte para o quiz.",
       quiz: { q: "Em que a mulher de Ló se tornou quando olhou para trás?", options: ["Numa pedra", "Numa estátua de sal", "Numa árvore"] },
+      howto: "Esta é uma fase secreta: a localização exata é desconhecida, então não é preciso ir até lá. Responda o quiz corretamente para ganhar o carimbo."
+    },
+
+    zered: {
+      name: "O Ribeiro de Zerede (Wadi al-Hasa)",
+      place: "O grande cânion na divisa entre Moabe e Edom, atravessado pela Estrada dos Reis",
+      story: "O Zerede era o ribeiro que marcava a divisa sul de Moabe; do outro lado ficava Edom. Deus disse a Israel: \"Levantai-vos agora, e passai o ribeiro de Zerede.\" Em seguida Moisés escreveu uma frase pesada: desde a saída de Cades-Barneia até a travessia do Zerede foram trinta e oito anos, até morrer toda aquela geração de guerreiros que não confiou em Deus nem quis entrar em Canaã. Ou seja, chegar a este ribeiro marcou o verdadeiro fim da peregrinação no deserto, e uma nova geração começou a avançar para a Terra Prometida. Hoje o cânion se chama Wadi al-Hasa; a Estrada dos Reis desce em curvas até o fundo e sobe de novo, e o cânion desemboca no extremo sul do mar Morto, perto de Zoar.",
+      reflect: "Trinta e oito anos andando em círculos até chegar a este ribeiro. Existe um trecho da sua vida em que você \"rodou\" por muito tempo? Olhando para trás, o que Deus ensinou a você nesse caminho?",
+      mission: "🏞️ Missão: Na descida da Estrada dos Reis, encontre um lugar seguro para parar e veja como o cânion é profundo. Imagine centenas de milhares de israelitas com seus rebanhos descendo e subindo por aqui.",
+      quiz: { q: "Quantos anos se passaram de Cades-Barneia até a travessia do Zerede?", options: ["Sete anos", "Trinta e oito anos", "Quarenta anos"] },
+      howto: "De Kerak, dirija cerca de 40 minutos para o sul pela Estrada dos Reis (Rodovia 35); a estrada desce até o fundo do cânion e sobe pelo lado sul, e todo esse trecho vale. O outro ponto de carimbo é a foz do cânion, na rodovia do sul do mar Morto, perto de Ghor es-Safi — fácil de combinar com Zoar e a Caverna de Ló. A estrada de montanha é íngreme e cheia de curvas; dirija devagar."
+    },
+
+    bozrah: {
+      name: "Bozra (a capital de Edom)",
+      place: "Ruínas da cidade real edomita ao lado da vila de Busayra",
+      story: "Os edomitas descendiam de Esaú. Esaú vendeu seu direito de primogenitura por um prato de cozido vermelho, e por isso foi chamado também de Edom, que quer dizer \"vermelho\". Bozra era a cidade mais importante de Edom; um dos reis edomitas da lista de Gênesis vinha de Bozra. Os profetas muitas vezes usavam Bozra para representar todo Edom, e Isaías 63 pinta uma cena impressionante: \"Quem é este, que vem de Edom, de Bozra, com vestes salpicadas de vermelho?\" É um guerreiro vitorioso que volta depois de fazer justiça ao seu povo, um texto que muitos cristãos leem como figura do Messias. Nos anos 1970, arqueólogos encontraram aqui um palácio e um templo da época edomita, confirmando que este foi a capital de Edom.",
+      reflect: "Esaú trocou uma bênção duradoura por uma fome passageira. Recentemente você foi tentado a trocar algo importante por um \"prato de cozido\" bem na sua frente?",
+      mission: "🔴 Missão: Observe a cor das rochas e da terra ao redor das ruínas e encontre o ponto mais \"vermelho\". O nome Edom (\"vermelho\") combina com as montanhas vermelhas da região.",
+      quiz: { q: "O que significa o nome \"Edom\"?", options: ["Vermelho", "Montanha", "Primogênito"] },
+      howto: "Na vila de Busayra, cerca de 20 minutos de carro ao sul de Tafila pela Estrada dos Reis. As ruínas ficam ao lado da vila, sem centro de visitantes nem ingresso; dá para ver muros de pedra e alicerces de cômodos. A Reserva da Biosfera de Dana fica um pouco a oeste, então dá para combinar as duas no mesmo dia."
+    },
+
+    tophel: {
+      name: "Tofel (Tafila)",
+      place: "A cidade de Tafila, no planalto de Edom",
+      story: "Deuteronômio começa dizendo que estas são as palavras que Moisés falou a todo Israel no deserto a leste do Jordão, \"entre Parã, e Tofel, e Labã, e Hazerote, e Di-Zaabe\". Tofel aparece só uma vez na Bíblia. Como o nome é muito parecido com a atual Tafila, alguns acham que é este lugar, mas os estudiosos ainda não chegaram a uma conclusão. Tafila é uma cidade de montanha no sul da Jordânia, cercada de olivais, e às vezes até neva aqui no inverno.",
+      reflect: "Tofel aparece uma única vez na Bíblia, e mesmo assim foi registrada. Na história de Deus, nenhum lugar e nenhuma pessoa é dispensável. Onde você se sente esquecido? Deus vê isso?",
+      mission: "🫒 Missão: Encontre um olival em Tafila, ou tome um chá numa lojinha da cidade e converse com os moradores sobre o nome da cidade.",
+      quiz: { q: "Quantas vezes o nome Tofel aparece na Bíblia?", options: ["Uma vez", "Sete vezes", "Cinquenta vezes"] },
+      howto: "Cerca de 1 hora ao sul de Kerak pela Estrada dos Reis (subindo depois do cânion do Zerede). Tafila é capital de província, com postos de gasolina, restaurantes e lojas — um bom lugar para descansar e almoçar. ⚠️ Ainda não está decidido se Tofel é Tafila; este carimbo lembra as primeiras linhas de Deuteronômio."
+    },
+
+    sela: {
+      name: "Selá (a fortaleza de rocha de Edom)",
+      place: "A fortaleza no monte de rocha ao lado da vila de as-Sela",
+      story: "\"Selá\" quer dizer \"rocha\". Amazias, rei de Judá, matou dez mil edomitas no vale das salinas, tomou Selá e lhe deu o nome de Jocteel. Este monte de rocha é cercado de penhascos quase por todos os lados, e só uma escadaria talhada numa fenda da rocha leva ao alto — não admira que o profeta Obadias tenha descrito Edom como \"tu que habitas nas fendas das rochas, em tua alta morada\", achando que ninguém o derrubaria. Bem alto no paredão há um relevo e uma inscrição de Nabonido, o último rei da Babilônia, gravados por volta do século 6 a.C.; os pesquisadores precisaram descer de rapel para estudá-los.",
+      reflect: "Os edomitas achavam que morar no alto da rocha os deixava seguros. Em que \"rocha\" você costuma firmar sua segurança — economias, capacidade, contatos ou Deus?",
+      mission: "🧗 Missão: Observe todo o monte de rocha a partir da vila e procure onde começa a escadaria na fenda. Se tiver boa visão, tente achar o relevo de Nabonido no paredão.",
+      quiz: { q: "O que significa o nome \"Selá\"?", options: ["Sal", "Rocha", "Torre"] },
+      howto: "⚠️ Sem estrutura para visitantes; ainda não confirmamos o acesso nem as condições do caminho. Fica entre Tafila e Bozra — saia da Estrada dos Reis para o oeste, até a vila de as-Sela. A única subida é uma escadaria antiga numa fenda da rocha, íngreme e estreita; não suba sozinho e evite dias de chuva. Ver o monte a partir da vila já basta para ganhar o carimbo."
+    },
+
+    punon: {
+      name: "Punom (o vale do cobre de Feinan)",
+      place: "As ruínas de Khirbet Faynan, no lado leste do vale da Arabá",
+      story: "Uma das paradas no roteiro de Israel pelo deserto é Punom. Esta foi uma das maiores regiões de mineração de cobre do antigo Oriente Médio, e o vale ainda está cheio de escória negra de fundição. Números 21 conta que, ao rodear a terra de Edom, o povo ficou impaciente e reclamou contra Deus, e serpentes ardentes entraram no acampamento; por ordem de Deus, Moisés fez uma serpente de bronze e a pôs sobre uma haste, e quem era mordido e olhava para ela vivia. A Bíblia não diz onde a serpente foi feita, mas como Punom ficava nesse caminho e era rica em cobre, alguns estudiosos sugerem uma ligação. Jesus disse depois: \"como Moisés levantou a serpente no deserto, assim deve o Filho do homem ser levantado\". Na época romana o lugar se chamava Feno, e o historiador Eusébio registra que cristãos foram condenados a trabalhos forçados nas minas de cobre daqui por causa da fé, e alguns foram martirizados.",
+      reflect: "Quem era mordido não precisava fazer nada grandioso — só precisava olhar. Você muitas vezes tenta resolver tudo com o próprio esforço e se esquece de olhar para cima?",
+      mission: "⚒️ Missão: Procure no chão a escória de cobre preta e vítrea (só olhe — não leve nada) e imagine as pessoas que mineraram e fundiram cobre aqui por milhares de anos.",
+      quiz: { q: "O que Moisés levantou no deserto?", options: ["Um cajado", "Uma serpente de bronze", "A arca da aliança"] },
+      howto: "⚠️ Sem estrutura para visitantes nas ruínas, e as condições da estrada ainda não foram confirmadas. Da rodovia do sul do mar Morto (vale da Arabá), vire para o leste até a vila de Qurayqira; o último trecho é uma estrada de cascalho sem asfalto, difícil para carros comuns. O Feynan Ecolodge, ali perto, pode providenciar transporte 4x4 — entre em contato antes de ir. O vale é extremamente quente no verão, então outono ou inverno é melhor; leve bastante água."
+    },
+
+    teman: {
+      name: "Temã (a terra da sabedoria de Edom)",
+      place: "Localização incerta, talvez perto de Bozra",
+      story: "Temã era neto de Esaú, e seu nome depois virou o nome de uma região de Edom. Temã era famosa pela sabedoria; o profeta Jeremias perguntou: \"Por acaso não há mais sabedoria em Temã?\" Quando Jó estava sofrendo, o primeiro dos três amigos que vieram consolá-lo foi \"Elifaz temanita\". Elifaz começou ficando sete dias sentado em silêncio com Jó, mas depois insistiu que Jó só podia estar sofrendo por causa de algum pecado; no fim, Deus disse que eles não tinham falado o que era certo. A localização exata de Temã ainda é incerta, por isso esta é uma fase secreta.",
+      reflect: "O melhor consolo de Elifaz foram os primeiros sete dias em que ficou sentado em silêncio com Jó. Quando um amigo está sofrendo, você tem mais pressa de dar respostas ou está disposto a simplesmente ficar ao lado dele primeiro?",
+      mission: "🔒 Missão secreta: Leia Jó 2.11–13 e 42.7–9 e depois volte para o quiz.",
+      quiz: { q: "Qual dos amigos de Jó era de Temã?", options: ["Elifaz", "Bildade", "Zofar"] },
       howto: "Esta é uma fase secreta: a localização exata é desconhecida, então não é preciso ir até lá. Responda o quiz corretamente para ganhar o carimbo."
     }
   },

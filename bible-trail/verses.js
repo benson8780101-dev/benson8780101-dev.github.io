@@ -49,6 +49,14 @@ window.VERSES = {
   "en": "When the inhabitants of Jabesh Gilead heard concerning him that which the Philistines had done to Saul, all the valiant men arose, and went all night, and took the body of Saul and the bodies of his sons from the wall of Beth Shan; and they came to Jabesh, and burnt them there. They took their bones, and buried them under the tamarisk tree in Jabesh, and fasted seven days.",
   "pt": "Mas ouvindo os de Jabes de Gileade isto que os filisteus fizeram a Saul, Todos os homens valentes se levantaram, e andaram toda aquela noite, e tiraram o corpo de Saul e os corpos de seus filhos do muro de Bete-Seã; e vindo a Jabes, queimaram-nos ali. E tomando seus ossos, sepultaram-nos debaixo de uma árvore em Jabes, e jejuaram durante sete dias."
  },
+ "2 Kgs 14:7": {
+  "zhRef": "列王紀下 14:7",
+  "enRef": "2 Kings 14:7",
+  "ptRef": "2 Reis 14:7",
+  "zh": "亞瑪謝在鹽谷殺了以東人一萬，又攻取了西拉，改名叫約帖，直到今日。",
+  "en": "He killed of Edom in the Valley of Salt ten thousand, and took Sela by war, and called its name Joktheel, to this day.",
+  "pt": "Este feriu também dez mil edomitas no vale das salinas, e tomou a Selá por guerra, e chamou-a Jocteel, até hoje."
+ },
  "2 Kgs 2:11": {
   "zhRef": "列王紀下 2:11",
   "enRef": "2 Kings 2:11",
@@ -137,6 +145,14 @@ window.VERSES = {
   "en": "But I will kindle a fire in the wall of Rabbah, and it will devour its palaces, with shouting in the day of battle, with a storm in the day of the whirlwind;",
   "pt": "Por isso acenderei fogo no muro de Rabá, que consumirá seus palácios com grito no dia de batalha, com tempestade no dia do vento forte."
  },
+ "Deut 1:1": {
+  "zhRef": "申命記 1:1",
+  "enRef": "Deuteronomy 1:1",
+  "ptRef": "Deuteronômio 1:1",
+  "zh": "以下所記的是摩西在約旦河東的曠野、疏弗對面的亞拉巴─就是巴蘭、陀弗、拉班、哈洗錄、底撒哈中間─向以色列眾人所說的話。",
+  "en": "These are the words which Moses spoke to all Israel beyond the Jordan in the wilderness, in the Arabah over against Suf, between Paran, Tophel, Laban, Hazeroth, and Dizahab.",
+  "pt": "Estas são as palavras que falou Moisés a todo Israel desta parte do Jordão no deserto, na planície diante do mar Vermelho, entre Parã, e Tofel, e Labã, e Hazerote, e Di-Zaabe."
+ },
  "Deut 1:5": {
   "zhRef": "申命記 1:5",
   "enRef": "Deuteronomy 1:5",
@@ -144,6 +160,14 @@ window.VERSES = {
   "zh": "摩西在約旦河東的摩押地講律法說：",
   "en": "Beyond the Jordan, in the land of Moab, Moses began to declare this law, saying,",
   "pt": "Desta parte do Jordão, em terra de Moabe, resolveu Moisés declarar esta lei, dizendo:"
+ },
+ "Deut 2:13-14": {
+  "zhRef": "申命記 2:13-14",
+  "enRef": "Deuteronomy 2:13-14",
+  "ptRef": "Deuteronômio 2:13-14",
+  "zh": "現在，起來過撒烈溪！於是我們過了撒烈溪。自從離開加低斯‧巴尼亞，到過了撒烈溪的時候，共有三十八年，等那世代的兵丁都從營中滅盡，正如耶和華向他們所起的誓。",
+  "en": "“Now rise up, and cross over the brook Zered.” We went over the brook Zered. The days in which we came from Kadesh Barnea, until we had come over the brook Zered, were thirty-eight years; until all the generation of the men of war were consumed from the midst of the camp, as Yahweh swore to them.",
+  "pt": "Levantai-vos agora, e passai o ribeiro de Zerede. E passamos o ribeiro de Zerede. E os dias que andamos de Cades-Barneia até que passamos o ribeiro de Zerede, foram trinta e oito anos; até que se acabou toda a geração dos homens de guerra do meio do acampamento, como o SENHOR lhes havia jurado."
  },
  "Deut 2:24": {
   "zhRef": "申命記 2:24",
@@ -305,6 +329,14 @@ window.VERSES = {
   "en": "Esau ran to meet him, embraced him, fell on his neck, kissed him, and they wept.",
   "pt": "E Esaú correu a seu encontro, e abraçou-lhe, e lançou-se sobre seu pescoço, e o beijou; e choraram."
  },
+ "Gen 36:8": {
+  "zhRef": "創世記 36:8",
+  "enRef": "Genesis 36:8",
+  "ptRef": "Gênesis 36:8",
+  "zh": "於是以掃住在西珥山裡；以掃就是以東。",
+  "en": "Esau lived in the hill country of Seir. Esau is Edom.",
+  "pt": "E Esaú habitou no monte de Seir: Esaú é Edom."
+ },
  "Hos 10:14": {
   "zhRef": "何西阿書 10:14",
   "enRef": "Hosea 10:14",
@@ -320,6 +352,14 @@ window.VERSES = {
   "zh": "希實本和以利亞利悲哀的聲音達到雅雜，所以摩押帶兵器的高聲喊嚷，人心戰兢。",
   "en": "Heshbon cries out with Elealeh. Their voice is heard even to Jahaz. Therefore the armed men of Moab cry aloud. Their souls tremble within them.",
   "pt": "Tanto Hesbom como Eleale vão gritando, até Jaaz se ouve sua voz; por causa disso os soldados armados de Moabe gritam, a alma de cada um está abalada dentro de si."
+ },
+ "Isa 63:1": {
+  "zhRef": "以賽亞書 63:1",
+  "enRef": "Isaiah 63:1",
+  "ptRef": "Isaías 63:1",
+  "zh": "這從以東的波斯拉來，穿紅衣服，裝扮華美，能力廣大，大步行走的是誰呢？就是我，是憑公義說話，以大能施行拯救。",
+  "en": "Who is this who comes from Edom, with dyed garments from Bozrah? this who is glorious in his clothing, marching in the greatness of his strength? “It is I who speak in righteousness, mighty to save.”",
+  "pt": "Quem é este, que vem de Edom, de Bozra, com vestes salpicadas de vermelho, este ornado em sua vestimenta, que marcha com grande força? Eu, o que falo em justiça, poderoso para salvar."
  },
  "Jas 5:17": {
   "zhRef": "雅各書 5:17",
@@ -337,6 +377,14 @@ window.VERSES = {
   "en": "Judgment has come on the plain country, on Holon, and on Jahzah, and on Mephaath,",
   "pt": "O julgamento também veio juízo sobre a terra da planície: sobre Holom, sobre Jazá, e sobre Mefate;"
  },
+ "Jer 49:7": {
+  "zhRef": "耶利米書 49:7",
+  "enRef": "Jeremiah 49:7",
+  "ptRef": "Jeremias 49:7",
+  "zh": "論以東。萬軍之耶和華如此說：提幔中再沒有智慧嗎？明哲人不再有謀略嗎？他們的智慧盡歸無有嗎？",
+  "en": "Of Edom. Thus says Yahweh of Armies: Is wisdom no more in Teman? is counsel perished from the prudent? is their wisdom vanished?",
+  "pt": "Sobre Edom.Assim diz o SENHOR dos exércitos: Por acaso não há mais sabedoria em Temã? Pereceu o conselho dos prudentes? Estragou-se sua sabedoria?"
+ },
  "Jer 8:22": {
   "zhRef": "耶利米書 8:22",
   "enRef": "Jeremiah 8:22",
@@ -344,6 +392,14 @@ window.VERSES = {
   "zh": "在基列豈沒有乳香呢？在那裡豈沒有醫生呢？我百姓為何不得痊癒呢？",
   "en": "Is there no balm in Gilead? is there no physician there? why then isn’t the health of the daughter of my people recovered?",
   "pt": "Por acaso não há bálsamo em Gileade, ou não há ali médico? Então por que não houve cura para a filha de meu povo?"
+ },
+ "Job 2:11": {
+  "zhRef": "約伯記 2:11",
+  "enRef": "Job 2:11",
+  "ptRef": "Jó 2:11",
+  "zh": "約伯的三個朋友─提幔人以利法、書亞人比勒達、拿瑪人瑣法─聽說有這一切的災禍臨到他身上，各人就從本處約會同來，為他悲傷，安慰他。",
+  "en": "Now when Job’s three friends heard of all this evil that had come on him, they each came from his own place: Eliphaz the Temanite, Bildad the Shuhite, and Zophar the Naamathite, and they made an appointment together to come to sympathize with him and to comfort him.",
+  "pt": "Quando três amigos de Jó, Elifaz temanita, Bildade suíta, e Zofar naamita, ouviram todo este mal que lhe tinha vindo sobre ele, vieram cada um de seu lugar; porque haviam combinado de juntamente virem para se condoerem dele, e o consolarem."
  },
  "John 10:40": {
   "zhRef": "約翰福音 10:40",
@@ -360,6 +416,14 @@ window.VERSES = {
   "zh": "這是在約旦河外伯大尼，約翰施洗的地方作的見證。",
   "en": "These things were done in Bethany beyond the Jordan, where John was baptizing.",
   "pt": "Estas coisas aconteceram em Betábara, do outro lado do Jordão, onde João estava batizando."
+ },
+ "John 3:14": {
+  "zhRef": "約翰福音 3:14",
+  "enRef": "John 3:14",
+  "ptRef": "João 3:14",
+  "zh": "摩西在曠野怎樣舉蛇，人子也必照樣被舉起來……",
+  "en": "As Moses lifted up the serpent in the wilderness, even so must the Son of Man be lifted up,",
+  "pt": "E como Moisés levantou a serpente no deserto, assim deve o Filho do homem ser levantado,"
  },
  "Josh 13:18": {
   "zhRef": "約書亞記 13:18",
@@ -521,6 +585,14 @@ window.VERSES = {
   "en": "We have shot at them. Heshbon has perished even to Dibon. We have laid waste even to Nophah, Which reaches to Medeba.”",
   "pt": "Mas devastamos o reino deles; pereceu Hesbom até Dibom, E destruímos até Nofá e Medeba."
  },
+ "Num 21:9": {
+  "zhRef": "民數記 21:9",
+  "enRef": "Numbers 21:9",
+  "ptRef": "Números 21:9",
+  "zh": "摩西便製造一條銅蛇，掛在杆子上；凡被蛇咬的，一望這銅蛇就活了。",
+  "en": "Moses made a serpent of brass, and set it on the pole. If a serpent had bitten any man, when he looked at the serpent of brass, he lived.",
+  "pt": "E Moisés fez uma serpente de bronze, e a pôs sobre a haste, e foi, que quando alguma serpente mordia a algum, olhava à serpente de bronze, e vivia."
+ },
  "Num 22:1": {
   "zhRef": "民數記 22:1",
   "enRef": "Numbers 22:1",
@@ -568,6 +640,14 @@ window.VERSES = {
   "zh": "流便子孫建造希實本、以利亞利、基列亭、尼波、巴力‧免、西比瑪（尼波、巴力‧免，名字是改了的），又給他們所建造的城另起別名。",
   "en": "The children of Reuben built Heshbon, Elealeh, Kiriathaim, Nebo, and Baal Meon, (their names being changed), and Sibmah. They gave other names to the cities which they built.",
   "pt": "E os filhos de Rúben edificaram a Hesbom, e a Eleale, e a Quiriataim, E a Nebo, e a Baal-Meom, (mudados os nomes), e a Sibma: e puseram nomes às cidades que edificaram."
+ },
+ "Num 33:42": {
+  "zhRef": "民數記 33:42",
+  "enRef": "Numbers 33:42",
+  "ptRef": "Números 33:42",
+  "zh": "從撒摩拿起行，安營在普嫩。",
+  "en": "They traveled from Zalmonah, and encamped in Punon.",
+  "pt": "E partidos de Zalmona, assentaram em Punom."
  },
  "Ruth 1:1": {
   "zhRef": "路得記 1:1",
@@ -714,5 +794,29 @@ window.PHOTOS = {
   "artist": "Disdero",
   "license": "CC BY-SA 2.5",
   "page": "https://commons.wikimedia.org/wiki/File:SaltPillarDeadSea.jpg"
+ },
+ "bozrah": {
+  "src": "img/bozrah.jpg",
+  "artist": "No machine-readable author provided. Uri~commonswiki assumed (based on copyright",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Bazra.JPG"
+ },
+ "sela": {
+  "src": "img/sela.jpg",
+  "artist": "Uri~commonswiki (Uri Juda).",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Sela.JPG"
+ },
+ "tophel": {
+  "src": "img/tophel.jpg",
+  "artist": "No machine-readable author provided. Uri~commonswiki assumed (based on copyright",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Tafila_Tophel.JPG"
+ },
+ "punon": {
+  "src": "img/punon.jpg",
+  "artist": "Joe Roe",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Wadi_Feynan,_May_2014.jpg"
  }
 };

@@ -1,4 +1,4 @@
-// 約旦聖經足跡：試玩版內容（第 1～7 章）
+// 約旦聖經足跡：試玩版內容（第 1～8 章）
 // 每一段文字都有 zh（繁體中文）和 en（英文），兩種語言一定要一起改。
 // 座標來源：OpenBible.info 聖經地理資料庫（CC BY 4.0）；標「approx: true」的是大約位置，待實地確認。
 // certainty：yes＝學者大多同意｜likely＝可能｜tradition＝傳統說法｜area＝一整個區域｜unknown＝位置不確定
@@ -89,6 +89,18 @@ window.CHAPTERS = [
     badge: "🌾",
     required: ["kerak"],
     bonus: ["ruthmoab", "ar", "lotcave", "zoar", "sodom"]
+  },
+  {
+    id: "ch8",
+    no: 8,
+    title: { zh: "以東之地", en: "The Land of Edom" },
+    intro: {
+      zh: "過了撒烈溪，就進入以掃的後代以東人的地。以東的意思是「紅」，這一帶的山也真的是紅色的。以色列人在這裡結束了三十八年的曠野漂流，也在這條路上仰望摩西舉起的銅蛇。",
+      en: "Beyond the Brook Zered lies the land of Esau's descendants, the Edomites. Edom means 'red,' and the mountains here really are red. Here Israel's thirty-eight years of wandering came to an end, and along this road they looked up at the bronze serpent Moses lifted high."
+    },
+    badge: "🐍",
+    required: ["zered", "bozrah"],
+    bonus: ["tophel", "sela", "punon", "teman"]
   }
 ];
 
@@ -1380,6 +1392,189 @@ window.STATIONS = {
       en: "This is a hidden level: the exact location is unknown, so you don't need to visit. Answer the quiz correctly to unlock the stamp."
     },
     photo: "sodom"
+  },
+
+  zered: {
+    name: { zh: "撒烈溪（Wadi al-Hasa）", en: "The Brook Zered (Wadi al-Hasa)" },
+    place: { zh: "摩押和以東交界的大峽谷，君王大道從谷底穿過", en: "The great canyon on the border of Moab and Edom, crossed by the King's Highway" },
+    lat: 30.965, lng: 35.7307, radius: 3000, approx: true,
+    points: [{ lat: 31.02701, lng: 35.48533 }],
+    certainty: "yes",
+    verses: ["Deut 2:13-14"],
+    story: {
+      zh: "撒烈溪是摩押南邊的界河，過了河就是以東。神對以色列人說：「現在，起來過撒烈溪！」摩西接著寫下一句很重的話：從加低斯巴尼亞出來，到過撒烈溪，一共三十八年，等到那一代不信神、不敢進迦南的戰士都死光了。也就是說，走到這條溪邊，曠野漂流才真正結束，新的一代開始往應許之地前進。今天這條峽谷叫 Wadi al-Hasa，君王大道要彎彎曲曲下到谷底再爬上去；峽谷的出口在死海南端、靠近瑣珥。",
+      en: "The Zered was the border stream at Moab's southern edge; beyond it lay Edom. God told Israel, 'Rise up and cross over the brook Zered.' Then Moses added a sobering line: from leaving Kadesh Barnea until crossing the Zered took thirty-eight years—until the whole generation of fighting men who had refused to trust God and enter Canaan had died. In other words, reaching this stream marked the real end of the wilderness wandering, as a new generation began moving toward the Promised Land. Today the canyon is called Wadi al-Hasa; the King's Highway winds down to the bottom and climbs out again, and the canyon opens onto the south end of the Dead Sea near Zoar."
+    },
+    reflect: {
+      zh: "三十八年繞圈子，才走到這條溪邊。你生命中有沒有一段「繞了很久」的路？回頭看，神在那段路上教了你什麼？",
+      en: "Thirty-eight years of going in circles before reaching this stream. Is there a stretch of your life where you 'wandered' a long time? Looking back, what did God teach you on that road?"
+    },
+    mission: {
+      zh: "🏞️ 任務：在君王大道下到谷底的路上，找安全的地方停車，看看峽谷有多深。想像幾十萬以色列人帶著牛羊，從這裡走下去再爬上來。",
+      en: "🏞️ Mission: On the King's Highway descent, find a safe place to pull over and see how deep the canyon is. Imagine hundreds of thousands of Israelites with their flocks walking down and climbing back up here."
+    },
+    quiz: {
+      q: { zh: "從加低斯巴尼亞到過撒烈溪，以色列人走了多少年？", en: "How many years passed from Kadesh Barnea to crossing the Zered?" },
+      options: [{ zh: "七年", en: "Seven years" }, { zh: "三十八年", en: "Thirty-eight years" }, { zh: "四十年", en: "Forty years" }],
+      answer: 1
+    },
+    howto: {
+      zh: "從卡拉克沿君王大道（35 號公路）往南開約 40 分鐘，公路會下到峽谷底再爬上南岸，整段都在蓋章範圍內。另一個蓋章點在死海公路南段、Ghor es-Safi 附近的峽谷出口，可以和瑣珥、羅得洞排在一起。山路彎多又陡，慢慢開。",
+      en: "From Kerak, drive about 40 minutes south on the King's Highway (Route 35); the road drops to the canyon floor and climbs the south side, and the whole stretch counts. The other stamp point is the canyon mouth on the southern Dead Sea highway near Ghor es-Safi—easy to combine with Zoar and Lot's Cave. The mountain road is steep with many bends, so drive slowly."
+    },
+    photo: null
+  },
+
+  bozrah: {
+    name: { zh: "波斯拉（以東的京城）", en: "Bozrah (Capital of Edom)" },
+    place: { zh: "Busayra 村旁的以東王城遺址", en: "Ruins of the Edomite royal city beside the village of Busayra" },
+    lat: 30.7384, lng: 35.6064, radius: 1000,
+    certainty: "yes",
+    verses: ["Isa 63:1", "Gen 36:8"],
+    story: {
+      zh: "以東人是以掃的後代。以掃曾經為了一碗紅豆湯賣了長子的名分，所以又叫「以東」，意思是「紅」。波斯拉是以東最重要的城，創世記列出的以東王裡就有一位來自波斯拉。先知們常拿波斯拉代表整個以東，以賽亞書 63 章有一幅很震撼的畫面：「這從以東的波斯拉來，穿紅衣服……是誰呢？」那是一位為百姓伸冤、得勝歸來的戰士，許多基督徒把這段讀成彌賽亞的預表。1970 年代考古學家在這裡挖出以東時期的宮殿和神廟，證明這裡曾經是以東的首都。",
+      en: "The Edomites descended from Esau. Esau once sold his birthright for a bowl of red stew, so he was also called Edom, meaning 'red.' Bozrah was Edom's most important city; one of the Edomite kings listed in Genesis came from Bozrah. The prophets often used Bozrah to stand for all of Edom, and Isaiah 63 paints a striking picture: 'Who is this who comes from Edom, with dyed garments from Bozrah?' It is a victorious warrior returning after bringing justice for his people, a passage many Christians read as pointing to the Messiah. In the 1970s archaeologists uncovered an Edomite-period palace and temple here, confirming it was once Edom's capital."
+    },
+    reflect: {
+      zh: "以掃為了一時的飢餓，放掉了長遠的祝福。你最近有沒有為了眼前的「一碗湯」，差點放掉更重要的東西？",
+      en: "Esau gave up a lasting blessing for a moment's hunger. Have you recently been tempted to trade something important for a 'bowl of stew' right in front of you?"
+    },
+    mission: {
+      zh: "🔴 任務：看看遺址四周岩石和泥土的顏色，找找看哪裡最「紅」。以東（紅）這個名字，也很符合這一帶紅色的山。",
+      en: "🔴 Mission: Look at the color of the rocks and soil around the ruins and find the 'reddest' spot. The name Edom ('red') suits the red mountains of this region."
+    },
+    quiz: {
+      q: { zh: "「以東」這個名字是什麼意思？", en: "What does the name 'Edom' mean?" },
+      options: [{ zh: "紅", en: "Red" }, { zh: "山", en: "Mountain" }, { zh: "長子", en: "Firstborn" }],
+      answer: 0
+    },
+    howto: {
+      zh: "在塔菲拉南邊約 20 分鐘車程的 Busayra 村，沿君王大道就會經過。遺址就在村子旁邊，沒有遊客中心，也沒有門票，看得到石牆和房間的基礎。往西不遠就是丹娜自然保護區，可以排在同一天。",
+      en: "In the village of Busayra, about 20 minutes' drive south of Tafila along the King's Highway. The ruins are right beside the village, with no visitor center or ticket; you can see stone walls and room foundations. The Dana Biosphere Reserve is a short way west, so you can combine them in one day."
+    },
+    photo: "bozrah"
+  },
+
+  tophel: {
+    name: { zh: "陀弗（塔菲拉）", en: "Tophel (Tafila)" },
+    place: { zh: "以東高原上的塔菲拉市", en: "The town of Tafila on the Edomite highlands" },
+    lat: 30.8375, lng: 35.604167, radius: 2500,
+    certainty: "unknown",
+    verses: ["Deut 1:1"],
+    story: {
+      zh: "申命記一開頭就說，這是摩西在約旦河東的曠野，在「巴蘭、陀弗、拉班、哈洗錄、底撒哈中間」對以色列眾人說的話。陀弗只在聖經出現這一次，因為名字跟今天的塔菲拉（Tafila）很像，有人認為就是這裡，但學者還沒有定論。塔菲拉是約旦南部的山城，四周是橄欖園，冬天有時還會下雪。",
+      en: "Deuteronomy opens by saying these are the words Moses spoke to all Israel in the wilderness east of the Jordan, 'between Paran, Tophel, Laban, Hazeroth, and Dizahab.' Tophel appears only once in the Bible. Because the name sounds so much like today's Tafila, some think this is the place, but scholars haven't settled it. Tafila is a hill town in southern Jordan surrounded by olive groves, and it sometimes even snows here in winter."
+    },
+    reflect: {
+      zh: "陀弗在聖經裡只出現一次，卻被記下來了。在神的故事裡，沒有一個地方、一個人是多餘的。你覺得自己在哪裡被忽略了？神看見了嗎？",
+      en: "Tophel appears just once in the Bible, yet it was recorded. In God's story, no place and no person is superfluous. Where do you feel overlooked? Does God see it?"
+    },
+    mission: {
+      zh: "🫒 任務：在塔菲拉找一片橄欖園，或在市區找間小店喝杯茶，跟當地人聊聊這座城的名字。",
+      en: "🫒 Mission: Find an olive grove in Tafila, or have tea at a small shop in town and chat with locals about the town's name."
+    },
+    quiz: {
+      q: { zh: "陀弗這個地名在聖經裡出現幾次？", en: "How many times does the name Tophel appear in the Bible?" },
+      options: [{ zh: "一次", en: "Once" }, { zh: "七次", en: "Seven times" }, { zh: "五十次", en: "Fifty times" }],
+      answer: 0
+    },
+    howto: {
+      zh: "從卡拉克沿君王大道往南約 1 小時（過了撒烈溪再往上爬）。塔菲拉是省會，有加油站、餐廳和商店，適合在這裡休息、吃午餐。⚠️ 陀弗是不是塔菲拉還沒有定論，蓋章是紀念申命記開頭的這段話。",
+      en: "About 1 hour south of Kerak on the King's Highway (climbing up after the Zered canyon). Tafila is a provincial capital with gas stations, restaurants and shops—a good place for a break and lunch. ⚠️ Whether Tophel is Tafila isn't settled; this stamp remembers the opening lines of Deuteronomy."
+    },
+    photo: "tophel"
+  },
+
+  sela: {
+    name: { zh: "西拉（以東的磐石堡壘）", en: "Sela (Edom's Rock Fortress)" },
+    place: { zh: "as-Sela 村旁的岩山堡壘", en: "The rock-mountain fortress beside the village of as-Sela" },
+    lat: 30.7819, lng: 35.5754, radius: 1000,
+    certainty: "likely",
+    noFacilities: true,
+    verses: ["2 Kgs 14:7"],
+    story: {
+      zh: "「西拉」的意思就是「磐石」。猶大王亞瑪謝在鹽谷殺了一萬以東人，又攻取了西拉，改名叫約帖。這座岩山四面幾乎都是峭壁，只有一條在岩縫裡鑿出來的階梯可以上去，難怪俄巴底亞先知形容以東人「住在山穴中、居所在高處」，以為沒人拉得下他們。在山壁上很高的地方，還刻著巴比倫最後一位王拿波尼度的浮雕和銘文，大約是主前六世紀刻的，學者要用繩索垂降才能靠近研究。",
+      en: "'Sela' means 'rock.' King Amaziah of Judah killed ten thousand Edomites in the Valley of Salt, then captured Sela and renamed it Joktheel. This rock mountain is almost entirely surrounded by cliffs, with just one staircase cut into a cleft in the rock leading up—no wonder the prophet Obadiah described Edom as 'you who dwell in the clefts of the rock, whose habitation is high,' thinking no one could bring them down. High on the cliff face is a relief and inscription of Nabonidus, the last king of Babylon, carved around the 6th century BC; researchers have had to rappel down on ropes to study it."
+    },
+    reflect: {
+      zh: "以東人以為住在高高的磐石上就很安全。你最常把安全感建立在什麼「磐石」上？是存款、能力、人脈，還是神？",
+      en: "Edom thought living high on the rock made them safe. What 'rock' do you most often build your sense of security on—savings, skills, connections, or God?"
+    },
+    mission: {
+      zh: "🧗 任務：從村子這邊看看整座岩山，找找看岩縫裡的階梯從哪裡開始。眼力好的話，試著在峭壁上找拿波尼度的浮雕。",
+      en: "🧗 Mission: Take in the whole rock mountain from the village side and look for where the staircase in the cleft begins. If your eyes are sharp, try to spot Nabonidus' relief on the cliff."
+    },
+    quiz: {
+      q: { zh: "「西拉」這個名字是什麼意思？", en: "What does the name 'Sela' mean?" },
+      options: [{ zh: "鹽", en: "Salt" }, { zh: "磐石", en: "Rock" }, { zh: "高塔", en: "Tower" }],
+      answer: 1
+    },
+    howto: {
+      zh: "⚠️ 沒有遊客設施，能不能上去、路況如何都還沒確認。在塔菲拉和波斯拉之間，從君王大道往西轉進 as-Sela 村。上山只有岩縫裡的古老階梯，又陡又窄，不建議單獨攀爬，也不要在雨天去。在村子這邊看岩山就可以蓋章。",
+      en: "⚠️ No visitor facilities; access and conditions haven't been confirmed. It's between Tafila and Bozrah—turn west off the King's Highway into the village of as-Sela. The only way up is an ancient staircase in a rock cleft, steep and narrow; don't climb alone, and avoid rainy days. Viewing the rock from the village is enough to earn the stamp."
+    },
+    photo: "sela"
+  },
+
+  punon: {
+    name: { zh: "普嫩（Feinan 銅礦谷）", en: "Punon (The Copper Valley of Feinan)" },
+    place: { zh: "亞拉巴谷東邊的 Khirbet Faynan 遺址", en: "The ruins of Khirbet Faynan on the east side of the Arabah valley" },
+    lat: 30.62775, lng: 35.493647, radius: 1500,
+    certainty: "yes",
+    noFacilities: true,
+    verses: ["Num 33:42", "Num 21:9", "John 3:14"],
+    story: {
+      zh: "以色列人在曠野的路線表裡，有一站就是普嫩。這裡是古代中東最大的銅礦區之一，山谷裡到處是黑色的煉銅爐渣。民數記 21 章記載，百姓繞著以東地走、心裡煩躁、埋怨神，就有火蛇進到營中；摩西照神的吩咐造了一條銅蛇掛在杆子上，被咬的人一望，就活了。聖經沒說銅蛇是在哪裡造的，但因為普嫩就在這條路上、又盛產銅，有學者推測跟這裡有關。耶穌後來說：「摩西在曠野怎樣舉蛇，人子也必照樣被舉起來。」到了羅馬時代，這裡叫 Phaeno，史學家優西比烏記載，有基督徒因為信仰被判到這裡的銅礦做苦工，甚至殉道。",
+      en: "One of the stops in Israel's wilderness itinerary is Punon. This was one of the largest copper-mining areas of the ancient Middle East, and the valley is still scattered with black copper slag. Numbers 21 records that as the people went around Edom, they grew impatient and complained against God, and fiery serpents came into the camp; at God's command Moses made a bronze serpent and set it on a pole, and anyone bitten who looked at it lived. The Bible doesn't say where the serpent was made, but because Punon lay on this route and was rich in copper, some scholars suggest a link. Jesus later said, 'As Moses lifted up the serpent in the wilderness, even so must the Son of Man be lifted up.' In Roman times the place was called Phaeno, and the historian Eusebius records that Christians were sentenced to hard labor in its copper mines for their faith, and some were martyred here."
+    },
+    reflect: {
+      zh: "被蛇咬的人不用做什麼大事，只要「望一望」就得救。你是不是常常想靠自己努力解決問題，卻忘了抬頭仰望？",
+      en: "Those who were bitten didn't have to do anything great—they only had to look. Do you often try to fix things by your own effort and forget to look up?"
+    },
+    mission: {
+      zh: "⚒️ 任務：在地上找找看黑色、像玻璃一樣的煉銅爐渣（看就好，不要帶走），想像幾千年來在這裡挖礦、煉銅的人。",
+      en: "⚒️ Mission: Look on the ground for black, glassy copper slag (look only—don't take any) and imagine the people who mined and smelted copper here over thousands of years."
+    },
+    quiz: {
+      q: { zh: "摩西在曠野舉起的是什麼？", en: "What did Moses lift up in the wilderness?" },
+      options: [{ zh: "一根杖", en: "A staff" }, { zh: "一條銅蛇", en: "A bronze serpent" }, { zh: "約櫃", en: "The Ark of the Covenant" }],
+      answer: 1
+    },
+    howto: {
+      zh: "⚠️ 遺址沒有遊客設施，路況還沒確認。從死海公路南段（亞拉巴谷公路）往東轉進 Qurayqira 村，最後一段是沒有鋪柏油的碎石路，一般車不好走；附近的 Feynan 生態旅館可以安排四輪傳動車，出發前先聯絡確認。谷底夏天非常熱，最好秋冬去，帶足水。",
+      en: "⚠️ No visitor facilities at the ruins, and road conditions haven't been confirmed. From the southern Dead Sea (Wadi Araba) highway, turn east into the village of Qurayqira; the last stretch is an unpaved gravel track that's hard on ordinary cars. The nearby Feynan Ecolodge can arrange 4x4 transport—contact them before you go. The valley is extremely hot in summer, so autumn or winter is best; bring plenty of water."
+    },
+    photo: "punon"
+  },
+
+  teman: {
+    name: { zh: "提幔（以東的智慧之地）", en: "Teman (Edom's Land of Wisdom)" },
+    place: { zh: "位置不確定，可能在波斯拉一帶", en: "Location uncertain, possibly around Bozrah" },
+    hidden: true,
+    certainty: "unknown",
+    verses: ["Jer 49:7", "Job 2:11"],
+    story: {
+      zh: "提幔是以掃的孫子，他的名字後來變成以東一個地區的名字。提幔以智慧出名，耶利米先知問：「提幔中再沒有智慧嗎？」約伯受苦的時候，來安慰他的三個朋友裡，第一位就是「提幔人以利法」。以利法一開始陪約伯安靜坐了七天，後來卻一直說約伯一定是犯了罪才受苦，最後神說他們講的不對。提幔確切在哪裡，學者還不確定，所以這是隱藏關卡。",
+      en: "Teman was a grandson of Esau, and his name later became the name of a region of Edom. Teman was famous for wisdom; the prophet Jeremiah asked, 'Is wisdom no more in Teman?' When Job was suffering, the first of the three friends who came to comfort him was 'Eliphaz the Temanite.' Eliphaz began by sitting silently with Job for seven days, but then kept insisting Job must have sinned to suffer so; in the end God said they had not spoken rightly. Teman's exact location is uncertain, so this is a hidden level."
+    },
+    reflect: {
+      zh: "以利法最好的安慰，是剛開始陪約伯安靜坐著的那七天。朋友受苦的時候，你比較常急著給答案，還是願意先陪著？",
+      en: "Eliphaz's best comfort was the first seven days he sat silently with Job. When a friend is suffering, are you quicker to give answers, or willing to simply stay with them first?"
+    },
+    mission: {
+      zh: "🔒 隱藏任務：讀完約伯記 2 章 11～13 節和 42 章 7～9 節，再回來答題。",
+      en: "🔒 Hidden mission: Read Job 2:11–13 and 42:7–9, then come back for the quiz."
+    },
+    quiz: {
+      q: { zh: "約伯的朋友裡，誰是提幔人？", en: "Which of Job's friends was from Teman?" },
+      options: [{ zh: "以利法", en: "Eliphaz" }, { zh: "比勒達", en: "Bildad" }, { zh: "瑣法", en: "Zophar" }],
+      answer: 0
+    },
+    howto: {
+      zh: "這是隱藏關卡：確切位置不知道，不需要到現場。答對上面的問答就能解鎖印章。",
+      en: "This is a hidden level: the exact location is unknown, so you don't need to visit. Answer the quiz correctly to unlock the stamp."
+    },
+    photo: null
   }
 };
 
