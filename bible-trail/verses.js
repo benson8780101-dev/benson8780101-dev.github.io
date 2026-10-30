@@ -64,7 +64,7 @@ window.VERSES = {
  "Deut 34:1": {
   "zhRef": "申命記 34:1",
   "enRef": "Deuteronomy 34:1",
-  "zh": "摩西從摩押平原登尼波山，上了那與耶利哥相對的毘斯迦山頂。耶和華把基列全地直到但，",
+  "zh": "摩西從摩押平原登尼波山，上了那與耶利哥相對的毘斯迦山頂。耶和華把基列全地直到但……",
   "en": "Moses went up from the plains of Moab to Mount Nebo, to the top of Pisgah, that is over against Jericho. Yahweh showed him all the land of Gilead, to Dan,"
  },
  "Deut 34:4": {
@@ -148,7 +148,7 @@ window.VERSES = {
  "2 Sam 12:26-27": {
   "zhRef": "撒母耳記下 12:26-27",
   "enRef": "2 Samuel 12:26-27",
-  "zh": "約押攻取亞捫人的京城拉巴。約押打發使者去見大衛，說：「我攻打拉巴，取其水城。",
+  "zh": "約押攻取亞捫人的京城拉巴。約押打發使者去見大衛，說：「我攻打拉巴，取其水城。……」",
   "en": "Now Joab fought against Rabbah of the children of Ammon, and took the royal city. Joab sent messengers to David, and said, “I have fought against Rabbah. Yes, I have taken the city of waters."
  },
  "Amos 1:14": {
@@ -160,7 +160,7 @@ window.VERSES = {
  "Num 32:35": {
   "zhRef": "民數記 32:35",
   "enRef": "Numbers 32:35",
-  "zh": "亞他錄‧朔反、雅謝、約比哈、",
+  "zh": "亞他錄‧朔反、雅謝、約比哈……",
   "en": "Atrothshophan, Jazer, Jogbehah,"
  },
  "Judg 8:11": {
@@ -186,6 +186,78 @@ window.VERSES = {
   "enRef": "Matthew 4:25",
   "zh": "當下，有許多人從加利利、低加坡里、耶路撒冷、猶太、約旦河外來跟著他。",
   "en": "Great multitudes from Galilee, Decapolis, Jerusalem, Judea and from beyond the Jordan followed him."
+ },
+ "Gen 31:49": {
+  "zhRef": "創世記 31:49",
+  "enRef": "Genesis 31:49",
+  "zh": "又叫米斯巴，意思說：「我們彼此離別以後，願耶和華在你我中間鑒察。……」",
+  "en": "and Mizpah, for he said, “Yahweh watch between me and you, when we are absent one from another."
+ },
+ "Gen 32:1-2": {
+  "zhRef": "創世記 32:1-2",
+  "enRef": "Genesis 32:1-2",
+  "zh": "雅各仍舊行路，　神的使者遇見他。雅各看見他們就說：「這是　神的軍兵」，於是給那地方起名叫瑪哈念（就是二軍兵的意思）。",
+  "en": "Jacob went on his way, and the angels of God met him. When he saw them, Jacob said, “This is God’s army.” He called the name of that place Mahanaim."
+ },
+ "Gen 32:24": {
+  "zhRef": "創世記 32:24",
+  "enRef": "Genesis 32:24",
+  "zh": "只剩下雅各一人。有一個人來和他摔跤，直到黎明。",
+  "en": "Jacob was left alone, and wrestled with a man there until the breaking of the day."
+ },
+ "Gen 32:28": {
+  "zhRef": "創世記 32:28",
+  "enRef": "Genesis 32:28",
+  "zh": "那人說：「你的名不要再叫雅各，要叫以色列；因為你與　神與人較力，都得了勝。」",
+  "en": "He said, “Your name will no longer be called Jacob, but Israel; for you have fought with God and with men, and have prevailed.”"
+ },
+ "Gen 32:30-31": {
+  "zhRef": "創世記 32:30-31",
+  "enRef": "Genesis 32:30-31",
+  "zh": "雅各便給那地方起名叫毘努伊勒（就是　神之面的意思），意思說：「我面對面見了　神，我的性命仍得保全。」日頭剛出來的時候，雅各經過毘努伊勒，他的大腿就瘸了。",
+  "en": "Jacob called the name of the place Peniel: for, he said, “I have seen God face to face, and my life is preserved.” The sun rose on him as he passed over Peniel, and he limped because of his thigh."
+ },
+ "Gen 33:4": {
+  "zhRef": "創世記 33:4",
+  "enRef": "Genesis 33:4",
+  "zh": "以掃跑來迎接他，將他抱住，又摟著他的頸項，與他親嘴，兩個人就哭了。",
+  "en": "Esau ran to meet him, embraced him, fell on his neck, kissed him, and they wept."
+ },
+ "Gen 33:17": {
+  "zhRef": "創世記 33:17",
+  "enRef": "Genesis 33:17",
+  "zh": "雅各就往疏割去，在那裡為自己蓋造房屋，又為牲畜搭棚；因此那地方名叫疏割（就是棚的意思）。",
+  "en": "Jacob traveled to Succoth, built himself a house, and made shelters for his livestock. Therefore the name of the place is called Succoth."
+ },
+ "Judg 8:17": {
+  "zhRef": "士師記 8:17",
+  "enRef": "Judges 8:17",
+  "zh": "又拆了毘努伊勒的樓，殺了那城裡的人。",
+  "en": "He broke down the tower of Penuel, and killed the men of the city."
+ },
+ "Num 22:5": {
+  "zhRef": "民數記 22:5",
+  "enRef": "Numbers 22:5",
+  "zh": "他差遣使者往大河邊的毘奪去，到比珥的兒子巴蘭本鄉那裡，召巴蘭來，說：「有一宗民從埃及出來，遮滿地面，與我對居。……」",
+  "en": "He sent messengers to Balaam the son of Beor, to Pethor, which is by the River, to the land of the children of his people, to call him, saying, “Behold, there is a people who came out of Egypt. Behold, they cover the surface of the earth, and they are staying opposite me."
+ },
+ "1 Kgs 7:46": {
+  "zhRef": "列王紀上 7:46",
+  "enRef": "1 Kings 7:46",
+  "zh": "是遵王命在約旦平原、疏割和撒拉但中間藉膠泥鑄成的。",
+  "en": "The king cast them in the plain of the Jordan, in the clay ground between Succoth and Zarethan."
+ },
+ "Deut 3:16": {
+  "zhRef": "申命記 3:16",
+  "enRef": "Deuteronomy 3:16",
+  "zh": "從基列到亞嫩谷，以谷中為界，直到亞捫人交界的雅博河，我給了流便人和迦得人……",
+  "en": "To the Reubenites and to the Gadites I gave from Gilead even to the valley of the Arnon, the middle of the valley, and its border, even to the river Jabbok, which is the border of the children of Ammon;"
+ },
+ "2 Sam 17:27-29": {
+  "zhRef": "撒母耳記下 17:27-29",
+  "enRef": "2 Samuel 17:27-29",
+  "zh": "大衛到了瑪哈念，亞捫族的拉巴人拿轄的兒子朔比，羅‧底巴人亞‧米利的兒子瑪吉，基列的羅基琳人巴西萊，帶著被、褥、盆、碗、瓦器、小麥、大麥、麥麵、炒穀、豆子、紅豆、炒豆、蜂蜜、奶油、綿羊、奶餅，供給大衛和跟隨他的人吃；他們說：「民在曠野，必飢渴困乏了。」",
+  "en": "When David had come to Mahanaim, Shobi the son of Nahash of Rabbah of the children of Ammon, and Machir the son of Ammiel of Lodebar, and Barzillai the Gileadite of Rogelim, brought beds, basins, earthen vessels, wheat, barley, meal, parched grain, beans, lentils, roasted grain, honey, butter, sheep, and cheese of the herd, for David, and for the people who were with him, to eat: for they said, “The people are hungry, and weary, and thirsty, in the wilderness.”"
  }
 };
 window.PHOTOS = {
@@ -242,5 +314,17 @@ window.PHOTOS = {
   "artist": "Bernard Gagnon",
   "license": "CC BY-SA 4.0",
   "page": "https://commons.wikimedia.org/wiki/File:Roman_theater_of_Amman_01.jpg"
+ },
+ "jabbok": {
+  "src": "img/jabbok.jpg",
+  "artist": "Jim Greenhill, U.S. Army",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Landscape_of_Jordan.JPG"
+ },
+ "penuel": {
+  "src": "img/penuel.jpg",
+  "artist": "Eugène Delacroix（畫作 painting）, Wikimedia Commons",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lutte_de_Jacob_avec_l%27Ange.jpg"
  }
 };

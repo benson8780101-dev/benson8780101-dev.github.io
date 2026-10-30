@@ -1,10 +1,23 @@
-// 約旦聖經足跡：試玩版內容（第 3、4、5 章）
+// 約旦聖經足跡：試玩版內容（第 2、3、4、5 章）
 // 每一段文字都有 zh（繁體中文）和 en（英文），兩種語言一定要一起改。
 // 座標來源：OpenBible.info 聖經地理資料庫（CC BY 4.0）；標「approx: true」的是大約位置，待實地確認。
 // certainty：yes＝學者大多同意｜likely＝可能｜tradition＝傳統說法｜area＝一整個區域｜unknown＝位置不確定
 // hidden: true＝隱藏關卡：位置不確定，不用到現場，答對問答就解鎖印章（沒有座標、地圖上不顯示）
+// points：同一站有好幾個可以蓋章的地點（例如一整條河），任何一個點的範圍內都算到了
 
 window.CHAPTERS = [
+  {
+    id: "ch2",
+    no: 2,
+    title: { zh: "雅各回家路", en: "Jacob's Road Home" },
+    intro: {
+      zh: "雅各離家二十年，帶著全家回鄉，心裡卻很怕見到被他騙過的哥哥以掃。就在約旦河東這段路上，他遇見天使、跟神摔跤了一整夜，最後和哥哥抱頭痛哭。",
+      en: "After twenty years away, Jacob headed home with his whole family, dreading a meeting with Esau, the brother he had cheated. On this stretch east of the Jordan he met angels, wrestled with God all night, and finally wept in his brother's arms."
+    },
+    badge: "🤼",
+    required: ["jabbok", "succoth"],
+    bonus: ["penuel", "mahanaim", "mizpahgilead"]
+  },
   {
     id: "ch3",
     no: 3,
@@ -44,6 +57,159 @@ window.CHAPTERS = [
 ];
 
 window.STATIONS = {
+  jabbok: {
+    name: { zh: "雅博河（今天的 Zarqa 河）", en: "The Jabbok (Today's Zarqa River)" },
+    place: { zh: "雅博河谷：塔拉勒國王水庫、金子山丘一帶", en: "Jabbok valley: King Talal Dam and Tulul adh-Dhahab area" },
+    lat: 32.1866, lng: 35.6894, radius: 3000, approx: true,
+    points: [{ lat: 32.1897, lng: 35.8018 }],
+    certainty: "yes",
+    verses: ["Gen 32:24", "Gen 32:28", "Gen 33:4"],
+    story: {
+      zh: "雅各在舅舅拉班家住了二十年，帶著妻子、孩子和牲畜回鄉。聽說哥哥以掃帶了四百人來迎接，他嚇壞了。那天夜裡，他讓全家先渡過雅博河的渡口，自己一個人留下。有一個人來和他摔跤，直到黎明；雅各的大腿窩被摸了一下就扭了，他卻說：「你不給我祝福，我就不容你去。」那人就給他改名叫「以色列」。有趣的是，在希伯來文裡，「雅博」和「摔跤」聽起來很像。第二天，以掃跑來抱住他，兩兄弟都哭了。這條河今天叫 Zarqa（藍色的意思），是約旦河的第二大支流。",
+      en: "Jacob had lived twenty years with his uncle Laban. Now he headed home with his wives, children, and flocks—then heard that his brother Esau was coming with four hundred men, and he was terrified. That night he sent his family across the ford of the Jabbok and stayed behind alone. A man wrestled with him until dawn; Jacob's hip was wrenched at a touch, yet he said, 'I won't let you go unless you bless me.' The man renamed him 'Israel.' Interestingly, in Hebrew 'Jabbok' sounds like the word for 'wrestled.' The next day Esau ran to embrace him, and both brothers wept. Today the river is called the Zarqa ('blue'), the Jordan's second-largest tributary."
+    },
+    reflect: {
+      zh: "雅各和哥哥和好之前，先跟神摔了一整夜。你現在有沒有一段需要修復的關係？在去面對那個人之前，你需要先跟神談什麼？",
+      en: "Before reconciling with his brother, Jacob wrestled with God all night. Is there a relationship you need to mend? Before facing that person, what do you need to bring to God first?"
+    },
+    mission: {
+      zh: "🌄 任務：在河谷邊找一個地方，一個人安靜五分鐘。雅各那一夜也是一個人。如果是清晨，看看太陽從哪邊的山升起。",
+      en: "🌄 Mission: Find a spot above the valley and be alone and quiet for five minutes—Jacob was alone that night too. If it's early morning, watch which hills the sun rises over."
+    },
+    quiz: {
+      q: { zh: "雅各在雅博河邊摔跤之後，被改名叫什麼？", en: "After wrestling by the Jabbok, what was Jacob renamed?" },
+      options: [{ zh: "亞伯拉罕", en: "Abraham" }, { zh: "以色列", en: "Israel" }, { zh: "以東", en: "Edom" }],
+      answer: 1
+    },
+    howto: {
+      zh: "雅博河谷很長，這一站有兩個蓋章地點，到任一個都算：① 塔拉勒國王水庫（King Talal Dam），從安曼往傑拉什的路上可以繞過去看；② 約旦河谷 Deir Alla 東邊、河谷出口的「金子山丘」一帶。（App 用的是大約位置，蓋章範圍設得比較大。）",
+      en: "The Jabbok valley is long, so this stop has two check-in areas—either counts: ① King Talal Dam, a short detour on the road from Amman to Jerash; ② the Tulul adh-Dhahab area where the valley opens east of Deir Alla in the Jordan Valley. (Approximate locations, so the check-in range is wide.)"
+    },
+    photo: "jabbok"
+  },
+
+  succoth: {
+    name: { zh: "疏割（雅各搭棚的地方）", en: "Succoth (Where Jacob Built Shelters)" },
+    place: { zh: "Tell Deir Alla 考古土丘，約旦河谷", en: "Tell Deir Alla archaeological mound, Jordan Valley" },
+    lat: 32.1966, lng: 35.62118, radius: 800,
+    certainty: "yes",
+    verses: ["Gen 33:17", "1 Kgs 7:46", "Num 22:5"],
+    story: {
+      zh: "和以掃和好之後，雅各來到疏割，為自己蓋房子，也為牲畜搭棚，所以這地方叫「疏割」，就是「棚」的意思。猶太人的住棚節，用的也是同一個字。幾百年後，所羅門王在「疏割和撒拉但中間」的黏土平原，鑄造聖殿用的銅器。1967 年，荷蘭考古隊在這座土丘上挖到一面寫在灰泥牆上的古文字，裡面竟然提到「比珥的兒子巴蘭」，就是民數記裡那位先知。這是第一次在聖經以外的地方找到巴蘭的名字。",
+      en: "After making peace with Esau, Jacob came to Succoth, built himself a house and made shelters for his livestock—so the place was called 'Succoth,' meaning 'shelters' or 'booths.' The Jewish Feast of Tabernacles uses the same word. Centuries later, King Solomon cast the bronze for the Temple in the clay plain 'between Succoth and Zarethan.' In 1967, Dutch archaeologists excavating this mound found an ancient text written on plaster that names 'Balaam son of Beor'—the very prophet of Numbers. It was the first time Balaam's name was found outside the Bible."
+    },
+    reflect: {
+      zh: "經過那一夜的掙扎和那一場和好，雅各終於在疏割安頓下來。你的生活裡，哪裡是讓你可以停下來、好好休息的「棚」？",
+      en: "After that night of struggle and that reconciliation, Jacob finally settled at Succoth. Where is the 'shelter' in your life where you can stop and truly rest?"
+    },
+    mission: {
+      zh: "🏺 任務：站在土丘上看看四周的農田。這片黏土平原，就是所羅門鑄造聖殿銅器的地方。蹲下來摸摸看這裡的土。",
+      en: "🏺 Mission: Stand on the mound and look over the farmland around it. This clay plain is where Solomon cast the Temple bronzes. Crouch down and feel the soil."
+    },
+    quiz: {
+      q: { zh: "「疏割」是什麼意思？", en: "What does 'Succoth' mean?" },
+      options: [{ zh: "泉水", en: "Springs" }, { zh: "棚", en: "Shelters / booths" }, { zh: "高山", en: "High mountain" }],
+      answer: 1
+    },
+    howto: {
+      zh: "在約旦河谷的 Deir Alla 鎮旁邊，從安曼經鹽城（Salt）開下去大約 1 小時。土丘就在路邊，規模不大，設施很少。河谷夏天非常熱，最好早上去。",
+      en: "Beside the town of Deir Alla in the Jordan Valley, about an hour's drive from Amman via Salt. The mound is right by the road; it's small with few facilities. The valley is very hot in summer—go in the morning."
+    },
+    photo: null
+  },
+
+  penuel: {
+    name: { zh: "毘努伊勒（神之面）", en: "Penuel (The Face of God)" },
+    place: { zh: "金子山丘（Tulul adh-Dhahab）的東丘", en: "The eastern hill of Tulul adh-Dhahab ('Hills of Gold')" },
+    lat: 32.187016, lng: 35.69211, radius: 700,
+    certainty: "likely",
+    noFacilities: true,
+    verses: ["Gen 32:30-31", "Judg 8:17"],
+    story: {
+      zh: "摔跤之後，雅各給這地方起名叫毘努伊勒，意思是「神之面」，因為他說：「我面對面見了神，我的性命仍得保全。」日頭剛出來的時候，他一跛一跛地經過這裡。幾百年後，士師基甸追趕敵人，又累又餓的士兵向毘努伊勒人要餅，城裡的人卻拒絕了，後來基甸就拆了他們的城樓。雅博河在這裡轉了一個大彎，夾著兩座山丘，阿拉伯文叫 Tulul adh-Dhahab，意思是「金子山丘」。許多學者認為東邊這一座就是毘努伊勒。",
+      en: "After the wrestling, Jacob named this place Peniel, 'the face of God,' saying, 'I have seen God face to face, and my life is preserved.' The sun rose as he passed by, limping. Centuries later, when the judge Gideon was chasing the enemy, his exhausted, hungry soldiers asked the people of Penuel for bread—and were refused; afterward Gideon tore down their tower. Here the Jabbok makes a great bend between two hills called Tulul adh-Dhahab, Arabic for 'Hills of Gold.' Many scholars identify the eastern hill as Penuel."
+    },
+    reflect: {
+      zh: "雅各是一跛一跛地走進日出的。有沒有一個傷，後來反而成了你遇見神的記號？",
+      en: "Jacob limped into the sunrise. Is there a wound in your life that later became a sign of meeting God?"
+    },
+    mission: {
+      zh: "🌅 任務：從遠處看看兩座山丘中間的河彎，想像雅各一家在夜裡涉水過河的樣子。",
+      en: "🌅 Mission: From a distance, look at the river bend between the two hills, and imagine Jacob's family wading across in the night."
+    },
+    quiz: {
+      q: { zh: "「毘努伊勒」是什麼意思？", en: "What does 'Penuel' mean?" },
+      options: [{ zh: "神之面", en: "The face of God" }, { zh: "神的家", en: "The house of God" }, { zh: "神的山", en: "The mountain of God" }],
+      answer: 0
+    },
+    howto: {
+      zh: "⚠️ 這是河谷裡的考古山丘，沒有遊客設施，能不能上去還沒確認，坡也很陡。在 Deir Alla 東邊的雅博河谷裡。建議跟熟悉當地的人一起去；下大雨、河水暴漲時不要靠近。",
+      en: "⚠️ An archaeological hill in the river valley with no visitor facilities; access hasn't been confirmed, and the slopes are steep. It's in the Jabbok valley east of Deir Alla. Go with someone who knows the area, and stay away during heavy rain or high water."
+    },
+    photo: "penuel"
+  },
+
+  mahanaim: {
+    name: { zh: "瑪哈念（二軍兵）", en: "Mahanaim (Two Camps)" },
+    place: { zh: "金子山丘（Tulul adh-Dhahab）的西丘", en: "The western hill of Tulul adh-Dhahab" },
+    lat: 32.18575, lng: 35.68667, radius: 700,
+    certainty: "likely",
+    noFacilities: true,
+    verses: ["Gen 32:1-2", "2 Sam 17:27-29"],
+    story: {
+      zh: "雅各在回鄉路上遇見神的使者，就說：「這是神的軍兵」，給這地方起名叫瑪哈念，意思是「二軍兵」。後來瑪哈念變成一座重要的城：掃羅的兒子伊施波設在這裡作王；大衛被兒子押沙龍追殺、最落魄的時候，也逃到這裡。那時，基列人巴西萊和幾個朋友帶著被褥、碗盆、麥子、豆子、蜂蜜、奶油來，說：「民在曠野，必飢渴困乏了。」許多學者認為，金子山丘的西丘就是瑪哈念，但也有其他說法。",
+      en: "On his way home, Jacob met the angels of God and said, 'This is God's army,' naming the place Mahanaim, 'two camps.' Later Mahanaim became an important city: Saul's son Ish-bosheth reigned here, and when David fled from his son Absalom—at his lowest point—he came here too. Barzillai the Gileadite and some friends brought bedding, bowls, wheat, beans, honey, and butter, saying, 'The people are hungry, weary, and thirsty in the wilderness.' Many scholars identify the western hill of Tulul adh-Dhahab as Mahanaim, though there are other proposals."
+    },
+    reflect: {
+      zh: "大衛最落魄的時候，有人帶著被褥和食物來。你身邊有沒有正在「曠野」裡的人？你可以帶點什麼給他？",
+      en: "At David's lowest point, friends came with bedding and food. Is someone around you in the 'wilderness' right now? What could you bring them?"
+    },
+    mission: {
+      zh: "🍯 任務：像巴西萊一樣，帶一點吃的，和同行的人或在這裡遇到的人分享。",
+      en: "🍯 Mission: Like Barzillai, bring some food to share with your companions or someone you meet here."
+    },
+    quiz: {
+      q: { zh: "「瑪哈念」是什麼意思？", en: "What does 'Mahanaim' mean?" },
+      options: [{ zh: "泉水的源頭", en: "Head of the spring" }, { zh: "二軍兵（兩個營）", en: "Two camps" }, { zh: "葡萄園", en: "Vineyards" }],
+      answer: 1
+    },
+    howto: {
+      zh: "⚠️ 和毘努伊勒是一對山丘，在河彎的西邊，一樣沒有遊客設施、能不能上去還沒確認。建議跟熟悉當地的人一起去。",
+      en: "⚠️ The twin of Penuel, on the west side of the river bend; likewise no visitor facilities and access unconfirmed. Go with someone who knows the area."
+    },
+    photo: null
+  },
+
+  mizpahgilead: {
+    name: { zh: "基列的米斯巴（雅各與拉班立約）", en: "Mizpah of Gilead (Jacob and Laban's Covenant)" },
+    place: { zh: "位置不確定，有人推測在鹽城北邊的 Jal'ad 山一帶", en: "Location uncertain; some suggest Mount Jal'ad north of Salt" },
+    hidden: true,
+    certainty: "unknown",
+    verses: ["Gen 31:49"],
+    story: {
+      zh: "雅各帶著全家偷偷離開舅舅拉班，拉班追了七天，在基列山追上他。兩人吵了一架，最後立約，堆了一堆石頭作見證。拉班用亞蘭話叫它「伊迦爾撒哈杜他」，雅各用希伯來話叫它「迦累得」，都是「見證的石堆」的意思；又叫「米斯巴」，就是「守望台」。拉班說：「我們彼此離別以後，願耶和華在你我中間鑒察。」今天這句話常被刻在情侶的項鍊上當成祝福，但它原本是兩個互不信任的人劃下的界線：誰都不可越過這石堆去害對方。這地方確切在哪裡還不知道，所以是隱藏關卡。",
+      en: "Jacob slipped away from his uncle Laban with his whole family; Laban chased him for seven days and caught up in the hill country of Gilead. After a quarrel they made a covenant and piled up stones as a witness. Laban called it Jegar-sahadutha in Aramaic, and Jacob called it Galeed in Hebrew—both mean 'heap of witness.' It was also called Mizpah, 'watchtower,' for Laban said, 'Yahweh watch between me and you, when we are absent one from another.' Today that line is often engraved on couples' necklaces as a blessing, but it was originally a boundary between two men who didn't trust each other: neither would cross the heap to harm the other. Its exact location is unknown, so this is a hidden level."
+    },
+    reflect: {
+      zh: "米斯巴原本是一條讓兩個人可以和平相處的界線。在你的關係裡，有沒有需要好好說清楚、畫出健康界線的地方？",
+      en: "Mizpah was originally a boundary that let two people live in peace. In your relationships, is there somewhere you need to speak clearly and set a healthy boundary?"
+    },
+    mission: {
+      zh: "🔒 隱藏任務：讀完創世記 31 章，看看雅各和拉班到底在吵什麼，再回來答題。",
+      en: "🔒 Hidden mission: Read Genesis 31 to find out what Jacob and Laban were arguing about, then come back for the quiz."
+    },
+    quiz: {
+      q: { zh: "雅各用希伯來話給那堆石頭起的名字是？", en: "What Hebrew name did Jacob give the heap of stones?" },
+      options: [{ zh: "迦累得", en: "Galeed" }, { zh: "伯特利", en: "Bethel" }, { zh: "吉甲", en: "Gilgal" }],
+      answer: 0
+    },
+    howto: {
+      zh: "這是隱藏關卡：確切位置不知道，不需要到現場。答對上面的問答就能解鎖印章。",
+      en: "This is a hidden level: the exact location is unknown, so you don't need to visit. Answer the quiz correctly to unlock the stamp."
+    },
+    photo: null
+  },
+
   citadel: {
     name: { zh: "拉巴：安曼城堡", en: "Rabbah: The Amman Citadel" },
     place: { zh: "Jabal al-Qal'a（城堡山），安曼市中心", en: "Jabal al-Qal'a (Citadel Hill), downtown Amman" },

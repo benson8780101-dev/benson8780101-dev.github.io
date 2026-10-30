@@ -416,7 +416,9 @@ function checkinCard(id) {
     try {
       const pos = await getPosition();
       const st = STATIONS[id];
-      const d = distanceM(pos.coords.latitude, pos.coords.longitude, st.lat, st.lng);
+      // 一站可能有好幾個蓋章點（例如一整條河），取最近的那一個
+      const spots = [{ lat: st.lat, lng: st.lng }].concat(st.points || []);
+      const d = Math.min(...spots.map((p) => distanceM(pos.coords.latitude, pos.coords.longitude, p.lat, p.lng)));
       // GPS 本身有誤差，所以把誤差（最多 300 公尺）也算進範圍裡
       const slack = Math.min(pos.coords.accuracy || 0, 300);
       if (d <= st.radius + slack) return stamp(id, false);
