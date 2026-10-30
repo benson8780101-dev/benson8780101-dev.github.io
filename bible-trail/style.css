@@ -142,3 +142,5 @@ main { flex: 1; position: relative; overflow: hidden; }
 .popup-btn { margin-top: 6px; }
 .legend { font-size: 14px; }
 .legend li { margin: 4px 0; }
+a.btn { text-decoration: none; }
+.popup-btn { margin-top: 6px; gap: 6px; }

@@ -5,6 +5,10 @@
 
 window.PT = {
   chapters: {
+    ch1: {
+      title: "As Colinas de Gileade",
+      intro: "As colinas de carvalhos e oliveiras do norte da Jordânia são a \"Gileade\" da Bíblia, famosa pelo seu bálsamo. Daqui saiu o profeta Elias; aqui Davi chorou pelo filho; e Jesus fez milagres ao redor das cidades de Decápolis desta região."
+    },
     ch2: {
       title: "O Caminho de Volta de Jacó",
       intro: "Depois de vinte anos longe, Jacó voltava para casa com toda a família, com medo de reencontrar Esaú, o irmão que ele havia enganado. Neste trecho a leste do Jordão ele encontrou anjos, lutou com Deus a noite inteira e, por fim, chorou abraçado ao irmão."
@@ -24,6 +28,86 @@ window.PT = {
   },
 
   stations: {
+    gadara: {
+      name: "Gadara (Umm Qais)",
+      place: "Sítio arqueológico de Umm Qais, com vista para o mar da Galileia",
+      story: "Jesus atravessou o mar da Galileia até \"a terra dos gadarenos\" e encontrou dois endemoninhados que viviam entre os sepulcros, tão ferozes que ninguém se atrevia a passar por aquele caminho. Jesus expulsou os demônios; eles pediram para entrar numa grande manada de porcos, e a manada se precipitou pelo despenhadeiro no mar e se afogou. Gadara era uma das cidades de Decápolis — a atual Umm Qais. A cidade fica a cerca de 10 km do lago, então o milagre provavelmente aconteceu nas terras de Gadara à beira da água. Ao lado do teatro de basalto negro, dá para ver todo o mar da Galileia e as Colinas de Golã — justamente a região onde Jesus fez a maior parte do seu ministério.",
+      reflect: "Depois que os dois homens foram curados, o povo da cidade pediu que Jesus fosse embora — eles tinham perdido os porcos. Existe alguma \"perda\" que faz você hesitar em deixar Deus agir na sua vida?",
+      mission: "🌊 Missão: Vá até o mirante do lado oeste e tire uma foto com o mar da Galileia ao fundo. A maioria dos milagres de Jesus aconteceu ao redor do lago que está diante de você.",
+      quiz: { q: "Em quais animais os demônios entraram quando Jesus os expulsou?", options: ["Num rebanho de ovelhas", "Numa manada de porcos", "Num rebanho de bois"] },
+      howto: "No extremo noroeste da Jordânia, cerca de 2 horas de carro de Amã ou 30 minutos de Irbid. A entrada é paga (o Jordan Pass é aceito). Há um restaurante no sítio com vista para o lago. Fica perto da fronteira — leve o passaporte."
+    },
+
+    gerasa: {
+      name: "Gerasa (Jerash)",
+      place: "A antiga cidade de Jerash, cidade romana de Decápolis",
+      story: "Marcos e Lucas chamam o lugar do milagre dos porcos de \"terra dos gerasenos\". Gerasa é a atual Jerash, mas fica a mais de cinquenta quilômetros do mar da Galileia, então a expressão provavelmente se refere ao amplo território controlado por essa grande cidade; os Evangelhos também escrevem o nome do lugar de formas diferentes. O homem curado quis seguir Jesus, mas Jesus o mandou voltar para casa e contar aos seus o que o Senhor tinha feito por ele. Ele anunciou isso por toda a Decápolis, e todos se admiravam. Jerash é uma das cidades romanas mais bem preservadas do mundo, com o Arco de Adriano, a Praça Oval, uma rua de colunatas e mais de uma dúzia de igrejas bizantinas com belos pisos de mosaico.",
+      reflect: "Jesus não deixou o homem segui-lo; mandou-o \"para casa\" contar a sua história. Será que as pessoas que mais precisam ouvir a sua história são a sua própria família e os seus vizinhos?",
+      mission: "⛪ Missão: Encontre o piso de mosaico de uma igreja bizantina (por exemplo, a Igreja dos Santos Cosme e Damião) e veja quais animais aparecem nele. Cristãos deixaram esses mosaicos há mais de 1.400 anos.",
+      quiz: { q: "Onde o homem curado foi anunciar o que Jesus tinha feito por ele?", options: ["Em Jerusalém", "Em Decápolis", "No Egito"] },
+      howto: "Cerca de 50 km ao norte de Amã, mais ou menos uma hora de carro; também há ônibus saindo da Rodoviária Norte de Amã (Tabarbour). A entrada é paga. O sítio é enorme — reserve pelo menos meio dia e leve água, chapéu e sapatos confortáveis."
+    },
+
+    tishbe: {
+      name: "Tisbe: a terra natal de Elias (Mar Elias)",
+      place: "Ruínas de uma igreja no alto de um monte, ao lado da vila de Listib, perto de Ajloun",
+      story: "Em 1 Reis 17, Elias entra no palco da história com uma apresentação de uma linha só: \"Elias, o tisbita, que era dos moradores de Gileade\". Ele disse ao rei Acabe que não haveria chuva nem orvalho a não ser pela sua palavra. Tiago nos lembra que \"Elias era homem sujeito às mesmas paixões que nós\". Os estudiosos ainda discutem onde ficava Tisbe; a tradição a coloca perto da vila de Listib, junto a Ajloun, onde no alto de um monte estão as ruínas de uma igreja bizantina chamada Mar Elias (Santo Elias), um dos locais cristãos de peregrinação da Jordânia. As colinas de carvalhos e oliveiras ao redor são a \"Gileade\" bíblica, famosa pelo seu bálsamo.",
+      reflect: "Elias era um homem comum das montanhas do interior, mas teve coragem de dizer a verdade a um rei. Existe algo ao seu redor que precisa que você diga a verdade com coragem?",
+      mission: "🌳 Missão: Procure restos do piso de mosaico da igreja no alto do monte e depois olhe as colinas ao redor — quantos tipos de árvore você consegue reconhecer?",
+      quiz: { q: "O que Elias disse ao rei Acabe que não cairia?", options: ["Fogo e enxofre", "Orvalho e chuva", "Maná"] },
+      howto: "No alto de um monte junto à vila de Listib, perto de Ajloun, cerca de uma hora e meia de carro de Amã; siga as placas \"Mar Elias\". O sítio é pequeno e tem estacionamento. Dá para combinar com o Castelo de Ajloun no mesmo dia. Venta bastante lá em cima e faz frio no inverno. (Localização aproximada, por isso o raio de check-in é amplo.)"
+    },
+
+    irbid: {
+      name: "Bete-Arbel (Irbid)",
+      place: "Tell Irbid, o monte antigo no centro de Irbid",
+      story: "Ao advertir Israel, o profeta Oseias lembrou uma tragédia que todos conheciam: \"assim como Salmã destruiu a Bete-Arbel no dia da batalha\", quando até mães e filhos foram despedaçados. Muitos estudiosos identificam Bete-Arbel com Tell Irbid, o monte antigo no centro de Irbid — o nome quase não mudou. Hoje Irbid é uma grande cidade universitária no norte da Jordânia, e um antigo prédio de pedra da época otomana, no alto do monte, virou museu.",
+      reflect: "Oseias usou um episódio doloroso da história para lembrar ao povo que confiar na própria força não daria certo. Em que você está se apoiando mais neste momento?",
+      mission: "🏛️ Missão: Suba o monte no centro da cidade e encontre o antigo prédio de pedra (Museu Dar As-Saraya). Debaixo dos seus pés há cidades empilhadas, camada sobre camada, ao longo de milhares de anos.",
+      quiz: { q: "Qual profeta menciona Bete-Arbel?", options: ["Oseias", "Jonas", "Ageu"] },
+      howto: "No centro de Irbid, cerca de 1 hora e 15 minutos de carro de Amã; também há ônibus saindo da Rodoviária Norte de Amã. Confira no local o horário de funcionamento do museu antes de ir."
+    },
+
+    ramoth: {
+      name: "Ramote de Gileade",
+      place: "Tell er-Rumeith, perto de Ramtha",
+      story: "Ramote de Gileade era uma cidade importante a leste do Jordão e uma das três \"cidades de refúgio\", para onde quem tivesse matado alguém sem querer podia fugir e ficar protegido. O rei Acabe ignorou o aviso do profeta Micaías e foi para a batalha disfarçado de soldado comum — mas \"um homem disparou seu arco ao acaso\" e a flecha o atingiu entre as junturas da armadura, e Acabe morreu. Mais tarde o profeta Eliseu enviou um jovem até aqui para ungir Jeú como rei de Israel. Muitos estudiosos a identificam com Tell er-Rumeith, perto de Ramtha, junto à fronteira com a Síria — uma fortaleza de fronteira desde a antiguidade.",
+      reflect: "Acabe achou que um disfarce o livraria da palavra de Deus, mas uma flecha disparada \"ao acaso\" o encontrou. Existe algo que você acha que consegue evitar, mas que na verdade precisa enfrentar de frente?",
+      mission: "🛡️ Missão: Suba no monte e imagine uma antiga cidade de refúgio: para quem não tinha para onde fugir, ver esta cidade era sinal de esperança. (Por favor, fique longe das áreas de controle de fronteira.)",
+      quiz: { q: "O que o rei Acabe fez ao ir para a batalha?", options: ["Vestiu o manto real", "Disfarçou-se", "Ficou na cidade"] },
+      howto: "⚠️ Monte arqueológico sem estrutura para visitantes; o acesso não foi confirmado. Fica perto de Ramtha, junto à fronteira com a Síria: leve o passaporte, siga as orientações da polícia e do exército e fique longe das áreas de controle de fronteira."
+    },
+
+    jabesh: {
+      name: "Jabes de Gileade",
+      place: "Tell el-Maqlub, no vale de Wadi al-Yabis",
+      story: "Naás, rei de Amom, cercou Jabes de Gileade e ofereceu como condição de rendição arrancar o olho direito de cada morador. Quando Saul soube, o Espírito de Deus veio sobre ele, e ele marchou durante a noite para libertar a cidade — sua primeira vitória como rei. Anos depois, Saul caiu no monte Gilboa, e os filisteus penduraram seu corpo no muro de Bete-Seã. Os homens valentes de Jabes nunca esqueceram aquela bondade: andaram a noite inteira, trouxeram de volta os corpos de Saul e de seus filhos, os sepultaram e jejuaram sete dias. Hoje o vale se chama Wadi al-Yabis e ainda carrega o nome \"Jabes\"; muitos estudiosos identificam a cidade com Tell el-Maqlub, no vale.",
+      reflect: "Décadas depois, o povo de Jabes ainda se lembrava da bondade de Saul e arriscou a vida para retribuí-la. Existe alguém que já ajudou você e a quem você poderia agradecer?",
+      mission: "🙏 Missão: Pense em alguém que já ajudou você e mande hoje mesmo uma mensagem de agradecimento.",
+      quiz: { q: "Depois que Saul morreu, o que fizeram os homens valentes de Jabes?", options: ["Renderam-se aos filisteus", "Resgataram e sepultaram o corpo de Saul durante a noite", "Fugiram para Amom"] },
+      howto: "⚠️ Monte arqueológico no vale de Wadi al-Yabis, sem estrutura para visitantes; o acesso não foi confirmado. Fica no caminho de Ajloun descendo para o Vale do Jordão. O check-in vale em qualquer ponto próximo."
+    },
+
+    cherith: {
+      name: "O ribeiro de Querite (os corvos alimentam Elias)",
+      place: "Localização incerta: já foram sugeridos o Wadi al-Yabis e o Wadi Kharrar, junto ao Local do Batismo",
+      story: "Depois que Elias disse a Acabe que não choveria, Deus o mandou esconder-se junto ao ribeiro de Querite, a leste do Jordão. Ele bebia do ribeiro, e os corvos lhe traziam pão e carne de manhã e à tarde. Depois de algum tempo, o ribeiro secou porque não chovia, e Deus o levou para o próximo lugar. A localização exata de Querite é incerta — já foram sugeridos o Wadi al-Yabis e o Wadi Kharrar, junto ao Local do Batismo — por isso esta é uma fase secreta.",
+      reflect: "Só quando o ribeiro secou é que Elias seguiu adiante. Algum \"ribeiro\" em que você se apoiava já secou, e depois você percebeu que Deus estava levando você para frente?",
+      mission: "🔒 Missão secreta: Leia 1 Reis 17 para ver para onde Deus mandou Elias depois que o ribeiro secou e depois volte para o quiz.",
+      quiz: { q: "Junto ao ribeiro de Querite, quem levava comida a Elias?", options: ["Um anjo", "Os corvos", "Uma viúva"] },
+      howto: "Esta é uma fase secreta: a localização exata é desconhecida, então não é preciso ir até lá. Responda o quiz corretamente para ganhar o carimbo."
+    },
+
+    ephraimforest: {
+      name: "O bosque de Efraim (a morte de Absalão)",
+      place: "Localização incerta, nos montes de Gileade, a leste do Jordão",
+      story: "Apesar do nome, este bosque ficava em Gileade, a leste do Jordão. Quando Absalão, filho de Davi, se rebelou, os dois exércitos lutaram no bosque de Efraim, e \"o bosque consumiu mais gente do que a espada\". Montado no seu mulo, Absalão passou debaixo dos galhos espessos de um grande carvalho, ficou preso pela cabeça e pendurado entre o céu e a terra, e Joabe o matou. Quando a notícia chegou a Davi, ele chorava enquanto andava: \"Meu filho Absalão! Meu filho, meu filho Absalão! Quem me dera que eu morresse por ti!\" A localização exata é desconhecida, por isso esta é uma fase secreta.",
+      reflect: "Absalão traiu Davi, mas o coração de Davi se partiu por ele — assim é, muitas vezes, o coração de pai e mãe. O que você poderia fazer hoje pelos seus pais ou pela sua família?",
+      mission: "🔒 Missão secreta: Leia 2 Samuel 18 e depois volte para o quiz.",
+      quiz: { q: "Quando Absalão passou montado no mulo, o que o prendeu?", options: ["Uma videira", "Os galhos espessos de um grande carvalho", "O portão de uma cidade"] },
+      howto: "Esta é uma fase secreta: a localização exata é desconhecida, então não é preciso ir até lá. Responda o quiz corretamente para ganhar o carimbo."
+    },
+
     jabbok: {
       name: "O Jaboque (hoje o rio Zarqa)",
       place: "Vale do Jaboque: região da Represa Rei Talal e de Tulul adh-Dhahab",

@@ -1,4 +1,4 @@
-// 約旦聖經足跡：試玩版內容（第 2、3、4、5 章）
+// 約旦聖經足跡：試玩版內容（第 1～5 章）
 // 每一段文字都有 zh（繁體中文）和 en（英文），兩種語言一定要一起改。
 // 座標來源：OpenBible.info 聖經地理資料庫（CC BY 4.0）；標「approx: true」的是大約位置，待實地確認。
 // certainty：yes＝學者大多同意｜likely＝可能｜tradition＝傳統說法｜area＝一整個區域｜unknown＝位置不確定
@@ -6,6 +6,18 @@
 // points：同一站有好幾個可以蓋章的地點（例如一整條河），任何一個點的範圍內都算到了
 
 window.CHAPTERS = [
+  {
+    id: "ch1",
+    no: 1,
+    title: { zh: "基列山地", en: "The Hills of Gilead" },
+    intro: {
+      zh: "約旦北部長滿橡樹和橄欖樹的山地，就是聖經裡的「基列」，以出產乳香聞名。先知以利亞從這裡出來；大衛在這裡為兒子痛哭；耶穌在這一帶的低加坡里城市行過神蹟。",
+      en: "The oak- and olive-covered hills of northern Jordan are the biblical 'Gilead,' famous for its balm. The prophet Elijah came from here; David wept for his son here; and Jesus worked miracles around the Decapolis cities of this region."
+    },
+    badge: "🌳",
+    required: ["gadara", "gerasa", "tishbe"],
+    bonus: ["irbid", "ramoth", "jabesh", "cherith", "ephraimforest"]
+  },
   {
     id: "ch2",
     no: 2,
@@ -57,6 +69,248 @@ window.CHAPTERS = [
 ];
 
 window.STATIONS = {
+  gadara: {
+    name: { zh: "加大拉（烏姆蓋斯）", en: "Gadara (Umm Qais)" },
+    place: { zh: "Umm Qais 考古遺址，俯瞰加利利海", en: "Umm Qais archaeological site, overlooking the Sea of Galilee" },
+    lat: 32.655998, lng: 35.679352, radius: 1000,
+    certainty: "yes",
+    verses: ["Matt 8:28", "Matt 8:32"],
+    story: {
+      zh: "耶穌渡過加利利海，來到「加大拉人的地方」，遇見兩個被鬼附、住在墳墓裡的人，兇猛到沒有人敢從那條路經過。耶穌把鬼趕出來，鬼央求進入一大群豬，那群豬就闖下山崖、投在海裡淹死了。加大拉是低加坡里的城市之一，就是今天的烏姆蓋斯。這座城離湖邊大約 10 公里，所以神蹟比較可能發生在湖邊屬於加大拉的土地上。站在黑色玄武岩劇場旁邊，可以俯瞰整個加利利海和戈蘭高地，那正是耶穌大部分傳道的地方。",
+      en: "Jesus crossed the Sea of Galilee to 'the country of the Gadarenes' (some manuscripts and translations, including the World English Bible, read 'Gergesenes') and met two demon-possessed men living among the tombs, so fierce that no one dared pass that way. Jesus drove out the demons; they begged to enter a large herd of pigs, and the herd rushed down the steep bank into the sea and drowned. Gadara was one of the Decapolis cities—today's Umm Qais. The town itself is about 10 km from the lake, so the miracle more likely took place on Gadara's land along the shore. Standing beside the black basalt theatre, you can look out over the whole Sea of Galilee and the Golan Heights—the very region where Jesus did most of his ministry."
+    },
+    reflect: {
+      zh: "那兩個人得醫治以後，城裡的人卻央求耶穌離開，因為他們損失了豬群。有沒有什麼「損失」，讓你不太希望神在你的生活中動工？",
+      en: "After the two men were healed, the townspeople begged Jesus to leave—they had lost their pigs. Is there some 'loss' that makes you reluctant to let God work in your life?"
+    },
+    mission: {
+      zh: "🌊 任務：走到西邊的觀景處，拍一張有加利利海的照片。耶穌大部分的神蹟，就發生在你眼前這片湖的周圍。",
+      en: "🌊 Mission: Walk to the western viewpoint and take a photo with the Sea of Galilee in it. Most of Jesus' miracles happened around the lake in front of you."
+    },
+    quiz: {
+      q: { zh: "耶穌趕出來的鬼，進入了什麼動物？", en: "What animals did the demons enter when Jesus cast them out?" },
+      options: [{ zh: "羊群", en: "A flock of sheep" }, { zh: "豬群", en: "A herd of pigs" }, { zh: "牛群", en: "A herd of cattle" }],
+      answer: 1
+    },
+    howto: {
+      zh: "在約旦西北角，從安曼開車約 2 小時，從伊爾比德約 30 分鐘。要買票（約旦通行證 Jordan Pass 可用）。遺址裡有餐廳，可以邊吃邊看湖景。這裡靠近邊境，請帶好護照。",
+      en: "In Jordan's northwest corner, about 2 hours' drive from Amman or 30 minutes from Irbid. There's an entrance fee (the Jordan Pass is accepted). A restaurant on site offers lake views with your meal. It's near the border—carry your passport."
+    },
+    photo: "gadara"
+  },
+
+  gerasa: {
+    name: { zh: "格拉森（傑拉什）", en: "Gerasa (Jerash)" },
+    place: { zh: "傑拉什古城，羅馬時代的低加坡里城市", en: "The ancient city of Jerash, a Roman Decapolis city" },
+    lat: 32.272281, lng: 35.891397, radius: 1200,
+    certainty: "yes",
+    verses: ["Mark 5:1", "Mark 5:19-20"],
+    story: {
+      zh: "馬可福音和路加福音把趕鬼入豬的地方寫成「格拉森人的地方」。格拉森就是今天的傑拉什，但它離加利利海有五十多公里，所以這個說法大概是指這座大城管轄的廣大地區；幾卷福音書的地名寫法也不太一樣。得醫治的人想跟著耶穌走，耶穌卻叫他回家，把主為他做的大事告訴親友。他就在低加坡里傳揚，眾人都希奇。傑拉什是全世界保存最好的羅馬城市之一：有哈德良拱門、橢圓廣場、柱廊大街，還有十幾座拜占庭教堂，地上留著精美的馬賽克。",
+      en: "Mark and Luke call the place of the pig miracle 'the country of the Gerasenes.' Gerasa is today's Jerash, but it lies over fifty kilometers from the Sea of Galilee, so the phrase probably refers to the wide territory this great city controlled; the Gospels also spell the place differently. The healed man wanted to follow Jesus, but Jesus told him to go home and tell his friends what the Lord had done for him. He proclaimed it throughout the Decapolis, and everyone marveled. Jerash is one of the best-preserved Roman cities in the world, with Hadrian's Arch, the Oval Plaza, a colonnaded street, and more than a dozen Byzantine churches with beautiful mosaic floors."
+    },
+    reflect: {
+      zh: "耶穌沒有讓這個人跟著走，而是叫他「回家」去說。對你來說，最需要聽到你故事的，會不會就是你的家人和鄰居？",
+      en: "Jesus didn't let the man follow him; he sent him 'home' to tell his story. Could it be that the people who most need to hear your story are your own family and neighbors?"
+    },
+    mission: {
+      zh: "⛪ 任務：找一座拜占庭教堂的馬賽克地板（例如聖葛斯默與達米安教堂），看看上面有哪些動物。這是一千四百多年前的信徒留下的。",
+      en: "⛪ Mission: Find a Byzantine church mosaic floor (for example, the Church of Saints Cosmas and Damian) and see which animals appear in it. Believers left these more than 1,400 years ago."
+    },
+    quiz: {
+      q: { zh: "得醫治的人，後來在哪裡傳揚耶穌為他做的事？", en: "Where did the healed man go on to proclaim what Jesus had done for him?" },
+      options: [{ zh: "耶路撒冷", en: "Jerusalem" }, { zh: "低加坡里", en: "The Decapolis" }, { zh: "埃及", en: "Egypt" }],
+      answer: 1
+    },
+    howto: {
+      zh: "在安曼北邊約 50 公里，開車約 1 小時；安曼北巴士站（Tabarbour）也有巴士。要買票。遺址很大，至少留半天，帶水、帽子，穿好走的鞋。",
+      en: "About 50 km north of Amman, roughly an hour's drive; buses also run from Amman's North Bus Station (Tabarbour). There's an entrance fee. The site is huge—allow at least half a day, and bring water, a hat, and comfortable shoes."
+    },
+    photo: "gerasa"
+  },
+
+  tishbe: {
+    name: { zh: "提斯比：以利亞的家鄉（Mar Elias）", en: "Tishbe: Elijah's Hometown (Mar Elias)" },
+    place: { zh: "阿傑隆附近 Listib 村旁的山頂教堂遺址", en: "Hilltop church ruins beside Listib village, near Ajloun" },
+    lat: 32.3658, lng: 35.718, radius: 1500, approx: true,
+    certainty: "tradition",
+    verses: ["1 Kgs 17:1", "Jas 5:17", "Jer 8:22"],
+    story: {
+      zh: "列王紀上第 17 章，以利亞突然出現在歷史舞台上，介紹只有一句：「基列寄居的提斯比人以利亞」。他對亞哈王說，這幾年若不是他禱告，必不降露、不下雨。雅各書提醒我們：「以利亞是與我們性情一樣的人」。提斯比確切在哪裡，學者還有不同看法；傳統認為就在阿傑隆附近的 Listib 村，山頂上有一座拜占庭時期的教堂遺跡，叫 Mar Elias（聖以利亞），是約旦的基督教朝聖地之一。滿山的橡樹和橄欖樹，就是聖經裡以乳香聞名的「基列」。",
+      en: "In 1 Kings 17, Elijah bursts onto the stage of history with a one-line introduction: 'Elijah the Tishbite, who was one of the settlers of Gilead.' He told King Ahab there would be neither dew nor rain except at his word. James reminds us that 'Elijah was a man with a nature like ours.' Scholars still debate where Tishbe was; tradition places it near the village of Listib by Ajloun, where a hilltop holds the ruins of a Byzantine church called Mar Elias (Saint Elijah), one of Jordan's Christian pilgrimage sites. The surrounding hills of oak and olive are the biblical 'Gilead,' famous for its balm."
+    },
+    reflect: {
+      zh: "以利亞是從鄉下山區出來的普通人，卻敢對國王說真話。你身邊有沒有一件事，需要你勇敢地說出真話？",
+      en: "Elijah was an ordinary man from the rural hills, yet he dared to speak the truth to a king. Is there something around you that needs you to speak the truth with courage?"
+    },
+    mission: {
+      zh: "🌳 任務：在山頂找找看教堂地板殘留的馬賽克，再看看四周的山，數數看你認得出幾種樹。",
+      en: "🌳 Mission: Look for remnants of the church's mosaic floor on the summit, then look at the hills around you—how many kinds of trees can you identify?"
+    },
+    quiz: {
+      q: { zh: "以利亞對亞哈王說，什麼不會降下？", en: "What did Elijah tell King Ahab would not fall?" },
+      options: [{ zh: "火和硫磺", en: "Fire and sulfur" }, { zh: "露和雨", en: "Dew and rain" }, { zh: "嗎哪", en: "Manna" }],
+      answer: 1
+    },
+    howto: {
+      zh: "在阿傑隆附近 Listib 村旁的山頂，從安曼開車約 1 個半小時，路上有「Mar Elias」的指標。遺址不大，有停車的地方。可以和阿傑隆城堡排在同一天。山上風大，冬天很冷。（App 用的是大約位置，蓋章範圍設得比較大。）",
+      en: "On a hilltop by Listib village near Ajloun, about an hour and a half's drive from Amman; follow signs for 'Mar Elias.' The site is small, with parking. Easy to combine with Ajloun Castle. It's windy up there and cold in winter. (Approximate location, so the check-in range is wide.)"
+    },
+    photo: null
+  },
+
+  irbid: {
+    name: { zh: "伯亞比勒（伊爾比德）", en: "Beth-arbel (Irbid)" },
+    place: { zh: "伊爾比德市中心的古土丘 Tell Irbid", en: "Tell Irbid, the ancient mound in downtown Irbid" },
+    lat: 32.558661, lng: 35.847589, radius: 800,
+    certainty: "likely",
+    verses: ["Hos 10:14"],
+    story: {
+      zh: "先知何西阿警告以色列時，提到一件當時大家都知道的慘事：「就如沙勒幔在爭戰的日子拆毀伯‧亞比勒」，連母親和孩子都被摔死。許多學者認為伯亞比勒就是今天伊爾比德市中心的古土丘 Tell Irbid，名字幾乎沒變。今天伊爾比德是約旦北部的大城，也是大學城；土丘上有一棟鄂圖曼時期的老石頭建築，改成了博物館。",
+      en: "Warning Israel, the prophet Hosea recalled a disaster everyone knew: 'as Shalman destroyed Beth Arbel in the day of battle,' when even mothers and children were dashed to pieces. Many scholars identify Beth-arbel with Tell Irbid, the ancient mound in downtown Irbid—the name has barely changed. Today Irbid is a major city and university town in northern Jordan, and an old Ottoman-era stone building on the mound has become a museum."
+    },
+    reflect: {
+      zh: "何西阿用一場慘痛的歷史提醒百姓：倚靠自己的力量是靠不住的。你現在最倚靠的是什麼？",
+      en: "Hosea used a painful piece of history to remind the people that trusting their own strength would fail them. What are you relying on most right now?"
+    },
+    mission: {
+      zh: "🏛️ 任務：爬上市中心的土丘，找到那棟老石頭建築（Dar As-Saraya 博物館）。你腳下是幾千年來一層一層疊起來的城市。",
+      en: "🏛️ Mission: Climb the mound downtown and find the old stone building (Dar As-Saraya Museum). Beneath your feet are cities stacked layer upon layer over thousands of years."
+    },
+    quiz: {
+      q: { zh: "哪一位先知提到伯亞比勒？", en: "Which prophet mentions Beth-arbel?" },
+      options: [{ zh: "何西阿", en: "Hosea" }, { zh: "約拿", en: "Jonah" }, { zh: "哈該", en: "Haggai" }],
+      answer: 0
+    },
+    howto: {
+      zh: "在伊爾比德市中心，從安曼開車約 1 小時 15 分鐘，安曼北巴士站也有車。博物館開放時間請先向當地確認。",
+      en: "In downtown Irbid, about 1 hour 15 minutes' drive from Amman; buses also run from Amman's North Bus Station. Check the museum's opening hours locally before you go."
+    },
+    photo: "irbid"
+  },
+
+  ramoth: {
+    name: { zh: "基列的拉末", en: "Ramoth-gilead" },
+    place: { zh: "蘭塔（Ramtha）附近的 Tell er-Rumeith", en: "Tell er-Rumeith near Ramtha" },
+    lat: 32.499852, lng: 36.014988, radius: 800,
+    certainty: "likely",
+    noFacilities: true,
+    verses: ["Deut 4:43", "1 Kgs 22:34"],
+    story: {
+      zh: "基列的拉末是約旦河東的重要城市，也是三座「逃城」之一：誤殺人的人可以逃到這裡受保護。亞哈王不聽先知米該雅的警告，喬裝成普通士兵上戰場，結果「有一人隨便開弓」，箭恰巧射進他的甲縫裡，亞哈就死了。後來先知以利沙派一個少年人到這裡，膏耶戶作以色列王。許多學者認為就是今天蘭塔附近的 Tell er-Rumeith，就在敘利亞邊界旁，自古就是邊境要塞。",
+      en: "Ramoth-gilead was an important city east of the Jordan and one of the three 'cities of refuge,' where someone who had killed by accident could flee for protection. King Ahab ignored the prophet Micaiah's warning and went into battle disguised as an ordinary soldier—but 'a certain man drew his bow at random' and the arrow struck him between the joints of his armor, and Ahab died. Later the prophet Elisha sent a young man here to anoint Jehu king of Israel. Many scholars identify it with Tell er-Rumeith near Ramtha, right by the Syrian border—a frontier fortress since ancient times."
+    },
+    reflect: {
+      zh: "亞哈以為喬裝就能躲過神的話，一支「隨便」射出的箭卻找到了他。有沒有什麼事，你以為躲得掉，其實需要正面面對？",
+      en: "Ahab thought a disguise could dodge God's word, yet an arrow shot 'at random' found him. Is there something you think you can avoid that you actually need to face head-on?"
+    },
+    mission: {
+      zh: "🛡️ 任務：站在土丘上想像古代的逃城：走投無路的人，看到這座城就有了盼望。（請不要靠近邊界管制區。）",
+      en: "🛡️ Mission: Stand on the mound and imagine an ancient city of refuge: for someone with nowhere to run, the sight of this city meant hope. (Please stay away from border control zones.)"
+    },
+    quiz: {
+      q: { zh: "亞哈王上戰場時做了什麼？", en: "What did King Ahab do when he went into battle?" },
+      options: [{ zh: "穿上王袍", en: "Wore his royal robes" }, { zh: "喬裝改扮", en: "Disguised himself" }, { zh: "留在城裡", en: "Stayed in the city" }],
+      answer: 1
+    },
+    howto: {
+      zh: "⚠️ 考古土丘，沒有遊客設施，能不能進去還沒確認。在蘭塔附近，靠近敘利亞邊界：請帶護照、遵守軍警指示，不要靠近邊界管制區。",
+      en: "⚠️ An archaeological mound with no visitor facilities; access hasn't been confirmed. It's near Ramtha by the Syrian border: carry your passport, follow police and military instructions, and stay away from border control zones."
+    },
+    photo: null
+  },
+
+  jabesh: {
+    name: { zh: "基列雅比", en: "Jabesh-gilead" },
+    place: { zh: "Wadi al-Yabis 山谷裡的 Tell el-Maqlub", en: "Tell el-Maqlub in the Wadi al-Yabis valley" },
+    lat: 32.40237, lng: 35.6823, radius: 1000,
+    certainty: "likely",
+    noFacilities: true,
+    verses: ["1 Sam 31:11-13"],
+    story: {
+      zh: "亞捫王拿轄圍住基列雅比，開出的投降條件是：剜出城裡每個人的右眼。掃羅聽到後被神的靈感動，連夜出兵救了這座城，這是他作王後的第一場勝仗。多年後，掃羅在基利波山戰死，非利士人把他的屍體釘在伯珊的城牆上。雅比的勇士們沒有忘記當年的恩情，走了一整夜，把掃羅和他兒子們的屍體取回來安葬，又禁食七天。今天這條山谷叫 Wadi al-Yabis，「雅比」的名字還留著；許多學者認為城址就是谷中的 Tell el-Maqlub。",
+      en: "King Nahash of Ammon besieged Jabesh-gilead and offered terms of surrender: he would gouge out every citizen's right eye. When Saul heard, the Spirit of God came upon him, and he marched through the night to rescue the city—his first victory as king. Years later Saul fell on Mount Gilboa, and the Philistines fastened his body to the wall of Beth-shan. The valiant men of Jabesh never forgot his kindness: they walked all night, brought back the bodies of Saul and his sons, buried them, and fasted seven days. Today the valley is called Wadi al-Yabis, still carrying the name 'Jabesh'; many scholars identify the town with Tell el-Maqlub in the valley."
+    },
+    reflect: {
+      zh: "雅比人幾十年後還記得掃羅的恩情，冒著生命危險去回報。有沒有一個曾經幫助過你的人，你可以去謝謝他？",
+      en: "Decades later, the people of Jabesh still remembered Saul's kindness and risked their lives to repay it. Is there someone who once helped you whom you could thank?"
+    },
+    mission: {
+      zh: "🙏 任務：想一個曾經幫過你的人，今天就傳個訊息謝謝他。",
+      en: "🙏 Mission: Think of someone who once helped you, and send them a thank-you message today."
+    },
+    quiz: {
+      q: { zh: "掃羅死後，雅比的勇士做了什麼？", en: "After Saul died, what did the valiant men of Jabesh do?" },
+      options: [{ zh: "投降非利士人", en: "Surrendered to the Philistines" }, { zh: "連夜取回並安葬掃羅", en: "Retrieved and buried Saul's body overnight" }, { zh: "逃到亞捫", en: "Fled to Ammon" }],
+      answer: 1
+    },
+    howto: {
+      zh: "⚠️ 在 Wadi al-Yabis 山谷裡的考古土丘，沒有遊客設施，能不能上去還沒確認。從阿傑隆往約旦河谷的方向。只要人在這附近就能蓋章。",
+      en: "⚠️ An archaeological mound in the Wadi al-Yabis valley with no visitor facilities; access hasn't been confirmed. It's on the way from Ajloun down to the Jordan Valley. You can check in anywhere nearby."
+    },
+    photo: null
+  },
+
+  cherith: {
+    name: { zh: "基立溪（烏鴉餵以利亞）", en: "The Brook Cherith (Ravens Feed Elijah)" },
+    place: { zh: "位置不確定：有人說是 Wadi al-Yabis，也有人說是受洗處旁的 Wadi Kharrar", en: "Location uncertain: Wadi al-Yabis or Wadi Kharrar by the Baptism Site have been suggested" },
+    hidden: true,
+    certainty: "unknown",
+    verses: ["1 Kgs 17:5-6"],
+    story: {
+      zh: "以利亞對亞哈說完不會下雨，神就叫他躲到約旦河東的基立溪旁。他喝溪裡的水，烏鴉早晚給他叼餅和肉來。過了些日子，因為一直沒有下雨，溪水也乾了，神又帶他往下一個地方去。基立溪確切在哪裡並不確定：有人說是 Wadi al-Yabis，也有人說是受洗處旁的 Wadi Kharrar，所以這是隱藏關卡。",
+      en: "After Elijah told Ahab no rain would fall, God sent him to hide by the Brook Cherith, east of the Jordan. He drank from the brook, and ravens brought him bread and meat morning and evening. After a while the brook dried up because there was no rain, and God led him on to his next place. Cherith's exact location is uncertain—Wadi al-Yabis and Wadi Kharrar by the Baptism Site have both been suggested—so this is a hidden level."
+    },
+    reflect: {
+      zh: "溪水乾了，以利亞才往下一個地方去。有沒有一條你曾經依靠的「溪水」乾了，後來才發現是神要帶你往前走？",
+      en: "Only when the brook dried up did Elijah move on. Has a 'brook' you relied on ever dried up, and you later realized God was leading you forward?"
+    },
+    mission: {
+      zh: "🔒 隱藏任務：讀完列王紀上 17 章，看看溪水乾了以後，神帶以利亞去了哪裡，再回來答題。",
+      en: "🔒 Hidden mission: Read 1 Kings 17 to see where God sent Elijah after the brook dried up, then come back for the quiz."
+    },
+    quiz: {
+      q: { zh: "在基立溪旁，誰給以利亞送食物？", en: "By the Brook Cherith, who brought Elijah food?" },
+      options: [{ zh: "天使", en: "An angel" }, { zh: "烏鴉", en: "Ravens" }, { zh: "一個寡婦", en: "A widow" }],
+      answer: 1
+    },
+    howto: {
+      zh: "這是隱藏關卡：確切位置不知道，不需要到現場。答對上面的問答就能解鎖印章。",
+      en: "This is a hidden level: the exact location is unknown, so you don't need to visit. Answer the quiz correctly to unlock the stamp."
+    },
+    photo: null
+  },
+
+  ephraimforest: {
+    name: { zh: "以法蓮樹林（押沙龍之死）", en: "The Forest of Ephraim (Absalom's Death)" },
+    place: { zh: "位置不確定，在約旦河東的基列山地", en: "Location uncertain, in the hills of Gilead east of the Jordan" },
+    hidden: true,
+    certainty: "unknown",
+    verses: ["2 Sam 18:9", "2 Sam 18:33"],
+    story: {
+      zh: "名字雖然叫以法蓮，這片樹林其實在約旦河東的基列。大衛的兒子押沙龍造反，兩軍在以法蓮樹林決戰，「死於樹林的比死於刀劍的更多」。押沙龍騎著騾子從大橡樹的密枝底下經過，頭髮被樹枝繞住，懸在半空，後來被約押殺死。消息傳到大衛那裡，他一邊走一邊哭：「我兒押沙龍啊！我兒，我兒押沙龍啊！我恨不得替你死！」確切位置不知道，所以這是隱藏關卡。",
+      en: "Despite its name, this forest was in Gilead, east of the Jordan. When David's son Absalom rebelled, the two armies fought in the Forest of Ephraim, and 'the forest devoured more people than the sword.' Riding his mule under the thick branches of a great oak, Absalom got caught by the head and was left hanging in midair, and Joab killed him. When the news reached David, he wept as he walked: 'My son Absalom! My son, my son Absalom! I wish I had died for you!' The exact location is unknown, so this is a hidden level."
+    },
+    reflect: {
+      zh: "押沙龍背叛了大衛，大衛卻哭得心碎，父母的心常常就是這樣。今天你可以為你的父母或家人做一件什麼事？",
+      en: "Absalom betrayed David, yet David's heart broke for him—that is so often a parent's heart. What is one thing you could do for your parents or family today?"
+    },
+    mission: {
+      zh: "🔒 隱藏任務：讀完撒母耳記下 18 章，再回來答題。",
+      en: "🔒 Hidden mission: Read 2 Samuel 18, then come back for the quiz."
+    },
+    quiz: {
+      q: { zh: "押沙龍騎著騾子經過時，被什麼纏住？", en: "As Absalom rode by on his mule, what caught him?" },
+      options: [{ zh: "葡萄樹", en: "A grapevine" }, { zh: "大橡樹的密枝", en: "The thick branches of a great oak" }, { zh: "城門", en: "A city gate" }],
+      answer: 1
+    },
+    howto: {
+      zh: "這是隱藏關卡：確切位置不知道，不需要到現場。答對上面的問答就能解鎖印章。",
+      en: "This is a hidden level: the exact location is unknown, so you don't need to visit. Answer the quiz correctly to unlock the stamp."
+    },
+    photo: null
+  },
+
   jabbok: {
     name: { zh: "雅博河（今天的 Zarqa 河）", en: "The Jabbok (Today's Zarqa River)" },
     place: { zh: "雅博河谷：塔拉勒國王水庫、金子山丘一帶", en: "Jabbok valley: King Talal Dam and Tulul adh-Dhahab area" },
@@ -688,3 +942,23 @@ window.TITLES = [
   { min: 9, zh: "守望者", en: "Watchman" },
   { all: true, zh: "約旦河東見證人", en: "Witness Beyond the Jordan" }
 ];
+
+// Google 地圖導航用的目的地（給自己開車的人）
+// 有正式入口的景點用「景點名稱」，Google 會帶到遊客中心／停車場；沒列在這裡的站，用上面的座標導航。
+// 受洗處和以利亞山丘都要先到遊客中心買票、搭接駁車，所以兩站都導航到同一個景點。
+// 每個名稱都在 Google 地圖試過（2026-10-30），確認會直接找到該地點；找不到單一地點的（例如 Mar Elias）改用座標。
+window.NAV = {
+  gadara: "Umm Qais Archaeological Site, Jordan",
+  gerasa: "Ancient City of Jerash",
+  irbid: "Dar As-Saraya Museum, Irbid, Jordan",
+  jabbok: "King Talal Dam, Jordan",
+  succoth: "Tell Deir Alla, Jordan",
+  citadel: "Amman Citadel, Amman, Jordan",
+  theatre: "Roman Theater, Amman, Jordan",
+  jubeiha: "Al Jubeiha, Amman, Jordan",
+  bethany: "Baptism Site of Jesus Christ",
+  elijah: "Baptism Site of Jesus Christ",
+  nebo: "Memorial of Moses, Mount Nebo, Jordan",
+  madaba: "St. George's Church, Madaba, Jordan",
+  heshbon: "Tell Hesban, Jordan"
+};

@@ -81,7 +81,9 @@ const T = {
   },
   gotIt: { zh: "知道了，開始！", en: "Got it, let's go!" },
   locating: { zh: "正在找你的位置…", en: "Finding you…" },
-  youAreHere: { zh: "你在這裡", en: "You are here" }
+  youAreHere: { zh: "你在這裡", en: "You are here" },
+  navBtn: { zh: "🧭 Google 地圖導航", en: "🧭 Navigate with Google Maps" },
+  navApprox: { zh: "這是大約位置，快到的時候請看當地路標或問路。", en: "This is an approximate location—watch for local signs or ask for directions as you get close." }
 };
 
 // 巴西葡萄牙文介面文字（跟上面 T 的 key 一一對應；T 新增文字時這裡也要加）
@@ -137,7 +139,9 @@ const T_PT = {
   introBody: "Esta é uma versão de teste com os capítulos {chs} — {n} lugares ao todo.\n• Leia as passagens e as histórias quando quiser — ótimo para se preparar antes da viagem.\n• No local, toque em \"Cheguei — carimbar!\" e o GPS do celular confirma onde você está.\n• As fases \"secretas\" têm localização incerta — não precisa ir até lá; responda o quiz para desbloqueá-las.\n• Visite as paradas obrigatórias de um capítulo para concluí-lo; visite todas para ganhar a medalha de ouro.\n• O mapa precisa de internet; todo o resto funciona offline.",
   gotIt: "Entendi, vamos lá!",
   locating: "Procurando você…",
-  youAreHere: "Você está aqui"
+  youAreHere: "Você está aqui",
+  navBtn: "🧭 Ir com o Google Maps",
+  navApprox: "Esta é uma localização aproximada — fique atento às placas ou peça informações quando estiver chegando."
 };
 for (const [k, v] of Object.entries(T_PT)) if (T[k]) T[k].pt = v;
 
@@ -462,6 +466,7 @@ function openStation(id) {
         el("span", { class: "cert" }, isRequired(id) ? t("required") : t("bonus")),
         s.approx ? el("span", { class: "cert" }, t("approx")) : null,
         s.noFacilities ? el("span", { class: "cert warn" }, t("noFacilities")) : null),
+      s.hidden ? null : el("div", { class: "row", style: "margin-top:10px" }, navButton(id, "btn small ghost")),
       checkinCard(id),
       el("div", { class: "card" }, el("h3", null, t("scripture")), s.verses.map((ref) => {
         const v = VERSES[ref];
@@ -471,7 +476,9 @@ function openStation(id) {
       el("div", { class: "card" }, el("h3", null, t("reflect")), el("p", null, pick(s.reflect))),
       el("div", { class: "card" }, el("h3", null, t("mission")), el("p", null, pick(s.mission))),
       quizCard(id),
-      el("div", { class: "card" }, el("h3", null, t("howto")), el("p", null, pick(s.howto)))
+      el("div", { class: "card" }, el("h3", null, t("howto")), el("p", null, pick(s.howto)),
+        navButton(id, "btn"),
+        s.approx && !(window.NAV && NAV[id]) ? el("p", { class: "muted", style: "margin-top:8px" }, t("navApprox")) : null)
     )
   );
   sheet.hidden = false;
@@ -586,12 +593,25 @@ function pinIcon(id) {
   const label = state.stamps[id] ? "✓" : ch ? String(ch.no) : "";
   return L.divIcon({ className: "", html: `<div class="${cls}"><span>${label}</span></div>`, iconSize: [30, 30], iconAnchor: [15, 30], popupAnchor: [0, -28] });
 }
+// Google 地圖導航網址（手機上會直接打開 Google 地圖 App 並開始規劃開車路線）
+function navUrl(id) {
+  const s = STATIONS[id];
+  if (s.hidden) return null;
+  const dest = (window.NAV && NAV[id]) || `${s.lat},${s.lng}`;
+  return "https://www.google.com/maps/dir/?api=1&travelmode=driving&destination=" + encodeURIComponent(dest);
+}
+function navButton(id, cls) {
+  const url = navUrl(id);
+  return url ? el("a", { class: cls, href: url, target: "_blank", rel: "noopener" }, t("navBtn")) : null;
+}
 function popupFor(id) {
   const s = STATIONS[id];
   return el("div", null,
     el("b", null, pick(s.name)), el("br"),
     el("span", { class: "muted" }, t(CERT[s.certainty])), el("br"),
-    el("button", { class: "btn small popup-btn", type: "button", onclick: () => openStation(id) }, t("open")));
+    el("div", { class: "row popup-btn" },
+      el("button", { class: "btn small", type: "button", onclick: () => openStation(id) }, t("open")),
+      navButton(id, "btn small ghost")));
 }
 function refreshMap() {
   if (!map) return;

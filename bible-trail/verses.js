@@ -1,37 +1,45 @@
 // 經文：和合本（cut）與 World English Bible（web）為公共領域；Bíblia Livre（livre）為 CC BY 3.0 BR。由 api.getbible.net 取得。
 // 這個檔案由 工具/build_verses.py 產生，不要直接改。
 window.VERSES = {
- "John 1:28": {
-  "zhRef": "約翰福音 1:28",
-  "enRef": "John 1:28",
-  "ptRef": "João 1:28",
-  "zh": "這是在約旦河外伯大尼，約翰施洗的地方作的見證。",
-  "en": "These things were done in Bethany beyond the Jordan, where John was baptizing.",
-  "pt": "Estas coisas aconteceram em Betábara, do outro lado do Jordão, onde João estava batizando."
+ "1 Kgs 17:1": {
+  "zhRef": "列王紀上 17:1",
+  "enRef": "1 Kings 17:1",
+  "ptRef": "1 Reis 17:1",
+  "zh": "基列寄居的提斯比人以利亞對亞哈說：「我指著所事奉永生耶和華─以色列的　神起誓，這幾年我若不禱告，必不降露，不下雨。」",
+  "en": "Elijah the Tishbite, who was of the foreigners of Gilead, said to Ahab, “As Yahweh, the God of Israel, lives, before whom I stand, there shall not be dew nor rain these years, but according to my word.”",
+  "pt": "Então Elias Tisbita, que era dos moradores de Gileade, disse a Acabe: Vive o SENHOR Deus de Israel, diante do qual estou, que não haverá chuva nem orvalho nestes anos, a não ser por minha palavra."
  },
- "John 10:40": {
-  "zhRef": "約翰福音 10:40",
-  "enRef": "John 10:40",
-  "ptRef": "João 10:40",
-  "zh": "耶穌又往約旦河外去，到了約翰起初施洗的地方，就住在那裡。",
-  "en": "He went away again beyond the Jordan into the place where John was baptizing at first, and there he stayed.",
-  "pt": "E voltou a ir para o outro lado do Jordão, ao lugar onde João primeiro batizava; e ficou ali."
+ "1 Kgs 17:5-6": {
+  "zhRef": "列王紀上 17:5-6",
+  "enRef": "1 Kings 17:5-6",
+  "ptRef": "1 Reis 17:5-6",
+  "zh": "於是以利亞照著耶和華的話，去住在約旦河東的基立溪旁。烏鴉早晚給他叼餅和肉來，他也喝那溪裡的水。",
+  "en": "So he went and did according to Yahweh’s word; for he went and lived by the brook Cherith, that is before the Jordan. The ravens brought him bread and flesh in the morning, and bread and flesh in the evening; and he drank of the brook.",
+  "pt": "E ele foi, e fez conforme à palavra do SENHOR; pois se foi e assentou junto ao ribeiro de Querite, que está antes do Jordão. E os corvos lhe traziam pão e carne pela manhã, e pão e carne à tarde; e bebia do ribeiro."
  },
- "Matt 3:16-17": {
-  "zhRef": "馬太福音 3:16-17",
-  "enRef": "Matthew 3:16-17",
-  "ptRef": "Mateus 3:16-17",
-  "zh": "耶穌受了洗，隨即從水裡上來。天忽然為他開了，他就看見　神的靈彷彿鴿子降下，落在他身上。從天上有聲音說：「這是我的愛子，我所喜悅的。」",
-  "en": "Jesus, when he was baptized, went up directly from the water: and behold, the heavens were opened to him. He saw the Spirit of God descending as a dove, and coming on him. Behold, a voice out of the heavens said, “This is my beloved Son, with whom I am well pleased.”",
-  "pt": "E tendo Jesus sido batizado, subiu logo da água. E eis que os céus se abriram, e ele viu o Espírito de Deus descendo como uma pomba, vindo sobre ele. E eis uma voz dos céus, dizendo: Este é o meu Filho amado, em quem me agrado."
+ "1 Kgs 22:34": {
+  "zhRef": "列王紀上 22:34",
+  "enRef": "1 Kings 22:34",
+  "ptRef": "1 Reis 22:34",
+  "zh": "有一人隨便開弓，恰巧射入以色列王的甲縫裡。王對趕車的說：「我受了重傷，你轉過車來，拉我出陣吧！」",
+  "en": "A certain man drew his bow at random, and struck the king of Israel between the joints of the armor. Therefore he said to the driver of his chariot, “Turn your hand, and carry me out of the battle; for I am severely wounded.”",
+  "pt": "E um homem disparando seu arco ao acaso, feriu ao rei de Israel por entre as junturas da armadura; pelo que disse ele a seu condutor do carro: Toma a volta, e tira-me do campo, que estou ferido."
  },
- "2 Kgs 2:8": {
-  "zhRef": "列王紀下 2:8",
-  "enRef": "2 Kings 2:8",
-  "ptRef": "2 Reis 2:8",
-  "zh": "以利亞將自己的外衣捲起來，用以打水，水就左右分開，二人走乾地而過。",
-  "en": "Elijah took his mantle, and wrapped it together, and struck the waters, and they were divided here and there, so that they two went over on dry ground.",
-  "pt": "Tomando então Elias seu manto, dobrou-o, e feriu as águas, as quais se apartaram a um e a outro lado, e passaram ambos em seco."
+ "1 Kgs 7:46": {
+  "zhRef": "列王紀上 7:46",
+  "enRef": "1 Kings 7:46",
+  "ptRef": "1 Reis 7:46",
+  "zh": "是遵王命在約旦平原、疏割和撒拉但中間藉膠泥鑄成的。",
+  "en": "The king cast them in the plain of the Jordan, in the clay ground between Succoth and Zarethan.",
+  "pt": "Todo o fez fundir o rei na planície do Jordão, em terra argilosa, entre Sucote e Zaretã."
+ },
+ "1 Sam 31:11-13": {
+  "zhRef": "撒母耳記上 31:11-13",
+  "enRef": "1 Samuel 31:11-13",
+  "ptRef": "1 Samuel 31:11-13",
+  "zh": "基列‧雅比的居民聽見非利士人向掃羅所行的事，他們中間所有的勇士就起身，走了一夜，將掃羅和他兒子的屍身從伯‧珊城牆上取下來，送到雅比那裡，用火燒了；將他們骸骨葬在雅比的垂絲柳樹下，就禁食七日。",
+  "en": "When the inhabitants of Jabesh Gilead heard concerning him that which the Philistines had done to Saul, all the valiant men arose, and went all night, and took the body of Saul and the bodies of his sons from the wall of Beth Shan; and they came to Jabesh, and burnt them there. They took their bones, and buried them under the tamarisk tree in Jabesh, and fasted seven days.",
+  "pt": "Mas ouvindo os de Jabes de Gileade isto que os filisteus fizeram a Saul, Todos os homens valentes se levantaram, e andaram toda aquela noite, e tiraram o corpo de Saul e os corpos de seus filhos do muro de Bete-Seã; e vindo a Jabes, queimaram-nos ali. E tomando seus ossos, sepultaram-nos debaixo de uma árvore em Jabes, e jejuaram durante sete dias."
  },
  "2 Kgs 2:11": {
   "zhRef": "列王紀下 2:11",
@@ -41,37 +49,69 @@ window.VERSES = {
   "en": "As they still went on, and talked, behold, a chariot of fire and horses of fire separated them; and Elijah went up by a whirlwind into heaven.",
   "pt": "E aconteceu que, indo eles falando, eis que um carro de fogo com cavalos de fogo separou os dois; e Elias subiu ao céu num turbilhão."
  },
- "2 Kgs 5:14": {
-  "zhRef": "列王紀下 5:14",
-  "enRef": "2 Kings 5:14",
-  "ptRef": "2 Reis 5:14",
-  "zh": "於是乃縵下去，照著神人的話，在約旦河裡沐浴七回；他的肉復原，好像小孩子的肉，他就潔淨了。",
-  "en": "Then went he down, and dipped himself seven times in the Jordan, according to the saying of the man of God; and his flesh was restored like the flesh of a little child, and he was clean.",
-  "pt": "Ele então desceu, e mergulhou sete vezes no Jordão, conforme a palavra do homem de Deus; e sua carne se restaurou como a carne de um menino, e foi limpo."
+ "2 Kgs 2:8": {
+  "zhRef": "列王紀下 2:8",
+  "enRef": "2 Kings 2:8",
+  "ptRef": "2 Reis 2:8",
+  "zh": "以利亞將自己的外衣捲起來，用以打水，水就左右分開，二人走乾地而過。",
+  "en": "Elijah took his mantle, and wrapped it together, and struck the waters, and they were divided here and there, so that they two went over on dry ground.",
+  "pt": "Tomando então Elias seu manto, dobrou-o, e feriu as águas, as quais se apartaram a um e a outro lado, e passaram ambos em seco."
  },
- "Josh 2:1": {
-  "zhRef": "約書亞記 2:1",
-  "enRef": "Joshua 2:1",
-  "ptRef": "Josué 2:1",
-  "zh": "當下，嫩的兒子約書亞從什亭暗暗打發兩個人作探子，吩咐說：「你們去窺探那地和耶利哥。」於是二人去了，來到一個妓女名叫喇合的家裡，就在那裡躺臥。",
-  "en": "Joshua the son of Nun secretly sent two men out of Shittim as spies, saying, “Go, view the land, including Jericho.” They went and came into the house of a prostitute whose name was Rahab, and slept there.",
-  "pt": "E Josué, filho de Num, enviou desde Sitim dois espias secretamente, dizendo-lhes: Andai, reconhecei a terra, e a Jericó. Os quais foram, e entraram em casa de uma mulher prostituta que se chamava Raabe, e passaram a noite ali."
+ "2 Sam 11:1": {
+  "zhRef": "撒母耳記下 11:1",
+  "enRef": "2 Samuel 11:1",
+  "ptRef": "2 Samuel 11:1",
+  "zh": "過了一年，到列王出戰的時候，大衛又差派約押，率領臣僕和以色列眾人出戰。他們就打敗亞捫人，圍攻拉巴。大衛仍住在耶路撒冷。",
+  "en": "At the return of the year, at the time when kings go out, David sent Joab, and his servants with him, and all Israel; and they destroyed the children of Ammon, and besieged Rabbah. But David stayed at Jerusalem.",
+  "pt": "E aconteceu à volta de um ano, no tempo que saem os reis à guerra, que Davi enviou a Joabe, e a seus servos com ele, e a todo Israel; e destruíram aos amonitas, e puseram cerco a Rabá: mas Davi se ficou em Jerusalém."
  },
- "Num 25:1": {
-  "zhRef": "民數記 25:1",
-  "enRef": "Numbers 25:1",
-  "ptRef": "Números 25:1",
-  "zh": "以色列人住在什亭，百姓與摩押女子行起淫亂。",
-  "en": "Israel stayed in Shittim; and the people began to play the prostitute with the daughters of Moab;",
-  "pt": "E repousou Israel em Sitim, e o povo começou a se prostituir com as filhas de Moabe:"
+ "2 Sam 11:15": {
+  "zhRef": "撒母耳記下 11:15",
+  "enRef": "2 Samuel 11:15",
+  "ptRef": "2 Samuel 11:15",
+  "zh": "信內寫著說：「要派烏利亞前進，到陣勢極險之處，你們便退後，使他被殺。」",
+  "en": "He wrote in the letter, saying, “Send Uriah to the forefront of the hottest battle, and retreat from him, that he may be struck, and die.”",
+  "pt": "E escreveu na carta, dizendo: Ponde a Urias diante da força da batalha, e desamparai-o, para que seja ferido e morra."
  },
- "Num 22:1": {
-  "zhRef": "民數記 22:1",
-  "enRef": "Numbers 22:1",
-  "ptRef": "Números 22:1",
-  "zh": "以色列人起行，在摩押平原、約旦河東，對著耶利哥安營。",
-  "en": "The children of Israel traveled, and encamped in the plains of Moab beyond the Jordan at Jericho.",
-  "pt": "Depois os filhos de Israel partiram, e se assentaram nos campos de Moabe, desta parte do Jordão de Jericó."
+ "2 Sam 12:26-27": {
+  "zhRef": "撒母耳記下 12:26-27",
+  "enRef": "2 Samuel 12:26-27",
+  "ptRef": "2 Samuel 12:26-27",
+  "zh": "約押攻取亞捫人的京城拉巴。約押打發使者去見大衛，說：「我攻打拉巴，取其水城。……」",
+  "en": "Now Joab fought against Rabbah of the children of Ammon, and took the royal city. Joab sent messengers to David, and said, “I have fought against Rabbah. Yes, I have taken the city of waters.",
+  "pt": "E Joabe lutava contra Rabá dos filhos de Amom, e tomou a cidade real. Então enviou Joabe mensageiros a Davi, dizendo: Eu lutei contra Rabá, e tomei a cidade das águas."
+ },
+ "2 Sam 17:27-29": {
+  "zhRef": "撒母耳記下 17:27-29",
+  "enRef": "2 Samuel 17:27-29",
+  "ptRef": "2 Samuel 17:27-29",
+  "zh": "大衛到了瑪哈念，亞捫族的拉巴人拿轄的兒子朔比，羅‧底巴人亞‧米利的兒子瑪吉，基列的羅基琳人巴西萊，帶著被、褥、盆、碗、瓦器、小麥、大麥、麥麵、炒穀、豆子、紅豆、炒豆、蜂蜜、奶油、綿羊、奶餅，供給大衛和跟隨他的人吃；他們說：「民在曠野，必飢渴困乏了。」",
+  "en": "When David had come to Mahanaim, Shobi the son of Nahash of Rabbah of the children of Ammon, and Machir the son of Ammiel of Lodebar, and Barzillai the Gileadite of Rogelim, brought beds, basins, earthen vessels, wheat, barley, meal, parched grain, beans, lentils, roasted grain, honey, butter, sheep, and cheese of the herd, for David, and for the people who were with him, to eat: for they said, “The people are hungry, and weary, and thirsty, in the wilderness.”",
+  "pt": "E logo que Davi chegou a Maanaim, Sobi filho de Naás de Rabá dos filhos de Amom, e Maquir filho de Amiel de Lo-Debar, e Barzilai gileadita de Rogelim, Trouxeram a Davi e ao povo que estava com ele, camas, e bacias, e vasilhas de barro, e trigo, e cevada, e farinha, e grão tostado, favas, lentilhas, e grãos tostados, Mel, manteiga, ovelhas, e queijos de vacas, para que comessem; porque disseram: Aquele povo está faminto, e cansado, e terá sede no deserto."
+ },
+ "2 Sam 18:33": {
+  "zhRef": "撒母耳記下 18:33",
+  "enRef": "2 Samuel 18:33",
+  "ptRef": "2 Samuel 18:33",
+  "zh": "王就心裡傷慟，上城門樓去哀哭，一面走一面說：「我兒押沙龍啊！我兒，我兒押沙龍啊！我恨不得替你死，押沙龍啊，我兒！我兒！」",
+  "en": "The king was much moved, and went up to the room over the gate, and wept. As he went, he said, “My son Absalom! My son, my son Absalom! I wish I had died for you, Absalom, my son, my son!”",
+  "pt": "Então o rei se perturbou, e subiu-se à sala da porta, e chorou; e indo, dizia assim: Filho meu Absalão, filho meu, filho meu Absalão! Quem me dera que morresse eu em lugar de ti, Absalão, filho meu, filho meu!"
+ },
+ "2 Sam 18:9": {
+  "zhRef": "撒母耳記下 18:9",
+  "enRef": "2 Samuel 18:9",
+  "ptRef": "2 Samuel 18:9",
+  "zh": "押沙龍偶然遇見大衛的僕人。押沙龍騎著騾子，從大橡樹密枝底下經過，他的頭髮被樹枝繞住，就懸掛起來，所騎的騾子便離他去了。",
+  "en": "Absalom happened to meet the servants of David. Absalom was riding on his mule, and the mule went under the thick boughs of a great oak, and his head caught hold of the oak, and he was taken up between the sky and earth; and the mule that was under him went on.",
+  "pt": "E encontrou-se Absalão com os servos de Davi: e ia Absalão sobre um mulo, e o mulo se entrou debaixo de um espesso e grande carvalho, e prendeu-lhe a cabeça ao carvalho, e ficou entre o céu e a terra; pois o mulo em que ia passou adiante."
+ },
+ "Amos 1:14": {
+  "zhRef": "阿摩司書 1:14",
+  "enRef": "Amos 1:14",
+  "ptRef": "Amós 1:14",
+  "zh": "我卻要在爭戰吶喊的日子，旋風狂暴的時候，點火在拉巴的城內，燒滅其中的宮殿。",
+  "en": "But I will kindle a fire in the wall of Rabbah, and it will devour its palaces, with shouting in the day of battle, with a storm in the day of the whirlwind;",
+  "pt": "Por isso acenderei fogo no muro de Rabá, que consumirá seus palácios com grito no dia de batalha, com tempestade no dia do vento forte."
  },
  "Deut 1:5": {
   "zhRef": "申命記 1:5",
@@ -105,70 +145,6 @@ window.VERSES = {
   "en": "So Moses the servant of Yahweh died there in the land of Moab, according to Yahweh’s word. He buried him in the valley in the land of Moab opposite Beth Peor, but no man knows where his tomb is to this day.",
   "pt": "E morreu ali Moisés servo do SENHOR, na terra de Moabe, conforme o dito do SENHOR. E enterrou-o no vale, em terra de Moabe, em frente de Bete-Peor; e ninguém sabe seu sepulcro até hoje."
  },
- "Num 21:30": {
-  "zhRef": "民數記 21:30",
-  "enRef": "Numbers 21:30",
-  "ptRef": "Números 21:30",
-  "zh": "我們射了他們；希實本直到底本盡皆毀滅。我們使地變成荒場，直到挪法；這挪法直延到米底巴。",
-  "en": "We have shot at them. Heshbon has perished even to Dibon. We have laid waste even to Nophah, Which reaches to Medeba.”",
-  "pt": "Mas devastamos o reino deles; pereceu Hesbom até Dibom, E destruímos até Nofá e Medeba."
- },
- "Num 21:26": {
-  "zhRef": "民數記 21:26",
-  "enRef": "Numbers 21:26",
-  "ptRef": "Números 21:26",
-  "zh": "這希實本是亞摩利王西宏的京城；西宏曾與摩押的先王爭戰，從他手中奪取了全地，直到亞嫩河。",
-  "en": "For Heshbon was the city of Sihon the king of the Amorites, who had fought against the former king of Moab, and taken all his land out of his hand, even to the Arnon.",
-  "pt": "Porque Hesbom era a cidade de Seom, rei dos amorreus; o qual havia tido guerra antes com o rei de Moabe, e tomado de seu poder toda a sua terra até Arnom."
- },
- "Song 7:4": {
-  "zhRef": "雅歌 7:4",
-  "enRef": "Song of Songs 7:4",
-  "ptRef": "Cânticos 7:4",
-  "zh": "你的頸項如象牙臺；你的眼目像希實本、巴特‧拉併門旁的水池；你的鼻子彷彿朝大馬士革的黎巴嫩塔。",
-  "en": "Your neck is like an ivory tower. Your eyes are like the pools in Heshbon by the gate of Bathrabbim. Your nose is like the tower of Lebanon which looks toward Damascus.",
-  "pt": "Teu pescoço é como uma torre de marfim; teus olhos são como os tanques de peixes de Hesbom, junto à porta de Bate-Rabim. Teu nariz é como a torre do Líbano, que está de frente a Damasco."
- },
- "Num 32:37-38": {
-  "zhRef": "民數記 32:37-38",
-  "enRef": "Numbers 32:37-38",
-  "ptRef": "Números 32:37-38",
-  "zh": "流便子孫建造希實本、以利亞利、基列亭、尼波、巴力‧免、西比瑪（尼波、巴力‧免，名字是改了的），又給他們所建造的城另起別名。",
-  "en": "The children of Reuben built Heshbon, Elealeh, Kiriathaim, Nebo, and Baal Meon, (their names being changed), and Sibmah. They gave other names to the cities which they built.",
-  "pt": "E os filhos de Rúben edificaram a Hesbom, e a Eleale, e a Quiriataim, E a Nebo, e a Baal-Meom, (mudados os nomes), e a Sibma: e puseram nomes às cidades que edificaram."
- },
- "Isa 15:4": {
-  "zhRef": "以賽亞書 15:4",
-  "enRef": "Isaiah 15:4",
-  "ptRef": "Isaías 15:4",
-  "zh": "希實本和以利亞利悲哀的聲音達到雅雜，所以摩押帶兵器的高聲喊嚷，人心戰兢。",
-  "en": "Heshbon cries out with Elealeh. Their voice is heard even to Jahaz. Therefore the armed men of Moab cry aloud. Their souls tremble within them.",
-  "pt": "Tanto Hesbom como Eleale vão gritando, até Jaaz se ouve sua voz; por causa disso os soldados armados de Moabe gritam, a alma de cada um está abalada dentro de si."
- },
- "Num 21:9": {
-  "zhRef": "民數記 21:9",
-  "enRef": "Numbers 21:9",
-  "ptRef": "Números 21:9",
-  "zh": "摩西便製造一條銅蛇，掛在杆子上；凡被蛇咬的，一望這銅蛇就活了。",
-  "en": "Moses made a serpent of brass, and set it on the pole. If a serpent had bitten any man, when he looked at the serpent of brass, he lived.",
-  "pt": "E Moisés fez uma serpente de bronze, e a pôs sobre a haste, e foi, que quando alguma serpente mordia a algum, olhava à serpente de bronze, e vivia."
- },
- "Josh 3:16": {
-  "zhRef": "約書亞記 3:16",
-  "enRef": "Joshua 3:16",
-  "ptRef": "Josué 3:16",
-  "zh": "那從上往下流的水便在極遠之地、撒拉但旁的亞當城那裡停住，立起成壘；那往亞拉巴的海，就是鹽海，下流的水全然斷絕。於是百姓在耶利哥的對面過去了。",
-  "en": "the waters which came down from above stood, and rose up in one heap, a great way off, at Adam, the city that is beside Zarethan; and those that went down toward the sea of the Arabah, even the Salt Sea, were wholly cut off. Then the people passed over right against Jericho.",
-  "pt": "As águas que vinham de cima pararam, e amontoaram-se bem longe, na cidade de Adã, que está ao lado de Zaretã; e as que desciam ao mar das planícies, ao mar Salgado, esgotaram-se e foram totalmente interrompidas; e o povo passou em frente de Jericó."
- },
- "Gen 19:38": {
-  "zhRef": "創世記 19:38",
-  "enRef": "Genesis 19:38",
-  "ptRef": "Gênesis 19:38",
-  "zh": "小女兒也生了兒子，給他起名叫便‧亞米，就是現今亞捫人的始祖。",
-  "en": "The younger also bore a son, and called his name Ben Ammi. He is the father of the children of Ammon to this day.",
-  "pt": "A menor também deu à luz um filho, e chamou seu nome Ben-Ami, o qual é pai dos amonitas até hoje."
- },
  "Deut 3:11": {
   "zhRef": "申命記 3:11",
   "enRef": "Deuteronomy 3:11",
@@ -177,77 +153,21 @@ window.VERSES = {
   "en": "(For only Og king of Bashan remained of the remnant of the Rephaim. Behold, his bedstead was a bedstead of iron. Isn’t it in Rabbah of the children of Ammon? Nine cubits was its length, and four cubits its breadth, after the cubit of a man.)",
   "pt": "Porque somente Ogue rei de Basã havia restado dos gigantes que restaram. Eis que sua cama, uma cama de ferro, não está em Rabá dos filhos de Amom?; o comprimento dela de nove côvados, e sua largura de quatro côvados, ao côvado de um homem."
  },
- "2 Sam 11:1": {
-  "zhRef": "撒母耳記下 11:1",
-  "enRef": "2 Samuel 11:1",
-  "ptRef": "2 Samuel 11:1",
-  "zh": "過了一年，到列王出戰的時候，大衛又差派約押，率領臣僕和以色列眾人出戰。他們就打敗亞捫人，圍攻拉巴。大衛仍住在耶路撒冷。",
-  "en": "At the return of the year, at the time when kings go out, David sent Joab, and his servants with him, and all Israel; and they destroyed the children of Ammon, and besieged Rabbah. But David stayed at Jerusalem.",
-  "pt": "E aconteceu à volta de um ano, no tempo que saem os reis à guerra, que Davi enviou a Joabe, e a seus servos com ele, e a todo Israel; e destruíram aos amonitas, e puseram cerco a Rabá: mas Davi se ficou em Jerusalém."
+ "Deut 4:43": {
+  "zhRef": "申命記 4:43",
+  "enRef": "Deuteronomy 4:43",
+  "ptRef": "Deuteronômio 4:43",
+  "zh": "為流便人分定曠野平原的比悉；為迦得人分定基列的拉末；為瑪拿西人分定巴珊的哥蘭。",
+  "en": "Bezer in the wilderness, in the plain country, for the Reubenites; and Ramoth in Gilead, for the Gadites; and Golan in Bashan, for the Manassites.",
+  "pt": "A Bezer no deserto, em terra da planície, dos rubenitas; e a Ramote em Gileade, dos gaditas; e a Golã em Basã, dos de Manassés."
  },
- "2 Sam 11:15": {
-  "zhRef": "撒母耳記下 11:15",
-  "enRef": "2 Samuel 11:15",
-  "ptRef": "2 Samuel 11:15",
-  "zh": "信內寫著說：「要派烏利亞前進，到陣勢極險之處，你們便退後，使他被殺。」",
-  "en": "He wrote in the letter, saying, “Send Uriah to the forefront of the hottest battle, and retreat from him, that he may be struck, and die.”",
-  "pt": "E escreveu na carta, dizendo: Ponde a Urias diante da força da batalha, e desamparai-o, para que seja ferido e morra."
- },
- "2 Sam 12:26-27": {
-  "zhRef": "撒母耳記下 12:26-27",
-  "enRef": "2 Samuel 12:26-27",
-  "ptRef": "2 Samuel 12:26-27",
-  "zh": "約押攻取亞捫人的京城拉巴。約押打發使者去見大衛，說：「我攻打拉巴，取其水城。……」",
-  "en": "Now Joab fought against Rabbah of the children of Ammon, and took the royal city. Joab sent messengers to David, and said, “I have fought against Rabbah. Yes, I have taken the city of waters.",
-  "pt": "E Joabe lutava contra Rabá dos filhos de Amom, e tomou a cidade real. Então enviou Joabe mensageiros a Davi, dizendo: Eu lutei contra Rabá, e tomei a cidade das águas."
- },
- "Amos 1:14": {
-  "zhRef": "阿摩司書 1:14",
-  "enRef": "Amos 1:14",
-  "ptRef": "Amós 1:14",
-  "zh": "我卻要在爭戰吶喊的日子，旋風狂暴的時候，點火在拉巴的城內，燒滅其中的宮殿。",
-  "en": "But I will kindle a fire in the wall of Rabbah, and it will devour its palaces, with shouting in the day of battle, with a storm in the day of the whirlwind;",
-  "pt": "Por isso acenderei fogo no muro de Rabá, que consumirá seus palácios com grito no dia de batalha, com tempestade no dia do vento forte."
- },
- "Num 32:35": {
-  "zhRef": "民數記 32:35",
-  "enRef": "Numbers 32:35",
-  "ptRef": "Números 32:35",
-  "zh": "亞他錄‧朔反、雅謝、約比哈……",
-  "en": "Atrothshophan, Jazer, Jogbehah,",
-  "pt": "E a Atarote-Sofã, e a Jazer, e a Jogbeá,"
- },
- "Judg 8:11": {
-  "zhRef": "士師記 8:11",
-  "enRef": "Judges 8:11",
-  "ptRef": "Juízes 8:11",
-  "zh": "基甸就由挪巴和約比哈東邊，從住帳棚人的路上去，殺敗了米甸人的軍兵，因為他們坦然無懼。",
-  "en": "Gideon went up by the way of those who lived in tents on the east of Nobah and Jogbehah, and struck the army; for the army was secure.",
-  "pt": "E subindo Gideão até os que habitavam em tendas, à parte oriental de Noba e de Jogbeá, feriu o acampamento, porque estava o exército desprevenido."
- },
- "Judg 11:32-33": {
-  "zhRef": "士師記 11:32-33",
-  "enRef": "Judges 11:32-33",
-  "ptRef": "Juízes 11:32-33",
-  "zh": "於是耶弗他往亞捫人那裡去，與他們爭戰；耶和華將他們交在他手中，他就大大殺敗他們，從亞羅珥到米匿，直到亞備勒‧基拉明，攻取了二十座城。這樣亞捫人就被以色列人制伏了。",
-  "en": "So Jephthah passed over to the children of Ammon to fight against them; and Yahweh delivered them into his hand. He struck them from Aroer until you come to Minnith, even twenty cities, and to Abelcheramim, with a very great slaughter. So the children of Ammon were subdued before the children of Israel.",
-  "pt": "Passou, pois, Jefté aos filhos de Amom para lutar contra eles; e o SENHOR os entregou em sua mão. E os feriu de grandíssimo dano desde Aroer até chegar a Minite, vinte cidades; e até a Abel-Queramim. Assim foram dominados os amonitas diante dos filhos de Israel."
- },
- "Mark 7:31": {
-  "zhRef": "馬可福音 7:31",
-  "enRef": "Mark 7:31",
-  "ptRef": "Marcos 7:31",
-  "zh": "耶穌又離了泰爾的境界，經過西頓，就從低加坡里境內來到加利利海。",
-  "en": "Again he departed from the borders of Tyre and Sidon, and came to the sea of Galilee, through the midst of the region of Decapolis.",
-  "pt": "Então Jesus voltou a sair da região de Tiro e veio por Sidom para o mar da Galilea, por meio da região de Decápolis."
- },
- "Matt 4:25": {
-  "zhRef": "馬太福音 4:25",
-  "enRef": "Matthew 4:25",
-  "ptRef": "Mateus 4:25",
-  "zh": "當下，有許多人從加利利、低加坡里、耶路撒冷、猶太、約旦河外來跟著他。",
-  "en": "Great multitudes from Galilee, Decapolis, Jerusalem, Judea and from beyond the Jordan followed him.",
-  "pt": "E muitas multidões da Galileia, de Decápolis, de Jerusalém, da Judeia, e dalém do Jordão o seguiam."
+ "Gen 19:38": {
+  "zhRef": "創世記 19:38",
+  "enRef": "Genesis 19:38",
+  "ptRef": "Gênesis 19:38",
+  "zh": "小女兒也生了兒子，給他起名叫便‧亞米，就是現今亞捫人的始祖。",
+  "en": "The younger also bore a son, and called his name Ben Ammi. He is the father of the children of Ammon to this day.",
+  "pt": "A menor também deu à luz um filho, e chamou seu nome Ben-Ami, o qual é pai dos amonitas até hoje."
  },
  "Gen 31:49": {
   "zhRef": "創世記 31:49",
@@ -289,6 +209,14 @@ window.VERSES = {
   "en": "Jacob called the name of the place Peniel: for, he said, “I have seen God face to face, and my life is preserved.” The sun rose on him as he passed over Peniel, and he limped because of his thigh.",
   "pt": "E chamou Jacó o nome daquele lugar Peniel: porque vi a Deus face a face, e foi livrada minha alma. E saiu-lhe o sol quando passou a Peniel; e andava mancando de sua coxa."
  },
+ "Gen 33:17": {
+  "zhRef": "創世記 33:17",
+  "enRef": "Genesis 33:17",
+  "ptRef": "Gênesis 33:17",
+  "zh": "雅各就往疏割去，在那裡為自己蓋造房屋，又為牲畜搭棚；因此那地方名叫疏割（就是棚的意思）。",
+  "en": "Jacob traveled to Succoth, built himself a house, and made shelters for his livestock. Therefore the name of the place is called Succoth.",
+  "pt": "E Jacó se partiu a Sucote, e edificou ali casa para si, e fez abrigos para seu gado; por isso chamou o nome daquele lugar Sucote."
+ },
  "Gen 33:4": {
   "zhRef": "創世記 33:4",
   "enRef": "Genesis 33:4",
@@ -297,13 +225,77 @@ window.VERSES = {
   "en": "Esau ran to meet him, embraced him, fell on his neck, kissed him, and they wept.",
   "pt": "E Esaú correu a seu encontro, e abraçou-lhe, e lançou-se sobre seu pescoço, e o beijou; e choraram."
  },
- "Gen 33:17": {
-  "zhRef": "創世記 33:17",
-  "enRef": "Genesis 33:17",
-  "ptRef": "Gênesis 33:17",
-  "zh": "雅各就往疏割去，在那裡為自己蓋造房屋，又為牲畜搭棚；因此那地方名叫疏割（就是棚的意思）。",
-  "en": "Jacob traveled to Succoth, built himself a house, and made shelters for his livestock. Therefore the name of the place is called Succoth.",
-  "pt": "E Jacó se partiu a Sucote, e edificou ali casa para si, e fez abrigos para seu gado; por isso chamou o nome daquele lugar Sucote."
+ "Hos 10:14": {
+  "zhRef": "何西阿書 10:14",
+  "enRef": "Hosea 10:14",
+  "ptRef": "Oseias 10:14",
+  "zh": "所以在這民中必有鬨嚷之聲，你一切的保障必被拆毀，就如沙勒幔在爭戰的日子拆毀伯‧亞比勒，將其中的母子一同摔死。",
+  "en": "Therefore a battle roar will arise among your people, and all your fortresses will be destroyed, as Shalman destroyed Beth Arbel in the day of battle. The mother was dashed in pieces with her children.",
+  "pt": "Portanto entre teu povo se levantará tumulto, e todas as tuas fortalezas serão destruídas, assim como Salmã destruiu a Bete-Arbel no dia da batalha; ali a mãe foram despedaçada com seus filhos."
+ },
+ "Isa 15:4": {
+  "zhRef": "以賽亞書 15:4",
+  "enRef": "Isaiah 15:4",
+  "ptRef": "Isaías 15:4",
+  "zh": "希實本和以利亞利悲哀的聲音達到雅雜，所以摩押帶兵器的高聲喊嚷，人心戰兢。",
+  "en": "Heshbon cries out with Elealeh. Their voice is heard even to Jahaz. Therefore the armed men of Moab cry aloud. Their souls tremble within them.",
+  "pt": "Tanto Hesbom como Eleale vão gritando, até Jaaz se ouve sua voz; por causa disso os soldados armados de Moabe gritam, a alma de cada um está abalada dentro de si."
+ },
+ "Jas 5:17": {
+  "zhRef": "雅各書 5:17",
+  "enRef": "James 5:17",
+  "ptRef": "Tiago 5:17",
+  "zh": "以利亞與我們是一樣性情的人，他懇切禱告，求不要下雨，雨就三年零六個月不下在地上。",
+  "en": "Elijah was a man with a nature like ours, and he prayed earnestly that it might not rain, and it didn’t rain on the earth for three years and six months.",
+  "pt": "Elias era tão humano quanto nós, e orou insistentemente para não chover; e não choveu sobre a terra por três anos e seis meses."
+ },
+ "Jer 8:22": {
+  "zhRef": "耶利米書 8:22",
+  "enRef": "Jeremiah 8:22",
+  "ptRef": "Jeremias 8:22",
+  "zh": "在基列豈沒有乳香呢？在那裡豈沒有醫生呢？我百姓為何不得痊癒呢？",
+  "en": "Is there no balm in Gilead? is there no physician there? why then isn’t the health of the daughter of my people recovered?",
+  "pt": "Por acaso não há bálsamo em Gileade, ou não há ali médico? Então por que não houve cura para a filha de meu povo?"
+ },
+ "John 10:40": {
+  "zhRef": "約翰福音 10:40",
+  "enRef": "John 10:40",
+  "ptRef": "João 10:40",
+  "zh": "耶穌又往約旦河外去，到了約翰起初施洗的地方，就住在那裡。",
+  "en": "He went away again beyond the Jordan into the place where John was baptizing at first, and there he stayed.",
+  "pt": "E voltou a ir para o outro lado do Jordão, ao lugar onde João primeiro batizava; e ficou ali."
+ },
+ "John 1:28": {
+  "zhRef": "約翰福音 1:28",
+  "enRef": "John 1:28",
+  "ptRef": "João 1:28",
+  "zh": "這是在約旦河外伯大尼，約翰施洗的地方作的見證。",
+  "en": "These things were done in Bethany beyond the Jordan, where John was baptizing.",
+  "pt": "Estas coisas aconteceram em Betábara, do outro lado do Jordão, onde João estava batizando."
+ },
+ "Josh 2:1": {
+  "zhRef": "約書亞記 2:1",
+  "enRef": "Joshua 2:1",
+  "ptRef": "Josué 2:1",
+  "zh": "當下，嫩的兒子約書亞從什亭暗暗打發兩個人作探子，吩咐說：「你們去窺探那地和耶利哥。」於是二人去了，來到一個妓女名叫喇合的家裡，就在那裡躺臥。",
+  "en": "Joshua the son of Nun secretly sent two men out of Shittim as spies, saying, “Go, view the land, including Jericho.” They went and came into the house of a prostitute whose name was Rahab, and slept there.",
+  "pt": "E Josué, filho de Num, enviou desde Sitim dois espias secretamente, dizendo-lhes: Andai, reconhecei a terra, e a Jericó. Os quais foram, e entraram em casa de uma mulher prostituta que se chamava Raabe, e passaram a noite ali."
+ },
+ "Judg 11:32-33": {
+  "zhRef": "士師記 11:32-33",
+  "enRef": "Judges 11:32-33",
+  "ptRef": "Juízes 11:32-33",
+  "zh": "於是耶弗他往亞捫人那裡去，與他們爭戰；耶和華將他們交在他手中，他就大大殺敗他們，從亞羅珥到米匿，直到亞備勒‧基拉明，攻取了二十座城。這樣亞捫人就被以色列人制伏了。",
+  "en": "So Jephthah passed over to the children of Ammon to fight against them; and Yahweh delivered them into his hand. He struck them from Aroer until you come to Minnith, even twenty cities, and to Abelcheramim, with a very great slaughter. So the children of Ammon were subdued before the children of Israel.",
+  "pt": "Passou, pois, Jefté aos filhos de Amom para lutar contra eles; e o SENHOR os entregou em sua mão. E os feriu de grandíssimo dano desde Aroer até chegar a Minite, vinte cidades; e até a Abel-Queramim. Assim foram dominados os amonitas diante dos filhos de Israel."
+ },
+ "Judg 8:11": {
+  "zhRef": "士師記 8:11",
+  "enRef": "Judges 8:11",
+  "ptRef": "Juízes 8:11",
+  "zh": "基甸就由挪巴和約比哈東邊，從住帳棚人的路上去，殺敗了米甸人的軍兵，因為他們坦然無懼。",
+  "en": "Gideon went up by the way of those who lived in tents on the east of Nobah and Jogbehah, and struck the army; for the army was secure.",
+  "pt": "E subindo Gideão até os que habitavam em tendas, à parte oriental de Noba e de Jogbeá, feriu o acampamento, porque estava o exército desprevenido."
  },
  "Judg 8:17": {
   "zhRef": "士師記 8:17",
@@ -313,6 +305,86 @@ window.VERSES = {
   "en": "He broke down the tower of Penuel, and killed the men of the city.",
   "pt": "Também derrubou a torre de Peniel, e matou aos da cidade."
  },
+ "Mark 5:1": {
+  "zhRef": "馬可福音 5:1",
+  "enRef": "Mark 5:1",
+  "ptRef": "Marcos 5:1",
+  "zh": "他們來到海那邊格拉森人的地方。",
+  "en": "They came to the other side of the sea, into the country of the Gadarenes.",
+  "pt": "E chegaram ao outro lado do mar, à terra dos Gerasenos."
+ },
+ "Mark 5:19-20": {
+  "zhRef": "馬可福音 5:19-20",
+  "enRef": "Mark 5:19-20",
+  "ptRef": "Marcos 5:19-20",
+  "zh": "耶穌不許，卻對他說：「你回家去，到你的親屬那裡，將主為你所做的是何等大的事，是怎樣憐憫你，都告訴他們。」那人就走了，在低加坡里傳揚耶穌為他做了何等大的事，眾人就都希奇。",
+  "en": "He didn’t allow him, but said to him, “Go to your house, to your friends, and tell them what great things the Lord has done for you, and how he had mercy on you.” He went his way, and began to proclaim in Decapolis how Jesus had done great things for him, and everyone marveled.",
+  "pt": "Jesus se recusou, porém lhe disse: Vai para a tua casa, aos teus, e anuncia-lhes quão grandes coisas o Senhor fez contigo, e como teve misericórdia de ti. Então ele foi embora, e começou a anunciar em Decápolis quão grandes coisas Jesus havia feito com ele; e todos se admiravam."
+ },
+ "Mark 7:31": {
+  "zhRef": "馬可福音 7:31",
+  "enRef": "Mark 7:31",
+  "ptRef": "Marcos 7:31",
+  "zh": "耶穌又離了泰爾的境界，經過西頓，就從低加坡里境內來到加利利海。",
+  "en": "Again he departed from the borders of Tyre and Sidon, and came to the sea of Galilee, through the midst of the region of Decapolis.",
+  "pt": "Então Jesus voltou a sair da região de Tiro e veio por Sidom para o mar da Galilea, por meio da região de Decápolis."
+ },
+ "Matt 3:16-17": {
+  "zhRef": "馬太福音 3:16-17",
+  "enRef": "Matthew 3:16-17",
+  "ptRef": "Mateus 3:16-17",
+  "zh": "耶穌受了洗，隨即從水裡上來。天忽然為他開了，他就看見　神的靈彷彿鴿子降下，落在他身上。從天上有聲音說：「這是我的愛子，我所喜悅的。」",
+  "en": "Jesus, when he was baptized, went up directly from the water: and behold, the heavens were opened to him. He saw the Spirit of God descending as a dove, and coming on him. Behold, a voice out of the heavens said, “This is my beloved Son, with whom I am well pleased.”",
+  "pt": "E tendo Jesus sido batizado, subiu logo da água. E eis que os céus se abriram, e ele viu o Espírito de Deus descendo como uma pomba, vindo sobre ele. E eis uma voz dos céus, dizendo: Este é o meu Filho amado, em quem me agrado."
+ },
+ "Matt 4:25": {
+  "zhRef": "馬太福音 4:25",
+  "enRef": "Matthew 4:25",
+  "ptRef": "Mateus 4:25",
+  "zh": "當下，有許多人從加利利、低加坡里、耶路撒冷、猶太、約旦河外來跟著他。",
+  "en": "Great multitudes from Galilee, Decapolis, Jerusalem, Judea and from beyond the Jordan followed him.",
+  "pt": "E muitas multidões da Galileia, de Decápolis, de Jerusalém, da Judeia, e dalém do Jordão o seguiam."
+ },
+ "Matt 8:28": {
+  "zhRef": "馬太福音 8:28",
+  "enRef": "Matthew 8:28",
+  "ptRef": "Mateus 8:28",
+  "zh": "耶穌既渡到那邊去，來到加大拉人的地方，就有兩個被鬼附的人從墳塋裡出來迎著他，極其凶猛，甚至沒有人能從那條路上經過。",
+  "en": "When he came to the other side, into the country of the Gergesenes, two people possessed by demons met him there, coming out of the tombs, exceedingly fierce, so that nobody could pass that way.",
+  "pt": "E quando chegou à outra margem, à terra dos gadarenos, vieram-lhe ao encontro dois endemoninhados que tinham saído dos sepulcros. Eles eram tão ferozes que ninguém podia passar por aquele caminho."
+ },
+ "Matt 8:32": {
+  "zhRef": "馬太福音 8:32",
+  "enRef": "Matthew 8:32",
+  "ptRef": "Mateus 8:32",
+  "zh": "耶穌說：「去吧！」鬼就出來，進入豬群。全群忽然闖下山崖，投在海裡淹死了。",
+  "en": "He said to them, “Go!” They came out, and went into the herd of pigs: and behold, the whole herd of pigs rushed down the cliff into the sea, and died in the water.",
+  "pt": "E ele lhes disse: Ide. Então eles saíram, e entraram nos porcos; e eis que toda aquela manada se lançou de um precipício ao mar, e morreram nas águas."
+ },
+ "Num 21:26": {
+  "zhRef": "民數記 21:26",
+  "enRef": "Numbers 21:26",
+  "ptRef": "Números 21:26",
+  "zh": "這希實本是亞摩利王西宏的京城；西宏曾與摩押的先王爭戰，從他手中奪取了全地，直到亞嫩河。",
+  "en": "For Heshbon was the city of Sihon the king of the Amorites, who had fought against the former king of Moab, and taken all his land out of his hand, even to the Arnon.",
+  "pt": "Porque Hesbom era a cidade de Seom, rei dos amorreus; o qual havia tido guerra antes com o rei de Moabe, e tomado de seu poder toda a sua terra até Arnom."
+ },
+ "Num 21:30": {
+  "zhRef": "民數記 21:30",
+  "enRef": "Numbers 21:30",
+  "ptRef": "Números 21:30",
+  "zh": "我們射了他們；希實本直到底本盡皆毀滅。我們使地變成荒場，直到挪法；這挪法直延到米底巴。",
+  "en": "We have shot at them. Heshbon has perished even to Dibon. We have laid waste even to Nophah, Which reaches to Medeba.”",
+  "pt": "Mas devastamos o reino deles; pereceu Hesbom até Dibom, E destruímos até Nofá e Medeba."
+ },
+ "Num 22:1": {
+  "zhRef": "民數記 22:1",
+  "enRef": "Numbers 22:1",
+  "ptRef": "Números 22:1",
+  "zh": "以色列人起行，在摩押平原、約旦河東，對著耶利哥安營。",
+  "en": "The children of Israel traveled, and encamped in the plains of Moab beyond the Jordan at Jericho.",
+  "pt": "Depois os filhos de Israel partiram, e se assentaram nos campos de Moabe, desta parte do Jordão de Jericó."
+ },
  "Num 22:5": {
   "zhRef": "民數記 22:5",
   "enRef": "Numbers 22:5",
@@ -321,29 +393,37 @@ window.VERSES = {
   "en": "He sent messengers to Balaam the son of Beor, to Pethor, which is by the River, to the land of the children of his people, to call him, saying, “Behold, there is a people who came out of Egypt. Behold, they cover the surface of the earth, and they are staying opposite me.",
   "pt": "Portanto enviou mensageiros a Balaão filho de Beor, a Petor, que está junto ao rio na terra dos filhos de seu povo, para que o chamassem, dizendo: Um povo saiu do Egito, e eis que cobre a face da terra, e habita diante de mim:"
  },
- "1 Kgs 7:46": {
-  "zhRef": "列王紀上 7:46",
-  "enRef": "1 Kings 7:46",
-  "ptRef": "1 Reis 7:46",
-  "zh": "是遵王命在約旦平原、疏割和撒拉但中間藉膠泥鑄成的。",
-  "en": "The king cast them in the plain of the Jordan, in the clay ground between Succoth and Zarethan.",
-  "pt": "Todo o fez fundir o rei na planície do Jordão, em terra argilosa, entre Sucote e Zaretã."
+ "Num 25:1": {
+  "zhRef": "民數記 25:1",
+  "enRef": "Numbers 25:1",
+  "ptRef": "Números 25:1",
+  "zh": "以色列人住在什亭，百姓與摩押女子行起淫亂。",
+  "en": "Israel stayed in Shittim; and the people began to play the prostitute with the daughters of Moab;",
+  "pt": "E repousou Israel em Sitim, e o povo começou a se prostituir com as filhas de Moabe:"
  },
- "Deut 3:16": {
-  "zhRef": "申命記 3:16",
-  "enRef": "Deuteronomy 3:16",
-  "ptRef": "Deuteronômio 3:16",
-  "zh": "從基列到亞嫩谷，以谷中為界，直到亞捫人交界的雅博河，我給了流便人和迦得人……",
-  "en": "To the Reubenites and to the Gadites I gave from Gilead even to the valley of the Arnon, the middle of the valley, and its border, even to the river Jabbok, which is the border of the children of Ammon;",
-  "pt": "E aos rubenitas e gaditas dei de Gileade até o ribeiro de Arnom, o meio do ribeiro por termo; até o ribeiro de Jaboque, termo dos filhos de Amom:"
+ "Num 32:35": {
+  "zhRef": "民數記 32:35",
+  "enRef": "Numbers 32:35",
+  "ptRef": "Números 32:35",
+  "zh": "亞他錄‧朔反、雅謝、約比哈……",
+  "en": "Atrothshophan, Jazer, Jogbehah,",
+  "pt": "E a Atarote-Sofã, e a Jazer, e a Jogbeá,"
  },
- "2 Sam 17:27-29": {
-  "zhRef": "撒母耳記下 17:27-29",
-  "enRef": "2 Samuel 17:27-29",
-  "ptRef": "2 Samuel 17:27-29",
-  "zh": "大衛到了瑪哈念，亞捫族的拉巴人拿轄的兒子朔比，羅‧底巴人亞‧米利的兒子瑪吉，基列的羅基琳人巴西萊，帶著被、褥、盆、碗、瓦器、小麥、大麥、麥麵、炒穀、豆子、紅豆、炒豆、蜂蜜、奶油、綿羊、奶餅，供給大衛和跟隨他的人吃；他們說：「民在曠野，必飢渴困乏了。」",
-  "en": "When David had come to Mahanaim, Shobi the son of Nahash of Rabbah of the children of Ammon, and Machir the son of Ammiel of Lodebar, and Barzillai the Gileadite of Rogelim, brought beds, basins, earthen vessels, wheat, barley, meal, parched grain, beans, lentils, roasted grain, honey, butter, sheep, and cheese of the herd, for David, and for the people who were with him, to eat: for they said, “The people are hungry, and weary, and thirsty, in the wilderness.”",
-  "pt": "E logo que Davi chegou a Maanaim, Sobi filho de Naás de Rabá dos filhos de Amom, e Maquir filho de Amiel de Lo-Debar, e Barzilai gileadita de Rogelim, Trouxeram a Davi e ao povo que estava com ele, camas, e bacias, e vasilhas de barro, e trigo, e cevada, e farinha, e grão tostado, favas, lentilhas, e grãos tostados, Mel, manteiga, ovelhas, e queijos de vacas, para que comessem; porque disseram: Aquele povo está faminto, e cansado, e terá sede no deserto."
+ "Num 32:37-38": {
+  "zhRef": "民數記 32:37-38",
+  "enRef": "Numbers 32:37-38",
+  "ptRef": "Números 32:37-38",
+  "zh": "流便子孫建造希實本、以利亞利、基列亭、尼波、巴力‧免、西比瑪（尼波、巴力‧免，名字是改了的），又給他們所建造的城另起別名。",
+  "en": "The children of Reuben built Heshbon, Elealeh, Kiriathaim, Nebo, and Baal Meon, (their names being changed), and Sibmah. They gave other names to the cities which they built.",
+  "pt": "E os filhos de Rúben edificaram a Hesbom, e a Eleale, e a Quiriataim, E a Nebo, e a Baal-Meom, (mudados os nomes), e a Sibma: e puseram nomes às cidades que edificaram."
+ },
+ "Song 7:4": {
+  "zhRef": "雅歌 7:4",
+  "enRef": "Song of Songs 7:4",
+  "ptRef": "Cânticos 7:4",
+  "zh": "你的頸項如象牙臺；你的眼目像希實本、巴特‧拉併門旁的水池；你的鼻子彷彿朝大馬士革的黎巴嫩塔。",
+  "en": "Your neck is like an ivory tower. Your eyes are like the pools in Heshbon by the gate of Bathrabbim. Your nose is like the tower of Lebanon which looks toward Damascus.",
+  "pt": "Teu pescoço é como uma torre de marfim; teus olhos são como os tanques de peixes de Hesbom, junto à porta de Bate-Rabim. Teu nariz é como a torre do Líbano, que está de frente a Damasco."
  }
 };
 window.PHOTOS = {
@@ -412,5 +492,23 @@ window.PHOTOS = {
   "artist": "Eugène Delacroix（畫作 painting）, Wikimedia Commons",
   "license": "CC BY-SA 3.0",
   "page": "https://commons.wikimedia.org/wiki/File:Lutte_de_Jacob_avec_l%27Ange.jpg"
+ },
+ "gadara": {
+  "src": "img/gadara.jpg",
+  "artist": "David Bjorgen",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Umm_Qais-13.jpg"
+ },
+ "gerasa": {
+  "src": "img/gerasa.jpg",
+  "artist": "Petar Milošević",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Oval_Plaza_(Forum_Romanum,_Gerasa_-_Jerash,_Jordan)_-_%D8%B3%D8%A7%D8%AD%D8%A9_%D8%A7%D9%84%D9%86%D8%AF%D9%88%D8%A9,_%D8%AC%D8%B1%D8%B4.jpg"
+ },
+ "irbid": {
+  "src": "img/irbid.jpg",
+  "artist": "mohammed alborum",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Irbid_City_(17304009505).jpg"
  }
 };
