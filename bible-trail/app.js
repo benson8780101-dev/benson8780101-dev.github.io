@@ -166,8 +166,8 @@ let lang = loadLang();
 // 缺哪個語言就先用英文，再用中文，畫面不會空白
 const t = (key, vars) => { const e = T[key] || {}; return fill(e[lang] || e.en || key, vars); };
 const pick = (obj) => (obj ? obj[lang] || obj.en || obj.zh : "");
-// 一段只出現在程式裡的三語文字（說明頁用）
-const L = (o) => o[lang] || o.en;
+// 一段只出現在程式裡的三語文字（說明頁用）。注意：不能取名 L，L 是地圖套件 Leaflet 的名字
+const tri = (o) => o[lang] || o.en;
 function fill(s, vars) {
   if (!vars) return s;
   return s.replace(/\{(\w+)\}/g, (_, k) => (k in vars ? vars[k] : ""));
@@ -401,37 +401,37 @@ function renderAbout() {
   v.replaceChildren(
     el("div", { class: "card" }, el("h2", null, t("introTitle")), textBlock(t("introBody", introVars()))),
     el("div", { class: "card" },
-      el("h2", null, L({ zh: "可信度標記", en: "Certainty Labels", pt: "Grau de Certeza" })),
+      el("h2", null, tri({ zh: "可信度標記", en: "Certainty Labels", pt: "Grau de Certeza" })),
       el("ul", { class: "legend" }, ["certYes", "certLikely", "certTradition", "certArea", "certUnknown"].map((k) => el("li", null, t(k)))),
-      el("p", { class: "muted" }, L({
+      el("p", { class: "muted" }, tri({
         zh: "聖經地點有的經過考古證實，有的是一千多年來信徒世代紀念的「傳統說法」。我們老實標出來，讓你自己判斷。",
         en: "Some biblical sites are confirmed by archaeology; others are 'traditional sites' that believers have honored for over a thousand years. We label them honestly so you can judge for yourself.",
         pt: "Alguns lugares bíblicos foram confirmados pela arqueologia; outros são \"locais tradicionais\", lembrados pelos cristãos há mais de mil anos. Indicamos isso com honestidade para que você mesmo possa avaliar."
       }))
     ),
     el("div", { class: "card" },
-      el("h2", null, L({ zh: "加到手機主畫面", en: "Add to Your Home Screen", pt: "Adicionar à Tela Inicial" })),
-      el("p", null, L({ zh: "不用安裝也能用。想要像 App 一樣有圖示：", en: "No install needed. For an app-like icon:", pt: "Não precisa instalar. Para ter um ícone como de aplicativo:" })),
+      el("h2", null, tri({ zh: "加到手機主畫面", en: "Add to Your Home Screen", pt: "Adicionar à Tela Inicial" })),
+      el("p", null, tri({ zh: "不用安裝也能用。想要像 App 一樣有圖示：", en: "No install needed. For an app-like icon:", pt: "Não precisa instalar. Para ter um ícone como de aplicativo:" })),
       el("ul", null,
-        el("li", null, L({ zh: "iPhone（Safari）：點分享按鈕 → 加入主畫面", en: "iPhone (Safari): tap Share → Add to Home Screen", pt: "iPhone (Safari): toque em Compartilhar → Adicionar à Tela de Início" })),
-        el("li", null, L({ zh: "Android（Chrome）：點右上角 ⋮ → 加到主畫面", en: "Android (Chrome): tap ⋮ → Add to Home screen", pt: "Android (Chrome): toque em ⋮ → Adicionar à tela inicial" })))
+        el("li", null, tri({ zh: "iPhone（Safari）：點分享按鈕 → 加入主畫面", en: "iPhone (Safari): tap Share → Add to Home Screen", pt: "iPhone (Safari): toque em Compartilhar → Adicionar à Tela de Início" })),
+        el("li", null, tri({ zh: "Android（Chrome）：點右上角 ⋮ → 加到主畫面", en: "Android (Chrome): tap ⋮ → Add to Home screen", pt: "Android (Chrome): toque em ⋮ → Adicionar à tela inicial" })))
     ),
     el("div", { class: "card" },
-      el("h2", null, L({ zh: "隱私", en: "Privacy", pt: "Privacidade" })),
-      el("p", null, L({
+      el("h2", null, tri({ zh: "隱私", en: "Privacy", pt: "Privacidade" })),
+      el("p", null, tri({
         zh: "這個 App 不需要帳號、不收集個人資料。蓋章時的位置只在你的手機上比對，進度只存在你的手機裡。",
         en: "No account, no personal data collected. Your location is only compared on your phone during check-in, and progress stays on your phone.",
         pt: "Sem conta e sem coleta de dados pessoais. Sua localização só é comparada no seu celular durante o check-in, e o progresso fica no seu celular."
       }))
     ),
     el("div", { class: "card" },
-      el("h2", null, L({ zh: "資料來源與授權", en: "Sources & Credits", pt: "Fontes e Créditos" })),
+      el("h2", null, tri({ zh: "資料來源與授權", en: "Sources & Credits", pt: "Fontes e Créditos" })),
       el("ul", { class: "muted" },
-        el("li", null, L({ zh: "經文：《和合本》、World English Bible（皆為公共領域）", en: "Scripture: Chinese Union Version and World English Bible (both public domain)", pt: "Bíblia em chinês e inglês: Chinese Union Version e World English Bible (domínio público)" })),
-        el("li", null, L({ zh: "葡萄牙文經文：", en: "Portuguese scripture: ", pt: "Bíblia em português: " }), link("https://www.biblialivre.com.br/", "Bíblia Livre"), " (CC BY 3.0 BR)"),
-        el("li", null, L({ zh: "地點與座標：", en: "Places & coordinates: ", pt: "Lugares e coordenadas: " }), link("https://www.openbible.info/geo/", "OpenBible.info"), " (CC BY 4.0)"),
-        el("li", null, L({ zh: "地圖：", en: "Map: ", pt: "Mapa: " }), "© ", link("https://www.openstreetmap.org/copyright", "OpenStreetMap"), L({ zh: " 貢獻者", en: " contributors", pt: " colaboradores" })),
-        el("li", null, L({ zh: "照片：Wikimedia Commons，作者與授權標在每張照片下方", en: "Photos: Wikimedia Commons; author and license under each photo", pt: "Fotos: Wikimedia Commons; autor e licença abaixo de cada foto" }))
+        el("li", null, tri({ zh: "經文：《和合本》、World English Bible（皆為公共領域）", en: "Scripture: Chinese Union Version and World English Bible (both public domain)", pt: "Bíblia em chinês e inglês: Chinese Union Version e World English Bible (domínio público)" })),
+        el("li", null, tri({ zh: "葡萄牙文經文：", en: "Portuguese scripture: ", pt: "Bíblia em português: " }), link("https://www.biblialivre.com.br/", "Bíblia Livre"), " (CC BY 3.0 BR)"),
+        el("li", null, tri({ zh: "地點與座標：", en: "Places & coordinates: ", pt: "Lugares e coordenadas: " }), link("https://www.openbible.info/geo/", "OpenBible.info"), " (CC BY 4.0)"),
+        el("li", null, tri({ zh: "地圖：", en: "Map: ", pt: "Mapa: " }), "© ", link("https://www.openstreetmap.org/copyright", "OpenStreetMap"), tri({ zh: " 貢獻者", en: " contributors", pt: " colaboradores" })),
+        el("li", null, tri({ zh: "照片：Wikimedia Commons，作者與授權標在每張照片下方", en: "Photos: Wikimedia Commons; author and license under each photo", pt: "Fotos: Wikimedia Commons; autor e licença abaixo de cada foto" }))
       ),
       el("p", { class: "muted" }, "Benson and Esther · 2026")
     )
