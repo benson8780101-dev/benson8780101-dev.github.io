@@ -51,7 +51,8 @@ function certCard() {
     el("label", { class: "field" }, el("span", null, t("certName")), input),
     el("button", { class: "btn", type: "button", onclick: () => makeCertificate(cleanName(input.value), out) }, t("certMake")),
     el("p", { class: "muted" }, t("certPrivacy")),
-    out);
+    out,
+    noteCount() ? el("button", { class: "btn ghost", type: "button", onclick: downloadJournal }, t("journalDownload")) : null);
   return card;
 }
 

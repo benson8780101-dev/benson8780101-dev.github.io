@@ -86,6 +86,18 @@ const T = {
   navApprox: { zh: "這是大約位置，快到的時候請看當地路標或問路。", en: "This is an approximate location—watch for local signs or ask for directions as you get close." },
   sideChapter: { zh: "支線", en: "Side Trail" },
   foodTitle: { zh: "🍽️ 聖經餐桌", en: "🍽️ Bible Table" },
+  noteLabel: { zh: "✍️ 我的回答（只存在這支手機）", en: "✍️ My answer (saved only on this phone)" },
+  notePlaceholder: { zh: "寫一兩句就好……", en: "A sentence or two is enough…" },
+  noteSaved: { zh: "✓ 已存", en: "✓ Saved" },
+  journalTitle: { zh: "📓 我的旅程日記", en: "📓 My Journey Journal" },
+  journalHelp: { zh: "每站「想一想」底下寫的回答，都會收在這裡。只存在這支手機，不會傳到任何地方；換手機前用下面的「匯出備份檔」，日記也會一起備份。", en: "Your answers under each site's \"Reflect\" are collected here. They're saved only on this phone and never sent anywhere; before switching phones, use \"Export backup\" below and your journal is backed up too." },
+  journalCount: { zh: "已經寫了 {n} 站", en: "Sites with an answer: {n}" },
+  journalEmpty: { zh: "還沒有寫任何一站。打開任何地點，在「想一想」底下寫下你的回答。", en: "Nothing yet. Open any site and write your answer under \"Reflect\"." },
+  journalDownload: { zh: "⬇️ 下載日記（文字檔）", en: "⬇️ Download journal (text file)" },
+  journalHeading: { zh: "約旦聖經足跡・我的旅程日記", en: "Jordan Bible Trail · My Journey Journal" },
+  homeTitle: { zh: "🏠 還沒出發，就能先拿 {n} 個章", en: "🏠 Earn {n} stamps before you even set out" },
+  homeHelp: { zh: "這 {n} 個「隱藏關卡」位置不確定，不用到現場：讀完故事、答對小問答就能解鎖。出發前先在家讀一讀，旅程還沒開始就有進度。", en: "These {n} hidden levels have uncertain locations, so no visit is needed: read the story and answer the quiz to unlock each one. Read them at home before your trip and you'll have progress before the journey begins." },
+  homeProgress: { zh: "已解鎖 {a} / {b}", en: "Unlocked {a} / {b}" },
   tripsTitle: { zh: "🗓️ 現成行程", en: "🗓️ Ready-Made Itineraries" },
   tripsHelp: { zh: "給自己開車的人：照著走就好，點地點可以看故事和導航。打勾的是已經蓋過章的。", en: "For self-drive travelers: just follow along; tap a site for its story and directions. Ticks mark stamps you already have." },
   tripDay: { zh: "第 {n} 天", en: "Day {n}" },
@@ -169,6 +181,18 @@ const T_PT = {
   navApprox: "Esta é uma localização aproximada — fique atento às placas ou peça informações quando estiver chegando.",
   sideChapter: "Trilha Extra",
   foodTitle: "🍽️ Mesa Bíblica",
+  noteLabel: "✍️ Minha resposta (salva só neste celular)",
+  notePlaceholder: "Uma ou duas frases bastam…",
+  noteSaved: "✓ Salvo",
+  journalTitle: "📓 Meu Diário de Viagem",
+  journalHelp: "Suas respostas em \"Para Refletir\" de cada lugar ficam reunidas aqui. Elas ficam salvas só neste celular e nunca são enviadas a lugar nenhum; antes de trocar de celular, use \"Exportar backup\" abaixo e o diário também vai junto.",
+  journalCount: "Lugares com resposta: {n}",
+  journalEmpty: "Nada ainda. Abra qualquer lugar e escreva sua resposta em \"Para Refletir\".",
+  journalDownload: "⬇️ Baixar diário (arquivo de texto)",
+  journalHeading: "Trilha Bíblica da Jordânia · Meu Diário de Viagem",
+  homeTitle: "🏠 Ganhe {n} carimbos antes mesmo de sair",
+  homeHelp: "Estas {n} fases secretas têm localização incerta, então não é preciso ir até lá: leia a história e responda o quiz para desbloquear cada uma. Leia em casa antes da viagem e você já terá progresso antes de a jornada começar.",
+  homeProgress: "Desbloqueadas {a} / {b}",
   tripsTitle: "🗓️ Roteiros Prontos",
   tripsHelp: "Para quem dirige por conta própria: é só seguir; toque num lugar para ver a história e o caminho. Os marcados já foram carimbados.",
   tripDay: "Dia {n}",
@@ -242,6 +266,14 @@ function el(tag, attrs, ...kids) {
   }
   return n;
 }
+// 證書（cert.js）、日記（journal.js）是另外的檔案。網路不好時其中一個可能沒載到，
+// 這時只少那一塊，App 其他部分照常能用，並在主控台記下是哪個沒載到。
+function part(fnName, ...args) {
+  const fn = window[fnName];
+  if (typeof fn === "function") return fn(...args);
+  console.error("[BibleTrail] 這個功能的檔案沒載入：" + fnName);
+  return null;
+}
 function textBlock(s) { return s.split("\n").map((line) => el("p", null, line)); }
 function fmtDate(ts) {
   try { return new Date(ts).toLocaleDateString(LOCALE[lang]); } catch { return ""; }
@@ -254,7 +286,7 @@ function loadLang() {
   const nav = (navigator.language || "").toLowerCase();
   return nav.startsWith("zh") ? "zh" : nav.startsWith("pt") ? "pt" : "en";
 }
-function emptyState() { return { stamps: {}, stars: {} }; }
+function emptyState() { return { stamps: {}, stars: {}, notes: {} }; }
 function loadState() {
   try {
     const raw = localStorage.getItem(STORE_KEY);
@@ -275,10 +307,13 @@ function sanitize(obj) {
   const out = emptyState();
   const stamps = obj.stamps && typeof obj.stamps === "object" ? obj.stamps : {};
   const stars = obj.stars && typeof obj.stars === "object" ? obj.stars : {};
+  const notes = obj.notes && typeof obj.notes === "object" ? obj.notes : {};
   for (const id of Object.keys(STATIONS)) {
     const s = stamps[id];
     if (s && typeof s === "object" && Number.isFinite(s.t)) out.stamps[id] = { t: s.t, manual: s.manual === true };
     if (stars[id] === true) out.stars[id] = true;
+    const n = typeof notes[id] === "string" ? (typeof cleanNote === "function" ? cleanNote(notes[id]) : notes[id].trim().slice(0, 1500)) : "";
+    if (n) out.notes[id] = n;
   }
   return out;
 }
@@ -360,6 +395,7 @@ function renderChapters() {
   const v = document.getElementById("view-chapters");
   v.replaceChildren();
   if (!introSeen) v.append(introBox());
+  v.append(homeCard());
   if (window.ITINERARIES) v.append(tripsCard());
   if (!storageOk) v.append(el("div", { class: "notice" }, t("storageOff")));
   for (const ch of CHAPTERS) {
@@ -396,6 +432,18 @@ function foodBox(food) {
     food.verses.map(verseQuote));
 }
 
+// 「在家先拿」：隱藏關卡不用到現場，放在關卡分頁最上面，讓人出發前就有進度
+function homeCard() {
+  const ids = stationIds().filter((id) => STATIONS[id].hidden);
+  const done = ids.filter((id) => state.stamps[id]).length;
+  return el("div", { class: "card home" },
+    el("h2", null, t("homeTitle", { n: ids.length })),
+    el("p", { class: "muted" }, t("homeHelp", { n: ids.length })),
+    el("p", null, el("b", null, t("homeProgress", { a: done, b: ids.length }))),
+    el("div", { class: "row" }, ids.map((id) => el("button", { class: "trip-stop" + (state.stamps[id] ? " done" : ""), type: "button", onclick: () => openStation(id) },
+      (state.stamps[id] ? "✓ " : "🔒 ") + pick(STATIONS[id].name).split("（")[0].split(" (")[0]))));
+}
+
 // 現成行程（trips.js）：每個行程收合起來，點開才看每天的安排
 function tripsCard() {
   const stopLink = (id) => el("button", { class: "trip-stop" + (state.stamps[id] ? " done" : ""), type: "button", onclick: () => openStation(id) },
@@ -423,7 +471,8 @@ function renderPassport() {
       el("p", { class: "muted" }, t("stampsOf", { a: stampCount(), b: stationIds().length }), " · ", t("starsOf", { a: starCount(), b: stationIds().length })),
       el("div", { class: "progress" }, el("i", { style: `width:${Math.round((stampCount() / stationIds().length) * 100)}%` }))
     ),
-    certCard(),
+    part("certCard"),
+    part("journalCard"),
     el("div", { class: "card" },
       el("h3", null, t("myBadges")),
       el("div", { class: "row" }, CHAPTERS.map((ch) => {
@@ -463,7 +512,8 @@ function importProgress(ev) {
   const file = ev.target.files && ev.target.files[0];
   ev.target.value = "";
   if (!file) return;
-  if (file.size > 200000) return toast(t("importBad"));
+  // 日記會讓備份檔變大：71 站 × 每站最多 1500 字，留足空間
+  if (file.size > 1000000) return toast(t("importBad"));
   file.text().then((txt) => {
     let data;
     try { data = JSON.parse(txt); } catch { data = null; }
@@ -474,6 +524,8 @@ function importProgress(ev) {
       if (!state.stamps[id] || s.t < state.stamps[id].t) state.stamps[id] = s;
     }
     Object.assign(state.stars, clean.stars);
+    // 日記：手機上已經有的不蓋掉，只補上沒有的
+    for (const [id, n] of Object.entries(clean.notes)) if (!state.notes[id]) state.notes[id] = n;
     saveState();
     toast(t("importOk", { n: stampCount() }));
     refresh();
@@ -552,7 +604,7 @@ function openStation(id) {
       checkinCard(id),
       el("div", { class: "card" }, el("h3", null, t("scripture")), s.verses.map(verseQuote)),
       el("div", { class: "card" }, el("h3", null, t("story")), el("p", null, pick(s.story))),
-      el("div", { class: "card" }, el("h3", null, t("reflect")), el("p", null, pick(s.reflect))),
+      el("div", { class: "card" }, el("h3", null, t("reflect")), el("p", null, pick(s.reflect)), part("noteBox", id)),
       el("div", { class: "card" }, el("h3", null, t("mission")), el("p", null, pick(s.mission))),
       quizCard(id),
       el("div", { class: "card" }, el("h3", null, t("howto")), el("p", null, pick(s.howto)),
