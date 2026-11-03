@@ -38,6 +38,7 @@
   color-scheme: dark;
 }
 :lang(zh-CN) { --f-body: system-ui, -apple-system, "Segoe UI", "Noto Sans SC", "PingFang SC", sans-serif; }
+:lang(pt) { --f-body: system-ui, -apple-system, "Segoe UI", sans-serif; }
 :lang(ko) { --f-body: system-ui, -apple-system, "Segoe UI", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif; }
 
 * { box-sizing: border-box; }
@@ -50,6 +51,9 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .brand { display: flex; align-items: center; gap: 10px; min-width: 0; }
 .brand-mark { font-family: var(--f-mono); font-weight: 600; font-size: 13px; background: var(--term-bg); color: var(--term-ink); padding: 3px 8px; border-radius: 6px; }
 .brand-name { font-family: var(--f-display); font-weight: 800; font-size: 17px; letter-spacing: -0.01em; white-space: nowrap; }
+.tools { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; }
+.oses { padding-right: 14px; border-right: 1px solid var(--line); }
+@media (max-width: 560px) { .oses { border-right: 0; padding-right: 0; } }
 .langs { display: flex; flex-wrap: wrap; gap: 4px; }
 .langs button { font: 500 13px/1 var(--f-body); border: 1px solid var(--line); background: var(--surface); color: var(--ink); padding: 7px 10px; border-radius: 999px; cursor: pointer; }
 .langs button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--bg); }
@@ -112,13 +116,13 @@ footer { color: var(--muted); font-size: 13px; margin-top: 40px; }
 @media (prefers-reduced-motion: no-preference) { article { animation: fade 0.25s ease-out; } }
 @keyframes fade { from { opacity: 0.4; transform: translateY(4px); } to { opacity: 1; transform: none; } }
 </style>
+
 </head>
 <body>
-
 <header class="top">
   <div class="top-inner">
     <div class="brand"><span class="brand-mark">&gt;_ cc</span><span class="brand-name" id="brand">Claude Code 新手指南</span></div>
-    <div class="langs" id="langs" role="group" aria-label="Language"></div>
+    <div class="tools"><div class="langs oses" id="oses" role="group" aria-label="Mac / Windows"></div><div class="langs" id="langs" role="group" aria-label="Language"></div></div>
   </div>
 </header>
 <div class="wrap">
@@ -138,12 +142,13 @@ footer { color: var(--muted); font-size: 13px; margin-top: 40px; }
 - **最難的是一開始的設定。** 設定一次，之後一直能用。這份指南帶你把設定一次走完。
 - **你不用會寫程式。** 遇到不會的，就把問題（甚至這個網頁的內容）丟給 Claude，叫它「直接幫我做」。
 - 標著 💬 的框框是**可以直接複製貼給 Claude 的話**，按右上角的「複製」就好。
+- 最上方可以切換 **🍎 Mac／🪟 Windows**，安裝步驟和快捷鍵會換成你的電腦適用的版本。
 
 ## 建議的學習路線
 
 | 天 | 做什麼 |
 |---|---|
-| 第 1 天 | 讀「觀念」→ 照「安裝與設定」裝好 Claude Code、cmux、CLAUDE.md、安全三件套 |
+| 第 1 天 | 讀「觀念」→ 照「安裝與設定」裝好 Claude Code、{{cmux|Windows Terminal}}、CLAUDE.md、安全三件套 |
 | 第 2 天 | 照「工具清單」裝 Firecrawl、Playwright，讓 AI 會上網 |
 | 第 3 天 | 照「實戰練習」做每日早報（接 Gmail、行事曆、Notion） |
 | 第 4–5 天 | 做一個自己的小工具（報價單、記帳表、食譜卡⋯⋯） |
@@ -181,7 +186,7 @@ AI 工具更新很快（本頁整理於 2026 年 10 月），價格和指令以�
 
 | 名詞 | 白話解釋 |
 |---|---|
-| **終端機** | 電腦內建、黑底白字、用打字下指令的視窗。裝好 cmux 後就像聊天 App。 |
+| **終端機** | 電腦內建、黑底白字、用打字下指令的視窗。{{裝好 cmux 後就像聊天 App。|Windows 用內建的 Windows Terminal 就很順手。}} |
 | **CLAUDE.md** | 給 Claude 看的「我的使用說明書」：我是誰、怎麼跟我溝通、有哪些規則。 |
 | **MCP** | AI 的「外接插座」。接上某個工具的 MCP，AI 就能操作那個工具。 |
 | **API Key／Token** | 某個服務發給你的「鑰匙」。**像密碼一樣保管**。 |
@@ -210,18 +215,18 @@ AI 工具更新很快（本頁整理於 2026 年 10 月），價格和指令以�
 
 # 安裝與設定
 
-> 以 **Mac** 示範，Windows 的差異標 🪟。裝好 Claude 之後，後面的步驟幾乎都可以貼一句話叫它幫你做。
+> 目前顯示的是 **{{🍎 Mac|🪟 Windows}} 版**，可以在最上方切換。裝好 Claude 之後，後面的步驟幾乎都可以貼一句話叫它幫你做。
 
 | # | 做什麼 | 目的 |
 |---|---|---|
 | 1 | 到正牌官網註冊、付費 | 避開釣魚網站 |
 | 2 | 安裝 Claude Code | 主角 |
-| 3 | 安裝 cmux 終端機 | 終端機變得像聊天 App |
+| 3 | {{安裝 cmux 終端機|設定 Windows Terminal}} | {{終端機變得像聊天 App|多開分頁、換行更順}} |
 | 4 | 建立專案資料夾 | 讓 AI 有自己的工作桌 |
 | 5 | 建立 CLAUDE.md | 每次對話都懂你 |
 | 6 | cc 快捷鍵＋全螢幕模式 | 打兩個字開工、畫面不閃 |
 | 7 | 安全三件套＋權限模式 | 防誤刪、少跳視窗 |
-| 8 | 長文編輯器 CotEditor | 長段文字不再擠成一行 |
+| 8 | 長文編輯器 {{CotEditor|Notepad++}} | 長段文字不再擠成一行 |
 
 ## 第 1 步：註冊帳號（小心釣魚網站）
 
@@ -232,18 +237,32 @@ AI 工具更新很快（本頁整理於 2026 年 10 月），價格和指令以�
 ## 第 2 步：安裝 Claude Code
 
 1. 打開 [官方說明頁](https://code.claude.com/docs/zh-TW/overview)，找到「Native Install」。
+:::mac
 2. 打開終端機：按 `⌘ + 空白鍵` → 打「終端機」→ Enter。
 3. 貼上官網的安裝指令（目前是 `curl -fsSL https://claude.ai/install.sh | bash`，以官網為準）→ Enter。
 4. 裝完輸入 `claude` → Enter。
 
 **卡關：** 出現「command not found」→ 往上捲，安裝訊息裡有一段 **Setup Notes** 叫你再執行一行指令，照著做就好。
+:::
+:::win
+2. **先裝 Git for Windows（官方建議）**：到 [git-scm.com](https://git-scm.com/downloads/win) 下載，一路按「Next」用預設值裝完。有了它，Claude 在 Windows 上能用的工具比較完整，後面的安全三件套也比較好裝。
+3. 打開終端機：按 `Windows 鍵` → 打「PowerShell」→ Enter。**不需要**用系統管理員身分執行。
+4. 貼上官網的 **Windows PowerShell** 安裝指令（目前是 `irm https://claude.ai/install.ps1 | iex`，以官網為準）→ Enter。
+5. 裝完**關掉視窗、重新開一個 PowerShell**，輸入 `claude` → Enter。
+
+**開錯視窗了？** 開頭有 `PS C:\Users\你的名字>` 的才是 PowerShell。出現「'irm' 不是內部或外部命令」代表你開到 CMD，請改開 PowerShell。
+
+**卡關：** 出現「無法辨識 'claude' 詞彙」（The term 'claude' is not recognized）→ 先關掉終端機重開。還是不行，就把 `C:\Users\你的名字\.local\bin` 加進 PATH：按 `Windows 鍵` 搜尋「環境變數」→ 選「編輯您帳戶的環境變數」→ 點 **Path** →「編輯」→「新增」貼上這個路徑 →「確定」，再重開終端機。
+
+**不想碰終端機？** 也可以下載 [Claude 桌面版 App](https://claude.com/download)，用裡面的 **Code** 分頁，滑鼠操作更直覺（第 3、6 步可跳過）。
+:::
 
 **第一次啟動：** 選畫面風格 → 登入方式選**第一個（訂閱帳號）** → 瀏覽器確認帳號、按授權 → 信任資料夾。看到輸入框就成功了，打「你好，你能做什麼？」試試看。
 
-🪟 Windows：官網有 PowerShell 的安裝指令。也可以用 **Claude 桌面版 App** 的 Code 分頁，滑鼠操作更直覺（第 3、6 步可跳過）。
 
-## 第 3 步：安裝 cmux（讓終端機變好用）
+## 第 3 步：{{安裝 cmux|設定 Windows Terminal}}（讓終端機變好用）
 
+:::mac
 Mac 內建終端機很難用：按 `Shift+Enter` 想換行卻直接送出，滑鼠點不到想改的字。[cmux](https://cmux.com/zh-TW)（開源、免費）解決這些問題：
 
 - `Shift + Enter` 換行
@@ -252,11 +271,21 @@ Mac 內建終端機很難用：按 `Shift+Enter` 想換行卻直接送出，滑�
 
 安裝：下載 Mac 版 → 拖進「應用程式」→ 打開 cmux → 輸入 `claude`。
 
-🪟 Windows：cmux 不支援，可用內建的 Windows Terminal、[WMUX](https://github.com/amirlehmam/wmux)（Windows 版 cmux）或 [Tabby](https://tabby.sh/)（開源）。
+:::
+:::win
+Windows 11 已經內建 **Windows Terminal**（Windows 10 可到 Microsoft Store 免費下載，開源、微軟出品）。它比舊的藍色 PowerShell 視窗好用很多：
+
+- `Ctrl + Shift + T` 開新分頁，**同時讓好幾個 Claude 做不同的事**
+- `Alt + Shift + D` 分割視窗、左右並排
+- 換行：先試 `Shift + Enter`；如果直接送出了，改按 `Ctrl + J`，或打 `\` 再按 Enter
+- 設成預設：Windows Terminal 的「設定」→「啟動」→「預設設定檔」選 **Windows PowerShell**，「預設終端機應用程式」選 **Windows Terminal**
+
+想要更像 cmux 的體驗，也可以試 [WMUX](https://github.com/amirlehmam/wmux)（Windows 版 cmux）或 [Tabby](https://tabby.sh/)（開源）。
+:::
 
 ## 第 4 步：建立專案資料夾
 
-**不要在電腦最外層開 Claude Code**，給它一張自己的工作桌：在「下載」或「文件」裡新建資料夾（例如 `我的 AI Agent`），選取後按 `⌘ + Option + C` 複製路徑。
+**不要在電腦最外層開 Claude Code**，給它一張自己的工作桌：在「下載」或「文件」裡新建資料夾（例如 `我的 AI Agent`），選取後{{按 `⌘ + Option + C` 複製路徑。|按右鍵 →「複製為路徑」（Windows 10 要先按住 `Shift` 再按右鍵）。}}
 
 > 💬 我想把工作資料夾設在（貼上路徑），請幫我移動過去，之後的工作都在這裡進行。
 
@@ -291,29 +320,38 @@ Mac 內建終端機很難用：按 `Shift+Enter` 想換行卻直接送出，滑�
 - 時間一律用（例如 Asia/Taipei）；處理日期前先確認今天是幾號。
 ```
 
-**測試：** 按 `⌘ + T` 開新對話，問「我是誰？我平常做什麼？」。以後它學到新東西，記得說「**把這個寫進 CLAUDE.md**」，它偶爾會忘記寫。
+**測試：** 按 `{{⌘ + T|Ctrl + Shift + T}}` 開新對話，問「我是誰？我平常做什麼？」。以後它學到新東西，記得說「**把這個寫進 CLAUDE.md**」，它偶爾會忘記寫。
 
 ## 第 6 步：cc 快捷鍵＋全螢幕模式
 
 以後只要打 `cc` 就進到專案資料夾並打開 Claude；「全螢幕模式」讓畫面不閃、滑鼠可以點、選取文字就自動複製、滾輪能往回看。
 
+:::mac
 > 💬 請照這份文件幫我設定終端機：https://github.com/benson8780101-dev/benson8780101-dev.github.io/blob/main/claude-guide/01-terminal-setup.md ，我的專案資料夾是（貼路徑）。你直接幫我做。
+:::
+:::win
+> 💬 我用的是 Windows 和 PowerShell。請參考這份文件：https://github.com/benson8780101-dev/benson8780101-dev.github.io/blob/main/claude-guide/01-terminal-setup.md ，改用 Windows 的做法幫我設定：在 PowerShell 設定檔（$PROFILE）建立一個 cc 指令，進到我的專案資料夾（貼路徑）並打開 Claude，再幫我開啟全螢幕模式。如果 PowerShell 不允許執行設定檔，也一併用安全的方式處理。你直接幫我做。
+:::
 
 | 按鍵 | 功能 |
 |---|---|
 | 滑鼠拖選 | 自動複製 |
 | `Ctrl+O` 再按 `/` | 在對話裡搜尋 |
-| `Ctrl+O` 再按 `[` | 把整段對話倒出來，可用 `⌘+F` 搜尋 |
+| `Ctrl+O` 再按 `[` | 把整段對話倒出來，可用 `{{⌘+F|Ctrl+Shift+F}}` 搜尋 |
 
 ## 第 7 步：安全三件套＋權限模式
 
 Claude 每個動作都問「可以嗎？」很煩，但全部放行又怕誤刪。**先裝安全網，再放寬權限：**
 
-1. 🗑️ **刪檔先進廢紙簍**：誤刪都能救回來。
+1. 🗑️ **刪檔先進{{廢紙簍|資源回收筒}}**：誤刪都能救回來。
 2. 🚫 **危險指令黑名單**：擋掉「一執行就回不來」的指令。
 3. 🧠 **工作守則**：被擋下時要回頭問你，不能繞過。
 
 > 💬 我是 AI 與程式的新手。請判斷我的電腦系統，幫我安裝這份「AI 安全三件套」：https://github.com/benson8780101-dev/benson8780101-dev.github.io/blob/main/claude-guide/02-safety-kit.md 照文件的 AI 執行指引直接幫我裝好，用白話跟我說，每次改設定檔前先備份。
+
+:::win
+🪟 貼之前先確認第 2 步的 **Git for Windows** 已經裝好。
+:::
 
 | 模式 | 白話 | 適合誰 |
 |---|---|---|
@@ -325,22 +363,22 @@ Claude 每個動作都問「可以嗎？」很煩，但全部放行又怕誤刪�
 
 按 `Shift + Tab` 切換模式；打 `/config` 看所有設定（包含模型）。Pro 方案想省額度可以選比較省的模型，要最聰明就選最強的，不確定選 Default。
 
-## 第 8 步：長文編輯器 CotEditor
+## 第 8 步：長文編輯器 {{CotEditor|Notepad++}}
 
 一次貼很長的文字，輸入框會縮成 `[Pasted text +20 lines]`，看不到也改不了。
 
-> 💬 每次我要貼一大段文字給你，終端機都會縮成一行，沒辦法編輯。我想用 CotEditor 當外部編輯器，請幫我安裝並設定好。
+> 💬 每次我要貼一大段文字給你，終端機都會縮成一行，沒辦法編輯。我想用 {{CotEditor 當外部編輯器，請幫我安裝並設定好。|Notepad++ 當外部編輯器（我用 Windows），請幫我安裝並設定好，要設定成我關掉視窗之後你才繼續。}}
 
-用法：按 `Ctrl + G` → CotEditor 跳出來 → 寫好 `⌘ + S` 存檔、`⌘ + W` 關視窗 → 文字回到對話框 → Enter。
+用法：按 `Ctrl + G` → {{CotEditor|Notepad++}} 跳出來 → 寫好 `{{⌘ + S|Ctrl + S}}` 存檔、{{`⌘ + W` 關視窗|按右上角 ✕ 關掉視窗}} → 文字回到對話框 → Enter。
 
 ⚠️ 踩過的坑：按 `Ctrl+G` 跳出 Chrome 的 Gemini，是 Chrome 搶走了快捷鍵。請 Claude 把外部編輯器改到別的鍵（例如 `Ctrl+E`）。設定完要**關掉 Claude 重開新對話**才生效。
 
 ## ✅ 第一天檢查表
 
 - 打 `cc` 能直接進到專案資料夾並開啟 Claude
-- `Shift + Enter` 可以換行
+- {{`Shift + Enter`|`Shift + Enter` 或 `Ctrl + J`}} 可以換行
 - 開新對話問「我是誰」，它答得出來
-- 刪檔會進廢紙簍
+- 刪檔會進{{廢紙簍|資源回收筒}}
 - 不會每個動作都跳出來問你
 - 快捷鍵能打開長文編輯器
 
@@ -351,10 +389,10 @@ Claude 每個動作都問「可以嗎？」很煩，但全部放行又怕誤刪�
 | 工具 | 類型 | 開源 | 費用 | 重要度 | 一句話用途 |
 |---|---|---|---|---|---|
 | **Claude Code** | AI 助理本體 | ✗ | Pro 約 USD 20／月起 | ★★★ 必裝 | 會動手做事的 AI |
-| **cmux** | 終端機 | ✓ | 免費 | ★★★ 必裝 | 終端機像聊天 App，可多開 |
+| **{{cmux|Windows Terminal}}** | 終端機 | ✓ | 免費 | ★★★ 必裝 | 終端機像聊天 App，可多開 |
 | **安全三件套** | 安全設定 | ✓ | 免費 | ★★★ 必裝 | 防止 AI 誤刪檔案 |
 | **cc＋全螢幕模式** | Claude 設定 | 內建 | 免費 | ★★★ 必裝 | 打 2 個字開工、畫面不閃 |
-| **CotEditor** | 文字編輯器 | ✓ | 免費 | ★★ 推薦 | 寫長段文字給 AI |
+| **{{CotEditor|Notepad++}}** | 文字編輯器 | ✓ | 免費 | ★★ 推薦 | 寫長段文字給 AI |
 | **Firecrawl MCP** | 外掛：讀網頁 | ✓ | 有免費額度 | ★★★ 推薦 | 網頁轉成 AI 好讀的文字 |
 | **Playwright MCP** | 外掛：操作瀏覽器 | ✓ | 免費 | ★★ 推薦 | AI 自己點按、填表、截圖 |
 | **Filesystem MCP** | 外掛：資料夾 | ✓ | 免費 | ★ 選用 | 開放指定的其他資料夾 |
@@ -377,11 +415,21 @@ Claude 每個動作都問「可以嗎？」很煩，但全部放行又怕誤刪�
 
 **Claude Code** — Anthropic 做的 AI 助理，能讀寫檔案、執行指令、上網、接外掛。資料在你自己電腦上，越用越懂你。用得更好：一個主題開一個對話；記憶快滿打 `/compact`；常用 `/mcp`、`/config`、`Shift+Tab`（切換權限）、`Esc`（打斷它）。
 
+:::mac
 **cmux** ✓開源 — 以 Ghostty 為核心、為 AI 設計的終端機。用得更好：一個分頁做早報、一個做網頁、一個查資料，同時進行；把分頁拖到一側就能左右並排。
+:::
+:::win
+**Windows Terminal** ✓開源（微軟）— Windows 11 內建的終端機。用得更好：`Ctrl+Shift+T` 開新分頁，一個做早報、一個做網頁、一個查資料，同時進行；`Alt+Shift+D` 分割視窗左右並排。
+:::
 
-**cc＋全螢幕模式** — `cc`＝進專案資料夾＋打開 Claude。注意：全螢幕模式下 `⌘+F` 失效，改用 `Ctrl+O` 再按 `/`。
+**cc＋全螢幕模式** — `cc`＝進專案資料夾＋打開 Claude。注意：全螢幕模式下 `{{⌘+F|Ctrl+Shift+F}}` 失效，改用 `Ctrl+O` 再按 `/`。
 
+:::mac
 **CotEditor** ✓開源 — Mac 上輕巧的純文字編輯器。在 Claude 裡叫出來寫長文，表情符號和換行都會保留。
+:::
+:::win
+**Notepad++** ✓開源 — Windows 上輕巧的純文字編輯器。在 Claude 裡按 `Ctrl+G` 叫出來寫長文，表情符號和換行都會保留。
+:::
 
 ## MCP 外掛：讓 AI 長出手腳
 
@@ -440,7 +488,7 @@ Claude 每個動作都問「可以嗎？」很煩，但全部放行又怕誤刪�
 
 > 💬 我想把這個工具放上網路讓朋友用。請比較 Cloudflare Pages、Zeabur 和 GitHub Pages，告訴我哪一種適合，再一步一步帶我做。
 
-**背後的小零件**（Homebrew、Node.js、uv、jq，都是開源）：Claude 說「需要安裝 ____」時，回它「好，直接幫我裝」就好。
+**背後的小零件**（{{Homebrew|winget、Git for Windows}}、Node.js、uv、jq，都是開源）：Claude 說「需要安裝 ____」時，回它「好，直接幫我裝」就好。
 
 # 實戰練習
 
@@ -509,7 +557,7 @@ Claude 每個動作都問「可以嗎？」很煩，但全部放行又怕誤刪�
 
 AI 很聰明，但它是「拿著你家鑰匙的新同事」。給權限之前先講好規矩：
 
-1. **刪檔一定能救回來**：裝好安全三件套，刪除會進廢紙簍。被擋下時 AI 要回頭問你，不能繞過。
+1. **刪檔一定能救回來**：裝好安全三件套，刪除會進{{廢紙簍|資源回收筒}}。被擋下時 AI 要回頭問你，不能繞過。
 2. **大改之前先存檔**：請它「改之前先備份一份」，有 Git 就先 commit 一次。
 3. **鑰匙不外流**：密碼、API Key 不要貼在對話裡、不要放進要公開的檔案；截圖分享時遮起來。
 4. **權限從小開始**：外掛先唯讀；寄信、發布、付款、刪除這類收不回來的動作，規定它先問你。
@@ -520,7 +568,7 @@ AI 很聰明，但它是「拿著你家鑰匙的新同事」。給權限之前�
 
 ```
 ## 安全守則
-- 刪除檔案前先確認是我要刪的；一律移到廢紙簍，不要永久刪除。
+- 刪除檔案前先確認是我要刪的；一律移到{{廢紙簍|資源回收筒}}，不要永久刪除。
 - 大量修改、搬移或刪除檔案前，先備份，並告訴我怎麼回復。
 - 被安全規則擋下時，改用可以還原的做法，或用白話問我；不要繞過。
 - 寄信、發布、上線、付費、變更權限前，先用一句白話跟我確認。
@@ -530,19 +578,21 @@ AI 很聰明，但它是「拿著你家鑰匙的新同事」。給權限之前�
 
 ## 常見問題
 
-**打 `claude` 說找不到指令？** 往上捲看安裝訊息的 Setup Notes，照著執行那一行，再重開終端機。
+**打 `claude` 說找不到指令？** {{往上捲看安裝訊息的 Setup Notes，照著執行那一行，再重開終端機。|先關掉終端機重開。還是不行，照「安裝與設定」第 2 步把 `C:\Users\你的名字\.local\bin` 加進 PATH，再重開。}}
 
-**`Shift + Enter` 直接送出、不能換行？** 你用的是 Mac 內建終端機，改用 cmux。
+**`Shift + Enter` 直接送出、不能換行？** {{你用的是 Mac 內建終端機，改用 cmux。|改按 `Ctrl + J`，或打 `\` 再按 Enter。}}
 
 **設定改了沒反應？** 外掛、快捷鍵、全螢幕模式都要**關掉 Claude 開新對話**才生效。打 `/exit` 離開，再打 `cc`。
 
-**貼長文字變成 `[Pasted text #1 +20 lines]`？** 只是收起來顯示，內容完整。想編輯就用 CotEditor。
+**貼長文字變成 `[Pasted text #1 +20 lines]`？** 只是收起來顯示，內容完整。想編輯就用 {{CotEditor|Notepad++}}。
 
 **裝了外掛，Claude 說沒有這個工具？** 開新對話；打 `/mcp` 看狀態，需要認證就選它 → Authenticate。
 
 **外掛顯示 `CONNECTION_CLOSED`？** 常見原因是找不到 Node.js。跟 Claude 說：「這個 MCP 顯示 CONNECTION_CLOSED，請檢查是不是要寫完整路徑或補上 PATH。」
 
 **貼授權網址到瀏覽器失敗？** 終端機複製長網址時可能在中間斷行、多出空格，刪掉再試。
+
+**怎麼把截圖貼給 Claude？** {{按 `Ctrl + ⌘ + Shift + 4` 把截圖存到剪貼簿 → 在 Claude 的輸入框按 `Ctrl + V`。|按 `Windows + Shift + S` 截圖 → 在 Claude 的輸入框按 `Alt + V`。}}也可以直接把圖片檔拖進終端機。
 
 **Google 每 7 天要重新登入？** Google Cloud 的「OAuth 同意畫面」還在「測試」狀態。請 Claude 帶你改成「正式版」。看到「Google 尚未驗證這個應用程式」是正常的（自己做給自己用），按「進階 → 前往」。
 
@@ -582,12 +632,13 @@ AI 很聰明，但它是「拿著你家鑰匙的新同事」。給權限之前�
 - **最难的是一开始的设置。** 设置一次，之后一直能用。这份指南带你把设置一次走完。
 - **你不用会写程序。** 遇到不会的，就把问题（甚至这个网页的内容）丢给 Claude，叫它“直接帮我做”。
 - 标着 💬 的框框是**可以直接复制贴给 Claude 的话**，按右上角的“复制”就好。
+- 最上方可以切换 **🍎 Mac／🪟 Windows**，安装步骤和快捷键会换成你的电脑适用的版本。
 
 ## 建议的学习路线
 
 | 天 | 做什么 |
 |---|---|
-| 第 1 天 | 读“观念”→ 照“安装与设置”装好 Claude Code、cmux、CLAUDE.md、安全三件套 |
+| 第 1 天 | 读“观念”→ 照“安装与设置”装好 Claude Code、{{cmux|Windows Terminal}}、CLAUDE.md、安全三件套 |
 | 第 2 天 | 照“工具清单”装 Firecrawl、Playwright，让 AI 会上网 |
 | 第 3 天 | 照“实战练习”做每日早报（接 Gmail、日历、Notion） |
 | 第 4–5 天 | 做一个自己的小工具（报价单、记帐表、食谱卡⋯⋯） |
@@ -625,7 +676,7 @@ AI 工具更新很快（本页整理于 2026 年 10 月），价格和指令以�
 
 | 名词 | 白话解释 |
 |---|---|
-| **终端机** | 电脑内置、黑底白字、用打字下指令的窗口。装好 cmux 后就像聊天 App。 |
+| **终端机** | 电脑内置、黑底白字、用打字下指令的窗口。{{装好 cmux 后就像聊天 App。|Windows 用内置的 Windows Terminal 就很顺手。}} |
 | **CLAUDE.md** | 给 Claude 看的“我的使用说明书”：我是谁、怎么跟我沟通、有哪些规则。 |
 | **MCP** | AI 的“外置插座”。接上某个工具的 MCP，AI 就能操作那个工具。 |
 | **API Key／Token** | 某个服务发给你的“钥匙”。**像密码一样保管**。 |
@@ -654,18 +705,18 @@ AI 工具更新很快（本页整理于 2026 年 10 月），价格和指令以�
 
 # 安装与设置
 
-> 以 **Mac** 示范，Windows 的差异标 🪟。装好 Claude 之后，后面的步骤几乎都可以贴一句话叫它帮你做。
+> 当前显示的是 **{{🍎 Mac|🪟 Windows}} 版**，可以在最上方切换。装好 Claude 之后，后面的步骤几乎都可以贴一句话叫它帮你做。
 
 | # | 做什么 | 目的 |
 |---|---|---|
 | 1 | 到正牌官网注册、付费 | 避开钓鱼网站 |
 | 2 | 安装 Claude Code | 主角 |
-| 3 | 安装 cmux 终端机 | 终端机变得像聊天 App |
+| 3 | {{安装 cmux 终端机|设置 Windows Terminal}} | {{终端机变得像聊天 App|多开分页、换行更顺}} |
 | 4 | 创建项目文件夹 | 让 AI 有自己的工作桌 |
 | 5 | 创建 CLAUDE.md | 每次对话都懂你 |
 | 6 | cc 快捷键＋全屏幕模式 | 打两个字开工、画面不闪 |
 | 7 | 安全三件套＋权限模式 | 防误删、少跳窗口 |
-| 8 | 长文编辑器 CotEditor | 长段文本不再挤成一行 |
+| 8 | 长文编辑器 {{CotEditor|Notepad++}} | 长段文本不再挤成一行 |
 
 ## 第 1 步：注册账号（小心钓鱼网站）
 
@@ -676,18 +727,32 @@ AI 工具更新很快（本页整理于 2026 年 10 月），价格和指令以�
 ## 第 2 步：安装 Claude Code
 
 1. 打开 [官方说明页](https://code.claude.com/docs/zh-CN/overview)，找到“Native Install”。
+:::mac
 2. 打开终端机：按 `⌘ + 空白键` → 打“终端机”→ Enter。
 3. 粘贴官网的安装指令（目前是 `curl -fsSL https://claude.ai/install.sh | bash`，以官网为准）→ Enter。
 4. 装完输入 `claude` → Enter。
 
 **卡关：** 出现“command not found”→ 往上卷，安装消息里有一段 **Setup Notes** 叫你再运行一行指令，照着做就好。
+:::
+:::win
+2. **先装 Git for Windows（官方建议）**：到 [git-scm.com](https://git-scm.com/downloads/win) 下载，一路按“Next”用默认值装完。有了它，Claude 在 Windows 上能用的工具更完整，后面的安全三件套也更好装。
+3. 打开终端机：按 `Windows 键` → 打“PowerShell”→ Enter。**不需要**以管理员身份运行。
+4. 粘贴官网的 **Windows PowerShell** 安装指令（目前是 `irm https://claude.ai/install.ps1 | iex`，以官网为准）→ Enter。
+5. 装完**关掉窗口、重新开一个 PowerShell**，输入 `claude` → Enter。
+
+**开错窗口了？** 开头有 `PS C:\Users\你的名字>` 的才是 PowerShell。出现“'irm' 不是内部或外部命令”说明你开到了 CMD，请改开 PowerShell。
+
+**卡关：** 出现“无法将 'claude' 项识别”（The term 'claude' is not recognized）→ 先关掉终端机重开。还是不行，就把 `C:\Users\你的名字\.local\bin` 加进 PATH：按 `Windows 键` 搜索“环境变量”→ 选“编辑帐户的环境变量”→ 点 **Path** →“编辑”→“新建”粘贴这个路径 →“确定”，再重开终端机。
+
+**不想碰终端机？** 也可以下载 [Claude 桌面版 App](https://claude.com/download)，用里面的 **Code** 分页，鼠标操作更直觉（第 3、6 步可跳过）。
+:::
 
 **第一次启动：** 选画面风格 → 登录方式选**第一个（订阅账号）** → 浏览器确认账号、按授权 → 信任文件夹。看到输入框就成功了，打“你好，你能做什么？”试试看。
 
-🪟 Windows：官网有 PowerShell 的安装指令。也可以用 **Claude 桌面版 App** 的 Code 分页，鼠标操作更直觉（第 3、6 步可跳过）。
 
-## 第 3 步：安装 cmux（让终端机变好用）
+## 第 3 步：{{安装 cmux|设置 Windows Terminal}}（让终端机变好用）
 
+:::mac
 Mac 内置终端机很难用：按 `Shift+Enter` 想换行却直接送出，鼠标点不到想改的字。[cmux](https://cmux.com/zh-CN)（开源、免费）解决这些问题：
 
 - `Shift + Enter` 换行
@@ -696,11 +761,21 @@ Mac 内置终端机很难用：按 `Shift+Enter` 想换行却直接送出，鼠�
 
 安装：下载 Mac 版 → 拖进“应用程序”→ 打开 cmux → 输入 `claude`。
 
-🪟 Windows：cmux 不支持，可用内置的 Windows Terminal、[WMUX](https://github.com/amirlehmam/wmux)（Windows 版 cmux）或 [Tabby](https://tabby.sh/)（开源）。
+:::
+:::win
+Windows 11 已经内置 **Windows Terminal**（Windows 10 可到 Microsoft Store 免费下载，开源、微软出品）。它比旧的蓝色 PowerShell 窗口好用很多：
+
+- `Ctrl + Shift + T` 开新分页，**同时让好几个 Claude 做不同的事**
+- `Alt + Shift + D` 分割窗口、左右并排
+- 换行：先试 `Shift + Enter`；如果直接送出了，改按 `Ctrl + J`，或打 `\` 再按 Enter
+- 设成默认：Windows Terminal 的“设置”→“启动”→“默认配置文件”选 **Windows PowerShell**，“默认终端应用程序”选 **Windows Terminal**
+
+想要更像 cmux 的体验，也可以试 [WMUX](https://github.com/amirlehmam/wmux)（Windows 版 cmux）或 [Tabby](https://tabby.sh/)（开源）。
+:::
 
 ## 第 4 步：创建项目文件夹
 
-**不要在电脑最外层开 Claude Code**，给它一张自己的工作桌：在“下载”或“文档”里新建文件夹（例如 `我的 AI Agent`），选取后按 `⌘ + Option + C` 复制路径。
+**不要在电脑最外层开 Claude Code**，给它一张自己的工作桌：在“下载”或“文档”里新建文件夹（例如 `我的 AI Agent`），选取后{{按 `⌘ + Option + C` 复制路径。|按右键 →“复制为路径”（Windows 10 要先按住 `Shift` 再按右键）。}}
 
 > 💬 我想把工作文件夹设在（粘贴路径），请帮我移动过去，之后的工作都在这里进行。
 
@@ -735,29 +810,38 @@ Mac 内置终端机很难用：按 `Shift+Enter` 想换行却直接送出，鼠�
 - 时间一律用（例如 Asia/Shanghai）；处理日期前先确认今天是几号。
 ```
 
-**测试：** 按 `⌘ + T` 开新对话，问“我是谁？我平常做什么？”。以后它学到新东西，记得说“**把这个写进 CLAUDE.md**”，它偶尔会忘记写。
+**测试：** 按 `{{⌘ + T|Ctrl + Shift + T}}` 开新对话，问“我是谁？我平常做什么？”。以后它学到新东西，记得说“**把这个写进 CLAUDE.md**”，它偶尔会忘记写。
 
 ## 第 6 步：cc 快捷键＋全屏幕模式
 
 以后只要打 `cc` 就进到项目文件夹并打开 Claude；“全屏幕模式”让画面不闪、鼠标可以点、选取文本就自动复制、滚轮能往回看。
 
+:::mac
 > 💬 请照这份文档帮我设置终端机：https://github.com/benson8780101-dev/benson8780101-dev.github.io/blob/main/claude-guide/01-terminal-setup.md ，我的项目文件夹是（贴路径）。你直接帮我做。
+:::
+:::win
+> 💬 我用的是 Windows 和 PowerShell。请参考这份文档：https://github.com/benson8780101-dev/benson8780101-dev.github.io/blob/main/claude-guide/01-terminal-setup.md ，改用 Windows 的做法帮我设置：在 PowerShell 配置文件（$PROFILE）建立一个 cc 指令，进到我的项目文件夹（贴路径）并打开 Claude，再帮我开启全屏幕模式。如果 PowerShell 不允许运行配置文件，也一并用安全的方式处理。你直接帮我做。
+:::
 
 | 按键 | 功能 |
 |---|---|
 | 鼠标拖选 | 自动复制 |
 | `Ctrl+O` 再按 `/` | 在对话里搜索 |
-| `Ctrl+O` 再按 `[` | 把整段对话倒出来，可用 `⌘+F` 搜索 |
+| `Ctrl+O` 再按 `[` | 把整段对话倒出来，可用 `{{⌘+F|Ctrl+Shift+F}}` 搜索 |
 
 ## 第 7 步：安全三件套＋权限模式
 
 Claude 每个动作都问“可以吗？”很烦，但全部放行又怕误删。**先装安全网，再放宽权限：**
 
-1. 🗑️ **删档先进废纸篓**：误删都能救回来。
+1. 🗑️ **删档先进{{废纸篓|回收站}}**：误删都能救回来。
 2. 🚫 **危险指令黑名单**：挡掉“一运行就回不来”的指令。
 3. 🧠 **工作守则**：被挡下时要回头问你，不能绕过。
 
 > 💬 我是 AI 与程序的新手。请判断我的电脑系统，帮我安装这份“AI 安全三件套”：https://github.com/benson8780101-dev/benson8780101-dev.github.io/blob/main/claude-guide/02-safety-kit.md 照文档的 AI 运行指引直接帮我装好，用白话跟我说，每次改设置档前先备份。
+
+:::win
+🪟 贴之前先确认第 2 步的 **Git for Windows** 已经装好。
+:::
 
 | 模式 | 白话 | 适合谁 |
 |---|---|---|
@@ -769,22 +853,22 @@ Claude 每个动作都问“可以吗？”很烦，但全部放行又怕误删�
 
 按 `Shift + Tab` 切换模式；打 `/config` 看所有设置（包含模型）。Pro 方案想省额度可以选比较省的模型，要最聪明就选最强的，不确定选 Default。
 
-## 第 8 步：长文编辑器 CotEditor
+## 第 8 步：长文编辑器 {{CotEditor|Notepad++}}
 
 一次贴很长的文本，输入框会缩成 `[Pasted text +20 lines]`，看不到也改不了。
 
-> 💬 每次我要贴一大段文本给你，终端机都会缩成一行，没办法编辑。我想用 CotEditor 当外部编辑器，请帮我安装并设置好。
+> 💬 每次我要贴一大段文本给你，终端机都会缩成一行，没办法编辑。我想用 {{CotEditor 当外部编辑器，请帮我安装并设置好。|Notepad++ 当外部编辑器（我用 Windows），请帮我安装并设置好，要设置成我关掉窗口之后你才继续。}}
 
-用法：按 `Ctrl + G` → CotEditor 跳出来 → 写好 `⌘ + S` 存盘、`⌘ + W` 关窗口 → 文本回到对话框 → Enter。
+用法：按 `Ctrl + G` → {{CotEditor|Notepad++}} 跳出来 → 写好 `{{⌘ + S|Ctrl + S}}` 存盘、{{`⌘ + W` 关窗口|按右上角 ✕ 关掉窗口}} → 文本回到对话框 → Enter。
 
 ⚠️ 踩过的坑：按 `Ctrl+G` 跳出 Chrome 的 Gemini，是 Chrome 抢走了快捷键。请 Claude 把外部编辑器改到别的键（例如 `Ctrl+E`）。设置完要**关掉 Claude 重开新对话**才生效。
 
 ## ✅ 第一天检查表
 
 - 打 `cc` 能直接进到项目文件夹并打开 Claude
-- `Shift + Enter` 可以换行
+- {{`Shift + Enter`|`Shift + Enter` 或 `Ctrl + J`}} 可以换行
 - 开新对话问“我是谁”，它答得出来
-- 删档会进废纸篓
+- 删档会进{{废纸篓|回收站}}
 - 不会每个动作都跳出来问你
 - 快捷键能打开长文编辑器
 
@@ -795,10 +879,10 @@ Claude 每个动作都问“可以吗？”很烦，但全部放行又怕误删�
 | 工具 | 类型 | 开源 | 费用 | 重要度 | 一句话用途 |
 |---|---|---|---|---|---|
 | **Claude Code** | AI 助理本体 | ✗ | Pro 约 USD 20／月起 | ★★★ 必装 | 会动手做事的 AI |
-| **cmux** | 终端机 | ✓ | 免费 | ★★★ 必装 | 终端机像聊天 App，可多开 |
+| **{{cmux|Windows Terminal}}** | 终端机 | ✓ | 免费 | ★★★ 必装 | 终端机像聊天 App，可多开 |
 | **安全三件套** | 安全设置 | ✓ | 免费 | ★★★ 必装 | 防止 AI 误删文件 |
 | **cc＋全屏幕模式** | Claude 设置 | 内置 | 免费 | ★★★ 必装 | 打 2 个字开工、画面不闪 |
-| **CotEditor** | 文本编辑器 | ✓ | 免费 | ★★ 推荐 | 写长段文本给 AI |
+| **{{CotEditor|Notepad++}}** | 文本编辑器 | ✓ | 免费 | ★★ 推荐 | 写长段文本给 AI |
 | **Firecrawl MCP** | 插件：读网页 | ✓ | 有免费额度 | ★★★ 推荐 | 网页转成 AI 好读的文本 |
 | **Playwright MCP** | 插件：操作浏览器 | ✓ | 免费 | ★★ 推荐 | AI 自己点按、填表、截屏 |
 | **Filesystem MCP** | 插件：文件夹 | ✓ | 免费 | ★ 选用 | 开放指定的其他文件夹 |
@@ -821,11 +905,21 @@ Claude 每个动作都问“可以吗？”很烦，但全部放行又怕误删�
 
 **Claude Code** — Anthropic 做的 AI 助理，能读写文件、运行指令、上网、接插件。数据在你自己电脑上，越用越懂你。用得更好：一个主题开一个对话；记忆快满打 `/compact`；常用 `/mcp`、`/config`、`Shift+Tab`（切换权限）、`Esc`（打断它）。
 
+:::mac
 **cmux** ✓开源 — 以 Ghostty 为内核、为 AI 设计的终端机。用得更好：一个分页做早报、一个做网页、一个查资料，同时进行；把分页拖到一侧就能左右并排。
+:::
+:::win
+**Windows Terminal** ✓开源（微软）— Windows 11 内置的终端机。用得更好：`Ctrl+Shift+T` 开新分页，一个做早报、一个做网页、一个查资料，同时进行；`Alt+Shift+D` 分割窗口左右并排。
+:::
 
-**cc＋全屏幕模式** — `cc`＝进项目文件夹＋打开 Claude。注意：全屏幕模式下 `⌘+F` 失效，改用 `Ctrl+O` 再按 `/`。
+**cc＋全屏幕模式** — `cc`＝进项目文件夹＋打开 Claude。注意：全屏幕模式下 `{{⌘+F|Ctrl+Shift+F}}` 失效，改用 `Ctrl+O` 再按 `/`。
 
+:::mac
 **CotEditor** ✓开源 — Mac 上轻巧的纯文本编辑器。在 Claude 里叫出来写长文，表情符号和换行都会保留。
+:::
+:::win
+**Notepad++** ✓开源 — Windows 上轻巧的纯文本编辑器。在 Claude 里按 `Ctrl+G` 叫出来写长文，表情符号和换行都会保留。
+:::
 
 ## MCP 插件：让 AI 长出手脚
 
@@ -884,7 +978,7 @@ Claude 每个动作都问“可以吗？”很烦，但全部放行又怕误删�
 
 > 💬 我想把这个工具放上网络让朋友用。请比较 Cloudflare Pages、Zeabur 和 GitHub Pages，告诉我哪一种适合，再一步一步带我做。
 
-**背后的小零件**（Homebrew、Node.js、uv、jq，都是开源）：Claude 说“需要安装 ____”时，回它“好，直接帮我装”就好。
+**背后的小零件**（{{Homebrew|winget、Git for Windows}}、Node.js、uv、jq，都是开源）：Claude 说“需要安装 ____”时，回它“好，直接帮我装”就好。
 
 # 实战练习
 
@@ -953,7 +1047,7 @@ Claude 每个动作都问“可以吗？”很烦，但全部放行又怕误删�
 
 AI 很聪明，但它是“拿着你家钥匙的新同事”。给权限之前先讲好规矩：
 
-1. **删档一定能救回来**：装好安全三件套，删除会进废纸篓。被挡下时 AI 要回头问你，不能绕过。
+1. **删档一定能救回来**：装好安全三件套，删除会进{{废纸篓|回收站}}。被挡下时 AI 要回头问你，不能绕过。
 2. **大改之前先存盘**：请它“改之前先备份一份”，有 Git 就先 commit 一次。
 3. **钥匙不外流**：密码、API Key 不要贴在对话里、不要放进要公开的文件；截屏分享时遮起来。
 4. **权限从小开始**：插件先唯读；寄信、发布、付款、删除这类收不回来的动作，规定它先问你。
@@ -964,7 +1058,7 @@ AI 很聪明，但它是“拿着你家钥匙的新同事”。给权限之前�
 
 ```
 ## 安全守则
-- 删除文件前先确认是我要删的；一律移到废纸篓，不要永久删除。
+- 删除文件前先确认是我要删的；一律移到{{废纸篓|回收站}}，不要永久删除。
 - 大量修改、搬移或删除文件前，先备份，并告诉我怎么回复。
 - 被安全规则挡下时，改用可以还原的做法，或用白话问我；不要绕过。
 - 寄信、发布、上线、付费、变更权限前，先用一句白话跟我确认。
@@ -974,19 +1068,21 @@ AI 很聪明，但它是“拿着你家钥匙的新同事”。给权限之前�
 
 ## 常见问题
 
-**打 `claude` 说找不到指令？** 往上卷看安装消息的 Setup Notes，照着运行那一行，再重开终端机。
+**打 `claude` 说找不到指令？** {{往上卷看安装消息的 Setup Notes，照着运行那一行，再重开终端机。|先关掉终端机重开。还是不行，照“安装与设置”第 2 步把 `C:\Users\你的名字\.local\bin` 加进 PATH，再重开。}}
 
-**`Shift + Enter` 直接送出、不能换行？** 你用的是 Mac 内置终端机，改用 cmux。
+**`Shift + Enter` 直接送出、不能换行？** {{你用的是 Mac 内置终端机，改用 cmux。|改按 `Ctrl + J`，或打 `\` 再按 Enter。}}
 
 **设置改了没反应？** 插件、快捷键、全屏幕模式都要**关掉 Claude 开新对话**才生效。打 `/exit` 离开，再打 `cc`。
 
-**贴长文本变成 `[Pasted text #1 +20 lines]`？** 只是收起来显示，内容完整。想编辑就用 CotEditor。
+**贴长文本变成 `[Pasted text #1 +20 lines]`？** 只是收起来显示，内容完整。想编辑就用 {{CotEditor|Notepad++}}。
 
 **装了插件，Claude 说没有这个工具？** 开新对话；打 `/mcp` 看状态，需要认证就选它 → Authenticate。
 
 **插件显示 `CONNECTION_CLOSED`？** 常见原因是找不到 Node.js。跟 Claude 说：“这个 MCP 显示 CONNECTION_CLOSED，请检查是不是要写完整路径或补上 PATH。”
 
 **贴授权网址到浏览器失败？** 终端机复制长网址时可能在中间断行、多出空格，删掉再试。
+
+**怎么把截图贴给 Claude？** {{按 `Ctrl + ⌘ + Shift + 4` 把截图存到剪贴板 → 在 Claude 的输入框按 `Ctrl + V`。|按 `Windows + Shift + S` 截图 → 在 Claude 的输入框按 `Alt + V`。}}也可以直接把图片文件拖进终端机。
 
 **Google 每 7 天要重新登录？** Google Cloud 的“OAuth 同意画面”还在“测试”状态。请 Claude 带你改成“正式版”。看到“Google 尚未验证这个应用程序”是正常的（自己做给自己用），按“高端 → 前往”。
 
@@ -1026,12 +1122,13 @@ AI 很聪明，但它是“拿着你家钥匙的新同事”。给权限之前�
 - **The hardest part is the first setup.** You do it once and it keeps working. This guide walks you through that setup in one go.
 - **You don't need to know how to code.** When you get stuck, hand the problem (or even this page) to Claude and say "just do it for me".
 - Boxes marked 💬 are **messages you can copy and paste straight into Claude**. Use the "Copy" button in the corner.
+- Use the **🍎 Mac / 🪟 Windows** switch at the top to see install steps and shortcuts for your computer.
 
 ## Suggested learning path
 
 | Day | What to do |
 |---|---|
-| Day 1 | Read "Key ideas", then follow "Setup" to install Claude Code, cmux, CLAUDE.md and the safety kit |
+| Day 1 | Read "Key ideas", then follow "Setup" to install Claude Code, {{cmux|Windows Terminal}}, CLAUDE.md and the safety kit |
 | Day 2 | Follow "Tools" to install Firecrawl and Playwright so the AI can browse the web |
 | Day 3 | Build a daily morning briefing in "Practice" (Gmail, Calendar, Notion) |
 | Day 4–5 | Build your own small tool (quote generator, budget sheet, recipe cards…) |
@@ -1069,7 +1166,7 @@ With custom GPTs or Gems, one chat is your "writing assistant" and another is yo
 
 | Term | Plain meaning |
 |---|---|
-| **Terminal** | The built-in window where you type commands on a black background. With cmux it feels like a chat app. |
+| **Terminal** | The built-in window where you type commands on a black background. {{With cmux it feels like a chat app.|On Windows, the built-in Windows Terminal works well.}} |
 | **CLAUDE.md** | Your "user manual" for Claude: who you are, how to talk to you, your rules. |
 | **MCP** | A "power socket" for AI. Plug in a tool's MCP and the AI can operate that tool. |
 | **API key / token** | A "key" a service gives you. **Guard it like a password.** |
@@ -1098,18 +1195,18 @@ With custom GPTs or Gems, one chat is your "writing assistant" and another is yo
 
 # Setup
 
-> Shown on a **Mac**; Windows differences are marked 🪟. Once Claude is installed, you can paste one sentence and let it do almost every later step for you.
+> You're viewing the **{{🍎 Mac|🪟 Windows}} version**. Switch at the top. Once Claude is installed, you can paste one sentence and let it do almost every later step for you.
 
 | # | What | Why |
 |---|---|---|
 | 1 | Sign up and pay on the real website | Avoid phishing sites |
 | 2 | Install Claude Code | The main tool |
-| 3 | Install the cmux terminal | Makes the terminal feel like a chat app |
+| 3 | {{Install the cmux terminal|Set up Windows Terminal}} | {{Makes the terminal feel like a chat app|Tabs and easier new lines}} |
 | 4 | Create a project folder | Gives the AI its own desk |
 | 5 | Create CLAUDE.md | It knows you in every conversation |
 | 6 | `cc` shortcut + fullscreen mode | Start with two letters, no flickering |
 | 7 | Safety kit + permission mode | Undo-able deletes, fewer pop-ups |
-| 8 | CotEditor for long text | Long messages stop collapsing into one line |
+| 8 | {{CotEditor|Notepad++}} for long text | Long messages stop collapsing into one line |
 
 ## Step 1: Sign up (watch out for phishing)
 
@@ -1120,18 +1217,32 @@ Sign up at [claude.ai](https://claude.ai) and upgrade to the **Pro plan**.
 ## Step 2: Install Claude Code
 
 1. Open the [official docs](https://code.claude.com/docs/en/overview) and find "Native Install".
+:::mac
 2. Open Terminal: press `⌘ + Space`, type "Terminal", press Enter.
 3. Paste the install command from the site (currently `curl -fsSL https://claude.ai/install.sh | bash`; the site takes priority) and press Enter.
 4. When it's done, type `claude` and press Enter.
 
 **If you get "command not found"**: scroll up. The install output has a **Setup Notes** section telling you to run one more line. Run it.
+:::
+:::win
+2. **Install Git for Windows first (recommended by Anthropic)**: download it from [git-scm.com](https://git-scm.com/downloads/win) and click "Next" through the defaults. With it, Claude has a fuller set of tools on Windows, and the safety kit later installs more smoothly.
+3. Open a terminal: press the `Windows key`, type "PowerShell", press Enter. You do **not** need to run it as Administrator.
+4. Paste the **Windows PowerShell** install command from the site (currently `irm https://claude.ai/install.ps1 | iex`; the site takes priority) and press Enter.
+5. When it's done, **close the window, open a new PowerShell**, type `claude` and press Enter.
+
+**Wrong window?** PowerShell shows `PS C:\Users\YourName>` at the start of the line. If you see "'irm' is not recognized as an internal or external command", you're in CMD. Open PowerShell instead.
+
+**If you get "The term 'claude' is not recognized"**: close and reopen the terminal first. If it still fails, add `C:\Users\YourName\.local\bin` to your PATH: press the `Windows key`, search "environment variables" → "Edit environment variables for your account" → select **Path** → "Edit" → "New", paste the path → "OK", then reopen the terminal.
+
+**Rather skip the terminal?** Download the [Claude desktop app](https://claude.com/download) and use its **Code** tab, which is mouse-friendly (then you can skip steps 3 and 6).
+:::
 
 **First launch:** pick a theme → choose the **first login option (subscription account)** → confirm your account in the browser and authorize → trust the folder. When you see the input box, you're in. Try "Hi, what can you do?"
 
-🪟 Windows: the docs have a PowerShell install command. You can also use the Code tab in the **Claude desktop app**, which is mouse-friendly (then you can skip steps 3 and 6).
 
-## Step 3: Install cmux (a better terminal)
+## Step 3: {{Install cmux|Set up Windows Terminal}} (a better terminal)
 
+:::mac
 The built-in Mac Terminal is awkward: `Shift+Enter` sends the message instead of adding a new line, and you can't click to move the cursor. [cmux](https://cmux.com) (open source, free) fixes this:
 
 - `Shift + Enter` adds a new line
@@ -1140,11 +1251,21 @@ The built-in Mac Terminal is awkward: `Shift+Enter` sends the message instead of
 
 Install: download the Mac version → drag it to Applications → open cmux → type `claude`.
 
-🪟 Windows: cmux isn't available. Use the built-in Windows Terminal, [WMUX](https://github.com/amirlehmam/wmux) (a cmux-style app for Windows) or [Tabby](https://tabby.sh/) (open source).
+:::
+:::win
+Windows 11 comes with **Windows Terminal** (on Windows 10, get it free from the Microsoft Store; it's open source, made by Microsoft). It's much nicer than the old blue PowerShell window:
+
+- `Ctrl + Shift + T` opens a new tab, so **several Claudes can work on different jobs at once**
+- `Alt + Shift + D` splits the window side by side
+- New line: try `Shift + Enter` first; if that sends the message, use `Ctrl + J`, or type `\` and then press Enter
+- Make it the default: Windows Terminal "Settings" → "Startup" → set "Default profile" to **Windows PowerShell** and "Default terminal application" to **Windows Terminal**
+
+For something closer to cmux, try [WMUX](https://github.com/amirlehmam/wmux) (a cmux-style app for Windows) or [Tabby](https://tabby.sh/) (open source).
+:::
 
 ## Step 4: Create a project folder
 
-**Don't start Claude Code in the top level of your computer.** Give it its own desk: create a folder in Downloads or Documents (for example `My AI Agent`), select it and press `⌘ + Option + C` to copy its path.
+**Don't start Claude Code in the top level of your computer.** Give it its own desk: create a folder in Downloads or Documents (for example `My AI Agent`), select it and {{press `⌘ + Option + C` to copy its path.|right-click → "Copy as path" (on Windows 10, hold `Shift` while you right-click).}}
 
 > 💬 I want my working folder to be (paste path). Please move there, and let's do all future work in this folder.
 
@@ -1179,29 +1300,38 @@ Then paste its answer into Claude:
 - Always use my time zone (e.g. Europe/London); check today's date before working with dates.
 ```
 
-**Test:** press `⌘ + T` for a new conversation and ask "Who am I and what do I usually do?". Whenever it learns something new, say "**Write this into CLAUDE.md**". It sometimes forgets.
+**Test:** press `{{⌘ + T|Ctrl + Shift + T}}` for a new conversation and ask "Who am I and what do I usually do?". Whenever it learns something new, say "**Write this into CLAUDE.md**". It sometimes forgets.
 
 ## Step 6: `cc` shortcut + fullscreen mode
 
 From now on, typing `cc` takes you to your project folder and opens Claude. Fullscreen mode stops the flickering, lets you click with the mouse, copies text as soon as you select it, and lets you scroll back.
 
+:::mac
 > 💬 Please set up my terminal using this document: https://github.com/benson8780101-dev/benson8780101-dev.github.io/blob/main/claude-guide/01-terminal-setup.md My project folder is (paste path). Please do it for me.
+:::
+:::win
+> 💬 I'm on Windows with PowerShell. Please use this document as a guide: https://github.com/benson8780101-dev/benson8780101-dev.github.io/blob/main/claude-guide/01-terminal-setup.md and set things up the Windows way: create a cc command in my PowerShell profile ($PROFILE) that goes to my project folder (paste path) and opens Claude, then turn on fullscreen mode. If PowerShell won't run the profile, fix that safely too. Please do it for me.
+:::
 
 | Keys | What it does |
 |---|---|
 | Drag to select | Copies automatically |
 | `Ctrl+O`, then `/` | Search the conversation |
-| `Ctrl+O`, then `[` | Dump the whole conversation so you can search with `⌘+F` |
+| `Ctrl+O`, then `[` | Dump the whole conversation so you can search with `{{⌘+F|Ctrl+Shift+F}}` |
 
 ## Step 7: Safety kit + permission mode
 
 It's annoying when Claude asks "May I?" before every action, but letting everything through feels risky. **Install a safety net first, then relax permissions:**
 
-1. 🗑️ **Deleted files go to the Trash**, so you can always get them back.
+1. 🗑️ **Deleted files go to the {{Trash|Recycle Bin}}**, so you can always get them back.
 2. 🚫 **Dangerous-command blocklist**: blocks commands that can't be undone.
 3. 🧠 **Working rules**: when blocked, it must come back and ask you, not find a way around.
 
 > 💬 I'm new to AI and programming. Please check my operating system and install this "AI safety kit" for me: https://github.com/benson8780101-dev/benson8780101-dev.github.io/blob/main/claude-guide/02-safety-kit.md Follow the AI instructions in the document, explain in plain English, and back up every settings file before changing it.
+
+:::win
+🪟 Before pasting, make sure **Git for Windows** from step 2 is installed.
+:::
 
 | Mode | Plain meaning | Good for |
 |---|---|---|
@@ -1213,22 +1343,22 @@ It's annoying when Claude asks "May I?" before every action, but letting everyth
 
 Press `Shift + Tab` to switch modes; type `/config` to see all settings (including the model). On Pro, a lighter model saves usage; the strongest model is the smartest. If unsure, choose Default.
 
-## Step 8: CotEditor for long text
+## Step 8: {{CotEditor|Notepad++}} for long text
 
 When you paste a long text, the input box collapses to `[Pasted text +20 lines]` and you can't see or edit it.
 
-> 💬 Whenever I paste a long text, the terminal collapses it into one line and I can't edit it. I'd like to use CotEditor as an external editor. Please install and set it up.
+> 💬 Whenever I paste a long text, the terminal collapses it into one line and I can't edit it. I'd like to use {{CotEditor as an external editor. Please install and set it up.|Notepad++ as an external editor (I'm on Windows). Please install and set it up so that you wait until I close the window.}}
 
-How to use: press `Ctrl + G` → CotEditor opens → write, then `⌘ + S` to save and `⌘ + W` to close → the text returns to the input box → press Enter.
+How to use: press `Ctrl + G` → {{CotEditor|Notepad++}} opens → write, then `{{⌘ + S|Ctrl + S}}` to save and {{`⌘ + W` to close|close the window with ✕}} → the text returns to the input box → press Enter.
 
 ⚠️ A problem we hit: if `Ctrl+G` opens Chrome's Gemini instead, Chrome has taken over that shortcut. Ask Claude to move the external editor to another key (for example `Ctrl+E`). After any setting change, **quit Claude and start a new conversation**.
 
 ## ✅ Day-one checklist
 
 - Typing `cc` opens Claude in your project folder
-- `Shift + Enter` adds a new line
+- {{`Shift + Enter`|`Shift + Enter` or `Ctrl + J`}} adds a new line
 - In a new conversation, it can answer "Who am I?"
-- Deleted files go to the Trash
+- Deleted files go to the {{Trash|Recycle Bin}}
 - It doesn't ask permission for every little thing
 - Your shortcut opens the long-text editor
 
@@ -1239,10 +1369,10 @@ How to use: press `Ctrl + G` → CotEditor opens → write, then `⌘ + S` to sa
 | Tool | Type | Open source | Cost | Priority | In one line |
 |---|---|---|---|---|---|
 | **Claude Code** | The AI assistant | ✗ | Pro from ~USD 20/month | ★★★ Essential | AI that does things |
-| **cmux** | Terminal | ✓ | Free | ★★★ Essential | Chat-app-like terminal with tabs |
+| **{{cmux|Windows Terminal}}** | Terminal | ✓ | Free | ★★★ Essential | Chat-app-like terminal with tabs |
 | **Safety kit** | Safety settings | ✓ | Free | ★★★ Essential | Stops the AI from deleting things for good |
 | **cc + fullscreen** | Claude settings | Built in | Free | ★★★ Essential | Start with 2 letters, no flicker |
-| **CotEditor** | Text editor | ✓ | Free | ★★ Recommended | Write long messages to the AI |
+| **{{CotEditor|Notepad++}}** | Text editor | ✓ | Free | ★★ Recommended | Write long messages to the AI |
 | **Firecrawl MCP** | Plugin: read web pages | ✓ | Free tier | ★★★ Recommended | Turns pages into clean text for the AI |
 | **Playwright MCP** | Plugin: control a browser | ✓ | Free | ★★ Recommended | AI clicks, fills forms, takes screenshots |
 | **Filesystem MCP** | Plugin: folders | ✓ | Free | ★ Optional | Opens one extra folder you choose |
@@ -1265,11 +1395,21 @@ How to use: press `Ctrl + G` → CotEditor opens → write, then `⌘ + S` to sa
 
 **Claude Code** — Anthropic's AI assistant. It reads and writes files, runs commands, browses the web and connects to plugins. Your data stays on your computer, so it gets to know you better over time. Tips: one topic per conversation; type `/compact` when memory is nearly full; useful keys are `/mcp`, `/config`, `Shift+Tab` (switch permission mode) and `Esc` (interrupt).
 
+:::mac
 **cmux** ✓ open source — a terminal built on Ghostty and designed for AI agents. Tips: one tab for the morning briefing, one for a web tool, one for research, all at once; drag a tab to the side to see two side by side.
+:::
+:::win
+**Windows Terminal** ✓ open source (Microsoft) — the terminal built into Windows 11. Tips: `Ctrl+Shift+T` for a new tab — one for the morning briefing, one for a web tool, one for research, all at once; `Alt+Shift+D` to split side by side.
+:::
 
-**cc + fullscreen** — `cc` = go to the project folder and open Claude. Note: in fullscreen mode `⌘+F` doesn't work; use `Ctrl+O` then `/`.
+**cc + fullscreen** — `cc` = go to the project folder and open Claude. Note: in fullscreen mode `{{⌘+F|Ctrl+Shift+F}}` doesn't work; use `Ctrl+O` then `/`.
 
+:::mac
 **CotEditor** ✓ open source — a light plain-text editor for Mac. Open it from Claude to write long messages; emoji and line breaks are kept.
+:::
+:::win
+**Notepad++** ✓ open source — a light plain-text editor for Windows. Open it from Claude with `Ctrl+G` to write long messages; emoji and line breaks are kept.
+:::
 
 ## MCP plugins: giving the AI hands
 
@@ -1328,7 +1468,7 @@ Type `/mcp` to see what's installed.
 
 > 💬 I want to put this tool online for friends. Please compare Cloudflare Pages, Zeabur and GitHub Pages, tell me which one fits, and walk me through it step by step.
 
-**Behind-the-scenes parts** (Homebrew, Node.js, uv, jq — all open source): when Claude says "we need to install ____", reply "OK, install it for me".
+**Behind-the-scenes parts** ({{Homebrew|winget, Git for Windows}}, Node.js, uv, jq — all open source): when Claude says "we need to install ____", reply "OK, install it for me".
 
 # Practice
 
@@ -1397,7 +1537,7 @@ Then add one feature at a time:
 
 The AI is smart, but it's a new colleague holding your house keys. Agree on the rules before handing over permissions:
 
-1. **Deletes must be recoverable**: with the safety kit, deleted files go to the Trash. When blocked, the AI must ask you, not work around it.
+1. **Deletes must be recoverable**: with the safety kit, deleted files go to the {{Trash|Recycle Bin}}. When blocked, the AI must ask you, not work around it.
 2. **Save before big changes**: ask it to "make a backup before changing anything"; if the folder uses Git, commit first.
 3. **Keep your keys private**: don't paste passwords or API keys into a chat or into files you'll publish; blur them in screenshots.
 4. **Start with small permissions**: plugins start read-only; sending email, publishing, paying and deleting must be confirmed with you first.
@@ -1408,7 +1548,7 @@ The AI is smart, but it's a new colleague holding your house keys. Agree on the 
 
 ```
 ## Safety rules
-- Before deleting a file, confirm it's the one I want deleted. Always move it to the Trash; never delete permanently.
+- Before deleting a file, confirm it's the one I want deleted. Always move it to the {{Trash|Recycle Bin}}; never delete permanently.
 - Before changing, moving or deleting many files, make a backup and tell me how to restore it.
 - If a safety rule blocks you, use a reversible approach or ask me in plain words; never work around it.
 - Before sending email, publishing, going live, paying or changing permissions, confirm with me in one sentence.
@@ -1418,19 +1558,21 @@ The AI is smart, but it's a new colleague holding your house keys. Agree on the 
 
 ## FAQ
 
-**Typing `claude` says "command not found"?** Scroll up to the Setup Notes in the install output, run that line, and reopen the terminal.
+**Typing `claude` says "command not found"?** {{Scroll up to the Setup Notes in the install output, run that line, and reopen the terminal.|Close and reopen the terminal first. If it still fails, add `C:\Users\YourName\.local\bin` to your PATH as in Setup step 2, then reopen.}}
 
-**`Shift + Enter` sends instead of adding a line?** You're using the built-in Mac Terminal. Switch to cmux.
+**`Shift + Enter` sends instead of adding a line?** {{You're using the built-in Mac Terminal. Switch to cmux.|Use `Ctrl + J`, or type `\` and then press Enter.}}
 
 **A setting change does nothing?** Plugins, shortcuts and fullscreen mode only apply after you **quit Claude and start a new conversation**. Type `/exit`, then `cc`.
 
-**Long pasted text shows as `[Pasted text #1 +20 lines]`?** It's only collapsed for display; the content is complete. Use CotEditor to edit it.
+**Long pasted text shows as `[Pasted text #1 +20 lines]`?** It's only collapsed for display; the content is complete. Use {{CotEditor|Notepad++}} to edit it.
 
 **Installed a plugin but Claude says the tool doesn't exist?** Start a new conversation; type `/mcp` to check its status and choose Authenticate if needed.
 
 **A plugin shows `CONNECTION_CLOSED`?** Usually it can't find Node.js. Tell Claude: "This MCP shows CONNECTION_CLOSED. Please check whether it needs a full path or a PATH setting."
 
 **A login link pasted into the browser fails?** Copying a long link from the terminal can add a line break or space in the middle. Remove it and try again.
+
+**How do I paste a screenshot into Claude?** {{Press `Ctrl + ⌘ + Shift + 4` to copy a screenshot to the clipboard, then press `Ctrl + V` in Claude's input box.|Press `Windows + Shift + S` to take a screenshot, then press `Alt + V` in Claude's input box.}} You can also drag an image file into the terminal.
 
 **Google asks you to log in again every 7 days?** The "OAuth consent screen" in Google Cloud is still in "Testing". Ask Claude to walk you through switching it to "In production". The warning "Google hasn't verified this app" is normal for an app you made for yourself; click "Advanced → Go to…".
 
@@ -1470,12 +1612,13 @@ The AI is smart, but it's a new colleague holding your house keys. Agree on the 
 - **Am schwierigsten ist die erste Einrichtung.** Du machst sie einmal, danach läuft es. Diese Anleitung führt dich in einem Durchgang durch.
 - **Du musst nicht programmieren können.** Wenn du nicht weiterkommst, gib Claude das Problem (oder sogar diese Seite) und sag: „Mach das bitte direkt für mich.“
 - Kästen mit 💬 sind **Nachrichten, die du direkt in Claude einfügen kannst**. Nutze den Button „Kopieren“ in der Ecke.
+- Mit dem Schalter **🍎 Mac / 🪟 Windows** oben siehst du Installationsschritte und Tastenkürzel für deinen Computer.
 
 ## Empfohlener Lernweg
 
 | Tag | Was du tust |
 |---|---|
-| Tag 1 | „Grundideen“ lesen, dann mit „Einrichtung“ Claude Code, cmux, CLAUDE.md und das Sicherheitspaket installieren |
+| Tag 1 | „Grundideen“ lesen, dann mit „Einrichtung“ Claude Code, {{cmux|Windows Terminal}}, CLAUDE.md und das Sicherheitspaket installieren |
 | Tag 2 | Unter „Werkzeuge“ Firecrawl und Playwright installieren, damit die KI im Web lesen kann |
 | Tag 3 | Unter „Praxis“ ein tägliches Morgen-Briefing bauen (Gmail, Kalender, Notion) |
 | Tag 4–5 | Ein eigenes kleines Tool bauen (Angebotsgenerator, Haushaltsbuch, Rezeptkarten …) |
@@ -1513,7 +1656,7 @@ Bei eigenen GPTs oder Gems ist ein Chat dein „Schreibassistent“ und ein ande
 
 | Begriff | Einfach erklärt |
 |---|---|
-| **Terminal** | Das eingebaute Fenster, in das man Befehle auf schwarzem Hintergrund tippt. Mit cmux fühlt es sich wie eine Chat-App an. |
+| **Terminal** | Das eingebaute Fenster, in das man Befehle auf schwarzem Hintergrund tippt. {{Mit cmux fühlt es sich wie eine Chat-App an.|Unter Windows ist das eingebaute Windows Terminal gut geeignet.}} |
 | **CLAUDE.md** | Deine „Bedienungsanleitung“ für Claude: wer du bist, wie man mit dir spricht, deine Regeln. |
 | **MCP** | Eine „Steckdose“ für die KI. Steckst du das MCP eines Tools ein, kann die KI dieses Tool bedienen. |
 | **API-Key / Token** | Ein „Schlüssel“, den dir ein Dienst gibt. **Wie ein Passwort hüten.** |
@@ -1542,18 +1685,18 @@ Bei eigenen GPTs oder Gems ist ein Chat dein „Schreibassistent“ und ein ande
 
 # Einrichtung
 
-> Gezeigt auf einem **Mac**; Unterschiede bei Windows sind mit 🪟 markiert. Sobald Claude installiert ist, kannst du einen Satz einfügen und es fast alle weiteren Schritte erledigen lassen.
+> Du siehst die **{{🍎 Mac|🪟 Windows}}-Version**. Oben umschalten. Sobald Claude installiert ist, kannst du einen Satz einfügen und es fast alle weiteren Schritte erledigen lassen.
 
 | # | Was | Wozu |
 |---|---|---|
 | 1 | Auf der echten Website registrieren und bezahlen | Phishing-Seiten vermeiden |
 | 2 | Claude Code installieren | Das Hauptwerkzeug |
-| 3 | Das Terminal cmux installieren | Terminal wie eine Chat-App |
+| 3 | {{Das Terminal cmux installieren|Windows Terminal einrichten}} | {{Terminal wie eine Chat-App|Tabs und leichtere Zeilenumbrüche}} |
 | 4 | Projektordner anlegen | Ein eigener Schreibtisch für die KI |
 | 5 | CLAUDE.md anlegen | Es kennt dich in jedem Gespräch |
 | 6 | `cc`-Kurzbefehl + Vollbildmodus | Mit zwei Buchstaben starten, kein Flackern |
 | 7 | Sicherheitspaket + Berechtigungsmodus | Löschen rückgängig machbar, weniger Rückfragen |
-| 8 | CotEditor für lange Texte | Lange Nachrichten werden nicht mehr zu einer Zeile |
+| 8 | {{CotEditor|Notepad++}} für lange Texte | Lange Nachrichten werden nicht mehr zu einer Zeile |
 
 ## Schritt 1: Registrieren (Vorsicht vor Phishing)
 
@@ -1564,18 +1707,32 @@ Registriere dich auf [claude.ai](https://claude.ai) und wechsle zum **Pro-Abo**.
 ## Schritt 2: Claude Code installieren
 
 1. Öffne die [offizielle Doku](https://code.claude.com/docs/de/overview) und suche „Native Install“.
+:::mac
 2. Öffne das Terminal: `⌘ + Leertaste`, „Terminal“ tippen, Enter.
 3. Füge den Installationsbefehl von der Seite ein (derzeit `curl -fsSL https://claude.ai/install.sh | bash`; die Website hat Vorrang) und drücke Enter.
 4. Danach `claude` tippen und Enter drücken.
 
 **Kommt „command not found“?** Scroll nach oben. In der Ausgabe steht ein Abschnitt **Setup Notes** mit einer weiteren Zeile, die du ausführen sollst. Führe sie aus.
+:::
+:::win
+2. **Zuerst Git for Windows installieren (von Anthropic empfohlen)**: von [git-scm.com](https://git-scm.com/downloads/win) herunterladen und mit den Standardwerten durchklicken („Next“). Damit hat Claude unter Windows mehr Werkzeuge, und das Sicherheitspaket lässt sich später leichter installieren.
+3. Terminal öffnen: `Windows-Taste` drücken, „PowerShell“ tippen, Enter. Du musst es **nicht** als Administrator ausführen.
+4. Füge den **Windows-PowerShell**-Befehl von der Seite ein (derzeit `irm https://claude.ai/install.ps1 | iex`; die Website hat Vorrang) und drücke Enter.
+5. Danach **das Fenster schließen, eine neue PowerShell öffnen**, `claude` tippen und Enter drücken.
+
+**Falsches Fenster?** PowerShell zeigt am Zeilenanfang `PS C:\Users\DeinName>`. Steht da „'irm' ist nicht als interner oder externer Befehl … erkannt“, bist du in CMD. Öffne stattdessen PowerShell.
+
+**Kommt „Die Benennung 'claude' wurde nicht … erkannt“?** Schließe das Terminal und öffne es neu. Hilft das nicht, füge `C:\Users\DeinName\.local\bin` zum PATH hinzu: `Windows-Taste`, „Umgebungsvariablen“ suchen → „Umgebungsvariablen für dieses Konto bearbeiten“ → **Path** auswählen → „Bearbeiten“ → „Neu“, Pfad einfügen → „OK“, dann das Terminal neu öffnen.
+
+**Lieber ohne Terminal?** Lade die [Claude-Desktop-App](https://claude.com/download) und nutze den **Code**-Tab, der sich mit der Maus bedienen lässt (dann kannst du Schritt 3 und 6 überspringen).
+:::
 
 **Erster Start:** Design wählen → **erste Anmeldeoption (Abo-Konto)** wählen → im Browser das Konto bestätigen und autorisieren → dem Ordner vertrauen. Siehst du das Eingabefeld, bist du drin. Probier: „Hallo, was kannst du?“
 
-🪟 Windows: Die Doku hat einen PowerShell-Befehl. Du kannst auch den Code-Tab der **Claude-Desktop-App** nutzen, der sich mit der Maus bedienen lässt (dann kannst du Schritt 3 und 6 überspringen).
 
-## Schritt 3: cmux installieren (ein besseres Terminal)
+## Schritt 3: {{cmux installieren|Windows Terminal einrichten}} (ein besseres Terminal)
 
+:::mac
 Das Mac-Terminal ist umständlich: `Shift+Enter` schickt die Nachricht ab statt eine neue Zeile zu machen, und man kann den Cursor nicht per Klick setzen. [cmux](https://cmux.com) (Open Source, kostenlos) löst das:
 
 - `Shift + Enter` macht eine neue Zeile
@@ -1584,11 +1741,21 @@ Das Mac-Terminal ist umständlich: `Shift+Enter` schickt die Nachricht ab statt 
 
 Installation: Mac-Version herunterladen → in „Programme“ ziehen → cmux öffnen → `claude` tippen.
 
-🪟 Windows: cmux gibt es nicht. Nutze das eingebaute Windows Terminal, [WMUX](https://github.com/amirlehmam/wmux) (cmux-Alternative für Windows) oder [Tabby](https://tabby.sh/) (Open Source).
+:::
+:::win
+Windows 11 bringt **Windows Terminal** mit (unter Windows 10 kostenlos im Microsoft Store; Open Source, von Microsoft). Es ist viel angenehmer als das alte blaue PowerShell-Fenster:
+
+- `Ctrl + Shift + T` öffnet einen neuen Tab, so können **mehrere Claudes gleichzeitig verschiedene Aufgaben** erledigen
+- `Alt + Shift + D` teilt das Fenster nebeneinander
+- Neue Zeile: zuerst `Shift + Enter` probieren; schickt das ab, nimm `Ctrl + J` oder tippe `\` und dann Enter
+- Als Standard festlegen: Windows Terminal „Einstellungen“ → „Start“ → „Standardprofil“ auf **Windows PowerShell** und „Standardterminalanwendung“ auf **Windows Terminal**
+
+Für ein cmux-ähnlicheres Gefühl gibt es [WMUX](https://github.com/amirlehmam/wmux) (cmux-Alternative für Windows) oder [Tabby](https://tabby.sh/) (Open Source).
+:::
 
 ## Schritt 4: Projektordner anlegen
 
-**Starte Claude Code nicht in der obersten Ebene deines Computers.** Gib ihm einen eigenen Schreibtisch: Lege in „Downloads“ oder „Dokumente“ einen Ordner an (z. B. `Mein KI-Agent`), markiere ihn und drücke `⌘ + Option + C`, um den Pfad zu kopieren.
+**Starte Claude Code nicht in der obersten Ebene deines Computers.** Gib ihm einen eigenen Schreibtisch: Lege in „Downloads“ oder „Dokumente“ einen Ordner an (z. B. `Mein KI-Agent`), markiere ihn und {{drücke `⌘ + Option + C`, um den Pfad zu kopieren.|wähle per Rechtsklick „Als Pfad kopieren“ (unter Windows 10 dabei `Shift` gedrückt halten).}}
 
 > 💬 Mein Arbeitsordner soll (Pfad einfügen) sein. Bitte wechsle dorthin, und lass uns alle künftigen Arbeiten in diesem Ordner machen.
 
@@ -1623,19 +1790,24 @@ Dann die Antwort in Claude einfügen:
 - Verwende immer meine Zeitzone (z. B. Europe/Berlin); prüfe das heutige Datum, bevor du mit Daten arbeitest.
 ```
 
-**Test:** `⌘ + T` für ein neues Gespräch und frag: „Wer bin ich und was mache ich normalerweise?“ Wenn es etwas Neues lernt, sag: „**Schreib das in die CLAUDE.md.**“ Manchmal vergisst es das.
+**Test:** `{{⌘ + T|Ctrl + Shift + T}}` für ein neues Gespräch und frag: „Wer bin ich und was mache ich normalerweise?“ Wenn es etwas Neues lernt, sag: „**Schreib das in die CLAUDE.md.**“ Manchmal vergisst es das.
 
 ## Schritt 6: `cc`-Kurzbefehl + Vollbildmodus
 
 Ab jetzt bringt dich `cc` in deinen Projektordner und öffnet Claude. Der Vollbildmodus stoppt das Flackern, erlaubt Mausklicks, kopiert markierten Text sofort und lässt dich zurückscrollen.
 
+:::mac
 > 💬 Bitte richte mein Terminal nach diesem Dokument ein: https://github.com/benson8780101-dev/benson8780101-dev.github.io/blob/main/claude-guide/01-terminal-setup.md Mein Projektordner ist (Pfad einfügen). Mach es bitte direkt für mich.
+:::
+:::win
+> 💬 Ich nutze Windows mit PowerShell. Bitte nimm dieses Dokument als Vorlage: https://github.com/benson8780101-dev/benson8780101-dev.github.io/blob/main/claude-guide/01-terminal-setup.md und richte es auf Windows-Art ein: Lege in meinem PowerShell-Profil ($PROFILE) einen Befehl cc an, der in meinen Projektordner (Pfad einfügen) wechselt und Claude öffnet, und schalte dann den Vollbildmodus ein. Falls PowerShell das Profil nicht ausführen darf, löse das bitte auf sichere Weise. Mach es bitte direkt für mich.
+:::
 
 | Tasten | Funktion |
 |---|---|
 | Mit der Maus markieren | Kopiert automatisch |
 | `Ctrl+O`, dann `/` | Im Gespräch suchen |
-| `Ctrl+O`, dann `[` | Ganzes Gespräch ausgeben, dann mit `⌘+F` suchen |
+| `Ctrl+O`, dann `[` | Ganzes Gespräch ausgeben, dann mit `{{⌘+F|Ctrl+Shift+F}}` suchen |
 
 ## Schritt 7: Sicherheitspaket + Berechtigungsmodus
 
@@ -1647,6 +1819,10 @@ Es nervt, wenn Claude vor jeder Aktion „Darf ich?“ fragt, aber alles freizug
 
 > 💬 Ich bin neu bei KI und Programmierung. Bitte prüfe mein Betriebssystem und installiere mir dieses „KI-Sicherheitspaket“: https://github.com/benson8780101-dev/benson8780101-dev.github.io/blob/main/claude-guide/02-safety-kit.md Folge den KI-Anweisungen im Dokument, erkläre alles in einfachem Deutsch und sichere jede Einstellungsdatei, bevor du sie änderst.
 
+:::win
+🪟 Prüfe vor dem Einfügen, dass **Git for Windows** aus Schritt 2 installiert ist.
+:::
+
 | Modus | Einfach erklärt | Gut für |
 |---|---|---|
 | **Default** | Fragt vor jeder Aktion | Einsteiger, die sehen wollen, was passiert |
@@ -1657,20 +1833,20 @@ Es nervt, wenn Claude vor jeder Aktion „Darf ich?“ fragt, aber alles freizug
 
 Mit `Shift + Tab` wechselst du den Modus; `/config` zeigt alle Einstellungen (auch das Modell). Bei Pro spart ein leichteres Modell Kontingent; das stärkste Modell ist am klügsten. Im Zweifel: Default.
 
-## Schritt 8: CotEditor für lange Texte
+## Schritt 8: {{CotEditor|Notepad++}} für lange Texte
 
 Fügst du einen langen Text ein, schrumpft das Eingabefeld zu `[Pasted text +20 lines]`, und du kannst ihn weder sehen noch bearbeiten.
 
-> 💬 Wenn ich einen langen Text einfüge, fasst das Terminal ihn zu einer Zeile zusammen und ich kann ihn nicht bearbeiten. Ich möchte CotEditor als externen Editor nutzen. Bitte installiere und richte ihn ein.
+> 💬 Wenn ich einen langen Text einfüge, fasst das Terminal ihn zu einer Zeile zusammen und ich kann ihn nicht bearbeiten. Ich möchte {{CotEditor als externen Editor nutzen. Bitte installiere und richte ihn ein.|Notepad++ als externen Editor nutzen (ich nutze Windows). Bitte installiere und richte ihn so ein, dass du wartest, bis ich das Fenster schließe.}}
 
-So geht's: `Ctrl + G` → CotEditor öffnet sich → schreiben, `⌘ + S` speichern, `⌘ + W` schließen → der Text ist wieder im Eingabefeld → Enter.
+So geht's: `Ctrl + G` → {{CotEditor|Notepad++}} öffnet sich → schreiben, `{{⌘ + S|Ctrl + S}}` speichern, {{`⌘ + W` schließen|Fenster mit ✕ schließen}} → der Text ist wieder im Eingabefeld → Enter.
 
 ⚠️ Ein Problem, das wir hatten: Öffnet `Ctrl+G` stattdessen Gemini in Chrome, hat Chrome das Tastenkürzel übernommen. Bitte Claude, den externen Editor auf eine andere Taste zu legen (z. B. `Ctrl+E`). Nach jeder Einstellungsänderung **Claude beenden und ein neues Gespräch starten**.
 
 ## ✅ Checkliste für Tag 1
 
 - `cc` öffnet Claude in deinem Projektordner
-- `Shift + Enter` macht eine neue Zeile
+- {{`Shift + Enter`|`Shift + Enter` oder `Ctrl + J`}} macht eine neue Zeile
 - In einem neuen Gespräch kann es „Wer bin ich?“ beantworten
 - Gelöschte Dateien landen im Papierkorb
 - Es fragt nicht bei jeder Kleinigkeit nach
@@ -1683,10 +1859,10 @@ So geht's: `Ctrl + G` → CotEditor öffnet sich → schreiben, `⌘ + S` speich
 | Werkzeug | Art | Open Source | Kosten | Priorität | In einem Satz |
 |---|---|---|---|---|---|
 | **Claude Code** | Der KI-Assistent | ✗ | Pro ab ca. 20 USD/Monat | ★★★ Pflicht | KI, die Dinge erledigt |
-| **cmux** | Terminal | ✓ | Kostenlos | ★★★ Pflicht | Terminal wie eine Chat-App, mit Tabs |
+| **{{cmux|Windows Terminal}}** | Terminal | ✓ | Kostenlos | ★★★ Pflicht | Terminal wie eine Chat-App, mit Tabs |
 | **Sicherheitspaket** | Sicherheitseinstellungen | ✓ | Kostenlos | ★★★ Pflicht | Verhindert endgültiges Löschen |
 | **cc + Vollbild** | Claude-Einstellungen | Eingebaut | Kostenlos | ★★★ Pflicht | Start mit 2 Buchstaben, kein Flackern |
-| **CotEditor** | Texteditor | ✓ | Kostenlos | ★★ Empfohlen | Lange Nachrichten schreiben |
+| **{{CotEditor|Notepad++}}** | Texteditor | ✓ | Kostenlos | ★★ Empfohlen | Lange Nachrichten schreiben |
 | **Firecrawl MCP** | Plugin: Webseiten lesen | ✓ | Gratis-Kontingent | ★★★ Empfohlen | Macht Seiten zu sauberem Text |
 | **Playwright MCP** | Plugin: Browser steuern | ✓ | Kostenlos | ★★ Empfohlen | KI klickt, füllt Formulare aus, macht Screenshots |
 | **Filesystem MCP** | Plugin: Ordner | ✓ | Kostenlos | ★ Optional | Öffnet einen weiteren, gewählten Ordner |
@@ -1709,11 +1885,21 @@ So geht's: `Ctrl + G` → CotEditor öffnet sich → schreiben, `⌘ + S` speich
 
 **Claude Code** — der KI-Assistent von Anthropic. Liest und schreibt Dateien, führt Befehle aus, surft im Web und nutzt Plugins. Deine Daten bleiben auf deinem Computer, so lernt er dich mit der Zeit besser kennen. Tipps: ein Thema pro Gespräch; `/compact`, wenn das Gedächtnis fast voll ist; nützlich sind `/mcp`, `/config`, `Shift+Tab` (Berechtigungsmodus wechseln) und `Esc` (unterbrechen).
 
+:::mac
 **cmux** ✓ Open Source — ein Terminal auf Basis von Ghostty, gemacht für KI-Agenten. Tipps: ein Tab fürs Morgen-Briefing, einer für ein Web-Tool, einer für Recherche, alles gleichzeitig; Tab zur Seite ziehen für zwei nebeneinander.
+:::
+:::win
+**Windows Terminal** ✓ Open Source (Microsoft) — das in Windows 11 eingebaute Terminal. Tipps: `Ctrl+Shift+T` für einen neuen Tab — einer fürs Morgen-Briefing, einer für ein Web-Tool, einer für Recherche, alles gleichzeitig; `Alt+Shift+D` teilt nebeneinander.
+:::
 
-**cc + Vollbild** — `cc` = in den Projektordner wechseln und Claude öffnen. Hinweis: Im Vollbildmodus funktioniert `⌘+F` nicht; nutze `Ctrl+O` und dann `/`.
+**cc + Vollbild** — `cc` = in den Projektordner wechseln und Claude öffnen. Hinweis: Im Vollbildmodus funktioniert `{{⌘+F|Ctrl+Shift+F}}` nicht; nutze `Ctrl+O` und dann `/`.
 
+:::mac
 **CotEditor** ✓ Open Source — ein schlanker Texteditor für den Mac. Aus Claude heraus öffnen, um lange Nachrichten zu schreiben; Emojis und Zeilenumbrüche bleiben erhalten.
+:::
+:::win
+**Notepad++** ✓ Open Source — ein schlanker Texteditor für Windows. Aus Claude mit `Ctrl+G` öffnen, um lange Nachrichten zu schreiben; Emojis und Zeilenumbrüche bleiben erhalten.
+:::
 
 ## MCP-Plugins: der KI Hände geben
 
@@ -1772,7 +1958,7 @@ Mit `/mcp` siehst du, was installiert ist.
 
 > 💬 Ich möchte dieses Tool für Freunde online stellen. Bitte vergleiche Cloudflare Pages, Zeabur und GitHub Pages, sag mir, was passt, und führe mich Schritt für Schritt durch.
 
-**Teile im Hintergrund** (Homebrew, Node.js, uv, jq — alle Open Source): Wenn Claude sagt „wir müssen ____ installieren“, antworte „OK, installiere es für mich“.
+**Teile im Hintergrund** ({{Homebrew|winget, Git for Windows}}, Node.js, uv, jq — alle Open Source): Wenn Claude sagt „wir müssen ____ installieren“, antworte „OK, installiere es für mich“.
 
 # Praxis
 
@@ -1862,19 +2048,21 @@ Die KI ist klug, aber sie ist ein neuer Kollege mit deinem Hausschlüssel. Verei
 
 ## FAQ
 
-**`claude` meldet „command not found“?** Scroll in der Installationsausgabe zu den Setup Notes, führe die Zeile aus und öffne das Terminal neu.
+**`claude` meldet „command not found“?** {{Scroll in der Installationsausgabe zu den Setup Notes, führe die Zeile aus und öffne das Terminal neu.|Schließe das Terminal und öffne es neu. Hilft das nicht, füge `C:\Users\DeinName\.local\bin` wie in Schritt 2 der Einrichtung zum PATH hinzu und öffne es erneut.}}
 
-**`Shift + Enter` schickt ab statt eine neue Zeile?** Du nutzt das eingebaute Mac-Terminal. Wechsle zu cmux.
+**`Shift + Enter` schickt ab statt eine neue Zeile?** {{Du nutzt das eingebaute Mac-Terminal. Wechsle zu cmux.|Nimm `Ctrl + J` oder tippe `\` und dann Enter.}}
 
 **Eine Einstellung wirkt nicht?** Plugins, Kürzel und Vollbildmodus gelten erst, wenn du **Claude beendest und ein neues Gespräch startest**. `/exit` tippen, dann `cc`.
 
-**Langer Text erscheint als `[Pasted text #1 +20 lines]`?** Er ist nur eingeklappt; der Inhalt ist vollständig. Zum Bearbeiten CotEditor nutzen.
+**Langer Text erscheint als `[Pasted text #1 +20 lines]`?** Er ist nur eingeklappt; der Inhalt ist vollständig. Zum Bearbeiten {{CotEditor|Notepad++}} nutzen.
 
 **Plugin installiert, aber Claude sagt, das Tool gibt es nicht?** Neues Gespräch starten; mit `/mcp` den Status prüfen und bei Bedarf Authenticate wählen.
 
 **Ein Plugin zeigt `CONNECTION_CLOSED`?** Meist findet es Node.js nicht. Sag Claude: „Dieses MCP zeigt CONNECTION_CLOSED. Bitte prüfe, ob es einen vollständigen Pfad oder eine PATH-Einstellung braucht.“
 
 **Ein in den Browser kopierter Anmeldelink funktioniert nicht?** Beim Kopieren langer Links aus dem Terminal kann in der Mitte ein Zeilenumbruch oder Leerzeichen entstehen. Entfernen und erneut versuchen.
+
+**Wie füge ich einen Screenshot in Claude ein?** {{`Ctrl + ⌘ + Shift + 4` kopiert einen Screenshot in die Zwischenablage, dann im Eingabefeld von Claude `Ctrl + V`.|`Windows + Shift + S` für einen Screenshot, dann im Eingabefeld von Claude `Alt + V`.}} Du kannst eine Bilddatei auch ins Terminal ziehen.
 
 **Google will alle 7 Tage eine neue Anmeldung?** Der „OAuth-Zustimmungsbildschirm“ in Google Cloud steht noch auf „Testen“. Lass dich von Claude durch die Umstellung auf „In Produktion“ führen. Die Warnung „Google hat diese App nicht überprüft“ ist bei einer selbstgebauten App normal; klicke auf „Erweitert → Weiter zu …“.
 
@@ -1914,12 +2102,13 @@ Die KI ist klug, aber sie ist ein neuer Kollege mit deinem Hausschlüssel. Verei
 - **가장 어려운 건 처음 설정이에요.** 한 번만 해 두면 계속 쓸 수 있어요. 이 가이드가 처음 설정을 한 번에 안내합니다.
 - **코딩을 몰라도 괜찮아요.** 막히면 문제(또는 이 페이지 내용)를 Claude에게 주고 "그냥 직접 해 줘"라고 말하세요.
 - 💬 표시가 있는 상자는 **Claude에 그대로 복사해 붙여 넣을 수 있는 문장**이에요. 모서리의 "복사" 버튼을 누르세요.
+- 맨 위의 **🍎 Mac / 🪟 Windows** 스위치로 내 컴퓨터에 맞는 설치 단계와 단축키를 볼 수 있어요.
 
 ## 추천 학습 순서
 
 | 날 | 할 일 |
 |---|---|
-| 1일차 | "기본 개념"을 읽고 "설치와 설정"을 따라 Claude Code, cmux, CLAUDE.md, 안전 키트 설치 |
+| 1일차 | "기본 개념"을 읽고 "설치와 설정"을 따라 Claude Code, {{cmux|Windows Terminal}}, CLAUDE.md, 안전 키트 설치 |
 | 2일차 | "도구 목록"에서 Firecrawl, Playwright를 설치해 AI가 웹을 읽게 하기 |
 | 3일차 | "실전 연습"에서 매일 아침 브리핑 만들기 (Gmail, 캘린더, Notion 연결) |
 | 4–5일차 | 나만의 작은 도구 만들기 (견적서, 가계부, 레시피 카드…) |
@@ -1957,7 +2146,7 @@ GPTs나 Gems를 쓰면 이 대화창은 "글쓰기 도우미", 저 대화창은 
 
 | 용어 | 쉬운 설명 |
 |---|---|
-| **터미널** | 검은 화면에 명령어를 입력하는 기본 창. cmux를 쓰면 채팅 앱처럼 느껴져요. |
+| **터미널** | 검은 화면에 명령어를 입력하는 기본 창. {{cmux를 쓰면 채팅 앱처럼 느껴져요.|Windows에서는 기본 Windows Terminal이면 충분해요.}} |
 | **CLAUDE.md** | Claude에게 주는 "내 사용 설명서": 나는 누구인지, 어떻게 대화하면 좋은지, 규칙은 뭔지. |
 | **MCP** | AI의 "콘센트". 어떤 도구의 MCP를 꽂으면 AI가 그 도구를 다룰 수 있어요. |
 | **API 키 / 토큰** | 서비스가 발급해 준 "열쇠". **비밀번호처럼 지키세요.** |
@@ -1986,18 +2175,18 @@ GPTs나 Gems를 쓰면 이 대화창은 "글쓰기 도우미", 저 대화창은 
 
 # 설치와 설정
 
-> **Mac** 기준이며, Windows와 다른 점은 🪟로 표시했어요. Claude를 설치한 뒤에는 문장 하나만 붙여 넣으면 나머지 단계를 거의 다 대신 해 줘요.
+> 지금은 **{{🍎 Mac|🪟 Windows}} 버전**이에요. 맨 위에서 바꿀 수 있어요. Claude를 설치한 뒤에는 문장 하나만 붙여 넣으면 나머지 단계를 거의 다 대신 해 줘요.
 
 | # | 할 일 | 목적 |
 |---|---|---|
 | 1 | 진짜 공식 사이트에서 가입·결제 | 피싱 사이트 피하기 |
 | 2 | Claude Code 설치 | 주인공 |
-| 3 | cmux 터미널 설치 | 터미널을 채팅 앱처럼 |
+| 3 | {{cmux 터미널 설치|Windows Terminal 설정}} | {{터미널을 채팅 앱처럼|탭 여러 개, 줄 바꿈 편하게}} |
 | 4 | 프로젝트 폴더 만들기 | AI만의 책상 |
 | 5 | CLAUDE.md 만들기 | 매번 나를 알아봄 |
 | 6 | `cc` 단축키 + 전체 화면 모드 | 두 글자로 시작, 깜빡임 없음 |
 | 7 | 안전 키트 + 권한 모드 | 삭제 복구 가능, 확인 창 줄이기 |
-| 8 | 긴 글 편집기 CotEditor | 긴 글이 한 줄로 뭉치지 않게 |
+| 8 | 긴 글 편집기 {{CotEditor|Notepad++}} | 긴 글이 한 줄로 뭉치지 않게 |
 
 ## 1단계: 가입 (피싱 주의!)
 
@@ -2008,18 +2197,32 @@ GPTs나 Gems를 쓰면 이 대화창은 "글쓰기 도우미", 저 대화창은 
 ## 2단계: Claude Code 설치
 
 1. [공식 문서](https://code.claude.com/docs/ko/overview)를 열고 "Native Install"을 찾으세요.
+:::mac
 2. 터미널 열기: `⌘ + 스페이스` → "터미널" 입력 → Enter.
 3. 사이트의 설치 명령어를 붙여 넣고 Enter (현재 `curl -fsSL https://claude.ai/install.sh | bash`, 공식 사이트 우선).
 4. 설치가 끝나면 `claude` 입력 후 Enter.
 
 **"command not found"가 나오면**: 위로 스크롤하세요. 설치 메시지에 **Setup Notes**가 있고, 한 줄을 더 실행하라고 알려 줘요. 그대로 실행하세요.
+:::
+:::win
+2. **먼저 Git for Windows 설치 (공식 권장)**: [git-scm.com](https://git-scm.com/downloads/win)에서 내려받아 기본값 그대로 "Next"만 누르면 돼요. 이게 있으면 Windows에서 Claude가 쓸 수 있는 도구가 더 많아지고, 나중에 안전 키트도 더 쉽게 설치돼요.
+3. 터미널 열기: `Windows 키` → "PowerShell" 입력 → Enter. 관리자 권한으로 실행할 **필요 없어요**.
+4. 사이트의 **Windows PowerShell** 설치 명령어를 붙여 넣고 Enter (현재 `irm https://claude.ai/install.ps1 | iex`, 공식 사이트 우선).
+5. 설치가 끝나면 **창을 닫고 PowerShell을 새로 연 다음** `claude` 입력 후 Enter.
+
+**창을 잘못 열었나요?** 줄 앞에 `PS C:\Users\내이름>`이 보이면 PowerShell이에요. "'irm'은(는) 내부 또는 외부 명령… 이 아닙니다"가 나오면 CMD를 연 거예요. PowerShell을 여세요.
+
+**"'claude' 용어가 … 인식되지 않습니다"가 나오면**: 먼저 터미널을 닫았다가 다시 여세요. 그래도 안 되면 `C:\Users\내이름\.local\bin`을 PATH에 추가하세요: `Windows 키` → "환경 변수" 검색 → "계정의 환경 변수 편집" → **Path** 선택 → "편집" → "새로 만들기"에 경로 붙여 넣기 → "확인", 그리고 터미널을 다시 여세요.
+
+**터미널이 부담스럽다면?** [Claude 데스크톱 앱](https://claude.com/download)을 내려받아 **Code** 탭을 쓰면 마우스로 편하게 쓸 수 있어요(그럼 3, 6단계는 건너뛰어도 돼요).
+:::
 
 **처음 실행:** 화면 테마 선택 → 로그인 방식은 **첫 번째(구독 계정)** → 브라우저에서 계정 확인 후 승인 → 폴더 신뢰. 입력창이 보이면 성공! "안녕, 넌 뭘 할 수 있어?"라고 써 보세요.
 
-🪟 Windows: 공식 문서에 PowerShell 설치 명령어가 있어요. **Claude 데스크톱 앱**의 Code 탭을 쓰면 마우스로 편하게 쓸 수 있어요(그럼 3, 6단계는 건너뛰어도 돼요).
 
-## 3단계: cmux 설치 (편한 터미널)
+## 3단계: {{cmux 설치|Windows Terminal 설정}} (편한 터미널)
 
+:::mac
 Mac 기본 터미널은 불편해요. `Shift+Enter`로 줄을 바꾸려 하면 그냥 전송되고, 마우스로 커서를 옮길 수도 없어요. [cmux](https://cmux.com)(오픈 소스, 무료)가 이걸 해결해요:
 
 - `Shift + Enter`로 줄 바꿈
@@ -2028,11 +2231,21 @@ Mac 기본 터미널은 불편해요. `Shift+Enter`로 줄을 바꾸려 하면 �
 
 설치: Mac 버전 다운로드 → "응용 프로그램"으로 끌어 넣기 → cmux 실행 → `claude` 입력.
 
-🪟 Windows: cmux는 지원하지 않아요. 기본 Windows Terminal, [WMUX](https://github.com/amirlehmam/wmux)(Windows용 cmux 스타일 앱), [Tabby](https://tabby.sh/)(오픈 소스)를 쓰세요.
+:::
+:::win
+Windows 11에는 **Windows Terminal**이 기본으로 들어 있어요(Windows 10은 Microsoft Store에서 무료로 받을 수 있어요. 오픈 소스, Microsoft 제작). 예전의 파란 PowerShell 창보다 훨씬 편해요:
+
+- `Ctrl + Shift + T`로 새 탭 → **여러 Claude가 동시에 다른 일을** 할 수 있음
+- `Alt + Shift + D`로 화면을 좌우로 나누기
+- 줄 바꿈: 먼저 `Shift + Enter`를 눌러 보고, 그냥 전송되면 `Ctrl + J`를 누르거나 `\`를 입력한 뒤 Enter
+- 기본으로 설정: Windows Terminal "설정" → "시작" → "기본 프로필"은 **Windows PowerShell**, "기본 터미널 애플리케이션"은 **Windows Terminal**
+
+cmux와 더 비슷한 걸 원하면 [WMUX](https://github.com/amirlehmam/wmux)(Windows용 cmux 스타일 앱)나 [Tabby](https://tabby.sh/)(오픈 소스)도 있어요.
+:::
 
 ## 4단계: 프로젝트 폴더 만들기
 
-**컴퓨터 맨 바깥 폴더에서 Claude Code를 시작하지 마세요.** 전용 책상을 주세요: "다운로드"나 "문서"에 폴더를 만들고(예: `나의 AI 비서`), 선택한 뒤 `⌘ + Option + C`로 경로를 복사하세요.
+**컴퓨터 맨 바깥 폴더에서 Claude Code를 시작하지 마세요.** 전용 책상을 주세요: "다운로드"나 "문서"에 폴더를 만들고(예: `나의 AI 비서`), 선택한 뒤 {{`⌘ + Option + C`로 경로를 복사하세요.|마우스 오른쪽 버튼 → "경로로 복사"를 누르세요(Windows 10은 `Shift`를 누른 채 오른쪽 클릭).}}
 
 > 💬 작업 폴더를 (경로 붙여 넣기)로 하고 싶어. 그쪽으로 이동해 주고, 앞으로 모든 작업은 이 폴더에서 하자.
 
@@ -2067,19 +2280,24 @@ Mac 기본 터미널은 불편해요. `Shift+Enter`로 줄을 바꾸려 하면 �
 - 시간은 항상 내 시간대(예: Asia/Seoul)로. 날짜를 다루기 전에 오늘 날짜를 확인해 줘.
 ```
 
-**확인:** `⌘ + T`로 새 대화를 열고 "나는 누구고 평소에 뭘 해?"라고 물어보세요. 새로운 걸 배울 때마다 "**이거 CLAUDE.md에 적어 줘**"라고 하세요. 가끔 잊어버려요.
+**확인:** `{{⌘ + T|Ctrl + Shift + T}}`로 새 대화를 열고 "나는 누구고 평소에 뭘 해?"라고 물어보세요. 새로운 걸 배울 때마다 "**이거 CLAUDE.md에 적어 줘**"라고 하세요. 가끔 잊어버려요.
 
 ## 6단계: `cc` 단축키 + 전체 화면 모드
 
 이제 `cc`만 입력하면 프로젝트 폴더로 가서 Claude가 열려요. 전체 화면 모드는 깜빡임을 없애고, 마우스 클릭이 되고, 글자를 선택하면 바로 복사되고, 스크롤로 되돌아볼 수 있게 해 줘요.
 
+:::mac
 > 💬 이 문서대로 내 터미널을 설정해 줘: https://github.com/benson8780101-dev/benson8780101-dev.github.io/blob/main/claude-guide/01-terminal-setup.md 내 프로젝트 폴더는 (경로 붙여 넣기)야. 직접 해 줘.
+:::
+:::win
+> 💬 나는 Windows와 PowerShell을 써. 이 문서를 참고해서: https://github.com/benson8780101-dev/benson8780101-dev.github.io/blob/main/claude-guide/01-terminal-setup.md Windows 방식으로 설정해 줘. PowerShell 프로필($PROFILE)에 cc 명령어를 만들어서 내 프로젝트 폴더(경로 붙여 넣기)로 이동한 뒤 Claude를 열게 하고, 전체 화면 모드도 켜 줘. PowerShell이 프로필 실행을 막으면 안전한 방법으로 같이 해결해 줘. 직접 해 줘.
+:::
 
 | 키 | 기능 |
 |---|---|
 | 마우스로 드래그 | 자동 복사 |
 | `Ctrl+O` 후 `/` | 대화 내용 검색 |
-| `Ctrl+O` 후 `[` | 전체 대화를 꺼내 `⌘+F`로 검색 |
+| `Ctrl+O` 후 `[` | 전체 대화를 꺼내 `{{⌘+F|Ctrl+Shift+F}}`로 검색 |
 
 ## 7단계: 안전 키트 + 권한 모드
 
@@ -2091,6 +2309,10 @@ Claude가 매번 "해도 될까요?"라고 물으면 귀찮지만, 다 허락하
 
 > 💬 나는 AI와 프로그래밍 초보야. 내 운영체제를 확인하고 이 "AI 안전 키트"를 설치해 줘: https://github.com/benson8780101-dev/benson8780101-dev.github.io/blob/main/claude-guide/02-safety-kit.md 문서의 AI 실행 지침대로 직접 설치하고, 쉬운 한국어로 설명해 주고, 설정 파일을 바꾸기 전엔 꼭 백업해 줘.
 
+:::win
+🪟 붙여 넣기 전에 2단계의 **Git for Windows**가 설치되어 있는지 확인하세요.
+:::
+
 | 모드 | 쉬운 설명 | 이런 분께 |
 |---|---|---|
 | **Default** | 모든 작업 전에 물어봄 | 무엇을 하는지 지켜보고 싶은 입문자 |
@@ -2101,20 +2323,20 @@ Claude가 매번 "해도 될까요?"라고 물으면 귀찮지만, 다 허락하
 
 `Shift + Tab`으로 모드를 바꾸고, `/config`로 모든 설정(모델 포함)을 볼 수 있어요. Pro에서는 가벼운 모델이 사용량을 아껴 주고, 가장 강한 모델이 가장 똑똑해요. 잘 모르겠으면 Default.
 
-## 8단계: 긴 글 편집기 CotEditor
+## 8단계: 긴 글 편집기 {{CotEditor|Notepad++}}
 
 긴 글을 붙여 넣으면 입력창이 `[Pasted text +20 lines]`로 접혀서 보이지도, 고치지도 못해요.
 
-> 💬 긴 글을 붙여 넣으면 터미널에서 한 줄로 접혀서 편집할 수가 없어. CotEditor를 외부 편집기로 쓰고 싶어. 설치하고 설정해 줘.
+> 💬 긴 글을 붙여 넣으면 터미널에서 한 줄로 접혀서 편집할 수가 없어. {{CotEditor를 외부 편집기로 쓰고 싶어. 설치하고 설정해 줘.|Notepad++를 외부 편집기로 쓰고 싶어(나는 Windows를 써). 설치하고, 내가 창을 닫을 때까지 기다리도록 설정해 줘.}}
 
-사용법: `Ctrl + G` → CotEditor가 열림 → 작성 후 `⌘ + S` 저장, `⌘ + W` 닫기 → 글이 입력창으로 돌아옴 → Enter.
+사용법: `Ctrl + G` → {{CotEditor|Notepad++}}가 열림 → 작성 후 `{{⌘ + S|Ctrl + S}}` 저장, {{`⌘ + W` 닫기|✕로 창 닫기}} → 글이 입력창으로 돌아옴 → Enter.
 
 ⚠️ 겪었던 문제: `Ctrl+G`를 눌렀는데 Chrome의 Gemini가 뜨면, Chrome이 그 단축키를 가져간 거예요. Claude에게 외부 편집기를 다른 키(예: `Ctrl+E`)로 바꿔 달라고 하세요. 설정을 바꾼 뒤에는 **Claude를 종료하고 새 대화를 시작**해야 적용돼요.
 
 ## ✅ 1일차 체크리스트
 
 - `cc`를 입력하면 프로젝트 폴더에서 Claude가 열림
-- `Shift + Enter`로 줄 바꿈이 됨
+- {{`Shift + Enter`|`Shift + Enter`나 `Ctrl + J`}}로 줄 바꿈이 됨
 - 새 대화에서 "나는 누구야?"에 답할 수 있음
 - 삭제한 파일이 휴지통으로 감
 - 사소한 일마다 허락을 구하지 않음
@@ -2127,10 +2349,10 @@ Claude가 매번 "해도 될까요?"라고 물으면 귀찮지만, 다 허락하
 | 도구 | 종류 | 오픈 소스 | 비용 | 중요도 | 한 줄 설명 |
 |---|---|---|---|---|---|
 | **Claude Code** | AI 비서 본체 | ✗ | Pro 월 약 20달러부터 | ★★★ 필수 | 일을 해 주는 AI |
-| **cmux** | 터미널 | ✓ | 무료 | ★★★ 필수 | 채팅 앱 같은 터미널, 여러 탭 |
+| **{{cmux|Windows Terminal}}** | 터미널 | ✓ | 무료 | ★★★ 필수 | 채팅 앱 같은 터미널, 여러 탭 |
 | **안전 키트** | 안전 설정 | ✓ | 무료 | ★★★ 필수 | AI의 영구 삭제 방지 |
 | **cc + 전체 화면** | Claude 설정 | 기본 기능 | 무료 | ★★★ 필수 | 두 글자로 시작, 깜빡임 없음 |
-| **CotEditor** | 텍스트 편집기 | ✓ | 무료 | ★★ 추천 | AI에게 긴 글 쓰기 |
+| **{{CotEditor|Notepad++}}** | 텍스트 편집기 | ✓ | 무료 | ★★ 추천 | AI에게 긴 글 쓰기 |
 | **Firecrawl MCP** | 플러그인: 웹 읽기 | ✓ | 무료 사용량 | ★★★ 추천 | 웹페이지를 AI가 읽기 쉬운 글로 |
 | **Playwright MCP** | 플러그인: 브라우저 조작 | ✓ | 무료 | ★★ 추천 | AI가 클릭·입력·스크린샷 |
 | **Filesystem MCP** | 플러그인: 폴더 | ✓ | 무료 | ★ 선택 | 지정한 폴더 하나를 추가로 열기 |
@@ -2153,11 +2375,21 @@ Claude가 매번 "해도 될까요?"라고 물으면 귀찮지만, 다 허락하
 
 **Claude Code** — Anthropic이 만든 AI 비서. 파일 읽기·쓰기, 명령어 실행, 웹 검색, 플러그인 연결을 해요. 자료가 내 컴퓨터에 있어서 쓸수록 나를 더 잘 알아요. 팁: 주제 하나에 대화 하나; 기억이 거의 차면 `/compact`; 자주 쓰는 것은 `/mcp`, `/config`, `Shift+Tab`(권한 모드 전환), `Esc`(중단).
 
+:::mac
 **cmux** ✓ 오픈 소스 — Ghostty를 기반으로 AI 에이전트를 위해 만든 터미널. 팁: 한 탭은 아침 브리핑, 한 탭은 웹 도구, 한 탭은 자료 조사를 동시에; 탭을 옆으로 끌면 두 개를 나란히 볼 수 있어요.
+:::
+:::win
+**Windows Terminal** ✓ 오픈 소스(Microsoft) — Windows 11에 기본으로 들어 있는 터미널. 팁: `Ctrl+Shift+T`로 새 탭 — 한 탭은 아침 브리핑, 한 탭은 웹 도구, 한 탭은 자료 조사를 동시에; `Alt+Shift+D`로 좌우 나누기.
+:::
 
-**cc + 전체 화면** — `cc` = 프로젝트 폴더로 이동 + Claude 열기. 참고: 전체 화면 모드에서는 `⌘+F`가 안 되니 `Ctrl+O` 후 `/`를 쓰세요.
+**cc + 전체 화면** — `cc` = 프로젝트 폴더로 이동 + Claude 열기. 참고: 전체 화면 모드에서는 `{{⌘+F|Ctrl+Shift+F}}`가 안 되니 `Ctrl+O` 후 `/`를 쓰세요.
 
+:::mac
 **CotEditor** ✓ 오픈 소스 — Mac용 가벼운 텍스트 편집기. Claude에서 불러 긴 글을 쓰면 이모지와 줄 바꿈이 그대로 유지돼요.
+:::
+:::win
+**Notepad++** ✓ 오픈 소스 — Windows용 가벼운 텍스트 편집기. Claude에서 `Ctrl+G`로 불러 긴 글을 쓰면 이모지와 줄 바꿈이 그대로 유지돼요.
+:::
 
 ## MCP 플러그인: AI에게 손발 달아 주기
 
@@ -2216,7 +2448,7 @@ Claude가 매번 "해도 될까요?"라고 물으면 귀찮지만, 다 허락하
 
 > 💬 이 도구를 친구들이 쓸 수 있게 인터넷에 올리고 싶어. Cloudflare Pages, Zeabur, GitHub Pages를 비교해서 어떤 게 맞는지 알려 주고 단계별로 안내해 줘.
 
-**뒤에서 쓰이는 부품** (Homebrew, Node.js, uv, jq — 모두 오픈 소스): Claude가 "____를 설치해야 해요"라고 하면 "응, 바로 설치해 줘"라고 답하세요.
+**뒤에서 쓰이는 부품** ({{Homebrew|winget, Git for Windows}}, Node.js, uv, jq — 모두 오픈 소스): Claude가 "____를 설치해야 해요"라고 하면 "응, 바로 설치해 줘"라고 답하세요.
 
 # 실전 연습
 
@@ -2306,19 +2538,21 @@ AI는 똑똑하지만 "우리 집 열쇠를 든 새 동료"예요. 권한을 주
 
 ## 자주 묻는 질문
 
-**`claude`를 입력하면 "command not found"?** 설치 메시지의 Setup Notes까지 위로 스크롤해서 그 줄을 실행하고, 터미널을 다시 여세요.
+**`claude`를 입력하면 "command not found"?** {{설치 메시지의 Setup Notes까지 위로 스크롤해서 그 줄을 실행하고, 터미널을 다시 여세요.|먼저 터미널을 닫았다가 다시 여세요. 그래도 안 되면 "설치와 설정" 2단계처럼 `C:\Users\내이름\.local\bin`을 PATH에 추가하고 다시 여세요.}}
 
-**`Shift + Enter`를 누르면 줄 바꿈 대신 전송돼요?** Mac 기본 터미널을 쓰고 있어서예요. cmux로 바꾸세요.
+**`Shift + Enter`를 누르면 줄 바꿈 대신 전송돼요?** {{Mac 기본 터미널을 쓰고 있어서예요. cmux로 바꾸세요.|`Ctrl + J`를 누르거나 `\`를 입력한 뒤 Enter를 누르세요.}}
 
 **설정을 바꿨는데 반응이 없어요?** 플러그인, 단축키, 전체 화면 모드는 **Claude를 종료하고 새 대화를 시작**해야 적용돼요. `/exit` 후 `cc`.
 
-**긴 글이 `[Pasted text #1 +20 lines]`로 보여요?** 접어서 보여 줄 뿐 내용은 전부 있어요. 편집하려면 CotEditor를 쓰세요.
+**긴 글이 `[Pasted text #1 +20 lines]`로 보여요?** 접어서 보여 줄 뿐 내용은 전부 있어요. 편집하려면 {{CotEditor|Notepad++}}를 쓰세요.
 
 **플러그인을 설치했는데 Claude가 그런 도구가 없대요?** 새 대화를 여세요. `/mcp`로 상태를 보고 필요하면 Authenticate를 고르세요.
 
 **플러그인에 `CONNECTION_CLOSED`가 떠요?** 보통 Node.js를 못 찾아서예요. Claude에게 "이 MCP가 CONNECTION_CLOSED로 나와. 전체 경로나 PATH 설정이 필요한지 확인해 줘"라고 하세요.
 
 **로그인 링크를 브라우저에 붙여 넣으면 실패해요?** 터미널에서 긴 링크를 복사하면 중간에 줄 바꿈이나 공백이 들어갈 수 있어요. 지우고 다시 해 보세요.
+
+**스크린숏은 어떻게 Claude에 붙여 넣나요?** {{`Ctrl + ⌘ + Shift + 4`로 스크린숏을 클립보드에 복사한 뒤, Claude 입력창에서 `Ctrl + V`.|`Windows + Shift + S`로 스크린숏을 찍은 뒤, Claude 입력창에서 `Alt + V`.}} 이미지 파일을 터미널로 끌어 넣어도 돼요.
 
 **Google이 7일마다 다시 로그인하래요?** Google Cloud의 "OAuth 동의 화면"이 아직 "테스트" 상태예요. Claude에게 "프로덕션"으로 바꾸는 법을 안내받으세요. "Google에서 확인하지 않은 앱" 경고는 직접 만든 앱이라 정상이에요. "고급 → 이동"을 누르세요.
 
@@ -2350,6 +2584,494 @@ AI는 똑똑하지만 "우리 집 열쇠를 든 새 동료"예요. 권한을 주
 - [공식 스킬 라이브러리](https://github.com/anthropics/skills)
 
 </script>
+<script type="text/markdown" id="md-pt">
+# Antes de começar
+
+**O Claude Code é mais do que uma ferramenta de programação. É um assistente de IA que realmente faz as coisas por você**: lê seus arquivos, pesquisa na internet, confere seu Gmail e sua agenda e cria pequenas ferramentas web.
+
+- **A parte mais difícil é a primeira configuração.** Você faz uma vez e depois funciona sempre. Este guia leva você por toda a configuração de uma vez.
+- **Você não precisa saber programar.** Quando travar, entregue o problema (ou até esta página) ao Claude e diga "faça isso por mim".
+- As caixas marcadas com 💬 são **mensagens que você pode copiar e colar direto no Claude**. Use o botão "Copiar" no canto.
+- Use a chave **🍎 Mac / 🪟 Windows** lá em cima para ver os passos de instalação e os atalhos do seu computador.
+
+## Roteiro sugerido
+
+| Dia | O que fazer |
+|---|---|
+| Dia 1 | Ler "Conceitos" e seguir "Instalação" para instalar o Claude Code, o {{cmux|Windows Terminal}}, o CLAUDE.md e o kit de segurança |
+| Dia 2 | Seguir "Ferramentas" para instalar Firecrawl e Playwright e a IA poder navegar na web |
+| Dia 3 | Montar um resumo matinal diário em "Prática" (Gmail, Agenda, Notion) |
+| Dias 4–5 | Criar sua própria ferramenta (gerador de orçamentos, planilha de gastos, fichas de receitas…) |
+| Depois | Passar 15 minutos por dia "ensinando" uma coisa. Em uma semana, ele parece um assistente pessoal |
+
+## Três coisas para lembrar
+
+- 🍼 **Seja um "bebezão"**: se não souber algo, pergunte ao Claude e diga "faça isso por mim". Não passe uma hora no Google.
+- 🧑‍🏫 **Trate-o como um colega novo**: é normal não dar certo na primeira vez. Dê uma segunda chance e explique com mais clareza.
+- 🛡️ **Segurança primeiro**: instale a proteção contra exclusões antes de deixá-lo trabalhar à vontade.
+
+As ferramentas de IA mudam rápido (esta página foi escrita em outubro de 2026). Preços e comandos dos sites oficiais têm prioridade.
+
+# Conceitos
+
+**Claude Code (CC) = um assistente de IA que mora no seu computador e tem mãos.** Ele não só responde perguntas: lê seus arquivos, navega na web, opera ferramentas e cria pequenos apps web.
+
+## Três estágios da IA
+
+| Estágio | Comparação | O que faz | Exemplos |
+|---|---|---|---|
+| **Chat** | Uma biblioteca sem mãos | Você pergunta, ela responde. Sabe muito, mas não age | ChatGPT, Gemini, Claude na web |
+| **Cowork** | Um organizador contratado | Algumas permissões: arrumar pastas, ler o Gmail, organizar planilhas | Cowork no app de desktop do Claude |
+| **Code** | Um mordomo pessoal com equipe própria de engenharia, design e texto | Você descreve, ele constrói. Lembra de você e usa todas as ferramentas que você der | **Claude Code** |
+
+Com GPTs ou Gems personalizados, um chat é o seu "assistente de escrita" e outro é o seu "assistente de viagem", e **trocar de chat significa que ele esquece tudo**. O Claude Code reúne todas as ferramentas e skills em **um só assistente**. Você só conversa com ele, e ele decide o que usar.
+
+## Três pontos fortes
+
+1. **Conhece você bem**: suas preferências, hábitos e dados ficam no seu próprio computador (num arquivo chamado `CLAUDE.md`), e ele lê esse arquivo no começo de cada conversa.
+2. **Caixa de ferramentas sem limite**: entregue as "chaves" (chaves de API, plugins MCP) e ele trabalha dentro do seu Gmail, Notion ou WordPress por você.
+3. **Trabalha do seu jeito**: escreva suas tarefas repetitivas como procedimentos (chamados **Skills**) e na próxima vez ele segue o seu método.
+
+## Minidicionário
+
+| Termo | Em palavras simples |
+|---|---|
+| **Terminal** | A janela do computador, de fundo preto, onde você digita comandos. {{Com o cmux parece um app de chat.|No Windows, o Windows Terminal que já vem instalado funciona muito bem.}} |
+| **CLAUDE.md** | O seu "manual de instruções" para o Claude: quem você é, como falar com você, suas regras. |
+| **MCP** | Uma "tomada" para a IA. Conecte o MCP de uma ferramenta e a IA consegue operá-la. |
+| **Chave de API / token** | Uma "chave" que um serviço dá a você. **Guarde como uma senha.** |
+| **Skill** | Um cartão de procedimento para a IA. |
+| **Comando /** | Atalhos que começam com `/`, como `/mcp` ou `/config`. |
+| **Vibe coding** | Criar software descrevendo o que você quer, sem escrever código. |
+| **Código aberto** | O código é público, qualquer um pode conferir e melhorar, e geralmente é grátis. Transparente, mantido pela comunidade e continua existindo mesmo se a empresa sumir. |
+| **Publicar (deploy)** | Colocar uma ferramenta do seu computador na internet para outras pessoas abrirem por um link. |
+| **Contexto** | Quanto da conversa a IA consegue guardar "na cabeça" de uma vez. Quando está quase cheio, ela piora; organize com `/compact`. |
+
+## A mentalidade certa
+
+**1. Aceite ficar mais lento por um tempo.** É como trocar a digitação olhando o teclado pela digitação com todos os dedos: no começo você fica mais lento, depois duas ou três vezes mais rápido. Sair do ChatGPT para o terminal parece estranho por alguns dias. É normal.
+
+**2. Seja um "bebezão".** Quando não souber algo, pergunte primeiro ao Claude, não ao Google. Se ele disser "cole esta linha no terminal", responda: "**Faça isso por mim.**"
+
+**3. Trate-o como um funcionário novo e inteligente.** Se errar, não desista: deixe tentar de outro jeito. Diga claramente o que quer, **como um bom chefe que não deixa ninguém adivinhando**. O tempo gasto dando ferramentas, permissões e regras é um investimento feito uma vez só.
+
+**4. Não espere perfeição de primeira.** O ritmo certo: descreva uma função → o Claude constrói → você testa → se algo der errado, cole uma captura de tela → ele corrige → descreva a próxima função.
+
+## Quanto custa?
+
+- O Claude Code **precisa de um plano pago** (contas grátis só usam o chat na web). Comece pelo **Pro (cerca de US$ 20/mês)** e mude para o Max se não for suficiente.
+- Ao entrar, escolha "conta de assinatura do Claude". **Não escolha a cobrança por uso da API**; pode ficar cara rápido.
+- A maioria dos plugins é grátis ou tem uma cota gratuita. Confira os preços atuais em claude.com.
+
+# Instalação
+
+> Você está vendo a **versão {{🍎 Mac|🪟 Windows}}**. Troque lá em cima. Depois de instalar o Claude, você pode colar uma frase e deixar que ele faça quase todos os passos seguintes.
+
+| # | O quê | Por quê |
+|---|---|---|
+| 1 | Criar conta e pagar no site verdadeiro | Evitar sites falsos |
+| 2 | Instalar o Claude Code | A ferramenta principal |
+| 3 | {{Instalar o terminal cmux|Configurar o Windows Terminal}} | {{O terminal fica parecido com um app de chat|Abas e quebra de linha mais fácil}} |
+| 4 | Criar uma pasta de projeto | Uma mesa própria para a IA |
+| 5 | Criar o CLAUDE.md | Ele conhece você em toda conversa |
+| 6 | Atalho `cc` + modo tela cheia | Começar com duas letras, sem tela piscando |
+| 7 | Kit de segurança + modo de permissão | Exclusões recuperáveis, menos perguntas |
+| 8 | {{CotEditor|Notepad++}} para textos longos | Mensagens longas não viram mais uma linha só |
+
+## Passo 1: Criar conta (cuidado com golpes)
+
+⚠️ Ao pesquisar "Claude Code" no Google, **nunca clique em resultados marcados como "Patrocinado"**. Alguns sites falsos são idênticos e distribuem programas maliciosos. Confie só em `claude.ai`, `claude.com`, `code.claude.com` e `anthropic.com`.
+
+Crie sua conta em [claude.ai](https://claude.ai) e assine o **plano Pro**.
+
+## Passo 2: Instalar o Claude Code
+
+1. Abra a [documentação oficial](https://code.claude.com/docs/en/overview) (em inglês) e procure "Native Install".
+:::mac
+2. Abra o Terminal: aperte `⌘ + Espaço`, digite "Terminal" e aperte Enter.
+3. Cole o comando de instalação do site (hoje é `curl -fsSL https://claude.ai/install.sh | bash`; o site tem prioridade) e aperte Enter.
+4. Quando terminar, digite `claude` e aperte Enter.
+
+**Apareceu "command not found"?** Role para cima. A mensagem de instalação tem uma seção **Setup Notes** pedindo para rodar mais uma linha. Rode essa linha.
+:::
+:::win
+2. **Instale primeiro o Git for Windows (recomendado pela Anthropic)**: baixe em [git-scm.com](https://git-scm.com/downloads/win) e vá clicando em "Next" com as opções padrão. Com ele, o Claude tem mais ferramentas no Windows, e o kit de segurança instala com mais facilidade depois.
+3. Abra um terminal: aperte a `tecla Windows`, digite "PowerShell" e aperte Enter. **Não** precisa abrir como administrador.
+4. Cole o comando de instalação para **Windows PowerShell** do site (hoje é `irm https://claude.ai/install.ps1 | iex`; o site tem prioridade) e aperte Enter.
+5. Quando terminar, **feche a janela, abra um PowerShell novo**, digite `claude` e aperte Enter.
+
+**Abriu a janela errada?** O PowerShell mostra `PS C:\Users\SeuNome>` no começo da linha. Se aparecer "'irm' não é reconhecido como um comando interno ou externo", você está no CMD. Abra o PowerShell.
+
+**Apareceu "O termo 'claude' não é reconhecido"?** Primeiro feche e abra o terminal de novo. Se continuar, adicione `C:\Users\SeuNome\.local\bin` ao PATH: aperte a `tecla Windows`, pesquise "variáveis de ambiente" → "Editar as variáveis de ambiente para sua conta" → selecione **Path** → "Editar" → "Novo", cole o caminho → "OK" e abra o terminal de novo.
+
+**Prefere não usar o terminal?** Baixe o [app de desktop do Claude](https://claude.com/download) e use a aba **Code**, que funciona com o mouse (aí você pode pular os passos 3 e 6).
+:::
+
+**Primeira vez:** escolha um tema → escolha a **primeira opção de login (conta de assinatura)** → confirme sua conta no navegador e autorize → confie na pasta. Quando aparecer a caixa de digitação, deu certo. Experimente: "Oi, o que você sabe fazer?"
+
+## Passo 3: {{Instalar o cmux|Configurar o Windows Terminal}} (um terminal melhor)
+
+:::mac
+O Terminal que vem no Mac é desconfortável: `Shift+Enter` envia a mensagem em vez de pular linha, e não dá para clicar para mover o cursor. O [cmux](https://cmux.com) (código aberto, grátis) resolve isso:
+
+- `Shift + Enter` pula linha
+- `⌘ + T` abre uma aba nova, para **vários Claudes trabalharem em tarefas diferentes ao mesmo tempo**
+- Arraste abas para dividir a janela lado a lado
+
+Instalação: baixe a versão para Mac → arraste para "Aplicativos" → abra o cmux → digite `claude`.
+:::
+:::win
+O Windows 11 já vem com o **Windows Terminal** (no Windows 10, baixe grátis na Microsoft Store; é código aberto, feito pela Microsoft). É bem melhor que a antiga janela azul do PowerShell:
+
+- `Ctrl + Shift + T` abre uma aba nova, para **vários Claudes trabalharem em tarefas diferentes ao mesmo tempo**
+- `Alt + Shift + D` divide a janela lado a lado
+- Pular linha: tente primeiro `Shift + Enter`; se enviar a mensagem, use `Ctrl + J`, ou digite `\` e aperte Enter
+- Deixar como padrão: no Windows Terminal, "Configurações" → "Inicialização" → em "Perfil padrão" escolha **Windows PowerShell** e em "Aplicativo de terminal padrão" escolha **Windows Terminal**
+
+Para algo mais parecido com o cmux, experimente o [WMUX](https://github.com/amirlehmam/wmux) (um app no estilo cmux para Windows) ou o [Tabby](https://tabby.sh/) (código aberto).
+:::
+
+## Passo 4: Criar uma pasta de projeto
+
+**Não abra o Claude Code na pasta principal do computador.** Dê a ele uma mesa própria: crie uma pasta em Downloads ou Documentos (por exemplo `Meu Agente de IA`), selecione e {{aperte `⌘ + Option + C` para copiar o caminho.|clique com o botão direito → "Copiar como caminho" (no Windows 10, segure `Shift` enquanto clica com o botão direito).}}
+
+> 💬 Quero que minha pasta de trabalho seja (cole o caminho). Por favor, vá para lá e vamos fazer todo o trabalho daqui para frente nesta pasta.
+
+Dica: você pode **arrastar uma pasta ou imagem para o terminal** para colar o caminho dela.
+
+## Passo 5: Criar o CLAUDE.md para ele lembrar de você
+
+O `CLAUDE.md` fica na sua pasta de projeto, e **o Claude lê esse arquivo no começo de cada conversa nova**.
+
+**Opção A: trazer de outra IA.** Primeiro cole isto na IA que você usava antes (ChatGPT ou Gemini):
+
+> 💬 Por favor, junte tudo o que você sabe sobre mim em um documento: quem eu sou, meu trabalho, família, interesses, como prefiro me comunicar, o que faço com frequência e regras e hábitos importantes. Use tópicos para eu poder entregar a outro assistente de IA.
+
+Depois cole a resposta no Claude:
+
+> 💬 Isto é o que outra IA aprendeu sobre mim. Por favor, crie um CLAUDE.md que guarde minhas preferências: (cole aqui)
+
+**Opção B: deixe ele entrevistar você.**
+
+> 💬 Por favor, crie um CLAUDE.md que guarde minhas preferências. Pergunte o que precisar saber, uma pergunta por vez.
+
+**Modelo (copie e adapte):**
+
+```
+# Minhas preferências
+- Eu sou (nome), moro em (cidade) e trabalho como (…).
+- Responda sempre em português, de forma simples e simpática. Evite termos técnicos; se precisar usar, explique em uma frase.
+- Primeiro a conclusão, depois os motivos.
+- Não sou programador, então me guie com comparações e palavras simples.
+- Antes de qualquer ação importante, mostre um plano curto e espere meu OK.
+- Se não tiver certeza ou conhecer um jeito melhor, pesquise na internet e sugira direto.
+- Use sempre o meu fuso horário (por exemplo America/Sao_Paulo); confira a data de hoje antes de lidar com datas.
+```
+
+**Teste:** aperte `{{⌘ + T|Ctrl + Shift + T}}` para uma conversa nova e pergunte "Quem sou eu e o que costumo fazer?". Sempre que ele aprender algo novo, diga "**Escreva isso no CLAUDE.md**". Às vezes ele esquece.
+
+## Passo 6: Atalho `cc` + modo tela cheia
+
+A partir de agora, digitar `cc` leva você à pasta do projeto e abre o Claude. O modo tela cheia faz a tela parar de piscar, permite clicar com o mouse, copia o texto assim que você seleciona e deixa rolar para trás.
+
+:::mac
+> 💬 Por favor, configure meu terminal usando este documento: https://github.com/benson8780101-dev/benson8780101-dev.github.io/blob/main/claude-guide/01-terminal-setup.md Minha pasta de projeto é (cole o caminho). Faça isso por mim.
+:::
+:::win
+> 💬 Uso Windows com PowerShell. Por favor, configure meu terminal usando este documento: https://github.com/benson8780101-dev/benson8780101-dev.github.io/blob/main/claude-guide/01-terminal-setup.md Siga a parte de Windows: crie um comando cc no meu perfil do PowerShell ($PROFILE) que vá para a minha pasta de projeto (cole o caminho) e abra o Claude, e depois ative o modo tela cheia. Se o PowerShell não deixar rodar o perfil, resolva isso de forma segura também. Faça isso por mim.
+:::
+
+| Teclas | O que faz |
+|---|---|
+| Arrastar com o mouse | Copia automaticamente |
+| `Ctrl+O` e depois `/` | Pesquisar na conversa |
+| `Ctrl+O` e depois `[` | Despejar a conversa inteira para pesquisar com `{{⌘+F|Ctrl+Shift+F}}` |
+
+## Passo 7: Kit de segurança + modo de permissão
+
+É chato quando o Claude pergunta "Posso?" antes de cada ação, mas liberar tudo dá medo. **Primeiro uma rede de segurança, depois afrouxe as permissões:**
+
+1. 🗑️ **Arquivos apagados vão para a Lixeira**, então sempre dá para recuperar.
+2. 🚫 **Lista de comandos perigosos bloqueados**: barra comandos que não têm volta.
+3. 🧠 **Regras de trabalho**: quando for bloqueado, ele tem que voltar e perguntar a você, não dar um jeito de contornar.
+
+> 💬 Sou iniciante em IA e programação. Por favor, verifique meu sistema operacional e instale este "kit de segurança de IA" para mim: https://github.com/benson8780101-dev/benson8780101-dev.github.io/blob/main/claude-guide/02-safety-kit.md Siga as instruções para IA do documento, explique em português simples e faça backup de cada arquivo de configuração antes de mudar.
+
+:::win
+🪟 Antes de colar, confirme que o **Git for Windows** do passo 2 está instalado.
+:::
+
+| Modo | Em palavras simples | Bom para |
+|---|---|---|
+| **Default** | Pergunta antes de cada ação | Iniciantes que querem ver o que ele está fazendo |
+| **Plan** | Só planeja; age depois que você aprova | Ver o quadro geral antes de um trabalho grande |
+| **Accept Edits** | Edita arquivos sem perguntar, pergunta antes de comandos | Quem mais programa |
+| **Auto** | Decide sozinho e só pergunta sobre coisas arriscadas | **Melhor escolha para a maioria dos iniciantes** |
+| **Bypass** | Nunca pergunta | Quem sabe exatamente o que está fazendo |
+
+Aperte `Shift + Tab` para trocar de modo; digite `/config` para ver todas as configurações (inclusive o modelo). No Pro, um modelo mais leve economiza a cota; o modelo mais forte é o mais inteligente. Na dúvida, escolha Default.
+
+## Passo 8: {{CotEditor|Notepad++}} para textos longos
+
+Quando você cola um texto longo, a caixa de digitação encolhe para `[Pasted text +20 lines]` e você não consegue ver nem editar.
+
+> 💬 Sempre que colo um texto longo, o terminal junta tudo numa linha só e não consigo editar. Quero usar o {{CotEditor como editor externo. Por favor, instale e configure.|Notepad++ como editor externo (uso Windows). Por favor, instale e configure de forma que você espere até eu fechar a janela.}}
+
+Como usar: aperte `Ctrl + G` → o {{CotEditor|Notepad++}} abre → escreva, depois `{{⌘ + S|Ctrl + S}}` para salvar e {{`⌘ + W` para fechar|feche a janela no ✕}} → o texto volta para a caixa de digitação → aperte Enter.
+
+⚠️ Um problema que tivemos: se `Ctrl+G` abrir o Gemini do Chrome, é porque o Chrome pegou esse atalho. Peça ao Claude para mudar o editor externo para outra tecla (por exemplo `Ctrl+E`). Depois de mudar qualquer configuração, **feche o Claude e comece uma conversa nova**.
+
+## ✅ Checklist do primeiro dia
+
+- Digitar `cc` abre o Claude na sua pasta de projeto
+- {{`Shift + Enter`|`Shift + Enter` ou `Ctrl + J`}} pula linha
+- Numa conversa nova, ele responde "Quem sou eu?"
+- Arquivos apagados vão para a Lixeira
+- Ele não pede permissão para cada coisinha
+- Seu atalho abre o editor de textos longos
+
+# Ferramentas
+
+> **Tudo o que os vídeos e materiais recomendam instalar.** Regra: **você não precisa de tudo.** Instale primeiro o essencial e o resto quando precisar.
+
+| Ferramenta | Tipo | Código aberto | Custo | Prioridade | Em uma linha |
+|---|---|---|---|---|---|
+| **Claude Code** | O assistente de IA | ✗ | Pro a partir de ~US$ 20/mês | ★★★ Essencial | IA que faz as coisas |
+| **{{cmux|Windows Terminal}}** | Terminal | ✓ | Grátis | ★★★ Essencial | Terminal com abas, fácil de usar |
+| **Kit de segurança** | Configurações de segurança | ✓ | Grátis | ★★★ Essencial | Impede a IA de apagar coisas para sempre |
+| **cc + tela cheia** | Configurações do Claude | Já incluído | Grátis | ★★★ Essencial | Começar com 2 letras, sem piscar |
+| **{{CotEditor|Notepad++}}** | Editor de texto | ✓ | Grátis | ★★ Recomendado | Escrever mensagens longas para a IA |
+| **Firecrawl MCP** | Plugin: ler páginas web | ✓ | Cota grátis | ★★★ Recomendado | Transforma páginas em texto limpo para a IA |
+| **Playwright MCP** | Plugin: controlar o navegador | ✓ | Grátis | ★★ Recomendado | A IA clica, preenche formulários, tira capturas de tela |
+| **Filesystem MCP** | Plugin: pastas | ✓ | Grátis | ★ Opcional | Abre mais uma pasta escolhida por você |
+| **Google Workspace MCP** | Plugin: Gmail/Agenda | ✓ (terceiros) | Grátis | ★★ Avançado | Lê Gmail, Agenda, Drive |
+| **Notion MCP** | Plugin: Notion | Conector oficial | Grátis | ★★ Se você usa Notion | Lê e escreve no Notion |
+| **Skill Creator** | Skill (oficial) | ✓ | Grátis | ★★★ Recomendado | Ajuda a criar boas skills |
+| **Brainstorming** | Skill | ✓ | Grátis | ★★ Recomendado | Transforma ideias em produtos, uma pergunta por vez |
+| **UI UX Pro Max** | Skill | ✓ | Grátis | ★ Para sites | Deixa as páginas feitas pela IA bonitas |
+| **Statusline** | Configuração do Claude | Já incluído | Grátis | ★★ Recomendado | Mostra quão cheia está a memória da IA |
+| **Obsidian** | App de notas | ✗ | Grátis para uso pessoal | ★ Opcional | Lê com capricho os arquivos .md da IA |
+| **Cloudflare / Zeabur** | Hospedagem | ✗ | Planos grátis | ★ Para compartilhar | Coloca suas ferramentas na internet |
+
+**Por que código aberto importa?** O código é público, então qualquer um pode conferir que não faz nada de mau. Geralmente é grátis, e a comunidade pode continuar o projeto se o autor parar.
+
+**Receita universal de instalação:** não digite comandos você mesmo; dê ao Claude o link das instruções. O botão **Raw** no GitHub mostra texto puro, que a IA lê mais rápido.
+
+> 💬 Dê uma olhada nisto (cole o link). O que é, e serve para mim? Se servir, instale para mim.
+
+## O básico
+
+**Claude Code** — o assistente de IA da Anthropic. Lê e escreve arquivos, roda comandos, navega na web e se conecta a plugins. Seus dados ficam no seu computador, então ele conhece você cada vez melhor. Dicas: um assunto por conversa; `/compact` quando a memória estiver quase cheia; os mais úteis são `/mcp`, `/config`, `Shift+Tab` (trocar o modo de permissão) e `Esc` (interromper).
+
+:::mac
+**cmux** ✓ código aberto — um terminal baseado no Ghostty e feito para agentes de IA. Dicas: uma aba para o resumo matinal, outra para uma ferramenta web, outra para pesquisa, tudo ao mesmo tempo; arraste uma aba para o lado para ver duas lado a lado.
+:::
+:::win
+**Windows Terminal** ✓ código aberto (Microsoft) — o terminal que já vem no Windows 11. Dicas: `Ctrl+Shift+T` abre uma aba nova — uma para o resumo matinal, outra para uma ferramenta web, outra para pesquisa, tudo ao mesmo tempo; `Alt+Shift+D` divide lado a lado.
+:::
+
+**cc + tela cheia** — `cc` = ir para a pasta do projeto e abrir o Claude. Atenção: no modo tela cheia `{{⌘+F|Ctrl+Shift+F}}` não funciona; use `Ctrl+O` e depois `/`.
+
+:::mac
+**CotEditor** ✓ código aberto — um editor de texto leve para Mac. Abra pelo Claude para escrever mensagens longas; emojis e quebras de linha são mantidos.
+:::
+:::win
+**Notepad++** ✓ código aberto — um editor de texto leve para Windows. Abra pelo Claude com `Ctrl+G` para escrever mensagens longas; emojis e quebras de linha são mantidos.
+:::
+
+## Plugins MCP: dando mãos à IA
+
+**MCP = uma tomada para a IA.** Regra de segurança: comece com o mínimo de permissão, **só leitura sempre que possível**. Depois de instalar, sempre:
+
+1. **Comece uma conversa nova** (conversas antigas não enxergam plugins adicionados depois).
+2. Diga ao Claude "**Atualize o CLAUDE.md com as ferramentas que tenho agora**" para ele lembrar da caixa de ferramentas.
+
+Digite `/mcp` para ver o que está instalado.
+
+**Firecrawl** ✓ código aberto — muitas páginas (principalmente Facebook e Threads) carregam com JavaScript, e a IA só vê uma casca vazia. O Firecrawl transforma as páginas em texto limpo. Pegue uma chave de API em [firecrawl.dev](https://www.firecrawl.dev/); o plano grátis inclui algumas centenas de páginas por mês. Use para "resuma este artigo em três pontos" ou "compare as especificações destas três páginas de produto".
+
+> 💬 Por favor, instale os MCPs Firecrawl e Playwright para você conseguir ler redes sociais e sites comuns. Me diga como pegar a chave de API para você.
+
+**Playwright** ✓ código aberto (Microsoft) — deixa a IA abrir o próprio navegador para clicar, entrar em contas, preencher formulários e tirar capturas de tela, e testar as ferramentas web que você cria. Use o **modo isolado**, que abre um navegador limpo sem acesso às contas em que você está logado. Peça para ele perguntar antes de enviar qualquer formulário.
+
+**Filesystem** ✓ código aberto — deixa a IA ler e escrever numa pasta fora do projeto, escolhida por você. Abra só a pasta necessária, nunca o computador inteiro.
+
+**Google Workspace** ✓ código aberto (terceiros, não é do Google) — lê Gmail, Agenda, Drive, Documentos e Planilhas. É a chave do resumo matinal. Você cria suas próprias credenciais no Google Cloud; reserve 15–30 minutos e deixe o Claude guiar passo a passo. Comece **só com leitura** e libere mais depois. Nunca cole credenciais num chat nem compartilhe.
+
+> 💬 Quero que você leia meu Gmail e minha Agenda do Google. Siga este documento, use a configuração mais segura, só de leitura, e me guie passo a passo: https://github.com/benson8780101-dev/benson8780101-dev.github.io/blob/main/claude-guide/03-google-workspace.md
+
+**Notion** — deixa a IA ler suas notas e tarefas do Notion. Depois de instalar, digite `/mcp` → notion → Authenticate e marque as páginas que ela pode ler.
+
+> 💬 Quero que você leia meu Notion. Por favor, configure com o MCP oficial do Notion.
+
+**Outras ferramentas** (WordPress, Figma, Canva…):
+
+> 💬 Uso muito (nome da ferramenta). Você pode me mostrar como pegar uma chave de API para você conseguir ler e editar?
+
+🔑 **Guarde suas chaves com cuidado**: salve chaves de API e tokens num arquivo chamado `.env`. Ferramentas de IA e programadores sabem que o `.env` nunca deve ser enviado nem publicado.
+
+## Skills: ensinando seus métodos à IA
+
+**CLAUDE.md = lembrar quem você é. Uma skill = lembrar como fazer algo.** Uma skill é como um cartão de procedimento para um colega novo.
+
+⚠️ **Não instale skills dos outros às cegas.** Uma skill é um conjunto de instruções que a IA vai seguir. Em vez de "instale esta skill", diga "**O que é esta skill? É segura? Serve para mim?**" Prefira skills oficiais ou projetos do GitHub com muitas estrelas.
+
+**Skill Creator** (oficial, Anthropic) ✓ código aberto — a "skill para criar skills" e a primeira a instalar. Descreva um fluxo de trabalho e ela escreve uma skill bem estruturada. [GitHub](https://github.com/anthropics/skills)
+
+**Brainstorming** (Superpowers) ✓ código aberto — parte do princípio de que você não sabe nada e **faz uma pergunta de múltipla escolha por vez**, transformando uma ideia vaga num plano concreto. Ótima para quem não é programador e quer criar pequenas ferramentas. [GitHub](https://github.com/obra/superpowers)
+
+**UI UX Pro Max** ✓ código aberto — reúne muitos padrões de design web bonitos. Bom para quem não tem identidade visual própria; se sua empresa tem cores e fontes próprias, dê essas à IA. [GitHub](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)
+
+**Skills divertidas** (distilly, ex-skill, yourself-skill) — parecem piada, mas você pode pedir ao Claude para desmontá-las e aprender como outras pessoas criam a personalidade e a memória de uma IA. De novo: peça ao Claude para revisar antes.
+
+## Mais conforto
+
+**Statusline** — a última linha do terminal: modelo, **barra de uso da memória**, limites de uso, hora. Acima de uns 80% de memória, a IA começa a piorar; digite `/compact` quando estiver quase cheia. Cole uma captura de tela de uma barra de status de que você goste:
+
+> 💬 Quero uma barra de status como a desta imagem, com barra de progresso, cota restante e horário de renovação, cores do verde ao vermelho e (seu emoji favorito) no começo. Por favor, crie para mim.
+
+**Obsidian** — um app de notas para arquivos `.md` (grátis para uso pessoal, não é código aberto). Abra nele as notas do Claude e as tabelas viram tabelas de verdade. Depois de instalar, escolha "**Abrir pasta como cofre**" (Open folder as vault) e selecione sua pasta de projeto do Claude (não "Criar novo cofre"). [obsidian.md](https://obsidian.md)
+
+**Publicar: Cloudflare / Zeabur** — uma ferramenta web feita pelo Claude é um arquivo no seu computador (começa com `file:///`), então seus amigos não conseguem abrir o link. Publicar dá a ela um endereço público. O Cloudflare Pages serve para páginas simples; o Zeabur, para ferramentas que guardam dados; o GitHub Pages é outra boa opção grátis. Confira se não há dados pessoais antes de colocar qualquer coisa na internet.
+
+> 💬 Quero colocar esta ferramenta na internet para meus amigos. Compare Cloudflare Pages, Zeabur e GitHub Pages, diga qual combina e me guie passo a passo.
+
+**Peças de bastidor** ({{Homebrew|winget, Git for Windows}}, Node.js, uv, jq — todos de código aberto): quando o Claude disser "precisamos instalar ____", responda "OK, instale para mim".
+
+# Prática
+
+> Até aqui você deu ferramentas e permissões ao seu colega novo. Agora coloque-o para trabalhar. Cada exercício só precisa de uma descrição, sem código.
+
+## Exercício 1: Ler um artigo da web (5 min)
+
+> 💬 Por favor, leia este artigo e me dê um resumo em tópicos: (cole o link)
+
+Se ele disser que foi bloqueado, **dê uma segunda chance**: "Tente de outro jeito." Ainda não deu? Instale o Firecrawl. Se perguntar se deve confiar num site, escolha "Yes, and don't ask again" para os sites que você usa sempre.
+
+**Lição:** não desista quando a IA falhar; se ela realmente não conseguir, arrume uma ferramenta para ela.
+
+## Exercício 2: Resumo matinal /morning (30 min)
+
+Digite `/morning` toda manhã e ele resume o que você fez ontem e o que é mais importante hoje. Instale antes o Google Workspace (e o Notion).
+
+> 💬 Quero que você leia meu Gmail, minha Agenda do Google e meu Notion. Crie um comando /morning: sempre que eu usar, resuma o dia de ontem e as tarefas mais importantes de hoje num resumo matinal. Me diga o jeito mais simples de configurar.
+
+Ele vai guiar você no login (`/mcp` → escolha o serviço → entre pelo navegador). Pode oferecer várias versões; escolha uma e diga "Por favor, crie". Depois abra uma conversa nova e digite `/morning`.
+
+**Para melhorar:** use seções (por exemplo pessoal/família em cima, trabalho embaixo); peça "me diga com sinceridade se algum serviço não pôde ser lido"; mantenha o resumo só de leitura. Mais tarde dá para receber automaticamente por e-mail, LINE ou Discord.
+
+## Exercício 3: Imagens automáticas com uma Skill (30 min)
+
+Cansado de abrir o Canva ou o Figma para trocar o texto à mão em cada artigo ou relatório semanal? Dê à IA uma **captura de tela de um modelo**, deixe ela transformar num modelo HTML e, dali em diante, só entregue o conteúdo.
+
+> 💬 Quero criar uma Skill: sempre que eu der um artigo, leia e crie uma imagem de capa 1920×1080 no estilo deste modelo (cole a captura de tela). Faça o modelo como um arquivo HTML para ser rápido de editar e de capturar.
+
+Fonte errada? Diga o nome da fonte. Quer mudar só o texto? Escreva na skill "**mude só o texto, nunca o layout**". Também serve para cartões de relatório semanal, posts para redes sociais e cartazes de eventos.
+
+## Exercício 4: Personalizar a barra de status (15 min)
+
+> 💬 (cole uma captura de tela de uma barra de status) Quero uma barra de status assim. O que posso personalizar? Quero 🐶🥐 como emoji no começo. Por favor, crie e atualize para mim.
+
+O jeito de falar importa: não pergunte "Como faço isso?" (ele vai ensinar você). Diga "**Por favor, faça isso por mim.**" Se não ficar certo, acrescente detalhes; se as cores estiverem sem graça, diga "Quero um degradê do verde ao vermelho". **Seja claro como um bom chefe.**
+
+## Exercício 5: Uma pequena ferramenta web — gerador de orçamentos (30 min)
+
+Ao editar orçamentos no Canva, os colegas estragam fontes e layout sem querer. Tire uma captura de tela de um orçamento existente e comece uma conversa nova:
+
+> 💬 (cole a captura de tela) Por favor, crie uma ferramenta web para orçamentos. Todos os campos para preencher à esquerda e uma prévia ao vivo à direita, que atualiza enquanto eu digito. O logo e o carimbo eu mando depois; por enquanto use uma cor qualquer.
+
+Depois acrescente uma função de cada vez:
+
+> 💬 Adicione à esquerda uma lista de orçamentos anteriores com três conjuntos de dados de exemplo, e troque entre eles quando eu clicar.
+
+> 💬 Temos duas empresas. Adicione uma chave no topo para alternar entre os dados da empresa A e da empresa B.
+
+**Vantagens:** é um único arquivo HTML que você pode mandar aos colegas, e funciona sem internet; só dá para preencher os campos, então ninguém estraga o design. Avançado: peça para ele preencher os campos direto com orçamentos do seu Gmail. **Limite:** os registros ficam salvos só no navegador de cada pessoa; para compartilhar, publique na internet.
+
+## Mais ideias
+
+| Área | Exemplos |
+|---|---|
+| Casa | Orçamento familiar, gastos de viagem divididos, app de receitas, lista de compras |
+| Estudos | Cartões de vocabulário, legendas de vídeo, anotações de leitura |
+| Trabalho | Painel da equipe, atas de reunião, orçamentos, relatórios semanais |
+| Mão na massa | Peças para impressão 3D, registros de conserto, comparação de preços de peças |
+
+**Para achar ideias:** pergunte a si mesmo "O que eu repito toda semana e me irrita?" Essa é a primeira coisa a entregar para a IA. Sem pressa; um passo de cada vez.
+
+# Segurança e dúvidas
+
+## Regras de segurança
+
+A IA é inteligente, mas é um colega novo com a chave da sua casa. Combine as regras antes de dar permissões:
+
+1. **Exclusões precisam ter volta**: com o kit de segurança, arquivos apagados vão para a Lixeira. Quando for bloqueada, a IA tem que perguntar a você, não contornar.
+2. **Salve antes de mudanças grandes**: peça para ela "fazer um backup antes de mudar qualquer coisa"; se a pasta usa Git, faça um commit antes.
+3. **Mantenha suas chaves em segredo**: não cole senhas nem chaves de API num chat ou em arquivos que você vai publicar; borre nas capturas de tela.
+4. **Comece com poucas permissões**: plugins começam só com leitura; enviar e-mail, publicar, pagar e apagar precisam ser confirmados com você antes.
+5. **Cuidado com fontes desconhecidas**: baixe só de sites oficiais; peça ao Claude para revisar skills e MCPs de outras pessoas.
+6. **Confira a privacidade antes de publicar**: antes de qualquer coisa ir para a internet, peça para conferir nomes reais, telefones, endereços e fotos.
+
+**Regras de segurança para colar no CLAUDE.md:**
+
+```
+## Regras de segurança
+- Antes de apagar um arquivo, confirme que é o que eu quero apagar. Sempre mova para a Lixeira; nunca apague de vez.
+- Antes de mudar, mover ou apagar muitos arquivos, faça um backup e me diga como restaurar.
+- Se uma regra de segurança bloquear você, use um jeito reversível ou me pergunte em palavras simples; nunca contorne.
+- Antes de enviar e-mail, publicar, colocar no ar, pagar ou mudar permissões, confirme comigo em uma frase.
+- Nunca mostre senhas ou chaves de API no chat nem escreva em arquivos que serão públicos.
+- Ler, pesquisar e escrever arquivos no dia a dia: pode fazer, sem perguntar toda vez.
+```
+
+## Dúvidas frequentes
+
+**Digitar `claude` dá "comando não encontrado"?** {{Role para cima até as Setup Notes da mensagem de instalação, rode aquela linha e abra o terminal de novo.|Primeiro feche e abra o terminal de novo. Se continuar, adicione `C:\Users\SeuNome\.local\bin` ao PATH como no passo 2 da Instalação e abra de novo.}}
+
+**`Shift + Enter` envia em vez de pular linha?** {{Você está usando o Terminal que vem no Mac. Mude para o cmux.|Use `Ctrl + J`, ou digite `\` e aperte Enter.}}
+
+**Mudei uma configuração e nada aconteceu?** Plugins, atalhos e modo tela cheia só valem depois que você **fecha o Claude e começa uma conversa nova**. Digite `/exit` e depois `cc`.
+
+**Texto longo colado aparece como `[Pasted text #1 +20 lines]`?** Ele só está recolhido na tela; o conteúdo está completo. Use o {{CotEditor|Notepad++}} para editar.
+
+**Instalei um plugin, mas o Claude diz que a ferramenta não existe?** Comece uma conversa nova; digite `/mcp` para ver o status e escolha Authenticate se precisar.
+
+**Um plugin mostra `CONNECTION_CLOSED`?** Normalmente ele não encontra o Node.js. Diga ao Claude: "Este MCP mostra CONNECTION_CLOSED. Verifique se precisa de um caminho completo ou de uma configuração de PATH."
+
+**Um link de login colado no navegador não funciona?** Copiar um link longo do terminal pode colocar uma quebra de linha ou um espaço no meio. Tire e tente de novo.
+
+**Como colo uma captura de tela no Claude?** {{Aperte `Ctrl + ⌘ + Shift + 4` para copiar uma captura de tela, depois aperte `Ctrl + V` na caixa de digitação do Claude.|Aperte `Windows + Shift + S` para tirar uma captura de tela, depois aperte `Alt + V` na caixa de digitação do Claude.}} Você também pode arrastar um arquivo de imagem para o terminal.
+
+**O Google pede login de novo a cada 7 dias?** A "tela de consentimento OAuth" no Google Cloud ainda está em "Teste". Peça ao Claude para guiar você na mudança para "Em produção". O aviso "O Google não verificou este app" é normal num app que você fez para você mesmo; clique em "Avançado → Acessar…".
+
+**O login do Google sempre escolhe sua conta do trabalho?** Abra o link de login numa **janela anônima**.
+
+**O Claude piora e esquece o que você acabou de dizer?** A memória está quase cheia. Digite `/compact` ou comece uma conversa nova.
+
+**Ele manda você colar um comando?** Responda: "**Faça isso por mim.**"
+
+**Ele esquece as coisas na próxima vez?** Diga "Escreva esta regra no CLAUDE.md" e depois abra o arquivo para conferir se está mesmo lá.
+
+**Ele vive pedindo permissão?** Aperte `Shift + Tab` para mudar o modo de permissão, depois de instalar o kit de segurança.
+
+**A cota acaba rápido demais?** Escolha um modelo mais leve em `/config`; um assunto por conversa; a barra de status pode mostrar o uso e os horários de renovação (a cada 5 horas e semanal).
+
+**Seus amigos não abrem a ferramenta web que você mandou?** Links `file:///` só funcionam no seu computador. Publique na internet ou mande o próprio arquivo HTML para eles abrirem no navegador.
+
+## Frases de socorro para quando travar
+
+> 💬 Sou iniciante e travei aqui (cole a captura de tela). Explique em palavras simples o que está acontecendo e conserte direto se puder.
+
+> 💬 Ainda é assim que se configura isto? Por favor, confira as instruções oficiais mais recentes na internet.
+
+> 💬 Me guie um passo de cada vez e espere eu avisar antes do próximo passo.
+
+## Para aprender mais
+
+- [Documentação oficial do Claude Code](https://code.claude.com/docs/en/overview) (em inglês)
+- [Biblioteca oficial de skills](https://github.com/anthropics/skills)
+
+</script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
 <script>
@@ -2359,14 +3081,34 @@ const LANGS = [
   { id: 'en', label: 'English' },
   { id: 'de', label: 'Deutsch' },
   { id: 'ko', label: '한국어' },
+  { id: 'pt', label: 'Português' },
 ];
 const UI = {
   'zh-TW': { credit: "出處：本指南整理自雷蒙三十（侯智薰）《Claude Code 零基礎入門》<a href=\"https://youtu.be/xo7dE80ktu4\">上集</a>、<a href=\"https://youtu.be/80kCvbsuniw\">下集</a>影片與教材，原作採 CC BY-NC 授權，本頁僅供非商業學習分享。", brand: 'Claude Code 新手指南', chapters: '章節', copy: '複製', copied: '已複製', prompt: '貼給 Claude', prev: '上一章', next: '下一章', foot: '整理：Benson・2026 年 10 月・僅供免費學習分享' },
   'zh-CN': { credit: "出处：本指南整理自雷蒙三十（侯智薰）《Claude Code 零基础入门》<a href=\"https://youtu.be/xo7dE80ktu4\">上集</a>、<a href=\"https://youtu.be/80kCvbsuniw\">下集</a>视频与教材，原作采用 CC BY-NC 授权，本页仅供非商业学习分享。", brand: 'Claude Code 新手指南', chapters: '章节', copy: '复制', copied: '已复制', prompt: '发给 Claude', prev: '上一章', next: '下一章', foot: '整理：Benson・2026 年 10 月・仅供免费学习分享' },
   'en': { credit: "Source: adapted from Raymond Hou's (雷蒙三十) “Claude Code for Beginners” videos (<a href=\"https://youtu.be/xo7dE80ktu4\">Part 1</a>, <a href=\"https://youtu.be/80kCvbsuniw\">Part 2</a>) and course notes, licensed CC BY-NC. Shared for non-commercial learning only.", brand: 'Claude Code Starter Guide', chapters: 'Chapters', copy: 'Copy', copied: 'Copied', prompt: 'Paste into Claude', prev: 'Previous', next: 'Next', foot: 'Compiled by Benson · October 2026 · Free to share for learning' },
   'de': { credit: "Quelle: nach den Videos „Claude Code für Einsteiger“ von Raymond Hou (雷蒙三十) (<a href=\"https://youtu.be/xo7dE80ktu4\">Teil 1</a>, <a href=\"https://youtu.be/80kCvbsuniw\">Teil 2</a>) und seinen Kursunterlagen, lizenziert unter CC BY-NC. Nur für nicht-kommerzielles Lernen geteilt.", brand: 'Claude Code Einstiegshilfe', chapters: 'Kapitel', copy: 'Kopieren', copied: 'Kopiert', prompt: 'In Claude einfügen', prev: 'Zurück', next: 'Weiter', foot: 'Zusammengestellt von Benson · Oktober 2026 · Frei zum Lernen und Teilen' },
+  'pt': { credit: "Fonte: adaptado dos vídeos “Claude Code para iniciantes” de Raymond Hou (雷蒙三十) (<a href=\"https://youtu.be/xo7dE80ktu4\">parte 1</a>, <a href=\"https://youtu.be/80kCvbsuniw\">parte 2</a>) e do material do curso, licenciados sob CC BY-NC. Compartilhado apenas para aprendizado sem fins comerciais.", brand: 'Guia inicial do Claude Code', chapters: 'Capítulos', copy: 'Copiar', copied: 'Copiado', prompt: 'Cole no Claude', prev: 'Anterior', next: 'Próximo', foot: 'Organizado por Benson · Novembro de 2026 · Livre para compartilhar para aprender' },
   'ko': { credit: "출처: Raymond Hou(雷蒙三十)의 「Claude Code 왕초보 입문」 영상(<a href=\"https://youtu.be/xo7dE80ktu4\">상</a>, <a href=\"https://youtu.be/80kCvbsuniw\">하</a>)과 강의 자료를 정리했으며, 원작은 CC BY-NC 라이선스입니다. 비상업적 학습 목적으로만 공유합니다.", brand: 'Claude Code 입문 가이드', chapters: '목차', copy: '복사', copied: '복사됨', prompt: 'Claude에 붙여 넣기', prev: '이전', next: '다음', foot: '정리: Benson · 2026년 10월 · 무료 학습·공유용' },
 };
+
+const OSES = [{ id: 'mac', label: '🍎 Mac' }, { id: 'win', label: '🪟 Windows' }];
+function pickOS() {
+  const saved = store.get('ccg-os');
+  if (saved === 'mac' || saved === 'win') return saved;
+  const p = (navigator.userAgentData && navigator.userAgentData.platform) || navigator.platform || navigator.userAgent || '';
+  return /win/i.test(p) ? 'win' : 'mac';
+}
+// :::mac / :::win ... ::: blocks, and inline {{mac text|win text}}
+function osFilter(md, os) {
+  const out = []; let skip = false;
+  for (const line of md.split('\n')) {
+    const m = line.trim().match(/^:::(mac|win)?$/);
+    if (m) { skip = m[1] ? m[1] !== os : false; continue; }
+    if (!skip) out.push(line);
+  }
+  return out.join('\n').replace(/\{\{([^{}|]*)\|([^{}]*)\}\}/g, (_, a, b) => os === 'mac' ? a : b);
+}
 
 const store = {
   get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
@@ -2398,6 +3140,7 @@ function pickLang() {
   if (nav.startsWith('zh')) return /cn|sg|hans/.test(nav) ? 'zh-CN' : 'zh-TW';
   if (nav.startsWith('de')) return 'de';
   if (nav.startsWith('ko')) return 'ko';
+  if (nav.startsWith('pt')) return 'pt';
   return nav.startsWith('en') ? 'en' : 'zh-TW';
 }
 function pickChapter() {
@@ -2405,7 +3148,7 @@ function pickChapter() {
   return m ? Math.max(0, parseInt(m[1], 10) - 1) : 0;
 }
 
-let state = { lang: pickLang(), ch: pickChapter() };
+let state = { lang: pickLang(), ch: pickChapter(), os: pickOS() };
 
 function enhance(root, ui) {
   root.querySelectorAll('table').forEach(t => {
@@ -2451,6 +3194,14 @@ function render(scrollTop) {
     b.addEventListener('click', () => { state.lang = l.id; store.set('ccg-lang', l.id); go(); });
     langs.appendChild(b);
   });
+  const oses = document.getElementById('oses');
+  oses.innerHTML = '';
+  OSES.forEach(o => {
+    const b = document.createElement('button'); b.type = 'button'; b.textContent = o.label;
+    b.setAttribute('aria-pressed', String(o.id === state.os));
+    b.addEventListener('click', () => { state.os = o.id; store.set('ccg-os', o.id); render(false); });
+    oses.appendChild(b);
+  });
 
   const rail = document.getElementById('rail');
   rail.innerHTML = '<div class="rail-label">' + ui.chapters + '</div>';
@@ -2467,7 +3218,7 @@ function render(scrollTop) {
 
   const c = chs[state.ch];
   const art = document.getElementById('content');
-  art.innerHTML = '<h1><span class="chap-no">' + String(state.ch).padStart(2, '0') + ' / ' + String(chs.length - 1).padStart(2, '0') + '</span></h1>' + marked.parse(c.body);
+  art.innerHTML = '<h1><span class="chap-no">' + String(state.ch).padStart(2, '0') + ' / ' + String(chs.length - 1).padStart(2, '0') + '</span></h1>' + marked.parse(osFilter(c.body, state.os));
   art.querySelector('h1').append(c.title);
   enhance(art, ui);
 
@@ -2497,8 +3248,9 @@ function go(scrollTop) {
   try { history.replaceState(null, '', h); } catch (e) {}
   render(scrollTop);
 }
-window.addEventListener('hashchange', () => { state = { lang: pickLang(), ch: pickChapter() }; render(true); });
+window.addEventListener('hashchange', () => { state = { lang: pickLang(), ch: pickChapter(), os: state.os }; render(true); });
 render(false);
 </script>
+
 </body>
 </html>
