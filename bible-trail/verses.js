@@ -1332,3 +1332,173 @@ window.VERSES = {
   "no": "Din hals er som elfenbenstårnet, dine øine som vanndammene i Hesbon ved Batrabbims port, din nese som Libanon-tårnet, som skuer ut mot Damaskus."
  }
 };
+window.PHOTOS = {
+ "bethany": {
+  "src": "img/bethany.jpg",
+  "artist": "Producer (talk)",
+  "license": "CC BY 2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Bethany_(5).JPG"
+ },
+ "elijah": {
+  "src": "img/elijah.jpg",
+  "artist": "en:User:Nickfraser",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Telmarelias.jpg"
+ },
+ "shittim": {
+  "src": "img/shittim.jpg",
+  "artist": "Deg777",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Tall_el-Hammam_overlooking_the_Jordan_Valley_2007.jpg"
+ },
+ "moab": {
+  "src": "img/moab.jpg",
+  "artist": "Deg777",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Date_Palms_Tall_el-Hammam_Jordan.jpg"
+ },
+ "nebo": {
+  "src": "img/nebo.jpg",
+  "artist": "Berthold Werner",
+  "license": "CC BY 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mount_Nebo_BW_6.JPG"
+ },
+ "madaba": {
+  "src": "img/madaba.jpg",
+  "artist": "Paul Palmer, architect in Jerusalem Guthe, Friedrich Wilhelm Leopold Hermann (* ",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Palmer_%26_Guthe_image_of_the_Medaba_map.jpg"
+ },
+ "heshbon": {
+  "src": "img/heshbon.jpg",
+  "artist": "Bashar Tabbah",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Tell_Hesban_(Column).jpg"
+ },
+ "citadel": {
+  "src": "img/citadel.jpg",
+  "artist": "David Bjorgen",
+  "license": "CC BY 2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:Amman_Citadel.jpg"
+ },
+ "theatre": {
+  "src": "img/theatre.jpg",
+  "artist": "Bernard Gagnon",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Roman_theater_of_Amman_01.jpg"
+ },
+ "jabbok": {
+  "src": "img/jabbok.jpg",
+  "artist": "Jim Greenhill, U.S. Army",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Landscape_of_Jordan.JPG"
+ },
+ "penuel": {
+  "src": "img/penuel.jpg",
+  "artist": "Eugène Delacroix（畫作 painting）, Wikimedia Commons",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Lutte_de_Jacob_avec_l%27Ange.jpg"
+ },
+ "gadara": {
+  "src": "img/gadara.jpg",
+  "artist": "David Bjorgen",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Umm_Qais-13.jpg"
+ },
+ "gerasa": {
+  "src": "img/gerasa.jpg",
+  "artist": "Petar Milošević",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Oval_Plaza_(Forum_Romanum,_Gerasa_-_Jerash,_Jordan)_-_%D8%B3%D8%A7%D8%AD%D8%A9_%D8%A7%D9%84%D9%86%D8%AF%D9%88%D8%A9,_%D8%AC%D8%B1%D8%B4.jpg"
+ },
+ "irbid": {
+  "src": "img/irbid.jpg",
+  "artist": "mohammed alborum",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Irbid_City_(17304009505).jpg"
+ },
+ "machaerus": {
+  "src": "img/machaerus.jpg",
+  "artist": "Wikimedia Commons",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Machaerus_Panorama.jpg"
+ },
+ "dibon": {
+  "src": "img/dibon.jpg",
+  "artist": "Wikimedia Commons",
+  "license": "CC BY 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:P1120870_Louvre_st%C3%A8le_de_M%C3%A9sha_AO5066_rwk.JPG"
+ },
+ "mephaath": {
+  "src": "img/mephaath.jpg",
+  "artist": "Bashar Tabbah",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Umm_ar-Rasas_Arcs.jpg"
+ },
+ "arnon": {
+  "src": "img/arnon.jpg",
+  "artist": "YousefTOmar",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:WadiMujib-Canyon.jpg"
+ },
+ "kerak": {
+  "src": "img/kerak.jpg",
+  "artist": "Berthold Werner",
+  "license": "CC BY 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Kerak_BW_1.JPG"
+ },
+ "sodom": {
+  "src": "img/sodom.jpg",
+  "artist": "Disdero",
+  "license": "CC BY-SA 2.5",
+  "page": "https://commons.wikimedia.org/wiki/File:SaltPillarDeadSea.jpg"
+ },
+ "bozrah": {
+  "src": "img/bozrah.jpg",
+  "artist": "No machine-readable author provided. Uri~commonswiki assumed (based on copyright",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Bazra.JPG"
+ },
+ "sela": {
+  "src": "img/sela.jpg",
+  "artist": "Uri~commonswiki (Uri Juda).",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Sela.JPG"
+ },
+ "tophel": {
+  "src": "img/tophel.jpg",
+  "artist": "No machine-readable author provided. Uri~commonswiki assumed (based on copyright",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Tafila_Tophel.JPG"
+ },
+ "punon": {
+  "src": "img/punon.jpg",
+  "artist": "Joe Roe",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Wadi_Feynan,_May_2014.jpg"
+ },
+ "petra": {
+  "src": "img/petra.jpg",
+  "artist": "Azurfrog",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Al_Deir_Petra.JPG"
+ },
+ "aaron": {
+  "src": "img/aaron.jpg",
+  "artist": "Mlynn927",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Mthor.jpeg"
+ },
+ "aylachurch": {
+  "src": "img/aylachurch.jpg",
+  "artist": "Utilisateur:Bel Adone",
+  "license": "Public domain",
+  "page": "https://commons.wikimedia.org/wiki/File:Early_church_of_Aqaba02.jpg"
+ },
+ "pella": {
+  "src": "img/pella.jpg",
+  "artist": "Ben Churcher, Pella Project, University of Sydney, Australia",
+  "license": "CC BY 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Byzantine_Basilica.jpg"
+ }
+};
