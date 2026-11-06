@@ -79,7 +79,7 @@ main { flex: 1; position: relative; overflow: hidden; }
 .card h2 { margin: 0 0 4px; font-size: 19px; }
 .card h3 { margin: 14px 0 6px; font-size: 15px; color: var(--muted); }
 .muted { color: var(--muted); font-size: 14px; }
-.notice { background: var(--card); border-left: 4px solid var(--gold); border-radius: 10px; padding: 12px 14px; margin-bottom: 14px; font-size: 14px; }
+.notice { background: var(--card); border-inline-start: 4px solid var(--gold); border-radius: 10px; padding: 12px 14px; margin-bottom: 14px; font-size: 14px; }
 .notice p { margin: 0 0 6px; }
 .notice button { margin-top: 4px; }
 
@@ -95,7 +95,7 @@ main { flex: 1; position: relative; overflow: hidden; }
 .stop-list { list-style: none; margin: 0; padding: 0; }
 .stop-list li { display: flex; align-items: center; gap: 10px; padding: 9px 0; border-top: 1px solid var(--line); }
 .stop-list li:first-child { border-top: 0; }
-.stop-list button.link { background: none; border: 0; padding: 0; text-align: left; flex: 1; font-weight: 600; }
+.stop-list button.link { background: none; border: 0; padding: 0; text-align: start; flex: 1; font-weight: 600; }
 .dot { width: 26px; height: 26px; flex: none; border-radius: 50%; display: grid; place-items: center; font-size: 14px; border: 2px dashed var(--muted); color: var(--muted); }
 .dot.done { border: 0; background: var(--gold); color: #fff; }
 .tag { font-size: 12px; padding: 1px 8px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); white-space: nowrap; }
@@ -122,14 +122,14 @@ main { flex: 1; position: relative; overflow: hidden; }
 .hero figcaption { font-size: 11px; color: var(--muted); padding: 4px 16px 0; }
 .hero.placeholder { height: 120px; display: grid; place-items: center; font-size: 48px; background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 35%, var(--bg)), color-mix(in srgb, var(--gold) 30%, var(--bg))); }
 .sheet h2 { font-size: 22px; line-height: 1.3; margin: 0 0 4px; }
-.verse { border-left: 3px solid var(--gold); padding: 4px 0 4px 12px; margin: 10px 0; }
+.verse { border-inline-start: 3px solid var(--gold); padding-block: 4px; padding-inline: 12px 0; margin: 10px 0; }
 .verse cite { display: block; font-style: normal; font-size: 13px; color: var(--muted); font-weight: 600; }
 .verse-link { display: inline-block; margin-top: 4px; font-size: 13px; }
 .cert { display: inline-block; font-size: 13px; padding: 2px 10px; border-radius: 999px; background: var(--card); border: 1px solid var(--line); margin: 6px 6px 0 0; }
 .warn { color: var(--warn); }
 .checkin { text-align: center; }
 .checkin .big { font-size: 40px; }
-.quiz-opt { display: block; width: 100%; text-align: left; margin: 6px 0; padding: 10px 12px; border-radius: 10px; border: 1.5px solid var(--line); background: var(--card); }
+.quiz-opt { display: block; width: 100%; text-align: start; margin: 6px 0; padding: 10px 12px; border-radius: 10px; border: 1.5px solid var(--line); background: var(--card); }
 .quiz-opt.right { border-color: var(--ok); color: var(--ok); font-weight: 600; }
 .quiz-opt.wrong { border-color: var(--warn); color: var(--warn); }
 
@@ -161,7 +161,7 @@ a.btn { text-decoration: none; }
 .food p { margin: 4px 0; }
 .trip { border-top: 1px solid var(--line); padding: 8px 0; }
 .trip summary { font-weight: 700; cursor: pointer; padding: 4px 0; }
-.trip-days { padding-left: 20px; }
+.trip-days { padding-inline-start: 20px; }
 .trip-days li { margin: 10px 0; }
 .trip-days p { margin: 4px 0; }
 .trip-stop { border: 1px solid var(--line); background: var(--bg); border-radius: 999px; padding: 3px 10px; font-size: 13px; margin: 4px 0; }
@@ -171,4 +171,8 @@ a.btn { text-decoration: none; }
 .note { margin-top: 12px; }
 .note-input { resize: vertical; min-height: 70px; line-height: 1.5; }
 .note-status { display: block; min-height: 1.2em; font-size: 12px; margin-top: 2px; }
-.card.home { border-left: 4px solid var(--gold); }
+.card.home { border-inline-start: 4px solid var(--gold); }
+
+/* 阿拉伯文：由右往左，用比較好讀的阿拉伯字型、行距大一點 */
+[dir="rtl"] body { font-family: "Noto Naskh Arabic", "Geeza Pro", "Segoe UI", Tahoma, sans-serif; }
+[dir="rtl"] p, [dir="rtl"] li, [dir="rtl"] blockquote { line-height: 1.8; }

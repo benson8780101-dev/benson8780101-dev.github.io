@@ -7,8 +7,8 @@ const CERT_NAME_KEY = "bibleTrail.certName";
 const CERT_W = 1200, CERT_H = 1650;
 // 證書固定用羊皮紙配色，不跟著深色模式變，下載後印出來才好看
 const CERT_COLORS = { paper: "#fbf4e6", ink: "#2b211a", muted: "#7a6a5c", accent: "#8a4b2a", gold: "#c8962e", line: "#e4d6c3" };
-const SERIF = '"Songti TC", "Noto Serif TC", "PMingLiU", Georgia, "Times New Roman", serif';
-const SANS = '-apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", "Segoe UI", sans-serif';
+const SERIF = '"Songti TC", "Noto Serif TC", "PMingLiU", Georgia, "Times New Roman", "Noto Naskh Arabic", "Geeza Pro", serif';
+const SANS = '-apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", "Segoe UI", "Noto Naskh Arabic", "Geeza Pro", sans-serif';
 
 function certStatus() {
   // 只算主線，支線是額外的
@@ -107,6 +107,8 @@ function drawCertificate(name) {
     g.beginPath(); g.moveTo(x, y - 16); g.lineTo(x + 16, y); g.lineTo(x, y + 16); g.lineTo(x - 16, y); g.closePath(); g.fill();
   }
   g.textAlign = "center"; g.textBaseline = "alphabetic";
+  // 阿拉伯文由右往左排，混到數字或英文名字時順序才會對
+  g.direction = lang === "ar" ? "rtl" : "ltr";
 
   let y = 170;
   text(g, "✦  " + t("appName") + "  ✦", cx, y, `600 34px ${SANS}`, C.accent);
@@ -150,7 +152,7 @@ function drawCertificate(name) {
     rule(g, cx, y - 40, 200, C.line);
     // 經文在下一節才講完，結尾的逗號改成「…」
     // 寬度留給右下角的印章，不會壓到經文
-    y = wrap(g, quote(v[lang].replace(/[,，;；]\s*$/, "…")), cx, y, CERT_W - 460, 42, `italic 400 28px ${SERIF}`, C.ink);
+    y = wrap(g, quote(v[lang].replace(/[,，;；]\s*$/, "…")), cx, y, CERT_W - 460, 42, `${lang === "ar" ? "" : "italic "}400 28px ${SERIF}`, C.ink);
     text(g, "— " + v[lang + "Ref"], cx, y + 4, `600 26px ${SANS}`, C.muted);
   }
 
@@ -168,8 +170,8 @@ function fitSize(g, s, max, width) {
   for (let size = max; size > 44; size -= 4) { g.font = `700 ${size}px ${SERIF}`; if (g.measureText(s).width <= width) return size; }
   return 44;
 }
-// 引號照語言：中文用「」，挪威文用 « »，英文、葡文用 “ ”
-function quote(s) { return lang === "zh" ? "「" + s + "」" : lang === "no" ? "\u00ab" + s + "\u00bb" : "\u201c" + s + "\u201d"; }
+// 引號照語言：中文用「」，挪威文、阿拉伯文用 « »，英文、葡文用 “ ”
+function quote(s) { return lang === "zh" ? "「" + s + "」" : lang === "no" || lang === "ar" ? "\u00ab" + s + "\u00bb" : "\u201c" + s + "\u201d"; }
 // 自動換行：有漢字就一個字一個字斷，英文、葡文照單字斷；回傳下一行的 y
 // 句尾標點（，。」…）不放到新的一行開頭，寧可這一行稍微長一點
 const NO_LINE_START = /^[\uff0c\u3002\u3001\uff1b\uff1a\u300d\u300f\uff01\uff1f\u2026\uff09\u201d]$/;

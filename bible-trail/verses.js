@@ -1,4 +1,4 @@
-// 經文：和合本（cut）與 World English Bible（web）為公共領域；Bíblia Livre（livre）為 CC BY 3.0 BR；挪威文 Det Norsk Bibelselskap 1930（bibelselskap）為公共領域。由 api.getbible.net 取得（挪威文取自 github.com/getbible/Bibles）。
+// 經文：和合本（cut）與 World English Bible（web）為公共領域；Bíblia Livre（livre）為 CC BY 3.0 BR；挪威文 Det Norsk Bibelselskap 1930（bibelselskap）為公共領域；阿拉伯文範戴克譯本 Smith & Van Dyck 1865（arabicsv）為公共領域。由 api.getbible.net 取得（挪威文、阿拉伯文取自 github.com/getbible/Bibles）。
 // 這個檔案由 工具/build_verses.py 產生，不要直接改。
 window.VERSES = {
  "1 Kgs 17:1": {
@@ -9,7 +9,9 @@ window.VERSES = {
   "en": "Elijah the Tishbite, who was of the foreigners of Gilead, said to Ahab, “As Yahweh, the God of Israel, lives, before whom I stand, there shall not be dew nor rain these years, but according to my word.”",
   "pt": "Então Elias Tisbita, que era dos moradores de Gileade, disse a Acabe: Vive o SENHOR Deus de Israel, diante do qual estou, que não haverá chuva nem orvalho nestes anos, a não ser por minha palavra.",
   "noRef": "1 Kongebok 17,1",
-  "no": "Da sa tisbitten Elias, en av dem som var flyttet inn i Gilead, til Akab: Så sant Herren, Israels Gud, lever, han hvis tjener jeg er: Det skal i disse år ikke komme dugg eller regn uten efter mitt ord."
+  "no": "Da sa tisbitten Elias, en av dem som var flyttet inn i Gilead, til Akab: Så sant Herren, Israels Gud, lever, han hvis tjener jeg er: Det skal i disse år ikke komme dugg eller regn uten efter mitt ord.",
+  "arRef": "الملوك الأول 17:1",
+  "ar": "وقال ايليا التشبي من مستوطني جلعاد لاخآب حيّ هو الرب اله اسرائيل الذي وقفت امامه انه لا يكون طل ولا مطر في هذه السنين الا عند قولي"
  },
  "1 Kgs 17:5-6": {
   "zhRef": "列王紀上 17:5-6",
@@ -19,7 +21,9 @@ window.VERSES = {
   "en": "So he went and did according to Yahweh’s word; for he went and lived by the brook Cherith, that is before the Jordan. The ravens brought him bread and flesh in the morning, and bread and flesh in the evening; and he drank of the brook.",
   "pt": "E ele foi, e fez conforme à palavra do SENHOR; pois se foi e assentou junto ao ribeiro de Querite, que está antes do Jordão. E os corvos lhe traziam pão e carne pela manhã, e pão e carne à tarde; e bebia do ribeiro.",
   "noRef": "1 Kongebok 17,5-6",
-  "no": "Så gikk han og gjorde som Herren hadde sagt; han gikk til bekken Krit østenfor Jordan og opholdt sig der, og ravnene kom til ham med brød og kjøtt om morgenen og med brød og kjøtt om aftenen, og han drakk av bekken."
+  "no": "Så gikk han og gjorde som Herren hadde sagt; han gikk til bekken Krit østenfor Jordan og opholdt sig der, og ravnene kom til ham med brød og kjøtt om morgenen og med brød og kjøtt om aftenen, og han drakk av bekken.",
+  "arRef": "الملوك الأول 17:5-6",
+  "ar": "فانطلق وعمل حسب كلام الرب وذهب فاقام عند نهر كريث الذي هو مقابل الاردن. وكانت الغربان تاتي اليه بخبز ولحم صباحا وبخبز ولحم مساء وكان يشرب من النهر."
  },
  "1 Kgs 19:19": {
   "zhRef": "列王紀上 19:19",
@@ -29,7 +33,9 @@ window.VERSES = {
   "en": "So he departed there, and found Elisha the son of Shaphat, who was plowing, with twelve yoke of oxen before him, and he with the twelfth: and Elijah passed over to him, and cast his mantle on him.",
   "pt": "E partindo-se ele dali, achou a Eliseu filho de Safate, que arava com doze juntas diante de si; e ele era um dos doze trabalhadores. E passando Elias por diante dele, lançou sobre ele seu manto.",
   "noRef": "1 Kongebok 19,19",
-  "no": "Da han nu gikk derfra, møtte han Elisa, Safats sønn, som holdt på å pløie; tolv par okser gikk foran ham, og selv var han ved det tolvte par; og Elias gikk bort til ham og kastet sin kappe over ham."
+  "no": "Da han nu gikk derfra, møtte han Elisa, Safats sønn, som holdt på å pløie; tolv par okser gikk foran ham, og selv var han ved det tolvte par; og Elias gikk bort til ham og kastet sin kappe over ham.",
+  "arRef": "الملوك الأول 19:19",
+  "ar": "فذهب من هناك ووجد اليشع بن شافاط يحرث واثنا عشر فدان بقر قدامه وهو مع الثاني عشر فمرّ ايليا به وطرح رداءه عليه."
  },
  "1 Kgs 19:21": {
   "zhRef": "列王紀上 19:21",
@@ -39,7 +45,9 @@ window.VERSES = {
   "en": "He returned from following him, and took the yoke of oxen, and killed them, and boiled their flesh with the instruments of the oxen, and gave to the people, and they ate. Then he arose, and went after Elijah, and served him.",
   "pt": "E interrompeu de segui-lo, tomou um par de bois, e os matou, e com o arado dos bois cozeu a carne deles, e deu-a ao povo que comessem. Depois se levantou, e foi atrás de Elias, e o servia.",
   "noRef": "1 Kongebok 19,21",
-  "no": "Så forlot han ham og gikk hjem; han tok de to okser og slaktet dem, og med oksenes åk kokte han kjøttet og gav det til folket der, og de åt. Så gjorde han sig rede og fulgte Elias og tjente ham."
+  "no": "Så forlot han ham og gikk hjem; han tok de to okser og slaktet dem, og med oksenes åk kokte han kjøttet og gav det til folket der, og de åt. Så gjorde han sig rede og fulgte Elias og tjente ham.",
+  "arRef": "الملوك الأول 19:21",
+  "ar": "فرجع من ورائه واخذ فدان بقر وذبحهما وسلق اللحم بأدوات البقر واعطى الشعب فأكلوا. ثم قام ومضى وراء ايليا وكان يخدمه"
  },
  "1 Kgs 19:6": {
   "zhRef": "列王紀上 19:6",
@@ -49,7 +57,9 @@ window.VERSES = {
   "en": "He looked, and behold, there was at his head a cake baked on the coals, and a jar of water. He ate and drank, and lay down again.",
   "pt": "Então ele olhou, e eis que a sua cabeceira uma torta cozida sobre as ascuas, e um vaso de água: e comeu e bebeu e voltou-se a dormir.",
   "noRef": "1 Kongebok 19,6",
-  "no": "Og da han så til, fikk han se at det ved hans hodegjerde lå en kake, stekt på hete stener, og at det stod en krukke med vann; og han åt og drakk og la sig ned igjen."
+  "no": "Og da han så til, fikk han se at det ved hans hodegjerde lå en kake, stekt på hete stener, og at det stod en krukke med vann; og han åt og drakk og la sig ned igjen.",
+  "arRef": "الملوك الأول 19:6",
+  "ar": "فتطلع واذا كعكة رضف وكوز ماء عند راسه فأكل وشرب ثم رجع فاضطجع."
  },
  "1 Kgs 22:34": {
   "zhRef": "列王紀上 22:34",
@@ -59,7 +69,9 @@ window.VERSES = {
   "en": "A certain man drew his bow at random, and struck the king of Israel between the joints of the armor. Therefore he said to the driver of his chariot, “Turn your hand, and carry me out of the battle; for I am severely wounded.”",
   "pt": "E um homem disparando seu arco ao acaso, feriu ao rei de Israel por entre as junturas da armadura; pelo que disse ele a seu condutor do carro: Toma a volta, e tira-me do campo, que estou ferido.",
   "noRef": "1 Kongebok 22,34",
-  "no": "Men en mann spente sin bue og skjøt på lykke og fromme og traff Israels konge mellem brynjeskjørtet og brynjen. Da sa han til sin vognstyrer: Vend om og før mig ut av hæren! Jeg er såret."
+  "no": "Men en mann spente sin bue og skjøt på lykke og fromme og traff Israels konge mellem brynjeskjørtet og brynjen. Da sa han til sin vognstyrer: Vend om og før mig ut av hæren! Jeg er såret.",
+  "arRef": "الملوك الأول 22:34",
+  "ar": "وان رجلا نزع في قوسه غير متعمد وضرب ملك اسرائيل بين اوصال الدرع. فقال لمدير مركبته رد يدك واخرجني من الجيش لاني قد جرحت."
  },
  "1 Kgs 22:48": {
   "zhRef": "列王紀上 22:48",
@@ -69,7 +81,9 @@ window.VERSES = {
   "en": "Jehoshaphat made ships of Tarshish to go to Ophir for gold: but they didn’t go; for the ships were broken at Ezion Geber.",
   "pt": "Havia Josafá feito navios em Társis, os quais haviam de ir a Ofir por ouro; mas não foram, porque se romperam em Eziom-Geber.",
   "noRef": "1 Kongebok 22,48",
-  "no": "Det var dengang ingen konge i Edom; en stattholder regjerte der."
+  "no": "Det var dengang ingen konge i Edom; en stattholder regjerte der.",
+  "arRef": "الملوك الأول 22:48",
+  "ar": "وعمل يهوشافاط سفن ترشيش لكي تذهب الى اوفير لاجل الذهب فلم تذهب لان السفن تكسرت في عصيون جابر."
  },
  "1 Kgs 7:46": {
   "zhRef": "列王紀上 7:46",
@@ -79,7 +93,9 @@ window.VERSES = {
   "en": "The king cast them in the plain of the Jordan, in the clay ground between Succoth and Zarethan.",
   "pt": "Todo o fez fundir o rei na planície do Jordão, em terra argilosa, entre Sucote e Zaretã.",
   "noRef": "1 Kongebok 7,46",
-  "no": "Det var på Jordan-sletten kongen lot dem støpe, i lerjorden mellem Sukkot og Sartan."
+  "no": "Det var på Jordan-sletten kongen lot dem støpe, i lerjorden mellem Sukkot og Sartan.",
+  "arRef": "الملوك الأول 7:46",
+  "ar": "في غور الاردن سبكها الملك في ارض الخزف بين سكوت وصرتان."
  },
  "1 Kgs 9:26": {
   "zhRef": "列王紀上 9:26",
@@ -89,7 +105,9 @@ window.VERSES = {
   "en": "King Solomon made a navy of ships in Ezion Geber, which is beside Eloth, on the shore of the Red Sea, in the land of Edom.",
   "pt": "Fez também o rei Salomão navios em Eziom-Geber, que é junto a Elate na beira do mar Vermelho, na terra de Edom.",
   "noRef": "1 Kongebok 9,26",
-  "no": "Kong Salomo lot også bygge skiber i Esjon-Geber, som ligger ved Elot på bredden av det Røde Hav i Edoms land."
+  "no": "Kong Salomo lot også bygge skiber i Esjon-Geber, som ligger ved Elot på bredden av det Røde Hav i Edoms land.",
+  "arRef": "الملوك الأول 9:26",
+  "ar": "وعمل الملك سليمان سفنا في عصيون جابر التي بجانب ايلة على شاطئ بحر سوف في ارض ادوم."
  },
  "1 Sam 22:3": {
   "zhRef": "撒母耳記上 22:3",
@@ -99,7 +117,9 @@ window.VERSES = {
   "en": "David went there to Mizpeh of Moab, and he said to the king of Moab, “Please let my father and my mother come out with you, until I know what God will do for me.”",
   "pt": "E foi-se Davi dali a Mispá de Moabe, e disse ao rei de Moabe: Eu te rogo que meu pai e minha mãe estejam convosco, até que saiba o que Deus fará de mim.",
   "noRef": "1 Samuel 22,3",
-  "no": "Derfra drog David til Mispe i Moab; og han sa til Moabs konge: La min far og min mor få komme hit og bli hos eder til jeg får se hvad Gud vil gjøre med mig!"
+  "no": "Derfra drog David til Mispe i Moab; og han sa til Moabs konge: La min far og min mor få komme hit og bli hos eder til jeg får se hvad Gud vil gjøre med mig!",
+  "arRef": "صموئيل الأول 22:3",
+  "ar": "وذهب داود من هناك الى مصفاة موآب وقال لملك موآب ليخرج ابي وامي اليكم حتى اعلم ماذا يصنع لي الله."
  },
  "1 Sam 31:11-13": {
   "zhRef": "撒母耳記上 31:11-13",
@@ -109,7 +129,9 @@ window.VERSES = {
   "en": "When the inhabitants of Jabesh Gilead heard concerning him that which the Philistines had done to Saul, all the valiant men arose, and went all night, and took the body of Saul and the bodies of his sons from the wall of Beth Shan; and they came to Jabesh, and burnt them there. They took their bones, and buried them under the tamarisk tree in Jabesh, and fasted seven days.",
   "pt": "Mas ouvindo os de Jabes de Gileade isto que os filisteus fizeram a Saul, Todos os homens valentes se levantaram, e andaram toda aquela noite, e tiraram o corpo de Saul e os corpos de seus filhos do muro de Bete-Seã; e vindo a Jabes, queimaram-nos ali. E tomando seus ossos, sepultaram-nos debaixo de uma árvore em Jabes, e jejuaram durante sete dias.",
   "noRef": "1 Samuel 31,11-13",
-  "no": "Da innbyggerne i Jabes i Gilead fikk høre hvad filistrene hadde gjort med Saul, tok alle våbenføre menn avsted og gikk hele natten; de tok Sauls og hans sønners kropper ned av Betsans mur, og da de var kommet til Jabes, brente de dem der. Deres ben tok de og begravde under tamarisken i Jabes, og så holdt de faste i syv dager."
+  "no": "Da innbyggerne i Jabes i Gilead fikk høre hvad filistrene hadde gjort med Saul, tok alle våbenføre menn avsted og gikk hele natten; de tok Sauls og hans sønners kropper ned av Betsans mur, og da de var kommet til Jabes, brente de dem der. Deres ben tok de og begravde under tamarisken i Jabes, og så holdt de faste i syv dager.",
+  "arRef": "صموئيل الأول 31:11-13",
+  "ar": "ولما سمع سكان يابيش جلعاد بما فعل الفلسطينيون بشاول قام كل ذي بأس وساروا الليل كله واخذوا جسد شاول واجساد بنيه عن سور بيت شان وجاءوا بها الى يابيش واحرقوها هناك واخذوا عظامهم ودفنوها تحت الاثلة في يابيش وصاموا سبعة ايام"
  },
  "2 Cor 11:32": {
   "zhRef": "哥林多後書 11:32",
@@ -119,7 +141,9 @@ window.VERSES = {
   "en": "In Damascus the governor under King Aretas guarded the city of the Damascenes desiring to arrest me.",
   "pt": "Em Damasco, o governador subordinado ao Rei Aretas pôs guardas na cidade dos damascenos, querendo me prender.",
   "noRef": "2 Korinter 11,32",
-  "no": "I Damaskus holdt kong Aretas' landshøvding vakt om damaskenernes by for å gripe mig,"
+  "no": "I Damaskus holdt kong Aretas' landshøvding vakt om damaskenernes by for å gripe mig,",
+  "arRef": "كورنثوس الثانية 11:32",
+  "ar": "في دمشق والي الحارث الملك كان يحرس مدينة الدمشقيين يريد ان يمسكني"
  },
  "2 Kgs 14:7": {
   "zhRef": "列王紀下 14:7",
@@ -129,7 +153,9 @@ window.VERSES = {
   "en": "He killed of Edom in the Valley of Salt ten thousand, and took Sela by war, and called its name Joktheel, to this day.",
   "pt": "Este feriu também dez mil edomitas no vale das salinas, e tomou a Selá por guerra, e chamou-a Jocteel, até hoje.",
   "noRef": "2 Kongebok 14,7",
-  "no": "Han slo Edom i Saltdalen, ti tusen mann, og inntok Sela og kalte det Jokte'el, som det heter den dag idag."
+  "no": "Han slo Edom i Saltdalen, ti tusen mann, og inntok Sela og kalte det Jokte'el, som det heter den dag idag.",
+  "arRef": "الملوك الثاني 14:7",
+  "ar": "هو قتل من ادوم في وادي الملح عشرة آلاف واخذ سالع بالحرب ودعا اسمها يقتئيل الى هذا اليوم"
  },
  "2 Kgs 2:11": {
   "zhRef": "列王紀下 2:11",
@@ -139,7 +165,9 @@ window.VERSES = {
   "en": "As they still went on, and talked, behold, a chariot of fire and horses of fire separated them; and Elijah went up by a whirlwind into heaven.",
   "pt": "E aconteceu que, indo eles falando, eis que um carro de fogo com cavalos de fogo separou os dois; e Elias subiu ao céu num turbilhão.",
   "noRef": "2 Kongebok 2,11",
-  "no": "Mens de så gikk og talte sammen, kom det med én gang en gloende vogn og gloende hester og skilte dem fra hverandre; og Elias fór i stormen op til himmelen."
+  "no": "Mens de så gikk og talte sammen, kom det med én gang en gloende vogn og gloende hester og skilte dem fra hverandre; og Elias fór i stormen op til himmelen.",
+  "arRef": "الملوك الثاني 2:11",
+  "ar": "وفيما هما يسيران ويتكلمان اذا مركبة من نار وخيل من نار ففصلت بينهما فصعد ايليا في العاصفة الى السماء."
  },
  "2 Kgs 2:8": {
   "zhRef": "列王紀下 2:8",
@@ -149,7 +177,9 @@ window.VERSES = {
   "en": "Elijah took his mantle, and wrapped it together, and struck the waters, and they were divided here and there, so that they two went over on dry ground.",
   "pt": "Tomando então Elias seu manto, dobrou-o, e feriu as águas, as quais se apartaram a um e a outro lado, e passaram ambos em seco.",
   "noRef": "2 Kongebok 2,8",
-  "no": "Da tok Elias sin kappe og rullet den sammen og slo på vannet, og det skilte sig til begge sider, og de gikk begge over på det tørre."
+  "no": "Da tok Elias sin kappe og rullet den sammen og slo på vannet, og det skilte sig til begge sider, og de gikk begge over på det tørre.",
+  "arRef": "الملوك الثاني 2:8",
+  "ar": "واخذ ايليا رداءه ولفه وضرب الماء فانفلق الى هنا وهناك فعبرا كلاهما في اليبس."
  },
  "2 Kgs 3:26-27": {
   "zhRef": "列王紀下 3:26-27",
@@ -159,7 +189,9 @@ window.VERSES = {
   "en": "When the king of Moab saw that the battle was too severe for him, he took with him seven hundred men who drew sword, to break through to the king of Edom; but they could not. Then he took his eldest son who would have reigned in his place, and offered him for a burnt offering on the wall. There was great wrath against Israel: and they departed from him, and returned to their own land.",
   "pt": "E quando o rei de Moabe viu que a batalha o vencia, tomou consigo setecentos homens que tiravam espada, para romper contra o rei de Edom, mas não conseguiram. Então arrebatou a seu primogênito que havia de reinar em seu lugar, e sacrificou-lhe em holocausto sobre o muro. E havia grande ira em Israel; e retiraram-se dele, e voltaram a sua terra.",
   "noRef": "2 Kongebok 3,26-27",
-  "no": "Da Moabs konge så at striden blev ham for hård, tok han med sig syv hundre våbenføre menn og vilde bryte igjennem på den kant hvor Edoms konge stod; men de kunde ikke. Da tok han sin førstefødte sønn, som skulde bli konge i hans sted, og ofret ham som brennoffer på muren. Da kom det en stor vrede over Israel, og de brøt op derfra og vendte tilbake til sitt land."
+  "no": "Da Moabs konge så at striden blev ham for hård, tok han med sig syv hundre våbenføre menn og vilde bryte igjennem på den kant hvor Edoms konge stod; men de kunde ikke. Da tok han sin førstefødte sønn, som skulde bli konge i hans sted, og ofret ham som brennoffer på muren. Da kom det en stor vrede over Israel, og de brøt op derfra og vendte tilbake til sitt land.",
+  "arRef": "الملوك الثاني 3:26-27",
+  "ar": "فلما رأى ملك موآب ان الحرب قد اشتدّت عليه اخذ معه سبع مئة رجل مستلّي السيوف لكي يشقوا الى ملك ادوم فلم يقدروا. فاخذ ابنه البكر الذي كان ملك عوضا عنه واصعده محرقة على السور. فكان غيظ عظيم على اسرائيل. فانصرفوا عنه ورجعوا الى ارضهم"
  },
  "2 Kgs 3:4": {
   "zhRef": "列王紀下 3:4",
@@ -169,7 +201,9 @@ window.VERSES = {
   "en": "Now Mesha king of Moab was a sheep breeder; and he rendered to the king of Israel the wool of one hundred thousand lambs, and of one hundred thousand rams.",
   "pt": "Então Messa rei de Moabe era proprietário de gados, e pagava ao rei de Israel cem mil cordeiros e cem mil carneiros com suas lãs.",
   "noRef": "2 Kongebok 3,4",
-  "no": "Mesa, kongen i Moab, hadde meget fe, og han betalte i skatt til Israels konge hundre tusen lam og ull av hundre tusen værer."
+  "no": "Mesa, kongen i Moab, hadde meget fe, og han betalte i skatt til Israels konge hundre tusen lam og ull av hundre tusen værer.",
+  "arRef": "الملوك الثاني 3:4",
+  "ar": "وكان ميشع ملك موآب صاحب مواش فأدّى لملك اسرائيل مئة الف خروف ومئة الف كبش بصوفها."
  },
  "2 Kgs 3:4-5": {
   "zhRef": "列王紀下 3:4-5",
@@ -179,7 +213,9 @@ window.VERSES = {
   "en": "Now Mesha king of Moab was a sheep breeder; and he rendered to the king of Israel the wool of one hundred thousand lambs, and of one hundred thousand rams. But when Ahab was dead, the king of Moab rebelled against the king of Israel.",
   "pt": "Então Messa rei de Moabe era proprietário de gados, e pagava ao rei de Israel cem mil cordeiros e cem mil carneiros com suas lãs. Mas morto Acabe, o rei de Moabe se rebelou contra o rei de Israel.",
   "noRef": "2 Kongebok 3,4-5",
-  "no": "Mesa, kongen i Moab, hadde meget fe, og han betalte i skatt til Israels konge hundre tusen lam og ull av hundre tusen værer. Men da Akab var død, falt kongen i Moab fra Israels konge."
+  "no": "Mesa, kongen i Moab, hadde meget fe, og han betalte i skatt til Israels konge hundre tusen lam og ull av hundre tusen værer. Men da Akab var død, falt kongen i Moab fra Israels konge.",
+  "arRef": "الملوك الثاني 3:4-5",
+  "ar": "وكان ميشع ملك موآب صاحب مواش فأدّى لملك اسرائيل مئة الف خروف ومئة الف كبش بصوفها. وعند موت اخآب عصى ملك موآب على ملك اسرائيل."
  },
  "2 Kgs 5:14": {
   "zhRef": "列王紀下 5:14",
@@ -189,7 +225,9 @@ window.VERSES = {
   "en": "Then went he down, and dipped himself seven times in the Jordan, according to the saying of the man of God; and his flesh was restored like the flesh of a little child, and he was clean.",
   "pt": "Ele então desceu, e mergulhou sete vezes no Jordão, conforme a palavra do homem de Deus; e sua carne se restaurou como a carne de um menino, e foi limpo.",
   "noRef": "2 Kongebok 5,14",
-  "no": "Da drog han ned og dukket sig syv ganger i Jordan efter den Guds manns ord; og hans kjøtt blev friskt som på en liten gutt, og han blev ren."
+  "no": "Da drog han ned og dukket sig syv ganger i Jordan efter den Guds manns ord; og hans kjøtt blev friskt som på en liten gutt, og han blev ren.",
+  "arRef": "الملوك الثاني 5:14",
+  "ar": "فنزل وغطس في الاردن سبع مرات حسب قول رجل الله فرجع لحمه كلحم صبي صغير وطهر."
  },
  "2 Sam 11:1": {
   "zhRef": "撒母耳記下 11:1",
@@ -199,7 +237,9 @@ window.VERSES = {
   "en": "At the return of the year, at the time when kings go out, David sent Joab, and his servants with him, and all Israel; and they destroyed the children of Ammon, and besieged Rabbah. But David stayed at Jerusalem.",
   "pt": "E aconteceu à volta de um ano, no tempo que saem os reis à guerra, que Davi enviou a Joabe, e a seus servos com ele, e a todo Israel; e destruíram aos amonitas, e puseram cerco a Rabá: mas Davi se ficou em Jerusalém.",
   "noRef": "2 Samuel 11,1",
-  "no": "Året efter, ved den tid da kongene pleier å dra ut i krig, sendte David Joab avsted med sine tjenere og hele Israel, og de herjet Ammons barns land og kringsatte Rabba. Men David blev i Jerusalem."
+  "no": "Året efter, ved den tid da kongene pleier å dra ut i krig, sendte David Joab avsted med sine tjenere og hele Israel, og de herjet Ammons barns land og kringsatte Rabba. Men David blev i Jerusalem.",
+  "arRef": "صموئيل الثاني 11:1",
+  "ar": "وكان عند تمام السنة في وقت خروج الملوك ان داود ارسل يوآب وعبيده معه وجميع اسرائيل فاخربوا بني عمون وحاصروا ربّة. واما داود فاقام في اورشليم."
  },
  "2 Sam 11:15": {
   "zhRef": "撒母耳記下 11:15",
@@ -209,7 +249,9 @@ window.VERSES = {
   "en": "He wrote in the letter, saying, “Send Uriah to the forefront of the hottest battle, and retreat from him, that he may be struck, and die.”",
   "pt": "E escreveu na carta, dizendo: Ponde a Urias diante da força da batalha, e desamparai-o, para que seja ferido e morra.",
   "noRef": "2 Samuel 11,15",
-  "no": "Og i brevet skrev han således: Sett Uria lengst frem, der hvor striden er hårdest, og dra eder tilbake fra ham, så han blir slått og dør!"
+  "no": "Og i brevet skrev han således: Sett Uria lengst frem, der hvor striden er hårdest, og dra eder tilbake fra ham, så han blir slått og dør!",
+  "arRef": "صموئيل الثاني 11:15",
+  "ar": "وكتب في المكتوب يقول. اجعلوا اوريا في وجه الحرب الشديدة وارجعوا من ورائه فيضرب ويموت."
  },
  "2 Sam 12:26-27": {
   "zhRef": "撒母耳記下 12:26-27",
@@ -219,7 +261,9 @@ window.VERSES = {
   "en": "Now Joab fought against Rabbah of the children of Ammon, and took the royal city. Joab sent messengers to David, and said, “I have fought against Rabbah. Yes, I have taken the city of waters.",
   "pt": "E Joabe lutava contra Rabá dos filhos de Amom, e tomou a cidade real. Então enviou Joabe mensageiros a Davi, dizendo: Eu lutei contra Rabá, e tomei a cidade das águas.",
   "noRef": "2 Samuel 12,26-27",
-  "no": "Joab stred mot Rabba i ammonittenes land og inntok kongestaden. Så sendte Joab bud til David og lot si: Jeg har stridt mot Rabba og inntatt vannbyen."
+  "no": "Joab stred mot Rabba i ammonittenes land og inntok kongestaden. Så sendte Joab bud til David og lot si: Jeg har stridt mot Rabba og inntatt vannbyen.",
+  "arRef": "صموئيل الثاني 12:26-27",
+  "ar": "وحارب يوآب ربّة بني عمون واخذ مدينة المملكة. وارسل يوآب رسلا الى داود يقول قد حاربت ربّة واخذت ايضا مدينة المياه."
  },
  "2 Sam 17:27-29": {
   "zhRef": "撒母耳記下 17:27-29",
@@ -229,7 +273,9 @@ window.VERSES = {
   "en": "When David had come to Mahanaim, Shobi the son of Nahash of Rabbah of the children of Ammon, and Machir the son of Ammiel of Lodebar, and Barzillai the Gileadite of Rogelim, brought beds, basins, earthen vessels, wheat, barley, meal, parched grain, beans, lentils, roasted grain, honey, butter, sheep, and cheese of the herd, for David, and for the people who were with him, to eat: for they said, “The people are hungry, and weary, and thirsty, in the wilderness.”",
   "pt": "E logo que Davi chegou a Maanaim, Sobi filho de Naás de Rabá dos filhos de Amom, e Maquir filho de Amiel de Lo-Debar, e Barzilai gileadita de Rogelim, Trouxeram a Davi e ao povo que estava com ele, camas, e bacias, e vasilhas de barro, e trigo, e cevada, e farinha, e grão tostado, favas, lentilhas, e grãos tostados, Mel, manteiga, ovelhas, e queijos de vacas, para que comessem; porque disseram: Aquele povo está faminto, e cansado, e terá sede no deserto.",
   "noRef": "2 Samuel 17,27-29",
-  "no": "Da David kom til Mahana'im, hendte det at Sobi, sønn av Nahas, fra Rabba i Ammons barns land, og Makir, sønn av Ammiel, fra Lo-Debar, og gileaditten Barsillai fra Rogelim kom med senger og fat og lerkar og hvete og bygg og mel og ristet korn og bønner og linser og ristede belgfrukter og honning og melk og småfe og oster av kumelk til føde for David og hans folk, for de tenkte: Folkene er blitt sultne og trette og tørste i ørkenen."
+  "no": "Da David kom til Mahana'im, hendte det at Sobi, sønn av Nahas, fra Rabba i Ammons barns land, og Makir, sønn av Ammiel, fra Lo-Debar, og gileaditten Barsillai fra Rogelim kom med senger og fat og lerkar og hvete og bygg og mel og ristet korn og bønner og linser og ristede belgfrukter og honning og melk og småfe og oster av kumelk til føde for David og hans folk, for de tenkte: Folkene er blitt sultne og trette og tørste i ørkenen.",
+  "arRef": "صموئيل الثاني 17:27-29",
+  "ar": "وكان لما جاء داود الى محنايم ان شوبي بن ناحاش من ربّة بني عمون وماكير بن عميئيل من لودبار وبرزلاي الجلعادي من روجليم قدموا فرشا وطسوسا وآنية خزف وحنطة وشعيرا ودقيقا وفريكا وفولا وعدسا وحمّصا مشويا وعسلا وزبدة وضأنا وجبن بقر لداود وللشعب الذي معه لياكلوا. لانهم قالوا الشعب جوعان ومتعب وعطشان في البرية"
  },
  "2 Sam 17:28": {
   "zhRef": "撒母耳記下 17:28",
@@ -239,7 +285,9 @@ window.VERSES = {
   "en": "brought beds, basins, earthen vessels, wheat, barley, meal, parched grain, beans, lentils, roasted grain,",
   "pt": "Trouxeram a Davi e ao povo que estava com ele, camas, e bacias, e vasilhas de barro, e trigo, e cevada, e farinha, e grão tostado, favas, lentilhas, e grãos tostados,",
   "noRef": "2 Samuel 17,28",
-  "no": "kom med senger og fat og lerkar og hvete og bygg og mel og ristet korn og bønner og linser og ristede belgfrukter"
+  "no": "kom med senger og fat og lerkar og hvete og bygg og mel og ristet korn og bønner og linser og ristede belgfrukter",
+  "arRef": "صموئيل الثاني 17:28",
+  "ar": "قدموا فرشا وطسوسا وآنية خزف وحنطة وشعيرا ودقيقا وفريكا وفولا وعدسا وحمّصا مشويا"
  },
  "2 Sam 17:29": {
   "zhRef": "撒母耳記下 17:29",
@@ -249,7 +297,9 @@ window.VERSES = {
   "en": "honey, butter, sheep, and cheese of the herd, for David, and for the people who were with him, to eat: for they said, “The people are hungry, and weary, and thirsty, in the wilderness.”",
   "pt": "Mel, manteiga, ovelhas, e queijos de vacas, para que comessem; porque disseram: Aquele povo está faminto, e cansado, e terá sede no deserto.",
   "noRef": "2 Samuel 17,29",
-  "no": "og honning og melk og småfe og oster av kumelk til føde for David og hans folk, for de tenkte: Folkene er blitt sultne og trette og tørste i ørkenen."
+  "no": "og honning og melk og småfe og oster av kumelk til føde for David og hans folk, for de tenkte: Folkene er blitt sultne og trette og tørste i ørkenen.",
+  "arRef": "صموئيل الثاني 17:29",
+  "ar": "وعسلا وزبدة وضأنا وجبن بقر لداود وللشعب الذي معه لياكلوا. لانهم قالوا الشعب جوعان ومتعب وعطشان في البرية"
  },
  "2 Sam 18:33": {
   "zhRef": "撒母耳記下 18:33",
@@ -259,7 +309,9 @@ window.VERSES = {
   "en": "The king was much moved, and went up to the room over the gate, and wept. As he went, he said, “My son Absalom! My son, my son Absalom! I wish I had died for you, Absalom, my son, my son!”",
   "pt": "Então o rei se perturbou, e subiu-se à sala da porta, e chorou; e indo, dizia assim: Filho meu Absalão, filho meu, filho meu Absalão! Quem me dera que morresse eu em lugar de ti, Absalão, filho meu, filho meu!",
   "noRef": "2 Samuel 18,33",
-  "no": "Da blev kongen dypt rystet. Han gikk op på salen over porten og gråt, og mens han gikk, sa han så: Min sønn Absalom! Min sønn, min sønn Absalom! O, at jeg var død i ditt sted! Absalom, min sønn, min sønn!"
+  "no": "Da blev kongen dypt rystet. Han gikk op på salen over porten og gråt, og mens han gikk, sa han så: Min sønn Absalom! Min sønn, min sønn Absalom! O, at jeg var død i ditt sted! Absalom, min sønn, min sønn!",
+  "arRef": "صموئيل الثاني 18:33",
+  "ar": "فانزعج الملك وصعد الى علية الباب وكان يبكي ويقول هكذا وهو يتمشى يا ابني ابشالوم يا ابني يا ابني ابشالوم يا ليتني مت عوضا عنك يا ابشالوم ابني يا ابني"
  },
  "2 Sam 18:9": {
   "zhRef": "撒母耳記下 18:9",
@@ -269,7 +321,9 @@ window.VERSES = {
   "en": "Absalom happened to meet the servants of David. Absalom was riding on his mule, and the mule went under the thick boughs of a great oak, and his head caught hold of the oak, and he was taken up between the sky and earth; and the mule that was under him went on.",
   "pt": "E encontrou-se Absalão com os servos de Davi: e ia Absalão sobre um mulo, e o mulo se entrou debaixo de um espesso e grande carvalho, e prendeu-lhe a cabeça ao carvalho, e ficou entre o céu e a terra; pois o mulo em que ia passou adiante.",
   "noRef": "2 Samuel 18,9",
-  "no": "Absalom kom like imot Davids menn; han red på sitt muldyr, og muldyret kom inn under de tette grener på en stor terebinte, så hans hode hang fast i terebinten, og han blev hengende mellem himmel og jord; for muldyret som han satt på, løp sin vei."
+  "no": "Absalom kom like imot Davids menn; han red på sitt muldyr, og muldyret kom inn under de tette grener på en stor terebinte, så hans hode hang fast i terebinten, og han blev hengende mellem himmel og jord; for muldyret som han satt på, løp sin vei.",
+  "arRef": "صموئيل الثاني 18:9",
+  "ar": "وصادف ابشالوم عبيد داود وكان ابشالوم راكبا على بغل فدخل البغل تحت اغصان البطمة العظيمة الملتفّة فتعلّق راسه بالبطمة وعلّق بين السماء والارض والبغل الذي تحته مرّ."
  },
  "2 Sam 19:32": {
   "zhRef": "撒母耳記下 19:32",
@@ -279,7 +333,9 @@ window.VERSES = {
   "en": "Now Barzillai was a very aged man, even eighty years old: and he had provided the king with sustenance while he lay at Mahanaim; for he was a very great man.",
   "pt": "E era Barzilai muito velho, de oitenta anos, o qual havia dado provisão ao rei quando estava em Maanaim, porque era homem muito rico.",
   "noRef": "2 Samuel 19,32",
-  "no": "Barsillai var meget gammel, åtti år; han hadde sørget for mat og drikke til kongen under hans ophold i Mahana'im; for han var en meget rik mann."
+  "no": "Barsillai var meget gammel, åtti år; han hadde sørget for mat og drikke til kongen under hans ophold i Mahana'im; for han var en meget rik mann.",
+  "arRef": "صموئيل الثاني 19:32",
+  "ar": "وكان برزلاي قد شاخ جدا. كان ابن ثمانين سنة. وهو عال الملك عند اقامته في محنايم لانه كان رجلا عظيما جدا."
  },
  "2 Sam 19:37": {
   "zhRef": "撒母耳記下 19:37",
@@ -289,7 +345,9 @@ window.VERSES = {
   "en": "Please let your servant turn back again, that I may die in my own city, by the grave of my father and my mother. But behold, your servant Chimham; let him go over with my lord the king; and do to him what shall seem good to you.”",
   "pt": "Eu te rogo que deixes voltar a teu servo, e que morra em minha cidade, junto ao sepulcro de meu pai e de minha mãe. Eis aqui teu servo Quimã; que passe ele com meu senhor o rei, e faze-lhe o que bem te parecer.",
   "noRef": "2 Samuel 19,37",
-  "no": "Kjære, la din tjener vende tilbake, så jeg kan dø i min egen by, hvor min fars og min mors grav er! Men se, her er din tjener Kimham; la ham få dra med min herre kongen, og gjør med ham som du synes!"
+  "no": "Kjære, la din tjener vende tilbake, så jeg kan dø i min egen by, hvor min fars og min mors grav er! Men se, her er din tjener Kimham; la ham få dra med min herre kongen, og gjør med ham som du synes!",
+  "arRef": "صموئيل الثاني 19:37",
+  "ar": "دع عبدك يرجع فاموت في مدينتي عند قبر ابي وامي وهوذا عبدك كمهام يعبر مع سيدي الملك فافعل له ما يحسن في عينيك."
  },
  "2 Sam 9:13": {
   "zhRef": "撒母耳記下 9:13",
@@ -299,7 +357,9 @@ window.VERSES = {
   "en": "So Mephibosheth lived in Jerusalem; for he ate continually at the king’s table. He was lame in both his feet.",
   "pt": "E morava Mefibosete em Jerusalém, porque comia sempre à mesa do rei; e era coxo de ambos os pés.",
   "noRef": "2 Samuel 9,13",
-  "no": "Men selv bodde Mefiboset i Jerusalem; for han åt alltid ved kongens bord; og han var lam i begge sine føtter."
+  "no": "Men selv bodde Mefiboset i Jerusalem; for han åt alltid ved kongens bord; og han var lam i begge sine føtter.",
+  "arRef": "صموئيل الثاني 9:13",
+  "ar": "فسكن مفيبوشث في اورشليم لانه كان ياكل دائما على مائدة الملك. وكان اعرج من رجليه كلتيهما"
  },
  "2 Sam 9:7": {
   "zhRef": "撒母耳記下 9:7",
@@ -309,7 +369,9 @@ window.VERSES = {
   "en": "David said to him, “Don’t be afraid of him; for I will surely show you kindness for Jonathan your father’s sake, and will restore to you all the land of Saul your father. You shall eat bread at my table continually.”",
   "pt": "E disse-lhe Davi: Não tenhas temor, porque eu à verdade farei contigo misericórdia por causa de Jônatas teu pai, e te devolverei todas as terras de Saul teu pai; e tu comerás sempre pão à minha mesa.",
   "noRef": "2 Samuel 9,7",
-  "no": "David sa til ham: Vær ikke redd! Jeg vil gjøre vel mot dig for Jonatans, din fars skyld og gi dig tilbake all Sauls, din fars jordeiendom, og du skal alltid ete ved mitt bord."
+  "no": "David sa til ham: Vær ikke redd! Jeg vil gjøre vel mot dig for Jonatans, din fars skyld og gi dig tilbake all Sauls, din fars jordeiendom, og du skal alltid ete ved mitt bord.",
+  "arRef": "صموئيل الثاني 9:7",
+  "ar": "فقال له داود لا تخف. فاني لاعملنّ معك معروفا من اجل يوناثان ابيك وارد لك كل حقول شاول ابيك وانت تاكل خبزا على مائدتي دائما."
  },
  "Acts 2:11": {
   "zhRef": "使徒行傳 2:11",
@@ -319,7 +381,9 @@ window.VERSES = {
   "en": "Cretans and Arabians: we hear them speaking in our languages the mighty works of God!”",
   "pt": "Cretenses e Árabes, os ouvimos em nossas próprias línguas eles falarem das grandezas de Deus.",
   "noRef": "Apostlenes gjerninger 2,11",
-  "no": "både jøder og tilhengere av jødenes tro, kretere og arabere: vi hører dem tale om Guds store gjerninger på våre tungemål?"
+  "no": "både jøder og tilhengere av jødenes tro, kretere og arabere: vi hører dem tale om Guds store gjerninger på våre tungemål?",
+  "arRef": "أعمال الرسل 2:11",
+  "ar": "كريتيون وعرب نسمعهم يتكلمون بألسنتنا بعظائم الله‎."
  },
  "Amos 1:14": {
   "zhRef": "阿摩司書 1:14",
@@ -329,7 +393,9 @@ window.VERSES = {
   "en": "But I will kindle a fire in the wall of Rabbah, and it will devour its palaces, with shouting in the day of battle, with a storm in the day of the whirlwind;",
   "pt": "Por isso acenderei fogo no muro de Rabá, que consumirá seus palácios com grito no dia de batalha, com tempestade no dia do vento forte.",
   "noRef": "Amos 1,14",
-  "no": "men jeg vil stikke ild på Rabbas murer, og den skal fortære dets palasser, under hærskrik på stridens dag, i storm på uværets dag,"
+  "no": "men jeg vil stikke ild på Rabbas murer, og den skal fortære dets palasser, under hærskrik på stridens dag, i storm på uværets dag,",
+  "arRef": "عاموس 1:14",
+  "ar": "فأضرم نارا على سور ربّة فتاكل قصورها. بجلبة في يوم القتال بنوء في يوم الزوبعة."
  },
  "Deut 1:1": {
   "zhRef": "申命記 1:1",
@@ -339,7 +405,9 @@ window.VERSES = {
   "en": "These are the words which Moses spoke to all Israel beyond the Jordan in the wilderness, in the Arabah over against Suf, between Paran, Tophel, Laban, Hazeroth, and Dizahab.",
   "pt": "Estas são as palavras que falou Moisés a todo Israel desta parte do Jordão no deserto, na planície diante do mar Vermelho, entre Parã, e Tofel, e Labã, e Hazerote, e Di-Zaabe.",
   "noRef": "5 Mosebok 1,1",
-  "no": "Dette er de ord Moses talte til hele Israel i ørkenen på hin side Jordan, i ødemarken, midt imot Suf, mellem Paran og Tofel og Laban og Haserot og Di-Sahab,"
+  "no": "Dette er de ord Moses talte til hele Israel i ørkenen på hin side Jordan, i ødemarken, midt imot Suf, mellem Paran og Tofel og Laban og Haserot og Di-Sahab,",
+  "arRef": "التثنية 1:1",
+  "ar": "هذا هو الكلام الذي كلم به موسى جميع اسرائيل في عبر الاردن في البرية في العربة قبالة سوف بين فاران وتوفل ولابان وحضيروت وذي ذهب"
  },
  "Deut 1:5": {
   "zhRef": "申命記 1:5",
@@ -349,7 +417,9 @@ window.VERSES = {
   "en": "Beyond the Jordan, in the land of Moab, Moses began to declare this law, saying,",
   "pt": "Desta parte do Jordão, em terra de Moabe, resolveu Moisés declarar esta lei, dizendo:",
   "noRef": "5 Mosebok 1,5",
-  "no": "På hin side Jordan, i Moabs land, tok Moses sig fore å utlegge denne lov og sa:"
+  "no": "På hin side Jordan, i Moabs land, tok Moses sig fore å utlegge denne lov og sa:",
+  "arRef": "التثنية 1:5",
+  "ar": "في عبر الاردن في ارض موآب ابتدأ موسى يشرح هذه الشريعة قائلا"
  },
  "Deut 2:13-14": {
   "zhRef": "申命記 2:13-14",
@@ -359,7 +429,9 @@ window.VERSES = {
   "en": "“Now rise up, and cross over the brook Zered.” We went over the brook Zered. The days in which we came from Kadesh Barnea, until we had come over the brook Zered, were thirty-eight years; until all the generation of the men of war were consumed from the midst of the camp, as Yahweh swore to them.",
   "pt": "Levantai-vos agora, e passai o ribeiro de Zerede. E passamos o ribeiro de Zerede. E os dias que andamos de Cades-Barneia até que passamos o ribeiro de Zerede, foram trinta e oito anos; até que se acabou toda a geração dos homens de guerra do meio do acampamento, como o SENHOR lhes havia jurado.",
   "noRef": "5 Mosebok 2,13-14",
-  "no": "Gjør eder nu rede og gå over Sered-bekken! Så gikk vi over Sered-bekken. Den tid vi var på vandring fra Kades-Barnea, til vi gikk over Sered-bekken, var åtte og tretti år, og da var hele den slekt - alle våbenføre menn - utdød av leiren, som Herren hadde svoret at det skulde gå dem."
+  "no": "Gjør eder nu rede og gå over Sered-bekken! Så gikk vi over Sered-bekken. Den tid vi var på vandring fra Kades-Barnea, til vi gikk over Sered-bekken, var åtte og tretti år, og da var hele den slekt - alle våbenføre menn - utdød av leiren, som Herren hadde svoret at det skulde gå dem.",
+  "arRef": "التثنية 2:13-14",
+  "ar": "الآن قوموا واعبروا وادي زارد. فعبرنا وادي زارد. والايام التي سرنا فيها من قادش برنيع حتى عبرنا وادي زارد كانت ثماني وثلاثين سنة. حتى فني كل الجيل رجال الحرب من وسط المحلّة كما اقسم الرب لهم."
  },
  "Deut 2:24": {
   "zhRef": "申命記 2:24",
@@ -369,7 +441,9 @@ window.VERSES = {
   "en": "“Rise up, take your journey, and pass over the valley of the Arnon: behold, I have given into your hand Sihon the Amorite, king of Heshbon, and his land; begin to possess it, and contend with him in battle.",
   "pt": "Levantai-vos, parti, e passai o ribeiro de Arnom: eis que dei em tua mão a Seom rei de Hesbom, amorreu, e a sua terra: começa a tomar possessão, e empenha-te com ele em guerra.",
   "noRef": "5 Mosebok 2,24",
-  "no": "Gjør eder rede, bryt op og gå over Arnon-åen! Se, jeg har gitt amoritten Sihon, kongen i Hesbon, og hans land i din hånd; gå nu i gang med å innta det, og gi dig i strid med ham!"
+  "no": "Gjør eder rede, bryt op og gå over Arnon-åen! Se, jeg har gitt amoritten Sihon, kongen i Hesbon, og hans land i din hånd; gå nu i gang med å innta det, og gi dig i strid med ham!",
+  "arRef": "التثنية 2:24",
+  "ar": "قوموا ارتحلوا واعبروا وادي ارنون. انظر. قد دفعت الى يدك سيحون ملك حشبون الاموري وارضه. ابتدئ تملك وأثر عليه حربا."
  },
  "Deut 2:36": {
   "zhRef": "申命記 2:36",
@@ -379,7 +453,9 @@ window.VERSES = {
   "en": "From Aroer, which is on the edge of the valley of the Arnon, and the city that is in the valley, even to Gilead, there was not a city too high for us. Yahweh our God delivered up all before us.",
   "pt": "Desde Aroer, que está junto à beira do ribeiro de Arnom, e a cidade que está no ribeiro, até Gileade, não houve cidade que escapasse de nós: todas as entregou o SENHOR nosso Deus em nosso poder.",
   "noRef": "5 Mosebok 2,36",
-  "no": "Fra Aroer, som ligger ved bredden av Arnon-åen, og fra byen i dalen og like til Gilead var der ikke en by hvis murer var oss for høie; Herren vår Gud gav dem alle i vår vold."
+  "no": "Fra Aroer, som ligger ved bredden av Arnon-åen, og fra byen i dalen og like til Gilead var der ikke en by hvis murer var oss for høie; Herren vår Gud gav dem alle i vår vold.",
+  "arRef": "التثنية 2:36",
+  "ar": "من عروعير التي على حافة وادي ارنون والمدينة التي في الوادي الى جلعاد لم تكن قرية قد امتنعت علينا. الجميع دفعه الرب الهنا امامنا."
  },
  "Deut 2:5": {
   "zhRef": "申命記 2:5",
@@ -389,7 +465,9 @@ window.VERSES = {
   "en": "Don’t contend with them; for I will not give you any of their land, no, not so much as for the sole of the foot to tread on; because I have given Mount Seir to Esau for a possession.",
   "pt": "Não vos metais com eles; que não vos darei de sua terra nem ainda a pisadura da planta de um pé; porque eu dei por herança a Esaú o monte de Seir.",
   "noRef": "5 Mosebok 2,5",
-  "no": "så I ikke gir eder i strid med dem; jeg vil ikke gi eder så meget som en fotbredd av deres land, for jeg har gitt Esau Se'ir-fjellene til eiendom."
+  "no": "så I ikke gir eder i strid med dem; jeg vil ikke gi eder så meget som en fotbredd av deres land, for jeg har gitt Esau Se'ir-fjellene til eiendom.",
+  "arRef": "التثنية 2:5",
+  "ar": "لا تهجموا عليهم لاني لا اعطيكم من ارضهم ولا وطأة قدم لاني لعيسو قد اعطيت جبل سعير ميراثا."
  },
  "Deut 2:8": {
   "zhRef": "申命記 2:8",
@@ -399,7 +477,9 @@ window.VERSES = {
   "en": "So we passed by from our brothers the children of Esau, who dwell in Seir, from the way of the Arabah from Elath and from Ezion Geber. We turned and passed by the way of the wilderness of Moab.",
   "pt": "E passamos por nossos irmãos os filhos de Esaú, que habitavam em Seir, pelo caminho da planície de Elate e de Eziom-Geber. E voltamos, e passamos caminho do deserto de Moabe.",
   "noRef": "5 Mosebok 2,8",
-  "no": "Så drog vi videre, bort fra våre brødre Esaus barn, som bor i Se'ir; vi tok av fra veien som går fra Elat og Esjon-Geber gjennem ødemarken, og vendte oss til en annen kant og drog frem på veien til Moabs ørken."
+  "no": "Så drog vi videre, bort fra våre brødre Esaus barn, som bor i Se'ir; vi tok av fra veien som går fra Elat og Esjon-Geber gjennem ødemarken, og vendte oss til en annen kant og drog frem på veien til Moabs ørken.",
+  "arRef": "التثنية 2:8",
+  "ar": "فعبرنا عن اخوتنا بني عيسو الساكنين في سعير على طريق العربة على أيلة وعلى عصيون جابر ثم تحولنا ومررنا في طريق برية موآب"
  },
  "Deut 2:9": {
   "zhRef": "申命記 2:9",
@@ -409,7 +489,9 @@ window.VERSES = {
   "en": "Yahweh said to me, “Don’t bother Moab, neither contend with them in battle; for I will not give you any of his land for a possession; because I have given Ar to the children of Lot for a possession.”",
   "pt": "E o SENHOR me disse: Não perturbeis a Moabe, nem te empenhes com eles em guerra, que não te darei possessão de sua terra; porque eu dei a Ar por herança aos filhos de Ló.",
   "noRef": "5 Mosebok 2,9",
-  "no": "Da sa Herren til mig: Du må ikke angripe moabittene og ikke gi dig i strid med dem; jeg vil ikke gi dig noget av deres land til eiendom, for jeg har gitt Lots barn Ar til eiendom."
+  "no": "Da sa Herren til mig: Du må ikke angripe moabittene og ikke gi dig i strid med dem; jeg vil ikke gi dig noget av deres land til eiendom, for jeg har gitt Lots barn Ar til eiendom.",
+  "arRef": "التثنية 2:9",
+  "ar": "فقال لي الرب لا تعاد موآب ولا تثر عليهم حربا لاني لا اعطيك من ارضهم ميراثا. لاني لبني لوط قد اعطيت عار ميراثا."
  },
  "Deut 34:1": {
   "zhRef": "申命記 34:1",
@@ -419,7 +501,9 @@ window.VERSES = {
   "en": "Moses went up from the plains of Moab to Mount Nebo, to the top of Pisgah, that is over against Jericho. Yahweh showed him all the land of Gilead, to Dan,",
   "pt": "E subiu Moisés dos campos de Moabe ao monte de Nebo, ao cume de Pisga, que está em frente de Jericó: e mostrou-lhe o SENHOR toda a terra de Gileade até Dã,",
   "noRef": "5 Mosebok 34,1",
-  "no": "Så gikk Moses fra Moabs ødemarker op på Nebo-fjellet, på Pisgas topp, som ligger midt imot Jeriko; og Herren lot ham se ut over hele landet: Gilead like til Dan"
+  "no": "Så gikk Moses fra Moabs ødemarker op på Nebo-fjellet, på Pisgas topp, som ligger midt imot Jeriko; og Herren lot ham se ut over hele landet: Gilead like til Dan",
+  "arRef": "التثنية 34:1",
+  "ar": "وصعد موسى من عربات موآب الى جبل نبو الى راس الفسجة الذي قبالة اريحا فاراه الرب جميع الارض من جلعاد الى دان"
  },
  "Deut 34:3": {
   "zhRef": "申命記 34:3",
@@ -429,7 +513,9 @@ window.VERSES = {
   "en": "and the south, and the Plain of the valley of Jericho the city of palm trees, to Zoar.",
   "pt": "E a parte sul, e a campina, o vale de Jericó, cidade das palmeiras, até Zoar.",
   "noRef": "5 Mosebok 34,3",
-  "no": "og sydlandet og Jordan-sletten, dalen ved Jeriko - Palmestaden - like til Soar."
+  "no": "og sydlandet og Jordan-sletten, dalen ved Jeriko - Palmestaden - like til Soar.",
+  "arRef": "التثنية 34:3",
+  "ar": "والجنوب والدائرة بقعة اريحا مدينة النخل الى صوغر."
  },
  "Deut 34:4": {
   "zhRef": "申命記 34:4",
@@ -439,7 +525,9 @@ window.VERSES = {
   "en": "Yahweh said to him, “This is the land which I swore to Abraham, to Isaac, and to Jacob, saying, ‘I will give it to your seed.’ I have caused you to see it with your eyes, but you shall not go over there.”",
   "pt": "E disse-lhe o SENHOR: Esta é a terra de que jurei a Abraão, a Isaque, e a Jacó, dizendo: À tua descendência a darei. Eu a fiz ver com teus olhos, mas não passarás ali.",
   "noRef": "5 Mosebok 34,4",
-  "no": "Og Herren sa til ham: Dette er det land jeg har tilsvoret Abraham, Isak og Jakob idet jeg sa: Din ætt vil jeg gi det. Nu har jeg latt dig skue det med dine øine, men du skal ikke få komme inn i det."
+  "no": "Og Herren sa til ham: Dette er det land jeg har tilsvoret Abraham, Isak og Jakob idet jeg sa: Din ætt vil jeg gi det. Nu har jeg latt dig skue det med dine øine, men du skal ikke få komme inn i det.",
+  "arRef": "التثنية 34:4",
+  "ar": "وقال له الرب هذه هي الارض التي اقسمت لابراهيم واسحق ويعقوب قائلا لنسلك اعطيها. قد اريتك اياها بعينيك ولكنك الى هناك لا تعبر."
  },
  "Deut 34:5-6": {
   "zhRef": "申命記 34:5-6",
@@ -449,7 +537,9 @@ window.VERSES = {
   "en": "So Moses the servant of Yahweh died there in the land of Moab, according to Yahweh’s word. He buried him in the valley in the land of Moab opposite Beth Peor, but no man knows where his tomb is to this day.",
   "pt": "E morreu ali Moisés servo do SENHOR, na terra de Moabe, conforme o dito do SENHOR. E enterrou-o no vale, em terra de Moabe, em frente de Bete-Peor; e ninguém sabe seu sepulcro até hoje.",
   "noRef": "5 Mosebok 34,5-6",
-  "no": "Så døde Moses, Herrens tjener, der i Moabs land efter Herrens ord. Og han begravde ham i dalen i Moabs land midt imot Bet-Peor, og ingen kjenner til denne dag hans grav."
+  "no": "Så døde Moses, Herrens tjener, der i Moabs land efter Herrens ord. Og han begravde ham i dalen i Moabs land midt imot Bet-Peor, og ingen kjenner til denne dag hans grav.",
+  "arRef": "التثنية 34:5-6",
+  "ar": "فمات هناك موسى عبد الرب في ارض موآب حسب قول الرب. ودفنه في الجواء في ارض موآب مقابل بيت فغور ولم يعرف انسان قبره الى هذا اليوم"
  },
  "Deut 3:11": {
   "zhRef": "申命記 3:11",
@@ -459,7 +549,9 @@ window.VERSES = {
   "en": "(For only Og king of Bashan remained of the remnant of the Rephaim. Behold, his bedstead was a bedstead of iron. Isn’t it in Rabbah of the children of Ammon? Nine cubits was its length, and four cubits its breadth, after the cubit of a man.)",
   "pt": "Porque somente Ogue rei de Basã havia restado dos gigantes que restaram. Eis que sua cama, uma cama de ferro, não está em Rabá dos filhos de Amom?; o comprimento dela de nove côvados, e sua largura de quatro côvados, ao côvado de um homem.",
   "noRef": "5 Mosebok 3,11",
-  "no": "for Og, kongen i Basan, var den siste som var tilbake av refa'ittene; hans seng, som er av jern, står, som alle vet, i ammonitterbyen Rabba; den er ni alen lang og fire alen bred, alnen regnet efter lengden av en manns underarm."
+  "no": "for Og, kongen i Basan, var den siste som var tilbake av refa'ittene; hans seng, som er av jern, står, som alle vet, i ammonitterbyen Rabba; den er ni alen lang og fire alen bred, alnen regnet efter lengden av en manns underarm.",
+  "arRef": "التثنية 3:11",
+  "ar": "ان عوج ملك باشان وحده بقي من بقية الرفائيين. هوذا سريره سرير من حديد. أليس هو في ربّة بني عمون. طوله تسع اذرع وعرضه اربع اذرع بذراع رجل."
  },
  "Deut 4:43": {
   "zhRef": "申命記 4:43",
@@ -469,7 +561,9 @@ window.VERSES = {
   "en": "Bezer in the wilderness, in the plain country, for the Reubenites; and Ramoth in Gilead, for the Gadites; and Golan in Bashan, for the Manassites.",
   "pt": "A Bezer no deserto, em terra da planície, dos rubenitas; e a Ramote em Gileade, dos gaditas; e a Golã em Basã, dos de Manassés.",
   "noRef": "5 Mosebok 4,43",
-  "no": "det var Beser i ørkenen på sletten for rubenittene, og Ramot i Gilead for gadittene, og Golan i Basan for manassittene."
+  "no": "det var Beser i ørkenen på sletten for rubenittene, og Ramot i Gilead for gadittene, og Golan i Basan for manassittene.",
+  "arRef": "التثنية 4:43",
+  "ar": "باصر في البرية في ارض السهل للرأوبينيين وراموت في جلعاد للجاديين وجولان في باشان للمنسّيّين"
  },
  "Deut 8:8": {
   "zhRef": "申命記 8:8",
@@ -479,7 +573,9 @@ window.VERSES = {
   "en": "a land of wheat and barley, and vines and fig trees and pomegranates; a land of olive trees and honey;",
   "pt": "Terra de trigo e cevada, e de videiras, e figueiras, e romeiras; terra de olivas, de azeite, e de mel;",
   "noRef": "5 Mosebok 8,8",
-  "no": "et land med hvete og bygg og vintrær og fikentrær og granatepletrær, et land med oljetrær og honning,"
+  "no": "et land med hvete og bygg og vintrær og fikentrær og granatepletrær, et land med oljetrær og honning,",
+  "arRef": "التثنية 8:8",
+  "ar": "ارض حنطة وشعير وكرم وتين ورمان. ارض زيتون زيت وعسل."
  },
  "Exod 12:22": {
   "zhRef": "出埃及記 12:22",
@@ -489,7 +585,9 @@ window.VERSES = {
   "en": "You shall take a bunch of hyssop, and dip it in the blood that is in the basin, and strike the lintel and the two door posts with the blood that is in the basin; and none of you shall go out of the door of his house until the morning.",
   "pt": "E tomai um molho de hissopo, e molhai-lhe no sangue que estará em uma bacia, e untai a verga e os dois postes com o sangue que estará na bacia; e nenhum de vós saia das portas de sua casa até a manhã.",
   "noRef": "2 Mosebok 12,22",
-  "no": "Og I skal ta et knippe isop og dyppe i blodet som er i skålen, og stryke på det øverste dørtre og på begge dørstolpene noget av blodet i skålen, og ingen av eder skal gå ut av sin husdør før om morgenen."
+  "no": "Og I skal ta et knippe isop og dyppe i blodet som er i skålen, og stryke på det øverste dørtre og på begge dørstolpene noget av blodet i skålen, og ingen av eder skal gå ut av sin husdør før om morgenen.",
+  "arRef": "الخروج 12:22",
+  "ar": "وخذوا باقة زوفا واغمسوها في الدم الذي في الطست ومسّوا العتبة العليا والقائمتين بالدم الذي في الطست. وانتم لا يخرج احد منكم من باب بيته حتى الصباح."
  },
  "Ezek 47:10": {
   "zhRef": "以西結書 47:10",
@@ -499,7 +597,9 @@ window.VERSES = {
   "en": "It shall happen, that fishermen shall stand by it: from En Gedi even to En Eglaim shall be a place for the spreading of nets; their fish shall be after their kinds, as the fish of the great sea, exceeding many.",
   "pt": "Será também que pescadores estarão junto a ele; desde En-Gedi até En-Eglaim haverá lugares para se estender redes; seus peixes serão segundo suas espécies, como os peixes do grande mar, muitos em grande quantidade.",
   "noRef": "Esekiel 47,10",
-  "no": "Og det skal stå fiskere ved havet fra En-Gedi til En-Egla'im; det skal være et sted til å kaste fiskegarn ut; det skal finnes fisk av forskjellig slag i stor mengde, som i det store hav."
+  "no": "Og det skal stå fiskere ved havet fra En-Gedi til En-Egla'im; det skal være et sted til å kaste fiskegarn ut; det skal finnes fisk av forskjellig slag i stor mengde, som i det store hav.",
+  "arRef": "حزقيال 47:10",
+  "ar": "ويكون الصيادون واقفين عليه من عين جدي الى عين عجلايم يكون لبسط الشباك ويكون سمكهم على انواعه كسمك البحر العظيم كثيرا جدا."
  },
  "Ezek 47:8": {
   "zhRef": "以西結書 47:8",
@@ -509,7 +609,9 @@ window.VERSES = {
   "en": "Then he said to me, These waters flow out toward the eastern region, and will go down into the Arabah; and they will go toward the sea; and flow into the sea which will be made to flow out; and the waters will be healed.",
   "pt": "Então me disse: Estas águas saem para a região do oriente, descem à planície, e entram no mar: e quando saem para o mar, as águas se tornam saudáveis.",
   "noRef": "Esekiel 47,8",
-  "no": "Og han sa til mig: Dette vann rinner til østbygdene og videre ned til ødemarken og faller så i havet; og når det ledes ut i havet, blir vannet der sundt."
+  "no": "Og han sa til mig: Dette vann rinner til østbygdene og videre ned til ødemarken og faller så i havet; og når det ledes ut i havet, blir vannet der sundt.",
+  "arRef": "حزقيال 47:8",
+  "ar": "وقال لي هذه المياه خارجة الى الدائرة الشرقية وتنزل الى العربة وتذهب الى البحر. الى البحر هي خارجة فتشفى المياه."
  },
  "Ezek 47:9": {
   "zhRef": "以西結書 47:9",
@@ -519,7 +621,9 @@ window.VERSES = {
   "en": "It shall happen, that every living creature which swarms, in every place where the rivers come, shall live; and there shall be a very great multitude of fish; for these waters have come there, and the waters of the sea shall be healed, and everything shall live wherever the river comes.",
   "pt": "E será que toda alma vivente que se move por onde quer que estes dois ribeiros passarem, viverá; e haverá muitíssimos peixes por ali terem passado estas águas, e ficarão saudáveis; e tudo viverá por onde quer que este este ribeiro passar.",
   "noRef": "Esekiel 47,9",
-  "no": "Og alle levende skapninger, som det vrimler av overalt hvor dobbeltbekken kommer, skal leve, og fiskene skal bli meget tallrike; for når dette vann kommer dit, blir der sundhet og liv overalt hvor bekken kommer."
+  "no": "Og alle levende skapninger, som det vrimler av overalt hvor dobbeltbekken kommer, skal leve, og fiskene skal bli meget tallrike; for når dette vann kommer dit, blir der sundhet og liv overalt hvor bekken kommer.",
+  "arRef": "حزقيال 47:9",
+  "ar": "ويكون ان كل نفس حية تدب حيثما يأتي النهران تحيا ويكون السمك كثيرا جدا لان هذه المياه تأتي الى هناك فتشفى ويحيا كل ما يأتي النهر اليه."
  },
  "Gal 1:17": {
   "zhRef": "加拉太書 1:17",
@@ -529,7 +633,9 @@ window.VERSES = {
   "en": "nor did I go up to Jerusalem to those who were apostles before me, but I went away into Arabia. Then I returned to Damascus.",
   "pt": "nem subi a Jerusalém para os que já eram apóstolos antes de mim; em vez disso, parti para a Arábia, e voltei outra vez a Damasco.",
   "noRef": "Galaterne 1,17",
-  "no": "heller ikke drog jeg op til Jerusalem til dem som var apostler før mig; men jeg drog straks bort til Arabia og vendte tilbake til Damaskus."
+  "no": "heller ikke drog jeg op til Jerusalem til dem som var apostler før mig; men jeg drog straks bort til Arabia og vendte tilbake til Damaskus.",
+  "arRef": "غلاطية 1:17",
+  "ar": "ولا صعدت الى اورشليم الى الرسل الذين قبلي بل انطلقت الى العربية ثم رجعت ايضا الى دمشق."
  },
  "Gen 19:22-23": {
   "zhRef": "創世記 19:22-23",
@@ -539,7 +645,9 @@ window.VERSES = {
   "en": "Hurry, escape there, for I can’t do anything until you get there.” Therefore the name of the city was called Zoar. The sun had risen on the earth when Lot came to Zoar.",
   "pt": "Apressa-te, escapa-te ali; porque nada poderei fazer até que ali tenhas chegado. Por isto foi chamado o nome da cidade, Zoar. O sol saía sobre a terra, quando Ló chegou a Zoar.",
   "noRef": "1 Mosebok 19,22-23",
-  "no": "Skynd dig, fly dit! For jeg kan intet gjøre før du kommer dit. Derfor kaller de den by Soar. Solen var gått op over jorden da Lot kom til Soar."
+  "no": "Skynd dig, fly dit! For jeg kan intet gjøre før du kommer dit. Derfor kaller de den by Soar. Solen var gått op over jorden da Lot kom til Soar.",
+  "arRef": "التكوين 19:22-23",
+  "ar": "اسرع اهرب الى هناك. لاني لا استطيع ان افعل شيئا حتى تجيء الى هناك. لذلك دعي اسم المدينة صوغر واذ اشرقت الشمس على الارض دخل لوط الى صوغر."
  },
  "Gen 19:26": {
   "zhRef": "創世記 19:26",
@@ -549,7 +657,9 @@ window.VERSES = {
   "en": "But his wife looked back from behind him, and she became a pillar of salt.",
   "pt": "Então a mulher de Ló olhou atrás, às costas dele, e se tornou estátua de sai.",
   "noRef": "1 Mosebok 19,26",
-  "no": "Men Lots hustru, som fulgte efter ham, så sig tilbake; da blev hun til en saltstøtte."
+  "no": "Men Lots hustru, som fulgte efter ham, så sig tilbake; da blev hun til en saltstøtte.",
+  "arRef": "التكوين 19:26",
+  "ar": "ونظرت امرأته من وراءه فصارت عمود ملح"
  },
  "Gen 19:30": {
   "zhRef": "創世記 19:30",
@@ -559,7 +669,9 @@ window.VERSES = {
   "en": "Lot went up out of Zoar, and lived in the mountain, and his two daughters with him; for he was afraid to live in Zoar. He lived in a cave with his two daughters.",
   "pt": "Porém Ló subiu de Zoar, e assentou no monte, e suas duas filhas com ele; porque teve medo de ficar em Zoar, e se abrigou em uma caverna ele e suas duas filhas.",
   "noRef": "1 Mosebok 19,30",
-  "no": "Og Lot drog fra Soar op i fjellene og blev boende der, og hans to døtre med ham, for han torde ikke bo i Soar. Og han bodde i en hule, han og hans to døtre."
+  "no": "Og Lot drog fra Soar op i fjellene og blev boende der, og hans to døtre med ham, for han torde ikke bo i Soar. Og han bodde i en hule, han og hans to døtre.",
+  "arRef": "التكوين 19:30",
+  "ar": "وصعد لوط من صوغر وسكن في الجبل وابنتاه معه. لانه خاف ان يسكن في صوغر. فسكن في المغارة هو وابنتاه."
  },
  "Gen 19:37-38": {
   "zhRef": "創世記 19:37-38",
@@ -569,7 +681,9 @@ window.VERSES = {
   "en": "The firstborn bore a son, and named him Moab. He is the father of the Moabites to this day. The younger also bore a son, and called his name Ben Ammi. He is the father of the children of Ammon to this day.",
   "pt": "E deu à luz a maior um filho, e chamou seu nome Moabe, o qual é pai dos moabitas até hoje. A menor também deu à luz um filho, e chamou seu nome Ben-Ami, o qual é pai dos amonitas até hoje.",
   "noRef": "1 Mosebok 19,37-38",
-  "no": "Og den eldste fødte en sønn og kalte ham Moab; han er stamfar til moabittene, som er til den dag idag. Den yngste fødte også en sønn og kalte ham Ben-Ammi; han er stamfar til ammonittene, som også er til den dag idag."
+  "no": "Og den eldste fødte en sønn og kalte ham Moab; han er stamfar til moabittene, som er til den dag idag. Den yngste fødte også en sønn og kalte ham Ben-Ammi; han er stamfar til ammonittene, som også er til den dag idag.",
+  "arRef": "التكوين 19:37-38",
+  "ar": "فولدت البكر ابنا ودعت اسمه موآب. وهو ابو الموآبيين الى اليوم. والصغيرة ايضا ولدت ابنا ودعت اسمه بن عمي. وهو ابو بني عمون الى اليوم"
  },
  "Gen 19:38": {
   "zhRef": "創世記 19:38",
@@ -579,7 +693,9 @@ window.VERSES = {
   "en": "The younger also bore a son, and called his name Ben Ammi. He is the father of the children of Ammon to this day.",
   "pt": "A menor também deu à luz um filho, e chamou seu nome Ben-Ami, o qual é pai dos amonitas até hoje.",
   "noRef": "1 Mosebok 19,38",
-  "no": "Den yngste fødte også en sønn og kalte ham Ben-Ammi; han er stamfar til ammonittene, som også er til den dag idag."
+  "no": "Den yngste fødte også en sønn og kalte ham Ben-Ammi; han er stamfar til ammonittene, som også er til den dag idag.",
+  "arRef": "التكوين 19:38",
+  "ar": "والصغيرة ايضا ولدت ابنا ودعت اسمه بن عمي. وهو ابو بني عمون الى اليوم"
  },
  "Gen 25:34": {
   "zhRef": "創世記 25:34",
@@ -589,7 +705,9 @@ window.VERSES = {
   "en": "Jacob gave Esau bread and stew of lentils. He ate and drank, rose up, and went his way. So Esau despised his birthright.",
   "pt": "Então Jacó deu a Esaú pão e do guisado das lentilhas; e ele comeu e bebeu, e levantou-se, e foi-se. Assim menosprezou Esaú a primogenitura.",
   "noRef": "1 Mosebok 25,34",
-  "no": "Og Jakob gav Esau brød og linsevelling, og han åt og drakk og stod op og gikk sin vei. Således ringeaktet Esau førstefødselsretten."
+  "no": "Og Jakob gav Esau brød og linsevelling, og han åt og drakk og stod op og gikk sin vei. Således ringeaktet Esau førstefødselsretten.",
+  "arRef": "التكوين 25:34",
+  "ar": "فاعطى يعقوب عيسو خبزا وطبيخ عدس. فاكل وشرب وقام ومضى. فاحتقر عيسو البكورية"
  },
  "Gen 31:49": {
   "zhRef": "創世記 31:49",
@@ -599,7 +717,9 @@ window.VERSES = {
   "en": "and Mizpah, for he said, “Yahweh watch between me and you, when we are absent one from another.",
   "pt": "E Mispá, porquanto disse: Vigie o SENHOR entre mim e entre ti, quando nos separarmos um do outro.",
   "noRef": "1 Mosebok 31,49",
-  "no": "og tillike Mispa, fordi han sa: Herren holde vakt mellem mig og dig, når vi kommer hverandre av syne;"
+  "no": "og tillike Mispa, fordi han sa: Herren holde vakt mellem mig og dig, når vi kommer hverandre av syne;",
+  "arRef": "التكوين 31:49",
+  "ar": "والمصفاة. لانه قال ليراقب الرب بيني وبينك حينما نتوارى بعضنا عن بعض."
  },
  "Gen 32:1-2": {
   "zhRef": "創世記 32:1-2",
@@ -609,7 +729,9 @@ window.VERSES = {
   "en": "Jacob went on his way, and the angels of God met him. When he saw them, Jacob said, “This is God’s army.” He called the name of that place Mahanaim.",
   "pt": "E Jacó se foi seu caminho, e saíram-lhe ao encontro anjos de Deus. E disse Jacó quando os viu: Este é o acampamento de Deus; e chamou o nome daquele lugar Maanaim.",
   "noRef": "1 Mosebok 32,1-2",
-  "no": "Og Jakob drog videre, og Guds engler møtte ham. Da Jakob så dem, sa han: Dette er Guds leir. Og han kalte stedet Mahana'im."
+  "no": "Og Jakob drog videre, og Guds engler møtte ham. Da Jakob så dem, sa han: Dette er Guds leir. Og han kalte stedet Mahana'im.",
+  "arRef": "التكوين 32:1-2",
+  "ar": "واما يعقوب فمضى في طريقه ولاقاه ملائكة الله. وقال يعقوب اذ رآهم هذا جيش الله. فدعا اسم ذلك المكان محنايم"
  },
  "Gen 32:24": {
   "zhRef": "創世記 32:24",
@@ -619,7 +741,9 @@ window.VERSES = {
   "en": "Jacob was left alone, and wrestled with a man there until the breaking of the day.",
   "pt": "E ficou Jacó sozinho, e lutou com ele um homem até que raiava a alva.",
   "noRef": "1 Mosebok 32,24",
-  "no": "Så var Jakob alene tilbake. Da kom det en mann og kjempet med ham inntil morgenen grydde."
+  "no": "Så var Jakob alene tilbake. Da kom det en mann og kjempet med ham inntil morgenen grydde.",
+  "arRef": "التكوين 32:24",
+  "ar": "فبقي يعقوب وحده. وصارعه انسان حتى طلوع الفجر."
  },
  "Gen 32:28": {
   "zhRef": "創世記 32:28",
@@ -629,7 +753,9 @@ window.VERSES = {
   "en": "He said, “Your name will no longer be called Jacob, but Israel; for you have fought with God and with men, and have prevailed.”",
   "pt": "E ele disse: Não se dirá mais teu nome Jacó, mas sim Israel: porque lutaste com Deus e com os homens, e venceste.",
   "noRef": "1 Mosebok 32,28",
-  "no": "Han sa: Du skal ikke lenger hete Jakob, men Israel; for du har kjempet med Gud og med mennesker og vunnet."
+  "no": "Han sa: Du skal ikke lenger hete Jakob, men Israel; for du har kjempet med Gud og med mennesker og vunnet.",
+  "arRef": "التكوين 32:28",
+  "ar": "فقال لا يدعى اسمك في ما بعد يعقوب بل اسرائيل. لانك جاهدت مع الله والناس وقدرت."
  },
  "Gen 32:30-31": {
   "zhRef": "創世記 32:30-31",
@@ -639,7 +765,9 @@ window.VERSES = {
   "en": "Jacob called the name of the place Peniel: for, he said, “I have seen God face to face, and my life is preserved.” The sun rose on him as he passed over Peniel, and he limped because of his thigh.",
   "pt": "E chamou Jacó o nome daquele lugar Peniel: porque vi a Deus face a face, e foi livrada minha alma. E saiu-lhe o sol quando passou a Peniel; e andava mancando de sua coxa.",
   "noRef": "1 Mosebok 32,30-31",
-  "no": "Og Jakob kalte stedet Pniel; for [sa han] jeg har sett Gud åsyn til åsyn og enda berget livet. Og da han var kommet forbi Pnuel så han solen rinne; og han haltet på sin hofte."
+  "no": "Og Jakob kalte stedet Pniel; for [sa han] jeg har sett Gud åsyn til åsyn og enda berget livet. Og da han var kommet forbi Pnuel så han solen rinne; og han haltet på sin hofte.",
+  "arRef": "التكوين 32:30-31",
+  "ar": "فدعا يعقوب اسم المكان فنيئيل. قائلا لاني نظرت الله وجها لوجه ونجّيت نفسي. واشرقت له الشمس اذ عبر فنوئيل وهو يخمع على فخذه."
  },
  "Gen 33:16": {
   "zhRef": "創世記 33:16",
@@ -649,7 +777,9 @@ window.VERSES = {
   "en": "So Esau returned that day on his way to Seir.",
   "pt": "Assim se voltou Esaú aquele dia por seu caminho a Seir.",
   "noRef": "1 Mosebok 33,16",
-  "no": "Så drog Esau samme dag sin vei tilbake til Se'ir"
+  "no": "Så drog Esau samme dag sin vei tilbake til Se'ir",
+  "arRef": "التكوين 33:16",
+  "ar": "فرجع عيسو ذلك اليوم في طريقه الى سعير"
  },
  "Gen 33:17": {
   "zhRef": "創世記 33:17",
@@ -659,7 +789,9 @@ window.VERSES = {
   "en": "Jacob traveled to Succoth, built himself a house, and made shelters for his livestock. Therefore the name of the place is called Succoth.",
   "pt": "E Jacó se partiu a Sucote, e edificou ali casa para si, e fez abrigos para seu gado; por isso chamou o nome daquele lugar Sucote.",
   "noRef": "1 Mosebok 33,17",
-  "no": "Og Jakob drog til Sukkot og bygget sig et hus og gjorde løvhytter til sin buskap; derfor kalte de stedet Sukkot."
+  "no": "Og Jakob drog til Sukkot og bygget sig et hus og gjorde løvhytter til sin buskap; derfor kalte de stedet Sukkot.",
+  "arRef": "التكوين 33:17",
+  "ar": "واما يعقوب فارتحل الى سكّوت. وبنى لنفسه بيتا وصنع لمواشيه مظلات. لذلك دعا اسم المكان سكّوت."
  },
  "Gen 33:4": {
   "zhRef": "創世記 33:4",
@@ -669,7 +801,9 @@ window.VERSES = {
   "en": "Esau ran to meet him, embraced him, fell on his neck, kissed him, and they wept.",
   "pt": "E Esaú correu a seu encontro, e abraçou-lhe, e lançou-se sobre seu pescoço, e o beijou; e choraram.",
   "noRef": "1 Mosebok 33,4",
-  "no": "Men Esau løp ham i møte og omfavnet ham og falt ham om halsen og kysset ham, og de gråt."
+  "no": "Men Esau løp ham i møte og omfavnet ham og falt ham om halsen og kysset ham, og de gråt.",
+  "arRef": "التكوين 33:4",
+  "ar": "فركض عيسو للقائه وعانقه ووقع على عنقه وقبّله. وبكيا"
  },
  "Gen 36:8": {
   "zhRef": "創世記 36:8",
@@ -679,7 +813,9 @@ window.VERSES = {
   "en": "Esau lived in the hill country of Seir. Esau is Edom.",
   "pt": "E Esaú habitou no monte de Seir: Esaú é Edom.",
   "noRef": "1 Mosebok 36,8",
-  "no": "Så bosatte Esau sig i Se'ir-fjellene - Esau, det er den samme som Edom."
+  "no": "Så bosatte Esau sig i Se'ir-fjellene - Esau, det er den samme som Edom.",
+  "arRef": "التكوين 36:8",
+  "ar": "فسكن عيسو في جبل سعير. وعيسو هو ادوم"
  },
  "Heb 12:1": {
   "zhRef": "希伯來書 12:1",
@@ -689,7 +825,9 @@ window.VERSES = {
   "en": "Therefore let us also, seeing we are surrounded by so great a cloud of witnesses, lay aside every weight and the sin which so easily entangles us, and let us run with patience the race that is set before us,",
   "pt": "Portanto nós também, posto que estamos rodeados por uma tão grande nuvem de testemunhas, deixemos toda sobrecarga, e o pecado envolvente, e corramos com paciência a corrida que nos está proposta,",
   "noRef": "Hebreerne 12,1",
-  "no": "Derfor, la og oss, da vi har så stor en sky av vidner omkring oss, avlegge alt som tynger, og synden som henger så fast ved oss, og med tålmodighet løpe i den kamp som er oss foresatt,"
+  "no": "Derfor, la og oss, da vi har så stor en sky av vidner omkring oss, avlegge alt som tynger, og synden som henger så fast ved oss, og med tålmodighet løpe i den kamp som er oss foresatt,",
+  "arRef": "العبرانيين 12:1",
+  "ar": "لذلك نحن ايضا اذ لنا سحابة من الشهود مقدار هذه محيطة بنا لنطرح كل ثقل والخطية المحيطة بنا بسهولة ولنحاضر بالصبر في الجهاد الموضوع امامنا"
  },
  "Hos 10:14": {
   "zhRef": "何西阿書 10:14",
@@ -699,7 +837,9 @@ window.VERSES = {
   "en": "Therefore a battle roar will arise among your people, and all your fortresses will be destroyed, as Shalman destroyed Beth Arbel in the day of battle. The mother was dashed in pieces with her children.",
   "pt": "Portanto entre teu povo se levantará tumulto, e todas as tuas fortalezas serão destruídas, assim como Salmã destruiu a Bete-Arbel no dia da batalha; ali a mãe foram despedaçada com seus filhos.",
   "noRef": "Hosea 10,14",
-  "no": "Derfor skal det reise sig et krigsbulder blandt dine stammer, og alle dine festninger skal ødelegges, likesom Salman Ã¸dela Bet-Arbel på stridens dag, da både mor og barn blev knust."
+  "no": "Derfor skal det reise sig et krigsbulder blandt dine stammer, og alle dine festninger skal ødelegges, likesom Salman Ã¸dela Bet-Arbel på stridens dag, da både mor og barn blev knust.",
+  "arRef": "هوشع 10:14",
+  "ar": "يقوم ضجيج في شعوبك وتخرب جميع حصونك كاخراب شلمان بيت اربئيل في يوم الحرب. الام مع الاولاد حطّمت."
  },
  "Isa 15:4": {
   "zhRef": "以賽亞書 15:4",
@@ -709,7 +849,9 @@ window.VERSES = {
   "en": "Heshbon cries out with Elealeh. Their voice is heard even to Jahaz. Therefore the armed men of Moab cry aloud. Their souls tremble within them.",
   "pt": "Tanto Hesbom como Eleale vão gritando, até Jaaz se ouve sua voz; por causa disso os soldados armados de Moabe gritam, a alma de cada um está abalada dentro de si.",
   "noRef": "Jesaja 15,4",
-  "no": "Hesbon og El'ale skriker så det høres like til Jahas; derfor klager Moabs krigsmenn, Moabs sjel skjelver."
+  "no": "Hesbon og El'ale skriker så det høres like til Jahas; derfor klager Moabs krigsmenn, Moabs sjel skjelver.",
+  "arRef": "إشعياء 15:4",
+  "ar": "وتصرخ حشبون والعالة. يسمع صوتهما الى ياهص. لذلك يصرخ متسلحو موآب. نفسها ترتعد فيها."
  },
  "Isa 16:10": {
   "zhRef": "以賽亞書 16:10",
@@ -719,7 +861,9 @@ window.VERSES = {
   "en": "Gladness is taken away, and joy out of the fruitful field; and in the vineyards there will be no singing, neither joyful noise. Nobody will tread out wine in the presses. I have made the shouting stop.",
   "pt": "E foram tirados a alegria e o prazer do campo frutífero; e nas vinhas não se canta, nem grito de alegria se faz; o pisador não pisará as uvas nos lagares; eu pus fim aos clamores de alegria.",
   "noRef": "Jesaja 16,10",
-  "no": "Og glede og fryd tas bort fra frukthavene, og i vingårdene lyder ingen frydesang, intet jubelrop; ingen treder vin i persekarene; frydeskriket gjør jeg ende på."
+  "no": "Og glede og fryd tas bort fra frukthavene, og i vingårdene lyder ingen frydesang, intet jubelrop; ingen treder vin i persekarene; frydeskriket gjør jeg ende på.",
+  "arRef": "إشعياء 16:10",
+  "ar": "وانتزع الفرح والابتهاج من البستان ولا يغنى في الكروم ولا يترنم ولا يدوس دائس خمرا في المعاصر. ابطلت الهتاف."
  },
  "Isa 63:1": {
   "zhRef": "以賽亞書 63:1",
@@ -729,7 +873,9 @@ window.VERSES = {
   "en": "Who is this who comes from Edom, with dyed garments from Bozrah? this who is glorious in his clothing, marching in the greatness of his strength? “It is I who speak in righteousness, mighty to save.”",
   "pt": "Quem é este, que vem de Edom, de Bozra, com vestes salpicadas de vermelho, este ornado em sua vestimenta, que marcha com grande força? Eu, o que falo em justiça, poderoso para salvar.",
   "noRef": "Jesaja 63,1",
-  "no": "Hvem er han som kommer fra Edom, i røde klær fra Bosra, så prektig i sin klædning, kneisende i sin store kraft? - Det er jeg, jeg som taler rettferdighet, som er mektig til å frelse."
+  "no": "Hvem er han som kommer fra Edom, i røde klær fra Bosra, så prektig i sin klædning, kneisende i sin store kraft? - Det er jeg, jeg som taler rettferdighet, som er mektig til å frelse.",
+  "arRef": "إشعياء 63:1",
+  "ar": "من ذا الآتي من ادوم بثياب حمر من بصرة هذا البهي بملابسه المتعظم بكثرة قوته. انا المتكلم بالبر العظيم للخلاص."
  },
  "Jas 5:17": {
   "zhRef": "雅各書 5:17",
@@ -739,7 +885,9 @@ window.VERSES = {
   "en": "Elijah was a man with a nature like ours, and he prayed earnestly that it might not rain, and it didn’t rain on the earth for three years and six months.",
   "pt": "Elias era tão humano quanto nós, e orou insistentemente para não chover; e não choveu sobre a terra por três anos e seis meses.",
   "noRef": "Jakob 5,17",
-  "no": "Elias var et menneske under samme vilkår som vi, og han bad at det ikke skulde regne, og det regnet ikke på jorden i tre år og seks måneder;"
+  "no": "Elias var et menneske under samme vilkår som vi, og han bad at det ikke skulde regne, og det regnet ikke på jorden i tre år og seks måneder;",
+  "arRef": "يعقوب 5:17",
+  "ar": "كان ايليا انسانا تحت الآلام مثلنا وصلّى صلاة ان لا تمطر فلم تمطر على الارض ثلاث سنين وستة اشهر."
  },
  "Jer 48:21": {
   "zhRef": "耶利米書 48:21",
@@ -749,7 +897,9 @@ window.VERSES = {
   "en": "Judgment has come on the plain country, on Holon, and on Jahzah, and on Mephaath,",
   "pt": "O julgamento também veio juízo sobre a terra da planície: sobre Holom, sobre Jazá, e sobre Mefate;",
   "noRef": "Jeremia 48,21",
-  "no": "Dommen er kommet over slettelandet, over Holon og over Jahsa og over Mofa'at"
+  "no": "Dommen er kommet over slettelandet, over Holon og over Jahsa og over Mofa'at",
+  "arRef": "إرميا 48:21",
+  "ar": "وقد جاء القضاء على ارض السهل على حولون وعلى يهصة وعلى ميفعة"
  },
  "Jer 49:7": {
   "zhRef": "耶利米書 49:7",
@@ -759,7 +909,9 @@ window.VERSES = {
   "en": "Of Edom. Thus says Yahweh of Armies: Is wisdom no more in Teman? is counsel perished from the prudent? is their wisdom vanished?",
   "pt": "Sobre Edom.Assim diz o SENHOR dos exércitos: Por acaso não há mais sabedoria em Temã? Pereceu o conselho dos prudentes? Estragou-se sua sabedoria?",
   "noRef": "Jeremia 49,7",
-  "no": "Om Edom. Så sier Herren, hærskarenes Gud: Er det ikke mere nogen visdom i Teman? Finnes ikke lenger råd hos de forstandige? Er deres visdom uttømt?"
+  "no": "Om Edom. Så sier Herren, hærskarenes Gud: Er det ikke mere nogen visdom i Teman? Finnes ikke lenger råd hos de forstandige? Er deres visdom uttømt?",
+  "arRef": "إرميا 49:7",
+  "ar": "عن ادوم. هكذا قال رب الجنود. ألا حكمة بعد في تيمان. هل بادت المشورة من الفهماء هل فرغت حكمتهم."
  },
  "Jer 8:22": {
   "zhRef": "耶利米書 8:22",
@@ -769,7 +921,9 @@ window.VERSES = {
   "en": "Is there no balm in Gilead? is there no physician there? why then isn’t the health of the daughter of my people recovered?",
   "pt": "Por acaso não há bálsamo em Gileade, ou não há ali médico? Então por que não houve cura para a filha de meu povo?",
   "noRef": "Jeremia 8,22",
-  "no": "Er det da ingen balsam i Gilead? Eller er det ingen læge der? Hvorfor er det ikke lagt forbinding på mitt folks datter?"
+  "no": "Er det da ingen balsam i Gilead? Eller er det ingen læge der? Hvorfor er det ikke lagt forbinding på mitt folks datter?",
+  "arRef": "إرميا 8:22",
+  "ar": "أليس بلسان في جلعاد أم ليس هناك طبيب. فلماذا لم تعصب بنت شعبي"
  },
  "Job 1:1": {
   "zhRef": "約伯記 1:1",
@@ -779,7 +933,9 @@ window.VERSES = {
   "en": "There was a man in the land of Uz, whose name was Job. That man was blameless and upright, and one who feared God, and turned away from evil.",
   "pt": "Havia um homem na terra de Uz, cujo nome era Jó; e este homem era íntegro e correto, temente a Deus, e que se afastava do mal.",
   "noRef": "Job 1,1",
-  "no": "I landet Us var det en mann som hette Job; han var en ulastelig og rettskaffen mann, som fryktet Gud og vek fra det onde."
+  "no": "I landet Us var det en mann som hette Job; han var en ulastelig og rettskaffen mann, som fryktet Gud og vek fra det onde.",
+  "arRef": "أيوب 1:1",
+  "ar": "كان رجل في ارض عوص اسمه ايوب. وكان هذا الرجل كاملا ومستقيما يتقي الله ويحيد عن الشر."
  },
  "Job 1:21": {
   "zhRef": "約伯記 1:21",
@@ -789,7 +945,9 @@ window.VERSES = {
   "en": "He said, “Naked I came out of my mother’s womb, and naked shall I return there. Yahweh gave, and Yahweh has taken away. Blessed be Yahweh’s name.”",
   "pt": "E disse: Nu saí do ventre de minha mãe, e nu para lá voltarei. O SENHOR deu, e o SENHOR tomou; bendito seja o nome do SENHOR.",
   "noRef": "Job 1,21",
-  "no": "og sa: Naken kom jeg av min mors liv, og naken skal jeg vende dit tilbake. Herren gav, og Herren tok; Herrens navn være lovet!"
+  "no": "og sa: Naken kom jeg av min mors liv, og naken skal jeg vende dit tilbake. Herren gav, og Herren tok; Herrens navn være lovet!",
+  "arRef": "أيوب 1:21",
+  "ar": "وقال عريانا خرجت من بطن امي وعريانا اعود الى هناك. الرب اعطى والرب اخذ فليكن اسم الرب مباركا."
  },
  "Job 2:11": {
   "zhRef": "約伯記 2:11",
@@ -799,7 +957,9 @@ window.VERSES = {
   "en": "Now when Job’s three friends heard of all this evil that had come on him, they each came from his own place: Eliphaz the Temanite, Bildad the Shuhite, and Zophar the Naamathite, and they made an appointment together to come to sympathize with him and to comfort him.",
   "pt": "Quando três amigos de Jó, Elifaz temanita, Bildade suíta, e Zofar naamita, ouviram todo este mal que lhe tinha vindo sobre ele, vieram cada um de seu lugar; porque haviam combinado de juntamente virem para se condoerem dele, e o consolarem.",
   "noRef": "Job 2,11",
-  "no": "Da Jobs tre venner fikk høre om all denne ulykke som var kommet over ham, kom de fra hver sitt hjemsted: Elifas fra Teman, Bildad fra Suah og Sofar fra Na'ama; og de avtalte med hverandre å gå til ham for å vise ham medynk og trøste ham."
+  "no": "Da Jobs tre venner fikk høre om all denne ulykke som var kommet over ham, kom de fra hver sitt hjemsted: Elifas fra Teman, Bildad fra Suah og Sofar fra Na'ama; og de avtalte med hverandre å gå til ham for å vise ham medynk og trøste ham.",
+  "arRef": "أيوب 2:11",
+  "ar": "فلما سمع اصحاب ايوب الثلاثة بكل الشر الذي أتى عليه جاءوا كل واحد من مكانه. اليفاز التيماني وبلدد الشوحي وصوفر النعماتي وتواعدوا ان يأتوا ليرثوا له ويعّزوه."
  },
  "John 10:40": {
   "zhRef": "約翰福音 10:40",
@@ -809,7 +969,9 @@ window.VERSES = {
   "en": "He went away again beyond the Jordan into the place where John was baptizing at first, and there he stayed.",
   "pt": "E voltou a ir para o outro lado do Jordão, ao lugar onde João primeiro batizava; e ficou ali.",
   "noRef": "Johannes 10,40",
-  "no": "Og han drog atter bort til hin side av Jordan, til det sted hvor Johannes først døpte og han blev der."
+  "no": "Og han drog atter bort til hin side av Jordan, til det sted hvor Johannes først døpte og han blev der.",
+  "arRef": "يوحنا 10:40",
+  "ar": "ومضى ايضا الى عبر الاردن الى المكان الذي كان يوحنا يعمد فيه اولا ومكث هناك."
  },
  "John 1:28": {
   "zhRef": "約翰福音 1:28",
@@ -819,7 +981,9 @@ window.VERSES = {
   "en": "These things were done in Bethany beyond the Jordan, where John was baptizing.",
   "pt": "Estas coisas aconteceram em Betábara, do outro lado do Jordão, onde João estava batizando.",
   "noRef": "Johannes 1,28",
-  "no": "Dette skjedde i Betania på hin side Jordan, hvor Johannes døpte."
+  "no": "Dette skjedde i Betania på hin side Jordan, hvor Johannes døpte.",
+  "arRef": "يوحنا 1:28",
+  "ar": "هذا كان في بيت عبرة في عبر الاردن حيث كان يوحنا يعمد"
  },
  "John 3:14": {
   "zhRef": "約翰福音 3:14",
@@ -829,7 +993,9 @@ window.VERSES = {
   "en": "As Moses lifted up the serpent in the wilderness, even so must the Son of Man be lifted up,",
   "pt": "E como Moisés levantou a serpente no deserto, assim deve o Filho do homem ser levantado,",
   "noRef": "Johannes 3,14",
-  "no": "Og likesom Moses ophøiet slangen i ørkenen, således skal Menneskesønnen ophøies,"
+  "no": "Og likesom Moses ophøiet slangen i ørkenen, således skal Menneskesønnen ophøies,",
+  "arRef": "يوحنا 3:14",
+  "ar": "وكما رفع موسى الحية في البرية هكذا ينبغي ان يرفع ابن الانسان"
  },
  "Josh 13:18": {
   "zhRef": "約書亞記 13:18",
@@ -839,7 +1005,9 @@ window.VERSES = {
   "en": "Jahaz, Kedemoth, Mephaath,",
   "pt": "E Jaza, e Quedemote, e Mefaate,",
   "noRef": "Josva 13,18",
-  "no": "og Jahsa og Kedemot og Mefa'at"
+  "no": "og Jahsa og Kedemot og Mefa'at",
+  "arRef": "يشوع 13:18",
+  "ar": "ويهصة وقديموت وميفعة"
  },
  "Josh 13:19": {
   "zhRef": "約書亞記 13:19",
@@ -849,7 +1017,9 @@ window.VERSES = {
   "en": "Kiriathaim, Sibmah, Zereth Shahar in the mount of the valley,",
   "pt": "E Quiriataim, e Sibma, e Zerete-Saar no monte do vale;",
   "noRef": "Josva 13,19",
-  "no": "og Kirjata'im og Sibma og Seret-Hassahar på fjellet i dalen"
+  "no": "og Kirjata'im og Sibma og Seret-Hassahar på fjellet i dalen",
+  "arRef": "يشوع 13:19",
+  "ar": "وقريتايم وسبمة وصارث الشحر في جبل الوادي"
  },
  "Josh 20:3": {
   "zhRef": "約書亞記 20:3",
@@ -859,7 +1029,9 @@ window.VERSES = {
   "en": "that the man slayer who kills any person accidentally or unintentionally may flee there. They shall be to you for a refuge from the avenger of blood.",
   "pt": "Para que se acolha ali o homicida que matar a alguém por acidente e não de propósito; que vos sejam por refúgio do vingador do morto.",
   "noRef": "Josva 20,3",
-  "no": "så en manndraper som av vanvare, uten å ville det, slår nogen ihjel, kan fly dit; I skal ha dem til tilfluktsstæder for manndraperen, når han flyr for blodhevneren."
+  "no": "så en manndraper som av vanvare, uten å ville det, slår nogen ihjel, kan fly dit; I skal ha dem til tilfluktsstæder for manndraperen, når han flyr for blodhevneren.",
+  "arRef": "يشوع 20:3",
+  "ar": "لكي يهرب اليها القاتل ضارب نفس سهوا بغير علم. فتكون لكم ملجأ من ولي الدم."
  },
  "Josh 2:1": {
   "zhRef": "約書亞記 2:1",
@@ -869,7 +1041,9 @@ window.VERSES = {
   "en": "Joshua the son of Nun secretly sent two men out of Shittim as spies, saying, “Go, view the land, including Jericho.” They went and came into the house of a prostitute whose name was Rahab, and slept there.",
   "pt": "E Josué, filho de Num, enviou desde Sitim dois espias secretamente, dizendo-lhes: Andai, reconhecei a terra, e a Jericó. Os quais foram, e entraram em casa de uma mulher prostituta que se chamava Raabe, e passaram a noite ali.",
   "noRef": "Josva 2,1",
-  "no": "Josva, Nuns sønn, sendte hemmelig to speidere fra Sittim og sa: Gå avsted og se eder om i landet og særlig i Jeriko! De gikk avsted og kom inn i huset til en skjøge som hette Rahab, og de lå der om natten."
+  "no": "Josva, Nuns sønn, sendte hemmelig to speidere fra Sittim og sa: Gå avsted og se eder om i landet og særlig i Jeriko! De gikk avsted og kom inn i huset til en skjøge som hette Rahab, og de lå der om natten.",
+  "arRef": "يشوع 2:1",
+  "ar": "فارسل يشوع بن نون من شطّيم رجلين جاسوسين سرّا قائلا اذهبا انظرا الارض واريحا. فذهبا ودخلا بيت امرأة زانية اسمها راحاب واضطجعا هناك."
  },
  "Josh 3:16": {
   "zhRef": "約書亞記 3:16",
@@ -879,7 +1053,9 @@ window.VERSES = {
   "en": "the waters which came down from above stood, and rose up in one heap, a great way off, at Adam, the city that is beside Zarethan; and those that went down toward the sea of the Arabah, even the Salt Sea, were wholly cut off. Then the people passed over right against Jericho.",
   "pt": "As águas que vinham de cima pararam, e amontoaram-se bem longe, na cidade de Adã, que está ao lado de Zaretã; e as que desciam ao mar das planícies, ao mar Salgado, esgotaram-se e foram totalmente interrompidas; e o povo passou em frente de Jericó.",
   "noRef": "Josva 3,16",
-  "no": "da stanset det vann som kom ovenfra, og stod som en vegg langt borte, ved byen Adam, som ligger tett ved Sartan, og det vann som rant ned til ødemarkens hav - Salthavet - løp helt bort, og folket gikk over midt imot Jeriko."
+  "no": "da stanset det vann som kom ovenfra, og stod som en vegg langt borte, ved byen Adam, som ligger tett ved Sartan, og det vann som rant ned til ødemarkens hav - Salthavet - løp helt bort, og folket gikk over midt imot Jeriko.",
+  "arRef": "يشوع 3:16",
+  "ar": "وقفت المياه المنحدرة من فوق وقامت ندا واحدا بعيدا جدا عن ادام المدينة التي الى جانب صرتان. والمنحدرة الى بحر العربة بحر الملح انقطعت تماما وعبر الشعب مقابل اريحا."
  },
  "Judg 11:32-33": {
   "zhRef": "士師記 11:32-33",
@@ -889,7 +1065,9 @@ window.VERSES = {
   "en": "So Jephthah passed over to the children of Ammon to fight against them; and Yahweh delivered them into his hand. He struck them from Aroer until you come to Minnith, even twenty cities, and to Abelcheramim, with a very great slaughter. So the children of Ammon were subdued before the children of Israel.",
   "pt": "Passou, pois, Jefté aos filhos de Amom para lutar contra eles; e o SENHOR os entregou em sua mão. E os feriu de grandíssimo dano desde Aroer até chegar a Minite, vinte cidades; e até a Abel-Queramim. Assim foram dominados os amonitas diante dos filhos de Israel.",
   "noRef": "Dommerne 11,32-33",
-  "no": "Så drog Jefta frem mot Ammons barn og stred mot dem, og Herren gav dem i hans hånd; han slo dem og tok fra dem landet fra Aroer til bortimot Minnit, tyve byer, og like til Abel-Keramim; det blev et svært mannefall, og Ammons barn blev ydmyket under Israels barn."
+  "no": "Så drog Jefta frem mot Ammons barn og stred mot dem, og Herren gav dem i hans hånd; han slo dem og tok fra dem landet fra Aroer til bortimot Minnit, tyve byer, og like til Abel-Keramim; det blev et svært mannefall, og Ammons barn blev ydmyket under Israels barn.",
+  "arRef": "القضاة 11:32-33",
+  "ar": "ثم عبر يفتاح الى بني عمون لمحاربتهم. فدفعهم الرب ليده. فضربهم من عروعير الى مجيئك الى منّيت عشرين مدينة والى آبل الكروم ضربة عظيمة جدا. فذلّ بني عمون امام بني اسرائيل"
  },
  "Judg 12:6": {
   "zhRef": "士師記 12:6",
@@ -899,7 +1077,9 @@ window.VERSES = {
   "en": "then they said to him, “Now say ‘Shibboleth;’” and he said “Sibboleth”; for he couldn’t manage to pronounce it right: then they seized him, and killed him at the fords of the Jordan. At that time, forty-two thousand of Ephraim fell.",
   "pt": "Então lhe diziam: Agora, pois, dize, Chibolete. E ele dizia, Sibolete; porque não podia pronunciar daquela sorte. Então lhe lançavam mão, e lhe degolavam junto aos vaus do Jordão. E morreram então dos de Efraim quarenta e dois mil.",
   "noRef": "Dommerne 12,6",
-  "no": "Da sa de til ham: Si sjibbolet! Men han sa sibbolet, for han kunde ikke uttale det riktig. Så grep de ham og slo ham ihjel ved Jordans vadesteder; og det falt dengang to og firti tusen av Efra'im."
+  "no": "Da sa de til ham: Si sjibbolet! Men han sa sibbolet, for han kunde ikke uttale det riktig. Så grep de ham og slo ham ihjel ved Jordans vadesteder; og det falt dengang to og firti tusen av Efra'im.",
+  "arRef": "القضاة 12:6",
+  "ar": "كانوا يقولون له قل اذا شبولت فيقول سبولت ولم يتحفظ للفظ بحق. فكانوا يأخذونه ويذبحونه على مخاوض الاردن. فسقط في ذلك الوقت من افرايم اثنان واربعون الفا."
  },
  "Judg 8:11": {
   "zhRef": "士師記 8:11",
@@ -909,7 +1089,9 @@ window.VERSES = {
   "en": "Gideon went up by the way of those who lived in tents on the east of Nobah and Jogbehah, and struck the army; for the army was secure.",
   "pt": "E subindo Gideão até os que habitavam em tendas, à parte oriental de Noba e de Jogbeá, feriu o acampamento, porque estava o exército desprevenido.",
   "noRef": "Dommerne 8,11",
-  "no": "Og Gideon drog op ad teltboernes vei østenfor Nobah og Jogbea; og han slo hæren mens den var trygg."
+  "no": "Og Gideon drog op ad teltboernes vei østenfor Nobah og Jogbea; og han slo hæren mens den var trygg.",
+  "arRef": "القضاة 8:11",
+  "ar": "وصعد جدعون في طريق ساكني الخيام شرقي نوبح ويجبهة وضرب الجيش وكان الجيش مطمئنا."
  },
  "Judg 8:17": {
   "zhRef": "士師記 8:17",
@@ -919,7 +1101,9 @@ window.VERSES = {
   "en": "He broke down the tower of Penuel, and killed the men of the city.",
   "pt": "Também derrubou a torre de Peniel, e matou aos da cidade.",
   "noRef": "Dommerne 8,17",
-  "no": "Og tårnet i Pnuel rev han ned og slo ihjel byens menn."
+  "no": "Og tårnet i Pnuel rev han ned og slo ihjel byens menn.",
+  "arRef": "القضاة 8:17",
+  "ar": "وهدم برج فنوئيل وقتل رجال المدينة"
  },
  "Luke 17:32": {
   "zhRef": "路加福音 17:32",
@@ -929,7 +1113,9 @@ window.VERSES = {
   "en": "Remember Lot’s wife!",
   "pt": "Lembrai-vos da mulher de Ló.",
   "noRef": "Lukas 17,32",
-  "no": "Kom Lots hustru i hu!"
+  "no": "Kom Lots hustru i hu!",
+  "arRef": "لوقا 17:32",
+  "ar": "اذكروا امرأة لوط."
  },
  "Luke 21:20-21": {
   "zhRef": "路加福音 21:20-21",
@@ -939,7 +1125,9 @@ window.VERSES = {
   "en": "“But when you see Jerusalem surrounded by armies, then know that its desolation is at hand. Then let those who are in Judea flee to the mountains. Let those who are in the midst of her depart. Let those who are in the country not enter therein.",
   "pt": "Porém quando virdes a Jerusalém cercada de exércitos, sabei então, que próxima está sua desolação. Então, os que estiverem na Judeia, fujam para os montes; e os que estiverem no meio dela, saiam, e os que estiverem nos campos, não entrem nela.",
   "noRef": "Lukas 21,20-21",
-  "no": "Men når I ser Jerusalem bli kringsatt av krigshærer, da skal I vite at dets ødeleggelse er nær. Da må de som er i Judea, fly til fjells, og de som er inne i byen, må gå ut, og de som er ute på landet, ikke gå inn i den;"
+  "no": "Men når I ser Jerusalem bli kringsatt av krigshærer, da skal I vite at dets ødeleggelse er nær. Da må de som er i Judea, fly til fjells, og de som er inne i byen, må gå ut, og de som er ute på landet, ikke gå inn i den;",
+  "arRef": "لوقا 21:20-21",
+  "ar": "ومتى رأيتم اورشليم محاطة بجيوش فحينئذ اعلموا انه قد اقترب خرابها. حينئذ ليهرب الذين في اليهودية الى الجبال. والذين في وسطها فليفروا خارجا. والذين في الكور فلا يدخلوها."
  },
  "Luke 4:27": {
   "zhRef": "路加福音 4:27",
@@ -949,7 +1137,9 @@ window.VERSES = {
   "en": "There were many lepers in Israel in the time of Elisha the prophet, yet not one of them was cleansed, except Naaman, the Syrian.”",
   "pt": "E havia muitos leprosos em Israel no tempo do profeta Eliseu; mas nenhum deles foi limpo, a não ser Naamã, o sírio.",
   "noRef": "Lukas 4,27",
-  "no": "Og det var mange spedalske i Israel på profeten Elisas tid, og ingen av dem blev renset, men bare syreren Na'aman."
+  "no": "Og det var mange spedalske i Israel på profeten Elisas tid, og ingen av dem blev renset, men bare syreren Na'aman.",
+  "arRef": "لوقا 4:27",
+  "ar": "وبرص كثيرون كانوا في اسرائيل في زمان اليشع النبي ولم يطهر واحد منهم الا نعمان السرياني."
  },
  "Mark 1:6": {
   "zhRef": "馬可福音 1:6",
@@ -959,7 +1149,9 @@ window.VERSES = {
   "en": "John was clothed with camel’s hair and a leather belt around his waist. He ate locusts and wild honey.",
   "pt": "João se vestia de pelos de camelo, e um cinto de couro em sua cintura; e comia gafanhotos e mel do campo.",
   "noRef": "Markus 1,6",
-  "no": "Og Johannes hadde klædning av kamelhår, og lærbelte om sin lend, og hans mat var gresshopper og vill honning."
+  "no": "Og Johannes hadde klædning av kamelhår, og lærbelte om sin lend, og hans mat var gresshopper og vill honning.",
+  "arRef": "مرقس 1:6",
+  "ar": "وكان يوحنا يلبس وبر الابل ومنطقة من جلد على حقويه ويأكل جرادا وعسلا بريا."
  },
  "Mark 5:1": {
   "zhRef": "馬可福音 5:1",
@@ -969,7 +1161,9 @@ window.VERSES = {
   "en": "They came to the other side of the sea, into the country of the Gadarenes.",
   "pt": "E chegaram ao outro lado do mar, à terra dos Gerasenos.",
   "noRef": "Markus 5,1",
-  "no": "Og de kom over på hin side av sjøen, til gerasenernes bygd."
+  "no": "Og de kom over på hin side av sjøen, til gerasenernes bygd.",
+  "arRef": "مرقس 5:1",
+  "ar": "وجاءوا الى عبر البحر الى كورة الجدريين."
  },
  "Mark 5:19-20": {
   "zhRef": "馬可福音 5:19-20",
@@ -979,7 +1173,9 @@ window.VERSES = {
   "en": "He didn’t allow him, but said to him, “Go to your house, to your friends, and tell them what great things the Lord has done for you, and how he had mercy on you.” He went his way, and began to proclaim in Decapolis how Jesus had done great things for him, and everyone marveled.",
   "pt": "Jesus se recusou, porém lhe disse: Vai para a tua casa, aos teus, e anuncia-lhes quão grandes coisas o Senhor fez contigo, e como teve misericórdia de ti. Então ele foi embora, e começou a anunciar em Decápolis quão grandes coisas Jesus havia feito com ele; e todos se admiravam.",
   "noRef": "Markus 5,19-20",
-  "no": "Og han gav ham ikke lov, men sa til ham: Gå hjem til dine og fortell dem hvor store ting Herren har gjort imot dig, og at han har miskunnet sig over dig! Og han gikk bort og begynte å kunngjøre i Dekapolis hvor store ting Jesus hadde gjort imot ham; og alle undret sig."
+  "no": "Og han gav ham ikke lov, men sa til ham: Gå hjem til dine og fortell dem hvor store ting Herren har gjort imot dig, og at han har miskunnet sig over dig! Og han gikk bort og begynte å kunngjøre i Dekapolis hvor store ting Jesus hadde gjort imot ham; og alle undret sig.",
+  "arRef": "مرقس 5:19-20",
+  "ar": "فلم يدعه يسوع بل قال له اذهب الى بيتك والى اهلك واخبرهم كم صنع الرب بك ورحمك. فمضى وابتدأ ينادي في العشر المدن كم صنع به يسوع. فتعجب الجميع"
  },
  "Mark 5:20": {
   "zhRef": "馬可福音 5:20",
@@ -989,7 +1185,9 @@ window.VERSES = {
   "en": "He went his way, and began to proclaim in Decapolis how Jesus had done great things for him, and everyone marveled.",
   "pt": "Então ele foi embora, e começou a anunciar em Decápolis quão grandes coisas Jesus havia feito com ele; e todos se admiravam.",
   "noRef": "Markus 5,20",
-  "no": "Og han gikk bort og begynte å kunngjøre i Dekapolis hvor store ting Jesus hadde gjort imot ham; og alle undret sig."
+  "no": "Og han gikk bort og begynte å kunngjøre i Dekapolis hvor store ting Jesus hadde gjort imot ham; og alle undret sig.",
+  "arRef": "مرقس 5:20",
+  "ar": "فمضى وابتدأ ينادي في العشر المدن كم صنع به يسوع. فتعجب الجميع"
  },
  "Mark 6:17-18": {
   "zhRef": "馬可福音 6:17-18",
@@ -999,7 +1197,9 @@ window.VERSES = {
   "en": "For Herod himself had sent out and arrested John, and bound him in prison for the sake of Herodias, his brother Philip’s wife, for he had married her. For John said to Herod, “It is not lawful for you to have your brother’s wife.”",
   "pt": "Pois o próprio Herodes havia mandado prender João, e acorrentá-lo na prisão, por causa de Herodias, mulher do seu irmão Filipe, porque havia se casado com ela. Pois João dizia a Herodes: Não te é lícito possuir a mulher do teu irmão.",
   "noRef": "Markus 6,17-18",
-  "no": "For Herodes hadde selv sendt folk avsted og grepet Johannes og lagt ham i bånd og kastet ham i fengsel for Herodias' skyld, som var hans bror Filips hustru; for han hadde giftet sig med henne. Men Johannes hadde sagt til Herodes: Det er dig ikke tillatt å ha din brors hustru."
+  "no": "For Herodes hadde selv sendt folk avsted og grepet Johannes og lagt ham i bånd og kastet ham i fengsel for Herodias' skyld, som var hans bror Filips hustru; for han hadde giftet sig med henne. Men Johannes hadde sagt til Herodes: Det er dig ikke tillatt å ha din brors hustru.",
+  "arRef": "مرقس 6:17-18",
+  "ar": "لان هيرودس نفسه كان قد ارسل وامسك يوحنا واوثقه في السجن من اجل هيروديا امرأة فيلبس اخيه اذ كان قد تزوج بها. لان يوحنا كان يقول لهيرودس لا يحل ان تكون لك امرأة اخيك."
  },
  "Mark 6:27-28": {
   "zhRef": "馬可福音 6:27-28",
@@ -1009,7 +1209,9 @@ window.VERSES = {
   "en": "Immediately the king sent out a soldier of his guard, and commanded to bring John’s head, and he went and beheaded him in the prison, and brought his head on a platter, and gave it to the young lady; and the young lady gave it to her mother.",
   "pt": "Então logo o rei enviou o executor com a ordem de trazer ali sua cabeça. Ele, foi, e o decapitou na prisão. Em seguida, trouxe a sua cabeça num prato, e o deu à garota; e a garota a deu à sua mãe.",
   "noRef": "Markus 6,27-28",
-  "no": "Og straks sendte kongen en av sin livvakt avsted og bød ham hente hans hode. Han gikk da avsted og halshugget ham i fengslet, og kom med hans hode på et fat og gav det til piken, og piken gav det til sin mor."
+  "no": "Og straks sendte kongen en av sin livvakt avsted og bød ham hente hans hode. Han gikk da avsted og halshugget ham i fengslet, og kom med hans hode på et fat og gav det til piken, og piken gav det til sin mor.",
+  "arRef": "مرقس 6:27-28",
+  "ar": "فللوقت ارسل الملك سيافا وامر ان يؤتى براسه. فمضى وقطع راسه في السجن. وأتى برأسه على طبق واعطاه للصبية والصبية اعطته لامها."
  },
  "Mark 6:31": {
   "zhRef": "馬可福音 6:31",
@@ -1019,7 +1221,9 @@ window.VERSES = {
   "en": "He said to them, “You come apart into a deserted place, and rest awhile.” For there were many coming and going, and they had no leisure so much as to eat.",
   "pt": "E ele lhes disse: Vinde vós à parte a um lugar deserto, e descansai um pouco; pois havia muitos que iam e vinham, e não tinham tempo para comer.",
   "noRef": "Markus 6,31",
-  "no": "Og han sa til dem: Kom nu I med mig avsides til et øde sted og hvil eder litt ut! For det var mange som gikk til og fra, og det blev ikke engang tid for dem til å få sig mat."
+  "no": "Og han sa til dem: Kom nu I med mig avsides til et øde sted og hvil eder litt ut! For det var mange som gikk til og fra, og det blev ikke engang tid for dem til å få sig mat.",
+  "arRef": "مرقس 6:31",
+  "ar": "فقال لهم تعالوا انتم منفردين الى موضع خلاء واستريحوا قليلا. لان القادمين والذاهبين كانوا كثيرين. ولم تتيسر لهم فرصة للاكل."
  },
  "Mark 7:31": {
   "zhRef": "馬可福音 7:31",
@@ -1029,7 +1233,9 @@ window.VERSES = {
   "en": "Again he departed from the borders of Tyre and Sidon, and came to the sea of Galilee, through the midst of the region of Decapolis.",
   "pt": "Então Jesus voltou a sair da região de Tiro e veio por Sidom para o mar da Galilea, por meio da região de Decápolis.",
   "noRef": "Markus 7,31",
-  "no": "Og da han gikk ut igjen fra Tyrus' landemerker, kom han gjennem Sidon til den Galileiske Sjø, midt igjennem Dekapolis-landet."
+  "no": "Og da han gikk ut igjen fra Tyrus' landemerker, kom han gjennem Sidon til den Galileiske Sjø, midt igjennem Dekapolis-landet.",
+  "arRef": "مرقس 7:31",
+  "ar": "ثم خرج ايضا من تخوم صور وصيدا وجاء الى بحر الجليل في وسط حدود المدن العشر."
  },
  "Matt 3:16-17": {
   "zhRef": "馬太福音 3:16-17",
@@ -1039,7 +1245,9 @@ window.VERSES = {
   "en": "Jesus, when he was baptized, went up directly from the water: and behold, the heavens were opened to him. He saw the Spirit of God descending as a dove, and coming on him. Behold, a voice out of the heavens said, “This is my beloved Son, with whom I am well pleased.”",
   "pt": "E tendo Jesus sido batizado, subiu logo da água. E eis que os céus se abriram, e ele viu o Espírito de Deus descendo como uma pomba, vindo sobre ele. E eis uma voz dos céus, dizendo: Este é o meu Filho amado, em quem me agrado.",
   "noRef": "Matteus 3,16-17",
-  "no": "Men da Jesus var døpt, steg han straks op av vannet, og se, himmelen åpnet sig for ham, og han så Guds Ånd fare ned som en due og komme over ham. Og se, det kom en røst fra himmelen, som sa: Dette er min Sønn, den elskede, i hvem jeg har velbehag."
+  "no": "Men da Jesus var døpt, steg han straks op av vannet, og se, himmelen åpnet sig for ham, og han så Guds Ånd fare ned som en due og komme over ham. Og se, det kom en røst fra himmelen, som sa: Dette er min Sønn, den elskede, i hvem jeg har velbehag.",
+  "arRef": "متى 3:16-17",
+  "ar": "فلما اعتمد يسوع صعد للوقت من الماء. واذا السموات قد انفتحت له فرأى روح الله نازلا مثل حمامة وآتيا عليه. وصوت من السموات قائلا هذا هو ابني الحبيب الذي به سررت"
  },
  "Matt 4:25": {
   "zhRef": "馬太福音 4:25",
@@ -1049,7 +1257,9 @@ window.VERSES = {
   "en": "Great multitudes from Galilee, Decapolis, Jerusalem, Judea and from beyond the Jordan followed him.",
   "pt": "E muitas multidões da Galileia, de Decápolis, de Jerusalém, da Judeia, e dalém do Jordão o seguiam.",
   "noRef": "Matteus 4,25",
-  "no": "Og meget folk fulgte ham fra Galilea og Dekapolis og Jerusalem og Judea og landet hinsides Jordan."
+  "no": "Og meget folk fulgte ham fra Galilea og Dekapolis og Jerusalem og Judea og landet hinsides Jordan.",
+  "arRef": "متى 4:25",
+  "ar": "فتبعته جموع كثيرة من الجليل والعشر المدن واورشليم واليهودية ومن عبر الاردن"
  },
  "Matt 8:28": {
   "zhRef": "馬太福音 8:28",
@@ -1059,7 +1269,9 @@ window.VERSES = {
   "en": "When he came to the other side, into the country of the Gergesenes, two people possessed by demons met him there, coming out of the tombs, exceedingly fierce, so that nobody could pass that way.",
   "pt": "E quando chegou à outra margem, à terra dos gadarenos, vieram-lhe ao encontro dois endemoninhados que tinham saído dos sepulcros. Eles eram tão ferozes que ninguém podia passar por aquele caminho.",
   "noRef": "Matteus 8,28",
-  "no": "Og da han kom over på hin side, til gadarenernes bygd, møtte der ham to besatte, som kom ut av gravene, meget ville, så ingen var i stand til å komme frem den vei."
+  "no": "Og da han kom over på hin side, til gadarenernes bygd, møtte der ham to besatte, som kom ut av gravene, meget ville, så ingen var i stand til å komme frem den vei.",
+  "arRef": "متى 8:28",
+  "ar": "ولما جاء الى العبر الى كورة الجرجسيين استقبله مجنونان خارجان من القبور هائجان جدا حتى لم يكن احد يقدر ان يجتاز من تلك الطريق."
  },
  "Matt 8:32": {
   "zhRef": "馬太福音 8:32",
@@ -1069,7 +1281,9 @@ window.VERSES = {
   "en": "He said to them, “Go!” They came out, and went into the herd of pigs: and behold, the whole herd of pigs rushed down the cliff into the sea, and died in the water.",
   "pt": "E ele lhes disse: Ide. Então eles saíram, e entraram nos porcos; e eis que toda aquela manada se lançou de um precipício ao mar, e morreram nas águas.",
   "noRef": "Matteus 8,32",
-  "no": "Og han sa til dem: Far avsted! Og de fór ut og fór i svinene. Og se, hele hjorden styrtet sig ut over stupet ned i sjøen og døde i vannet."
+  "no": "Og han sa til dem: Far avsted! Og de fór ut og fór i svinene. Og se, hele hjorden styrtet sig ut over stupet ned i sjøen og døde i vannet.",
+  "arRef": "متى 8:32",
+  "ar": "فقال لهم امضوا. فخرجوا ومضوا الى قطيع الخنازير. واذا قطيع الخنازير كله قد اندفع من على الجرف الى البحر ومات في المياه."
  },
  "Num 20:11": {
   "zhRef": "民數記 20:11",
@@ -1079,7 +1293,9 @@ window.VERSES = {
   "en": "Moses lifted up his hand, and struck the rock with his rod twice, and water came out abundantly. The congregation and their livestock drank.",
   "pt": "Então levantou Moisés sua mão, e feriu a rocha com sua vara duas vezes: e saíram muitas águas, e bebeu a congregação, e seus animais.",
   "noRef": "4 Mosebok 20,11",
-  "no": "Så løftet Moses sin hånd og slo med sin stav to ganger på klippen; da strømmet der meget vann ut, så både menigheten og dens buskap fikk drikke."
+  "no": "Så løftet Moses sin hånd og slo med sin stav to ganger på klippen; da strømmet der meget vann ut, så både menigheten og dens buskap fikk drikke.",
+  "arRef": "العدد 20:11",
+  "ar": "ورفع موسى يده وضرب الصخرة بعصاه مرتين فخرج ماء غزير فشربت الجماعة ومواشيها."
  },
  "Num 20:17": {
   "zhRef": "民數記 20:17",
@@ -1089,7 +1305,9 @@ window.VERSES = {
   "en": "“Please let us pass through your land. We will not pass through field or through vineyard, neither will we drink from the water of the wells. We will go along the king’s highway. We will not turn aside to the right hand nor to the left, until we have passed your border.”",
   "pt": "Rogamo-te que passemos por tua terra; não passaremos por lavoura, nem por vinha, nem beberemos água de poços: pelo caminho real iremos, sem apartar-nos à direita nem à esquerda, até que havemos passado teu termo.",
   "noRef": "4 Mosebok 20,17",
-  "no": "Kjære, la oss få dra gjennem ditt land! Vi skal hverken gå gjennem åker eller vingård, heller ikke drikke vann av nogen brønn; efter kongeveien vil vi dra og ikke bøie av hverken til høire eller til venstre, før vi er kommet gjennem ditt land."
+  "no": "Kjære, la oss få dra gjennem ditt land! Vi skal hverken gå gjennem åker eller vingård, heller ikke drikke vann av nogen brønn; efter kongeveien vil vi dra og ikke bøie av hverken til høire eller til venstre, før vi er kommet gjennem ditt land.",
+  "arRef": "العدد 20:17",
+  "ar": "دعنا نمر في ارضك. لا نمر في حقل ولا في كرم ولا نشرب ماء بئر. في طريق الملك نمشي لا نميل يمينا ولا يسارا حتى نتجاوز تخومك."
  },
  "Num 20:27-28": {
   "zhRef": "民數記 20:27-28",
@@ -1099,7 +1317,9 @@ window.VERSES = {
   "en": "Moses did as Yahweh commanded. They went up into Mount Hor in the sight of all the congregation. Moses stripped Aaron of his garments, and put them on Eleazar his son. Aaron died there on the top of the mountain, and Moses and Eleazar came down from the mountain.",
   "pt": "E Moisés fez como o SENHOR lhe mandou: e subiram ao monte de Hor à vista de toda a congregação. E Moisés fez desnudar a Arão de suas roupas e vestiu-as a Eleazar seu filho: e Arão morreu ali no cume do monte: e Moisés e Eleazar desceram do monte.",
   "noRef": "4 Mosebok 20,27-28",
-  "no": "Og Moses gjorde som Herren hadde befalt. De gikk op på fjellet Hor for hele menighetens øine, og Moses tok av Aron hans klær og lot Eleasar, hans sønn, ta dem på, og Aron døde der på toppen av fjellet; men Moses og Eleasar steg ned fra fjellet."
+  "no": "Og Moses gjorde som Herren hadde befalt. De gikk op på fjellet Hor for hele menighetens øine, og Moses tok av Aron hans klær og lot Eleasar, hans sønn, ta dem på, og Aron døde der på toppen av fjellet; men Moses og Eleasar steg ned fra fjellet.",
+  "arRef": "العدد 20:27-28",
+  "ar": "ففعل موسى كما امر الرب وصعدوا الى جبل هور امام اعين كل الجماعة. فخلع موسى عن هرون ثيابه والبس العازار ابنه اياها. فمات هرون هناك على راس الجبل. ثم انحدر موسى والعازار عن الجبل."
  },
  "Num 21:13": {
   "zhRef": "民數記 21:13",
@@ -1109,7 +1329,9 @@ window.VERSES = {
   "en": "From there they traveled, and encamped on the other side of the Arnon, which is in the wilderness, that comes out of the border of the Amorites: for the Arnon is the border of Moab, between Moab and the Amorites.",
   "pt": "De ali moveram, e assentaram da outra parte de Arnom, que está no deserto, e que sai do termo dos amorreus; porque Arnom é termo de Moabe, entre Moabe e os amorreus.",
   "noRef": "4 Mosebok 21,13",
-  "no": "Derfra brøt de op og leiret sig på hin side Arnon, som går gjennem ørkenen og kommer fra amorittenes land; for Arnon er grensen mellem Moab og amorittene."
+  "no": "Derfra brøt de op og leiret sig på hin side Arnon, som går gjennem ørkenen og kommer fra amorittenes land; for Arnon er grensen mellem Moab og amorittene.",
+  "arRef": "العدد 21:13",
+  "ar": "من هناك ارتحلوا ونزلوا في عبر ارنون الذي في البرية خارجا عن تخم الاموريين. لان ارنون هو تخم موآب بين موآب والاموريين."
  },
  "Num 21:16": {
   "zhRef": "民數記 21:16",
@@ -1119,7 +1341,9 @@ window.VERSES = {
   "en": "From there they traveled to Beer; that is the well of which Yahweh said to Moses, “Gather the people together, and I will give them water.”",
   "pt": "E dali vieram a Beer: este é o poço do qual o SENHOR disse a Moisés: Junta ao povo, e lhes darei água.",
   "noRef": "4 Mosebok 21,16",
-  "no": "Derfra brøt de op til Be'er; det er den brønn som Herren talte om da han sa til Moses: Kall folket sammen, så vil jeg gi dem vann."
+  "no": "Derfra brøt de op til Be'er; det er den brønn som Herren talte om da han sa til Moses: Kall folket sammen, så vil jeg gi dem vann.",
+  "arRef": "العدد 21:16",
+  "ar": "ومن هناك الى بئر. وهي البئر حيث قال الرب لموسى اجمع الشعب فاعطيهم ماء."
  },
  "Num 21:17": {
   "zhRef": "民數記 21:17",
@@ -1129,7 +1353,9 @@ window.VERSES = {
   "en": "Then Israel sang this song: “Spring up, well! Sing to it,",
   "pt": "Então cantou Israel esta canção: Sobe, ó poço; a ele cantai:",
   "noRef": "4 Mosebok 21,17",
-  "no": "Da sang Israel denne sang: Vell op, du brønn! Hils den med sang!"
+  "no": "Da sang Israel denne sang: Vell op, du brønn! Hils den med sang!",
+  "arRef": "العدد 21:17",
+  "ar": "حينئذ ترنم اسرائيل بهذا النشيد. اصعدي ايتها البئر اجيبوا لها."
  },
  "Num 21:22": {
   "zhRef": "民數記 21:22",
@@ -1139,7 +1365,9 @@ window.VERSES = {
   "en": "“Let me pass through your land. We will not turn aside into field, or into vineyard. We will not drink of the water of the wells. We will go by the king’s highway, until we have passed your border.”",
   "pt": "Deixa-me passar por tua terra: não nos desviaremos pelos campos, nem pelas vinhas; não beberemos as águas dos poços; pelo caminho real iremos, até que passemos os teus termos.",
   "noRef": "4 Mosebok 21,22",
-  "no": "La mig få dra gjennem ditt land! Vi skal ikke komme inn på akrene eller i vingårdene, heller ikke drikke vann av nogen brønn; efter kongeveien vil vi dra, til vi er kommet gjennem ditt land."
+  "no": "La mig få dra gjennem ditt land! Vi skal ikke komme inn på akrene eller i vingårdene, heller ikke drikke vann av nogen brønn; efter kongeveien vil vi dra, til vi er kommet gjennem ditt land.",
+  "arRef": "العدد 21:22",
+  "ar": "دعني امرّ في ارضك. لا نميل الى حقل ولا الى كرم ولا نشرب ماء بئر. في طريق الملك نمشي حتى نتجاوز تخومك."
  },
  "Num 21:23-24": {
   "zhRef": "民數記 21:23-24",
@@ -1149,7 +1377,9 @@ window.VERSES = {
   "en": "Sihon would not allow Israel to pass through his border, but Sihon gathered all his people together, and went out against Israel into the wilderness, and came to Jahaz. He fought against Israel. Israel struck him with the edge of the sword, and possessed his land from the Arnon to the Jabbok, even to the children of Ammon; for the border of the children of Ammon was strong.",
   "pt": "Mas Seom não deixou passar a Israel por seus termos: antes juntou Seom todo seu povo, e saiu contra Israel no deserto: e veio a Jaza, e lutou contra Israel. Mas Israel o feriu a fio de espada, e tomou sua terra desde Arnom até Jaboque, até os filhos de Amom: porque o termo dos filhos de Amom era forte.",
   "noRef": "4 Mosebok 21,23-24",
-  "no": "Men Sihon gav ikke Israel lov til å dra gjennem sitt land. Han samlet alt sitt folk og drog ut i ørkenen mot Israel, og han kom til Jahas og stred mot Israel. Men Israel slo ham med sverdets egg og tok hans land fra Arnon til Jabbok, til Ammons barns land; for Ammons barns grense var befestet."
+  "no": "Men Sihon gav ikke Israel lov til å dra gjennem sitt land. Han samlet alt sitt folk og drog ut i ørkenen mot Israel, og han kom til Jahas og stred mot Israel. Men Israel slo ham med sverdets egg og tok hans land fra Arnon til Jabbok, til Ammons barns land; for Ammons barns grense var befestet.",
+  "arRef": "العدد 21:23-24",
+  "ar": "فلم يسمح سيحون لاسرائيل بالمرور في تخومه بل جمع سيحون جميع قومه وخرج للقاء اسرائيل الى البرية فأتى الى ياهص وحارب اسرائيل. فضربه اسرائيل بحد السيف وملك ارضه من ارنون الى يبّوق الى بني عمون. لان تخم بني عمون كان قويا."
  },
  "Num 21:26": {
   "zhRef": "民數記 21:26",
@@ -1159,7 +1389,9 @@ window.VERSES = {
   "en": "For Heshbon was the city of Sihon the king of the Amorites, who had fought against the former king of Moab, and taken all his land out of his hand, even to the Arnon.",
   "pt": "Porque Hesbom era a cidade de Seom, rei dos amorreus; o qual havia tido guerra antes com o rei de Moabe, e tomado de seu poder toda a sua terra até Arnom.",
   "noRef": "4 Mosebok 21,26",
-  "no": "For Hesbon var Sihons, amoritter-kongens, stad; han hadde ført krig mot Moabs forrige konge og tatt alt hans land fra ham like til Arnon."
+  "no": "For Hesbon var Sihons, amoritter-kongens, stad; han hadde ført krig mot Moabs forrige konge og tatt alt hans land fra ham like til Arnon.",
+  "arRef": "العدد 21:26",
+  "ar": "لان حشبون كانت مدينة سيحون ملك الاموريين وكان قد حارب ملك موآب الاول واخذ كل ارضه من يده حتى ارنون."
  },
  "Num 21:30": {
   "zhRef": "民數記 21:30",
@@ -1169,7 +1401,9 @@ window.VERSES = {
   "en": "We have shot at them. Heshbon has perished even to Dibon. We have laid waste even to Nophah, Which reaches to Medeba.”",
   "pt": "Mas devastamos o reino deles; pereceu Hesbom até Dibom, E destruímos até Nofá e Medeba.",
   "noRef": "4 Mosebok 21,30",
-  "no": "Og vi skjøt dem ned; ødelagt er Hesbon, like til Dibon! vi herjet til Nofah, med ild helt til Medba."
+  "no": "Og vi skjøt dem ned; ødelagt er Hesbon, like til Dibon! vi herjet til Nofah, med ild helt til Medba.",
+  "arRef": "العدد 21:30",
+  "ar": "لكن قد رميناهم. هلكت حشبون الى ديبون. واخربنا الى نوفح التي الى ميدبا"
  },
  "Num 21:9": {
   "zhRef": "民數記 21:9",
@@ -1179,7 +1413,9 @@ window.VERSES = {
   "en": "Moses made a serpent of brass, and set it on the pole. If a serpent had bitten any man, when he looked at the serpent of brass, he lived.",
   "pt": "E Moisés fez uma serpente de bronze, e a pôs sobre a haste, e foi, que quando alguma serpente mordia a algum, olhava à serpente de bronze, e vivia.",
   "noRef": "4 Mosebok 21,9",
-  "no": "Så gjorde Moses en kobberslange og satte den på en stang; og når en slange hadde bitt nogen, og han så på kobberslangen, blev han i live."
+  "no": "Så gjorde Moses en kobberslange og satte den på en stang; og når en slange hadde bitt nogen, og han så på kobberslangen, blev han i live.",
+  "arRef": "العدد 21:9",
+  "ar": "فصنع موسى حية من نحاس ووضعها على الراية فكان متى لدغت حية انسانا ونظر الى حية النحاس يحيا"
  },
  "Num 22:1": {
   "zhRef": "民數記 22:1",
@@ -1189,7 +1425,9 @@ window.VERSES = {
   "en": "The children of Israel traveled, and encamped in the plains of Moab beyond the Jordan at Jericho.",
   "pt": "Depois os filhos de Israel partiram, e se assentaram nos campos de Moabe, desta parte do Jordão de Jericó.",
   "noRef": "4 Mosebok 22,1",
-  "no": "Så brøt Israels barn op og leiret sig på Moabs ødemarker på hin side Jordan midt imot Jeriko."
+  "no": "Så brøt Israels barn op og leiret sig på Moabs ødemarker på hin side Jordan midt imot Jeriko.",
+  "arRef": "العدد 22:1",
+  "ar": "وارتحل بنو اسرائيل ونزلوا في عربات موآب من عبر اردن اريحا"
  },
  "Num 22:5": {
   "zhRef": "民數記 22:5",
@@ -1199,7 +1437,9 @@ window.VERSES = {
   "en": "He sent messengers to Balaam the son of Beor, to Pethor, which is by the River, to the land of the children of his people, to call him, saying, “Behold, there is a people who came out of Egypt. Behold, they cover the surface of the earth, and they are staying opposite me.",
   "pt": "Portanto enviou mensageiros a Balaão filho de Beor, a Petor, que está junto ao rio na terra dos filhos de seu povo, para que o chamassem, dizendo: Um povo saiu do Egito, e eis que cobre a face da terra, e habita diante de mim:",
   "noRef": "4 Mosebok 22,5",
-  "no": "Han sendte bud til Bileam, Beors sønn, i Petor, som ligger ved den store elv, til det land hvor han bodde blandt sitt folk, for å be ham komme og si til ham: Se, her er kommet et folk fra Egypten; det fyller hele landet, og det har leiret sig midt imot mig."
+  "no": "Han sendte bud til Bileam, Beors sønn, i Petor, som ligger ved den store elv, til det land hvor han bodde blandt sitt folk, for å be ham komme og si til ham: Se, her er kommet et folk fra Egypten; det fyller hele landet, og det har leiret sig midt imot mig.",
+  "arRef": "العدد 22:5",
+  "ar": "فارسل رسلا الى بلعام بن بعور الى فتور التي على النهر في ارض بني شعبه ليدعوه قائلا. هوذا شعب قد خرج من مصر هوذا قد غشّى وجه الارض وهو مقيم مقابلي."
  },
  "Num 23:14": {
   "zhRef": "民數記 23:14",
@@ -1209,7 +1449,9 @@ window.VERSES = {
   "en": "He took him into the field of Zophim, to the top of Pisgah, and built seven altars, and offered up a bull and a ram on every altar.",
   "pt": "E levou-o ao campo de Zofim, ao cume de Pisga, e edificou sete altares, e ofereceu um bezerro e um carneiro em cada altar.",
   "noRef": "4 Mosebok 23,14",
-  "no": "Så tok han ham med sig til speider-haugen på toppen av Pisga og bygget der syv alter og ofret en okse og en vær på hvert alter."
+  "no": "Så tok han ham med sig til speider-haugen på toppen av Pisga og bygget der syv alter og ofret en okse og en vær på hvert alter.",
+  "arRef": "العدد 23:14",
+  "ar": "فأخذه الى حقل صوفيم الى راس الفسجة وبنى سبعة مذابح واصعد ثورا وكبشا على كل مذبح."
  },
  "Num 24:17": {
   "zhRef": "民數記 24:17",
@@ -1219,7 +1461,9 @@ window.VERSES = {
   "en": "I see him, but not now. I see him, but not near. A star will come out of Jacob. A scepter will rise out of Israel, and shall strike through the corners of Moab, and break down all the sons of Sheth.",
   "pt": "Verei, mas não agora: O olharei, mas não de perto: Sairá estrela de Jacó, E se levantará cetro de Israel, E ferirá os cantos de Moabe, E destruirá a todos os filhos de Sete.",
   "noRef": "4 Mosebok 24,17",
-  "no": "Jeg ser ham, men ikke nu, jeg skuer ham, men ikke nær; en stjerne stiger op av Jakob, et spir løfter sig fra Israel; han knuser Moabs tinninger og utrydder ufreds-ætten."
+  "no": "Jeg ser ham, men ikke nu, jeg skuer ham, men ikke nær; en stjerne stiger op av Jakob, et spir løfter sig fra Israel; han knuser Moabs tinninger og utrydder ufreds-ætten.",
+  "arRef": "العدد 24:17",
+  "ar": "اراه ولكن ليس الآن. ابصره ولكن ليس قريبا. يبرز كوكب من يعقوب ويقوم قضيب من اسرائيل فيحطم طرفي موآب ويهلك كل بني الوغى."
  },
  "Num 25:1": {
   "zhRef": "民數記 25:1",
@@ -1229,7 +1473,9 @@ window.VERSES = {
   "en": "Israel stayed in Shittim; and the people began to play the prostitute with the daughters of Moab;",
   "pt": "E repousou Israel em Sitim, e o povo começou a se prostituir com as filhas de Moabe:",
   "noRef": "4 Mosebok 25,1",
-  "no": "Mens Israel opholdt sig i Sittim, begynte folket å drive utukt med Moabs døtre."
+  "no": "Mens Israel opholdt sig i Sittim, begynte folket å drive utukt med Moabs døtre.",
+  "arRef": "العدد 25:1",
+  "ar": "واقام اسرائيل في شطّيم وابتدأ الشعب يزنون مع بنات موآب."
  },
  "Num 32:1": {
   "zhRef": "民數記 32:1",
@@ -1239,7 +1485,9 @@ window.VERSES = {
   "en": "Now the children of Reuben and the children of Gad had a very great multitude of livestock. When they saw the land of Jazer, and the land of Gilead, that behold, the place was a place for livestock;",
   "pt": "E os filhos de Rúben e os filhos de Gade tinham uma muito grande abundância de gado; os quais vendo a terra de Jazer e de Gileade, pareceu-lhes o país lugar de gado.",
   "noRef": "4 Mosebok 32,1",
-  "no": "Rubens barn og Gads barn hadde en mengde fe, en svær mengde; og da de så at Jasers land og Gileads land var vel skikket for feavl,"
+  "no": "Rubens barn og Gads barn hadde en mengde fe, en svær mengde; og da de så at Jasers land og Gileads land var vel skikket for feavl,",
+  "arRef": "العدد 32:1",
+  "ar": "واما بنو رأوبين وبنو جاد فكان لهم مواش كثيرة وافرة جدا. فلما رأوا ارض يعزير وارض جلعاد واذا المكان مكان مواش"
  },
  "Num 32:34": {
   "zhRef": "民數記 32:34",
@@ -1249,7 +1497,9 @@ window.VERSES = {
   "en": "The children of Gad built Dibon, Ataroth, Aroer,",
   "pt": "E os filhos de Gade edificaram a Dibom, e a Atarote, e a Aroer,",
   "noRef": "4 Mosebok 32,34",
-  "no": "Og Gads barn bygget op igjen Dibon og Atarot og Aroer"
+  "no": "Og Gads barn bygget op igjen Dibon og Atarot og Aroer",
+  "arRef": "العدد 32:34",
+  "ar": "فبنى بنو جاد ديبون وعطاروت وعروعير"
  },
  "Num 32:35": {
   "zhRef": "民數記 32:35",
@@ -1259,7 +1509,9 @@ window.VERSES = {
   "en": "Atrothshophan, Jazer, Jogbehah,",
   "pt": "E a Atarote-Sofã, e a Jazer, e a Jogbeá,",
   "noRef": "4 Mosebok 32,35",
-  "no": "og Atrot-Sofan og Jaser og Jogbeha"
+  "no": "og Atrot-Sofan og Jaser og Jogbeha",
+  "arRef": "العدد 32:35",
+  "ar": "وعطروت شوفان ويعزير ويجبهة"
  },
  "Num 32:37-38": {
   "zhRef": "民數記 32:37-38",
@@ -1269,7 +1521,9 @@ window.VERSES = {
   "en": "The children of Reuben built Heshbon, Elealeh, Kiriathaim, Nebo, and Baal Meon, (their names being changed), and Sibmah. They gave other names to the cities which they built.",
   "pt": "E os filhos de Rúben edificaram a Hesbom, e a Eleale, e a Quiriataim, E a Nebo, e a Baal-Meom, (mudados os nomes), e a Sibma: e puseram nomes às cidades que edificaram.",
   "noRef": "4 Mosebok 32,37-38",
-  "no": "Og Rubens barn bygget op igjen Hesbon og El'ale og Kirjata'im og Nebo og Ba'al-Meon, hvis navn blev forandret, og Sibma; og de gav de byer som de bygget op igjen, deres navn."
+  "no": "Og Rubens barn bygget op igjen Hesbon og El'ale og Kirjata'im og Nebo og Ba'al-Meon, hvis navn blev forandret, og Sibma; og de gav de byer som de bygget op igjen, deres navn.",
+  "arRef": "العدد 32:37-38",
+  "ar": "وبنى بنو رأوبين حشبون والعالة وقريتايم ونبو وبعل معون مغيّرتي الاسم وسبمة ودعوا باسماء اسماء المدن التي بنوا."
  },
  "Num 32:6": {
   "zhRef": "民數記 32:6",
@@ -1279,7 +1533,9 @@ window.VERSES = {
   "en": "Moses said to the children of Gad, and to the children of Reuben, “Shall your brothers go to the war, and shall you sit here?",
   "pt": "E respondeu Moisés aos filhos de Gade e aos filhos de Rúben: Virão vossos irmãos à guerra, e vós ficareis aqui?",
   "noRef": "4 Mosebok 32,6",
-  "no": "Da sa Moses til Gads barn og Rubens barn: Skal eders brødre dra i krigen, og I bli her?"
+  "no": "Da sa Moses til Gads barn og Rubens barn: Skal eders brødre dra i krigen, og I bli her?",
+  "arRef": "العدد 32:6",
+  "ar": "فقال موسى لبني جاد وبني رأوبين هل ينطلق اخوتكم الى الحرب وانتم تقعدون ههنا."
  },
  "Num 33:42": {
   "zhRef": "民數記 33:42",
@@ -1289,7 +1545,9 @@ window.VERSES = {
   "en": "They traveled from Zalmonah, and encamped in Punon.",
   "pt": "E partidos de Zalmona, assentaram em Punom.",
   "noRef": "4 Mosebok 33,42",
-  "no": "og de drog fra Salmona og leiret sig i Punon."
+  "no": "og de drog fra Salmona og leiret sig i Punon.",
+  "arRef": "العدد 33:42",
+  "ar": "ثم ارتحلوا من صلمونة ونزلوا في فونون."
  },
  "Num 33:49": {
   "zhRef": "民數記 33:49",
@@ -1299,7 +1557,9 @@ window.VERSES = {
   "en": "They encamped by the Jordan, from Beth Jeshimoth even to Abel Shittim in the plains of Moab.",
   "pt": "Finalmente assentaram junto ao Jordão, desde Bete-Jesimote até Abel-Sitim, nos campos de Moabe.",
   "noRef": "4 Mosebok 33,49",
-  "no": "Og deres leir ved Jordan strakte sig fra Bet-Hajesimot til Abel-Hassittim på Moabs ødemarker."
+  "no": "Og deres leir ved Jordan strakte sig fra Bet-Hajesimot til Abel-Hassittim på Moabs ødemarker.",
+  "arRef": "العدد 33:49",
+  "ar": "نزلوا على الاردن من بيت يشيموت الى آبل شطّيم في عربات موآب"
  },
  "Ruth 1:1": {
   "zhRef": "路得記 1:1",
@@ -1309,7 +1569,9 @@ window.VERSES = {
   "en": "In the days when the judges judged, there was a famine in the land. A certain man of Bethlehem Judah went to live in the country of Moab, he, and his wife, and his two sons.",
   "pt": "E aconteceu nos dias que governavam os juízes, que houve fome na terra. E um homem de Belém de Judá, foi a peregrinar nos campos de Moabe, ele e sua mulher, e dois filhos seus.",
   "noRef": "Rut 1,1",
-  "no": "I de dager da dommerne styrte, blev det engang hungersnød i landet. Da drog en mann med sin hustru og sine to sønner avsted fra Betlehem i Juda for å opholde sig nogen tid i Moabs land."
+  "no": "I de dager da dommerne styrte, blev det engang hungersnød i landet. Da drog en mann med sin hustru og sine to sønner avsted fra Betlehem i Juda for å opholde sig nogen tid i Moabs land.",
+  "arRef": "راعوث 1:1",
+  "ar": "حدث في ايام حكم القضاة انه صار جوع في الارض فذهب رجل من بيت لحم يهوذا ليتغرب في بلاد موآب هو وامرأته وابناه."
  },
  "Ruth 1:16": {
   "zhRef": "路得記 1:16",
@@ -1319,7 +1581,9 @@ window.VERSES = {
   "en": "Ruth said, “Don’t entreat me to leave you, and to return from following after you, for where you go, I will go; and where you lodge, I will lodge; your people shall be my people, and your God my God;",
   "pt": "E Rute respondeu: Não me rogues que te deixe, e que me aparte de ti: porque de onde quer que tu fores, irei eu; e de onde quer que viveres, viverei. Teu povo será meu povo, e teu Deus meu Deus.",
   "noRef": "Rut 1,16",
-  "no": "Men Rut sa: Søk ikke å overtale mig til å forlate dig og vende tilbake! For dit du går, vil jeg gå, og hvor du blir, vil jeg bli; ditt folk er mitt folk, og din Gud er min Gud;"
+  "no": "Men Rut sa: Søk ikke å overtale mig til å forlate dig og vende tilbake! For dit du går, vil jeg gå, og hvor du blir, vil jeg bli; ditt folk er mitt folk, og din Gud er min Gud;",
+  "arRef": "راعوث 1:16",
+  "ar": "فقالت راعوث لا تلحّي عليّ ان اتركك وارجع عنك لانه حيثما ذهبت اذهب وحيثما بتّ ابيت. شعبك شعبي والهك الهي."
  },
  "Song 7:4": {
   "zhRef": "雅歌 7:4",
@@ -1329,7 +1593,9 @@ window.VERSES = {
   "en": "Your neck is like an ivory tower. Your eyes are like the pools in Heshbon by the gate of Bathrabbim. Your nose is like the tower of Lebanon which looks toward Damascus.",
   "pt": "Teu pescoço é como uma torre de marfim; teus olhos são como os tanques de peixes de Hesbom, junto à porta de Bate-Rabim. Teu nariz é como a torre do Líbano, que está de frente a Damasco.",
   "noRef": "Høysangen 7,4",
-  "no": "Din hals er som elfenbenstårnet, dine øine som vanndammene i Hesbon ved Batrabbims port, din nese som Libanon-tårnet, som skuer ut mot Damaskus."
+  "no": "Din hals er som elfenbenstårnet, dine øine som vanndammene i Hesbon ved Batrabbims port, din nese som Libanon-tårnet, som skuer ut mot Damaskus.",
+  "arRef": "نشيد الأنشاد 7:4",
+  "ar": "عنقك كبرج من عاج. عيناك كالبرك في حشبون عند باب بث ربيم. انفك كبرج لبنان الناظر تجاه دمشق."
  }
 };
 window.PHOTOS = {
