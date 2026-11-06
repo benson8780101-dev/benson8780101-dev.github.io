@@ -168,8 +168,8 @@ function fitSize(g, s, max, width) {
   for (let size = max; size > 44; size -= 4) { g.font = `700 ${size}px ${SERIF}`; if (g.measureText(s).width <= width) return size; }
   return 44;
 }
-// 引號照語言：中文用「」，英文、葡文用 “ ”
-function quote(s) { return lang === "zh" ? "「" + s + "」" : "\u201c" + s + "\u201d"; }
+// 引號照語言：中文用「」，挪威文用 « »，英文、葡文用 “ ”
+function quote(s) { return lang === "zh" ? "「" + s + "」" : lang === "no" ? "\u00ab" + s + "\u00bb" : "\u201c" + s + "\u201d"; }
 // 自動換行：有漢字就一個字一個字斷，英文、葡文照單字斷；回傳下一行的 y
 // 句尾標點（，。」…）不放到新的一行開頭，寧可這一行稍微長一點
 const NO_LINE_START = /^[\uff0c\u3002\u3001\uff1b\uff1a\u300d\u300f\uff01\uff1f\u2026\uff09\u201d]$/;

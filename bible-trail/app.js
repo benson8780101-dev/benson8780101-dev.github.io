@@ -219,28 +219,125 @@ const T_PT = {
 };
 for (const [k, v] of Object.entries(T_PT)) if (T[k]) T[k].pt = v;
 
-// 把 data-pt.js 的葡萄牙文合併進 data.js 的內容（每段文字多一個 pt）
-function mergePortuguese() {
-  if (!window.PT) return;
+// 挪威文（書面挪威語 Bokmål）介面文字（跟上面 T 的 key 一一對應；T 新增文字時這裡也要加）
+const T_NO = {
+  appName: "Bibelstien i Jordan",
+  tabMap: "Kart", tabChapters: "Kapitler", tabPassport: "Pass", tabAbout: "Om",
+  showMe: "📍 Hvor er jeg",
+  mapOffline: "Kartet trenger internett. Uten nett kan du bruke fanen Kapitler – stempler og bibeltekster virker som vanlig.",
+  rankPrefix: "Tittel: ",
+  chapter: "Kapittel {n}",
+  required: "Må sees", bonus: "Bonus", open: "Åpne", close: "← Tilbake",
+  passed: "Fullført", goldDone: "Gullmerke!", notPassed: "Besøk stedene som må sees for å fullføre",
+  stampsOf: "Stempler {a} / {b}", starsOf: "Quizstjerner {a} / {b}",
+  scripture: "📖 Bibelen", story: "📜 Fortellingen", reflect: "💭 Tenk over", mission: "🎯 Oppdrag på stedet", quiz: "❓ Quiz", howto: "🚗 Slik kommer du dit",
+  checkinTitle: "🛂 Få stempelet ditt",
+  checkinHelp: "Når du er på stedet, trykker du på knappen. Telefonen sjekker hvor du er og stempler passet hvis du er innenfor området. Posisjonen sammenlignes bare på telefonen din og sendes aldri noe sted.",
+  checkinBtn: "📍 Jeg er her – stemple!",
+  checking: "Sjekker posisjonen din … (opptil 20 sekunder)",
+  stamped: "Stemplet", stampedOn: "Stemplet {d}", manualMark: " (manuelt)",
+  tooFar: "Du er omtrent {km} km unna. Prøv igjen når du er fremme!",
+  geoDenied: "Tilgang til posisjon ble avslått. Gi nettleseren tilgang til posisjon i telefonens innstillinger, og prøv igjen.",
+  geoFail: "Fant ikke posisjonen din (kanskje du er innendørs eller har dårlig signal).",
+  noGeo: "Denne nettleseren støtter ikke posisjon.",
+  manualHint: "Er GPS-en unøyaktig, men du er sikker på at du er på stedet? Da kan du stemple manuelt (merkes «manuelt» i passet).",
+  manualBtn: "Jeg er på stedet – stemple manuelt",
+  manualConfirm: "Er du sikker? Trykk «Bekreft» for å stemple.",
+  confirm: "Bekreft", cancel: "Avbryt",
+  rightAns: "Riktig! ⭐ Du fikk en stjerne",
+  wrongAns: "Ikke helt – svaret står i bibelteksten!",
+  quizDone: "⭐ Besvart",
+  photoBy: "Foto: ",
+  noFacilities: "⚠️ Ingen fasiliteter for besøkende",
+  approx: "📍 Omtrentlig posisjon (ikke bekreftet)",
+  certYes: "✅ Allment akseptert sted",
+  certLikely: "🤔 Sannsynlig sted",
+  certTradition: "🕯️ Tradisjonelt sted (minnet av troende i århundrer)",
+  certArea: "🗺️ Et helt område",
+  certUnknown: "❓ Usikker plassering",
+  hiddenTag: "Skjult",
+  hiddenHelp: "🔒 Dette er et skjult nivå: plasseringen er usikker, så du trenger ikke dra dit. Les bibelteksten og fortellingen, og svar riktig på quizen nedenfor for å låse opp stempelet.",
+  chapterPassed: "🎉 {c} fullført! Merke opptjent {b}",
+  chapterGold: "🏆 {c} helt fullført! Merket ditt ble gull",
+  newRank: "🎖️ Ny tittel: {r}",
+  stampToast: "🛂 Stemplet: {s}",
+  myStamps: "Mine stempler", myBadges: "Kapittelmerker",
+  backup: "Sikkerhetskopi av fremdriften",
+  backupHelp: "Fremdriften lagres bare i nettleseren på denne telefonen. Før du bytter telefon eller sletter nettleserdata, bør du eksportere en sikkerhetskopi; importer den senere for å fortsette.",
+  exportBtn: "Eksporter sikkerhetskopi", importBtn: "Importer sikkerhetskopi",
+  importOk: "Fremdrift importert: {n} stempler",
+  importBad: "Denne filen ser ikke ut som en sikkerhetskopi fra Bibelstien, så ingenting ble importert.",
+  storageOff: "⚠️ Denne nettleseren kan ikke lagre data (kanskje privat modus); fremdriften forsvinner når du lukker den.",
+  introTitle: "Velkommen til Bibelstien i Jordan!",
+  introBody: "Hovedstien har {c} kapitler og {n} steder, fra Gileads åser i nord til Rødehavet.\n• Les bibeltekstene og fortellingene når du vil – fint for å forberede seg før turen.\n• På stedet trykker du «Jeg er her – stemple!», og telefonens GPS bekrefter hvor du er.\n• «Skjulte» nivåer har usikker plassering – du trenger ikke dra dit; svar på quizen for å låse dem opp.\n• Besøk stedene som må sees i et kapittel for å fullføre det; besøk alle for å få gullmerke.\n• Sidestier er valgfrie ekstraruter og påvirker ikke diplomet.\n• Fullfør stedene som må sees i alle ni kapitler, så kan du hente diplomet ditt i fanen Pass.\n• Kartet trenger internett; alt annet virker uten nett.",
+  gotIt: "Skjønner, la oss dra!",
+  locating: "Finner deg …",
+  youAreHere: "Du er her",
+  navBtn: "🧭 Naviger med Google Maps",
+  navApprox: "Dette er en omtrentlig posisjon – se etter lokale skilt eller spør om veien når du nærmer deg.",
+  sideChapter: "Sidesti",
+  foodTitle: "🍽️ Bibelens bord",
+  noteLabel: "✍️ Mitt svar (lagres bare på denne telefonen)",
+  notePlaceholder: "En setning eller to er nok …",
+  noteSaved: "✓ Lagret",
+  journalTitle: "📓 Min reisedagbok",
+  journalHelp: "Svarene du skriver under «Tenk over» på hvert sted, samles her. De lagres bare på denne telefonen og sendes aldri noe sted; før du bytter telefon, bruk «Eksporter sikkerhetskopi» nedenfor, så blir dagboken også med.",
+  journalCount: "Steder med svar: {n}",
+  journalEmpty: "Ingenting ennå. Åpne et hvilket som helst sted og skriv svaret ditt under «Tenk over».",
+  journalDownload: "⬇️ Last ned dagboken (tekstfil)",
+  journalHeading: "Bibelstien i Jordan · Min reisedagbok",
+  homeTitle: "🏠 Få {n} stempler før du i det hele tatt drar",
+  homeHelp: "Disse {n} skjulte nivåene har usikker plassering, så du trenger ikke dra dit: les fortellingen og svar på quizen for å låse opp hvert av dem. Les dem hjemme før turen, så har du fremgang før reisen begynner.",
+  homeProgress: "Låst opp {a} / {b}",
+  tripsTitle: "🗓️ Ferdige reiseruter",
+  tripsHelp: "For deg som kjører selv: bare følg ruten; trykk på et sted for fortelling og veibeskrivelse. Hakene viser stempler du allerede har.",
+  tripDay: "Dag {n}",
+  tripSleep: "🛏️ Overnatting: ",
+  sideNote: "Sidestier er valgfrie ekstraruter; de påvirker ikke diplomet.",
+  certTitle: "🏅 Diplom",
+  certHow: "Stemple alle stedene som må sees i alle ni kapitler for å få diplomet; stempler du alle {n} stedene, blir det gullutgaven.",
+  certLeft: "{a} steder som må sees gjenstår ({b} / {c} kapitler fullført)",
+  certReady: "🎉 Gratulerer! Du har fullført alle ni kapitler – diplomet ditt er klart.",
+  certGoldReady: "🏆 Du har stemplet alle stedene! Dette er gullutgaven.",
+  certName: "Navn på diplomet",
+  certNameHint: "f.eks. Benson and Esther",
+  certMake: "Lag diplom",
+  certSave: "⬇️ Last ned bilde",
+  certShare: "📤 Del",
+  certPrivacy: "Diplomet lages på telefonen din; navnet ditt sendes aldri noe sted. Vil du ha et annet språk, bytter du språk øverst til høyre og trykker «Lag diplom» igjen.",
+  certHeading: "Diplom",
+  certGoldHeading: "Gullutgave",
+  certThis: "Dette bekrefter at",
+  certAnon: "En reisende",
+  certBody: "har gått alle ni kapitlene av Bibelstien i Jordan, fra Gileads åser i nord til bredden av Rødehavet, og har fått tittelen",
+  certStats: "Stempler {a} / {b} · Quiz ⭐ {c} / {b}",
+  certDates: "Startet {d1} · Fullført {d2}"
+};
+for (const [k, v] of Object.entries(T_NO)) if (T[k]) T[k].no = v;
+
+// 把 data-pt.js、data-no.js 的翻譯合併進 data.js 的內容（每段文字多一個 pt / no）
+function mergeLang(code, P) {
+  if (!P) return;
   for (const ch of CHAPTERS) {
-    const p = PT.chapters[ch.id];
-    if (p) { ch.title.pt = p.title; ch.intro.pt = p.intro; }
-    if (p && p.food && ch.food) { ch.food.dish.pt = p.food.dish; ch.food.text.pt = p.food.text; }
+    const p = P.chapters[ch.id];
+    if (p) { ch.title[code] = p.title; ch.intro[code] = p.intro; }
+    if (p && p.food && ch.food) { ch.food.dish[code] = p.food.dish; ch.food.text[code] = p.food.text; }
   }
   for (const [id, s] of Object.entries(STATIONS)) {
-    const p = PT.stations[id];
-    if (!p) { console.warn("[BibleTrail] 缺少葡萄牙文：" + id); continue; }
-    for (const k of ["name", "place", "story", "reflect", "mission", "howto"]) s[k].pt = p[k];
-    s.quiz.q.pt = p.quiz.q;
-    s.quiz.options.forEach((o, i) => { o.pt = p.quiz.options[i]; });
+    const p = P.stations[id];
+    if (!p) { console.warn("[BibleTrail] 缺少翻譯（" + code + "）：" + id); continue; }
+    for (const k of ["name", "place", "story", "reflect", "mission", "howto"]) s[k][code] = p[k];
+    s.quiz.q[code] = p.quiz.q;
+    s.quiz.options.forEach((o, i) => { o[code] = p.quiz.options[i]; });
   }
-  TITLES.forEach((x, i) => { x.pt = PT.titles[i]; });
+  TITLES.forEach((x, i) => { x[code] = P.titles[i]; });
 }
-mergePortuguese();
+mergeLang("pt", window.PT);
+mergeLang("no", window.NO);
 
 // ---------- 小工具 ----------
-const LANGS = ["zh", "en", "pt"];
-const LOCALE = { zh: "zh-TW", en: "en-GB", pt: "pt-BR" };
+const LANGS = ["zh", "en", "pt", "no"];
+const LOCALE = { zh: "zh-TW", en: "en-GB", pt: "pt-BR", no: "nb-NO" };
 let lang = loadLang();
 // 缺哪個語言就先用英文，再用中文，畫面不會空白
 const t = (key, vars) => { const e = T[key] || {}; return fill(e[lang] || e.en || key, vars); };
@@ -282,9 +379,9 @@ function fmtDate(ts) {
 // ---------- 存資料（瀏覽器可能不讓存，所以每次都包 try） ----------
 let storageOk = true;
 function loadLang() {
-  try { const v = localStorage.getItem(LANG_KEY); if (["zh", "en", "pt"].includes(v)) return v; } catch {}
+  try { const v = localStorage.getItem(LANG_KEY); if (LANGS.includes(v)) return v; } catch {}
   const nav = (navigator.language || "").toLowerCase();
-  return nav.startsWith("zh") ? "zh" : nav.startsWith("pt") ? "pt" : "en";
+  return nav.startsWith("zh") ? "zh" : nav.startsWith("pt") ? "pt" : /^(nb|nn|no)\b/.test(nav) ? "no" : "en";
 }
 function emptyState() { return { stamps: {}, stars: {}, notes: {} }; }
 function loadState() {
@@ -375,7 +472,7 @@ function stamp(id, manual) {
 
 // ---------- 畫面：上方稱號 ----------
 function renderTop() {
-  document.documentElement.lang = { zh: "zh-Hant", en: "en", pt: "pt-BR" }[lang];
+  document.documentElement.lang = { zh: "zh-Hant", en: "en", pt: "pt-BR", no: "nb" }[lang];
   document.getElementById("langSel").value = lang;
   document.querySelectorAll("[data-t]").forEach((n) => { n.textContent = t(n.dataset.t); });
   document.getElementById("rank").textContent = t("rankPrefix") + rankFor(stampCount())[lang] + " · " + t("stampsOf", { a: stampCount(), b: stationIds().length });
@@ -422,7 +519,19 @@ function renderChapters() {
 // 每章的「聖經餐桌」：這一章可以吃到的聖經食物
 function verseQuote(ref) {
   const v = VERSES[ref];
-  return v ? el("blockquote", { class: "verse" }, v[lang] || v.en, el("cite", null, v[lang + "Ref"] || v.enRef)) : null;
+  if (!v) return null;
+  const link = lang === "no" ? bibelNoLink(ref) : null;
+  return el("blockquote", { class: "verse" }, v[lang] || v.en, el("cite", null, v[lang + "Ref"] || v.enRef),
+    link && el("a", { class: "verse-link", href: link, target: "_blank", rel: "noopener" }, "Les i dagens oversettelse på bibel.no →"));
+}
+// 挪威文經文用 1930 年版（公共領域）；新版（Bibel 2011、2024 修訂）有版權不能放進來，所以附上 bibel.no 的連結讓人讀新版
+const BIBELNO_BOOK = { "Gen": "GEN", "Exod": "EXO", "Num": "NUM", "Deut": "DEU", "Josh": "JOS", "Judg": "JDG", "Ruth": "RUT", "1 Sam": "1SA", "2 Sam": "2SA",
+  "1 Kgs": "1KI", "2 Kgs": "2KI", "Job": "JOB", "Song": "SNG", "Isa": "ISA", "Jer": "JER", "Ezek": "EZK", "Hos": "HOS", "Amos": "AMO",
+  "Matt": "MAT", "Mark": "MRK", "Luke": "LUK", "John": "JHN", "Acts": "ACT", "2 Cor": "2CO", "Gal": "GAL", "Heb": "HEB", "Jas": "JAS" };
+function bibelNoLink(ref) {
+  const m = ref.match(/^(.+) (\d+):(\d+)(?:-(\d+))?$/);
+  if (!m || !BIBELNO_BOOK[m[1]]) return null;
+  return `https://bibel.no/nettbibelen?book=${BIBELNO_BOOK[m[1]]}&chapter=${m[2]}&verse=${m[3]}&verseto=${m[4] || m[3]}&slang=bokmal24`;
 }
 function foodBox(food) {
   return el("div", { class: "food" },
@@ -539,37 +648,40 @@ function renderAbout() {
   v.replaceChildren(
     el("div", { class: "card" }, el("h2", null, t("introTitle")), textBlock(t("introBody", introVars()))),
     el("div", { class: "card" },
-      el("h2", null, tri({ zh: "可信度標記", en: "Certainty Labels", pt: "Grau de Certeza" })),
+      el("h2", null, tri({ zh: "可信度標記", en: "Certainty Labels", pt: "Grau de Certeza", no: "Hvor sikkert er stedet?" })),
       el("ul", { class: "legend" }, ["certYes", "certLikely", "certTradition", "certArea", "certUnknown"].map((k) => el("li", null, t(k)))),
       el("p", { class: "muted" }, tri({
         zh: "聖經地點有的經過考古證實，有的是一千多年來信徒世代紀念的「傳統說法」。我們老實標出來，讓你自己判斷。",
         en: "Some biblical sites are confirmed by archaeology; others are 'traditional sites' that believers have honored for over a thousand years. We label them honestly so you can judge for yourself.",
-        pt: "Alguns lugares bíblicos foram confirmados pela arqueologia; outros são \"locais tradicionais\", lembrados pelos cristãos há mais de mil anos. Indicamos isso com honestidade para que você mesmo possa avaliar."
+        pt: "Alguns lugares bíblicos foram confirmados pela arqueologia; outros são \"locais tradicionais\", lembrados pelos cristãos há mais de mil anos. Indicamos isso com honestidade para que você mesmo possa avaliar.",
+        no: "Noen bibelske steder er bekreftet av arkeologien; andre er «tradisjonelle steder» som troende har æret i over tusen år. Vi merker dem ærlig, så du kan vurdere selv."
       }))
     ),
     el("div", { class: "card" },
-      el("h2", null, tri({ zh: "加到手機主畫面", en: "Add to Your Home Screen", pt: "Adicionar à Tela Inicial" })),
-      el("p", null, tri({ zh: "不用安裝也能用。想要像 App 一樣有圖示：", en: "No install needed. For an app-like icon:", pt: "Não precisa instalar. Para ter um ícone como de aplicativo:" })),
+      el("h2", null, tri({ zh: "加到手機主畫面", en: "Add to Your Home Screen", pt: "Adicionar à Tela Inicial", no: "Legg til på Hjem-skjermen" })),
+      el("p", null, tri({ zh: "不用安裝也能用。想要像 App 一樣有圖示：", en: "No install needed. For an app-like icon:", pt: "Não precisa instalar. Para ter um ícone como de aplicativo:", no: "Ingen installasjon nødvendig. For et app-ikon:" })),
       el("ul", null,
-        el("li", null, tri({ zh: "iPhone（Safari）：點分享按鈕 → 加入主畫面", en: "iPhone (Safari): tap Share → Add to Home Screen", pt: "iPhone (Safari): toque em Compartilhar → Adicionar à Tela de Início" })),
-        el("li", null, tri({ zh: "Android（Chrome）：點右上角 ⋮ → 加到主畫面", en: "Android (Chrome): tap ⋮ → Add to Home screen", pt: "Android (Chrome): toque em ⋮ → Adicionar à tela inicial" })))
+        el("li", null, tri({ zh: "iPhone（Safari）：點分享按鈕 → 加入主畫面", en: "iPhone (Safari): tap Share → Add to Home Screen", pt: "iPhone (Safari): toque em Compartilhar → Adicionar à Tela de Início", no: "iPhone (Safari): trykk Del → Legg til på Hjem-skjerm" })),
+        el("li", null, tri({ zh: "Android（Chrome）：點右上角 ⋮ → 加到主畫面", en: "Android (Chrome): tap ⋮ → Add to Home screen", pt: "Android (Chrome): toque em ⋮ → Adicionar à tela inicial", no: "Android (Chrome): trykk ⋮ → Legg til på startsiden" })))
     ),
     el("div", { class: "card" },
-      el("h2", null, tri({ zh: "隱私", en: "Privacy", pt: "Privacidade" })),
+      el("h2", null, tri({ zh: "隱私", en: "Privacy", pt: "Privacidade", no: "Personvern" })),
       el("p", null, tri({
         zh: "這個 App 不需要帳號、不收集個人資料。蓋章時的位置只在你的手機上比對，進度只存在你的手機裡。",
         en: "No account, no personal data collected. Your location is only compared on your phone during check-in, and progress stays on your phone.",
-        pt: "Sem conta e sem coleta de dados pessoais. Sua localização só é comparada no seu celular durante o check-in, e o progresso fica no seu celular."
+        pt: "Sem conta e sem coleta de dados pessoais. Sua localização só é comparada no seu celular durante o check-in, e o progresso fica no seu celular.",
+        no: "Ingen konto, ingen personopplysninger samles inn. Posisjonen din sammenlignes bare på telefonen når du stempler, og fremdriften blir på telefonen din."
       }))
     ),
     el("div", { class: "card" },
-      el("h2", null, tri({ zh: "資料來源與授權", en: "Sources & Credits", pt: "Fontes e Créditos" })),
+      el("h2", null, tri({ zh: "資料來源與授權", en: "Sources & Credits", pt: "Fontes e Créditos", no: "Kilder og kreditering" })),
       el("ul", { class: "muted" },
-        el("li", null, tri({ zh: "經文：《和合本》、World English Bible（皆為公共領域）", en: "Scripture: Chinese Union Version and World English Bible (both public domain)", pt: "Bíblia em chinês e inglês: Chinese Union Version e World English Bible (domínio público)" })),
-        el("li", null, tri({ zh: "葡萄牙文經文：", en: "Portuguese scripture: ", pt: "Bíblia em português: " }), link("https://www.biblialivre.com.br/", "Bíblia Livre"), " (CC BY 3.0 BR)"),
-        el("li", null, tri({ zh: "地點與座標：", en: "Places & coordinates: ", pt: "Lugares e coordenadas: " }), link("https://www.openbible.info/geo/", "OpenBible.info"), " (CC BY 4.0)"),
-        el("li", null, tri({ zh: "地圖：", en: "Map: ", pt: "Mapa: " }), "© ", link("https://www.openstreetmap.org/copyright", "OpenStreetMap"), tri({ zh: " 貢獻者", en: " contributors", pt: " colaboradores" })),
-        el("li", null, tri({ zh: "照片：Wikimedia Commons，作者與授權標在每張照片下方", en: "Photos: Wikimedia Commons; author and license under each photo", pt: "Fotos: Wikimedia Commons; autor e licença abaixo de cada foto" }))
+        el("li", null, tri({ zh: "經文：《和合本》、World English Bible（皆為公共領域）", en: "Scripture: Chinese Union Version and World English Bible (both public domain)", pt: "Bíblia em chinês e inglês: Chinese Union Version e World English Bible (domínio público)", no: "Bibeltekst på kinesisk og engelsk: Chinese Union Version og World English Bible (begge fri for opphavsrett)" })),
+        el("li", null, tri({ zh: "葡萄牙文經文：", en: "Portuguese scripture: ", pt: "Bíblia em português: ", no: "Bibeltekst på portugisisk: " }), link("https://www.biblialivre.com.br/", "Bíblia Livre"), " (CC BY 3.0 BR)"),
+        el("li", null, tri({ zh: "挪威文經文：", en: "Norwegian scripture: ", pt: "Bíblia em norueguês: ", no: "Bibeltekst på norsk: " }), "Det Norske Bibelselskap 1930", tri({ zh: "（公共領域）", en: " (public domain)", pt: " (domínio público)", no: " (fri for opphavsrett)" })),
+        el("li", null, tri({ zh: "地點與座標：", en: "Places & coordinates: ", pt: "Lugares e coordenadas: ", no: "Steder og koordinater: " }), link("https://www.openbible.info/geo/", "OpenBible.info"), " (CC BY 4.0)"),
+        el("li", null, tri({ zh: "地圖：", en: "Map: ", pt: "Mapa: ", no: "Kart: " }), "© ", link("https://www.openstreetmap.org/copyright", "OpenStreetMap"), tri({ zh: " 貢獻者", en: " contributors", pt: " colaboradores", no: "-bidragsytere" })),
+        el("li", null, tri({ zh: "照片：Wikimedia Commons，作者與授權標在每張照片下方", en: "Photos: Wikimedia Commons; author and license under each photo", pt: "Fotos: Wikimedia Commons; autor e licença abaixo de cada foto", no: "Foto: Wikimedia Commons; fotograf og lisens under hvert bilde" }))
       ),
       el("p", { class: "muted" }, "Benson and Esther · 2026")
     )
