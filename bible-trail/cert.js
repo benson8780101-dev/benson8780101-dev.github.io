@@ -7,8 +7,9 @@ const CERT_NAME_KEY = "bibleTrail.certName";
 const CERT_W = 1200, CERT_H = 1650;
 // 證書固定用羊皮紙配色，不跟著深色模式變，下載後印出來才好看
 const CERT_COLORS = { paper: "#fbf4e6", ink: "#2b211a", muted: "#7a6a5c", accent: "#8a4b2a", gold: "#c8962e", line: "#e4d6c3" };
-const SERIF = '"Songti TC", "Noto Serif TC", "PMingLiU", Georgia, "Times New Roman", "Noto Naskh Arabic", "Geeza Pro", serif';
-const SANS = '-apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", "Segoe UI", "Noto Naskh Arabic", "Geeza Pro", sans-serif';
+// 字型清單後面補了簡中、韓文、阿拉伯文常見字型，手機沒有前面的字型時會往後找
+const SERIF = '"Songti TC", "Noto Serif TC", "PMingLiU", Georgia, "Times New Roman", "Songti SC", "Noto Serif SC", "AppleMyungjo", "Noto Serif KR", "Noto Naskh Arabic", "Geeza Pro", serif';
+const SANS = '-apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", "Segoe UI", "PingFang SC", "Noto Sans SC", "Apple SD Gothic Neo", "Noto Sans KR", "Geeza Pro", "Noto Sans Arabic", sans-serif';
 
 function certStatus() {
   // 只算主線，支線是額外的
@@ -107,8 +108,8 @@ function drawCertificate(name) {
     g.beginPath(); g.moveTo(x, y - 16); g.lineTo(x + 16, y); g.lineTo(x, y + 16); g.lineTo(x - 16, y); g.closePath(); g.fill();
   }
   g.textAlign = "center"; g.textBaseline = "alphabetic";
-  // 阿拉伯文由右往左排，混到數字或英文名字時順序才會對
-  g.direction = lang === "ar" ? "rtl" : "ltr";
+  // 阿拉伯文由右往左寫，標點和數字的位置才會對
+  g.direction = LANG_INFO[lang].rtl ? "rtl" : "ltr";
 
   let y = 170;
   text(g, "✦  " + t("appName") + "  ✦", cx, y, `600 34px ${SANS}`, C.accent);
@@ -123,7 +124,7 @@ function drawCertificate(name) {
   y += 10;
   y = wrap(g, t("certBody"), cx, y, CERT_W - 300, 52, `400 34px ${SERIF}`, C.ink);
   y += 30;
-  text(g, quote(rankFor(stampCount())[lang]), cx, y, `700 56px ${SERIF}`, cs.gold ? C.gold : C.accent);
+  text(g, quote(pick(rankFor(stampCount()))), cx, y, `700 56px ${SERIF}`, cs.gold ? C.gold : C.accent);
   y += 100;
 
   // 九章徽章：金色版的章節加金圈
@@ -147,13 +148,13 @@ function drawCertificate(name) {
   y += 90;
 
   // 經文（三種譯本照語言挑）
-  const v = VERSES[CERTIFICATE.verses[0]];
+  const v = verseOf(CERTIFICATE.verses[0]);
   if (v) {
     rule(g, cx, y - 40, 200, C.line);
     // 經文在下一節才講完，結尾的逗號改成「…」
     // 寬度留給右下角的印章，不會壓到經文
-    y = wrap(g, quote(v[lang].replace(/[,，;；]\s*$/, "…")), cx, y, CERT_W - 460, 42, `${lang === "ar" ? "" : "italic "}400 28px ${SERIF}`, C.ink);
-    text(g, "— " + v[lang + "Ref"], cx, y + 4, `600 26px ${SANS}`, C.muted);
+    y = wrap(g, quote(v.text.replace(/[,，;；]\s*$/, "…")), cx, y, CERT_W - 460, 42, `italic 400 28px ${SERIF}`, C.ink);
+    text(g, "— " + v.ref, cx, y + 4, `600 26px ${SANS}`, C.muted);
   }
 
   // 底部印章
@@ -170,8 +171,12 @@ function fitSize(g, s, max, width) {
   for (let size = max; size > 44; size -= 4) { g.font = `700 ${size}px ${SERIF}`; if (g.measureText(s).width <= width) return size; }
   return 44;
 }
-// 引號照語言：中文用「」，挪威文、阿拉伯文用 « »，英文、葡文用 “ ”
-function quote(s) { return lang === "zh" ? "「" + s + "」" : lang === "no" || lang === "ar" ? "\u00ab" + s + "\u00bb" : "\u201c" + s + "\u201d"; }
+// 引號照語言：中文用「」，英文、葡文用 “ ”
+// 引號照語言：繁中用「」、簡中用“”、法文用« »、德文用„ “、阿拉伯文用« »、其他用 “ ”
+function quote(s) {
+  const q = { zh: ["「", "」"], fr: ["« ", " »"], de: ["\u201e", "\u201c"], ar: ["«", "»"] }[lang] || ["\u201c", "\u201d"];
+  return q[0] + s + q[1];
+}
 // 自動換行：有漢字就一個字一個字斷，英文、葡文照單字斷；回傳下一行的 y
 // 句尾標點（，。」…）不放到新的一行開頭，寧可這一行稍微長一點
 const NO_LINE_START = /^[\uff0c\u3002\u3001\uff1b\uff1a\u300d\u300f\uff01\uff1f\u2026\uff09\u201d]$/;
