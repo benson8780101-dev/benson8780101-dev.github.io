@@ -1,0 +1,78 @@
+<!--
+  3DP4ME – "Help a Kid to Walk and Play Again!" section
+  For: Sponsor a Child page (https://3dp4me.org/sponsor/)
+
+  HOW TO USE (WordPress):
+  1. Upload the 4 photos in /images to the Media Library.
+  2. Replace the 4 src="images/....jpg" below with their Media Library URLs.
+  3. Paste this whole block into a "Custom HTML" block on the page.
+  The site's translator (Weglot) will pick up the text for DE / AR / ZH / ES / FR.
+  Suggested translations are in For_Web_Designer.md.
+
+  All CSS is scoped under .k3d-impact so it won't affect the rest of the page.
+-->
+<section class="k3d-impact">
+  <style>
+    .k3d-impact{--navy:#2f2e62;--blue:#3a54c0;--bg:#edecf2;--card:#fff;--line:#dcdbe6;
+      background:var(--bg);padding:56px 20px 64px;text-align:center;
+      font-family:Montserrat,"Helvetica Neue",Arial,sans-serif;color:var(--navy)}
+    .k3d-impact *{box-sizing:border-box}
+    .k3d-impact h2{margin:0 auto 16px;max-width:900px;font-size:clamp(28px,4vw,44px);
+      font-weight:600;line-height:1.2;color:var(--navy)}
+    .k3d-impact .k3d-lead{margin:0 auto 40px;max-width:960px;font-size:clamp(18px,2.2vw,26px);
+      font-weight:600;line-height:1.35;color:var(--navy)}
+    .k3d-impact .k3d-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;
+      max-width:1200px;margin:0 auto 40px;padding:0;list-style:none}
+    .k3d-impact .k3d-card{background:var(--card);border:1px solid var(--line);border-radius:6px;
+      overflow:hidden;display:flex;flex-direction:column}
+    .k3d-impact .k3d-card img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+    .k3d-impact .k3d-body{padding:20px 18px 24px}
+    .k3d-impact .k3d-word{margin:0 0 8px;font-size:26px;font-weight:700;color:var(--navy)}
+    .k3d-impact .k3d-text{margin:0;font-size:16px;line-height:1.5;color:#4a4970}
+    .k3d-impact .k3d-btn{display:inline-flex;align-items:center;gap:10px;background:var(--blue);
+      color:#fff;text-decoration:none;font-weight:700;font-size:18px;padding:14px 28px;border-radius:6px}
+    .k3d-impact .k3d-btn:hover{filter:brightness(1.1)}
+    .k3d-impact .k3d-btn svg{width:22px;height:22px;fill:#fff}
+    @media (max-width:960px){.k3d-impact .k3d-grid{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:520px){.k3d-impact .k3d-grid{grid-template-columns:1fr;max-width:380px}}
+  </style>
+
+  <h2>Help a Kid to Walk and Play Again!</h2>
+  <p class="k3d-lead">We provide each patient with a custom 3D printed prosthesis, which includes physical therapy, psychosocial support, and home visits to check maintenance requests.</p>
+
+  <ul class="k3d-grid">
+    <li class="k3d-card">
+      <img src="images/freedom.jpg" alt="A boy kicks a soccer ball outdoors with his prosthetic leg" loading="lazy" width="800" height="1000">
+      <div class="k3d-body">
+        <h3 class="k3d-word">Freedom</h3>
+        <p class="k3d-text">Going where they want to go, on their own.</p>
+      </div>
+    </li>
+    <li class="k3d-card">
+      <img src="images/hope.jpg" alt="A child stands tall on two new prosthetic legs" loading="lazy" width="800" height="1000">
+      <div class="k3d-body">
+        <h3 class="k3d-word">Hope</h3>
+        <p class="k3d-text">Daring to dream about the future again.</p>
+      </div>
+    </li>
+    <li class="k3d-card">
+      <img src="images/belonging.jpg" alt="A toddler takes steps holding her parents' hands" loading="lazy" width="800" height="1000">
+      <div class="k3d-body">
+        <h3 class="k3d-word">Belonging</h3>
+        <p class="k3d-text">Back with family, friends, and community.</p>
+      </div>
+    </li>
+    <li class="k3d-card">
+      <img src="images/confidence.jpg" alt="A smiling girl gives a thumbs-up on her new prosthetic leg" loading="lazy" width="800" height="1000">
+      <div class="k3d-body">
+        <h3 class="k3d-word">Confidence</h3>
+        <p class="k3d-text">Standing tall and believing in themselves.</p>
+      </div>
+    </li>
+  </ul>
+
+  <a class="k3d-btn" href="/donate">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.6-10-9.4C.4 8.3 2.3 4 6.4 4c2.3 0 4 1.3 5.6 3.3C13.6 5.3 15.3 4 17.6 4c4.1 0 6 4.3 4.4 7.6C19.5 16.4 12 21 12 21z"/></svg>
+    Donate
+  </a>
+</section>
