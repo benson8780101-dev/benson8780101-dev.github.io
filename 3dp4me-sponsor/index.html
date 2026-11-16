@@ -25,27 +25,27 @@
 const T = {
   en:{name:"English",dir:"ltr",h:"Help a Kid to Walk and Play Again!",
     p:"We provide each patient with a custom 3D printed prosthesis, which includes physical therapy, psychosocial support, and home visits to check maintenance requests.",
-    v:[["Freedom","Going where they want to go, on their own."],["Hope","Daring to dream about the future again."],["Belonging","Back with family, friends, and community."],["Confidence","Standing tall and believing in themselves."]],
+    v:[["Mobility","Going where they want to go, on their own."],["Hope","Daring to dream about the future again."],["Belonging","Back with family, friends, and community."],["Confidence","Standing tall and believing in themselves."]],
     b:"Donate",u:"/donate"},
   de:{name:"Deutsch",dir:"ltr",h:"Helfen Sie einem Kind, wieder zu laufen und zu spielen!",
     p:"Wir versorgen jeden Patienten mit einer individuell angefertigten Prothese aus dem 3D-Drucker. Dazu gehören Physiotherapie, psychosoziale Unterstützung und Hausbesuche, bei denen wir Wartungsanfragen prüfen.",
-    v:[["Freiheit","Selbst dorthin gehen, wohin sie möchten."],["Hoffnung","Wieder von der Zukunft träumen."],["Zugehörigkeit","Wieder mitten in Familie, Freundeskreis und Gemeinschaft."],["Selbstvertrauen","Aufrecht stehen und an sich selbst glauben."]],
+    v:[["Mobilität","Selbst dorthin gehen, wohin sie möchten."],["Hoffnung","Wieder von der Zukunft träumen."],["Zugehörigkeit","Wieder mitten in Familie, Freundeskreis und Gemeinschaft."],["Selbstvertrauen","Aufrecht stehen und an sich selbst glauben."]],
     b:"Spenden",u:"/de/donate/"},
   ar:{name:"العربية",dir:"rtl",h:"ساعد طفلاً على المشي واللعب من جديد!",
     p:"نوفّر لكل مريض طرفًا اصطناعيًا مصممًا خصيصًا له ومطبوعًا بتقنية الطباعة ثلاثية الأبعاد، ويشمل ذلك العلاج الطبيعي والدعم النفسي والاجتماعي والزيارات المنزلية لمتابعة طلبات الصيانة.",
-    v:[["الحرية","يذهبون إلى حيث يريدون، بأنفسهم."],["الأمل","يجرؤون على الحلم بالمستقبل من جديد."],["الانتماء","يعودون إلى عائلاتهم وأصدقائهم ومجتمعهم."],["الثقة","يقفون بثبات ويؤمنون بأنفسهم."]],
+    v:[["التنقّل","يذهبون إلى حيث يريدون، بأنفسهم."],["الأمل","يجرؤون على الحلم بالمستقبل من جديد."],["الانتماء","يعودون إلى عائلاتهم وأصدقائهم ومجتمعهم."],["الثقة","يقفون بثبات ويؤمنون بأنفسهم."]],
     b:"تبرّع",u:"/ar/donate/"},
   zh:{name:"简体中文",dir:"ltr",h:"帮助孩子重新行走、尽情玩耍！",
     p:"我们为每位患者量身打造3D打印义肢，并提供物理治疗、心理社会支持，以及上门家访，跟进义肢的维修需求。",
-    v:[["自由","想去哪里，就能自己走去。"],["希望","重新敢于梦想未来。"],["归属","重新回到家人、朋友和社区之中。"],["自信","抬头挺胸，相信自己。"]],
+    v:[["行动力","想去哪里，就能自己走去。"],["希望","重新敢于梦想未来。"],["归属","重新回到家人、朋友和社区之中。"],["自信","抬头挺胸，相信自己。"]],
     b:"捐款",u:"/zh/donate/"},
   es:{name:"Español",dir:"ltr",h:"¡Ayuda a un niño a volver a caminar y jugar!",
     p:"Proporcionamos a cada paciente una prótesis personalizada impresa en 3D, que incluye fisioterapia, apoyo psicosocial y visitas a domicilio para atender las solicitudes de mantenimiento.",
-    v:[["Libertad","Ir a donde quieran, por sí mismos."],["Esperanza","Atreverse a soñar de nuevo con el futuro."],["Pertenencia","De vuelta con su familia, sus amigos y su comunidad."],["Confianza","Mantenerse firmes y creer en sí mismos."]],
+    v:[["Movilidad","Ir a donde quieran, por sí mismos."],["Esperanza","Atreverse a soñar de nuevo con el futuro."],["Pertenencia","De vuelta con su familia, sus amigos y su comunidad."],["Confianza","Mantenerse firmes y creer en sí mismos."]],
     b:"Donar",u:"/es/donate/"},
   fr:{name:"Français",dir:"ltr",h:"Aidez un enfant à marcher et à jouer de nouveau !",
     p:"Nous fournissons à chaque patient une prothèse sur mesure imprimée en 3D, accompagnée de kinésithérapie, d’un soutien psychosocial et de visites à domicile pour suivre les demandes d’entretien.",
-    v:[["Liberté","Aller où ils veulent, par eux-mêmes."],["Espoir","Oser rêver à nouveau de l’avenir."],["Appartenance","Retrouver leur famille, leurs amis et leur communauté."],["Confiance","Se tenir droit et croire en soi."]],
+    v:[["Mobilité","Aller où ils veulent, par eux-mêmes."],["Espoir","Oser rêver à nouveau de l’avenir."],["Appartenance","Retrouver leur famille, leurs amis et leur communauté."],["Confiance","Se tenir droit et croire en soi."]],
     b:"Faire un don",u:"/fr/donate/"}
 };
 const IMG=["images/freedom.jpg","images/hope.jpg","images/belonging.jpg","images/confidence.jpg"];
@@ -130,26 +130,26 @@ fetch("section.html").then(r=>{ if(!r.ok) throw new Error(r.status); return r.te
     <li class="k3d-card">
       <img src="images/freedom.jpg" alt="A boy kicks a soccer ball outdoors with his prosthetic leg" loading="lazy" width="800" height="1000">
       <div class="k3d-body">
-        <h3 class="k3d-word">Freedom</h3>
+        <h3 class="k3d-word">Mobility</h3>
         <p class="k3d-text">Going where they want to go, on their own.</p>
       </div>
     </li>
     <li class="k3d-card">
-      <img src="images/hope.jpg" alt="A child stands tall on two new prosthetic legs" loading="lazy" width="800" height="1000">
+      <img src="images/hope.jpg" alt="A smiling boy in uniform salutes, dreaming of his future" loading="lazy" width="800" height="1000">
       <div class="k3d-body">
         <h3 class="k3d-word">Hope</h3>
         <p class="k3d-text">Daring to dream about the future again.</p>
       </div>
     </li>
     <li class="k3d-card">
-      <img src="images/belonging.jpg" alt="A toddler takes steps holding her parents' hands" loading="lazy" width="800" height="1000">
+      <img src="images/belonging.jpg" alt="Two girls laugh and play together on a swing" loading="lazy" width="800" height="1000">
       <div class="k3d-body">
         <h3 class="k3d-word">Belonging</h3>
         <p class="k3d-text">Back with family, friends, and community.</p>
       </div>
     </li>
     <li class="k3d-card">
-      <img src="images/confidence.jpg" alt="A smiling girl gives a thumbs-up on her new prosthetic leg" loading="lazy" width="800" height="1000">
+      <img src="images/confidence.jpg" alt="A girl stands proudly on her new prosthetic leg, arms crossed and smiling" loading="lazy" width="800" height="1000">
       <div class="k3d-body">
         <h3 class="k3d-word">Confidence</h3>
         <p class="k3d-text">Standing tall and believing in themselves.</p>
