@@ -53,6 +53,9 @@ ol.steps li > div{min-width:0}
 .btn.ghost{background:transparent;color:var(--accent);border:1.5px solid var(--accent)}
 .note{font-size:14px;color:var(--muted)}
 .soon{background:var(--warn-soft);color:var(--warn-ink);border-radius:12px;padding:12px 14px;font-size:14px}
+.tplbox{margin-top:10px;display:flex;flex-direction:column;gap:8px}
+.tpl{margin:0;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:12px;font:14px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace;white-space:pre-wrap;word-break:break-word;color:var(--ink);user-select:all}
+.copy2{align-self:flex-start;border:1.5px solid var(--accent);background:transparent;color:var(--accent);border-radius:999px;padding:6px 14px;font:600 14px var(--body);cursor:pointer}
 .trust{display:flex;flex-direction:column;gap:6px;font-size:14px;color:var(--muted);border-top:1px solid var(--line);padding-top:16px}
 .trust a{color:var(--accent)}
 .mail{user-select:all;font-weight:600;color:var(--ink)}
@@ -116,8 +119,21 @@ html[lang="zh-Hant"] [data-l="zh"]{display:revert}
         <a class="btn" href="https://giving.ywammontana.org/support" target="_blank" rel="noopener"><span data-l="en">Open giving page →</span><span data-l="zh">打開奉獻頁面 →</span></a></div></li>
       <li><div><span data-l="en">Under <span class="k">Designated For</span>, choose</span><span data-l="zh">在 <span class="k">Designated For</span> 選</span> <span class="pill">YWAM Taiwan</span></div></li>
       <li><div><span data-l="en">Fill in your details and card or bank account, then press <span class="k">Donate</span>. You can give once or monthly. YWAM Montana emails you a US tax receipt.</span><span data-l="zh">填好你的資料和信用卡或銀行帳戶，按 <span class="k">Donate</span>。可以選單次或每月固定奉獻。YWAM Montana 會寄美國抵稅收據給你。</span></div></li>
-      <li><div><span data-l="en">The US form has no place for our code, so please send YWAM Taiwan a short email after you give. Include <span class="pill">TS2502</span>, your name, the amount and the date. That way your gift reaches us.</span><span data-l="zh">美國的表單沒有地方寫我們的代碼，所以奉獻完請寄一封簡短的信給 YWAM 台灣，寫上 <span class="pill">TS2502</span>、你的名字、金額和日期，奉獻才會轉給我們。</span><br>
-        <span class="mail">donations.ywamtw@gmail.com</span></div></li>
+      <li><div><span data-l="en">The US form has no place for our code. So after you give, please send YWAM Taiwan a short email. Without it, they can't tell the gift is for us.</span><span data-l="zh">美國的表單沒有地方寫我們的代碼，所以奉獻完請寄一封短信給 YWAM 台灣。不寄的話，差會不知道這筆奉獻是給我們的。</span>
+        <div class="tplbox">
+          <div class="tplrow"><span class="k"><span data-l="en">Send to</span><span data-l="zh">寄到</span></span> <span class="mail">donations.ywamtw@gmail.com</span></div>
+          <div class="tplrow"><span class="k"><span data-l="en">Copy this email and fill in the blanks:</span><span data-l="zh">複製這封信，填上空白處：</span></span></div>
+<pre class="tpl" id="tpl">Subject: Gift via YWAM Montana for TS2502
+
+Hello,
+I gave through YWAM Montana for staff TS2502 (Benson &amp; Esther).
+My name: ________
+Amount: US$ ________
+Date: ________
+Thank you!</pre>
+          <button class="copy2" id="copyTpl"><span data-l="en">Copy email</span><span data-l="zh">複製信件內容</span></button>
+          <div class="soon"><span data-l="en"><span class="k">My name</span> means your own name, not ours. <span class="k">TS2502</span> is our staff code and is already filled in.</span><span data-l="zh"><span class="k">My name</span> 填你自己的名字，不是我們的名字。<span class="k">TS2502</span> 是我們的同工代碼，已經幫你寫好了。</span></div>
+        </div></div></li>
     </ol>
   </section>
 
@@ -152,6 +168,15 @@ html[lang="zh-Hant"] [data-l="zh"]{display:revert}
       });
     };
   });
+
+  // Copy the US email template; fall back to selecting it if the clipboard is refused
+  var tb=document.getElementById('copyTpl');
+  tb.onclick=function(){
+    var pre=document.getElementById('tpl');
+    var ok=function(){var o=tb.innerHTML;tb.textContent=root.lang==='en'?'Copied ✓':'已複製 ✓';setTimeout(function(){tb.innerHTML=o},1600)};
+    var sel=function(){var r=document.createRange();r.selectNodeContents(pre);var s=getSelection();s.removeAllRanges();s.addRange(r)};
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(pre.textContent).then(ok,sel)}else{sel()}
+  };
 
   var btn=document.getElementById('copyBtn');
   btn.onclick=function(){
