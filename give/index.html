@@ -36,6 +36,7 @@ h1{font:700 clamp(30px,8vw,40px)/1.1 var(--display);margin:0;text-wrap:balance}
 .code .val{font:700 34px/1 var(--display);letter-spacing:.04em;font-variant-numeric:tabular-nums}
 .code .hint{font-size:14px;opacity:.92}
 .copy{border:1.5px solid currentColor;background:transparent;color:inherit;border-radius:999px;padding:6px 14px;font:600 14px var(--body);cursor:pointer}
+.choose{margin:0 0 -12px;font-weight:600}
 .tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 .tabs button{border:1.5px solid var(--line);background:var(--surface);color:var(--ink);border-radius:12px;padding:12px;font:600 15px var(--body);cursor:pointer;text-align:left}
 .tabs button small{display:block;font-weight:400;color:var(--muted);font-size:13px}
@@ -88,13 +89,28 @@ html[lang="zh-Hant"] [data-l="zh"]{display:revert}
     <span class="hint"><span data-l="en">Without this code, your gift goes to YWAM Taiwan's general fund instead of to us.</span><span data-l="zh">沒寫代碼的話，奉獻會變成差會的一般經費，不會轉給我們。</span></span>
   </section>
 
-  <div class="tabs" role="tablist" aria-label="Where are you giving from?">
-    <button role="tab" id="t-us" aria-selected="true" aria-controls="p-us">🇺🇸 <span data-l="en">United States</span><span data-l="zh">美國</span><small><span data-l="en">Tax-deductible</span><span data-l="zh">可以抵稅</span></small></button>
-    <button role="tab" id="t-int" aria-selected="false" aria-controls="p-int">🌍 <span data-l="en">Europe &amp; elsewhere</span><span data-l="zh">歐洲和其他國家</span><small><span data-l="en">Card payment</span><span data-l="zh">刷卡</span></small></button>
+  <p class="choose"><span data-l="en">Two ways to give. Pick the one that fits you.</span><span data-l="zh">兩種奉獻方式，選適合你的就好。</span></p>
+  <div class="tabs" role="tablist" aria-label="How would you like to give?">
+    <button role="tab" id="t-int" aria-selected="true" aria-controls="p-int">💳 <span data-l="en">Card, from any country</span><span data-l="zh">刷卡（任何國家）</span><small><span data-l="en">Simplest. No tax receipt needed.</span><span data-l="zh">最簡單，不需要抵稅收據</span></small></button>
+    <button role="tab" id="t-us" aria-selected="false" aria-controls="p-us">🇺🇸 <span data-l="en">US tax receipt</span><span data-l="zh">需要美國抵稅收據</span><small><span data-l="en">Tax-deductible in the US</span><span data-l="zh">可以在美國抵稅</span></small></button>
   </div>
 
-  <section class="panel" role="tabpanel" id="p-us" aria-labelledby="t-us">
-    <h2><span data-l="en">Give from the US</span><span data-l="zh">從美國奉獻</span></h2>
+  <section class="panel" role="tabpanel" id="p-int" aria-labelledby="t-int">
+    <h2><span data-l="en">Give by card, from anywhere</span><span data-l="zh">刷卡奉獻（任何國家都可以）</span></h2>
+    <p class="note" style="margin:0"><span data-l="en">Works with any credit or debit card: Visa, Mastercard or JCB. In the US and don't need a tax receipt? This is the easiest way.</span><span data-l="zh">信用卡、簽帳金融卡都可以（Visa、Mastercard、JCB）。在美國、但不需要抵稅收據的朋友，用這個方法最簡單。</span></p>
+    <ol class="steps">
+      <li><div><span data-l="en">Open YWAM Taiwan's secure card page (run by ECPay, a Taiwanese payment company). Amounts are in Taiwan dollars (NT$). Your card converts them for you. NT$1,000 is roughly €30 or US$32.</span><span data-l="zh">打開 YWAM 台灣的刷卡頁面（由台灣金流公司綠界 ECPay 處理）。金額是新台幣，你的卡會自動換算。新台幣 1,000 元大約是 30 歐元或 32 美元。</span><br>
+        <a class="btn" href="https://pay.ecpay.com.tw/CreditPayment/ExpressCredit?Enn=e&amp;MerchantID=3200994" target="_blank" rel="noopener"><span data-l="en">Open card page →</span><span data-l="zh">打開刷卡頁面 →</span></a></div></li>
+      <li><div><span data-l="en">In the notes field, write</span><span data-l="zh">在備註欄寫上</span> <span class="pill">TS2502, <span data-l="en">your full name</span><span data-l="zh">你的全名</span></span></div></li>
+      <li><div><span data-l="en">After you give, fill in this short form so YWAM Taiwan can match your gift to us and send you a receipt.</span><span data-l="zh">奉獻完填一下這份簡短表單，差會才能把奉獻對到我們，並寄收據給你。</span><br>
+        <a class="btn ghost" href="https://forms.gle/q1BJJDQ4gAjKzQ156" target="_blank" rel="noopener"><span data-l="en">Open the form →</span><span data-l="zh">打開表單 →</span></a></div></li>
+    </ol>
+    <p class="note"><span data-l="en">A 3.5% card fee comes out of the gift. US cards: a card with no foreign transaction fee saves you a little more.</span><span data-l="zh">國外的卡會從奉獻金額扣 3.5% 手續費。美國朋友用「免國外交易手續費」的卡會更省。</span></p>
+    <div class="soon"><span data-l="en">Prefer a bank transfer? International wire details are coming soon. Reply to our newsletter, and we'll send them to you.</span><span data-l="zh">想用銀行匯款嗎？國際匯款資料還在準備中。回覆我們的代禱信，我們會寄給你。</span></div>
+  </section>
+
+  <section class="panel" role="tabpanel" id="p-us" aria-labelledby="t-us" hidden>
+    <h2><span data-l="en">Give with a US tax receipt</span><span data-l="zh">需要美國抵稅收據</span></h2>
     <ol class="steps">
       <li><div><span data-l="en">Open the YWAM Montana giving page. YWAM Montana is a US partner that receives gifts for YWAM Taiwan.</span><span data-l="zh">打開 YWAM Montana 奉獻頁面。YWAM Montana 是在美國幫 YWAM 台灣代收奉獻的夥伴機構。</span><br>
         <a class="btn" href="https://giving.ywammontana.org/support" target="_blank" rel="noopener"><span data-l="en">Open giving page →</span><span data-l="zh">打開奉獻頁面 →</span></a></div></li>
@@ -103,19 +119,6 @@ html[lang="zh-Hant"] [data-l="zh"]{display:revert}
       <li><div><span data-l="en">The US form has no place for our code, so please send YWAM Taiwan a short email after you give. Include <span class="pill">TS2502</span>, your name, the amount and the date. That way your gift reaches us.</span><span data-l="zh">美國的表單沒有地方寫我們的代碼，所以奉獻完請寄一封簡短的信給 YWAM 台灣，寫上 <span class="pill">TS2502</span>、你的名字、金額和日期，奉獻才會轉給我們。</span><br>
         <span class="mail">donations.ywamtw@gmail.com</span></div></li>
     </ol>
-  </section>
-
-  <section class="panel" role="tabpanel" id="p-int" aria-labelledby="t-int" hidden>
-    <h2><span data-l="en">Give from Europe or elsewhere</span><span data-l="zh">從歐洲或其他國家奉獻</span></h2>
-    <ol class="steps">
-      <li><div><span data-l="en">Open YWAM Taiwan's secure card page (run by ECPay, a Taiwanese payment company). Amounts are in Taiwan dollars (NT$). Your card converts them for you. NT$1,000 is roughly €30 or US$32.</span><span data-l="zh">打開 YWAM 台灣的刷卡頁面（由台灣金流公司綠界 ECPay 處理）。金額是新台幣，你的卡會自動換算。新台幣 1,000 元大約是 30 歐元或 32 美元。</span><br>
-        <a class="btn" href="https://pay.ecpay.com.tw/CreditPayment/ExpressCredit?Enn=e&amp;MerchantID=3200994" target="_blank" rel="noopener"><span data-l="en">Open card page →</span><span data-l="zh">打開刷卡頁面 →</span></a></div></li>
-      <li><div><span data-l="en">In the notes field, write</span><span data-l="zh">在備註欄寫上</span> <span class="pill">TS2502, <span data-l="en">your full name</span><span data-l="zh">你的全名</span></span></div></li>
-      <li><div><span data-l="en">After you give, fill in this short form so YWAM Taiwan can match your gift to us and send you a receipt.</span><span data-l="zh">奉獻完填一下這份簡短表單，差會才能把奉獻對到我們，並寄收據給你。</span><br>
-        <a class="btn ghost" href="https://forms.gle/q1BJJDQ4gAjKzQ156" target="_blank" rel="noopener"><span data-l="en">Open the form →</span><span data-l="zh">打開表單 →</span></a></div></li>
-    </ol>
-    <p class="note"><span data-l="en">Card companies charge a 3.5% fee, which comes out of the gift.</span><span data-l="zh">國外信用卡會扣 3.5% 手續費，從奉獻金額裡扣。</span></p>
-    <div class="soon"><span data-l="en">Prefer a bank transfer? International wire details are coming soon. Reply to our newsletter, and we'll send them to you.</span><span data-l="zh">想用銀行匯款嗎？國際匯款資料還在準備中。回覆我們的代禱信，我們會寄給你。</span></div>
   </section>
 
   <footer class="trust">
@@ -139,7 +142,7 @@ html[lang="zh-Hant"] [data-l="zh"]{display:revert}
   var saved=null; try{saved=localStorage.getItem('give-lang')}catch(e){}
   setLang(saved || ((navigator.language||'').toLowerCase().indexOf('zh')===0 ? 'zh' : 'en'));
 
-  var tabs=[['t-us','p-us'],['t-int','p-int']];
+  var tabs=[['t-int','p-int'],['t-us','p-us']];
   tabs.forEach(function(p){
     document.getElementById(p[0]).onclick=function(){
       tabs.forEach(function(q){
@@ -149,8 +152,6 @@ html[lang="zh-Hant"] [data-l="zh"]{display:revert}
       });
     };
   });
-  // Europeans see their tab first, guessed from the browser's time zone
-  try{ if(/^Europe\//.test(Intl.DateTimeFormat().resolvedOptions().timeZone)) document.getElementById('t-int').click(); }catch(e){}
 
   var btn=document.getElementById('copyBtn');
   btn.onclick=function(){
