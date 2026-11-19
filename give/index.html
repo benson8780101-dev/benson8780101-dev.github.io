@@ -64,7 +64,12 @@ ol.steps li > div{min-width:0}
 .trust{display:flex;flex-direction:column;gap:6px;font-size:14px;color:var(--muted);border-top:1px solid var(--line);padding-top:16px}
 .trust a{color:var(--accent)}
 .mail{user-select:all;font-weight:600;color:var(--ink)}
+.btn,.copy,.copy2,.tabs button{min-height:44px}
+.lang button{min-height:34px}
+.btn{display:inline-flex;align-items:center}
 button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+/* Needed on the public site: .panel's display:flex would otherwise override the hidden attribute, showing both options at once */
+[hidden]{display:none!important}
 [data-l="zh"]{display:none}
 html[lang="zh-Hant"] [data-l="en"]{display:none}
 html[lang="zh-Hant"] [data-l="zh"]{display:revert}
@@ -119,7 +124,7 @@ html[lang="zh-Hant"] [data-l="zh"]{display:revert}
     <ol class="steps">
       <li><div><span data-l="en">Open YWAM Taiwan's secure card page (run by ECPay, a Taiwanese payment company). Amounts are in Taiwan dollars (NT$). Your card converts them for you. NT$1,000 is roughly €30 or US$32.</span><span data-l="zh">打開 YWAM 台灣的刷卡頁面（由台灣金流公司綠界 ECPay 處理）。金額是新台幣，你的卡會自動換算。新台幣 1,000 元大約是 30 歐元或 32 美元。</span><br>
         <a class="btn" href="https://pay.ecpay.com.tw/CreditPayment/ExpressCredit?Enn=e&amp;MerchantID=3200994" target="_blank" rel="noopener"><span data-l="en">Open card page →</span><span data-l="zh">打開刷卡頁面 →</span></a></div></li>
-      <li><div><span data-l="en">In the <span class="k">Remarks (備註)</span> box, write</span><span data-l="zh">在 <span class="k">Remarks（備註）</span>欄寫上</span> <span class="pill">TS2502, <span data-l="en">your full name</span><span data-l="zh">你的全名</span></span>
+      <li><div><span data-l="en">In the <span class="k">Remarks</span> box, write</span><span data-l="zh">在 <span class="k">Remarks（備註）</span>欄寫上</span> <span class="pill">TS2502, <span data-l="en">your full name</span><span data-l="zh">你的全名</span></span>
         <div class="soon" style="margin-top:8px"><span data-l="en">Please write <span class="k">your own name</span>, not ours. For example: <span class="k">TS2502, Tom Smith</span></span><span data-l="zh">請寫<span class="k">你自己的名字</span>，不是我們的名字。例如：<span class="k">TS2502, 王大明</span></span></div>
         <div class="note" style="margin-top:6px"><span data-l="en">That's all. The code tells YWAM Taiwan the gift is for us, so you don't need to send anything else.</span><span data-l="zh">這樣就完成了。差會看到代碼就知道是給我們的，不用再另外通知。</span></div>
         <div class="note" style="margin-top:6px"><span data-l="en">Want to give every month? Under payment method, choose <span class="k">定期定額</span> (recurring) and pick how often.</span><span data-l="zh">想每月固定奉獻？付款方式選 <span class="k">定期定額</span>，再選多久扣一次。</span></div></div></li>
