@@ -56,6 +56,11 @@ ol.steps li > div{min-width:0}
 .tplbox{margin-top:10px;display:flex;flex-direction:column;gap:8px}
 .tpl{margin:0;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:12px;font:14px/1.55 ui-monospace,SFMono-Regular,Menlo,monospace;white-space:pre-wrap;word-break:break-word;color:var(--ink);user-select:all}
 .copy2{align-self:flex-start;border:1.5px solid var(--accent);background:transparent;color:var(--accent);border-radius:999px;padding:6px 14px;font:600 14px var(--body);cursor:pointer}
+.where{display:flex;flex-direction:column;gap:8px;padding-block:4px}
+.where h2{font:600 17px/1.3 var(--display);margin:0}
+.where p{margin:0;color:var(--muted);font-size:15px;max-width:62ch}
+.where .links{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:15px;font-weight:600}
+.where .links a{color:var(--accent)}
 .trust{display:flex;flex-direction:column;gap:6px;font-size:14px;color:var(--muted);border-top:1px solid var(--line);padding-top:16px}
 .trust a{color:var(--accent)}
 .mail{user-select:all;font-weight:600;color:var(--ink)}
@@ -83,6 +88,16 @@ html[lang="zh-Hant"] [data-l="zh"]{display:revert}
     </p>
   </header>
 
+  <section class="where" aria-label="Where your gift goes">
+    <h2><span data-l="en">Where your gift goes</span><span data-l="zh">奉獻會到哪裡</span></h2>
+    <p><span data-l="en">Your gift goes to <span class="k">YWAM Taiwan</span>, not to a personal account. YWAM Taiwan is part of Youth With A Mission, an international mission movement, and has served in Taiwan for over 30 years. They keep the records and pass support on to us.</span><span data-l="zh">你的奉獻是進到 <span class="k">YWAM 台灣青年使命團</span>，不是進到個人帳戶。YWAM 台灣是國際青年使命團（Youth With A Mission）的一份子，在台灣服事超過 30 年，由他們記帳，再把支持轉給我們。</span></p>
+    <p><span data-l="en">On the card page you'll see the recipient <span class="k">社團法人青年使命團</span>. That is YWAM Taiwan's registered name in Taiwan.</span><span data-l="zh">在刷卡頁面上，你會看到收款單位是 <span class="k">社團法人青年使命團</span>，也就是 YWAM 台灣在台灣登記的正式名稱。</span></p>
+    <div class="links">
+      <a href="https://www.ywamtaiwan.org/about-en" target="_blank" rel="noopener"><span data-l="en">About YWAM Taiwan →</span><span data-l="zh">認識 YWAM 台灣 →</span></a>
+      <a href="https://www.ywamtaiwan.org/donate" target="_blank" rel="noopener"><span data-l="en">Their official giving page →</span><span data-l="zh">差會官方奉獻頁 →</span></a>
+    </div>
+  </section>
+
   <section class="code" aria-label="Our code">
     <span class="lbl"><span data-l="en">Our staff code. Add it to every gift.</span><span data-l="zh">我們的同工代碼，每次奉獻都要寫</span></span>
     <div class="row">
@@ -104,9 +119,10 @@ html[lang="zh-Hant"] [data-l="zh"]{display:revert}
     <ol class="steps">
       <li><div><span data-l="en">Open YWAM Taiwan's secure card page (run by ECPay, a Taiwanese payment company). Amounts are in Taiwan dollars (NT$). Your card converts them for you. NT$1,000 is roughly €30 or US$32.</span><span data-l="zh">打開 YWAM 台灣的刷卡頁面（由台灣金流公司綠界 ECPay 處理）。金額是新台幣，你的卡會自動換算。新台幣 1,000 元大約是 30 歐元或 32 美元。</span><br>
         <a class="btn" href="https://pay.ecpay.com.tw/CreditPayment/ExpressCredit?Enn=e&amp;MerchantID=3200994" target="_blank" rel="noopener"><span data-l="en">Open card page →</span><span data-l="zh">打開刷卡頁面 →</span></a></div></li>
-      <li><div><span data-l="en">In the <span class="k">Remarks</span> box, write</span><span data-l="zh">在 <span class="k">Remarks</span>（備註）欄寫上</span> <span class="pill">TS2502, <span data-l="en">your full name</span><span data-l="zh">你的全名</span></span>
+      <li><div><span data-l="en">In the <span class="k">Remarks (備註)</span> box, write</span><span data-l="zh">在 <span class="k">Remarks（備註）</span>欄寫上</span> <span class="pill">TS2502, <span data-l="en">your full name</span><span data-l="zh">你的全名</span></span>
         <div class="soon" style="margin-top:8px"><span data-l="en">Please write <span class="k">your own name</span>, not ours. For example: <span class="k">TS2502, Tom Smith</span></span><span data-l="zh">請寫<span class="k">你自己的名字</span>，不是我們的名字。例如：<span class="k">TS2502, 王大明</span></span></div>
-        <div class="note" style="margin-top:6px"><span data-l="en">That's all. The code tells YWAM Taiwan the gift is for us, so you don't need to send anything else.</span><span data-l="zh">這樣就完成了。差會看到代碼就知道是給我們的，不用再另外通知。</span></div></div></li>
+        <div class="note" style="margin-top:6px"><span data-l="en">That's all. The code tells YWAM Taiwan the gift is for us, so you don't need to send anything else.</span><span data-l="zh">這樣就完成了。差會看到代碼就知道是給我們的，不用再另外通知。</span></div>
+        <div class="note" style="margin-top:6px"><span data-l="en">Want to give every month? Under payment method, choose <span class="k">定期定額</span> (recurring) and pick how often.</span><span data-l="zh">想每月固定奉獻？付款方式選 <span class="k">定期定額</span>，再選多久扣一次。</span></div></div></li>
     </ol>
     <p class="note"><span data-l="en">A 3.5% card fee comes out of the gift. US cards: a card with no foreign transaction fee saves you a little more.</span><span data-l="zh">國外的卡會從奉獻金額扣 3.5% 手續費。美國朋友用「免國外交易手續費」的卡會更省。</span></p>
     <div class="soon"><span data-l="en">Prefer a bank transfer? International wire details are coming soon. Reply to our newsletter, and we'll send them to you.</span><span data-l="zh">想用銀行匯款嗎？國際匯款資料還在準備中。回覆我們的代禱信，我們會寄給你。</span></div>
@@ -138,7 +154,6 @@ Thank you!</pre>
   </section>
 
   <footer class="trust">
-    <span><span data-l="en">This is YWAM Taiwan's official giving information:</span><span data-l="zh">這些是 YWAM 台灣的官方奉獻資料：</span> <a href="https://www.ywamtaiwan.org/donate" target="_blank" rel="noopener">ywamtaiwan.org/donate</a></span>
     <span><span data-l="en">Questions about a gift or receipt:</span><span data-l="zh">奉獻或收據有問題：</span> <span class="mail">donations.ywamtw@gmail.com</span></span>
     <span><span data-l="en">Thank you for standing with us. Benson and Esther</span><span data-l="zh">謝謝你和我們站在一起。Benson and Esther</span></span>
   </footer>
