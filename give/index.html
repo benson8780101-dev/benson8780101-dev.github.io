@@ -123,7 +123,7 @@ html[lang="zh-Hant"] [data-l="zh"]{display:revert}
   <p class="choose"><span data-l="en">Choose how to give:</span><span data-l="zh">兩種奉獻方式，選適合你的就好。</span></p>
   <div class="tabs" role="tablist" aria-label="How would you like to give?">
     <button role="tab" id="t-int" aria-selected="true" aria-controls="p-int">💳 <span data-l="en">Card, from any country</span><span data-l="zh">刷卡（任何國家）</span><small><span data-l="en">Simplest. No tax receipt needed.</span><span data-l="zh">最簡單，不需要抵稅收據</span></small></button>
-    <button role="tab" id="t-us" aria-selected="false" aria-controls="p-us">🇺🇸 <span data-l="en">US tax receipt</span><span data-l="zh">需要美國抵稅收據</span><small><span data-l="en">Tax-deductible in the US</span><span data-l="zh">可以在美國抵稅</span></small></button>
+    <button role="tab" id="t-us" aria-selected="false" aria-controls="p-us">🇺🇸 <span data-l="en">US tax receipt</span><span data-l="zh">需要美國抵稅收據</span><small><span data-l="en">Coming soon</span><span data-l="zh">即將開放</span></small></button>
   </div>
 
   <section class="panel" role="tabpanel" id="p-int" aria-labelledby="t-int">
@@ -155,6 +155,16 @@ html[lang="zh-Hant"] [data-l="zh"]{display:revert}
 
   <section class="panel" role="tabpanel" id="p-us" aria-labelledby="t-us" hidden>
     <h2><span data-l="en">Give with a US tax receipt</span><span data-l="zh">需要美國抵稅收據</span></h2>
+    <!-- PAUSED 2026-11-20: our YWAM Montana account is being set up. Until we have our Project Number,
+         gifts made the old way may not reach us, so the steps are hidden (not deleted).
+         To reopen: remove the "Coming soon" box and the hidden attribute on #us-steps, then update the steps. -->
+    <div class="soon" style="font-size:16px;line-height:1.6">
+      <span data-l="en"><b>Coming soon.</b> We're setting up a new way for US friends to give with a tax receipt, through YWAM Montana. It should be ready soon.<br><br>Please don't give through YWAM Montana yet, as the gift may not reach us. For now, you can give by card (no US tax receipt), or reply to our newsletter and we'll let you know as soon as it's ready.</span>
+      <span data-l="zh"><b>即將開放。</b>我們正在申請透過 YWAM Montana 讓美國朋友奉獻、取得抵稅收據的新方式，很快就會準備好。<br><br>目前請先不要透過 YWAM Montana 奉獻，因為奉獻可能沒辦法轉到我們這裡。現在可以先用刷卡奉獻（沒有美國抵稅收據），或回覆我們的代禱信，準備好時我們會第一時間通知你。</span>
+    </div>
+    <div id="us-steps" hidden>
+    <!-- Required "deputized" wording: US gifts belong to YWAM Montana, which controls the funds (that's what makes them tax-deductible). -->
+    <p class="note"><span data-l="en">Gifts in the US are made to <b>YWAM Montana</b>, a 501(c)(3) nonprofit, for our ministry through YWAM Taiwan. YWAM Montana has full control and discretion over all donated funds, and your gift is tax-deductible as allowed by law.</span><span data-l="zh">在美國的奉獻是給 <b>YWAM Montana</b>（美國立案的 501(c)(3) 非營利機構），透過 YWAM 台灣支持我們的服事。所有奉獻由 YWAM Montana 全權管理與決定用途，你的奉獻可以依法抵稅。</span></p>
     <ol class="steps">
       <li><div><span data-l="en">Open the giving page of YWAM Montana, a US partner of YWAM Taiwan.</span><span data-l="zh">打開 YWAM Montana 奉獻頁面。YWAM Montana 是在美國幫 YWAM 台灣代收奉獻的夥伴機構。</span><br>
         <a class="btn" href="https://giving.ywammontana.org/support" target="_blank" rel="noopener"><span data-l="en">Open giving page →</span><span data-l="zh">打開奉獻頁面 →</span></a></div></li>
@@ -176,6 +186,7 @@ Thank you!</pre>
           <div class="soon"><span data-l="en">Use your own name for <span class="k">My name</span>. <span class="k">TS2502</span> is already filled in.</span><span data-l="zh"><span class="k">My name</span> 填你自己的名字，不是我們的名字。<span class="k">TS2502</span> 是我們的同工代碼，已經幫你寫好了。</span></div>
         </div></div></li>
     </ol>
+    </div>
   </section>
 
   <footer class="trust">
