@@ -122,13 +122,21 @@ html[lang="zh-Hant"] [data-l="zh"]{display:revert}
 
   <p class="choose"><span data-l="en">Choose how to give:</span><span data-l="zh">兩種奉獻方式，選適合你的就好。</span></p>
   <div class="tabs" role="tablist" aria-label="How would you like to give?">
-    <button role="tab" id="t-int" aria-selected="true" aria-controls="p-int">💳 <span data-l="en">Card, from any country</span><span data-l="zh">刷卡（任何國家）</span><small><span data-l="en">Simplest. No tax receipt needed.</span><span data-l="zh">最簡單，不需要抵稅收據</span></small></button>
+    <button role="tab" id="t-int" aria-selected="true" aria-controls="p-int">💳 <span data-l="en">Card, from any country</span><span data-l="zh">刷卡（任何國家）</span><small><span data-l="en">Paused for now</span><span data-l="zh">暫停中</span></small></button>
     <button role="tab" id="t-us" aria-selected="false" aria-controls="p-us">🇺🇸 <span data-l="en">US tax receipt</span><span data-l="zh">需要美國抵稅收據</span><small><span data-l="en">Coming soon</span><span data-l="zh">即將開放</span></small></button>
   </div>
 
   <section class="panel" role="tabpanel" id="p-int" aria-labelledby="t-int">
     <h2><span data-l="en">Give by card, from anywhere</span><span data-l="zh">刷卡奉獻（任何國家都可以）</span></h2>
     <p class="note" style="margin:0"><span data-l="en">Visa, Mastercard or JCB, credit or debit. Easiest if you don't need a US tax receipt.</span><span data-l="zh">信用卡、簽帳金融卡都可以（Visa、Mastercard、JCB）。在美國、但不需要抵稅收據的朋友，用這個方法最簡單。</span></p>
+    <!-- PAUSED 2026-11-22: the ECPay page currently rejects foreign-issued cards ("We do not accept foreign issued credit cards"),
+         even for one-time gifts. YWAM Taiwan has been asked. Steps are hidden, not deleted.
+         To reopen: remove the pause box below and the hidden attribute on #card-steps. -->
+    <div class="soon" style="font-size:16px;line-height:1.6">
+      <span data-l="en"><b>Paused for now.</b> We just found out the card page isn't accepting cards from outside Taiwan at the moment. We've asked YWAM Taiwan to fix it.<br><br>Please don't try the card page yet. Reply to our newsletter and we'll let you know as soon as it works. Thank you so much for your patience and for wanting to give!</span>
+      <span data-l="zh"><b>暫停中。</b>我們剛發現刷卡頁面目前不收台灣以外發行的卡，已經請 YWAM 台灣協助處理。<br><br>目前請先不要使用刷卡頁面。回覆我們的代禱信，可以用的時候我們會第一時間通知你。謝謝你的耐心，也謝謝你願意支持我們！</span>
+    </div>
+    <div id="card-steps" hidden>
     <ol class="steps">
       <li><div><span data-l="en">Type your name, then copy the line below. You'll paste it on the card page.</span><span data-l="zh"><span class="k">先準備好備註文字。</span>輸入你的名字，再複製這一行，等一下貼到刷卡頁面。</span>
         <div class="namebox">
@@ -150,6 +158,7 @@ html[lang="zh-Hant"] [data-l="zh"]{display:revert}
         <div class="note" style="margin-top:6px"><span data-l="en">Done! The code tells YWAM Taiwan the gift is for us.</span><span data-l="zh">這樣就完成了。差會看到代碼就知道是給我們的，不用再另外通知。</span></div></div></li>
     </ol>
     <p class="note"><span data-l="en">A 3.5% card fee comes out of the gift. US cards: a card with no foreign transaction fee saves you a little more.</span><span data-l="zh">國外的卡會從奉獻金額扣 3.5% 手續費。美國朋友用「免國外交易手續費」的卡會更省。</span></p>
+    </div>
     <div class="soon"><span data-l="en">Bank transfer? International wire details are coming soon. Just reply to our newsletter.</span><span data-l="zh">想用銀行匯款嗎？國際匯款資料還在準備中。回覆我們的代禱信，我們會寄給你。</span></div>
   </section>
 
@@ -159,8 +168,8 @@ html[lang="zh-Hant"] [data-l="zh"]{display:revert}
          gifts made the old way may not reach us, so the steps are hidden (not deleted).
          To reopen: remove the "Coming soon" box and the hidden attribute on #us-steps, then update the steps. -->
     <div class="soon" style="font-size:16px;line-height:1.6">
-      <span data-l="en"><b>Coming soon.</b> We're setting up a new way for US friends to give with a tax receipt, through YWAM Montana. It should be ready soon.<br><br>Please don't give through YWAM Montana yet, as the gift may not reach us. For now, you can give by card (no US tax receipt), or reply to our newsletter and we'll let you know as soon as it's ready.</span>
-      <span data-l="zh"><b>即將開放。</b>我們正在申請透過 YWAM Montana 讓美國朋友奉獻、取得抵稅收據的新方式，很快就會準備好。<br><br>目前請先不要透過 YWAM Montana 奉獻，因為奉獻可能沒辦法轉到我們這裡。現在可以先用刷卡奉獻（沒有美國抵稅收據），或回覆我們的代禱信，準備好時我們會第一時間通知你。</span>
+      <span data-l="en"><b>Coming soon.</b> We're setting up a new way for US friends to give with a tax receipt, through YWAM Montana. It should be ready soon.<br><br>Please don't give through YWAM Montana yet, as the gift may not reach us. Please reply to our newsletter and we'll let you know as soon as it's ready.</span>
+      <span data-l="zh"><b>即將開放。</b>我們正在申請透過 YWAM Montana 讓美國朋友奉獻、取得抵稅收據的新方式，很快就會準備好。<br><br>目前請先不要透過 YWAM Montana 奉獻，因為奉獻可能沒辦法轉到我們這裡。請回覆我們的代禱信，準備好時我們會第一時間通知你。</span>
     </div>
     <div id="us-steps" hidden>
     <!-- Required "deputized" wording: US gifts belong to YWAM Montana, which controls the funds (that's what makes them tax-deductible). -->
