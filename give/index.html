@@ -77,6 +77,14 @@ ul.fields{margin:8px 0 0;padding-left:18px;display:flex;flex-direction:column;ga
 button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 /* Needed on the public site: .panel's display:flex would otherwise override the hidden attribute, showing both options at once */
 [hidden]{display:none!important}
+/* Bank transfer is the only option open right now, so it gets the full-width first tab */
+.tabs button:first-child{grid-column:1/-1}
+.bank{margin:10px 0 0;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.bank div{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:10px;padding:10px 12px;border-top:1px solid var(--line);align-items:center}
+.bank div:first-child{border-top:0}
+.bank dt{grid-column:1;font-size:13px;color:var(--muted)}
+.bank dd{grid-column:1;margin:0;font-weight:600;word-break:break-word;font-variant-numeric:tabular-nums}
+.bank .cp{grid-column:2;grid-row:1/3;border:1.5px solid var(--accent);background:transparent;color:var(--accent);border-radius:999px;padding:4px 12px;font:600 13px var(--body);cursor:pointer;min-height:36px}
 [data-l="zh"]{display:none}
 html[lang="zh-Hant"] [data-l="en"]{display:none}
 html[lang="zh-Hant"] [data-l="zh"]{display:revert}
@@ -120,21 +128,56 @@ html[lang="zh-Hant"] [data-l="zh"]{display:revert}
     <span class="hint"><span data-l="en">Without this code, your gift goes to YWAM Taiwan's general fund instead of to us.</span><span data-l="zh">沒寫代碼的話，奉獻會變成差會的一般經費，不會轉給我們。</span></span>
   </section>
 
-  <p class="choose"><span data-l="en">Choose how to give:</span><span data-l="zh">兩種奉獻方式，選適合你的就好。</span></p>
+  <p class="choose"><span data-l="en">Choose how to give:</span><span data-l="zh">三種奉獻方式，選適合你的就好。</span></p>
   <div class="tabs" role="tablist" aria-label="How would you like to give?">
-    <button role="tab" id="t-int" aria-selected="true" aria-controls="p-int">💳 <span data-l="en">Card, from any country</span><span data-l="zh">刷卡（任何國家）</span><small><span data-l="en">Paused for now</span><span data-l="zh">暫停中</span></small></button>
+    <button role="tab" id="t-bank" aria-selected="true" aria-controls="p-bank">🏦 <span data-l="en">International bank transfer</span><span data-l="zh">國際銀行匯款</span><small><span data-l="en">Open now, from any country</span><span data-l="zh">現在就可以用，任何國家都可以</span></small></button>
+    <button role="tab" id="t-int" aria-selected="false" aria-controls="p-int">💳 <span data-l="en">Card, from any country</span><span data-l="zh">刷卡（任何國家）</span><small><span data-l="en">Paused for now</span><span data-l="zh">暫停中</span></small></button>
     <button role="tab" id="t-us" aria-selected="false" aria-controls="p-us">🇺🇸 <span data-l="en">US tax receipt</span><span data-l="zh">需要美國抵稅收據</span><small><span data-l="en">Coming soon</span><span data-l="zh">即將開放</span></small></button>
   </div>
 
-  <section class="panel" role="tabpanel" id="p-int" aria-labelledby="t-int">
+  <section class="panel" role="tabpanel" id="p-bank" aria-labelledby="t-bank">
+    <h2><span data-l="en">Give by international bank transfer</span><span data-l="zh">國際銀行匯款</span></h2>
+    <p class="note" style="margin:0"><span data-l="en">From any country, through your own bank (online banking or at a branch).</span><span data-l="zh">任何國家都可以，用你自己的銀行匯款（網路銀行或臨櫃都可以）。</span></p>
+    <ol class="steps">
+      <li><div><span data-l="en">Send your gift to YWAM Taiwan's account:</span><span data-l="zh">匯到 YWAM 台灣的帳戶：</span>
+        <dl class="bank">
+          <div><dt><span data-l="en">Bank name</span><span data-l="zh">銀行名稱</span></dt><dd>HUA NAN COMMERCIAL BANK, LTD.</dd><button class="cp"><span data-l="en">Copy</span><span data-l="zh">複製</span></button></div>
+          <div><dt><span data-l="en">Branch</span><span data-l="zh">分行</span></dt><dd>DANSHUI BRANCH</dd><button class="cp"><span data-l="en">Copy</span><span data-l="zh">複製</span></button></div>
+          <div><dt><span data-l="en">Bank address</span><span data-l="zh">銀行地址</span></dt><dd>NO.28 ZHONGZHENG RD., DANSHUI DIST., NEW TAIPEI CITY, TAIWAN, R.O.C</dd><button class="cp"><span data-l="en">Copy</span><span data-l="zh">複製</span></button></div>
+          <div><dt>SWIFT / BIC</dt><dd>HNBKTWTP167</dd><button class="cp"><span data-l="en">Copy</span><span data-l="zh">複製</span></button></div>
+          <div><dt><span data-l="en">Account name</span><span data-l="zh">戶名</span></dt><dd>Youth With A Mission</dd><button class="cp"><span data-l="en">Copy</span><span data-l="zh">複製</span></button></div>
+          <div><dt><span data-l="en">Account number</span><span data-l="zh">帳號</span></dt><dd>167100085073</dd><button class="cp"><span data-l="en">Copy</span><span data-l="zh">複製</span></button></div>
+        </dl></div></li>
+      <li><div><span data-l="en">In the payment reference (sometimes called <span class="k">Remarks</span> or <span class="k">Message to recipient</span>), write:</span><span data-l="zh">在匯款備註（有些銀行叫 <span class="k">Reference</span>、<span class="k">Remarks</span> 或「給收款人的訊息」）寫：</span><br>
+        <span class="pill">TS2502, <span data-l="en">your full name</span><span data-l="zh">你的全名</span></span>
+        <div class="note" style="margin-top:4px"><span data-l="en">Your own name, not ours. For example: TS2502, Tom Smith</span><span data-l="zh">寫你自己的名字，不是我們的。例如：TS2502, Tom Smith</span></div></div></li>
+      <li><div><span data-l="en">After sending, email YWAM Taiwan a short note. Bank references can get cut off along the way, so this makes sure your gift reaches us.</span><span data-l="zh">匯完之後，寄一封短信給 YWAM 台灣。匯款備註有時會在轉匯過程中被截掉，寄了信，差會就能確定這筆是給我們的。</span>
+        <div class="tplbox">
+          <div class="tplrow"><span class="k"><span data-l="en">Send to</span><span data-l="zh">寄到</span></span> <span class="mail">donations.ywamtw@gmail.com</span></div>
+          <div class="tplrow"><span class="k"><span data-l="en">Copy this email and fill in the blanks:</span><span data-l="zh">複製這封信，填上空白處：</span></span></div>
+<pre class="tpl" id="tplBank">Subject: Bank transfer for TS2502
+
+Hello,
+I sent a gift by international bank transfer for staff TS2502 (Benson &amp; Esther).
+My name: ________
+Amount and currency: ________
+Date sent: ________
+Thank you!</pre>
+          <button class="copy2" id="copyTplBank"><span data-l="en">Copy email</span><span data-l="zh">複製信件內容</span></button>
+        </div></div></li>
+    </ol>
+    <p class="note"><span data-l="en">Your bank, and sometimes a bank in between, may charge a fee for international transfers. It's worth asking your bank before you send.</span><span data-l="zh">國際匯款通常會有手續費（你的銀行，有時還有中間轉匯的銀行）。匯款前可以先問一下你的銀行。</span></p>
+  </section>
+
+  <section class="panel" role="tabpanel" id="p-int" aria-labelledby="t-int" hidden>
     <h2><span data-l="en">Give by card, from anywhere</span><span data-l="zh">刷卡奉獻（任何國家都可以）</span></h2>
     <p class="note" style="margin:0"><span data-l="en">Visa, Mastercard or JCB, credit or debit. Easiest if you don't need a US tax receipt.</span><span data-l="zh">信用卡、簽帳金融卡都可以（Visa、Mastercard、JCB）。在美國、但不需要抵稅收據的朋友，用這個方法最簡單。</span></p>
     <!-- PAUSED 2026-11-22: the ECPay page currently rejects foreign-issued cards ("We do not accept foreign issued credit cards"),
          even for one-time gifts. YWAM Taiwan has been asked. Steps are hidden, not deleted.
          To reopen: remove the pause box below and the hidden attribute on #card-steps. -->
     <div class="soon" style="font-size:16px;line-height:1.6">
-      <span data-l="en"><b>Paused for now.</b> We just found out the card page isn't accepting cards from outside Taiwan at the moment. We've asked YWAM Taiwan to fix it.<br><br>Please don't try the card page yet. Reply to our newsletter and we'll let you know as soon as it works. Thank you so much for your patience and for wanting to give!</span>
-      <span data-l="zh"><b>暫停中。</b>我們剛發現刷卡頁面目前不收台灣以外發行的卡，已經請 YWAM 台灣協助處理。<br><br>目前請先不要使用刷卡頁面。回覆我們的代禱信，可以用的時候我們會第一時間通知你。謝謝你的耐心，也謝謝你願意支持我們！</span>
+      <span data-l="en"><b>Paused for now.</b> We just found out the card page isn't accepting cards from outside Taiwan at the moment. We've asked YWAM Taiwan to fix it.<br><br>Please don't try the card page yet. In the meantime, you can give by <b>international bank transfer</b>. We'll let you know as soon as cards work again. Thank you so much for your patience and for wanting to give!</span>
+      <span data-l="zh"><b>暫停中。</b>我們剛發現刷卡頁面目前不收台灣以外發行的卡，已經請 YWAM 台灣協助處理。<br><br>目前請先不要使用刷卡頁面，可以先改用<b>國際銀行匯款</b>。刷卡恢復時，我們會第一時間通知你。謝謝你的耐心，也謝謝你願意支持我們！</span>
     </div>
     <div id="card-steps" hidden>
     <ol class="steps">
@@ -159,7 +202,6 @@ html[lang="zh-Hant"] [data-l="zh"]{display:revert}
     </ol>
     <p class="note"><span data-l="en">A 3.5% card fee comes out of the gift. US cards: a card with no foreign transaction fee saves you a little more.</span><span data-l="zh">國外的卡會從奉獻金額扣 3.5% 手續費。美國朋友用「免國外交易手續費」的卡會更省。</span></p>
     </div>
-    <div class="soon"><span data-l="en">Bank transfer? International wire details are coming soon. Just reply to our newsletter.</span><span data-l="zh">想用銀行匯款嗎？國際匯款資料還在準備中。回覆我們的代禱信，我們會寄給你。</span></div>
   </section>
 
   <section class="panel" role="tabpanel" id="p-us" aria-labelledby="t-us" hidden>
@@ -168,8 +210,8 @@ html[lang="zh-Hant"] [data-l="zh"]{display:revert}
          gifts made the old way may not reach us, so the steps are hidden (not deleted).
          To reopen: remove the "Coming soon" box and the hidden attribute on #us-steps, then update the steps. -->
     <div class="soon" style="font-size:16px;line-height:1.6">
-      <span data-l="en"><b>Coming soon.</b> We're setting up a new way for US friends to give with a tax receipt, through YWAM Montana. It should be ready soon.<br><br>Please don't give through YWAM Montana yet, as the gift may not reach us. Please reply to our newsletter and we'll let you know as soon as it's ready.</span>
-      <span data-l="zh"><b>即將開放。</b>我們正在申請透過 YWAM Montana 讓美國朋友奉獻、取得抵稅收據的新方式，很快就會準備好。<br><br>目前請先不要透過 YWAM Montana 奉獻，因為奉獻可能沒辦法轉到我們這裡。請回覆我們的代禱信，準備好時我們會第一時間通知你。</span>
+      <span data-l="en"><b>Coming soon.</b> We're setting up a new way for US friends to give with a tax receipt, through YWAM Montana. It should be ready soon.<br><br>Please don't give through YWAM Montana yet, as the gift may not reach us. If you'd like to give now, international bank transfer works today (no US tax receipt). We'll let you know as soon as this is ready.</span>
+      <span data-l="zh"><b>即將開放。</b>我們正在申請透過 YWAM Montana 讓美國朋友奉獻、取得抵稅收據的新方式，很快就會準備好。<br><br>目前請先不要透過 YWAM Montana 奉獻，因為奉獻可能沒辦法轉到我們這裡。想現在就奉獻的話，可以先用國際銀行匯款（沒有美國抵稅收據）。準備好時我們會第一時間通知你。</span>
     </div>
     <div id="us-steps" hidden>
     <!-- Required "deputized" wording: US gifts belong to YWAM Montana, which controls the funds (that's what makes them tax-deductible). -->
@@ -218,7 +260,17 @@ Thank you!</pre>
   var saved=null; try{saved=localStorage.getItem('give-lang')}catch(e){}
   setLang(saved || ((navigator.language||'').toLowerCase().indexOf('zh')===0 ? 'zh' : 'en'));
 
-  var tabs=[['t-int','p-int'],['t-us','p-us']];
+  var tabs=[['t-bank','p-bank'],['t-int','p-int'],['t-us','p-us']];
+
+  // Copy one bank detail; if the clipboard is refused, select the text so it can be copied by hand
+  Array.prototype.forEach.call(document.querySelectorAll('.bank .cp'),function(b){
+    b.onclick=function(){
+      var dd=b.parentNode.querySelector('dd');
+      var ok=function(){var o=b.innerHTML;b.textContent=root.lang==='en'?'Copied ✓':'已複製 ✓';setTimeout(function(){b.innerHTML=o},1600)};
+      var sel=function(){var r=document.createRange();r.selectNodeContents(dd);var s=getSelection();s.removeAllRanges();s.addRange(r)};
+      if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(dd.textContent).then(ok,sel)}else{sel()}
+    };
+  });
   tabs.forEach(function(p){
     document.getElementById(p[0]).onclick=function(){
       tabs.forEach(function(q){
@@ -230,13 +282,16 @@ Thank you!</pre>
   });
 
   // Copy the US email template; fall back to selecting it if the clipboard is refused
-  var tb=document.getElementById('copyTpl');
+  // Same copy behaviour for both email templates (US and bank transfer)
+  [['copyTpl','tpl'],['copyTplBank','tplBank']].forEach(function(ids){
+  var tb=document.getElementById(ids[0]);
   tb.onclick=function(){
-    var pre=document.getElementById('tpl');
+    var pre=document.getElementById(ids[1]);
     var ok=function(){var o=tb.innerHTML;tb.textContent=root.lang==='en'?'Copied ✓':'已複製 ✓';setTimeout(function(){tb.innerHTML=o},1600)};
     var sel=function(){var r=document.createRange();r.selectNodeContents(pre);var s=getSelection();s.removeAllRanges();s.addRange(r)};
     if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(pre.textContent).then(ok,sel)}else{sel()}
   };
+  });
 
   // Build "TS2502, <name>" from what the donor types; the name never leaves the page
   var nameIn=document.getElementById('donorName'), rem=document.getElementById('remText'), remDefault=rem.innerHTML;
